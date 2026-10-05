@@ -25,6 +25,13 @@ const Voice = (() => {
 
   const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
+  /* ★ 第四十六轮：音量分通道（sound.js）。
+     语音走 voice 通道、互动音效走 sfx 通道，两者都还要乘总音量 master。
+     每次播放时读一次 —— 用户拖完滑杆，下一句就是新音量。
+     sound.js 没加载时（老自测台）回退 1，行为与以前完全一致。 */
+  const voiceVol = () => (window.Sound ? Sound.volumeOf('voice') : 1);
+  const sfxVol = () => (window.Sound ? Sound.volumeOf('sfx') : 1);
+
   /** 该角色在某个语言下有没有音频（键名里带角色 ID 就算） */
   function hasVoice(charId, L) {
     const dict = map[L] || {};
@@ -194,7 +201,7 @@ const Voice = (() => {
       try {
         if (current && current !== a) { current.pause(); current.currentTime = 0; }
         a.currentTime = 0;
-        a.volume = 1;
+        a.volume = voiceVol();
         current = a;
         a.play().catch(() => {});
       } catch (e) { /* 忽略 */ }
@@ -209,6 +216,7 @@ const Voice = (() => {
       try {
         if (current && current !== a) { current.pause(); current.currentTime = 0; }
         a.currentTime = 0;
+        a.volume = voiceVol();          // ★ 第四十六轮：语音通道音量（含总音量）
         current = a;
         a.play().catch(() => {});
       } catch (e) { return null; }
@@ -298,11 +306,15 @@ const Voice = (() => {
       }
       try {
         const el = a.cloneNode();
-        el.volume = Math.max(0, Math.min(1, volume));
+        /* ★ 第四十六轮：音效通道音量（含总音量） */
+        el.volume = Math.max(0, Math.min(1, volume * sfxVol()));
         el.play().catch(() => {});
       } catch (e) { return null; }
       return n;
     },
+
+    /** 音效通道的当前生效音量（自测/调试用） */
+    sfxVolume() { return sfxVol(); },
 
     preloadSfx(names) {
       (names || []).forEach((n) => {

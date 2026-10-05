@@ -110,6 +110,18 @@ const Pet = (() => {
     if (skeleton) fitCamera();
   }
 
+  /* ★ 第四十七轮：窄屏（手机）统一"标准大小"。
+     问题：原来窄屏会走下面那个"按宽度装满"的分支（vw < size.x*padX 时改成按宽度算），
+     于是**宽高比大**的角色（阿莱特的大头盔、艾蜜莉雅R41 的头发/道具占地方）
+     可见高度会顶到画布高度的 72%~75%，头顶直接扎进顶部按钮和台词气泡里；
+     而电脑端窗口宽，走的是"按高度"分支，所有角色尺寸天然一致 —— 所以只有安卓端出问题。
+     修法：窄屏也统一成**黄油 的实测标准大小**（用户指定），即模型包围盒高度
+           = 画布高度的 52%（390x844 上 = 439px，正是黄油 的尺寸）。
+     注意：按宽度装不下的很宽的模型仍旧按宽度装（那是"只会更小"的方向），
+     所以这次改动**只会把过大的模型缩小，不会把任何模型放大**。 */
+  const NARROW_ASPECT = 0.85;   // cw/ch 小于它（竖屏 / 窄窗）就启用统一标准大小
+  const STD_BOX_H = 0.52;       // 包围盒高度占画布高度的比例（黄油 在手机上的实测值）
+
   function fitCamera() {
     const off = new spine.Vector2();
     const size = new spine.Vector2();
@@ -123,8 +135,12 @@ const Pet = (() => {
     const aspect = cw / ch;
     const padX = 1.10, padTop = 1.34, padBottom = 1.22;
 
-    const availH = size.y * Math.max(padTop, padBottom);
-    let vh = availH;
+    let vh;
+    if (aspect < NARROW_ASPECT) {
+      vh = size.y / STD_BOX_H;                 // ★ 窄屏：所有模型都按这个统一尺寸摆
+    } else {
+      vh = size.y * Math.max(padTop, padBottom);  // 宽屏：沿用原逻辑（本来就很整齐）
+    }
     let vw = vh * aspect;
     if (vw < size.x * padX) { vw = size.x * padX; vh = vw / aspect; }
 

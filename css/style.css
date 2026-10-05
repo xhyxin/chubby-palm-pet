@@ -82,8 +82,22 @@ html, body {
 /* ---------------------------------------------------------------- HUD */
 .hud { position: absolute; z-index: 6; }
 
+/* ★ 第四十五轮：顶部一整条——左角色名 + 右功能按钮。
+   以前两者各自绝对定位（一个 left:20 一个 right:20），窄屏（安卓手机）上
+   按钮换行后整行铺满，直接压在角色名字上（用户截图反馈）。
+   现在合成一个 flex 容器：放得下就并排，放不下按钮整体换到下一行右对齐，
+   永远不会和名字重叠；容器本身不吃点击（pointer-events:none），
+   只有名字块和按钮块吃点击，人物拖动不受影响。 */
+.hud-top {
+  left: 20px; right: 20px; top: 20px;
+  display: flex; flex-wrap: wrap; align-items: flex-start;
+  justify-content: space-between; gap: 8px;
+  pointer-events: none;
+}
+.hud-top > .hud-stats, .hud-top > .hud-tools { pointer-events: auto; }
+
 .hud-stats {
-  left: 20px; top: 20px; padding: 12px 16px;
+  padding: 12px 16px;
   background: var(--card); backdrop-filter: blur(10px);
   border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
 }
@@ -104,7 +118,7 @@ html, body {
 #bar-bond { background: linear-gradient(90deg, #a9e6cf, var(--mint)); }
 .stat b { font-size: 12px; color: var(--ink-soft); width: 24px; text-align: right; font-weight: 600; }
 
-.hud-tools { right: 20px; top: 20px; display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+.hud-tools { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; margin-left: auto; max-width: 100%; }
 .tool {
   padding: 8px 13px; font-size: 13px; font-family: inherit; cursor: pointer;
   background: var(--card); border: 1px solid var(--line); border-radius: 999px;
@@ -113,6 +127,13 @@ html, body {
 }
 .tool:hover { background: #fff; transform: translateY(-1px); }
 .tool.on { background: var(--pink); color: #fff; border-color: var(--pink); }
+/* ★ 第四十六轮：关闭状态的音乐按钮压暗一点，"开/关"一眼能分出来 */
+.tool.dim { opacity: .6; }
+
+/* ★ 第四十六轮：背景音乐按钮组（音乐:开/关 · 换音乐 · 音量）。
+   作为顶栏里的**一个** flex 项 —— 一行放不下时整组换到下一行，
+   不会夹进其他按钮中间显得乱，也不会和角色名重叠。 */
+.hud-music { display: flex; gap: 8px; flex-wrap: nowrap; }
 
 .hud-actions {
   left: 50%; bottom: 24px; transform: translateX(-50%);
@@ -142,24 +163,37 @@ html, body {
   border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
 }
 .food-panel.hidden { display: none !important; }
-.food-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
-.food-title { font-size: 13px; font-weight: 700; color: var(--ink); }
+/* ★ 第四十五轮：表头三个元素同层（标题 / 搜索框 / 关闭）。
+   竖排时：标题独占一行，搜索框 + 关闭占第二行；横条模式（fp-h）里挤成一行。 */
+/* ★ 第四十八轮：喂食面板的标题栏 = **拖动把手**（用户要求"喂食界面可以拖动"）。
+   整条 .food-head 都能按住拖，但里面的搜索框和关闭按钮要让开：
+   它们恢复默认的触摸行为，不然点搜索框/关面板会被当成拖动。 */
+.food-head {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; margin-bottom: 8px;
+  cursor: grab; user-select: none; touch-action: none;
+}
+.food-head:active, .food-head.dragging { cursor: grabbing; }
+.food-head .food-search { cursor: text; user-select: text; touch-action: auto; }
+.food-head .food-close { cursor: pointer; touch-action: auto; }
+.food-title { flex: 1 0 100%; font-size: 13px; font-weight: 700; color: var(--ink); }
 .food-title span { color: var(--pink-deep); }
 .food-close {
-  width: 26px; height: 26px; border-radius: 8px; cursor: pointer; font-size: 12px;
+  flex: 0 0 auto; width: 26px; height: 26px; border-radius: 8px; cursor: pointer; font-size: 12px;
   border: 1px solid var(--line); background: #fff; color: var(--ink-soft);
 }
 .food-close:hover { background: #fff0f4; border-color: var(--pink); }
 .food-search {
-  width: 100%; box-sizing: border-box; padding: 8px 12px; font-size: 13px; font-family: inherit;
+  flex: 1 1 60px; width: auto; min-width: 0; box-sizing: border-box;
+  padding: 8px 12px; font-size: 13px; font-family: inherit;
   border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--ink);
-  outline: none; margin-bottom: 8px;
+  outline: none; margin: 0;
 }
 .food-search:focus { border-color: var(--pink); }
 .food-grid {
   flex: 1 1 0; min-height: 0; overflow-y: auto; overflow-x: hidden;   /* ★ 只上下滑 */
   display: grid; grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));  /* ★ 列数随面板宽度自适应 */
   gap: 7px; align-content: start; padding-right: 2px;
+  -webkit-overflow-scrolling: touch; touch-action: pan-y; overscroll-behavior: contain;
 }
 .food-card { min-width: 0; }   /* ★ 1fr 网格子项 min-width:auto 会把网格撑出横向滚动，必须归零 */
 .food-card {
@@ -180,6 +214,32 @@ html, body {
 }
 .food-legend img { width: 16px; height: 16px; vertical-align: -3px; margin: 0 1px 0 5px; }
 
+/* ---------------------------------------------------- ★ 喂食面板「横排食物」模式（第四十五轮）
+   面板被放到人物上方/下方那条**空白横带**里时启用：表头压成一行、食物排成一行、
+   卡片尺寸随横带高度自动缩放 —— 只允许**左右滑**、绝不允许上下滑
+   （用户明确要求：横着排就只能左右滑）。竖排模式（默认 .food-grid）依旧只上下滑。 */
+.food-panel.fp-h { padding: 7px 8px 5px; overflow: hidden; max-width: none; width: auto; }
+.food-panel.fp-h .food-head { flex-wrap: nowrap; gap: 6px; margin-bottom: 5px; }
+.food-panel.fp-h .food-title { flex: 0 0 auto; font-size: 12px; white-space: nowrap; }
+.food-panel.fp-h .food-search { flex: 1 1 40px; padding: 4px 8px; font-size: 12px; }
+.food-panel.fp-h .food-close { width: 22px; height: 22px; font-size: 11px; }
+.food-panel.fp-h .food-tip { display: none; }      /* 横条高度紧张，说明文字让位给食物 */
+.food-panel.fp-h .food-grid {
+  grid-template-columns: none;
+  grid-auto-flow: column;                          /* ★ 竖着填、横着长 → 天然只横向溢出 */
+  grid-auto-columns: 70px;
+  grid-template-rows: minmax(0, 1fr);
+  overflow-x: auto; overflow-y: hidden;            /* ★ 只左右滑 */
+  align-content: stretch;
+  -webkit-overflow-scrolling: touch; touch-action: pan-x; overscroll-behavior: contain;
+  padding: 0 2px 2px 0;
+}
+.food-panel.fp-h .food-card {
+  min-width: 0; justify-content: center; padding: 4px 3px; touch-action: pan-x;
+}
+.food-panel.fp-h .food-card img { width: 40px; height: 40px; }
+.food-panel.fp-h .food-card span { font-size: 10px; }
+
 /* 跟随鼠标的拖拽食物（拖影） */
 #drag-food {
   position: fixed; z-index: 30; width: 48px; height: 48px; pointer-events: none;
@@ -194,12 +254,37 @@ html, body {
   padding: 18px 20px; background: #fff; border-radius: var(--radius);
   box-shadow: 0 16px 48px rgba(140, 95, 80, .28); width: 372px; max-width: 92vw;
 }
-.panel-title { font-size: 15px; font-weight: 700; margin-bottom: 12px; }
-.skin-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.panel-title { font-size: 15px; font-weight: 700; margin-bottom: 12px; white-space: nowrap; }
+
+/* ---------------------------------------------------- ★ 角色 / 皮肤面板（第四十五轮重做）
+   用户要求：① 面板放大（盖住人物没关系，别盖住按钮）
+             ② 皮肤名横排、只留皮肤名（介绍全删）
+             ③ 安卓上必须滑得动（角色列表 / 皮肤列表各自内部滚动）
+   高度由 js/main.js 的 placePanel() 按"功能按钮 ↔ 底部互动条"之间的可用带算出来。 */
+.panel-skin {
+  display: flex; flex-direction: column;
+  width: clamp(300px, 42vw, 460px); max-width: 94vw;
+  padding: 16px 16px 14px; overflow: hidden;
+}
+.panel-skin .panel-title { flex: 0 0 auto; }
+.panel-skin .group-title { flex: 0 0 auto; }
+.panel-skin .char-search { flex: 0 0 auto; }
+.panel-skin .char-list {
+  flex: 1 1 38%; min-height: 92px; max-height: none;
+  overflow-y: auto; overflow-x: hidden;
+  -webkit-overflow-scrolling: touch; touch-action: pan-y; overscroll-behavior: contain;
+}
+.panel-skin .skin-list {
+  flex: 1 1 52%; min-height: 92px; align-content: start;
+  overflow-y: auto; overflow-x: hidden;
+  -webkit-overflow-scrolling: touch; touch-action: pan-y; overscroll-behavior: contain;
+}
+
+.skin-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 8px; }
 .skin-item {
-  padding: 12px 6px; text-align: center; font-size: 13px; cursor: pointer;
+  padding: 11px 8px; text-align: center; font-size: 12.5px; line-height: 1.35; cursor: pointer;
   border: 2px solid var(--line); border-radius: 12px; background: #fffdfa;
-  transition: all .15s;
+  transition: all .15s; word-break: break-word;
 }
 .skin-item:hover { border-color: var(--pink); }
 .skin-item.on { border-color: var(--pink); background: #fff0f4; font-weight: 700; }
@@ -222,6 +307,7 @@ html, body {
 .char-list {
   max-height: 40vh; overflow-y: auto; padding-right: 4px;
   grid-template-columns: repeat(auto-fill, minmax(104px, 1fr));
+  -webkit-overflow-scrolling: touch; touch-action: pan-y; overscroll-behavior: contain;
 }
 .char-item {
   position: relative; display: flex; flex-direction: column; align-items: center; gap: 6px;
@@ -348,8 +434,14 @@ html, body {
   padding: 7px 16px; font-size: 13px; font-family: inherit; font-weight: 600;
   cursor: pointer; border: none; border-radius: 999px;
   background: #f6efe9; color: var(--ink-soft);
+  white-space: nowrap;   /* ★ 第四十五轮：窄面板里"动作表情/语音图鉴"不许折成两行 */
 }
 .tab.on { background: var(--pink); color: #fff; }
+/* 压缩成细条时：页头/页签一起收窄，两个页签仍排在一行 */
+.panel-wide.panel-snug .panel-head { padding: 12px 12px 8px; }
+.panel-wide.panel-snug .tabs { padding: 0 12px 10px; gap: 5px; }
+.panel-wide.panel-snug .tab { padding: 6px 9px; font-size: 12px; }
+.panel-wide.panel-snug .panel-body { padding: 12px 12px 14px; }
 
 .panel-body { overflow-y: auto; padding: 14px 20px 20px; }
 .group-title {
@@ -381,15 +473,26 @@ html, body {
 .panel-body .muted { font-size: 13px; color: var(--ink-soft); }
 
 @media (max-width: 720px) {
-  .hud-stats { padding: 10px 12px; left: 12px; top: 12px; }
+  .hud-top { left: 12px; right: 12px; top: 12px; gap: 6px; }
+  .hud-stats { padding: 10px 12px; }
   .hud-actions { gap: 6px; padding: 8px; bottom: 14px; }
   .act { padding: 8px 11px; font-size: 12.5px; }
-  .hud-tools { right: 12px; top: 12px; gap: 6px; }
+  .hud-tools { gap: 6px; }
   .tool { padding: 7px 10px; font-size: 12px; }
+  .panel-skin { width: 94vw; padding: 14px 12px 12px; }
 }
 /* 特别窄的窗口：底部按钮允许折两行，但每个按钮的文字仍保持横排 */
 @media (max-width: 430px) {
   .hud-actions { flex-wrap: wrap; justify-content: center; max-width: 94vw; border-radius: 20px; }
+}
+/* ★ 第四十五轮：手机上把右上角功能按钮压小一号，让 7 个按钮挤进**一行**。
+   这样顶栏只占"名字一行 + 按钮一行"，省下来的竖向空白正好给
+   「喂食面板落在人物上方那条空白横带」用（用户要求的排版方向）。 */
+@media (max-width: 480px) {
+  .tool { padding: 6px 8px; font-size: 11.5px; }
+  .hud-music { gap: 6px; }
+  .hud-stats { padding: 8px 11px; }
+  .stats-head .name { font-size: 15px; }
 }
 
 /* ---------------------------------------------------------------- ★ 面板避让人物（第三十三轮）
@@ -425,15 +528,35 @@ html, body {
 #update-toast.show { opacity: 1; transform: translate(-50%, 0); }
 .tool:disabled { opacity: .55; cursor: wait; }
 
-/* ★ 语言选择菜单（第三十七轮）：按钮下方弹出，点外面关闭 */
-#lang-menu {
-  position: fixed; z-index: 95; min-width: 128px; padding: 6px;
+/* ★ 音量选择菜单（第四十六轮）：总音量 / 音乐 / 语音 / 音效 四条滑杆 */
+#volume-menu {
+  position: fixed; z-index: 95; width: 244px; max-width: 88vw;
+  padding: 10px 12px 9px; display: flex; flex-direction: column; gap: 7px;
   background: var(--card); backdrop-filter: blur(10px);
   border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow);
 }
+.vol-row { display: flex; align-items: center; gap: 8px; }
+.vol-row label { flex: 0 0 54px; font-size: 12px; color: var(--ink); }
+.vol-row input[type="range"] {
+  flex: 1 1 auto; min-width: 0; height: 22px; margin: 0;
+  accent-color: var(--pink); background: transparent;
+}
+.vol-row b { flex: 0 0 34px; text-align: right; font-size: 11px; font-weight: 600; color: var(--ink-soft); }
+.vol-hint { font-size: 10.5px; color: var(--ink-soft); line-height: 1.45; }
+.vol-hint em { font-style: normal; color: var(--pink-deep); }
+
+/* ★ 语言选择菜单（第三十七轮）：按钮下方弹出，点外面关闭 */
+#lang-menu {
+  position: fixed; z-index: 95; min-width: 128px; max-width: 92vw; padding: 6px;
+  background: var(--card); backdrop-filter: blur(10px);
+  border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow);
+}
+/* ★ 第四十六轮：曲名有长有短（有一首叫「铬铻登山101 - 끝까지 걸어가고 싶어 我想走到最后」），
+   所以列表项允许折行、别把长名字截断。 */
 .lang-item {
   padding: 9px 18px; font-size: 13px; border-radius: 9px; cursor: pointer;
-  color: var(--ink); white-space: nowrap;
+  color: var(--ink); white-space: normal; max-width: min(88vw, 340px);
+  overflow-wrap: anywhere; line-height: 1.35;
 }
 .lang-item:hover { background: #fff0f4; }
 .lang-item.on { color: var(--pink-deep); font-weight: 700; background: #fff0f4; }

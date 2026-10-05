@@ -28,19 +28,23 @@
       py = Math.min(Pet.topScreenY(), p.y - p.r) - 10;
     }
     b.classList.remove('hidden');
-    /* ★ 第三十一轮：长台词居中悬在**人物正上方**——底边贴人物顶、台词内层滚动限高，
-       永远不压到人物、不出屏；短台词维持原来的"悬在人物头顶上方"。 */
+    /* ★ 第四十五轮：长台词居中悬在**人物正上方**——底边贴人物顶、台词内层滚动限高，
+       永远不压到人物、不出屏；短台词维持原来的"悬在人物头顶上方"。
+       ★ 第四十七轮：两种都加一道"别钻进顶部按钮区"的护栏（气泡是 translate(-50%,-100%)，
+       style.top 就是气泡的**底边**）—— 阿莱特/艾蜜莉雅R41 那种头顶高的角色，
+       以前气泡会飘到按钮上被挡住。 */
+    const bubbleMinBottom = () => uiBand().top + (b.offsetHeight || 62) + 6;
     if (b.classList.contains('long')) {
       const topY = Pet.ready ? Pet.topScreenY() : window.innerHeight * 0.35;
       b.style.left = Math.max(178, Math.min(window.innerWidth - 178, px)) + 'px';
-      b.style.top = (topY - 8) + 'px';
+      b.style.top = Math.max(bubbleMinBottom(), topY - 8) + 'px';
       b.style.transform = '';
       b.style.maxWidth = '340px';
       /* 台词内层的可滚动高度 = 气泡顶边距屏顶 12px 的余量（padding+边框+尾巴约占 32px） */
       $('bubble-text').style.maxHeight = Math.max(120, topY - 44) + 'px';
     } else {
       b.style.left = Math.max(130, Math.min(window.innerWidth - 130, px)) + 'px';
-      b.style.top = Math.max(14, Math.min(py, window.innerHeight - 24)) + 'px';
+      b.style.top = Math.max(bubbleMinBottom(), Math.min(py, window.innerHeight - 24)) + 'px';
       b.style.transform = '';
       b.style.maxWidth = '';
       $('bubble-text').style.maxHeight = '';
@@ -132,7 +136,9 @@
       py = topY + Hs * 0.17;
     }
     b.style.left = Math.max(50, Math.min(window.innerWidth - 50, px)) + 'px';
-    b.style.top = Math.max(56, Math.min(py, window.innerHeight - 140)) + 'px';
+    /* ★ 第四十七轮：同样不许钻进顶部按钮区 */
+    b.style.top = Math.max(uiBand().top + (b.offsetHeight || 90) + 6,
+      Math.min(py, window.innerHeight - 140)) + 'px';
     b.classList.remove('hidden');
     b.classList.add('show');
     if (prefBubbleTimer) clearTimeout(prefBubbleTimer);
@@ -260,8 +266,10 @@
     });
     const cancel = () => { if (timer) { clearTimeout(timer); timer = null; } };
     el.addEventListener('pointermove', (e) => {
-      /* 没按住拖够距离之前就当普通滚动/点击处理 */
-      if (timer && Math.abs(e.movementY) > 6) cancel();
+      /* 没按住拖够距离之前就当普通滚动/点击处理。
+         ★ 第四十五轮：横竖位移都算 —— 横排食物模式下面板靠横向滚动，
+         手指一横向滑必须让位给滚动，不能被当成"长按抓住食物"。 */
+      if (timer && (Math.abs(e.movementX || 0) > 6 || Math.abs(e.movementY || 0) > 6)) cancel();
     });
     el.addEventListener('pointerup', cancel);
     el.addEventListener('pointercancel', cancel);
@@ -332,6 +340,13 @@
       el.addEventListener('click', () => switchCharacter(i));
       box.appendChild(el);
     });
+    /* ★ 第四十五轮：136 个角色里把"当前角色"滚进可视区 ——
+       否则用户打开面板根本不知道自己现在用的是谁（要一路翻到底）。
+       只在面板已经打开时滚，避免开机时就动列表。 */
+    const cur = box.querySelector('.char-item.on');
+    if (cur && !$('skin-panel').classList.contains('hidden')) {
+      try { cur.scrollIntoView({ block: 'nearest' }); } catch (e) { /* 忽略 */ }
+    }
   }
 
   /** 没有立绘时用的占位头像：角色名第一个字 */
@@ -422,7 +437,10 @@
     CONFIG.models.forEach((m, i) => {
       const el = document.createElement('div');
       el.className = 'skin-item' + (i === skinIndex ? ' on' : '');
-      el.innerHTML = `${m.name}<small>${m.desc}</small>`;
+      /* ★ 第四十五轮（用户要求）：皮肤项**只留皮肤名**。
+         原来名字下面还挂一行 <small>（"基础外观（34 动作）"），
+         现在全部删除 —— 电脑端 / 网页端 / 安卓端三端一致。 */
+      el.textContent = m.name;
       el.addEventListener('click', () => switchSkin(i));
       box.appendChild(el);
     });
@@ -652,6 +670,9 @@
     if (DEBUG) dbg.classList.add('on');
     fill.style.width = '25%';
     tip.textContent = I18N.t('loader.tip');
+    /* ★ 第四十六轮：背景音乐尽早起（默认开；关过就保持关）。
+       放在模型加载前，这样加载那几秒就有音乐，不会干等。 */
+    if (window.Music) Music.init();
     await Voice.load();
 
     /* ★ 记住上次玩的是谁（多角色）：启动时直接回到那个角色 */
@@ -709,11 +730,19 @@
     requestAnimationFrame(loop);
   }
 
-  /* ---------------------------------------------------------- ★ 面板避让人物（第三十三轮）
-     用户反馈"一点开面板就全挡住人物"：打开面板时先量人物在屏幕上的包围盒，
-     把面板放到旁边的空白处 —— 优先右侧 → 左侧 → 头顶上方 → 实在不够就压缩面板
-     （panel-snug：食物两列小图、其他面板限宽限高）贴空隙更大的一边。
-     窗口大小变化时，已经打开的面板会跟着重新找位置。 */
+  /* ---------------------------------------------------------- ★ 面板避让人物
+     （第三十三轮起；第四十五轮按用户反馈重做"喂食面板优先落空白处 + 横竖滑动方向"）
+
+     统一先算两条几何：
+       box  = 人物在屏幕上的包围盒（Pet.bounds 换算，含 5% 动画余量）
+       band = **顶部功能按钮下缘 ↔ 底部互动条上缘** 之间的可放置竖带
+              —— 面板/内容一律不许越出这条带，从根上杜绝"挡住按钮"。
+     然后按面板类型放：
+       · 角色/皮肤面板：占满这条带（左/居中），允许盖住人物（用户明确允许），
+         高度写死 → 里面的角色列表 / 皮肤列表各自滚动（安卓也能滑）。
+       · 喂食面板：优先人物**上方或下方那条空白横带**（用户："你看这上面是不是有空白的"），
+         放进去就用**横排食物 + 只左右滑**；上下都塞不下才退回左右竖排（只上下滑）。
+       · 其他面板（动作/语音）：右边空白 → 左边空白 → 人物头顶上方 → 压缩贴边。 */
   function petScreenBox() {
     if (!Pet.ready) return null;
     const b = Pet.bounds;
@@ -726,58 +755,117 @@
     return { left: l - mx, right: r + mx, top: t - my, bottom: bo + my };
   }
 
-  function panelTopClamp(top, ph) {
-    const topMin = 60;                                  /* 让开右上角那排功能按钮 */
-    const topMax = window.innerHeight - ph - 92;        /* 让开底部互动按钮条 */
-    return Math.max(topMin, Math.min(topMax, top));
+  /** 顶部功能按钮与底部互动按钮之间可用的竖带（面板一律待在这条带里，不压按钮） */
+  function uiBand() {
+    let top = 10, bottom = window.innerHeight - 10;
+    const t = document.querySelector('.hud-tools');
+    const a = document.querySelector('.hud-actions');
+    if (t) { const r = t.getBoundingClientRect(); if (r.height > 0) top = Math.max(top, r.bottom + 8); }
+    if (a) { const r = a.getBoundingClientRect(); if (r.height > 0) bottom = Math.min(bottom, r.top - 8); }
+    return { top: top, bottom: bottom, h: Math.max(160, bottom - top) };
   }
+
+  const clampToBand = (y, ph, band) => Math.max(band.top, Math.min(band.bottom - ph, y));
 
   function placePanel(el) {
     if (!el || el.classList.contains('hidden')) return;
-    el.classList.remove('panel-snug');
+    el.classList.remove('panel-snug', 'fp-h');
     /* 居中面板带 translate(-50%,-50%)，先转成绝对定位才好量好放 */
-    if (getComputedStyle(el).transform !== 'none') {
-      el.style.left = '0px'; el.style.top = '0px'; el.style.transform = 'none';
-    }
-    el.style.bottom = 'auto';                           /* 食物面板原样式锚 bottom，改由 top 定位 */
-    /* 食物面板给确定高度（flex:1 的网格在容器高度 auto 时会塌成 0） */
-    if (el.id === 'food-panel') el.style.height = Math.max(200, window.innerHeight - 64 - 92) + 'px';
-    else el.style.maxHeight = '';
-    const W = window.innerWidth, H = window.innerHeight;
+    if (getComputedStyle(el).transform !== 'none') el.style.transform = 'none';
+    el.style.transform = 'none';
+    el.style.left = '0px'; el.style.top = '0px';
+    el.style.right = 'auto';                            /* 原样式锚 right，改由 left 定位 */
+    el.style.bottom = 'auto';                           /* 原样式锚 bottom，改由 top 定位 */
+    el.style.width = '';
+    el.style.height = '';
+    el.style.maxHeight = '';
+
+    const W = window.innerWidth;
+    const band = uiBand();
     const gap = 12, edge = 8;
-    const pw = el.offsetWidth, ph = el.offsetHeight;
     const box = petScreenBox();
+
+    /* ① 角色 / 皮肤面板：吃满可用带，给确定高度让两个列表各自滚动 */
+    if (el.id === 'skin-panel') {
+      el.style.height = Math.round(Math.min(band.h, Math.max(320, window.innerHeight * 0.66))) + 'px';
+      el.style.top = Math.round(band.top) + 'px';
+      el.style.left = Math.round(Math.max(edge, (W - el.offsetWidth) / 2)) + 'px';
+      return;
+    }
+
+    /* ② 喂食面板：窄窗（手机）优先落在人物上方/下方的空白横带（横排食物，只左右滑）；
+         大窗（电脑/网页）左右有富余，仍旧竖排在旁边（横条拉满整屏不好看）。 */
+    if (el.id === 'food-panel') {
+      const pwDefault = el.offsetWidth;                  /* CSS clamp 算出来的默认竖排宽度 */
+      const sideOk = box && band.h >= 340 &&
+        (W - box.right >= pwDefault + gap + 6 || box.left >= pwDefault + gap + 6);
+      if (!sideOk && box) {
+        const STRIP_MIN = 106;                           /* 横条模式"表头一行 + 食物一行"的最低高度 */
+        const above = box.top - band.top - gap;
+        const below = band.bottom - box.bottom - gap;
+        if (Math.max(above, below) >= STRIP_MIN) {
+          const h = Math.round(Math.min(Math.max(above, below),
+            Math.min(250, Math.max(158, window.innerHeight * 0.26))));
+          el.classList.add('fp-h');                      /* ★ 横排食物 = 只允许左右滑 */
+          el.style.width = Math.round(W - edge * 2) + 'px';
+          el.style.height = h + 'px';
+          el.style.left = edge + 'px';
+          el.style.top = Math.round(above >= below ? band.top : band.bottom - h) + 'px';
+          return;
+        }
+      }
+      /* 上下都塞不下 → 竖排（默认样式：只上下滑），优先右边空白，其次左边 */
+      el.style.height = Math.round(band.h) + 'px';
+      const pw = el.offsetWidth;
+      let x = null;
+      if (box) {
+        if (W - box.right >= pw + gap + 6) x = Math.min(W - pw - edge, box.right + gap);
+        else if (box.left >= pw + gap + 6) x = Math.max(edge, box.left - gap - pw);
+      }
+      if (x === null) {
+        el.classList.add('panel-snug');                 /* 两侧也挤：压缩成细条贴空隙更大的一边 */
+        el.style.height = Math.round(Math.min(band.h, window.innerHeight * 0.6)) + 'px';
+        const w2 = el.offsetWidth;
+        const fr = box ? W - box.right : W, fl = box ? box.left : 0;
+        x = fr >= fl
+          ? Math.max(edge, Math.min(W - w2 - edge, (box ? box.right + gap : edge)))
+          : Math.max(edge, Math.min(W - w2 - edge, (box ? box.left - gap - w2 : edge)));
+      }
+      el.style.left = Math.round(x) + 'px';
+      el.style.top = Math.round(clampToBand((window.innerHeight - el.offsetHeight) / 2, el.offsetHeight, band)) + 'px';
+      return;
+    }
+
+    /* ③ 其他面板（动作 / 语音 / 皮肤以外的）：右边空白 → 左边空白 → 头顶上方 → 压缩贴边 */
+    el.style.maxHeight = Math.round(band.h) + 'px';
+    const pw = el.offsetWidth, ph = el.offsetHeight;
     let x = null, y = null;
     if (box) {
       const freeRight = W - box.right, freeLeft = box.left;
       const fits = (free, w) => free >= w + gap + 6;
-      const putY = () => { y = panelTopClamp((H - ph) / 2, ph); };
       if (fits(freeRight, pw)) {
-        x = Math.min(W - pw - edge, box.right + gap); putY();
+        x = Math.min(W - pw - edge, box.right + gap);
+        y = (window.innerHeight - ph) / 2;
       } else if (fits(freeLeft, pw)) {
-        x = Math.max(edge, box.left - gap - pw); putY();
-      } else if (box.top - 60 >= ph + gap) {
-        /* 头顶上方整块空白放得下（大窗、人物偏矮时） */
+        x = Math.max(edge, box.left - gap - pw);
+        y = (window.innerHeight - ph) / 2;
+      } else if (box.top - band.top >= ph + gap) {
+        /* 头顶上方整块空白放得下 */
         x = Math.max(edge, Math.min(W - pw - edge, (W - pw) / 2));
-        y = Math.max(56, Math.min(box.top - ph - gap, panelTopClamp((H - ph) / 2, ph)));
+        y = Math.max(band.top, Math.min(box.top - ph - gap, band.bottom - ph));
       } else {
-        /* 压缩再放：食物面板两列小图、其他面板限宽限高，贴空隙更大的一边 */
-        el.classList.add('panel-snug');
-        if (el.id === 'food-panel') el.style.height = Math.max(200, Math.round(Math.min(window.innerHeight * 0.64, window.innerHeight - 156))) + 'px';
-        const pw2 = el.offsetWidth, ph2 = el.offsetHeight;
-        const w2 = Math.max(pw2, Math.min(W - edge * 2, pw2));
-        if (freeRight >= freeLeft) x = Math.max(box.right + gap, W - w2 - edge);
-        else x = Math.min(box.left - gap - w2, edge);
-        x = Math.max(edge, Math.min(W - w2 - edge, x));
-        y = Math.max(60, Math.min(window.innerHeight - ph2 - 96, window.innerHeight - ph2 - 96));
-        y = Math.max(60, window.innerHeight - ph2 - 96);
+        el.classList.add('panel-snug');                 /* 压缩再放：贴空隙更大的一边 */
+        const w2 = el.offsetWidth, h2 = el.offsetHeight;
+        x = freeRight >= freeLeft
+          ? Math.max(edge, Math.min(W - w2 - edge, box.right + gap))
+          : Math.max(edge, Math.min(W - w2 - edge, box.left - gap - w2));
+        y = band.bottom - h2;
       }
     }
     if (x === null) x = Math.max(edge, (W - el.offsetWidth) / 2);
-    if (y === null) y = panelTopClamp((H - el.offsetHeight) / 2, el.offsetHeight);
+    if (y === null) y = clampToBand((window.innerHeight - el.offsetHeight) / 2, el.offsetHeight, band);
     el.style.left = Math.round(x) + 'px';
-    el.style.top = Math.round(y) + 'px';
-    el.style.transform = 'none';
+    el.style.top = Math.round(clampToBand(y, el.offsetHeight, band)) + 'px';
   }
 
   function placeVisiblePanels() {
@@ -838,10 +926,11 @@
       showBubble(I18N.t('bubble.onlyVoice', { name: dispName(), lang: I18N.voiceLangName(usable[0]) }));
       return;
     }
-    /* 语音名的"原生写法"（日本語/한국어），任何界面语言下都一眼认得出 */
-    const NATIVE = { ja: '日本語', ko: '한국어' };
+    /* ★ 第四十五轮（用户要求）：语言菜单一律用**当前界面语言**的写法
+       （中文界面就是"日语 / 韩语"）。原来固定显示原生写法（日本語 / 한국어），
+       中国玩家看不懂한국어那一条。 */
     showLangMenu($('btn-lang'),
-      usable.map((v) => ({ id: v, label: NATIVE[v] || I18N.voiceLangName(v), on: v === Voice.getLang() })),
+      usable.map((v) => ({ id: v, label: I18N.voiceLangName(v), on: v === Voice.getLang() })),
       (next) => {
         if (next === Voice.getLang()) return;
         Voice.setLang(next);
@@ -851,6 +940,37 @@
         showBubble(I18N.t('bubble.toLang', { lang: I18N.voiceLangName(next) }));
       });
   });
+
+  /* ---------------------------------------------------------- ★ 背景音乐（第四十六轮）
+     三个按钮：音乐:开/关（记状态）、换音乐（13 首里挑）、音量（总/音乐/语音/音效 四条滑杆）。
+     播放逻辑全在 js/music.js，这里只做 UI 联动。 */
+  function syncMusicButton() {
+    const b = $('btn-music');
+    if (!b || !window.Music) return;
+    const on = Music.isOn();
+    b.textContent = I18N.t(on ? 'btn.musicOn' : 'btn.musicOff');
+    b.classList.toggle('on', on);
+    b.classList.toggle('dim', !on);
+    b.title = I18N.t(on ? 'btn.musicOn' : 'btn.musicOff');
+  }
+
+  $('btn-music').addEventListener('click', () => {
+    if (!window.Music) return;
+    const on = Music.toggle();
+    syncMusicButton();
+    showBubble(I18N.t(on ? 'bubble.musicOn' : 'bubble.musicOff'));
+  });
+
+  $('btn-music-pick').addEventListener('click', () => {
+    if (!window.Music) return;
+    const cur = Music.current();
+    /* 复用语言菜单那套弹出列表：曲名一列，当前这首高亮 */
+    showLangMenu($('btn-music-pick'),
+      Music.tracks.map((t) => ({ id: t.id, label: t.name, on: !!cur && cur.id === t.id })),
+      (id) => { Music.select(id); syncMusicButton(); });
+  });
+
+  $('btn-volume').addEventListener('click', () => showVolumeMenu($('btn-volume')));
 
   $('btn-auto').addEventListener('click', (e) => {
     autoOn = !autoOn;
@@ -872,6 +992,7 @@
   }
   function showLangMenu(btn, items, onPick) {
     closeLangMenu();
+    closeVolumeMenu();
     langMenu = document.createElement('div');
     langMenu.id = 'lang-menu';
     items.forEach((it) => {
@@ -888,6 +1009,63 @@
     langMenu.style.top = Math.min(window.innerHeight - langMenu.offsetHeight - 8, r.bottom + 6) + 'px';
     setTimeout(() => window.addEventListener('pointerdown', onMenuOutside, true), 0);
   }
+  /* ---------------------------------------------------------- ★ 音量面板（第四十六轮）
+     用户要求："分成音乐+语音+音效三种分别设置，再加个总音量，四个"。
+     四条滑杆：总音量 / 音乐 / 语音 / 音效 —— 数值存 sound.js（localStorage）。
+     和语言菜单一样是"按钮下方弹出、点外面关闭"的浮层。 */
+  let volMenu = null;
+  const VOL_ROWS = [
+    { ch: 'master', key: 'vol.master' },
+    { ch: 'music', key: 'vol.music' },
+    { ch: 'voice', key: 'vol.voice' },
+    { ch: 'sfx', key: 'vol.sfx' },
+  ];
+
+  function closeVolumeMenu() {
+    if (volMenu) { volMenu.remove(); volMenu = null; }
+    window.removeEventListener('pointerdown', onVolOutside, true);
+  }
+  function onVolOutside(e) {
+    if (volMenu && !volMenu.contains(e.target)) closeVolumeMenu();
+  }
+
+  function showVolumeMenu(btn) {
+    if (!window.Sound) return;
+    closeLangMenu();
+    closeVolumeMenu();
+    const box = document.createElement('div');
+    box.id = 'volume-menu';
+    VOL_ROWS.forEach((r) => {
+      const row = document.createElement('div');
+      row.className = 'vol-row';
+      const lab = document.createElement('label');
+      lab.textContent = I18N.t(r.key);
+      const range = document.createElement('input');
+      range.type = 'range';
+      range.min = '0'; range.max = '100'; range.step = '5';
+      range.value = String(Math.round(Sound.value(r.ch) * 100));
+      const val = document.createElement('b');
+      val.textContent = Math.round(Sound.value(r.ch) * 100) + '%';
+      range.addEventListener('input', () => {
+        const v = Sound.setVolume(r.ch, Number(range.value) / 100);
+        val.textContent = Math.round(v * 100) + '%';
+      });
+      row.appendChild(lab); row.appendChild(range); row.appendChild(val);
+      box.appendChild(row);
+    });
+    const hint = document.createElement('div');
+    hint.className = 'vol-hint';
+    hint.textContent = I18N.t('vol.hint');
+    box.appendChild(hint);
+    document.body.appendChild(box);
+    const r0 = btn.getBoundingClientRect();
+    const mw = box.offsetWidth, mh = box.offsetHeight;
+    box.style.left = Math.max(8, Math.min(window.innerWidth - mw - 8, r0.right - mw)) + 'px';
+    box.style.top = Math.min(window.innerHeight - mh - 8, r0.bottom + 6) + 'px';
+    volMenu = box;
+    setTimeout(() => window.addEventListener('pointerdown', onVolOutside, true), 0);
+  }
+
   function afterUiLangChange() {
     syncUiLangButton();
     refreshCharacterShell();
@@ -896,6 +1074,7 @@
     if (!$('tab-anim').classList.contains('hidden')) buildAnimPanel();
     if (!$('tab-voice').classList.contains('hidden')) buildVoicePanel();
     syncLangButton();
+    syncMusicButton();                 // ★ 音乐按钮文案跟着界面语言走
     try { window.dispatchEvent(new CustomEvent('uilang-changed')); } catch (e) { /* 忽略 */ }
   }
   function syncUiLangButton() {
@@ -914,18 +1093,27 @@
       });
   });
   syncUiLangButton();
+  syncMusicButton();                   // ★ 开机把「音乐:开/关」按上次记住的状态显示出来
 
-  /* 面板可拖动：按住标题栏拖走，不挡人物（用户要边看动作边看反应） */
-  function makeDraggable(panel) {
-    const handle = panel.querySelector('.panel-head');
+  /* 面板可拖动：按住标题栏拖走，不挡人物（用户要边看动作边看反应）。
+     ★ 第四十八轮：**喂食面板也支持拖动**（用户："喂食会挡住角色太可惜了"）。
+     喂食面板的标题栏是 `.food-head`，它里面还塞着搜索框和关闭按钮，
+     所以这两处必须让开，不然点搜索框/关面板会被当成拖动。 */
+  const NO_DRAG = 'input, textarea, button, .tab, .chip, .food-close, .panel-x';
+
+  function makeDraggable(panel, handleSel) {
+    if (!panel) return;
+    const handle = panel.querySelector(handleSel || '.panel-head');
     if (!handle) return;
     handle.addEventListener('pointerdown', (e) => {
-      if (e.target.closest('.panel-x')) return;      // 关闭按钮不触发拖动
+      if (e.target.closest(NO_DRAG)) return;         // 搜索框 / 关闭按钮 / 页签 不触发拖动
       const r = panel.getBoundingClientRect();
       // 从"居中 transform"切换为"绝对 left/top"，再开始跟手
       panel.style.left = r.left + 'px';
       panel.style.top = r.top + 'px';
       panel.style.transform = 'none';
+      panel.style.bottom = 'auto';
+      handle.classList.add('dragging');
       const ox = e.clientX - r.left, oy = e.clientY - r.top;
       const move = (ev) => {
         /* ★ 第三十三轮：面板拖走也必须留一大半在窗口里，别拖到看不见 */
@@ -935,16 +1123,20 @@
         panel.style.top = y + 'px';
       };
       const up = () => {
+        handle.classList.remove('dragging');
         window.removeEventListener('pointermove', move);
         window.removeEventListener('pointerup', up);
+        window.removeEventListener('pointercancel', up);
       };
       window.addEventListener('pointermove', move);
       window.addEventListener('pointerup', up);
+      window.addEventListener('pointercancel', up);
       e.preventDefault();
     });
   }
   makeDraggable($('action-panel'));
   makeDraggable($('skin-panel'));
+  makeDraggable($('food-panel'), '.food-head');   // ★ 第四十八轮：喂食面板也能拖
 
   /* 底部互动按钮：直接触发一次对应动作（走同一套官方资源） */
   document.querySelectorAll('.act').forEach((btn) => {

@@ -28,22 +28,34 @@
     </div>
   </div>
 
-  <!-- 左上：角色名（心情/饱食/亲密/开不开心 按用户要求已移除） -->
-  <div class="hud hud-stats">
-    <div class="stats-head">
-      <span class="name">斯琪娅</span>
+  <!-- ★ 第四十五轮：顶栏改成**一个 flex 容器**——角色名在左、功能按钮在右，
+       放不下时按钮自动换到下一行（整行右对齐），
+       这样窄屏（安卓）再也不会出现"按钮压住角色名字"。 -->
+  <div class="hud hud-top">
+    <!-- 左：角色名（心情/饱食/亲密/开不开心 按用户要求已移除） -->
+    <div class="hud-stats">
+      <div class="stats-head">
+        <span class="name">斯琪娅</span>
+      </div>
     </div>
-  </div>
 
-  <!-- 右上：功能按钮（按用户要求去掉按钮左侧图标；玩法按钮已按用户要求移除） -->
-  <div class="hud hud-tools">
-    <button class="tool" id="btn-actions" title="自主选择动作 / 表情 / 语音" data-i18n="btn.actions">动作</button>
-    <button class="tool" id="btn-skin" title="切换角色 / 换装" data-i18n="btn.chars">角色</button>
-    <button class="tool" id="btn-lang" title="切换语音语言">韩语（唯一）</button>
-    <button class="tool" id="btn-auto" title="自动待机互动" data-i18n="btn.auto">自动</button>
-    <button class="tool" id="btn-uilang" title="切换界面语言 / UI language">中文</button>
-    <button class="tool" id="btn-notice" title="公告" data-i18n="btn.notice">公告</button>
-    <button class="tool" id="btn-update" title="检查更新" data-i18n="btn.update">更新</button>
+    <!-- 右：功能按钮（按用户要求去掉按钮左侧图标；玩法按钮已按用户要求移除） -->
+    <div class="hud-tools">
+      <button class="tool" id="btn-actions" title="自主选择动作 / 表情 / 语音" data-i18n="btn.actions">动作</button>
+      <button class="tool" id="btn-skin" title="切换角色 / 换装" data-i18n="btn.chars">角色</button>
+      <button class="tool" id="btn-lang" title="切换语音语言">韩语（唯一）</button>
+      <button class="tool" id="btn-auto" title="自动待机互动" data-i18n="btn.auto">自动</button>
+      <button class="tool" id="btn-uilang" title="切换界面语言 / UI language">中文</button>
+      <button class="tool" id="btn-notice" title="公告" data-i18n="btn.notice">公告</button>
+      <button class="tool" id="btn-update" title="检查更新" data-i18n="btn.update">更新</button>
+      <!-- ★ 第四十六轮：背景音乐三件套。包成一个 flex 组，窄屏会**整体**换到下一行，
+           不会夹在别的按钮中间显得乱；也不会和角色名重叠（顶栏本来就是 flex 换行布局）。 -->
+      <span class="hud-music" id="music-group">
+        <button class="tool" id="btn-music" title="背景音乐 开 / 关">音乐:开</button>
+        <button class="tool" id="btn-music-pick" title="换一首背景音乐" data-i18n="btn.musicPick">换音乐</button>
+        <button class="tool" id="btn-volume" title="音量：总音量 / 音乐 / 语音 / 音效" data-i18n="btn.volume">音量</button>
+      </span>
+    </div>
   </div>
 
   <!-- 底部：互动按钮（按用户要求去掉按钮左侧图标） -->
@@ -55,13 +67,17 @@
     <button class="act" data-act="feed" data-i18n="act.feed">喂食</button>
   </div>
 
-  <!-- 喂食面板（第三十一轮：游戏食物 + 角色喜好；右侧，不遮挡人物） -->
+  <!-- 喂食面板（第三十一轮：游戏食物 + 角色喜好）
+       ★ 第四十五轮：表头改成"标题 / 搜索框 / 关闭"三个同层元素——
+       竖排面板里标题占一行、搜索框+关闭占一行；
+       横条模式（fp-h）里三个挤成一行，省下的高度全给食物卡片
+       （用户要求：横排食物只左右滑、竖排只上下滑；面板优先落人物上下的空白横带）。 -->
   <div id="food-panel" class="food-panel hidden">
     <div class="food-head">
       <div class="food-title">给<span id="food-char-name">她</span>喂食</div>
+      <input id="food-search" class="food-search" type="text" placeholder="搜索食物…" autocomplete="off">
       <button class="food-close" id="food-close">✕</button>
     </div>
-    <input id="food-search" class="food-search" type="text" placeholder="搜索食物…" autocomplete="off">
     <div class="food-grid" id="food-grid"></div>
     <div class="food-tip"><span data-i18n="food.tip">长按食物拖到嘴边喂她 · 好感图标见</span><span class="food-legend"><img src="assets/food/pref/love.png" alt=""><span data-i18n="food.love">超喜欢</span> <img src="assets/food/pref/like.png" alt=""><span data-i18n="food.like">喜欢</span> <img src="assets/food/pref/plain.png" alt=""><span data-i18n="food.plain">一般</span> <img src="assets/food/pref/hate.png" alt=""><span data-i18n="food.hate">讨厌</span></span></div>
   </div>
@@ -82,9 +98,12 @@
     </div>
   </div>
 
-  <!-- 角色 / 换装面板（多角色：上面选角色，下面选该角色的外观） -->
-  <div id="skin-panel" class="panel hidden">
-    <div class="panel-title" data-i18n="skin.title">选择角色与外观</div>
+  <!-- 角色 / 换装面板（多角色：上面选角色，下面选该角色的外观）
+       ★ 第四十五轮：标题改「选择角色与皮肤」（6 字不折行）；
+         面板放大（允许盖住人物，但绝不盖住按钮）；
+         皮肤项只留皮肤名，介绍文字（基础外观 / N 动作）全部删除。 -->
+  <div id="skin-panel" class="panel panel-skin hidden">
+    <div class="panel-title" data-i18n="skin.title">选择角色与皮肤</div>
     <div class="group-title" data-i18n="skin.chars">角色</div>
     <!-- ★ 角色多了以后必须能搜，否则 100+ 个角色没法翻 -->
     <input id="char-search" class="char-search" type="text" placeholder="搜索角色（中文名 / 英文名）" autocomplete="off">
@@ -103,6 +122,10 @@
 <script src="js/characters/generated.js"></script>
 <!-- ★ food-data.js：由 03_工具\生成食物数据.py 从用户的食物图鉴工具生成（91 种食物 + 每角色喜好） -->
 <script src="js/food-data.js"></script>
+<!-- ★ music-data.js：由 03_工具\生成音乐数据.py 从 02_原始素材\音乐_原始mp3 生成（13 首官方 BGM），不要手改 -->
+<script src="js/music-data.js"></script>
+<!-- ★ sound.js：四条音量（总/音乐/语音/音效），必须早于 voice.js / music.js -->
+<script src="js/sound.js"></script>
 <script src="js/config.js"></script>
 <script src="js/voice.js"></script>
 <script src="js/fx.js"></script>
@@ -111,6 +134,8 @@
 <script src="js/interact.js"></script>
 <script src="js/names-i18n.js"></script>
 <script src="js/i18n.js"></script>
+<!-- ★ music.js：背景音乐播放器（开关 / 换曲 / 播完随机下一首） -->
+<script src="js/music.js"></script>
 <script src="js/main.js"></script>
 <script src="js/update-config.js"></script>
 <script src="js/notice.js"></script>

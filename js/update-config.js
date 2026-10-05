@@ -15,7 +15,10 @@
 // 直连 GitHub 在部分网络环境不通，拉取失败会自动改走 MIRROR_PREFIX 镜像前缀
 // （同一文件换前缀重试一次，成功的线路会被记住，本次会话内继续用）。
 window.UPDATE_CONFIG = {
-  APP_VERSION: "2.9.3",    // 本地版本号（打包时随包更新；与 安卓 build.gradle 的 versionName 一致）
+  APP_VERSION: "1.2",      // 本地版本号（打包时随包更新；与 安卓 build.gradle 的 versionName、
+                           // 作者 GitHub 的 version.txt / 公告.txt 保持一致）
+                           // ★ 第四十七轮：三端版本号统一为 1.2（以前的 2.9.3 是开发过程中的旧号，
+                           //   正式对外公布从 1.2 起算）。
   VERSION_URL: "https://raw.githubusercontent.com/xhyxin/chubby-palm-pet/main/version.txt",
   UPDATE_ZIP_URL: "https://github.com/xhyxin/chubby-palm-pet/archive/refs/heads/main.zip",
   RELEASE_PAGE_URL: "https://github.com/xhyxin/chubby-palm-pet/releases/latest",
