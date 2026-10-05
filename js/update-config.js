@@ -15,11 +15,14 @@
 // 直连 GitHub 在部分网络环境不通，拉取失败会自动改走 MIRROR_PREFIX 镜像前缀
 // （同一文件换前缀重试一次，成功的线路会被记住，本次会话内继续用）。
 window.UPDATE_CONFIG = {
-  APP_VERSION: "2.9",    // 本地版本号（打包时随包更新；与 安卓 build.gradle 的 versionName 一致）
+  APP_VERSION: "2.9.3",    // 本地版本号（打包时随包更新；与 安卓 build.gradle 的 versionName 一致）
   VERSION_URL: "https://raw.githubusercontent.com/xhyxin/chubby-palm-pet/main/version.txt",
   UPDATE_ZIP_URL: "https://github.com/xhyxin/chubby-palm-pet/archive/refs/heads/main.zip",
   RELEASE_PAGE_URL: "https://github.com/xhyxin/chubby-palm-pet/releases/latest",
-  MIRROR_PREFIX: "https://gh-proxy.com/"
+  MIRROR_PREFIX: "https://gh-proxy.com/",
+  // ★ 增量同步（第四十三轮）：仓库文件树 API。点「更新」时拉一次清单和本地比对，
+  //   只下载有变化的文件（作者改个公告，客户端也只下几 KB，不用整包 2GB）。
+  TREE_API_URL: "https://api.github.com/repos/xhyxin/chubby-palm-pet/git/trees/main?recursive=1"
 };
 
 // ★ 共享网络小工具（第四十一轮）：带镜像回退的 fetch + 公告.txt 解析。
