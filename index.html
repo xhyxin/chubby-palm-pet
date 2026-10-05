@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>掌上坨坨</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="stage">
+  <canvas id="pet-canvas"></canvas>
+  <canvas id="debug-canvas"></canvas>
+  <div id="fx-layer"></div>
+
+  <!-- 头顶气泡：显示当前语音的官方台词 -->
+  <!-- 喂食后的喜好反馈复用这同一个对话框：吃完后文字换成小小的喜好图标 -->
+  <div id="bubble" class="bubble hidden"><span id="bubble-text"></span><img id="bubble-icon" class="hidden" src="" alt=""></div>
+
+  <!-- 加载层 -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <img id="loader-art" src="assets/art/phone-avatar.png" alt="桌宠">
+      <div class="loader-title" data-i18n="loader.title">小伙伴正在赶来…</div>
+      <div class="loader-bar"><i id="loader-fill"></i></div>
+      <div class="loader-tip" id="loader-tip" data-i18n="loader.tip">正在加载模型</div>
+    </div>
+  </div>
+
+  <!-- 左上：角色名（心情/饱食/亲密/开不开心 按用户要求已移除） -->
+  <div class="hud hud-stats">
+    <div class="stats-head">
+      <span class="name">斯琪娅</span>
+    </div>
+  </div>
+
+  <!-- 右上：功能按钮（按用户要求去掉按钮左侧图标；玩法按钮已按用户要求移除） -->
+  <div class="hud hud-tools">
+    <button class="tool" id="btn-actions" title="自主选择动作 / 表情 / 语音" data-i18n="btn.actions">动作</button>
+    <button class="tool" id="btn-skin" title="切换角色 / 换装" data-i18n="btn.chars">角色</button>
+    <button class="tool" id="btn-lang" title="切换语音语言">韩语（唯一）</button>
+    <button class="tool" id="btn-auto" title="自动待机互动" data-i18n="btn.auto">自动</button>
+    <button class="tool" id="btn-uilang" title="切换界面语言 / UI language">中文</button>
+    <button class="tool" id="btn-notice" title="公告" data-i18n="btn.notice">公告</button>
+    <button class="tool" id="btn-update" title="检查更新" data-i18n="btn.update">更新</button>
+  </div>
+
+  <!-- 底部：互动按钮（按用户要求去掉按钮左侧图标） -->
+  <div class="hud hud-actions">
+    <button class="act" data-act="pat" data-i18n="act.pat">摸头</button>
+    <button class="act" data-act="bonk" data-i18n="act.bonk">敲头</button>
+    <button class="act" data-act="pinch" data-i18n="act.pinch">捏脸</button>
+    <button class="act" data-act="belly" data-i18n="act.belly">摸肚子</button>
+    <button class="act" data-act="feed" data-i18n="act.feed">喂食</button>
+  </div>
+
+  <!-- 喂食面板（第三十一轮：游戏食物 + 角色喜好；右侧，不遮挡人物） -->
+  <div id="food-panel" class="food-panel hidden">
+    <div class="food-head">
+      <div class="food-title">给<span id="food-char-name">她</span>喂食</div>
+      <button class="food-close" id="food-close">✕</button>
+    </div>
+    <input id="food-search" class="food-search" type="text" placeholder="搜索食物…" autocomplete="off">
+    <div class="food-grid" id="food-grid"></div>
+    <div class="food-tip"><span data-i18n="food.tip">长按食物拖到嘴边喂她 · 好感图标见</span><span class="food-legend"><img src="assets/food/pref/love.png" alt=""><span data-i18n="food.love">超喜欢</span> <img src="assets/food/pref/like.png" alt=""><span data-i18n="food.like">喜欢</span> <img src="assets/food/pref/plain.png" alt=""><span data-i18n="food.plain">一般</span> <img src="assets/food/pref/hate.png" alt=""><span data-i18n="food.hate">讨厌</span></span></div>
+  </div>
+
+  <!-- 动作 / 表情 / 语音 面板 -->
+  <div id="action-panel" class="panel panel-wide hidden">
+    <div class="panel-head">
+      <div class="panel-title" data-i18n="panel.title">自主选择</div>
+      <button class="panel-x" id="action-close">✕</button>
+    </div>
+    <div class="tabs" id="action-tabs">
+      <button class="tab on" data-tab="anim" data-i18n="panel.tabAnim">动作表情</button>
+      <button class="tab" data-tab="voice" data-i18n="panel.tabVoice">语音图鉴</button>
+    </div>
+    <div class="panel-body">
+      <div id="tab-anim" class="tab-pane"></div>
+      <div id="tab-voice" class="tab-pane hidden"></div>
+    </div>
+  </div>
+
+  <!-- 角色 / 换装面板（多角色：上面选角色，下面选该角色的外观） -->
+  <div id="skin-panel" class="panel hidden">
+    <div class="panel-title" data-i18n="skin.title">选择角色与外观</div>
+    <div class="group-title" data-i18n="skin.chars">角色</div>
+    <!-- ★ 角色多了以后必须能搜，否则 100+ 个角色没法翻 -->
+    <input id="char-search" class="char-search" type="text" placeholder="搜索角色（中文名 / 英文名）" autocomplete="off">
+    <div class="skin-list char-list" id="char-list"></div>
+    <div class="group-title" id="skin-group-title">外观</div>
+    <div class="skin-list" id="skin-list"></div>
+  </div>
+</div>
+
+<!-- 角色数据必须先于 config.js 加载（config.js 里要引用 CHAR_xxx） -->
+<script src="lib/spine-webgl.js"></script>
+<script src="js/characters/公共.js"></script>
+<script src="js/characters/butter.js"></script>
+<script src="js/characters/skea.js"></script>
+<!-- ★ generated.js：由 03_工具\批量生成角色文件.js 从官方数据自动生成的其余角色，不要手改 -->
+<script src="js/characters/generated.js"></script>
+<!-- ★ food-data.js：由 03_工具\生成食物数据.py 从用户的食物图鉴工具生成（91 种食物 + 每角色喜好） -->
+<script src="js/food-data.js"></script>
+<script src="js/config.js"></script>
+<script src="js/voice.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/state.js"></script>
+<script src="js/pet.js"></script>
+<script src="js/interact.js"></script>
+<script src="js/names-i18n.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+<script src="js/update-config.js"></script>
+<script src="js/notice.js"></script>
+    <script src="js/update.js"></script>
+</body>
+</html>

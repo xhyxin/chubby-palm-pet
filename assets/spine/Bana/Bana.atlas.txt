@@ -1,0 +1,455 @@
+Bana.png
+size:2048,1024
+filter:Linear,Linear
+pma:true
+Ball_Idle_L
+bounds:1643,59,92,69
+offsets:230,36,392,269
+Ball_Idle_R
+bounds:1726,411,97,86
+offsets:38,27,392,269
+Ballline_L
+bounds:1459,458,36,24
+Ballline_R
+bounds:480,689,37,32
+Belly Fat
+bounds:148,290,117,92
+Blush
+bounds:455,181,96,86
+offsets:1,1,98,88
+Ear_L
+bounds:1081,104,93,94
+offsets:12,11,117,116
+rotate:180
+Ear_L_fire1
+bounds:1849,104,93,94
+offsets:12,11,117,116
+rotate:270
+Ear_L_fire2
+bounds:681,113,93,94
+offsets:12,11,117,116
+rotate:270
+Ear_R
+bounds:825,132,96,109
+offsets:16,7,130,136
+rotate:90
+Ear_R_fire1
+bounds:1753,136,96,109
+offsets:16,7,130,136
+rotate:180
+Ear_R_fire2
+bounds:1937,147,96,109
+offsets:16,7,130,136
+rotate:90
+EyeHighlight1_L_idle
+bounds:674,421,26,19
+offsets:1,1,28,21
+EyeHighlight1_R_idle
+bounds:431,397,25,19
+offsets:1,1,27,21
+EyeHighlight2_L_idle
+bounds:2,652,22,15
+offsets:1,1,24,17
+EyeHighlight2_R_idle
+bounds:365,707,19,14
+offsets:1,1,21,16
+Eye_ L_Close
+bounds:1808,11,84,27
+offsets:1,1,86,29
+Eye_ R_Close
+bounds:1510,446,66,26
+offsets:1,1,68,28
+Eye_L_Angry
+bounds:293,13,60,43
+offsets:1,1,62,45
+Eye_L_Kirakira
+bounds:435,34,53,70
+offsets:1,1,55,72
+Eye_L_Side
+bounds:84,64,73,72
+offsets:1,1,75,74
+Eye_L_Spitter
+bounds:934,127,73,92
+offsets:1,1,75,94
+rotate:90
+Eye_L_smile
+bounds:1895,309,87,30
+offsets:1,1,89,32
+Eye_R_Angry
+bounds:723,683,47,38
+offsets:1,1,49,40
+Eye_R_Kirakira
+bounds:1544,36,53,70
+offsets:1,1,55,72
+Eye_R_Side
+bounds:159,66,73,70
+offsets:1,1,75,72
+Eye_R_Spitter
+bounds:1268,140,74,91
+offsets:1,1,76,93
+rotate:90
+Eye_R_smile
+bounds:679,263,69,24
+offsets:1,1,71,26
+Eyebody_L_Blank
+bounds:1417,39,70,50
+offsets:1,1,72,52
+Eyebody_L_Sad
+bounds:1099,672,73,49
+offsets:1,1,75,51
+Eyebody_L_idle
+bounds:1975,509,71,44
+offsets:1,1,73,46
+Eyebody_R_Blank
+bounds:1759,663,58,47
+offsets:1,1,60,49
+rotate:90
+Eyebody_R_Sad
+bounds:94,17,61,45
+offsets:1,1,63,47
+Eyebody_R_idle
+bounds:1599,23,65,45
+offsets:1,1,67,47
+Eyebrow_L_Angry
+bounds:1894,25,69,46
+offsets:1,1,71,48
+Eyebrow_L_Blank
+bounds:2006,556,33,15
+offsets:1,1,35,17
+Eyebrow_L_Happy
+bounds:428,653,36,24
+offsets:1,1,38,26
+Eyebrow_L_Idle
+bounds:874,446,32,19
+offsets:1,1,34,21
+Eyebrow_L_Spitter
+bounds:1311,696,53,25
+offsets:1,1,55,27
+Eyebrow_R_Angry
+bounds:1724,355,55,41
+offsets:1,1,57,43
+rotate:90
+Eyebrow_R_Blank
+bounds:644,422,28,18
+offsets:1,1,30,20
+Eyebrow_R_Happy
+bounds:653,442,32,25
+offsets:1,1,34,27
+Eyebrow_R_Idle
+bounds:129,380,25,16
+offsets:1,1,27,18
+Eyebrow_R_Spitter
+bounds:71,704,46,17
+offsets:1,1,48,19
+EyelineUnder_L_idle
+bounds:1649,138,67,19
+EyelineUnder_R_idle
+bounds:1978,233,67,22
+Eyeline_L_Blank
+bounds:700,55,78,52
+offsets:1,1,80,54
+Eyeline_L_Sad
+bounds:850,19,81,34
+offsets:1,1,83,36
+Eyeline_R_Blank
+bounds:1965,20,60,51
+offsets:1,1,62,53
+Eyeline_R_Sad
+bounds:1142,8,62,37
+offsets:1,1,64,39
+Eyeline_idle_L
+bounds:1222,13,92,32
+Eyeline_idle_R
+bounds:1823,301,70,27
+Face dust2
+bounds:1092,442,37,20
+Face_AllShadow
+bounds:1105,412,309,221
+offsets:36,22,392,269
+rotate:90
+Face_Burn
+bounds:876,664,90,57
+offsets:135,76,392,269
+Face_Color
+bounds:885,412,309,221
+offsets:36,22,392,269
+rotate:90
+Face_shadow
+bounds:264,268,260,128
+offsets:83,113,392,269
+rotate:180
+Gloves L
+bounds:234,41,61,77
+Gloves L 2
+bounds:874,55,85,72
+Gloves R
+bounds:639,651,82,70
+Gloves R 2
+bounds:875,349,80,94
+rotate:180
+Mouth_Saaaaaddddddd
+bounds:366,27,67,51
+offsets:1,1,69,53
+Mouth_Touch
+bounds:2,668,68,53
+offsets:0,0,69,53
+Mouth_Touch2
+bounds:2,28,90,34
+Nut
+bounds:553,4,51,55
+offsets:6,1,57,66
+rotate:90
+Real Nut
+bounds:2,459,23,36
+offsets:1,1,25,38
+Smoke 1
+bounds:1569,489,188,232
+Smoke 2
+bounds:634,289,123,239
+rotate:90
+Smoke 3
+bounds:2,379,438,342
+offsets:15,16,535,413
+Smoke 4
+bounds:1206,216,133,171
+rotate:90
+Sweat1
+bounds:1558,417,20,27
+offsets:218,551,722,1042
+Sweat2
+bounds:431,624,22,27
+offsets:390,510,722,1042
+Sweat3
+bounds:411,443,33,19
+offsets:297,483,722,1042
+Towel 1 L 2
+bounds:1970,554,68,167
+Towel 1 R 2
+bounds:523,76,102,159
+rotate:270
+Towel 1L
+bounds:994,260,45,112
+rotate:90
+Towel 1R
+bounds:1318,3,80,67
+rotate:180
+Towel 2 L
+bounds:966,678,40,43
+offsets:0,1,40,44
+Towel 2R
+bounds:961,61,118,86
+Towel back
+bounds:216,6,75,41
+apron
+bounds:2,228,193,195
+rotate:180
+apron pocket 1
+bounds:196,166,133,108
+apron pocket 2
+bounds:1669,15,67,103
+rotate:270
+arm_L_lower1
+bounds:581,302,52,58
+offsets:1,0,53,58
+arm_L_lower2
+bounds:1321,46,82,95
+offsets:0,4,85,99
+rotate:270
+arm_L_upper
+bounds:767,67,98,114
+offsets:377,391,722,1042
+rotate:270
+arm_R_lower1
+bounds:780,22,66,71
+rotate:270
+arm_R_lower2
+bounds:1984,253,93,62
+offsets:0,0,94,62
+rotate:90
+arm_R_upper
+bounds:1710,72,110,100
+back hair L
+bounds:1326,473,241,248
+offsets:0,0,241,266
+rotate:180
+back hair R
+bounds:1759,492,210,229
+back hair spiky
+bounds:2027,573,19,75
+back head
+bounds:438,350,371,225
+rotate:90
+bag
+bounds:1625,157,135,117
+belt
+bounds:250,120,136,44
+offsets:1,1,138,46
+belt2
+bounds:1780,39,162,72
+elbow_L
+bounds:700,4,50,49
+offsets:1,1,52,51
+elbow_R
+bounds:159,12,54,52
+offsets:1,1,56,54
+face line
+bounds:665,412,309,221
+offsets:36,22,392,269
+rotate:90
+face line plus
+bounds:140,710,20,11
+offsets:80,110,392,269
+foot L
+bounds:385,678,109,43
+offsets:0,1,109,44
+foot R
+bounds:1210,34,106,43
+offsets:0,1,106,44
+frt hair 4 spiky
+bounds:385,400,62,41
+frt_hair 0
+bounds:1488,155,126,118
+frt_hair 1
+bounds:999,29,84,94
+rotate:270
+frt_hair 2A
+bounds:875,201,171,142
+offsets:0,0,172,142
+frt_hair 4
+bounds:1031,160,123,166
+rotate:90
+hair hl N1
+bounds:119,707,19,14
+offsets:1,1,21,16
+hair hl N2
+bounds:1325,516,32,19
+offsets:1,1,34,21
+hair hl N3
+bounds:1808,697,39,24
+offsets:1,1,41,26
+hair hl N4
+bounds:772,709,16,12
+offsets:1,1,18,14
+hammer 1
+bounds:299,58,78,137
+rotate:270
+hammer 2
+bounds:565,57,82,135
+offsets:0,1,82,136
+rotate:270
+hand L1
+bounds:490,18,56,61
+offsets:1,1,58,63
+rotate:90
+hand L2
+bounds:1361,120,85,77
+hand L3
+bounds:2,138,80,88
+hand L4
+bounds:112,138,91,88
+offsets:1,1,93,90
+hand R Grip
+bounds:1489,21,53,68
+offsets:493,391,722,1042
+hand R Grip_finger
+bounds:636,23,63,57
+offsets:370,400,722,1042
+hand R1
+bounds:1142,47,66,65
+hand R2
+bounds:437,106,73,83
+offsets:1,1,75,85
+rotate:90
+hand R3
+bounds:1448,91,94,62
+offsets:1,1,96,64
+hand R4
+bounds:1175,139,75,91
+offsets:1,1,77,93
+rotate:90
+hand R5
+bounds:1944,73,73,75
+offsets:1,1,75,77
+rotate:90
+hand R5 Finger
+bounds:2,69,73,67
+offsets:1,1,75,69
+mouth_3
+bounds:1971,689,13,32
+offsets:1,1,15,34
+mouth_angry
+bounds:1552,108,91,70
+offsets:0,16,91,86
+mouth_confused
+bounds:1526,702,34,19
+offsets:1,1,36,21
+mouth_eat
+bounds:2,433,48,24
+offsets:1,1,50,26
+mouth_eh
+bounds:1174,686,37,35
+offsets:1,1,39,37
+mouth_happy
+bounds:950,6,47,49
+offsets:1,1,49,51
+mouth_he
+bounds:1824,465,61,28
+offsets:1,1,63,30
+mouth_idle
+bounds:1759,645,39,16
+offsets:1,1,41,18
+mouth_kieheheheheheh
+bounds:1090,9,50,52
+offsets:1,1,52,54
+mouth_spitter
+bounds:522,140,59,39
+offsets:1,1,61,41
+mouth_yodare
+bounds:619,707,16,14
+offsets:1,1,18,16
+pants L
+bounds:1313,327,181,265
+rotate:270
+pants M
+bounds:954,285,156,250
+rotate:90
+pants R
+bounds:1772,324,181,274
+rotate:90
+pants up
+bounds:1191,362,117,50
+pony tail
+bounds:1379,198,144,152
+offsets:5,0,149,152
+rotate:90
+side hair L
+bounds:1724,190,161,260
+rotate:90
+side hair L  spiky
+bounds:1320,668,39,26
+side hair R
+bounds:704,185,102,170
+rotate:90
+side hair R spiky
+bounds:884,639,33,26
+offsets:0,0,34,26
+stick
+bounds:1697,2,50,81
+rotate:270
+tear_L
+bounds:1103,647,32,23
+offsets:384,549,722,1042
+tear_R
+bounds:957,395,27,20
+offsets:234,555,722,1042
+tongs
+bounds:1580,275,142,212
+top
+bounds:1210,78,113,60
+up body
+bounds:330,165,104,124
+rotate:90
+weapon
+bounds:523,155,182,180
+offsets:0,1,183,181
+rotate:270
