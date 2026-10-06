@@ -217,7 +217,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Alice_Touch1"
+      "Alice_Touch1",
+      "Alice_Touch1_1",
+      "Alice_Touch1_2"
      ]
     },
     "pat": {
@@ -238,7 +240,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Alice_Touch2"
+      "Alice_Touch2",
+      "Alice_Touch2_1",
+      "Alice_Touch2_2"
      ]
     },
     "bonk": {
@@ -598,7 +602,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Allet_Touch1"
+      "Allet_Touch1",
+      "Allet_Touch1_1",
+      "Allet_Touch1_2"
      ]
     },
     "pat": {
@@ -619,7 +625,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Allet_Touch2"
+      "Allet_Touch2",
+      "Allet_Touch2_1",
+      "Allet_Touch2_2"
      ]
     },
     "bonk": {
@@ -1004,7 +1012,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Amelia_Touch1"
+      "Amelia_Touch1",
+      "Amelia_Touch1_1",
+      "Amelia_Touch1_2"
      ]
     },
     "pat": {
@@ -1025,7 +1035,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Amelia_Touch2"
+      "Amelia_Touch2",
+      "Amelia_Touch2_1",
+      "Amelia_Touch2_2"
      ]
     },
     "bonk": {
@@ -1395,7 +1407,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "AmeliaR41_Touch1"
+      "AmeliaR41_Touch1",
+      "AmeliaR41_Touch1_1",
+      "AmeliaR41_Touch1_2"
      ]
     },
     "pat": {
@@ -1416,7 +1430,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "AmeliaR41_Touch2"
+      "AmeliaR41_Touch2",
+      "AmeliaR41_Touch2_1",
+      "AmeliaR41_Touch2_2"
      ]
     },
     "bonk": {
@@ -1809,7 +1825,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Aragnia_Touch1"
+      "Aragnia_Touch1",
+      "Aragnia_Touch1_1",
+      "Aragnia_Touch1_2"
      ]
     },
     "pat": {
@@ -1830,7 +1848,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Aragnia_Touch2"
+      "Aragnia_Touch2",
+      "Aragnia_Touch2_1",
+      "Aragnia_Touch2_2"
      ]
     },
     "bonk": {
@@ -2222,7 +2242,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Arco_Touch1"
+      "Arco_Touch1",
+      "Arco_Touch1_1",
+      "Arco_Touch1_2"
      ]
     },
     "pat": {
@@ -2243,7 +2265,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Arco_Touch2"
+      "Arco_Touch2",
+      "Arco_Touch2_1",
+      "Arco_Touch2_2"
      ]
     },
     "bonk": {
@@ -2637,7 +2661,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Arnet_Touch1"
+      "Arnet_Touch1",
+      "Arnet_Touch1_1",
+      "Arnet_Touch1_2"
      ]
     },
     "pat": {
@@ -2658,7 +2684,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Arnet_Touch2"
+      "Arnet_Touch2",
+      "Arnet_Touch2_1",
+      "Arnet_Touch2_2"
      ]
     },
     "bonk": {
@@ -3048,7 +3076,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Asana_Touch1"
+      "Asana_Touch1",
+      "Asana_Touch1_1",
+      "Asana_Touch1_2"
      ]
     },
     "pat": {
@@ -3069,7 +3099,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Asana_Touch2"
+      "Asana_Touch2",
+      "Asana_Touch2_1",
+      "Asana_Touch2_2"
      ]
     },
     "bonk": {
@@ -3461,7 +3493,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Ashur_Touch1"
+      "Ashur_Touch1",
+      "Ashur_Touch1_1",
+      "Ashur_Touch1_2"
      ]
     },
     "pat": {
@@ -3482,7 +3516,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Ashur_Touch2"
+      "Ashur_Touch2",
+      "Ashur_Touch2_1",
+      "Ashur_Touch2_2"
      ]
     },
     "bonk": {
@@ -3860,7 +3896,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "AshurMagi_Touch1"
+      "AshurMagi_Touch1",
+      "AshurMagi_Touch1_1",
+      "AshurMagi_Touch1_2"
      ]
     },
     "pat": {
@@ -3881,7 +3919,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "AshurMagi_Touch2"
+      "AshurMagi_Touch2",
+      "AshurMagi_Touch2_1",
+      "AshurMagi_Touch2_2"
      ]
     },
     "bonk": {
@@ -4270,7 +4310,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Aurora_Touch1"
+      "Aurora_Touch1",
+      "Aurora_Touch1_1",
+      "Aurora_Touch1_2"
      ]
     },
     "pat": {
@@ -4291,7 +4333,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Aurora_Touch2"
+      "Aurora_Touch2",
+      "Aurora_Touch2_1",
+      "Aurora_Touch2_2"
      ]
     },
     "bonk": {
@@ -4702,7 +4746,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Aya_Touch1"
+      "Aya_Touch1",
+      "Aya_Touch1_1",
+      "Aya_Touch1_2"
      ]
     },
     "pat": {
@@ -4723,7 +4769,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Aya_Touch2"
+      "Aya_Touch2",
+      "Aya_Touch2_1",
+      "Aya_Touch2_2"
      ]
     },
     "bonk": {
@@ -5111,7 +5159,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Ayla_Touch1"
+      "Ayla_Touch1",
+      "Ayla_Touch1_1",
+      "Ayla_Touch1_2"
      ]
     },
     "pat": {
@@ -5132,7 +5182,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Ayla_Touch2"
+      "Ayla_Touch2",
+      "Ayla_Touch2_1",
+      "Ayla_Touch2_2"
      ]
     },
     "bonk": {
@@ -5509,7 +5561,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Bana_Touch1"
+      "Bana_Touch1",
+      "Bana_Touch1_1",
+      "Bana_Touch1_2"
      ]
     },
     "pat": {
@@ -5530,7 +5584,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Bana_Touch2"
+      "Bana_Touch2",
+      "Bana_Touch2_1",
+      "Bana_Touch2_2"
      ]
     },
     "bonk": {
@@ -5885,7 +5941,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Barie_Touch1"
+      "Barie_Touch1",
+      "Barie_Touch1_1",
+      "Barie_Touch1_2"
      ]
     },
     "pat": {
@@ -5906,7 +5964,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Barie_Touch2"
+      "Barie_Touch2",
+      "Barie_Touch2_1",
+      "Barie_Touch2_2"
      ]
     },
     "bonk": {
@@ -6290,7 +6350,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Barong_Touch1"
+      "Barong_Touch1",
+      "Barong_Touch1_1",
+      "Barong_Touch1_2"
      ]
     },
     "pat": {
@@ -6311,7 +6373,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Barong_Touch2"
+      "Barong_Touch2",
+      "Barong_Touch2_1",
+      "Barong_Touch2_2"
      ]
     },
     "bonk": {
@@ -6678,7 +6742,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Belita_Touch1"
+      "Belita_Touch1",
+      "Belita_Touch1_1",
+      "Belita_Touch1_2"
      ]
     },
     "pat": {
@@ -6699,7 +6765,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Belita_Touch2"
+      "Belita_Touch2",
+      "Belita_Touch2_1",
+      "Belita_Touch2_2"
      ]
     },
     "bonk": {
@@ -7065,7 +7133,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Beni_Touch1"
+      "Beni_Touch1",
+      "Beni_Touch1_1",
+      "Beni_Touch1_2"
      ]
     },
     "pat": {
@@ -7086,7 +7156,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Beni_Touch2"
+      "Beni_Touch2",
+      "Beni_Touch2_1",
+      "Beni_Touch2_2"
      ]
     },
     "bonk": {
@@ -7462,7 +7534,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "BeniBeni_Touch1"
+      "BeniBeni_Touch1",
+      "BeniBeni_Touch1_1",
+      "BeniBeni_Touch1_2"
      ]
     },
     "pat": {
@@ -7483,7 +7557,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "BeniBeni_Touch2"
+      "BeniBeni_Touch2",
+      "BeniBeni_Touch2_1",
+      "BeniBeni_Touch2_2"
      ]
     },
     "bonk": {
@@ -7856,7 +7932,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "BigWood_Touch1"
+      "BigWood_Touch1",
+      "BigWood_Touch1_1",
+      "BigWood_Touch1_2"
      ]
     },
     "pat": {
@@ -7877,7 +7955,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "BigWood_Touch2"
+      "BigWood_Touch2",
+      "BigWood_Touch2_1",
+      "BigWood_Touch2_2"
      ]
     },
     "bonk": {
@@ -8249,7 +8329,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Blanchet_Touch1"
+      "Blanchet_Touch1",
+      "Blanchet_Touch1_1",
+      "Blanchet_Touch1_2"
      ]
     },
     "pat": {
@@ -8270,7 +8352,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Blanchet_Touch2"
+      "Blanchet_Touch2",
+      "Blanchet_Touch2_1",
+      "Blanchet_Touch2_2"
      ]
     },
     "bonk": {
@@ -8651,7 +8735,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Canna_Touch1"
+      "Canna_Touch1",
+      "Canna_Touch1_1",
+      "Canna_Touch1_2"
      ]
     },
     "pat": {
@@ -8672,7 +8758,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Canna_Touch2"
+      "Canna_Touch2",
+      "Canna_Touch2_1",
+      "Canna_Touch2_2"
      ]
     },
     "bonk": {
@@ -9027,7 +9115,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Canta_Touch1"
+      "Canta_Touch1",
+      "Canta_Touch1_1",
+      "Canta_Touch1_2"
      ]
     },
     "pat": {
@@ -9048,7 +9138,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Canta_Touch2"
+      "Canta_Touch2",
+      "Canta_Touch2_1",
+      "Canta_Touch2_2"
      ]
     },
     "bonk": {
@@ -9400,7 +9492,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Carren_Touch1"
+      "Carren_Touch1",
+      "Carren_Touch1_1",
+      "Carren_Touch1_2"
      ]
     },
     "pat": {
@@ -9421,7 +9515,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Carren_Touch2"
+      "Carren_Touch2",
+      "Carren_Touch2_1",
+      "Carren_Touch2_2"
      ]
     },
     "bonk": {
@@ -9810,7 +9906,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Chloe_Touch1"
+      "Chloe_Touch1",
+      "Chloe_Touch1_1",
+      "Chloe_Touch1_2"
      ]
     },
     "pat": {
@@ -9831,7 +9929,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Chloe_Touch2"
+      "Chloe_Touch2",
+      "Chloe_Touch2_1",
+      "Chloe_Touch2_2"
      ]
     },
     "bonk": {
@@ -10192,7 +10292,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Chloe_SebaOff_Touch1"
+      "Chloe_SebaOff_Touch1",
+      "Chloe_SebaOff_Touch1_1",
+      "Chloe_SebaOff_Touch1_2"
      ]
     },
     "pat": {
@@ -10213,7 +10315,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Chloe_SebaOff_Touch2"
+      "Chloe_SebaOff_Touch2",
+      "Chloe_SebaOff_Touch2_1",
+      "Chloe_SebaOff_Touch2_2"
      ]
     },
     "bonk": {
@@ -10539,7 +10643,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Chopi_Touch1"
+      "Chopi_Touch1",
+      "Chopi_Touch1_1",
+      "Chopi_Touch1_2"
      ]
     },
     "pat": {
@@ -10560,7 +10666,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Chopi_Touch2"
+      "Chopi_Touch2",
+      "Chopi_Touch2_1",
+      "Chopi_Touch2_2"
      ]
     },
     "bonk": {
@@ -10902,7 +11010,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Cuee_Touch1"
+      "Cuee_Touch1",
+      "Cuee_Touch1_1",
+      "Cuee_Touch1_2"
      ]
     },
     "pat": {
@@ -10923,7 +11033,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Cuee_Touch2"
+      "Cuee_Touch2",
+      "Cuee_Touch2_1",
+      "Cuee_Touch2_2"
      ]
     },
     "bonk": {
@@ -11298,7 +11410,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Daya_Touch1"
+      "Daya_Touch1",
+      "Daya_Touch1_1",
+      "Daya_Touch1_2"
      ]
     },
     "pat": {
@@ -11319,7 +11433,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Daya_Touch2"
+      "Daya_Touch2",
+      "Daya_Touch2_1",
+      "Daya_Touch2_2"
      ]
     },
     "bonk": {
@@ -11693,7 +11809,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "DayaPureShine_Touch1"
+      "DayaPureShine_Touch1",
+      "DayaPureShine_Touch1_1",
+      "DayaPureShine_Touch1_2"
      ]
     },
     "pat": {
@@ -11714,7 +11832,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "DayaPureShine_Touch2"
+      "DayaPureShine_Touch2",
+      "DayaPureShine_Touch2_1",
+      "DayaPureShine_Touch2_2"
      ]
     },
     "bonk": {
@@ -12095,7 +12215,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Delia_Touch1"
+      "Delia_Touch1",
+      "Delia_Touch1_1",
+      "Delia_Touch1_2"
      ]
     },
     "pat": {
@@ -12116,7 +12238,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Delia_Touch2"
+      "Delia_Touch2",
+      "Delia_Touch2_1",
+      "Delia_Touch2_2"
      ]
     },
     "bonk": {
@@ -12507,7 +12631,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Diana_Touch1"
+      "Diana_Touch1",
+      "Diana_Touch1_1",
+      "Diana_Touch1_2"
      ]
     },
     "pat": {
@@ -12528,7 +12654,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Diana_Touch2"
+      "Diana_Touch2",
+      "Diana_Touch2_1",
+      "Diana_Touch2_2"
      ]
     },
     "bonk": {
@@ -12938,7 +13066,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "DianaYester_Touch1"
+      "DianaYester_Touch1",
+      "DianaYester_Touch1_1",
+      "DianaYester_Touch1_2"
      ]
     },
     "pat": {
@@ -12959,7 +13089,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "DianaYester_Touch2"
+      "DianaYester_Touch2",
+      "DianaYester_Touch2_1",
+      "DianaYester_Touch2_2"
      ]
     },
     "bonk": {
@@ -13366,7 +13498,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Ed_Touch1"
+      "Ed_Touch1",
+      "Ed_Touch1_1",
+      "Ed_Touch1_2"
      ]
     },
     "pat": {
@@ -13387,7 +13521,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Ed_Touch2"
+      "Ed_Touch2",
+      "Ed_Touch2_1",
+      "Ed_Touch2_2"
      ]
     },
     "bonk": {
@@ -13756,7 +13892,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "EdRehab_Touch1"
+      "EdRehab_Touch1",
+      "EdRehab_Touch1_1",
+      "EdRehab_Touch1_2"
      ]
     },
     "pat": {
@@ -13777,7 +13915,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "EdRehab_Touch2"
+      "EdRehab_Touch2",
+      "EdRehab_Touch2_1",
+      "EdRehab_Touch2_2"
      ]
     },
     "bonk": {
@@ -14177,7 +14317,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Eisia_Touch1"
+      "Eisia_Touch1",
+      "Eisia_Touch1_1",
+      "Eisia_Touch1_2"
      ]
     },
     "pat": {
@@ -14198,7 +14340,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Eisia_Touch2"
+      "Eisia_Touch2",
+      "Eisia_Touch2_1",
+      "Eisia_Touch2_2"
      ]
     },
     "bonk": {
@@ -14595,7 +14739,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Elena_Touch1"
+      "Elena_Touch1",
+      "Elena_Touch1_1",
+      "Elena_Touch1_2"
      ]
     },
     "pat": {
@@ -14616,7 +14762,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Elena_Touch2"
+      "Elena_Touch2",
+      "Elena_Touch2_1",
+      "Elena_Touch2_2"
      ]
     },
     "bonk": {
@@ -15005,7 +15153,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Epica_Touch1"
+      "Epica_Touch1",
+      "Epica_Touch1_1",
+      "Epica_Touch1_2"
      ]
     },
     "pat": {
@@ -15026,7 +15176,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Epica_Touch2"
+      "Epica_Touch2",
+      "Epica_Touch2_1",
+      "Epica_Touch2_2"
      ]
     },
     "bonk": {
@@ -15437,7 +15589,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Erpin_Touch1"
+      "Erpin_Touch1",
+      "Erpin_Touch1_1",
+      "Erpin_Touch1_2"
      ]
     },
     "pat": {
@@ -15458,7 +15612,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Erpin_Touch2"
+      "Erpin_Touch2",
+      "Erpin_Touch2_1",
+      "Erpin_Touch2_2"
      ]
     },
     "bonk": {
@@ -15906,7 +16062,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "ErpinRoyale_Touch1"
+      "ErpinRoyale_Touch1",
+      "ErpinRoyale_Touch1_1",
+      "ErpinRoyale_Touch1_2"
      ]
     },
     "pat": {
@@ -15927,7 +16085,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "ErpinRoyale_Touch2"
+      "ErpinRoyale_Touch2",
+      "ErpinRoyale_Touch2_1",
+      "ErpinRoyale_Touch2_2"
      ]
     },
     "bonk": {
@@ -16351,7 +16511,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Espi_Touch1"
+      "Espi_Touch1",
+      "Espi_Touch1_1",
+      "Espi_Touch1_2"
      ]
     },
     "pat": {
@@ -16372,7 +16534,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Espi_Touch2"
+      "Espi_Touch2",
+      "Espi_Touch2_1",
+      "Espi_Touch2_2"
      ]
     },
     "bonk": {
@@ -16725,7 +16889,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Festa_Touch1"
+      "Festa_Touch1",
+      "Festa_Touch1_1",
+      "Festa_Touch1_2"
      ]
     },
     "pat": {
@@ -16746,7 +16912,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Festa_Touch2"
+      "Festa_Touch2",
+      "Festa_Touch2_1",
+      "Festa_Touch2_2"
      ]
     },
     "bonk": {
@@ -17127,7 +17295,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Fricle_Touch1"
+      "Fricle_Touch1",
+      "Fricle_Touch1_1",
+      "Fricle_Touch1_2"
      ]
     },
     "pat": {
@@ -17148,7 +17318,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Fricle_Touch2"
+      "Fricle_Touch2",
+      "Fricle_Touch2_1",
+      "Fricle_Touch2_2"
      ]
     },
     "bonk": {
@@ -17529,7 +17701,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Gabia_Touch1"
+      "Gabia_Touch1",
+      "Gabia_Touch1_1",
+      "Gabia_Touch1_2"
      ]
     },
     "pat": {
@@ -17550,7 +17724,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Gabia_Touch2"
+      "Gabia_Touch2",
+      "Gabia_Touch2_1",
+      "Gabia_Touch2_2"
      ]
     },
     "bonk": {
@@ -17924,7 +18100,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Guin_Touch1"
+      "Guin_Touch1",
+      "Guin_Touch1_1",
+      "Guin_Touch1_2"
      ]
     },
     "pat": {
@@ -17945,7 +18123,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Guin_Touch2"
+      "Guin_Touch2",
+      "Guin_Touch2_1",
+      "Guin_Touch2_2"
      ]
     },
     "bonk": {
@@ -18330,7 +18510,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Haley_Touch1"
+      "Haley_Touch1",
+      "Haley_Touch1_1",
+      "Haley_Touch1_2"
      ]
     },
     "pat": {
@@ -18351,7 +18533,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Haley_Touch2"
+      "Haley_Touch2",
+      "Haley_Touch2_1",
+      "Haley_Touch2_2"
      ]
     },
     "bonk": {
@@ -18726,7 +18910,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "HaleySane_Touch1"
+      "HaleySane_Touch1",
+      "HaleySane_Touch1_1",
+      "HaleySane_Touch1_2"
      ]
     },
     "pat": {
@@ -18747,7 +18933,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "HaleySane_Touch2"
+      "HaleySane_Touch2",
+      "HaleySane_Touch2_1",
+      "HaleySane_Touch2_2"
      ]
     },
     "bonk": {
@@ -19131,7 +19319,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Heidi_Touch1"
+      "Heidi_Touch1",
+      "Heidi_Touch1_1",
+      "Heidi_Touch1_2"
      ]
     },
     "pat": {
@@ -19152,7 +19342,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Heidi_Touch2"
+      "Heidi_Touch2",
+      "Heidi_Touch2_1",
+      "Heidi_Touch2_2"
      ]
     },
     "bonk": {
@@ -19545,7 +19737,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Hilde_Touch1"
+      "Hilde_Touch1",
+      "Hilde_Touch1_1",
+      "Hilde_Touch1_2"
      ]
     },
     "pat": {
@@ -19566,7 +19760,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Hilde_Touch2"
+      "Hilde_Touch2",
+      "Hilde_Touch2_1",
+      "Hilde_Touch2_2"
      ]
     },
     "bonk": {
@@ -19923,7 +20119,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Ifrit_Touch1"
+      "Ifrit_Touch1",
+      "Ifrit_Touch1_1",
+      "Ifrit_Touch1_2"
      ]
     },
     "pat": {
@@ -19944,7 +20142,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Ifrit_Touch2"
+      "Ifrit_Touch2",
+      "Ifrit_Touch2_1",
+      "Ifrit_Touch2_2"
      ]
     },
     "bonk": {
@@ -20302,7 +20502,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Inkle_Touch1"
+      "Inkle_Touch1",
+      "Inkle_Touch1_1",
+      "Inkle_Touch1_2"
      ]
     },
     "pat": {
@@ -20323,7 +20525,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Inkle_Touch2"
+      "Inkle_Touch2",
+      "Inkle_Touch2_1",
+      "Inkle_Touch2_2"
      ]
     },
     "bonk": {
@@ -20708,7 +20912,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Jade_Touch1"
+      "Jade_Touch1",
+      "Jade_Touch1_1",
+      "Jade_Touch1_2"
      ]
     },
     "pat": {
@@ -20729,7 +20935,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Jade_Touch2"
+      "Jade_Touch2",
+      "Jade_Touch2_1",
+      "Jade_Touch2_2"
      ]
     },
     "bonk": {
@@ -21120,7 +21328,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Joanne_Touch1"
+      "Joanne_Touch1",
+      "Joanne_Touch1_1",
+      "Joanne_Touch1_2"
      ]
     },
     "pat": {
@@ -21141,7 +21351,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Joanne_Touch2"
+      "Joanne_Touch2",
+      "Joanne_Touch2_1",
+      "Joanne_Touch2_2"
      ]
     },
     "bonk": {
@@ -21538,7 +21750,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Joanne_White_Touch1"
+      "Joanne_White_Touch1",
+      "Joanne_White_Touch1_1",
+      "Joanne_White_Touch1_2"
      ]
     },
     "pat": {
@@ -21559,7 +21773,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Joanne_White_Touch2"
+      "Joanne_White_Touch2",
+      "Joanne_White_Touch2_1",
+      "Joanne_White_Touch2_2"
      ]
     },
     "bonk": {
@@ -21916,7 +22132,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Jubee_Touch1"
+      "Jubee_Touch1",
+      "Jubee_Touch1_1",
+      "Jubee_Touch1_2"
      ]
     },
     "pat": {
@@ -21937,7 +22155,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Jubee_Touch2"
+      "Jubee_Touch2",
+      "Jubee_Touch2_1",
+      "Jubee_Touch2_2"
      ]
     },
     "bonk": {
@@ -22286,7 +22506,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Kathy_Touch1"
+      "Kathy_Touch1",
+      "Kathy_Touch1_1",
+      "Kathy_Touch1_2"
      ]
     },
     "pat": {
@@ -22307,7 +22529,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Kathy_Touch2"
+      "Kathy_Touch2",
+      "Kathy_Touch2_1",
+      "Kathy_Touch2_2"
      ]
     },
     "bonk": {
@@ -22702,7 +22926,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Kidian_Touch1"
+      "Kidian_Touch1",
+      "Kidian_Touch1_1",
+      "Kidian_Touch1_2"
      ]
     },
     "pat": {
@@ -22723,7 +22949,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Kidian_Touch2"
+      "Kidian_Touch2",
+      "Kidian_Touch2_1",
+      "Kidian_Touch2_2"
      ]
     },
     "bonk": {
@@ -23092,7 +23320,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Kishya_Touch1"
+      "Kishya_Touch1",
+      "Kishya_Touch1_1",
+      "Kishya_Touch1_2"
      ]
     },
     "pat": {
@@ -23113,7 +23343,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Kishya_Touch2"
+      "Kishya_Touch2",
+      "Kishya_Touch2_1",
+      "Kishya_Touch2_2"
      ]
     },
     "bonk": {
@@ -23513,7 +23745,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Kommy_Touch1"
+      "Kommy_Touch1",
+      "Kommy_Touch1_1",
+      "Kommy_Touch1_2"
      ]
     },
     "pat": {
@@ -23534,7 +23768,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Kommy_Touch2"
+      "Kommy_Touch2",
+      "Kommy_Touch2_1",
+      "Kommy_Touch2_2"
      ]
     },
     "bonk": {
@@ -23924,7 +24160,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "KommySwim_Touch1"
+      "KommySwim_Touch1",
+      "KommySwim_Touch1_1",
+      "KommySwim_Touch1_2"
      ]
     },
     "pat": {
@@ -23945,7 +24183,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "KommySwim_Touch2"
+      "KommySwim_Touch2",
+      "KommySwim_Touch2_1",
+      "KommySwim_Touch2_2"
      ]
     },
     "bonk": {
@@ -24333,7 +24573,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Kyarot_Touch1"
+      "Kyarot_Touch1",
+      "Kyarot_Touch1_1",
+      "Kyarot_Touch1_2"
      ]
     },
     "pat": {
@@ -24354,7 +24596,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Kyarot_Touch2"
+      "Kyarot_Touch2",
+      "Kyarot_Touch2_1",
+      "Kyarot_Touch2_2"
      ]
     },
     "bonk": {
@@ -24738,7 +24982,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Laika_Touch1"
+      "Laika_Touch1",
+      "Laika_Touch1_1",
+      "Laika_Touch1_2"
      ]
     },
     "pat": {
@@ -24759,7 +25005,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Laika_Touch2"
+      "Laika_Touch2",
+      "Laika_Touch2_1",
+      "Laika_Touch2_2"
      ]
     },
     "bonk": {
@@ -25115,7 +25363,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Lazy_Touch1"
+      "Lazy_Touch1",
+      "Lazy_Touch1_1",
+      "Lazy_Touch1_2"
      ]
     },
     "pat": {
@@ -25136,7 +25386,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Lazy_Touch2"
+      "Lazy_Touch2",
+      "Lazy_Touch2_1",
+      "Lazy_Touch2_2"
      ]
     },
     "bonk": {
@@ -25510,7 +25762,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Leets_Touch1"
+      "Leets_Touch1",
+      "Leets_Touch1_1",
+      "Leets_Touch1_2"
      ]
     },
     "pat": {
@@ -25531,7 +25785,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Leets_Touch2"
+      "Leets_Touch2",
+      "Leets_Touch2_1",
+      "Leets_Touch2_2"
      ]
     },
     "bonk": {
@@ -25888,7 +26144,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Lethe_Touch1"
+      "Lethe_Touch1",
+      "Lethe_Touch1_1",
+      "Lethe_Touch1_2"
      ]
     },
     "pat": {
@@ -25909,7 +26167,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Lethe_Touch2"
+      "Lethe_Touch2",
+      "Lethe_Touch2_1",
+      "Lethe_Touch2_2"
      ]
     },
     "bonk": {
@@ -26272,7 +26532,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Levi_Touch1"
+      "Levi_Touch1",
+      "Levi_Touch1_1",
+      "Levi_Touch1_2"
      ]
     },
     "pat": {
@@ -26293,7 +26555,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Levi_Touch2"
+      "Levi_Touch2",
+      "Levi_Touch2_1",
+      "Levi_Touch2_2"
      ]
     },
     "bonk": {
@@ -26649,7 +26913,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "LeviGraduate_Touch1"
+      "LeviGraduate_Touch1",
+      "LeviGraduate_Touch1_1",
+      "LeviGraduate_Touch1_2"
      ]
     },
     "pat": {
@@ -26670,7 +26936,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "LeviGraduate_Touch2"
+      "LeviGraduate_Touch2",
+      "LeviGraduate_Touch2_1",
+      "LeviGraduate_Touch2_2"
      ]
     },
     "bonk": {
@@ -27072,7 +27340,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Lion_Touch1"
+      "Lion_Touch1",
+      "Lion_Touch1_1",
+      "Lion_Touch1_2"
      ]
     },
     "pat": {
@@ -27093,7 +27363,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Lion_Touch2"
+      "Lion_Touch2",
+      "Lion_Touch2_1",
+      "Lion_Touch2_2"
      ]
     },
     "bonk": {
@@ -27454,7 +27726,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "MaestroMK2_Touch1"
+      "MaestroMK2_Touch1",
+      "MaestroMK2_Touch1_1",
+      "MaestroMK2_Touch1_2"
      ]
     },
     "pat": {
@@ -27475,7 +27749,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "MaestroMK2_Touch2"
+      "MaestroMK2_Touch2",
+      "MaestroMK2_Touch2_1",
+      "MaestroMK2_Touch2_2"
      ]
     },
     "bonk": {
@@ -27831,7 +28107,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Mago_Touch1"
+      "Mago_Touch1",
+      "Mago_Touch1_1",
+      "Mago_Touch1_2"
      ]
     },
     "pat": {
@@ -27852,7 +28130,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Mago_Touch2"
+      "Mago_Touch2",
+      "Mago_Touch2_1",
+      "Mago_Touch2_2"
      ]
     },
     "bonk": {
@@ -28200,7 +28480,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Maison_Touch1"
+      "Maison_Touch1",
+      "Maison_Touch1_1",
+      "Maison_Touch1_2"
      ]
     },
     "pat": {
@@ -28221,7 +28503,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Maison_Touch2"
+      "Maison_Touch2",
+      "Maison_Touch2_1",
+      "Maison_Touch2_2"
      ]
     },
     "bonk": {
@@ -28582,7 +28866,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Makasha_Touch1"
+      "Makasha_Touch1",
+      "Makasha_Touch1_1",
+      "Makasha_Touch1_2"
      ]
     },
     "pat": {
@@ -28603,7 +28889,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Makasha_Touch2"
+      "Makasha_Touch2",
+      "Makasha_Touch2_1",
+      "Makasha_Touch2_2"
      ]
     },
     "bonk": {
@@ -28979,7 +29267,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Marie_Touch1"
+      "Marie_Touch1",
+      "Marie_Touch1_1",
+      "Marie_Touch1_2"
      ]
     },
     "pat": {
@@ -29000,7 +29290,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Marie_Touch2"
+      "Marie_Touch2",
+      "Marie_Touch2_1",
+      "Marie_Touch2_2"
      ]
     },
     "bonk": {
@@ -29354,7 +29646,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Mayo_Touch1"
+      "Mayo_Touch1",
+      "Mayo_Touch1_1",
+      "Mayo_Touch1_2"
      ]
     },
     "pat": {
@@ -29375,7 +29669,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Mayo_Touch2"
+      "Mayo_Touch2",
+      "Mayo_Touch2_1",
+      "Mayo_Touch2_2"
      ]
     },
     "bonk": {
@@ -29743,7 +30039,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "MayoCool_Touch1"
+      "MayoCool_Touch1",
+      "MayoCool_Touch1_1",
+      "MayoCool_Touch1_2"
      ]
     },
     "pat": {
@@ -29764,7 +30062,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "MayoCool_Touch2"
+      "MayoCool_Touch2",
+      "MayoCool_Touch2_1",
+      "MayoCool_Touch2_2"
      ]
     },
     "bonk": {
@@ -30144,7 +30444,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Meluna_Touch1"
+      "Meluna_Touch1",
+      "Meluna_Touch1_1",
+      "Meluna_Touch1_2"
      ]
     },
     "pat": {
@@ -30165,7 +30467,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Meluna_Touch2"
+      "Meluna_Touch2",
+      "Meluna_Touch2_1",
+      "Meluna_Touch2_2"
      ]
     },
     "bonk": {
@@ -30530,7 +30834,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Miro_Touch1"
+      "Miro_Touch1",
+      "Miro_Touch1_1",
+      "Miro_Touch1_2"
      ]
     },
     "pat": {
@@ -30551,7 +30857,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Miro_Touch2"
+      "Miro_Touch2",
+      "Miro_Touch2_1",
+      "Miro_Touch2_2"
      ]
     },
     "bonk": {
@@ -30940,7 +31248,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Momo_Touch1"
+      "Momo_Touch1",
+      "Momo_Touch1_1",
+      "Momo_Touch1_2"
      ]
     },
     "pat": {
@@ -30961,7 +31271,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Momo_Touch2"
+      "Momo_Touch2",
+      "Momo_Touch2_1",
+      "Momo_Touch2_2"
      ]
     },
     "bonk": {
@@ -31348,7 +31660,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Mute_Touch1"
+      "Mute_Touch1",
+      "Mute_Touch1_1",
+      "Mute_Touch1_2"
      ]
     },
     "pat": {
@@ -31369,7 +31683,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Mute_Touch2"
+      "Mute_Touch2",
+      "Mute_Touch2_1",
+      "Mute_Touch2_2"
      ]
     },
     "bonk": {
@@ -31750,7 +32066,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Mynx_Touch1"
+      "Mynx_Touch1",
+      "Mynx_Touch1_1",
+      "Mynx_Touch1_2"
      ]
     },
     "pat": {
@@ -31771,7 +32089,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Mynx_Touch2"
+      "Mynx_Touch2",
+      "Mynx_Touch2_1",
+      "Mynx_Touch2_2"
      ]
     },
     "bonk": {
@@ -32156,7 +32476,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Naia_Touch1"
+      "Naia_Touch1",
+      "Naia_Touch1_1",
+      "Naia_Touch1_2"
      ]
     },
     "pat": {
@@ -32177,7 +32499,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Naia_Touch2"
+      "Naia_Touch2",
+      "Naia_Touch2_1",
+      "Naia_Touch2_2"
      ]
     },
     "bonk": {
@@ -32564,7 +32888,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Ner_Touch1"
+      "Ner_Touch1",
+      "Ner_Touch1_1",
+      "Ner_Touch1_2"
      ]
     },
     "pat": {
@@ -32585,7 +32911,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Ner_Touch2"
+      "Ner_Touch2",
+      "Ner_Touch2_1",
+      "Ner_Touch2_2"
      ]
     },
     "bonk": {
@@ -32975,7 +33303,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "NerRage_Touch1"
+      "NerRage_Touch1",
+      "NerRage_Touch1_1",
+      "NerRage_Touch1_2"
      ]
     },
     "pat": {
@@ -32996,7 +33326,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "NerRage_Touch2"
+      "NerRage_Touch2",
+      "NerRage_Touch2_1",
+      "NerRage_Touch2_2"
      ]
     },
     "bonk": {
@@ -33395,7 +33727,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Neti_Touch1"
+      "Neti_Touch1",
+      "Neti_Touch1_1",
+      "Neti_Touch1_2"
      ]
     },
     "pat": {
@@ -33416,7 +33750,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Neti_Touch2"
+      "Neti_Touch2",
+      "Neti_Touch2_1",
+      "Neti_Touch2_2"
      ]
     },
     "bonk": {
@@ -33787,7 +34123,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Nicole_Touch1"
+      "Nicole_Touch1",
+      "Nicole_Touch1_1",
+      "Nicole_Touch1_2"
      ]
     },
     "pat": {
@@ -33808,7 +34146,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Nicole_Touch2"
+      "Nicole_Touch2",
+      "Nicole_Touch2_1",
+      "Nicole_Touch2_2"
      ]
     },
     "bonk": {
@@ -34215,7 +34555,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Opal_Touch1"
+      "Opal_Touch1",
+      "Opal_Touch1_1",
+      "Opal_Touch1_2"
      ]
     },
     "pat": {
@@ -34236,7 +34578,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Opal_Touch2"
+      "Opal_Touch2",
+      "Opal_Touch2_1",
+      "Opal_Touch2_2"
      ]
     },
     "bonk": {
@@ -34617,7 +34961,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Orr_Touch1"
+      "Orr_Touch1",
+      "Orr_Touch1_1",
+      "Orr_Touch1_2"
      ]
     },
     "pat": {
@@ -34638,7 +34984,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Orr_Touch2"
+      "Orr_Touch2",
+      "Orr_Touch2_1",
+      "Orr_Touch2_2"
      ]
     },
     "bonk": {
@@ -35001,7 +35349,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Patula_Touch1"
+      "Patula_Touch1",
+      "Patula_Touch1_1",
+      "Patula_Touch1_2"
      ]
     },
     "pat": {
@@ -35022,7 +35372,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Patula_Touch2"
+      "Patula_Touch2",
+      "Patula_Touch2_1",
+      "Patula_Touch2_2"
      ]
     },
     "bonk": {
@@ -35396,7 +35748,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Picora_Touch1"
+      "Picora_Touch1",
+      "Picora_Touch1_1",
+      "Picora_Touch1_2"
      ]
     },
     "pat": {
@@ -35417,7 +35771,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Picora_Touch2"
+      "Picora_Touch2",
+      "Picora_Touch2_1",
+      "Picora_Touch2_2"
      ]
     },
     "bonk": {
@@ -35808,7 +36164,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Pira_Touch1"
+      "Pira_Touch1",
+      "Pira_Touch1_1",
+      "Pira_Touch1_2"
      ]
     },
     "pat": {
@@ -35829,7 +36187,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Pira_Touch2"
+      "Pira_Touch2",
+      "Pira_Touch2_1",
+      "Pira_Touch2_2"
      ]
     },
     "bonk": {
@@ -36213,7 +36573,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Polan_Touch1"
+      "Polan_Touch1",
+      "Polan_Touch1_1",
+      "Polan_Touch1_2"
      ]
     },
     "pat": {
@@ -36234,7 +36596,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Polan_Touch2"
+      "Polan_Touch2",
+      "Polan_Touch2_1",
+      "Polan_Touch2_2"
      ]
     },
     "bonk": {
@@ -36633,7 +36997,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Posher_Touch1"
+      "Posher_Touch1",
+      "Posher_Touch1_1",
+      "Posher_Touch1_2"
      ]
     },
     "pat": {
@@ -36654,7 +37020,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Posher_Touch2"
+      "Posher_Touch2",
+      "Posher_Touch2_1",
+      "Posher_Touch2_2"
      ]
     },
     "bonk": {
@@ -37033,7 +37401,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Ran_Touch1"
+      "Ran_Touch1",
+      "Ran_Touch1_1",
+      "Ran_Touch1_2"
      ]
     },
     "pat": {
@@ -37054,7 +37424,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Ran_Touch2"
+      "Ran_Touch2",
+      "Ran_Touch2_1",
+      "Ran_Touch2_2"
      ]
     },
     "bonk": {
@@ -37437,7 +37809,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Renewa_Touch1"
+      "Renewa_Touch1",
+      "Renewa_Touch1_1",
+      "Renewa_Touch1_2"
      ]
     },
     "pat": {
@@ -37458,7 +37832,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Renewa_Touch2"
+      "Renewa_Touch2",
+      "Renewa_Touch2_1",
+      "Renewa_Touch2_2"
      ]
     },
     "bonk": {
@@ -37827,7 +38203,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "RenewaAwaken_Touch1"
+      "RenewaAwaken_Touch1",
+      "RenewaAwaken_Touch1_1",
+      "RenewaAwaken_Touch1_2"
      ]
     },
     "pat": {
@@ -37848,7 +38226,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "RenewaAwaken_Touch2"
+      "RenewaAwaken_Touch2",
+      "RenewaAwaken_Touch2_1",
+      "RenewaAwaken_Touch2_2"
      ]
     },
     "bonk": {
@@ -38228,7 +38608,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Ricota_Touch1"
+      "Ricota_Touch1",
+      "Ricota_Touch1_1",
+      "Ricota_Touch1_2"
      ]
     },
     "pat": {
@@ -38249,7 +38631,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Ricota_Touch2"
+      "Ricota_Touch2",
+      "Ricota_Touch2_1",
+      "Ricota_Touch2_2"
      ]
     },
     "bonk": {
@@ -38631,7 +39015,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Rim_Touch1"
+      "Rim_Touch1",
+      "Rim_Touch1_1",
+      "Rim_Touch1_2"
      ]
     },
     "pat": {
@@ -38652,7 +39038,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Rim_Touch2"
+      "Rim_Touch2",
+      "Rim_Touch2_1",
+      "Rim_Touch2_2"
      ]
     },
     "bonk": {
@@ -39039,7 +39427,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "RimChaos_Touch1"
+      "RimChaos_Touch1",
+      "RimChaos_Touch1_1",
+      "RimChaos_Touch1_2"
      ]
     },
     "pat": {
@@ -39060,7 +39450,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "RimChaos_Touch2"
+      "RimChaos_Touch2",
+      "RimChaos_Touch2_1",
+      "RimChaos_Touch2_2"
      ]
     },
     "bonk": {
@@ -39455,7 +39847,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Risty_Touch1"
+      "Risty_Touch1",
+      "Risty_Touch1_1",
+      "Risty_Touch1_2"
      ]
     },
     "pat": {
@@ -39476,7 +39870,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Risty_Touch2"
+      "Risty_Touch2",
+      "Risty_Touch2_1",
+      "Risty_Touch2_2"
      ]
     },
     "bonk": {
@@ -39855,7 +40251,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Rohne_Touch1"
+      "Rohne_Touch1",
+      "Rohne_Touch1_1",
+      "Rohne_Touch1_2"
      ]
     },
     "pat": {
@@ -39876,7 +40274,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Rohne_Touch2"
+      "Rohne_Touch2",
+      "Rohne_Touch2_1",
+      "Rohne_Touch2_2"
      ]
     },
     "bonk": {
@@ -40253,7 +40653,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "RohneMayor_Touch1"
+      "RohneMayor_Touch1",
+      "RohneMayor_Touch1_1",
+      "RohneMayor_Touch1_2"
      ]
     },
     "pat": {
@@ -40274,7 +40676,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "RohneMayor_Touch2"
+      "RohneMayor_Touch2",
+      "RohneMayor_Touch2_1",
+      "RohneMayor_Touch2_2"
      ]
     },
     "bonk": {
@@ -40676,7 +41080,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Rollett_Touch1"
+      "Rollett_Touch1",
+      "Rollett_Touch1_1",
+      "Rollett_Touch1_2"
      ]
     },
     "pat": {
@@ -40697,7 +41103,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Rollett_Touch2"
+      "Rollett_Touch2",
+      "Rollett_Touch2_1",
+      "Rollett_Touch2_2"
      ]
     },
     "bonk": {
@@ -41070,7 +41478,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Ronnie_Touch1"
+      "Ronnie_Touch1",
+      "Ronnie_Touch1_1",
+      "Ronnie_Touch1_2"
      ]
     },
     "pat": {
@@ -41091,7 +41501,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Ronnie_Touch2"
+      "Ronnie_Touch2",
+      "Ronnie_Touch2_1",
+      "Ronnie_Touch2_2"
      ]
     },
     "bonk": {
@@ -41475,7 +41887,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Rude_Touch1"
+      "Rude_Touch1",
+      "Rude_Touch1_1",
+      "Rude_Touch1_2"
      ]
     },
     "pat": {
@@ -41496,7 +41910,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Rude_Touch2"
+      "Rude_Touch2",
+      "Rude_Touch2_1",
+      "Rude_Touch2_2"
      ]
     },
     "bonk": {
@@ -41867,7 +42283,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Rufo_Touch1"
+      "Rufo_Touch1",
+      "Rufo_Touch1_1",
+      "Rufo_Touch1_2"
      ]
     },
     "pat": {
@@ -41888,7 +42306,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Rufo_Touch2"
+      "Rufo_Touch2",
+      "Rufo_Touch2_1",
+      "Rufo_Touch2_2"
      ]
     },
     "bonk": {
@@ -42233,7 +42653,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Sari_Touch1"
+      "Sari_Touch1",
+      "Sari_Touch1_1",
+      "Sari_Touch1_2"
      ]
     },
     "pat": {
@@ -42254,7 +42676,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Sari_Touch2"
+      "Sari_Touch2",
+      "Sari_Touch2_1",
+      "Sari_Touch2_2"
      ]
     },
     "bonk": {
@@ -42614,7 +43038,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Scizor_Touch1"
+      "Scizor_Touch1",
+      "Scizor_Touch1_1",
+      "Scizor_Touch1_2"
      ]
     },
     "pat": {
@@ -42635,7 +43061,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Scizor_Touch2"
+      "Scizor_Touch2",
+      "Scizor_Touch2_1",
+      "Scizor_Touch2_2"
      ]
     },
     "bonk": {
@@ -43026,7 +43454,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Selline_Touch1"
+      "Selline_Touch1",
+      "Selline_Touch1_1",
+      "Selline_Touch1_2"
      ]
     },
     "pat": {
@@ -43047,7 +43477,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Selline_Touch2"
+      "Selline_Touch2",
+      "Selline_Touch2_1",
+      "Selline_Touch2_2"
      ]
     },
     "bonk": {
@@ -43430,7 +43862,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Shady_Touch1"
+      "Shady_Touch1",
+      "Shady_Touch1_1",
+      "Shady_Touch1_2"
      ]
     },
     "pat": {
@@ -43451,7 +43885,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Shady_Touch2"
+      "Shady_Touch2",
+      "Shady_Touch2_1",
+      "Shady_Touch2_2"
      ]
     },
     "bonk": {
@@ -43825,7 +44261,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "ShadyTwisted_Touch1"
+      "ShadyTwisted_Touch1",
+      "ShadyTwisted_Touch1_1",
+      "ShadyTwisted_Touch1_2"
      ]
     },
     "pat": {
@@ -43846,7 +44284,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "ShadyTwisted_Touch2"
+      "ShadyTwisted_Touch2",
+      "ShadyTwisted_Touch2_1",
+      "ShadyTwisted_Touch2_2"
      ]
     },
     "bonk": {
@@ -44259,7 +44699,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Shasha_Touch1"
+      "Shasha_Touch1",
+      "Shasha_Touch1_1",
+      "Shasha_Touch1_2"
      ]
     },
     "pat": {
@@ -44280,7 +44722,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Shasha_Touch2"
+      "Shasha_Touch2",
+      "Shasha_Touch2_1",
+      "Shasha_Touch2_2"
      ]
     },
     "bonk": {
@@ -44684,7 +45128,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Sherum_Touch1"
+      "Sherum_Touch1",
+      "Sherum_Touch1_1",
+      "Sherum_Touch1_2"
      ]
     },
     "pat": {
@@ -44705,7 +45151,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Sherum_Touch2"
+      "Sherum_Touch2",
+      "Sherum_Touch2_1",
+      "Sherum_Touch2_2"
      ]
     },
     "bonk": {
@@ -45107,7 +45555,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Shoupan_Touch1"
+      "Shoupan_Touch1",
+      "Shoupan_Touch1_1",
+      "Shoupan_Touch1_2"
      ]
     },
     "pat": {
@@ -45128,7 +45578,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Shoupan_Touch2"
+      "Shoupan_Touch2",
+      "Shoupan_Touch2_1",
+      "Shoupan_Touch2_2"
      ]
     },
     "bonk": {
@@ -45520,7 +45972,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Silphir_Touch1"
+      "Silphir_Touch1",
+      "Silphir_Touch1_1",
+      "Silphir_Touch1_2"
      ]
     },
     "pat": {
@@ -45541,7 +45995,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Silphir_Touch2"
+      "Silphir_Touch2",
+      "Silphir_Touch2_1",
+      "Silphir_Touch2_2"
      ]
     },
     "bonk": {
@@ -45916,7 +46372,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Silvia_Touch1"
+      "Silvia_Touch1",
+      "Silvia_Touch1_1",
+      "Silvia_Touch1_2"
      ]
     },
     "pat": {
@@ -45937,7 +46395,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Silvia_Touch2"
+      "Silvia_Touch2",
+      "Silvia_Touch2_1",
+      "Silvia_Touch2_2"
      ]
     },
     "bonk": {
@@ -46331,7 +46791,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Sist_Touch1"
+      "Sist_Touch1",
+      "Sist_Touch1_1",
+      "Sist_Touch1_2"
      ]
     },
     "pat": {
@@ -46352,7 +46814,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Sist_Touch2"
+      "Sist_Touch2",
+      "Sist_Touch2_1",
+      "Sist_Touch2_2"
      ]
     },
     "bonk": {
@@ -46741,7 +47205,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Snorky_Touch1"
+      "Snorky_Touch1",
+      "Snorky_Touch1_1",
+      "Snorky_Touch1_2"
      ]
     },
     "pat": {
@@ -46762,7 +47228,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Snorky_Touch2"
+      "Snorky_Touch2",
+      "Snorky_Touch2_1",
+      "Snorky_Touch2_2"
      ]
     },
     "bonk": {
@@ -47142,7 +47610,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Sparrot_Touch1"
+      "Sparrot_Touch1",
+      "Sparrot_Touch1_1",
+      "Sparrot_Touch1_2"
      ]
     },
     "pat": {
@@ -47163,7 +47633,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Sparrot_Touch2"
+      "Sparrot_Touch2",
+      "Sparrot_Touch2_1",
+      "Sparrot_Touch2_2"
      ]
     },
     "bonk": {
@@ -47542,7 +48014,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Speaki_Touch1"
+      "Speaki_Touch1",
+      "Speaki_Touch1_1",
+      "Speaki_Touch1_2"
      ]
     },
     "pat": {
@@ -47563,7 +48037,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Speaki_Touch2"
+      "Speaki_Touch2",
+      "Speaki_Touch2_1",
+      "Speaki_Touch2_2"
      ]
     },
     "bonk": {
@@ -47942,7 +48418,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "SpeakiMaid_Touch1"
+      "SpeakiMaid_Touch1",
+      "SpeakiMaid_Touch1_1",
+      "SpeakiMaid_Touch1_2"
      ]
     },
     "pat": {
@@ -47963,7 +48441,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "SpeakiMaid_Touch2"
+      "SpeakiMaid_Touch2",
+      "SpeakiMaid_Touch2_1",
+      "SpeakiMaid_Touch2_2"
      ]
     },
     "bonk": {
@@ -48354,7 +48834,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Suro_Touch1"
+      "Suro_Touch1",
+      "Suro_Touch1_1",
+      "Suro_Touch1_2"
      ]
     },
     "pat": {
@@ -48375,7 +48857,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Suro_Touch2"
+      "Suro_Touch2",
+      "Suro_Touch2_1",
+      "Suro_Touch2_2"
      ]
     },
     "bonk": {
@@ -48768,7 +49252,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Sylla_Touch1"
+      "Sylla_Touch1",
+      "Sylla_Touch1_1",
+      "Sylla_Touch1_2"
      ]
     },
     "pat": {
@@ -48789,7 +49275,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Sylla_Touch2"
+      "Sylla_Touch2",
+      "Sylla_Touch2_1",
+      "Sylla_Touch2_2"
      ]
     },
     "bonk": {
@@ -49147,7 +49635,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Taida_Touch1"
+      "Taida_Touch1",
+      "Taida_Touch1_1",
+      "Taida_Touch1_2"
      ]
     },
     "pat": {
@@ -49168,7 +49658,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Taida_Touch2"
+      "Taida_Touch2",
+      "Taida_Touch2_1",
+      "Taida_Touch2_2"
      ]
     },
     "bonk": {
@@ -49560,7 +50052,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Tig_Touch1"
+      "Tig_Touch1",
+      "Tig_Touch1_1",
+      "Tig_Touch1_2"
      ]
     },
     "pat": {
@@ -49581,7 +50075,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Tig_Touch2"
+      "Tig_Touch2",
+      "Tig_Touch2_1",
+      "Tig_Touch2_2"
      ]
     },
     "bonk": {
@@ -49978,7 +50474,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "TigHero_Touch1"
+      "TigHero_Touch1",
+      "TigHero_Touch1_1",
+      "TigHero_Touch1_2"
      ]
     },
     "pat": {
@@ -49999,7 +50497,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "TigHero_Touch2"
+      "TigHero_Touch2",
+      "TigHero_Touch2_1",
+      "TigHero_Touch2_2"
      ]
     },
     "bonk": {
@@ -50424,7 +50924,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Ui_Touch1"
+      "Ui_Touch1",
+      "Ui_Touch1_1",
+      "Ui_Touch1_2"
      ]
     },
     "pat": {
@@ -50445,7 +50947,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Ui_Touch2"
+      "Ui_Touch2",
+      "Ui_Touch2_1",
+      "Ui_Touch2_2"
      ]
     },
     "bonk": {
@@ -50824,7 +51328,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Uros_Touch1"
+      "Uros_Touch1",
+      "Uros_Touch1_1",
+      "Uros_Touch1_2"
      ]
     },
     "pat": {
@@ -50845,7 +51351,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Uros_Touch2"
+      "Uros_Touch2",
+      "Uros_Touch2_1",
+      "Uros_Touch2_2"
      ]
     },
     "bonk": {
@@ -51252,7 +51760,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Vela_Touch1"
+      "Vela_Touch1",
+      "Vela_Touch1_1",
+      "Vela_Touch1_2"
      ]
     },
     "pat": {
@@ -51273,7 +51783,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Vela_Touch2"
+      "Vela_Touch2",
+      "Vela_Touch2_1",
+      "Vela_Touch2_2"
      ]
     },
     "bonk": {
@@ -51651,7 +52163,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Velvet_Touch1"
+      "Velvet_Touch1",
+      "Velvet_Touch1_1",
+      "Velvet_Touch1_2"
      ]
     },
     "pat": {
@@ -51672,7 +52186,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Velvet_Touch2"
+      "Velvet_Touch2",
+      "Velvet_Touch2_1",
+      "Velvet_Touch2_2"
      ]
     },
     "bonk": {
@@ -52032,7 +52548,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Veroo_Touch1"
+      "Veroo_Touch1",
+      "Veroo_Touch1_1",
+      "Veroo_Touch1_2"
      ]
     },
     "pat": {
@@ -52053,7 +52571,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Veroo_Touch2"
+      "Veroo_Touch2",
+      "Veroo_Touch2_1",
+      "Veroo_Touch2_2"
      ]
     },
     "bonk": {
@@ -52457,7 +52977,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Vivi_Touch1"
+      "Vivi_Touch1",
+      "Vivi_Touch1_1",
+      "Vivi_Touch1_2"
      ]
     },
     "pat": {
@@ -52478,7 +53000,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Vivi_Touch2"
+      "Vivi_Touch2",
+      "Vivi_Touch2_1",
+      "Vivi_Touch2_2"
      ]
     },
     "bonk": {
@@ -52892,7 +53416,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "xXionx_Touch1"
+      "xXionx_Touch1",
+      "xXionx_Touch1_1",
+      "xXionx_Touch1_2"
      ]
     },
     "pat": {
@@ -52913,7 +53439,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "xXionx_Touch2"
+      "xXionx_Touch2",
+      "xXionx_Touch2_1",
+      "xXionx_Touch2_2"
      ]
     },
     "bonk": {
@@ -53305,7 +53833,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Yomi_Touch1"
+      "Yomi_Touch1",
+      "Yomi_Touch1_1",
+      "Yomi_Touch1_2"
      ]
     },
     "pat": {
@@ -53326,7 +53856,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Yomi_Touch2"
+      "Yomi_Touch2",
+      "Yomi_Touch2_1",
+      "Yomi_Touch2_2"
      ]
     },
     "bonk": {
@@ -53700,7 +54232,9 @@ const CHAR_GENERATED = [
       "volume": 0.65
      },
      "voice": [
-      "Yumimi_Touch1"
+      "Yumimi_Touch1",
+      "Yumimi_Touch1_1",
+      "Yumimi_Touch1_2"
      ]
     },
     "pat": {
@@ -53721,7 +54255,9 @@ const CHAR_GENERATED = [
      },
      "fxIntervalMs": 900,
      "voice": [
-      "Yumimi_Touch2"
+      "Yumimi_Touch2",
+      "Yumimi_Touch2_1",
+      "Yumimi_Touch2_2"
      ]
     },
     "bonk": {

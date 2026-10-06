@@ -644,8 +644,12 @@
   /* ---------------------------------------------------------- 主循环 */
   let lastTs = 0;
   let saveAcc = 0;
+  let rafId = 0;
+  let running = false;
+  let booted = false;      // 首次启动完成前不许提前起循环（模型还没加载好）
 
   function loop(ts) {
+    if (!running) { rafId = 0; return; }
     const dt = lastTs ? Math.min(0.05, (ts - lastTs) / 1000) : 0;
     lastTs = ts;
 
@@ -658,8 +662,47 @@
     saveAcc += dt;
     if (saveAcc > 5) { saveAcc = 0; PetState.save(); refreshStats(); }
 
-    requestAnimationFrame(loop);
+    rafId = requestAnimationFrame(loop);
   }
+
+  /* ★ 第五十轮：切后台真的停下来，切回前台只重启**一次**。
+     以前切回时如果直接再调一次 requestAnimationFrame(loop)，而旧循环因浏览器
+     恢复可见又活过来，就会变成**两个循环并行**（每帧跑两遍、越切越多），
+     这正是"切一会儿后台再切回来就变卡"的典型原因。
+     用 running + rafId 保证任何时刻只有一个循环在跑。 */
+  function startLoop() {
+    if (running) return;
+    running = true;
+    lastTs = 0;                 // 丢掉后台那段的时间差，避免恢复瞬间算出巨大的 dt
+    rafId = requestAnimationFrame(loop);
+  }
+  function stopLoop() {
+    running = false;
+    if (rafId) { cancelAnimationFrame(rafId); rafId = 0; }
+  }
+
+  /* ★ 第五十轮：页面切到后台 → 停主循环 + 停背景音乐 + 停语音 + 收掉进行中的互动；
+     切回前台 → 重启循环 + 接着放音乐。
+     （互动模块自己也在 visibilitychange 里收尾，这里是"运行/音频"这一层。） */
+  function onAppHidden() {
+    stopLoop();
+    if (window.Music) Music.suspend();
+    Voice.stop();
+    Interact.abort();
+  }
+  function onAppVisible() {
+    if (booted) startLoop();          // 还没启动完就先别起循环（Pet 还没 ready）
+    if (window.Music) Music.resume();
+  }
+  document.addEventListener('visibilitychange', () => {
+    try { if (document.hidden) onAppHidden(); else onAppVisible(); }
+    catch (e) { /* 启动过程中切后台等边缘情况：忽略，别让监听抛错 */ }
+  });
+  /* ★ 安卓壳的 onPause / onResume 会直接调这两个钩子 —— 双保险：
+     个别 ROM 的 WebView 不派发 visibilitychange，光靠事件会漏。
+     两个方向都是幂等的，和事件重复触发也安全。 */
+  window.__petBackground = function () { try { onAppHidden(); } catch (e) { /* 忽略 */ } };
+  window.__petForeground = function () { try { onAppVisible(); } catch (e) { /* 忽略 */ } };
 
   /* ---------------------------------------------------------- 启动 */
   async function boot() {
@@ -727,7 +770,8 @@
       showBubble((r && r.text) || I18N.t('bubble.back'));
     }, 350);
 
-    requestAnimationFrame(loop);
+    booted = true;
+    startLoop();          // ★ 第五十轮：主循环由 startLoop/stopLoop 管（切后台要停）
   }
 
   /* ---------------------------------------------------------- ★ 面板避让人物

@@ -125,8 +125,29 @@ window.Music = (function () {
     if (v === on) return on;
     on = v;
     saveOn();
-    if (on) playRandom(); else pause();
+    if (on) playRandom(); else { pause(); wasPlaying = false; }
     return on;
+  }
+
+  /* ★ 第五十轮：切到后台要**主动停播**。
+     用户反馈"切回后台还在响" —— <audio> 不受页面可见性影响，不管就会一直放，
+     既费电，又会在切回时和模型/语音抢解码（表现为"切回来卡一下"）。
+     这里记住"后台之前是不是正在播"，切回前台再接着放，不丢状态。
+     ★ 必须幂等：安卓壳（onPause）和网页端（visibilitychange）会各通知一次。
+       只在"确实正在播"时才置 wasPlaying，重复调用就不会把标记冲掉。 */
+  var wasPlaying = false;
+  function suspend() {
+    if (audio && audio.src && !audio.paused) wasPlaying = true;
+    if (audio) { try { audio.pause(); } catch (e) { /* 忽略 */ } }
+  }
+  function resume() {
+    if (!wasPlaying) return;
+    wasPlaying = false;
+    if (!on) return;
+    var a = ensure();
+    a.volume = musicVol();
+    var p = a.play();
+    if (p && p.catch) p.catch(function () { /* 还是不行就算了 */ });
   }
 
   /** 选一首播（换音乐）；如果当前是关，选歌就顺手打开 */
@@ -153,6 +174,10 @@ window.Music = (function () {
     isOn: function () { return on; },
     setOn: setOn,
     toggle: function () { return setOn(!on); },
+    /** ★ 切后台 = 暂停并记住位置；切回前台 = 接着放（用户要求"后台别响"） */
+    suspend: suspend,
+    resume: resume,
+    isPaused: function () { return !audio || audio.paused; },
     playRandom: playRandom,
     select: select,
     next: playRandom,

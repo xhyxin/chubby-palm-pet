@@ -590,7 +590,11 @@ const Interact = (() => {
     window.addEventListener('pointercancel', onUp);
     window.addEventListener('blur', () => { if (mode) { if (mode === 'belly') endBelly(); else finish(); } });
     document.addEventListener('visibilitychange', () => {
-      if (document.hidden && mode) { if (mode === 'belly') endBelly(); else finish(); }
+      /* ★ 第五十轮：切后台要**彻底收干净**，不只是结束动作 ——
+         敲头语音尾巴（smashEndTimer）、摸肚子序列、摸头音效这些定时器
+         如果留着，会在后台继续排期、切回时集中触发（一顿一顿的卡）。
+         abort() 幂等，随便调。 */
+      if (document.hidden) abort();
     });
   }
 

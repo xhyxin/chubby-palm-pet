@@ -232,18 +232,18 @@
     var map = {};
     for (var i = 0; i < ps.changed.length; i++) map[ps.changed[i].path] = ps.changed[i].sha;
     mergeExtra(map);
-    if (needsReload(ps.changed)) {
-      toast(I18N.t('upd.syncDone', { ver: ps.ver }), 8000);
-      setTimeout(function () { location.href = location.pathname + '?v=' + Date.now(); }, 600);
-    } else {
-      // 只改了图片/音频等资源：不刷新，直接生效
-      toast(I18N.t('upd.syncDone', { ver: ps.ver }), 6000);
-    }
+    // ★ 第五十二轮：只要同步下来东西就**整页重载**。
+    //   以前"只改了图片/音频就不刷新、直接生效"其实不成立 —— 已经加载进内存的旧资源
+    //   不会重新请求，用户会以为没更新。本地资源重载很快，刷新最确定。
+    toast(I18N.t('upd.syncDone', { ver: ps.ver }), 8000);
+    setTimeout(function () { location.href = location.pathname + '?v=' + Date.now(); }, 700);
     return true;
   }
 
-  /* ---------------- 点「更新」 ---------------- */
-  function checkUpdate() {
+  /* ---------------- 点「更新」 ----------------
+     force=true 时忽略"公告没变就算最新"的短路，强制比对一次
+     （长按「更新」按钮触发；作者只推了网页文件、忘了改公告时用） */
+  function checkUpdate(force) {
     var btn = document.getElementById('btn-update');
     if (!cfg.VERSION_URL) {
       toast(I18N.t('upd.notConfigured', { v: cfg.APP_VERSION }), 5000);
@@ -262,11 +262,12 @@
         var ver = notice.version || '';
         var date = notice.date || '';
         var record = getRecord();
-        if (record && record.ver === ver && record.date === date) {
+        if (!force && record && record.ver === ver && record.date === date) {
           // ★ 只有一致才叫"已是最新"（版本号谁高谁低无所谓，GitHub 是唯一标准）
           toast(I18N.t('upd.latest', { v: ver }), 5000);
           return;
         }
+        if (force) toast(I18N.t('upd.forceSync'), 4000);
         startSync(ver, date);
       })
       .catch(function (err) {
@@ -297,6 +298,25 @@
     });
   }
 
+  /* 热更新自诊断（第五十二轮）：把当前热更状态吐出来，方便排障；探针也读它。
+     channel：incremental=能增量热更（最好）/ zip=只能整包热更 / none=壳太旧不能热更 */
+  window.__petUpdateDiag = function () {
+    var rec = getRecord();
+    var ex = getExtra();
+    var n = 0;
+    for (var k in ex) if (Object.prototype.hasOwnProperty.call(ex, k)) n++;
+    var hasSync = !!(window.AndroidBridge && typeof window.AndroidBridge.syncFiles === 'function');
+    var hasZip = (plat === 'pc' && !!(window.chrome && window.chrome.webview)) ||
+                 !!(window.AndroidBridge && typeof window.AndroidBridge.performUpdate === 'function');
+    return {
+      platform: plat,
+      appVersion: cfg.APP_VERSION,
+      syncedTo: rec ? (rec.ver + ' / ' + rec.date) : '',
+      overlaid: n,
+      channel: hasSync ? 'incremental' : (hasZip ? 'zip' : 'none')
+    };
+  };
+
   function init() {
     bindHostReply();
     // 安卓壳的回信入口常驻安装（syncFiles / performUpdate 都走它）
@@ -320,7 +340,23 @@
     var btn = document.getElementById('btn-update');
     if (btn) {
       btn.title = I18N.t('btn.title.update', { v: cfg.APP_VERSION });
-      btn.addEventListener('click', checkUpdate);
+      // ★ 第五十二轮：单击 = 普通检查；长按 0.7 秒 = 强制同步
+      //   （忽略"公告没变就算最新"的短路 —— 只推了网页文件、忘了改公告时用）
+      var wantForce = false;
+      var holdTimer = null;
+      btn.addEventListener('pointerdown', function () {
+        clearTimeout(holdTimer);
+        holdTimer = setTimeout(function () { wantForce = true; }, 700);
+      });
+      ['pointerup', 'pointerleave', 'pointercancel'].forEach(function (ev) {
+        btn.addEventListener(ev, function () { clearTimeout(holdTimer); });
+      });
+      // ★ 注意：这里不能直接把 checkUpdate 当监听器（Event 会被当成 force 参数）
+      btn.addEventListener('click', function () {
+        var f = wantForce;
+        wantForce = false;
+        checkUpdate(f);
+      });
     }
     try {
       window.addEventListener('uilang-changed', function () {

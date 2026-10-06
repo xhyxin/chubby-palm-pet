@@ -18,8 +18,8 @@ window.UPDATE_CONFIG = {
   APP_VERSION: "1.4",      // 本地版本号（打包时随包更新；与 安卓 build.gradle 的 versionName、
                            // 作者 GitHub 的 version.txt / 公告.txt 保持一致）
                            // ★ 第四十七轮：三端版本号统一为 1.2（以前的 2.9.3 是开发过程中的旧号，
-                           //   正式对外公布从 1.2 起算；第五十一轮升到 1.3，
-                           //   修了捏脸/摸头语音不随机 + 切后台不停音乐/切回变卡）。
+                           //   正式对外公布从 1.2 起算；第五十二轮升到 1.4（修好安卓端热更新链路），
+                           //   1.3 修了捏脸/摸头语音不随机 + 切后台不停音乐/切回变卡）。
   VERSION_URL: "https://raw.githubusercontent.com/xhyxin/chubby-palm-pet/main/version.txt",
   UPDATE_ZIP_URL: "https://github.com/xhyxin/chubby-palm-pet/archive/refs/heads/main.zip",
   RELEASE_PAGE_URL: "https://github.com/xhyxin/chubby-palm-pet/releases/latest",
