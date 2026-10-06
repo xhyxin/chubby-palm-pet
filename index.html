@@ -21,7 +21,16 @@
   <!-- 加载层 -->
   <div id="loader" class="loader">
     <div class="loader-inner">
-      <img id="loader-art" src="assets/art/phone-avatar.png" alt="桌宠">
+      <!-- ★ 默认用黄油立绘（保证文件存在、不会破图），随后脚本改成上次最后使用的角色 -->
+      <img id="loader-art" src="assets/art/Butter/present.png" alt="桌宠">
+      <script>
+        (function () {
+          try {
+            const id = localStorage.getItem('pet-character');
+            if (id) document.getElementById('loader-art').src = 'assets/art/' + id + '/present.png';
+          } catch (e) {}
+        })();
+      </script>
       <div class="loader-title" data-i18n="loader.title">小伙伴正在赶来…</div>
       <div class="loader-bar"><i id="loader-fill"></i></div>
       <div class="loader-tip" id="loader-tip" data-i18n="loader.tip">正在加载模型</div>

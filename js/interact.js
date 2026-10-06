@@ -267,7 +267,9 @@ const Interact = (() => {
   function scheduleBellyPhase(phase) {
     const A = CONFIG.actions.belly;
     const isStart = phase === 'start';
-    const key = Voice.resolveKey(isStart ? A.voice : A.voiceEnd, skinSuffix());
+    const hit = Voice.resolveKey(isStart ? A.voice : A.voiceEnd, skinSuffix());
+    const key = hit && hit.key;
+    const hitLang = hit && hit.L;
     /* 读不到音频时长时的兜底值：优先用 config.voiceDurations 里该角色实测的时长
        （Skea：TickleStart1 = 0.885s / TickleDuring1 = 2.603s，
         由 03_工具\读取ogg时长.js 量出来的），再退回官方黄油表 0.822 / 2.659。 */
@@ -277,7 +279,7 @@ const Interact = (() => {
                            : (CONFIG.minDuringDuration || 0.45)) * 1000;
     bellyPhase = phase;
 
-    Voice.durationOf(key).then((d) => {
+    Voice.durationOf(key, hitLang).then((d) => {
       if (mode !== 'belly' || bellyPhase !== phase) return;
       const ms = Math.max(minMs, (d || fallback) * 1000);
       bellyTimers.push(setTimeout(() => {
@@ -520,8 +522,9 @@ const Interact = (() => {
        ★ 第三十一轮：语音一结束就回调 hooks.onFed（弹喜好图标 + 开心/伤心表情）。 */
     const pref = prefOfCurrent(food && food.id);
     const feedKeys = CONFIG.actions.feed.voice;
-    const endKey = Voice.resolveKey(feedKeys, skinSuffix());
-    const known = Voice.durationSync(endKey);
+    const feedHit = Voice.resolveKey(feedKeys, skinSuffix());
+    const endKey = feedHit && feedHit.key;
+    const known = Voice.durationSync(endKey, feedHit && feedHit.L);
     const ms = Math.max(2600, (known ? known * 1000 : 3200) + 300);
     const eatAnim = Pet.playTimed(CONFIG.actions.feed.once, ms, 'idle');
     const token = ++feedToken;
@@ -534,7 +537,7 @@ const Interact = (() => {
       if (hooks.onFed) hooks.onFed(food, pref);
     };
     const res = speak(feedKeys);
-    Voice.onEnded((res && res.key) || endKey, finishFeed);
+    Voice.onEnded((res && res.key) || endKey, finishFeed, (res && res.lang) || (feedHit && feedHit.L));
     setTimeout(finishFeed, ms + 400);
     reward('feed');
     if (hooks.onFeed) hooks.onFeed(food);

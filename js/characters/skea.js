@@ -11,7 +11,7 @@ const CHAR_SKEA = {
   id: 'Skea',
   name: '斯琪娅',
   en: 'Skea',
-  desc: '妖精 · 3 套外观',
+  desc: '妖精 · 2 套外观',
   tag: '🕯',
 
   art: {
@@ -24,9 +24,11 @@ const CHAR_SKEA = {
 
   /* 可切换的外观（正常使徒本体 / 皮肤1）
      ★ 用户要求：保留皮肤，删除所有坨格形态。SkeaAside（坨格神灯）已移除。 */
+  /* ★ 皮肤名 = **官方皮肤名**（官方语音表里的 Item_HeroSkin_Skea_Skin1）。
+     界面只显示 name（第四十五轮：不显示描述），desc 留官方描述做数据用。 */
   models: [
-    { id: 'Skea',      dir: 'assets/spine/Skea',      name: '默认',     desc: '初代祭司长',         voiceSkin: '' },
-    { id: 'SkeaSkin1', dir: 'assets/spine/SkeaSkin1', name: '皮肤 1',   desc: '另一套装扮',         voiceSkin: '_Skin1' },
+    { id: 'Skea',      dir: 'assets/spine/Skea',      name: '默认',         desc: '这是斯琪娅原本的模样。', voiceSkin: '' },
+    { id: 'SkeaSkin1', dir: 'assets/spine/SkeaSkin1', name: '异国传统体验', desc: '参加莫纳蒂姆观光套餐，体验神秘异国传统时的斯琪娅的模样。', voiceSkin: '_Skin1' },
   ],
 
   bones: {

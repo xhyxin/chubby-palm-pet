@@ -47,51 +47,78 @@ const Voice = (() => {
     return ok[0] || prefer || all[0] || lang;
   }
 
-  function urlFor(key) {
-    const m = map[lang] || {};
-    return m[key] ? `assets/voice/${lang}/${m[key]}` : null;
+  function urlFor(key, L) {
+    const m = map[L || lang] || {};
+    return m[key] ? `assets/voice/${L || lang}/${m[key]}` : null;
   }
 
   /** 从候选键里挑第一个真实存在的（支持 Butter_Eat -> Butter_Eat1 尾号补全，
       也支持皮肤专属语音 Butter_Touch2 -> Butter_Touch2_Skin1） */
-  function resolve(keys, suffix) {
+  function tryKeys(m, names, k) {
+    if (m[k]) return k;
+    const withNum = names.find((n) => new RegExp('^' + esc(k) + '\\d+$').test(n));
+    if (withNum) return withNum;
+    return names.find((n) => n.startsWith(k)) || null;
+  }
+
+  function resolveIn(L, keys, suffix) {
     const list = Array.isArray(keys) ? keys : [keys];
-    const m = map[lang] || {};
+    const m = map[L] || {};
     const names = Object.keys(m);
-    const tryOne = (k) => {
-      if (m[k]) return k;
-      const withNum = names.find((n) => new RegExp('^' + esc(k) + '\\d+$').test(n));
-      if (withNum) return withNum;
-      return names.find((n) => n.startsWith(k)) || null;
-    };
     for (const k of list) {
       if (suffix) {
-        const s = tryOne(k + suffix);
+        const s = tryKeys(m, names, k + suffix);
         if (s) return s;
       }
-      const r = tryOne(k);
+      const r = tryKeys(m, names, k);
       if (r) return r;
     }
     return null;
   }
 
-  function pickRandom(keys, suffix) {
-    const list = Array.isArray(keys) ? keys : [keys];
-    const out = [];
-    for (const k of list) {
-      const r = resolve([k], suffix);
-      if (r && !out.includes(r)) out.push(r);
-    }
-    return out;
+  function resolve(keys, suffix) { return resolveIn(lang, keys, suffix); }
+
+  /** ★ 第五十四轮（播放级语言回退）：
+      用户选了日语就一直日语 —— 该键在日语下没有音频时，直接回退其它语言播放，
+      不再把用户偏好改掉。语言顺序：偏好语言优先，其余语言跟后。 */
+  function langOrder() {
+    return [lang].concat(Object.keys(map).filter((L) => L !== lang));
   }
 
-  function audioFor(key) {
-    if (cache.has(key)) return cache.get(key);
-    const url = urlFor(key);
+  function resolveAny(keys, suffix) {
+    for (const L of langOrder()) {
+      const k = resolveIn(L, keys, suffix);
+      if (k) return { key: k, L };
+    }
+    return null;
+  }
+
+  /** 随机池也按语言优先：先把偏好语言下所有可用变体凑齐，非空就只在该池里随机；
+      偏好语言一个变体都没有时，才整池落到下一门语言 ——
+      保证"选了日语听日语"，不会一半日语一半韩语地混。 */
+  function pickRandomAny(keys, suffix) {
+    const list = Array.isArray(keys) ? keys : [keys];
+    for (const L of langOrder()) {
+      const out = [];
+      for (const k of list) {
+        const r = resolveIn(L, [k], suffix);
+        if (r && !out.includes(r)) out.push(r);
+      }
+      if (out.length) return { pool: out, L };
+    }
+    return { pool: [], L: lang };
+  }
+
+  function pickRandom(keys, suffix) { return pickRandomAny(keys, suffix).pool; }
+
+  function audioFor(key, L) {
+    const id = (L || lang) + '\u0000' + key;
+    if (cache.has(id)) return cache.get(id);
+    const url = urlFor(key, L);
     if (!url) return null;
     const a = new Audio(url);
     a.preload = 'auto';
-    cache.set(key, a);
+    cache.set(id, a);
     return a;
   }
 
@@ -133,25 +160,43 @@ const Voice = (() => {
         }
       }
       for (const c of chars) availLangs[c.id] = [...availLangs[c.id]].sort();
-      /* 语言必须按 CONFIG.voiceLang 初始化。
-         不初始化的话会停在默认语言上 —— 若该语言没有该角色的音频，所有语音都播不出来。 */
-      lang = pickLangFor(typeof CONFIG !== 'undefined' ? CONFIG.id : '', lang);
+      /* 语言按用户偏好初始化（localStorage.pet-voice-lang，setLang 写入）；
+          没有偏好时默认韩语（第三十三轮用户要求）。不再按角色改偏好 ——
+          角色缺该语言时由播放层回退（resolveAny）。 */
+      let savedLang = null;
+      try { savedLang = localStorage.getItem('pet-voice-lang'); } catch (e) { /* 忽略 */ }
+      lang = (savedLang && map[savedLang]) ? savedLang
+           : (Object.keys(map).includes('ko') ? 'ko' : (Object.keys(map)[0] || 'ja'));
       cache.clear();
       return { langs: Object.keys(map), availLangs, lang, catalog: catalog.length };
     },
 
-    /** ★ 切角色时调用：把语言切到该角色的默认语言（该语言必须有这个角色的音频）
-        ★ 第三十三轮：用户要求**默认韩语**——角色有韩语音频就先给韩语，
-          确实没有韩语的角色再退回角色自己声明的默认（如黄油本来的日语）。 */
+    /** ★ 切角色时调用（第五十四轮简化）：
+        语言 = 用户偏好（localStorage），不再随角色变化 ——
+        "选了日语就一直日语，除非用户自己改回来"。
+        角色缺该语言的条目由播放层（resolveAny / playKey）回退到其它语言。
+        charId / preferLang 参数保留只为调用兼容，已不参与决策。 */
     useCharacter(charId, preferLang) {
-      lang = pickLangFor(charId, hasVoice(charId, 'ko') ? 'ko' : (preferLang || lang));
+      let saved = null;
+      try { saved = localStorage.getItem('pet-voice-lang'); } catch (e) { /* 忽略 */ }
+      if (saved && map[saved]) {
+        lang = saved;
+      } else {
+        lang = Object.keys(map).includes('ko') ? 'ko' : (Object.keys(map)[0] || 'ja');
+      }
       cache.clear();
       return lang;
     },
     /** 某个角色真的有音频的语言列表（给语言按钮用） */
     langsFor(charId) { return availLangs[charId] || []; },
 
-    setLang(l) { lang = l; cache.clear(); },
+    setLang(l) {
+      lang = l;
+      cache.clear();
+      /* ★ 记住用户最后选择的语音语言（日/韩），下次启动 / 切角色都优先用这个，
+         而不是每次都退回角色自己的默认语言。 */
+      try { localStorage.setItem('pet-voice-lang', l); } catch (e) { /* 忽略 */ }
+    },
     getLang() { return lang; },
     count(charId) {
       const dict = map[lang] || {};
@@ -170,33 +215,30 @@ const Voice = (() => {
     },
     /** 语音图鉴数据 */
     /** 语音图鉴数据。
-     *  ★ 多角色 + 多语言：
-     *    · 传 charId → 只返回该角色的条目；
-     *    · 再按"**当前语言真的有音频**"过滤 —— 有的语音只有韩语没有日语
-     *      （黄油 39 条只有 ko、3 条只有 ja），不过滤就会出现
-     *      "图鉴里列着、点了却没声音"的假条目。 */
+     *  ★ 多角色：传 charId → 只返回该角色的条目。
+     *  ★ 第五十四轮（用户要求）：**不再按语言过滤** —— 罗尼这类只有韩语的角色，
+     *    用户选了日语也要把全部条目列出来；点某条时该条没有日语就直接播韩语
+     *    （playKey 的播放级回退）。以前按 langs 过滤会出现"图鉴缺一半"的困惑。 */
     catalog(charId) {
-      const dict = map[lang] || {};
       return catalog.filter((c) => {
         if (charId && !(c.char === charId || (!c.char && c.key.indexOf(charId) >= 0))) return false;
-        if (c.langs && c.langs.length) return c.langs.includes(lang);
-        return !!dict[c.key];
+        return true;
       });
     },
     /** 该键是否有音频 */
     has(key) { return !!urlFor(key); },
 
     /**
-     * 播放一组候选语音。
-     * @returns {{key:string, text:string, file:string}|null} 实际播放的那条
+     * 播放一组候选语音（★ 第五十四轮：带播放级语言回退）。
+     * @returns {{key:string, text:string, file:string, lang:string}|null} 实际播放的那条（lang = 实际用的语言）
      */
     play(keys, suffix) {
       if (!enabled || !keys) return null;
       if (Array.isArray(keys) && !keys.length) return null;
-      const pool = pickRandom(keys, suffix);
+      const { pool, L } = pickRandomAny(keys, suffix);
       if (!pool.length) return null;
       const key = pool[Math.floor(Math.random() * pool.length)];
-      const a = audioFor(key);
+      const a = audioFor(key, L);
       if (!a) return null;
       try {
         if (current && current !== a) { current.pause(); current.currentTime = 0; }
@@ -205,13 +247,20 @@ const Voice = (() => {
         current = a;
         a.play().catch(() => {});
       } catch (e) { /* 忽略 */ }
-      return { key, text: this.textOf(key), textJa: this.textJaOf(key), file: map[lang][key] };
+      return { key, text: this.textOf(key), textJa: this.textJaOf(key), file: map[L][key], lang: L };
     },
 
-    /** 按精确键名播放（语音图鉴用） */
+    /** 按精确键名播放（语音图鉴用）。
+     *  ★ 第五十四轮：该键在偏好语言没有音频时，直接回退其它语言播放
+     *  （用户选日语 + 罗尼只有韩语 → 点图鉴播韩语），偏好本身不动。 */
     playKey(key) {
-      if (!enabled || !map[lang] || !map[lang][key]) return null;
-      const a = audioFor(key);
+      let L = lang;
+      if (!enabled || !map[lang] || !map[lang][key]) {
+        const alt = langOrder().find((x) => map[x] && map[x][key]);
+        if (!alt) return null;
+        L = alt;
+      }
+      const a = audioFor(key, L);
       if (!a) return null;
       try {
         if (current && current !== a) { current.pause(); current.currentTime = 0; }
@@ -220,7 +269,7 @@ const Voice = (() => {
         current = a;
         a.play().catch(() => {});
       } catch (e) { return null; }
-      return { key, text: this.textOf(key), textJa: this.textJaOf(key) };
+      return { key, text: this.textOf(key), textJa: this.textJaOf(key), file: map[L][key], lang: L };
     },
 
     /**
@@ -233,23 +282,31 @@ const Voice = (() => {
     playFirst(keys, suffix) {
       if (!enabled || !keys) return null;
       if (Array.isArray(keys) && !keys.length) return null;
-      const key = resolve(keys, suffix);
-      if (!key) return null;
-      return this.playKey(key);
+      const hit = resolveAny(keys, suffix);
+      if (!hit) return null;
+      return this.playKey(hit.key) || { key: hit.key, text: this.textOf(hit.key), lang: hit.L };
     },
 
     stop() { if (current) { current.pause(); current.currentTime = 0; current = null; } },
 
-    /** 把候选键解析成实际会播的那一个（不播放） */
-    resolveKey(keys, suffix) { return resolve(keys, suffix); },
+    /** 把候选键解析成实际会播的那一个（不播放）。
+     *  ★ 第五十四轮：返回 {key, L}（带实际语言）；解析不到返回 null。 */
+    resolveKey(keys, suffix) {
+      const hit = resolveAny(keys, suffix);
+      return hit ? { key: hit.key, L: hit.L } : null;
+    },
+
+    /** 新增：全语言列表（语言菜单全列，不再按角色过滤） */
+    allLangs() { return Object.keys(map); },
 
     /**
      * 取某条语音的时长（秒）。读不到返回 null。
      * 官方就是按语音时长来驱动摸肚子序列的相位切换。
+     * ★ 第五十四轮：加可选语言参数（回退语言播放的键，要用它的语言查音频）。
      */
-    durationOf(key) {
+    durationOf(key, L) {
       if (!key) return Promise.resolve(null);
-      const a = audioFor(key);
+      const a = audioFor(key, L);
       if (!a) return Promise.resolve(null);
       if (Number.isFinite(a.duration) && a.duration > 0) return Promise.resolve(a.duration);
       return new Promise((res) => {
@@ -264,19 +321,20 @@ const Voice = (() => {
 
     /** ★ 同步版时长（秒）：只在该条语音**已经预加载好**时返回数字，否则 null。
         喂食要"动作时长跟着语音走"，必须在同一帧就把动作排好，不能等 Promise。 */
-    durationSync(key) {
+    durationSync(key, L) {
       if (!key) return null;
-      const a = audioFor(key);
+      const a = audioFor(key, L);
       if (!a) return null;
       return (Number.isFinite(a.duration) && a.duration > 0) ? a.duration : null;
     },
 
     /** ★ 监听某条语音"自然播完"（喂食：语音一结束就把动作收回待机，最准）。
         返回 false 表示拿不到该音频（调用方应改用定时器兜底）。
-        注意：被 pause() 打断时不会触发 ended（那是设计如此）。 */
-    onEnded(key, cb) {
+        注意：被 pause() 打断时不会触发 ended（那是设计如此）。
+        ★ 第五十四轮：加可选语言参数。 */
+    onEnded(key, cb, L) {
       if (!key) return false;
-      const a = audioFor(key);
+      const a = audioFor(key, L);
       if (!a) return false;
       const h = () => { a.removeEventListener('ended', h); try { cb(); } catch (e) { /* 忽略 */ } };
       a.addEventListener('ended', h);
@@ -326,6 +384,9 @@ const Voice = (() => {
       });
     },
 
-    preload(keys, suffix) { pickRandom(keys, suffix).forEach((k) => audioFor(k)); },
+    preload(keys, suffix) {
+      const { pool, L } = pickRandomAny(keys, suffix);
+      pool.forEach((k) => audioFor(k, L));
+    },
   };
 })();

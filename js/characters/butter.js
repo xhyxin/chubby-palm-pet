@@ -13,7 +13,7 @@ const CHAR_BUTTER = {
   id: 'Butter',
   name: '黄油',
   en: 'Butter',
-  desc: '犬系兽人 · 5 套外观',
+  desc: '犬系兽人 · 4 套外观',
   tag: '🦴',
 
   /* 立绘（多角色下必须按角色分目录，因为文件名全角色同名） */
@@ -25,13 +25,15 @@ const CHAR_BUTTER = {
 
   skinCandidates: ['Normal', 'default'],
 
-  /* 可切换的外观 */
+  /* 可切换的外观。
+     ★ 用户要求：皮肤名用**官方皮肤名**（取自官方多语言表 Item_HeroSkin_Butter_SkinN），
+       不要「皮肤 1 / 皮肤 2」这种占位名；desc 只留作数据备查，界面不显示。
+     ★ 迷你黄油（Pet_MiniButter）是**宠物形态不是皮肤**，已整体移除。 */
   models: [
-    { id: 'Butter',         dir: 'assets/spine/Butter',         name: '默认',     desc: '基础外观', voiceSkin: '' },
-    { id: 'ButterSkin1',    dir: 'assets/spine/ButterSkin1',    name: '皮肤 1',   desc: '泳装',     voiceSkin: '_Skin1' },
-    { id: 'ButterSkin2',    dir: 'assets/spine/ButterSkin2',    name: '皮肤 2',   desc: '文学少女', voiceSkin: '_Skin2' },
-    { id: 'ButterSkin3',    dir: 'assets/spine/ButterSkin3',    name: '皮肤 3',   desc: '女仆',     voiceSkin: '_Skin3' },
-    { id: 'Pet_MiniButter', dir: 'assets/spine/Pet_MiniButter', name: '迷你黄油', desc: '宠物形态', voiceSkin: '' },
+    { id: 'Butter',      dir: 'assets/spine/Butter',      name: '默认',         desc: '基础外观', voiceSkin: '' },
+    { id: 'ButterSkin1', dir: 'assets/spine/ButterSkin1', name: '安全卫士',     desc: '官方原名：セーフティーガード', voiceSkin: '_Skin1' },
+    { id: 'ButterSkin2', dir: 'assets/spine/ButterSkin2', name: '童诗大赛黑马', desc: '官方原名：童詩大会のダークホース', voiceSkin: '_Skin2' },
+    { id: 'ButterSkin3', dir: 'assets/spine/ButterSkin3', name: '围裙马格南',   desc: '官方原名：エプロン・マグナム', voiceSkin: '_Skin3' },
   ],
 
   /* 关键骨骼名（含官方互动骨骼） */
@@ -54,30 +56,32 @@ const CHAR_BUTTER = {
     tickle:    ['Character_Tickle', 'Pelvis'],              // 挠痒 / 摸肚子
   },
 
-  /* 动作名。主形态在前，迷你宠物形态兜底。 */
+  /* 动作名。★ 全部对齐主形态官方动作表 ——
+     旧版这里给每个动作挂了迷你宠物形态的兜底候选（Idle / Play1_1 / Act1_1 …），
+     迷你形态整体移除后那些动作已不存在，一并清掉，避免留下查不到的死候选。 */
   anim: {
-    idle:        ['Idle_1', 'Idle'],
-    patIdle:     ['Pat_Idle', 'Act2_1', 'Play1_1'],
-    patEnd:      ['Pat_End', 'Idle'],
-    tickleIdle:  ['Tickle_Idle_1', 'Play1_1', 'Act1_1'],
+    idle:        ['Idle_1'],
+    patIdle:     ['Pat_Idle'],
+    patEnd:      ['Pat_End'],
+    tickleIdle:  ['Tickle_Idle_1'],
     tickleIdle2: ['Tickle_Idle_2'],
-    tickleEnd:   ['Tickle_End', 'Act3_1', 'Idle'],
-    touchIdle:   ['Touch_Idle', 'Act1_1'],
-    touchEnd:    ['Touch_End', 'Idle'],
-    smash:       ['Smash_End_1', 'Surprise_1', 'Act3_1'],   // 官方敲头动作
+    tickleEnd:   ['Tickle_End'],
+    touchIdle:   ['Touch_Idle'],
+    touchEnd:    ['Touch_End'],
+    smash:       ['Smash_End_1', 'Surprise_1'],   // 官方敲头动作
     smash2:      ['Smash_End_2'],
-    eat:         ['Eat_1', 'Eat_2', 'Eat1_1'],
-    happy:       ['Happy_1', 'Happy_2', 'Happy_3', 'Happy_4', 'Happy_5', 'Play1_1', 'Act1_1'],
-    proud:       ['Proud_1', 'Proud_2', 'Act1_1'],
-    angry:       ['Angry_1', 'Angry_2', 'Angry_3', 'Angry1_1'],
-    sad:         ['Sad_1', 'Sad_2', 'Sad_3', 'Sad_4', 'Sleep1_1'],
-    surprise:    ['Surprise_1', 'Act3_1'],
-    dizzy:       ['Dizzy_1', 'Dizzy_2', 'Act3_1'],
-    panic:       ['Panic_1', 'Panic_2', 'Panic_3', 'Move'],
-    taunt:       ['Taunt_1', 'Taunt_2', 'Taunt_3', 'Taunt_4', 'Act3_1', 'Act2_1'],
-    smell:       ['Smell_1', 'Act2_1'],
-    serious:     ['Serious_1', 'Serious_2', 'Act3_1'],
-    close:       ['Close_1', 'Sleep1_1'],
+    eat:         ['Eat_1', 'Eat_2'],
+    happy:       ['Happy_1', 'Happy_2', 'Happy_3', 'Happy_4', 'Happy_5'],
+    proud:       ['Proud_1', 'Proud_2'],
+    angry:       ['Angry_1', 'Angry_2', 'Angry_3'],
+    sad:         ['Sad_1', 'Sad_2', 'Sad_3', 'Sad_4'],
+    surprise:    ['Surprise_1'],
+    dizzy:       ['Dizzy_1', 'Dizzy_2'],
+    panic:       ['Panic_1', 'Panic_2', 'Panic_3'],
+    taunt:       ['Taunt_1', 'Taunt_2', 'Taunt_3', 'Taunt_4'],
+    smell:       ['Smell_1'],
+    serious:     ['Serious_1', 'Serious_2'],
+    close:       ['Close_1'],
   },
 
   /* ---------------- 五个互动（前四个完全对齐官方规格） ---------------- */
@@ -157,7 +161,7 @@ const CHAR_BUTTER = {
     { group: '互动', items: ['Pat_Idle', 'Pat_End', 'Touch_Idle', 'Touch_End', 'Tickle_Idle_1', 'Tickle_Idle_2', 'Tickle_End', 'Smash_End_1', 'Smash_End_2', 'Eat_1', 'Eat_2'] },
     { group: '情绪', items: ['Happy_1', 'Happy_2', 'Happy_3', 'Happy_4', 'Happy_5', 'Proud_1', 'Proud_2', 'Angry_1', 'Angry_2', 'Angry_3', 'Sad_1', 'Sad_2', 'Sad_3', 'Sad_4', 'Surprise_1', 'Dizzy_1', 'Dizzy_2', 'Panic_1', 'Panic_2', 'Panic_3', 'Taunt_1', 'Taunt_2', 'Taunt_3', 'Taunt_4', 'Smell_1', 'Serious_1', 'Serious_2', 'Close_1'] },
     { group: '待机', items: ['Idle_1'] },
-    { group: '迷你形态', items: ['Idle', 'Play1_1', 'Act1_1', 'Act2_1', 'Act3_1', 'Angry1_1', 'Eat1_1', 'Sleep1_1', 'Move', 'Spawn', 'Swim1_1'] },
+    /* ★ 原「迷你形态」分组（Idle / Play1_1 / Act1_1 … 共 11 个）已随迷你黄油一并移除。 */
   ],
   animLabel: {
     Pat_Idle: '被摸头', Pat_End: '摸头结束',
@@ -174,15 +178,12 @@ const CHAR_BUTTER = {
     Taunt_1: '挑衅 1', Taunt_2: '挑衅 2', Taunt_3: '挑衅 3', Taunt_4: '挑衅 4',
     Smell_1: '闻一闻', Serious_1: '认真 1', Serious_2: '认真 2', Close_1: '闭眼',
     Idle_1: '待机',
-    Idle: '待机', Play1_1: '玩耍', Act1_1: '动作 1', Act2_1: '动作 2', Act3_1: '动作 3',
-    Angry1_1: '生气', Eat1_1: '吃东西', Sleep1_1: '睡觉', Move: '移动', Spawn: '登场', Swim1_1: '游泳',
   },
 
   /* 动作 → 语音对照（动作面板点了之后播哪条语音） */
   voiceForAnim: {
     Tickle_Idle_1: ['Butter_TickleStart1'], Tickle_Idle_2: ['Butter_TickleDuring1'], Tickle_End: ['Butter_TickleDuring1'],
     Surprise_1: ['Butter_Surprise1'],
-    Eat1_1: ['Butter_Eat1'],
   },
   voiceForAnimSeries: { Happy_: 'Butter_Joy', Proud_: 'Butter_Pleasure', Angry_: 'Butter_Anger', Sad_: 'Butter_Sorrow' },
 };

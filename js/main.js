@@ -64,12 +64,12 @@
   /** ★ 语音图鉴点播：对话框**陪到语音真的播完**才消失。
       不再依赖 ogg 元数据时长（Chrome 对部分长 ogg 报 Infinity，上一版因此提前消失）——
       直接监听该条音频的 ended 事件；时长只作为一道保险；完全拿不到音频才退回 3 秒。 */
-  function sayUntilDone(text, key) {
+  function sayUntilDone(text, key, L) {
     if (!key) { showBubble(text); return; }
-    const hooked = Voice.onEnded(key, closeBubbleSoon);
+    const hooked = Voice.onEnded(key, closeBubbleSoon, L);
     if (hooked) {
       showBubble(text, 180000);            // 上限兜底：ended 万一不触发
-      Voice.durationOf(key).then((d) => {
+      Voice.durationOf(key, L).then((d) => {
         if (d) setTimeout(closeBubbleSoon, (d + 0.8) * 1000);
       });
     } else {
@@ -390,8 +390,9 @@
     $('skin-panel').classList.add('hidden');
     $('loader').classList.remove('hide');
     $('loader-tip').textContent = I18N.t('loader.callChar', { name: I18N.charName(c.id, c.name) });
-    /* ★ 先把语音语言切到新角色，再刷新外壳（语言按钮）——
-       以前反着来，按钮会显示上一个角色的语言（韩语角色显示"日语（唯一）"）。 */
+    /* ★ 先把语音语言切到新角色，再刷新外壳（语言按钮）。
+       优先使用用户上次选择的语言；不支持则退回角色默认。 */
+    applySavedVoiceLang();
     Voice.useCharacter(c.id, c.voiceLang);
     refreshCharacterShell();
     PetState.useCharacter(c.id);
@@ -560,6 +561,23 @@
       box.innerHTML = '<p class="muted">没有读取到语音清单。</p>';
       return;
     }
+    /* ★ 第五十四轮：皮肤语音的条目名原来是"爆栗（皮肤1）"这种占位标注，
+       用户根本不知道皮肤1是哪套。这里换成该角色 models 里的真实皮肤名
+       （如"爆栗（安全卫士）"）。全角色统一处理；
+       皮肤名本身还是占位（"皮肤 1"，官方数据缺失）的角色保持原样。 */
+    const skinNames = {};
+    (CONFIG.models || []).forEach((m) => {
+      if (m.voiceSkin && m.voiceSkin.indexOf('_Skin') === 0) {
+        const sn = (m.name || '').trim();
+        if (sn && !/^皮肤\s*\d+$/.test(sn)) skinNames[m.voiceSkin] = sn;
+      }
+    });
+    const relabel = (name) => (typeof name === 'string'
+      ? name.replace(/（皮肤\s*(\d+)）/, (all, n) => {
+        const sn = skinNames['_Skin' + n];
+        return sn ? `（${sn}）` : all;
+      })
+      : name);
     const groups = {};
     cat.forEach((c) => { (groups[c.group] = groups[c.group] || []).push(c); });
     Object.keys(groups).forEach((g) => {
@@ -579,11 +597,11 @@
              用户可以对照原文核听，发现汉化不对的能直接指认。 */
         const main = c.text || '（官方未收录台词）';
         const ko = c.textKo ? `<span class="v-ko">${c.textKo}</span>` : '';
-        row.innerHTML = `<span class="v-name">${c.name}</span><span class="v-text">${main}${ko}</span>`;
+        row.innerHTML = `<span class="v-name">${relabel(c.name)}</span><span class="v-text">${main}${ko}</span>`;
         row.addEventListener('click', () => {
           const r = Voice.playKey(c.key);
           /* ★ 第三十一轮：长语音（打电话独白等）的对话框要陪到播完 */
-          sayUntilDone((r && r.text) || c.text || c.name, r && r.key);
+          sayUntilDone((r && r.text) || c.text || relabel(c.name), r && r.key, r && r.lang);
         });
         list.appendChild(row);
       });
@@ -704,6 +722,17 @@
   window.__petBackground = function () { try { onAppHidden(); } catch (e) { /* 忽略 */ } };
   window.__petForeground = function () { try { onAppVisible(); } catch (e) { /* 忽略 */ } };
 
+  /* 读取用户上次选择的语音语言；如果当前角色支持，就覆盖角色自己的默认语言。
+     让用户切一次日语/韩语后，后续启动 / 切角色都保持这个偏好，不再跳回默认。 */
+  function applySavedVoiceLang() {
+    try {
+      const saved = localStorage.getItem('pet-voice-lang');
+      if (saved && CONFIG.voiceLangs && CONFIG.voiceLangs.indexOf(saved) >= 0) {
+        CONFIG.voiceLang = saved;
+      }
+    } catch (e) { /* 忽略 */ }
+  }
+
   /* ---------------------------------------------------------- 启动 */
   async function boot() {
     const fill = $('loader-fill');
@@ -718,15 +747,19 @@
     if (window.Music) Music.init();
     await Voice.load();
 
-    /* ★ 记住上次玩的是谁（多角色）：启动时直接回到那个角色 */
+    /* ★ 记住上次玩的是谁（多角色）：启动时直接回到那个角色。
+       尽早应用，这样加载层头像、标题、语言按钮一出来就是上次的，
+       不会先显示默认黄油再闪切。 */
     try {
       const saved = localStorage.getItem('pet-character');
       const k = CONFIG.characters.findIndex((c) => c.id === saved);
       if (k > 0) CONFIG.applyCharacter(k);
     } catch (e) { /* 忽略 */ }
+    /* ★ 语音语言也记用户偏好：有上次选择且当前角色支持就优先用它。 */
+    applySavedVoiceLang();
     Voice.useCharacter(CONFIG.id, CONFIG.voiceLang);
     PetState.useCharacter(CONFIG.id);
-    refreshCharacterShell();   // ★ 必须等 Voice.load() 之后（要按角色挑语言）
+    refreshCharacterShell();
     fill.style.width = '55%';
 
     preloadInteractionVoices();
@@ -757,12 +790,11 @@
       onFed: onFed,
     });
 
-    buildFoodPanel();
-    buildCharList();
+    /* ★ 启动时只构建皮肤列表；角色/食物面板打开时再构建，减少首屏 DOM，降低低端机卡顿。 */
     buildSkins();
     refreshStats();
-    /* 食物图预热延迟几秒再跑：91 张图不该和首屏模型加载抢带宽（无头虚拟时间下会挤抖切换角色） */
-    setTimeout(preloadFoodImages, 5000);
+    /* 食物图预热延迟 10 秒再跑：91 张图不该和首屏模型/语音抢带宽。 */
+    setTimeout(preloadFoodImages, 10000);
 
     setTimeout(() => {
       $('loader').classList.add('hide');
@@ -948,28 +980,25 @@
     if (!isAnim && !voiceTabBuilt) buildVoicePanel();
   });
 
-  /* 语音语言切换：只在"该角色真的有音频"的语言之间切。
-     ★ 黄油日韩都有 → 按钮显示「🗣 日语」、点一下切韩语；
-       斯琪娅只有韩语 → 按钮显示「🗣 韩语（唯一）」、点了只提示不切
-       （切到没有音频的语言会导致所有语音都不出声）。 */
+  /* 语音语言切换（★ 第五十四轮重写）：菜单全列日语/韩语，选了就记住（localStorage），
+     不随角色变化；角色缺所选语言的条目由播放层（Voice.resolveAny / playKey）
+     直接回退到另一门语言播放，不会再把按钮/偏好跳回默认。 */
   const LANG_LABEL = { ja: '日语', ko: '韩语' };
 
   function syncLangButton() {
     const btn = $('btn-lang');
     const cur = Voice.getLang();
-    const avail = Voice.langsFor(CONFIG.id);
-    const usable = (avail.length ? avail : (CONFIG.voiceLangs || []));
-    btn.textContent = I18N.voiceLangName(cur) + (usable.length > 1 ? '' : I18N.t('lang.unique'));
-    btn.classList.toggle('disabled', usable.length <= 1);
+    /* ★ 第五十四轮：语言菜单全列（日语/韩语），不再按"该角色有没有"过滤 ——
+       用户选了日语就一直显示日语；角色缺日语的条目由播放层直接回退韩语。
+       以前按角色过滤 → 选日语后换到只有韩语的角色，按钮跳回"韩语（唯一）"，
+       用户以为偏好被重置了。 */
+    btn.textContent = I18N.voiceLangName(cur);
+    btn.classList.remove('disabled');
   }
 
   $('btn-lang').addEventListener('click', () => {
-    const avail = Voice.langsFor(CONFIG.id);
-    const usable = (avail.length ? avail : (CONFIG.voiceLangs || []));
-    if (usable.length <= 1) {
-      showBubble(I18N.t('bubble.onlyVoice', { name: dispName(), lang: I18N.voiceLangName(usable[0]) }));
-      return;
-    }
+    const usable = Voice.allLangs();
+    if (!usable.length) return;
     /* ★ 第四十五轮（用户要求）：语言菜单一律用**当前界面语言**的写法
        （中文界面就是"日语 / 韩语"）。原来固定显示原生写法（日本語 / 한국어），
        中国玩家看不懂한국어那一条。 */
