@@ -2,9 +2,49 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<!-- ★ 第五十五轮 iOS 适配：viewport-fit=cover 才能让页面铺满 iPhone 的刘海/圆角屏，
+     配合 css/style.css 里 html.ios 的安全区内边距，顶栏/底栏不会被刘海或小白条压住。
+     （安卓 / 电脑端同样带这个参数，但只有 html.ios 的样式会生效，互不影响。） -->
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
 <title>掌上坨坨</title>
   <link rel="icon" href="favicon.ico">
+
+<!-- ★★★ iOS「添加到主屏幕」支持（第五十五轮新增）★★★
+     在 iPhone Safari 里点「分享 → 添加到主屏幕」后，会以**全屏 App**形式打开：
+     没有地址栏、没有工具栏，和安卓/电脑端观感一致。
+       · apple-mobile-web-app-capable=yes  → 允许全屏（旧写法，兼容老 iOS）
+       · mobile-web-app-capable=yes        → 同一语义的新写法
+       · apple-mobile-web-app-title        → 主屏图标下面显示的名字
+       · status-bar-style=default          → 顶部状态栏用系统默认配色（浅色底 + 深色字，清晰）
+       · theme-color                       → 安卓 Chrome / 部分 iOS 版本的界面配色 -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="掌上坨坨">
+<meta name="theme-color" content="#fff7ef">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="167x167" href="assets/icon/apple-touch-icon-167.png">
+<link rel="apple-touch-icon" sizes="152x152" href="assets/icon/apple-touch-icon-152.png">
+<link rel="apple-touch-icon" sizes="120x120" href="assets/icon/apple-touch-icon-120.png">
+<link rel="manifest" href="manifest.webmanifest">
+<!-- ★ iOS 标记：必须在样式表之前同步执行，给 <html> 挂上 ios / ios-standalone 类，
+     后面 style.css 里所有 iOS 专属规则都以 .ios 为前缀 —— 安卓/电脑端拿不到这个类，
+     所以那两端的排版、避让算法、回归基线**一点都不会变**。 -->
+<script>
+(function () {
+  try {
+    var ua = navigator.userAgent || '';
+    /* iPadOS 13+ 的 Safari 默认把 UA 伪装成 Mac，用「Mac + 多点触控」把它认出来 */
+    var isIOS = /iPad|iPhone|iPod/.test(ua) ||
+                (navigator.platform === 'MacIntel' && (navigator.maxTouchPoints || 0) > 1);
+    if (isIOS) {
+      document.documentElement.classList.add('ios');
+      /* 从主屏图标启动（全屏模式）时再挂一个标记，方便个别差异处理 */
+      if (navigator.standalone) document.documentElement.classList.add('ios-standalone');
+    }
+  } catch (e) { /* 忽略：任何异常都按非 iOS 处理，绝不影响正常渲染 */ }
+})();
+</script>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>

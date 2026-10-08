@@ -1,0 +1,16 @@
+{
+  "name": "掌上坨坨",
+  "short_name": "掌上坨坨",
+  "description": "《嘟嘟脸恶作剧》全角色互动桌宠 —— 一个网页里 136 个角色",
+  "lang": "zh-CN",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fff7ef",
+  "theme_color": "#fff7ef",
+  "icons": [
+    { "src": "assets/icon/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icon/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/icon/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

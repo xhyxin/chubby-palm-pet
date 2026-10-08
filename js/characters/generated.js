@@ -31503,9 +31503,9 @@ const CHAR_GENERATED = [
    ],
    "earR": [],
    "ballMove": [
-    "Ball_R",
     "Ball_L",
-    "Character_Ball_Move"
+    "Character_Ball_Move",
+    "Ball_R"
    ],
    "ballMoveP": [
     "Ball_L",
@@ -31524,9 +31524,8 @@ const CHAR_GENERATED = [
   "pinch": {
    "ok": true,
    "reason": "",
-   "altBone": "Ball_R",
+   "altBone": "Ball_L",
    "altBones": [
-    "Ball_R",
     "Ball_L"
    ]
   },

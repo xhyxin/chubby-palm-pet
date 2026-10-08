@@ -600,3 +600,39 @@ html, body {
   background: linear-gradient(135deg, var(--pink), var(--pink-deep));
 }
 .notice-btn.primary:hover { filter: brightness(1.05); }
+
+/* ================================================================================
+   iOS 适配（第五十五轮新增）
+   -------------------------------------------------------------------------------
+   全部以 html.ios 为前缀 —— 只有 iPhone / iPad 的 Safari 会被 index.html 里的
+   探测脚本挂上 .ios 类，安卓壳 / 电脑壳**拿不到这个类**，因此这两端的排版、
+   uiBand() 避让、回归基线完全不受影响（见 AI交接文档 §5 铁律 1、2）。
+   解决四件事：
+     ① 安全区：刘海 / Dynamic Island（顶部）与 Home 指示条（底部）不压 UI
+     ② 视口高度：iOS 的 100vh 会把 Safari 地址栏算进去 → 改用 100dvh
+     ③ 手势：禁长按弹菜单 / 禁双击缩放 / 禁橡皮筋回弹
+     ④ 文字：横竖屏切换不自动放大字号
+   ================================================================================ */
+html.ios {
+  -webkit-touch-callout: none;          /* 长按不弹「拷贝 / 查词」菜单（拖动喂食不受影响） */
+  -webkit-text-size-adjust: 100%;       /* 转屏不放大字号 */
+  overscroll-behavior: none;            /* 禁橡皮筋回弹 */
+}
+html.ios body {
+  position: fixed; inset: 0; width: 100%; height: 100%;   /* 彻底锁死滚动 / 回弹 */
+  overscroll-behavior: none;
+}
+html.ios #stage { height: 100vh; height: 100dvh; }        /* dvh 兜底 100vh */
+/* 顶栏：避开刘海 / 灵动岛（未适配机型 env() 取 0，等同原来 20px 内缩） */
+html.ios .hud-top {
+  top: calc(env(safe-area-inset-top, 0px) + 14px);
+  left: calc(env(safe-area-inset-left, 0px) + 16px);
+  right: calc(env(safe-area-inset-right, 0px) + 16px);
+}
+/* 底栏：避开 Home 指示条（竖屏底部那条小横杠） */
+html.ios .hud-actions { bottom: calc(env(safe-area-inset-bottom, 0px) + 16px); }
+/* 按钮点击干脆利落：不触发双击缩放、不出现 300ms 延迟 */
+html.ios button, html.ios .tool, html.ios .act, html.ios .tab,
+html.ios .skin-item, html.ios .food-card { touch-action: manipulation; }
+/* 从主屏图标全屏启动时，去掉可能残留的默认边距 */
+html.ios-standalone #stage { margin: 0; }
