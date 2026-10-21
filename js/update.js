@@ -91,16 +91,65 @@
   }
 
   /* ---------------- 增量同步 ---------------- */
+  /* 每个文件给壳两条 URL（壳只认两列）。★ 第六十四轮：
+     直连 raw 在国内基本不通，所以**已经确认走镜像时把镜像排第一**，
+     否则壳会先在死线路上耗一次超时，几百个文件累积起来就是"卡住不动"。 */
   function rawUrls(path) {
     var i = cfg.VERSION_URL.lastIndexOf('/');
     var base = i < 0 ? '' : cfg.VERSION_URL.slice(0, i + 1);
     var direct = base + path.split('/').map(encodeURIComponent).join('/');
-    var urls = [direct];
-    try {
-      var p = cfg.MIRROR_PREFIX || '';
-      if (p) urls.push(p + direct);
-    } catch (e) { /* 忽略 */ }
-    return urls;
+    var NET = window.UPDATE_NET || {};
+    var p = (NET.prefix && NET.prefix()) || (NET.firstPrefix && NET.firstPrefix()) || cfg.MIRROR_PREFIX || '';
+    if (!p) return [direct];
+    var mirror = p + direct;
+    return (NET.mirrorInUse && NET.mirrorInUse()) ? [mirror, direct] : [direct, mirror];
+  }
+
+  /* 远端文件清单：★ 第六十四轮改成**优先读仓库里的静态清单**。
+     原因：api.github.com 未认证只有 60 次/小时/IP，国内大量用户共用出口 IP → 403；
+     而镜像（gh-proxy 等）**不代理 api**（实测 403），所以老路子在国内必然失败。
+     仓库里随包上传的 `js/sync-manifest.js` 就是同一份 sha 表（GitHub Blob SHA1），
+     走 raw + 镜像就能拿（实测 200），完全绕开限流。API 只留作兜底。 */
+  function treeFromManifest() {
+    var NET = window.UPDATE_NET || {};
+    if (!cfg.REMOTE_MANIFEST_URL) return Promise.reject(new Error('REMOTE_MANIFEST_URL 未配置'));
+    return NET.fetchText(cfg.REMOTE_MANIFEST_URL, 60000).then(function (t) {
+      var m = /SYNC_MANIFEST\s*=\s*(\{[\s\S]*\})\s*;?\s*$/.exec(String(t));
+      if (!m) throw new Error('远端清单格式不对');
+      var files = (JSON.parse(m[1]).files) || {};
+      var tree = [];
+      for (var p in files) {
+        if (Object.prototype.hasOwnProperty.call(files, p)) {
+          tree.push({ type: 'blob', path: p, sha: files[p], size: 0 });
+        }
+      }
+      if (!tree.length) throw new Error('远端清单是空的');
+      return { tree: tree, truncated: false, sha: '' };
+    });
+  }
+
+  function treeFromApi() {
+    var NET = window.UPDATE_NET || {};
+    if (!cfg.TREE_API_URL) return Promise.reject(new Error('TREE_API_URL 未配置'));
+    return NET.fetchText(cfg.TREE_API_URL, 30000).then(function (t) {
+      var j = JSON.parse(t);
+      if (!j || !j.tree) throw new Error('文件树格式不对');
+      return j;
+    });
+  }
+
+  function fetchTree() {
+    return treeFromManifest().catch(function (e) {
+      /* 清单拿不到（作者还没把 sync-manifest.js 传上去 / 镜像全挂）→ 退回 API */
+      return treeFromApi().catch(function (e2) {
+        var msg = String((e2 && e2.message) || '');
+        if (/HTTP\s*403/.test(msg)) {
+          /* 403 基本都是 api 限流或镜像不代理 api —— 给用户一句能照做的提示 */
+          throw new Error(I18N.t('upd.blocked'));
+        }
+        throw e2;
+      });
+    });
   }
 
   function loadBundledManifest() {
@@ -111,16 +160,6 @@
       sc.onload = function () { resolve((window.SYNC_MANIFEST && window.SYNC_MANIFEST.files) || {}); };
       sc.onerror = function () { resolve({}); };   // 没有清单就当全空（全部按仓库为准）
       document.head.appendChild(sc);
-    });
-  }
-
-  function fetchTree() {
-    var NET = window.UPDATE_NET || {};
-    if (!cfg.TREE_API_URL) return Promise.reject(new Error('TREE_API_URL 未配置'));
-    return NET.fetchText(cfg.TREE_API_URL, 30000).then(function (t) {
-      var j = JSON.parse(t);
-      if (!j || !j.tree) throw new Error('文件树格式不对');
-      return j;
     });
   }
 
@@ -216,10 +255,10 @@
   function zipUrlFor() {
     var url = cfg.UPDATE_ZIP_URL || '';
     try {
-      if (window.UPDATE_NET && window.UPDATE_NET.mirrorInUse && window.UPDATE_NET.mirrorInUse()) {
-        var p = cfg.MIRROR_PREFIX || '';
-        if (p && url && url.indexOf(p) !== 0) return p + url;
-      }
+      var NET = window.UPDATE_NET || {};
+      /* ★ 第六十四轮：优先用"已验证可用"的那条镜像，没有再用列表第一条 */
+      var p = (NET.prefix && NET.prefix()) || (NET.firstPrefix && NET.firstPrefix()) || cfg.MIRROR_PREFIX || '';
+      if (p && url && url.indexOf(p) !== 0) return p + url;
     } catch (e) { /* 忽略 */ }
     return url;
   }

@@ -368,6 +368,25 @@ const Pet = (() => {
     return n;
   }
 
+  /** ★ 第五十八轮：带**交叉淡化**地切到某个循环动作。
+      和 playBase/playLoop 的区别：这里**不 clearTracks()** ——
+      Spine 的 setAnimation 会拿"当前轨上那条"当 previous，
+      用 AnimationStateData 的混合时长（本项目 defaultMix = 0.18s）淡入新动作。
+      （clearTracks() 会把 previous 抹掉 → 混不动 → 硬切，所以别的播放函数都是硬切。）
+      用途：摸肚子松手后"憋笑 → 待机"的柔和收势（用户要求"不能一下子停"）。
+      @param {number} [mixSec] 覆盖本次混合时长（秒）；不传就用引擎默认。 */
+  function playFade(key, mixSec) {
+    const n = animOf(key);
+    if (!n || currentBase === n) return currentBase;
+    resetSlots();
+    const prevMix = stateData.defaultMix;
+    if (typeof mixSec === 'number' && mixSec >= 0) stateData.defaultMix = mixSec;
+    state.setAnimation(0, n, true);
+    stateData.defaultMix = prevMix;
+    currentBase = n;
+    return n;
+  }
+
   /** 按骨架里的真实动作名直接播放（动作面板用） */
   function playRaw(name, loop = false) {
     if (!animMap[name]) return null;
@@ -963,7 +982,7 @@ const Pet = (() => {
   return {
     init, loadModel, resize,
     update, draw,
-    playBase, playOnce, playLoop, playEnd, playRaw, playTimed, playRandomMood, playChain, animName,
+    playBase, playOnce, playLoop, playEnd, playFade, playRaw, playTimed, playRandomMood, playChain, animName,
     setOverride, getOverride, setDeform, setBallDrag, resetOverrides, clearCheekDeform, boneWorld, resolvedBones, debugInfo,
     worldToScreen, screenToWorld, zones, hitTest, zoneScreen, topScreenY, zoneRadii, insideBounds,
     get setupWorld() { return setupWorld; },

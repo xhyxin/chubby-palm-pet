@@ -245,12 +245,100 @@ const Interact = (() => {
   }
 
   /* ---------------------------------------------------------- 摸肚子
-     官方 tickling：相位切换由"语音时长"驱动，且开始阶段最短 1.2 秒（官方 os 常量）。
-     黄油的数据：TickleStart1 = 0.822s，TickleDuring1 = 2.659s。
-     松手后不立刻收尾，等当前相位播完再进 Tickle_End（和官方一致）。 */
-  let bellyPhase = null;        // 'start' | 'during'
+     ★ 第五十八轮（用户要求）改成"按住摸一会儿才大笑"：
+       · 指针按到肚子上 → 立刻进入 hold 阶段（Tickle_Idle_1 憋笑 + 憋笑那一声）；
+       · 按住**随机 CONFIG.bellyHoldMinMs ~ bellyHoldMaxMs（默认 1~3 秒）** →
+         laugh 阶段：Tickle_Idle_2（笑不停）→ 播完 voiceMid → Tickle_End（大笑收尾）；
+       · 没到时间就松手 → **先保持憋笑 CONFIG.bellyLingerMs（默认 1 秒，即"余韵"）**，
+         再用 bellyRecoverFadeMs 的**交叉淡化**柔和回待机 —— 不硬切（"人是有惯性的"）。
+     （底部的「🫳 摸肚子」按钮走的还是 beginBelly() —— 点一下播完整段，保持原样。）
+
+     相位时长沿用官方口径：由"语音时长"驱动，开始阶段最短 1.2 秒（官方 os 常量）。
+     黄油的数据：TickleStart1 = 0.822s，TickleDuring1 = 2.659s。 */
+  let bellyPhase = null;        // null | 'hold' | 'laugh' | 'linger'（按钮路径用 'start' | 'during'）
   let bellyEnding = false;
 
+  /** 指针按到肚子上：进入"憋笑"，并排一个随机的大笑倒计时
+      @param {boolean} [resume] 余韵期里续摸 —— 不重放音效/语音，只重新计时 */
+  function beginBellyHold(resume) {
+    Pet.clearCheekDeform();
+    clearBellyTimers();
+    mode = 'belly';
+    bellyEnding = false;
+    bellyPhase = 'hold';
+    const A = CONFIG.actions.belly;
+    Pet.playLoop(A.loop);               // Tickle_Idle_1：憋笑
+    if (!resume) {
+      sfx(A.sfx);
+      speak(A.voice);                   // 憋笑那一声（唔唔唔…）
+    }
+    const lo = Math.max(0, CONFIG.bellyHoldMinMs != null ? CONFIG.bellyHoldMinMs : 1000);
+    const hi = Math.max(lo, CONFIG.bellyHoldMaxMs != null ? CONFIG.bellyHoldMaxMs : 3000);
+    const holdMs = lo + Math.random() * (hi - lo);   // 每次不一样：有时 1 秒、有时 3 秒
+    bellyTimers.push(setTimeout(() => {
+      if (mode !== 'belly' || bellyPhase !== 'hold') return;
+      beginBellyLaugh();
+    }, holdMs));
+  }
+
+  /** 摸够了：进入大笑（Tickle_Idle_2 笑不停 → 播完 → Tickle_End 收尾） */
+  function beginBellyLaugh() {
+    const A = CONFIG.actions.belly;
+    bellyPhase = 'laugh';
+    Pet.playLoop(A.loop2);              // 笑不停
+    sfx(A.sfx);
+    speak(A.voiceMid);                  // 好痒呀！！
+    reward('belly');
+    scheduleBellyEnd();
+  }
+
+  /** 排"笑完收尾"：时长按 voiceMid 的音频长度（读不到用官方兜底 2.659s） */
+  function scheduleBellyEnd() {
+    const A = CONFIG.actions.belly;
+    const hit = Voice.resolveKey(A.voiceMid, skinSuffix());
+    const key = hit && hit.key;
+    const hitLang = hit && hit.L;
+    const vd = CONFIG.voiceDurations || {};
+    const fallback = (key && vd[key]) || 2.659;
+    const minMs = (CONFIG.minDuringDuration || 0.45) * 1000;
+    Voice.durationOf(key, hitLang).then((d) => {
+      if (mode !== 'belly' || bellyPhase !== 'laugh') return;
+      const ms = Math.max(minMs, (d || fallback) * 1000);
+      bellyTimers.push(setTimeout(() => {
+        if (mode !== 'belly' || bellyPhase !== 'laugh') return;
+        endBelly();                     // 收尾：Tickle_End 大笑
+      }, ms));
+    });
+  }
+
+  /** 没摸够就松手：**先保持一会儿憋笑**（余韵），再平滑回待机。
+      用户要求："人是有惯性的" —— 一松手就立刻回待机太突兀；
+      先原地憋笑 CONFIG.bellyLingerMs（默认 1 秒），然后用交叉淡化回 Idle_1。
+      （憋笑那一声只有 0.8 秒左右，会在余韵里自然播完，不用硬掐。） */
+  function releaseBellyHold() {
+    clearBellyTimers();
+    bellyPhase = 'linger';
+    const linger = Math.max(0, CONFIG.bellyLingerMs != null ? CONFIG.bellyLingerMs : 1000);
+    bellyTimers.push(setTimeout(() => {
+      if (mode !== 'belly' || bellyPhase !== 'linger') return;
+      recoverBelly();
+    }, linger));
+  }
+
+  /** 余韵结束：交叉淡化回待机（不硬切） */
+  function recoverBelly() {
+    clearBellyTimers();
+    bellyPhase = null;
+    bellyEnding = false;
+    mode = null;
+    pending = null;
+    started = false;
+    const fadeMs = CONFIG.bellyRecoverFadeMs != null ? CONFIG.bellyRecoverFadeMs : 320;
+    if (fadeMs > 0) Pet.playFade('idle', fadeMs / 1000);   // 柔和收势
+    else Pet.playBase('idle');
+  }
+
+  /** 底部「🫳 摸肚子」按钮：点一下播完整段（憋笑 → 笑不停 → 大笑收尾） */
   function beginBelly() {
     Pet.clearCheekDeform();
     clearBellyTimers();
@@ -303,6 +391,7 @@ const Interact = (() => {
     const A = CONFIG.actions.belly;
     Pet.playEnd(A.end);        // Tickle_End：大笑收尾
     speak(A.voiceEnd);         // 好痒呀！！
+    bellyPhase = null;
     mode = null;
     pending = null;
     started = false;
@@ -312,9 +401,15 @@ const Interact = (() => {
   /* ---------------------------------------------------------- 结束 */
   function finish() {
     clearAuto();
-    // 摸肚子：官方是"一旦开始就把整段播完"（开始→中间→大笑收尾），松手不会中断，
-    // 所以这里直接返回，由序列自己的定时器收尾。
-    if (mode === 'belly') return;
+    /* 摸肚子（第五十八轮）：
+       · 还在"憋笑"阶段就松手 → 进入"余韵"（先保持一会儿憋笑，再交叉淡化回待机）；
+       · 已经进入"大笑"阶段 → 不打断，让序列自己收尾；
+       · "余韵"期松手 → 什么都不做（余韵自己会收）；
+       · 底部「摸肚子」按钮点的整段（'start' / 'during'）→ 同样不打断。 */
+    if (mode === 'belly') {
+      if (bellyPhase === 'hold') releaseBellyHold();
+      return;
+    }
 
     clearBellyTimers();
     if (mode === 'pinch') {
@@ -357,7 +452,8 @@ const Interact = (() => {
       return;
     }
     if (zone === 'belly') {
-      // 点肚子 = 开始摸肚子（连点会更快进入"中间"阶段）
+      /* ★ 第五十八轮：按到肚子在 onDown 里就已经进入"憋笑"了，正常走不到这里
+         （onUp 会先被 mode === 'belly' 分支接住）。留作兜底：真走到就播完整段。 */
       beginBelly();
       return;
     }
@@ -379,7 +475,6 @@ const Interact = (() => {
   function onDown(e) {
     if (!Pet.ready) return;
     if (e.button !== undefined && e.button !== 0) return;
-    if (mode === 'belly') return;    // 摸肚子序列播放中，不打断
 
     const p = localPos(e);
     const w = Pet.screenToWorld(p.x, p.y);
@@ -391,6 +486,30 @@ const Interact = (() => {
        避免"摸到头发/左边空白也触发拉脸语音、脸却不动"。 */
     if (zone === 'cheek' && !Pet.insideBounds(w.x, w.y, Pet.bounds.h * 0.02)) zone = null;
 
+    /* 摸肚子进行中：正在大笑不打断；但**"余韵"期允许再按一下接着憋笑** ——
+       用户可能摸一下、松开、马上又摸，余韵期里应该能续上，不该有 1 秒"死区"。 */
+    if (mode === 'belly') {
+      if (bellyPhase === 'linger' && zone === 'belly') {
+        armPointer(e, p, w, zone);
+        beginBellyHold(true);           // 续摸：不重放音效/语音，只重新计时
+      }
+      return;
+    }
+
+    armPointer(e, p, w, zone);
+
+    /* ★ 第五十八轮（用户要求）：按到肚子上**立刻**进入"憋笑"，
+       然后按住随机 1~3 秒才大笑；中途松手先进"余韵"再平滑恢复
+       （见 finish / releaseBellyHold / recoverBelly）。
+       以前是"点一下/拖一下就把整段播完"，用户嫌太容易触发大笑。 */
+    if (zone === 'belly') {
+      started = true;
+      beginBellyHold();
+    }
+  }
+
+  /** 记录这一轮指针按下的起点（onDown 用；"余韵"期续按也走这里） */
+  function armPointer(e, p, w, zone) {
     pointerId = e.pointerId;
     pointerDown = true;
     idleFrames = 0;
@@ -436,7 +555,8 @@ const Interact = (() => {
         beginPinch();
       }
       else if (pending === 'head') beginPat();
-      else if (pending === 'belly') beginBelly();
+      /* 摸肚子不再走这里 —— 按到肚子时 onDown 已经进入"憋笑"（第五十八轮），
+         onMove 开头 `if (mode === 'belly') return` 会先把拖拽吃掉。 */
       else { started = false; return; }
     }
 
@@ -480,7 +600,19 @@ const Interact = (() => {
 
   /** 看门狗：每帧调用。指针已抬起但动作没收尾就强制结束，避免形变残留 */
   function tick() {
-    if (!mode || mode === 'belly') return;
+    if (!mode) return;
+    /* ★ 第五十八轮：摸肚子在"憋笑"阶段也要看门狗 ——
+       万一 pointerup 丢了，不至于一直卡在 belly（onDown 会拒绝新点击）。
+       进入"余韵"后由余韵自己的定时器收尾，不归看门狗管。 */
+    if (mode === 'belly') {
+      if (bellyPhase === 'hold' && !pointerDown) {
+        idleFrames++;
+        if (idleFrames > 20) releaseBellyHold();
+      } else {
+        idleFrames = 0;
+      }
+      return;
+    }
     if (pointerDown) { idleFrames = 0; return; }
     idleFrames++;
     if (idleFrames > 20) finish();
@@ -591,7 +723,7 @@ const Interact = (() => {
     window.addEventListener('pointermove', onMove);
     window.addEventListener('pointerup', onUp);
     window.addEventListener('pointercancel', onUp);
-    window.addEventListener('blur', () => { if (mode) { if (mode === 'belly') endBelly(); else finish(); } });
+    window.addEventListener('blur', () => { if (mode) finish(); });
     document.addEventListener('visibilitychange', () => {
       /* ★ 第五十轮：切后台要**彻底收干净**，不只是结束动作 ——
          敲头语音尾巴（smashEndTimer）、摸肚子序列、摸头音效这些定时器
@@ -604,9 +736,12 @@ const Interact = (() => {
   return {
     attach, feed, setAuto, tick, finish, abort,
     doSmash, beginPinch, beginPat, beginBelly, autoPinch,
+    /* 第五十八轮：摸肚子的"按住才大笑 / 松手有余韵"接口（给探针 / 自测用） */
+    beginBellyHold, releaseBellyHold, recoverBelly,
     /* 切角色 / 换外观时清掉待播的敲头语音（叫一声 + 好痛尾巴都要清） */
     clearSmashVoice() { clearSmashVoice(); clearSmashVoiceEnd(); },
     beginTickle: beginBelly,          // 兼容旧调用
     get mode() { return mode; },
+    get bellyPhase() { return bellyPhase; },
   };
 })();

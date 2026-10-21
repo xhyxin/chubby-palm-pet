@@ -88,6 +88,17 @@ const CONFIG = {
   minStartDuration: 1.2,    // 官方 os 常量：摸肚子开始阶段最短 1.2 秒
   minDuringDuration: 0.45,  // 官方 Lf 常量
 
+  /* ★ 第五十八轮（用户要求）：摸肚子改成"按住摸一会儿才大笑"——
+     手指按到肚子上先憋笑（Tickle_Idle_1），**按住随机 1~3 秒**才进入大笑
+     （Tickle_Idle_2 → Tickle_End）；没到时间就松手 = 不再大笑。
+     ★ 松手后**不立刻**回待机（那样很突兀）—— 先保持憋笑 bellyLingerMs 毫秒（"余韵"），
+       再用 bellyRecoverFadeMs 的交叉淡化柔和地回 Idle_1（人是有惯性的）。
+     （底部的「🫳 摸肚子」按钮不受影响，仍然是点一下播完整段。） */
+  bellyHoldMinMs: 1000,     // 摸肚子：憋笑阶段最短按住多久（随机下限）
+  bellyHoldMaxMs: 3000,     // 摸肚子：憋笑阶段最长按住多久（随机上限）
+  bellyLingerMs: 1000,      // ★ 松手后的"余韵"：还保持憋笑这么久，再开始收
+  bellyRecoverFadeMs: 320,  // ★ 余韵结束 → 待机的交叉淡化时长（别用硬切）
+
   /* ================= 共享：状态数值 ================= */
   state: {
     startMood: 80, startFull: 70, startBond: 0,

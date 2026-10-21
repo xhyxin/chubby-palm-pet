@@ -342,10 +342,20 @@
     });
     /* ★ 第四十五轮：136 个角色里把"当前角色"滚进可视区 ——
        否则用户打开面板根本不知道自己现在用的是谁（要一路翻到底）。
-       只在面板已经打开时滚，避免开机时就动列表。 */
+       只在面板已经打开时滚，避免开机时就动列表。
+       ⚠️ 第五十九轮修 bug：原来用 `cur.scrollIntoView({block:'nearest'})`，
+       它会**把外层能滚的都滚一遍**。点「角色」时面板刚显示、还没被 placePanel 定位
+       （高度 auto、138 个角色全摊开），整页因此变得超高 → 浏览器为了露出当前角色
+       把 **body 滚到底（+84px，正好是 #stage::after 那个装饰圆溢出的高度）**，
+       #stage 被顶出屏幕上方 → 顶栏按钮全部消失、随后 placePanel 量到的 uiBand 变成负值，
+       面板被塞到屏幕外面（用户看到的就是"人物突然放大、按钮都不见了"）。
+       改成只滚 #char-list 自己，绝不碰祖先。 */
     const cur = box.querySelector('.char-item.on');
     if (cur && !$('skin-panel').classList.contains('hidden')) {
-      try { cur.scrollIntoView({ block: 'nearest' }); } catch (e) { /* 忽略 */ }
+      const cr = cur.getBoundingClientRect(), br = box.getBoundingClientRect();
+      if (cr.top < br.top || cr.bottom > br.bottom) {
+        box.scrollTop += Math.round((cr.top - br.top) - (br.height - cr.height) / 2);
+      }
     }
   }
 
@@ -572,12 +582,18 @@
         if (sn && !/^皮肤\s*\d+$/.test(sn)) skinNames[m.voiceSkin] = sn;
       }
     });
-    const relabel = (name) => (typeof name === 'string'
-      ? name.replace(/（皮肤\s*(\d+)）/, (all, n) => {
+    const relabel = (name) => {
+      if (typeof name !== 'string') return name;
+      const s = name.replace(/（皮肤\s*(\d+)）/, (all, n) => {
         const sn = skinNames['_Skin' + n];
         return sn ? `（${sn}）` : all;
-      })
-      : name);
+      });
+      /* ★ 第五十九轮：动作名跟着界面语言走（中文界面原样返回；遇到不认识的词整条回退中文，
+         不会中英混杂）。皮肤名是官方专名、只有中文，所以把「（…）」后缀先摘掉再翻、翻完拼回。 */
+      const m = /^(.*?)（([^）]*)）$/.exec(s);
+      if (!m) return I18N.animLabel(s);
+      return I18N.animLabel(m[1]) + '（' + m[2] + '）';
+    };
     const groups = {};
     cat.forEach((c) => { (groups[c.group] = groups[c.group] || []).push(c); });
     Object.keys(groups).forEach((g) => {
@@ -846,6 +862,15 @@
   function placePanel(el) {
     if (!el || el.classList.contains('hidden')) return;
     el.classList.remove('panel-snug', 'fp-h');
+    /* ★ 第五十九轮：量之前先把页面滚动复位。
+       只要 body / html 被任何原因滚过（例如别处调用 scrollIntoView），
+       .hud-tools 的 rect 就会变成负数，uiBand 算出负的可用带，
+       面板会被塞到屏幕外面、顶栏按钮也一起消失。 */
+    try {
+      if (document.body.scrollTop) document.body.scrollTop = 0;
+      if (document.documentElement.scrollTop) document.documentElement.scrollTop = 0;
+      if (window.scrollY || window.pageYOffset) window.scrollTo(0, 0);
+    } catch (e) { /* 忽略 */ }
     /* 居中面板带 translate(-50%,-50%)，先转成绝对定位才好量好放 */
     if (getComputedStyle(el).transform !== 'none') el.style.transform = 'none';
     el.style.transform = 'none';

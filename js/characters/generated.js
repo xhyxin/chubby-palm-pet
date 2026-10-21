@@ -1,5 +1,5 @@
 /* ------------------------------------------------------------------
- * characters/generated.js —— 自动生成的新角色数据（134 个）
+ * characters/generated.js —— 自动生成的新角色数据（136 个）
  *
  * ★ 本文件由 03_工具\批量生成角色文件.js 生成，**不要手改**。
  *   数据全部来自官方资源：
@@ -408,12 +408,7 @@ const CHAR_GENERATED = [
      "Sulky_2",
      "Talk_1",
      "Yare_1",
-     "Track_1",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Track_1"
     ]
    }
   ],
@@ -1201,13 +1196,7 @@ const CHAR_GENERATED = [
      "Play1_1",
      "Sleep1_1",
      "Spawn",
-     "Swim1_1",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Swim1_1"
     ]
    }
   ],
@@ -1605,12 +1594,7 @@ const CHAR_GENERATED = [
      "Shy_1",
      "Shy_2",
      "Shy_3",
-     "Shy_4",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Shy_4"
     ]
    }
   ],
@@ -2027,12 +2011,7 @@ const CHAR_GENERATED = [
      "Shy_3",
      "Spit_1",
      "Spit_2",
-     "Track_1",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Track_1"
     ]
    }
   ],
@@ -2441,13 +2420,7 @@ const CHAR_GENERATED = [
      "Sorry_2",
      "Talk_1",
      "Talk_2",
-     "Talk_3",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Talk_3"
     ]
    }
   ],
@@ -2855,12 +2828,7 @@ const CHAR_GENERATED = [
      "Shy_1",
      "Shy_2",
      "Sorry_1",
-     "Sorry_2",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sorry_2"
     ]
    }
   ],
@@ -3276,13 +3244,7 @@ const CHAR_GENERATED = [
      "Sulky_1",
      "Sulky_2",
      "Yoga_1",
-     "Yoga_2",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Yoga_2"
     ]
    }
   ],
@@ -3682,12 +3644,7 @@ const CHAR_GENERATED = [
      "Blank_5",
      "Notmyfault_1",
      "Notmyfault_2",
-     "Notmyfault_3",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Notmyfault_3"
     ]
    }
   ],
@@ -4097,12 +4054,7 @@ const CHAR_GENERATED = [
      "Shy_1",
      "Shy_2",
      "Thinking_1",
-     "Thinking_2",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Thinking_2"
     ]
    }
   ],
@@ -4508,12 +4460,7 @@ const CHAR_GENERATED = [
      "Shy_1",
      "Shy_2",
      "Shy_3",
-     "Track_1",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Track_1"
     ]
    }
   ],
@@ -4938,13 +4885,7 @@ const CHAR_GENERATED = [
      "Sulky_2",
      "Talk_1",
      "Talk_2",
-     "Talk_3",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Talk_3"
     ]
    }
   ],
@@ -5357,12 +5298,7 @@ const CHAR_GENERATED = [
      "Shy_1",
      "Shy_2",
      "Shy_3",
-     "Shy_4",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Shy_4"
     ]
    }
   ],
@@ -6535,12 +6471,7 @@ const CHAR_GENERATED = [
      "Sorry_2",
      "Sulky_1",
      "Talk_1",
-     "Talk_2",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Talk_2"
     ]
    }
   ],
@@ -6919,13 +6850,7 @@ const CHAR_GENERATED = [
      "Sorry_1",
      "Tired_1",
      "Worry_1",
-     "Worry_2",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Worry_2"
     ]
    }
   ],
@@ -7310,14 +7235,7 @@ const CHAR_GENERATED = [
      "Excited_2",
      "Excited_3",
      "Sleepy_1",
-     "Sleepy_2",
-     "Aside_1",
-     "Aside_2",
-     "Idle_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sleepy_2"
     ]
    }
   ],
@@ -7733,12 +7651,7 @@ const CHAR_GENERATED = [
      "Sleepy_2",
      "Sorry_1",
      "Sorry_2",
-     "Sorry_3",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sorry_3"
     ]
    }
   ],
@@ -8100,14 +8013,7 @@ const CHAR_GENERATED = [
      "Thinking_2",
      "Thinking_3",
      "Thinking_4",
-     "Thinking_5",
-     "Aside_1",
-     "Aside_2",
-     "Idle_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Thinking_5"
     ]
    }
   ],
@@ -8510,13 +8416,7 @@ const CHAR_GENERATED = [
      "Greeting_1",
      "Greeting_2",
      "Posing_1",
-     "Posing_2",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Posing_2"
     ]
    }
   ],
@@ -8908,13 +8808,7 @@ const CHAR_GENERATED = [
     "items": [
      "Sorry_1",
      "Sorry_2",
-     "Sorry_3",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sorry_3"
     ]
    }
   ],
@@ -10092,13 +9986,7 @@ const CHAR_GENERATED = [
      "Point_1",
      "Point_2",
      "Sulky_1",
-     "Sulky_2",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sulky_2"
     ]
    }
   ],
@@ -11581,13 +11469,7 @@ const CHAR_GENERATED = [
      "Blank_2",
      "Shy_1",
      "Shy_2",
-     "Sleepy_1",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sleepy_1"
     ]
    }
   ],
@@ -11995,12 +11877,7 @@ const CHAR_GENERATED = [
      "Sorry_1",
      "Sorry_2",
      "Sulky_1",
-     "Thinking_1",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Thinking_1"
     ]
    }
   ],
@@ -12397,13 +12274,7 @@ const CHAR_GENERATED = [
      "Sleepy_1",
      "Sulky_1",
      "Sulky_2",
-     "Sleepy",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sleepy"
     ]
    }
   ],
@@ -12829,13 +12700,7 @@ const CHAR_GENERATED = [
      "Sulky_4",
      "Talk_1",
      "Talk_2",
-     "Talk_3",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Talk_3"
     ]
    }
   ],
@@ -13267,12 +13132,7 @@ const CHAR_GENERATED = [
      "Shy_3",
      "Sulky_1",
      "Sulky_2",
-     "Sulky_3",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sulky_3"
     ]
    }
   ],
@@ -13313,28 +13173,28 @@ const CHAR_GENERATED = [
     "id": "EdSkin1",
     "dir": "assets/spine/EdSkin1",
     "name": "梦般的瞬间",
-    "desc": "梦般的瞬间（45 动作）",
+    "desc": "第 1 套外观（45 动作）",
     "voiceSkin": "_Skin1"
    },
    {
     "id": "EdSkin2",
     "dir": "assets/spine/EdSkin2",
     "name": "永恒的等待",
-    "desc": "永恒的等待（45 动作）",
+    "desc": "第 2 套外观（45 动作）",
     "voiceSkin": "_Skin2"
    },
    {
     "id": "EdSkin3",
     "dir": "assets/spine/EdSkin3",
     "name": "沉睡之星的预知梦",
-    "desc": "沉睡之星的预知梦（45 动作）",
+    "desc": "第 3 套外观（45 动作）",
     "voiceSkin": "_Skin3"
    },
    {
     "id": "EdSkin4",
     "dir": "assets/spine/EdSkin4",
     "name": "于梦中重逢",
-    "desc": "于梦中重逢（45 动作）",
+    "desc": "第 4 套外观（45 动作）",
     "voiceSkin": "_Skin4"
    }
   ],
@@ -13680,13 +13540,7 @@ const CHAR_GENERATED = [
      "Shy_2",
      "Sleep_1",
      "Sleep_2",
-     "Sleep_3",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sleep_3"
     ]
    }
   ],
@@ -14089,12 +13943,7 @@ const CHAR_GENERATED = [
      "Sulky_3",
      "Track_1",
      "Walk_1",
-     "Walk_2",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Walk_2"
     ]
    }
   ],
@@ -14135,21 +13984,21 @@ const CHAR_GENERATED = [
     "id": "EisiaSkin1",
     "dir": "assets/spine/EisiaSkin1",
     "name": "少女 CEO",
-    "desc": "少女 CEO（64 动作）",
+    "desc": "第 1 套外观（64 动作）",
     "voiceSkin": "_Skin1"
    },
    {
     "id": "EisiaSkin2",
     "dir": "assets/spine/EisiaSkin2",
     "name": "冰雪股东大会",
-    "desc": "冰雪股东大会（65 动作）",
+    "desc": "第 2 套外观（65 动作）",
     "voiceSkin": "_Skin2"
    },
    {
     "id": "EisiaSkin3",
     "dir": "assets/spine/EisiaSkin3",
     "name": "宅家职业玩家",
-    "desc": "宅家职业玩家（64 动作）",
+    "desc": "第 3 套外观（64 动作）",
     "voiceSkin": "_Skin3"
    }
   ],
@@ -14518,12 +14367,7 @@ const CHAR_GENERATED = [
      "Shy_1",
      "Shy_2",
      "Shy_3",
-     "Shy_4",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Shy_4"
     ]
    }
   ],
@@ -14913,12 +14757,7 @@ const CHAR_GENERATED = [
      "Sneaky_1",
      "Sneaky_2",
      "Sneaky_3",
-     "Sneaky_4",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sneaky_4"
     ]
    }
   ],
@@ -15344,13 +15183,7 @@ const CHAR_GENERATED = [
      "Talk_5",
      "Talk_6",
      "Talk_7",
-     "Track_1",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Track_1"
     ]
    }
   ],
@@ -15835,12 +15668,7 @@ const CHAR_GENERATED = [
      "Play1_1",
      "Sleep1_1",
      "Spawn",
-     "Swim1_1",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Swim1_1"
     ]
    }
   ],
@@ -16300,13 +16128,7 @@ const CHAR_GENERATED = [
      "Shy_2",
      "Shy_3",
      "Shy_4",
-     "Track_1",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Track_1"
     ]
    }
   ],
@@ -16676,13 +16498,7 @@ const CHAR_GENERATED = [
      "Sorry_2",
      "Sulky_1",
      "Sulky_2",
-     "Sulky_3",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sulky_3"
     ]
    }
   ],
@@ -17061,13 +16877,7 @@ const CHAR_GENERATED = [
      "Sulky_1",
      "Sulky_2",
      "Sulky_3",
-     "Sulky_4",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sulky_4"
     ]
    }
   ],
@@ -17487,13 +17297,7 @@ const CHAR_GENERATED = [
      "Sulky_5",
      "Thinking_1",
      "Thinking_2",
-     "Thinking_3",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Thinking_3"
     ]
    }
   ],
@@ -18279,12 +18083,7 @@ const CHAR_GENERATED = [
      "Joke_1",
      "Shy_1",
      "Shy_2",
-     "Track_1",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Track_1"
     ]
    }
   ],
@@ -18325,21 +18124,21 @@ const CHAR_GENERATED = [
     "id": "HaleySkin1",
     "dir": "assets/spine/HaleySkin1",
     "name": "荆棘玫瑰修女",
-    "desc": "荆棘玫瑰修女（43 动作）",
+    "desc": "第 1 套外观（43 动作）",
     "voiceSkin": "_Skin1"
    },
    {
     "id": "HaleySkin2",
     "dir": "assets/spine/HaleySkin2",
     "name": "隆冬和平使者",
-    "desc": "隆冬和平使者（43 动作）",
+    "desc": "第 2 套外观（43 动作）",
     "voiceSkin": "_Skin2"
    },
    {
     "id": "HaleySkin3",
     "dir": "assets/spine/HaleySkin3",
     "name": "今日热血特训",
-    "desc": "今日热血特训（43 动作）",
+    "desc": "第 3 套外观（43 动作）",
     "voiceSkin": "_Skin3"
    }
   ],
@@ -18682,13 +18481,7 @@ const CHAR_GENERATED = [
      "Sorry_3",
      "Sulky_1",
      "Sulky_2",
-     "Sulky_3",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sulky_3"
     ]
    }
   ],
@@ -19101,13 +18894,7 @@ const CHAR_GENERATED = [
      "Sword_3",
      "Sword_4",
      "Sword_5",
-     "Sword_6",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sword_6"
     ]
    }
   ],
@@ -19501,13 +19288,7 @@ const CHAR_GENERATED = [
      "Note_1",
      "Note_2",
      "Note_3",
-     "Shy_1",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Shy_1"
     ]
    }
   ],
@@ -19919,13 +19700,7 @@ const CHAR_GENERATED = [
      "Nope_3",
      "Sulky_1",
      "Thinking_1",
-     "Thinking_2",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Thinking_2"
     ]
    }
   ],
@@ -20696,12 +20471,7 @@ const CHAR_GENERATED = [
      "Special_3",
      "Special_4",
      "Taik_1",
-     "Taik_2",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Taik_2"
     ]
    }
   ],
@@ -21082,12 +20852,7 @@ const CHAR_GENERATED = [
      "Smile_1",
      "Sulky_1",
      "Sulky_2",
-     "Sulky_3",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sulky_3"
     ]
    }
   ],
@@ -21531,13 +21296,7 @@ const CHAR_GENERATED = [
      "Play1_1",
      "Sleep1_1",
      "Spawn",
-     "Swim1_1",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Swim1_1"
     ]
    }
   ],
@@ -22693,12 +22452,7 @@ const CHAR_GENERATED = [
      "Shy_3",
      "Sleepy_1",
      "Sleepy_2",
-     "Sleepy_3",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sleepy_3"
     ]
    }
   ],
@@ -22716,7 +22470,7 @@ const CHAR_GENERATED = [
   "id": "Kidian",
   "name": "基迪恩",
   "en": "Kidian",
-  "desc": "龙族 · 4 套外观",
+  "desc": "龙族 · 5 套外观",
   "tag": "🐉",
   "art": {
    "avatar": "assets/art/Kidian/phone-avatar.png",
@@ -22748,6 +22502,13 @@ const CHAR_GENERATED = [
     "name": "心中的银河",
     "desc": "穿着闪亮连衣裙，和教主一起看星星的基迪恩…（47 动作）",
     "voiceSkin": "_Skin2"
+   },
+   {
+    "id": "KidianSkin3",
+    "dir": "assets/spine/KidianSkin3",
+    "name": "星光探险队",
+    "desc": "第 3 套外观（47 动作）",
+    "voiceSkin": "_Skin3"
    },
    {
     "id": "KidianSkin4",
@@ -23096,13 +22857,7 @@ const CHAR_GENERATED = [
      "Sulky_2",
      "Sulky_3",
      "Thinking_1",
-     "Thinking_2",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Thinking_2"
     ]
    }
   ],
@@ -23503,13 +23258,7 @@ const CHAR_GENERATED = [
      "Track_2",
      "Track_3",
      "Why_1",
-     "Why_2",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Why_2"
     ]
    }
   ],
@@ -23915,13 +23664,7 @@ const CHAR_GENERATED = [
      "Play1_1",
      "Sleep1_1",
      "Spawn",
-     "Swim1_1",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Swim1_1"
     ]
    }
   ],
@@ -24328,13 +24071,7 @@ const CHAR_GENERATED = [
      "Relaxed_1",
      "Relaxed_2",
      "Tired_1",
-     "Tired_2",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Tired_2"
     ]
    }
   ],
@@ -24736,13 +24473,7 @@ const CHAR_GENERATED = [
      "Blank_3",
      "Melong_1",
      "Melong_2",
-     "Melong_3",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Melong_3"
     ]
    }
   ],
@@ -25140,12 +24871,7 @@ const CHAR_GENERATED = [
      "Blank_4",
      "Groggy_1",
      "Think_1",
-     "Think_2",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Think_2"
     ]
    }
   ],
@@ -25922,12 +25648,7 @@ const CHAR_GENERATED = [
      "Mad_3",
      "Mad_4",
      "Mad_5",
-     "Mad_6",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Mad_6"
     ]
    }
   ],
@@ -27088,13 +26809,7 @@ const CHAR_GENERATED = [
      "Note_3",
      "Note_4",
      "Shy_1",
-     "Shy_2",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Shy_2"
     ]
    }
   ],
@@ -27506,13 +27221,7 @@ const CHAR_GENERATED = [
      "Joke_2",
      "Shy_1",
      "Shy_2",
-     "Sleepy_1",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sleepy_1"
     ]
    }
   ],
@@ -27877,13 +27586,7 @@ const CHAR_GENERATED = [
      "Thinking_3",
      "Thinking_4",
      "Warning_1",
-     "Smash",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Smash"
     ]
    }
   ],
@@ -29040,13 +28743,7 @@ const CHAR_GENERATED = [
      "Sleepy_1",
      "Thinking_1",
      "Thinking_2",
-     "Thinking_3",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Thinking_3"
     ]
    }
   ],
@@ -30217,12 +29914,7 @@ const CHAR_GENERATED = [
      "Shy_3",
      "Sorry_1",
      "Sorry_2",
-     "Sorry_3",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sorry_3"
     ]
    }
   ],
@@ -30600,12 +30292,7 @@ const CHAR_GENERATED = [
      "Singing_2",
      "Singing_3",
      "Sulky_1",
-     "Sulky_2",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sulky_2"
     ]
    }
   ],
@@ -30646,14 +30333,14 @@ const CHAR_GENERATED = [
     "id": "MiroSkin1",
     "dir": "assets/spine/MiroSkin1",
     "name": "水面映出的童心",
-    "desc": "水面映出的童心（42 动作）",
+    "desc": "第 1 套外观（42 动作）",
     "voiceSkin": "_Skin1"
    },
    {
     "id": "MiroSkin2",
     "dir": "assets/spine/MiroSkin2",
     "name": "黑发大魔法师",
-    "desc": "黑发大魔法师（42 动作）",
+    "desc": "第 2 套外观（42 动作）",
     "voiceSkin": "_Skin2"
    }
   ],
@@ -30991,12 +30678,7 @@ const CHAR_GENERATED = [
      "Mirror_2",
      "Mirror_3",
      "Mirror_4",
-     "Mirror_5",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Mirror_5"
     ]
    }
   ],
@@ -31412,12 +31094,7 @@ const CHAR_GENERATED = [
      "Shy_1",
      "Shy_2",
      "Sorry_1",
-     "Sorry_2",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sorry_2"
     ]
    }
   ],
@@ -31458,14 +31135,14 @@ const CHAR_GENERATED = [
     "id": "MuteSkin1",
     "dir": "assets/spine/MuteSkin1",
     "name": "危险的邻家间谍",
-    "desc": "危险的邻家间谍（62 动作）",
+    "desc": "第 1 套外观（62 动作）",
     "voiceSkin": "_Skin1"
    },
    {
     "id": "MuteSkin2",
     "dir": "assets/spine/MuteSkin2",
     "name": "池水余温",
-    "desc": "池水余温（62 动作）",
+    "desc": "第 2 套外观（62 动作）",
     "voiceSkin": "_Skin2"
    }
   ],
@@ -31836,12 +31513,7 @@ const CHAR_GENERATED = [
      "Sorry_1",
      "Sorry_2",
      "Sorry_3",
-     "Sorry_4",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sorry_4"
     ]
    }
   ],
@@ -32639,12 +32311,7 @@ const CHAR_GENERATED = [
      "Shy_3",
      "Sulky_1",
      "Sulky_2",
-     "Sulky_3",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sulky_3"
     ]
    }
   ],
@@ -33063,14 +32730,7 @@ const CHAR_GENERATED = [
      "Tired_4",
      "Tired_5",
      "Worry_1",
-     "Worry_2",
-     "Aside_1",
-     "Aside_2",
-     "Idle_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Worry_2"
     ]
    }
   ],
@@ -33481,12 +33141,7 @@ const CHAR_GENERATED = [
      "Shy_1",
      "Shy_2",
      "Sulky_1",
-     "Sulky_2",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sulky_2"
     ]
    }
   ],
@@ -33891,12 +33546,7 @@ const CHAR_GENERATED = [
      "Pride_2",
      "Pride_3",
      "Shy_1",
-     "Shy_2",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Shy_2"
     ]
    }
   ],
@@ -34294,13 +33944,7 @@ const CHAR_GENERATED = [
      "Shock_1",
      "Shock_2",
      "Shock_3",
-     "Shy_1",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Shy_1"
     ]
    }
   ],
@@ -34721,12 +34365,7 @@ const CHAR_GENERATED = [
      "Blank_2",
      "Dance_1",
      "Shy_1",
-     "Shy_2",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Shy_2"
     ]
    }
   ],
@@ -35125,13 +34764,7 @@ const CHAR_GENERATED = [
      "Work_1",
      "Work_2",
      "Work_3",
-     "Work_4",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Work_4"
     ]
    }
   ],
@@ -35916,13 +35549,7 @@ const CHAR_GENERATED = [
      "Sulky_3",
      "Think_1",
      "V_1",
-     "V_2",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "V_2"
     ]
    }
   ],
@@ -36324,13 +35951,7 @@ const CHAR_GENERATED = [
      "Shy_1",
      "Shy_2",
      "Sorry_1",
-     "Sulky_1",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sulky_1"
     ]
    }
   ],
@@ -36749,13 +36370,7 @@ const CHAR_GENERATED = [
      "Speak_2",
      "Speak_3",
      "Succession_1",
-     "Succession_2",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Succession_2"
     ]
    }
   ],
@@ -37149,13 +36764,7 @@ const CHAR_GENERATED = [
      "Sulky_1",
      "Sulky_2",
      "Thinking_1",
-     "Thinking_2",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Thinking_2"
     ]
    }
   ],
@@ -37575,13 +37184,7 @@ const CHAR_GENERATED = [
      "Sulky_2",
      "Sulky_3",
      "Sulky_4",
-     "Sulky_5",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sulky_5"
     ]
    }
   ],
@@ -38365,13 +37968,7 @@ const CHAR_GENERATED = [
      "Talk_1",
      "Talk_2",
      "Tired_1",
-     "Tired_2",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Tired_2"
     ]
    }
   ],
@@ -38771,13 +38368,7 @@ const CHAR_GENERATED = [
      "Cook_4",
      "Cook_5",
      "Shy_1",
-     "Shy_2",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Shy_2"
     ]
    }
   ],
@@ -39164,13 +38755,7 @@ const CHAR_GENERATED = [
      "Talk_1",
      "Talk_2",
      "Talk_3",
-     "Talk_4",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Talk_4"
     ]
    }
   ],
@@ -39211,28 +38796,28 @@ const CHAR_GENERATED = [
     "id": "RimChaosSkin1",
     "dir": "assets/spine/RimChaosSkin1",
     "name": "混沌围裙",
-    "desc": "混沌围裙（54 动作）",
+    "desc": "第 1 套外观（54 动作）",
     "voiceSkin": "_Skin1"
    },
    {
     "id": "RimChaosSkin2",
     "dir": "assets/spine/RimChaosSkin2",
     "name": "夜市袭击者",
-    "desc": "夜市袭击者（54 动作）",
+    "desc": "第 2 套外观（54 动作）",
     "voiceSkin": "_Skin2"
    },
    {
     "id": "RimChaosSkin3",
     "dir": "assets/spine/RimChaosSkin3",
     "name": "宴会楼混沌夫人",
-    "desc": "宴会楼混沌夫人（54 动作）",
+    "desc": "第 3 套外观（54 动作）",
     "voiceSkin": "_Skin3"
    },
    {
     "id": "RimChaosSkin4",
     "dir": "assets/spine/RimChaosSkin4",
     "name": "幽灵沼泽人气王",
-    "desc": "幽灵沼泽人气王（54 动作）",
+    "desc": "第 4 套外观（54 动作）",
     "voiceSkin": "_Skin4"
    }
   ],
@@ -39589,13 +39174,7 @@ const CHAR_GENERATED = [
      "Shy_3",
      "Sorry_1",
      "Sorry_2",
-     "TIckle",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "TIckle"
     ]
    }
   ],
@@ -39636,21 +39215,21 @@ const CHAR_GENERATED = [
     "id": "RistySkin1",
     "dir": "assets/spine/RistySkin1",
     "name": "可爱黑客兔",
-    "desc": "可爱黑客兔（49 动作）",
+    "desc": "第 1 套外观（49 动作）",
     "voiceSkin": "_Skin1"
    },
    {
     "id": "RistySkin2",
     "dir": "assets/spine/RistySkin2",
     "name": "梦之国冒险家",
-    "desc": "梦之国冒险家（49 动作）",
+    "desc": "第 2 套外观（49 动作）",
     "voiceSkin": "_Skin2"
    },
    {
     "id": "RistySkin3",
     "dir": "assets/spine/RistySkin3",
     "name": "哦！我的会长",
-    "desc": "哦！我的会长（49 动作）",
+    "desc": "第 3 套外观（49 动作）",
     "voiceSkin": "_Skin3"
    }
   ],
@@ -40004,13 +39583,7 @@ const CHAR_GENERATED = [
      "Scouter_3",
      "Scouter_4",
      "Sulky_1",
-     "Sulky_2",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sulky_2"
     ]
    }
   ],
@@ -40823,12 +40396,7 @@ const CHAR_GENERATED = [
      "Talk_4",
      "Talk_5",
      "Tired_1",
-     "Tired_2",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Tired_2"
     ]
    }
   ],
@@ -40876,7 +40444,7 @@ const CHAR_GENERATED = [
     "id": "RollettSkin2",
     "dir": "assets/spine/RollettSkin2",
     "name": "蓬蓬的组长",
-    "desc": "蓬蓬的组长（48 动作）",
+    "desc": "第 2 套外观（48 动作）",
     "voiceSkin": "_Skin2"
    },
    {
@@ -41236,12 +40804,7 @@ const CHAR_GENERATED = [
      "Thinking_2",
      "Thinking_3",
      "Thinking_4",
-     "Thinking_5",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Thinking_5"
     ]
    }
   ],
@@ -41655,12 +41218,7 @@ const CHAR_GENERATED = [
      "Sit_3",
      "Sit_4",
      "Tease_1",
-     "Tease_2",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Tease_2"
     ]
    }
   ],
@@ -42036,13 +41594,7 @@ const CHAR_GENERATED = [
      "Strong_2",
      "Strong_3",
      "Strong_4",
-     "Strong_5",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Strong_5"
     ]
    }
   ],
@@ -42426,14 +41978,7 @@ const CHAR_GENERATED = [
     "group": "其他形态",
     "items": [
      "Notmyfault_1",
-     "Notmyfault_2",
-     "Aside_1",
-     "Aside_2",
-     "Idle_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Notmyfault_2"
     ]
    }
   ],
@@ -43195,13 +42740,7 @@ const CHAR_GENERATED = [
      "Villain_3",
      "Villain_4",
      "Villain_5",
-     "Villain_6",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Villain_6"
     ]
    }
   ],
@@ -43615,12 +43154,7 @@ const CHAR_GENERATED = [
      "Think_3",
      "Whisper_1",
      "Whisper_2",
-     "Wink_1",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Wink_1"
     ]
    }
   ],
@@ -44009,12 +43543,7 @@ const CHAR_GENERATED = [
      "Joke_2",
      "Joke_3",
      "Joke_4",
-     "Shy_1",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Shy_1"
     ]
    }
   ],
@@ -44436,12 +43965,7 @@ const CHAR_GENERATED = [
      "Talk_1",
      "Talk_2",
      "Thinking_1",
-     "Thinking_2",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Thinking_2"
     ]
    }
   ],
@@ -44877,12 +44401,7 @@ const CHAR_GENERATED = [
      "Splash_3",
      "Splash_4",
      "Splash_5",
-     "Track_1",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Track_1"
     ]
    }
   ],
@@ -44923,21 +44442,21 @@ const CHAR_GENERATED = [
     "id": "SherumSkin1",
     "dir": "assets/spine/SherumSkin1",
     "name": "唱片录音机",
-    "desc": "唱片录音机（53 动作）",
+    "desc": "第 1 套外观（53 动作）",
     "voiceSkin": "_Skin1"
    },
    {
     "id": "SherumSkin2",
     "dir": "assets/spine/SherumSkin2",
     "name": "粉色约会出游",
-    "desc": "粉色约会出游（53 动作）",
+    "desc": "第 2 套外观（53 动作）",
     "voiceSkin": "_Skin2"
    },
    {
     "id": "SherumSkin3",
     "dir": "assets/spine/SherumSkin3",
     "name": "小说与小说家",
-    "desc": "小说与小说家（54 动作）",
+    "desc": "第 3 套外观（54 动作）",
     "voiceSkin": "_Skin3"
    }
   ],
@@ -45290,13 +44809,7 @@ const CHAR_GENERATED = [
      "Write_3",
      "Write_4",
      "Write_5",
-     "Track_1",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Track_1"
     ]
    }
   ],
@@ -45724,13 +45237,7 @@ const CHAR_GENERATED = [
      "Play1_1",
      "Sleep1_1",
      "Spawn",
-     "Swim1_1",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Swim1_1"
     ]
    }
   ],
@@ -45771,14 +45278,14 @@ const CHAR_GENERATED = [
     "id": "SilphirSkin1",
     "dir": "assets/spine/SilphirSkin1",
     "name": "青涩学生时代",
-    "desc": "青涩学生时代（43 动作）",
+    "desc": "第 1 套外观（43 动作）",
     "voiceSkin": "_Skin1"
    },
    {
     "id": "SilphirSkin2",
     "dir": "assets/spine/SilphirSkin2",
     "name": "西蓝提督",
-    "desc": "西蓝提督（43 动作）",
+    "desc": "第 2 套外观（43 动作）",
     "voiceSkin": "_Skin2"
    }
   ],
@@ -46116,13 +45623,7 @@ const CHAR_GENERATED = [
      "Smile_3",
      "Sorry_1",
      "Sulky_1",
-     "Thinking_1",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Thinking_1"
     ]
    }
   ],
@@ -46540,12 +46041,7 @@ const CHAR_GENERATED = [
      "Shy_7",
      "Smile_1",
      "Smile_2",
-     "Track_1",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Track_1"
     ]
    }
   ],
@@ -46953,12 +46449,7 @@ const CHAR_GENERATED = [
      "Shy_3",
      "Shy_4",
      "Sulky_1",
-     "Sulky_2",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sulky_2"
     ]
    }
   ],
@@ -47357,12 +46848,7 @@ const CHAR_GENERATED = [
      "Jackson_2",
      "Knee_1",
      "Shy_1",
-     "Shy_2",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Shy_2"
     ]
    }
   ],
@@ -47768,13 +47254,7 @@ const CHAR_GENERATED = [
      "Sneaky_3",
      "Sulky_1",
      "Sulky_2",
-     "Track_1",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Track_1"
     ]
    }
   ],
@@ -48562,13 +48042,7 @@ const CHAR_GENERATED = [
      "Sulky_1",
      "Sulky_2",
      "Sulky_3",
-     "Think_1",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Think_1"
     ]
    }
   ],
@@ -48996,12 +48470,7 @@ const CHAR_GENERATED = [
      "Shy_2",
      "Shy_3",
      "Shy_4",
-     "Track_1",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Track_1"
     ]
    }
   ],
@@ -49389,12 +48858,7 @@ const CHAR_GENERATED = [
      "Sorry_1",
      "Sorry_2",
      "Sulky_1",
-     "Sulky_2",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sulky_2"
     ]
    }
   ],
@@ -50209,12 +49673,7 @@ const CHAR_GENERATED = [
      "Sulky_1",
      "Sulky_2",
      "Sulky_3",
-     "Sulky_4",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sulky_4"
     ]
    }
   ],
@@ -50639,13 +50098,7 @@ const CHAR_GENERATED = [
      "Sword_7",
      "Sword_8",
      "Sword_9",
-     "Sword_10",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sword_10"
     ]
    }
   ],
@@ -51061,13 +50514,7 @@ const CHAR_GENERATED = [
      "Smile_3",
      "Sulky_1",
      "Sulky_2",
-     "Track_1",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Track_1"
     ]
    }
   ],
@@ -51079,6 +50526,430 @@ const CHAR_GENERATED = [
    "Angry_": "Ui_Anger",
    "Sad_": "Ui_Sorrow",
    "Surprise_": "Ui_Surprise"
+  }
+ },
+ {
+  "id": "UiMemory",
+  "name": "雨伊（记忆）",
+  "en": "UiMemory",
+  "desc": "使徒 · 3 套外观",
+  "tag": "⭐",
+  "art": {
+   "avatar": "assets/art/UiMemory/phone-avatar.png",
+   "present": "assets/art/UiMemory/present.png",
+   "album": "assets/art/UiMemory/album-strict.webp"
+  },
+  "skinCandidates": [
+   "Normal",
+   "default"
+  ],
+  "models": [
+   {
+    "id": "UiMemory",
+    "dir": "assets/spine/UiMemory",
+    "name": "默认",
+    "desc": "基础外观（74 动作）",
+    "voiceSkin": ""
+   },
+   {
+    "id": "UiMemorySkin1",
+    "dir": "assets/spine/UiMemorySkin1",
+    "name": "蛋黄色运动服女仆",
+    "desc": "第 1 套外观（74 动作）",
+    "voiceSkin": "_Skin1"
+   },
+   {
+    "id": "UiMemorySkin2",
+    "dir": "assets/spine/UiMemorySkin2",
+    "name": "露珠医生",
+    "desc": "第 2 套外观（71 动作）",
+    "voiceSkin": "_Skin2"
+   }
+  ],
+  "bones": {
+   "head": [
+    "Head",
+    "Eru_Head"
+   ],
+   "headTop": [
+    "Hair_F_Root",
+    "Head"
+   ],
+   "face": [
+    "Face"
+   ],
+   "mouth": [
+    "Mouth_Root",
+    "Mouth"
+   ],
+   "cheekL": [
+    "Ball_L"
+   ],
+   "cheekR": [
+    "Ball_R"
+   ],
+   "belly": [
+    "Body_1",
+    "Pelvis"
+   ],
+   "neck": [],
+   "tail": [],
+   "earL": [],
+   "earR": [],
+   "ballMove": [
+    "Character_Ball_Move",
+    "Ball_R"
+   ],
+   "ballMoveP": [
+    "Ball_R"
+   ],
+   "pat": [
+    "Character_Pat",
+    "Head",
+    "Eru_Head"
+   ],
+   "tickle": [
+    "Character_Tickle",
+    "Body_1",
+    "Pelvis"
+   ]
+  },
+  "pinch": {
+   "ok": true,
+   "reason": ""
+  },
+  "anim": {
+   "idle": [
+    "Idle_1"
+   ],
+   "patIdle": [
+    "Pat_Idle"
+   ],
+   "patEnd": [
+    "Pat_End",
+    "Idle_1"
+   ],
+   "tickleIdle": [
+    "Tickle_Idle_1"
+   ],
+   "tickleIdle2": [
+    "Tickle_Idle_2"
+   ],
+   "tickleEnd": [
+    "Tickle_End",
+    "Idle_1"
+   ],
+   "touchIdle": [
+    "Touch_Idle"
+   ],
+   "touchEnd": [
+    "Touch_End",
+    "Idle_1"
+   ],
+   "smash": [
+    "Smash_End_1",
+    "Surprise_1"
+   ],
+   "smash2": [
+    "Smash_End_2"
+   ],
+   "eat": [
+    "Eat_1",
+    "Eat_2"
+   ],
+   "happy": [
+    "Happy_1",
+    "Happy_2",
+    "Happy_3",
+    "Happy_4",
+    "Happy_5"
+   ],
+   "proud": [
+    "Happy_1"
+   ],
+   "angry": [
+    "Angry_1",
+    "Angry_2",
+    "Angry_3"
+   ],
+   "sad": [
+    "Sad_1",
+    "Sad_2",
+    "Sad_3",
+    "Sad_4"
+   ],
+   "surprise": [
+    "Surprise_1"
+   ],
+   "dizzy": [
+    "Happy_1"
+   ],
+   "panic": [
+    "Panic_1",
+    "Panic_2",
+    "Panic_3"
+   ],
+   "taunt": [
+    "Happy_1"
+   ],
+   "smell": [
+    "Happy_1"
+   ],
+   "serious": [
+    "Serious_1",
+    "Serious_2"
+   ],
+   "close": [
+    "Close_1"
+   ]
+  },
+  "actions": {
+   "pinch": {
+    "label": "捏脸",
+    "icon": "🤏",
+    "zone": "cheek",
+    "gesture": "drag",
+    "deform": "cheek",
+    "loop": "touchIdle",
+    "end": "touchEnd",
+    "sfxStart": {
+     "name": "SFX_Common_PullCheek",
+     "volume": 0.65
+    },
+    "sfxEnd": {
+     "name": "SFX_Common_PullCheekEnd",
+     "volume": 0.65
+    },
+    "voice": [
+     "UiMemory_Touch1",
+     "UiMemory_Touch1_1",
+     "UiMemory_Touch1_2"
+    ]
+   },
+   "pat": {
+    "label": "摸头",
+    "icon": "🖐",
+    "zone": "head",
+    "gesture": "drag",
+    "loop": "patIdle",
+    "end": "patEnd",
+    "sfx": {
+     "name": "SFX_Pat",
+     "volume": 0.28
+    },
+    "sfxIntervalMs": 520,
+    "fx": {
+     "kind": "heart",
+     "duration": 1600
+    },
+    "fxIntervalMs": 900,
+    "voice": [
+     "UiMemory_Touch2",
+     "UiMemory_Touch2_1",
+     "UiMemory_Touch2_2"
+    ]
+   },
+   "bonk": {
+    "label": "敲头",
+    "icon": "🔨",
+    "zone": "head",
+    "gesture": "tap",
+    "once": "smash",
+    "second": "smash2",
+    "sfx": [
+     {
+      "name": "SFX_DutchRub_Default",
+      "volume": 0.62
+     },
+     {
+      "name": "SFX_DutchRub_Max",
+      "volume": 0.68
+     }
+    ],
+    "fx": {
+     "kind": "dutchRub",
+     "duration": 1180
+    },
+    "voice": [
+     "UiMemory_DutchRubEnd1"
+    ],
+    "voiceEnd": [
+     "UiMemory_DutchRubEnd2"
+    ]
+   },
+   "belly": {
+    "label": "摸肚子",
+    "icon": "🫳",
+    "zone": "belly",
+    "gesture": "drag",
+    "loop": "tickleIdle",
+    "loop2": "tickleIdle2",
+    "end": "tickleEnd",
+    "sfx": {
+     "name": "SFX_Tickle",
+     "volume": 0.38
+    },
+    "voice": [
+     "UiMemory_TickleStart1"
+    ],
+    "voiceMid": [
+     "UiMemory_TickleDuring1"
+    ],
+    "voiceEnd": []
+   },
+   "feed": {
+    "label": "喂食",
+    "icon": "🍖",
+    "zone": "mouth",
+    "gesture": "drop",
+    "once": "eat",
+    "voice": [
+     "UiMemory_Eat1"
+    ]
+   }
+  },
+  "voiceDurations": {},
+  "voiceLang": "ko",
+  "voiceLangs": [
+   "ko"
+  ],
+  "pokeVoice": [
+   "UiMemory_Surprise1",
+   "UiMemory_Hmm1",
+   "UiMemory_Yes1",
+   "UiMemory_Touch1"
+  ],
+  "upsetVoice": [
+   "UiMemory_Anger1",
+   "UiMemory_No1",
+   "UiMemory_Anger2",
+   "UiMemory_DutchRubEnd1"
+  ],
+  "hungryVoice": [
+   "UiMemory_CallPlayer1",
+   "UiMemory_Sorrow1",
+   "UiMemory_Hmm2",
+   "UiMemory_TickleStart1"
+  ],
+  "greetVoice": [
+   "UiMemory_Greeting",
+   "UiMemory_Lobby",
+   "UiMemory_Spawn1",
+   "UiMemory_Joy1",
+   "UiMemory_Touch2"
+  ],
+  "moodActs": [
+   "happy",
+   "proud",
+   "taunt",
+   "smell",
+   "serious",
+   "dizzy"
+  ],
+  "animPanel": [
+   {
+    "group": "互动",
+    "items": [
+     "Eat_1",
+     "Eat_2",
+     "Pat_End",
+     "Pat_Idle",
+     "Smash_End_1",
+     "Smash_End_2",
+     "Tickle_End",
+     "Tickle_Idle_1",
+     "Tickle_Idle_2",
+     "Touch_End",
+     "Touch_Idle"
+    ]
+   },
+   {
+    "group": "情绪",
+    "items": [
+     "Angry_1",
+     "Angry_2",
+     "Angry_3",
+     "Angry_4",
+     "Angry_5",
+     "Angry_6",
+     "Close_1",
+     "Close_2",
+     "Happy_1",
+     "Happy_2",
+     "Happy_3",
+     "Happy_4",
+     "Happy_5",
+     "Happy_6",
+     "Happy_7",
+     "Panic_1",
+     "Panic_2",
+     "Panic_3",
+     "Panic_4",
+     "Panic_5",
+     "Sad_1",
+     "Sad_2",
+     "Sad_3",
+     "Sad_4",
+     "Sad_5",
+     "Sad_6",
+     "Sad_7",
+     "Sad_8",
+     "Serious_1",
+     "Serious_2",
+     "Serious_3",
+     "Serious_4",
+     "Serious_5",
+     "Serious_6",
+     "Serious_7",
+     "Serious_8",
+     "Serious_9",
+     "Surprise_1",
+     "Surprise_2",
+     "Surprise_3",
+     "Surprise_4"
+    ]
+   },
+   {
+    "group": "待机",
+    "items": [
+     "Idle_1",
+     "Idle_2",
+     "Idle_3"
+    ]
+   },
+   {
+    "group": "其他形态",
+    "items": [
+     "Blank_1",
+     "Blank_2",
+     "Blank_3",
+     "Dance_1",
+     "EasterEgg_Enter",
+     "EasterEgg_Idle",
+     "Pray_1",
+     "Pray_2",
+     "Pray_3",
+     "Pray_4",
+     "Shy_1",
+     "Shy_2",
+     "Shy_3",
+     "Shy_4",
+     "Sulky_1",
+     "Sulky_2",
+     "Track_1",
+     "Track_2",
+     "Track_3"
+    ]
+   }
+  ],
+  "animLabel": {},
+  "voiceForAnim": {},
+  "voiceForAnimSeries": {
+   "Happy_": "UiMemory_Joy",
+   "Proud_": "UiMemory_Pleasure",
+   "Angry_": "UiMemory_Anger",
+   "Sad_": "UiMemory_Sorrow",
+   "Surprise_": "UiMemory_Surprise"
   }
  },
  {
@@ -51489,12 +51360,7 @@ const CHAR_GENERATED = [
      "Shy_1",
      "Shy_2",
      "Shy_3",
-     "Shy_4",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Shy_4"
     ]
    }
   ],
@@ -51911,13 +51777,7 @@ const CHAR_GENERATED = [
      "Blank_1",
      "Blank_2",
      "Shy_1",
-     "Shy_2",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Shy_2"
     ]
    }
   ],
@@ -52300,12 +52160,7 @@ const CHAR_GENERATED = [
      "Sulky_1",
      "Sulky_2",
      "Sulky_3",
-     "Sulky_4",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Sulky_4"
     ]
    }
   ],
@@ -52736,35 +52591,35 @@ const CHAR_GENERATED = [
     "id": "ViviSkin1",
     "dir": "assets/spine/ViviSkin1",
     "name": "最后的黑幕",
-    "desc": "最后的黑幕（62 动作）",
+    "desc": "第 1 套外观（62 动作）",
     "voiceSkin": "_Skin1"
    },
    {
     "id": "ViviSkin2",
     "dir": "assets/spine/ViviSkin2",
     "name": "魅惑龙族",
-    "desc": "魅惑龙族（62 动作）",
+    "desc": "第 2 套外观（62 动作）",
     "voiceSkin": "_Skin2"
    },
    {
     "id": "ViviSkin3",
     "dir": "assets/spine/ViviSkin3",
     "name": "满心魔法",
-    "desc": "满心魔法（62 动作）",
+    "desc": "第 3 套外观（62 动作）",
     "voiceSkin": "_Skin3"
    },
    {
     "id": "ViviSkin4",
     "dir": "assets/spine/ViviSkin4",
     "name": "浸染的灰幕",
-    "desc": "浸染的灰幕（62 动作）",
+    "desc": "第 4 套外观（62 动作）",
     "voiceSkin": "_Skin4"
    },
    {
     "id": "ViviSkin5",
     "dir": "assets/spine/ViviSkin5",
     "name": "漆黑暗黑天鹅",
-    "desc": "漆黑暗黑天鹅（62 动作）",
+    "desc": "第 5 套外观（62 动作）",
     "voiceSkin": "_Skin5"
    }
   ],
@@ -53133,13 +52988,7 @@ const CHAR_GENERATED = [
      "Smile_2",
      "Sulky_1",
      "Sulky_2",
-     "Talk_1",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Talk_1"
     ]
    }
   ],
@@ -53151,6 +53000,405 @@ const CHAR_GENERATED = [
    "Angry_": "Vivi_Anger",
    "Sad_": "Vivi_Sorrow",
    "Surprise_": "Vivi_Surprise"
+  }
+ },
+ {
+  "id": "ViviDivine",
+  "name": "薇薇（神圣）",
+  "en": "ViviDivine",
+  "desc": "使徒 · 3 套外观",
+  "tag": "⭐",
+  "art": {
+   "avatar": "assets/art/ViviDivine/phone-avatar.png",
+   "present": "assets/art/ViviDivine/present.png",
+   "album": "assets/art/ViviDivine/album-strict.webp"
+  },
+  "skinCandidates": [
+   "Normal",
+   "default"
+  ],
+  "models": [
+   {
+    "id": "ViviDivine",
+    "dir": "assets/spine/ViviDivine",
+    "name": "默认",
+    "desc": "基础外观（49 动作）",
+    "voiceSkin": ""
+   },
+   {
+    "id": "ViviDivineSkin1",
+    "dir": "assets/spine/ViviDivineSkin1",
+    "name": "一勺天蓝心意",
+    "desc": "第 1 套外观（48 动作）",
+    "voiceSkin": "_Skin1"
+   },
+   {
+    "id": "ViviDivineSkin2",
+    "dir": "assets/spine/ViviDivineSkin2",
+    "name": "幻痛末期患者",
+    "desc": "第 2 套外观（49 动作）",
+    "voiceSkin": "_Skin2"
+   }
+  ],
+  "bones": {
+   "head": [
+    "Head"
+   ],
+   "headTop": [
+    "Hair_Front",
+    "Head"
+   ],
+   "face": [
+    "Face"
+   ],
+   "mouth": [
+    "Mouth"
+   ],
+   "cheekL": [
+    "Ball_L_Root"
+   ],
+   "cheekR": [
+    "Ball_R"
+   ],
+   "belly": [
+    "Body_1",
+    "Pelvis"
+   ],
+   "neck": [
+    "Neck_Ac_4"
+   ],
+   "tail": [],
+   "earL": [
+    "Ear_Ac_1"
+   ],
+   "earR": [],
+   "ballMove": [
+    "Character_Ball_Move",
+    "Ball_R"
+   ],
+   "ballMoveP": [
+    "Ball_R"
+   ],
+   "pat": [
+    "Character_Pat",
+    "Head"
+   ],
+   "tickle": [
+    "Character_Tickle",
+    "Body_1",
+    "Pelvis"
+   ]
+  },
+  "pinch": {
+   "ok": true,
+   "reason": ""
+  },
+  "anim": {
+   "idle": [
+    "Idle_1"
+   ],
+   "patIdle": [
+    "Pat_Idle"
+   ],
+   "patEnd": [
+    "Pat_End",
+    "Idle_1"
+   ],
+   "tickleIdle": [
+    "Tickle_Idle_1"
+   ],
+   "tickleIdle2": [
+    "Tickle_Idle_2"
+   ],
+   "tickleEnd": [
+    "Tickle_End",
+    "Idle_1"
+   ],
+   "touchIdle": [
+    "Touch_Idle"
+   ],
+   "touchEnd": [
+    "Touch_End",
+    "Idle_1"
+   ],
+   "smash": [
+    "Smash_End_1",
+    "Surprise_1"
+   ],
+   "smash2": [
+    "Smash_End_2"
+   ],
+   "eat": [
+    "Eat_1",
+    "Eat_2"
+   ],
+   "happy": [
+    "Happy_1",
+    "Happy_2",
+    "Happy_3",
+    "Happy_4",
+    "Happy_5"
+   ],
+   "proud": [
+    "Happy_1"
+   ],
+   "angry": [
+    "Angry_1",
+    "Angry_2",
+    "Angry_3"
+   ],
+   "sad": [
+    "Sad_1",
+    "Sad_2",
+    "Sad_3",
+    "Sad_4"
+   ],
+   "surprise": [
+    "Surprise_1"
+   ],
+   "dizzy": [
+    "Happy_1"
+   ],
+   "panic": [
+    "Panic_1",
+    "Panic_2",
+    "Panic_3"
+   ],
+   "taunt": [
+    "Happy_1"
+   ],
+   "smell": [
+    "Happy_1"
+   ],
+   "serious": [
+    "Happy_1"
+   ],
+   "close": [
+    "Close_1"
+   ]
+  },
+  "actions": {
+   "pinch": {
+    "label": "捏脸",
+    "icon": "🤏",
+    "zone": "cheek",
+    "gesture": "drag",
+    "deform": "cheek",
+    "loop": "touchIdle",
+    "end": "touchEnd",
+    "sfxStart": {
+     "name": "SFX_Common_PullCheek",
+     "volume": 0.65
+    },
+    "sfxEnd": {
+     "name": "SFX_Common_PullCheekEnd",
+     "volume": 0.65
+    },
+    "voice": [
+     "ViviDivine_Touch1",
+     "ViviDivine_Touch1_1",
+     "ViviDivine_Touch1_2"
+    ]
+   },
+   "pat": {
+    "label": "摸头",
+    "icon": "🖐",
+    "zone": "head",
+    "gesture": "drag",
+    "loop": "patIdle",
+    "end": "patEnd",
+    "sfx": {
+     "name": "SFX_Pat",
+     "volume": 0.28
+    },
+    "sfxIntervalMs": 520,
+    "fx": {
+     "kind": "heart",
+     "duration": 1600
+    },
+    "fxIntervalMs": 900,
+    "voice": [
+     "ViviDivine_Touch2",
+     "ViviDivine_Touch2_1",
+     "ViviDivine_Touch2_2"
+    ]
+   },
+   "bonk": {
+    "label": "敲头",
+    "icon": "🔨",
+    "zone": "head",
+    "gesture": "tap",
+    "once": "smash",
+    "second": "smash2",
+    "sfx": [
+     {
+      "name": "SFX_DutchRub_Default",
+      "volume": 0.62
+     },
+     {
+      "name": "SFX_DutchRub_Max",
+      "volume": 0.68
+     }
+    ],
+    "fx": {
+     "kind": "dutchRub",
+     "duration": 1180
+    },
+    "voice": [
+     "ViviDivine_DutchRubEnd1"
+    ],
+    "voiceEnd": [
+     "ViviDivine_DutchRubEnd2"
+    ]
+   },
+   "belly": {
+    "label": "摸肚子",
+    "icon": "🫳",
+    "zone": "belly",
+    "gesture": "drag",
+    "loop": "tickleIdle",
+    "loop2": "tickleIdle2",
+    "end": "tickleEnd",
+    "sfx": {
+     "name": "SFX_Tickle",
+     "volume": 0.38
+    },
+    "voice": [
+     "ViviDivine_TickleStart1"
+    ],
+    "voiceMid": [
+     "ViviDivine_TickleDuring1"
+    ],
+    "voiceEnd": []
+   },
+   "feed": {
+    "label": "喂食",
+    "icon": "🍖",
+    "zone": "mouth",
+    "gesture": "drop",
+    "once": "eat",
+    "voice": [
+     "ViviDivine_Eat1"
+    ]
+   }
+  },
+  "voiceDurations": {},
+  "voiceLang": "ko",
+  "voiceLangs": [
+   "ko"
+  ],
+  "pokeVoice": [
+   "ViviDivine_Surprise1",
+   "ViviDivine_Hmm1",
+   "ViviDivine_Yes1",
+   "ViviDivine_Touch1"
+  ],
+  "upsetVoice": [
+   "ViviDivine_Anger1",
+   "ViviDivine_No1",
+   "ViviDivine_Anger2",
+   "ViviDivine_DutchRubEnd1"
+  ],
+  "hungryVoice": [
+   "ViviDivine_CallPlayer1",
+   "ViviDivine_Sorrow1",
+   "ViviDivine_Hmm2",
+   "ViviDivine_TickleStart1"
+  ],
+  "greetVoice": [
+   "ViviDivine_Greeting",
+   "ViviDivine_Lobby",
+   "ViviDivine_Spawn1",
+   "ViviDivine_Joy1",
+   "ViviDivine_Touch2"
+  ],
+  "moodActs": [
+   "happy",
+   "proud",
+   "taunt",
+   "smell",
+   "serious",
+   "dizzy"
+  ],
+  "animPanel": [
+   {
+    "group": "互动",
+    "items": [
+     "Eat_1",
+     "Eat_2",
+     "Pat_End",
+     "Pat_Idle",
+     "Smash_End_1",
+     "Smash_End_2",
+     "Tickle_End",
+     "Tickle_Idle_1",
+     "Tickle_Idle_2",
+     "Touch_End",
+     "Touch_Idle"
+    ]
+   },
+   {
+    "group": "情绪",
+    "items": [
+     "Angry_1",
+     "Angry_2",
+     "Angry_3",
+     "Angry_4",
+     "Angry_5",
+     "Angry_6",
+     "Angry_7",
+     "Angry_8",
+     "Close_1",
+     "Close_2",
+     "Close_3",
+     "Happy_1",
+     "Happy_2",
+     "Happy_3",
+     "Happy_4",
+     "Happy_5",
+     "Panic_1",
+     "Panic_2",
+     "Panic_3",
+     "Sad_1",
+     "Sad_2",
+     "Sad_3",
+     "Sad_4",
+     "Sad_5",
+     "Sad_6",
+     "Surprise_1",
+     "Surprise_2"
+    ]
+   },
+   {
+    "group": "待机",
+    "items": [
+     "Idle_1",
+     "Idle_2",
+     "Idle_3"
+    ]
+   },
+   {
+    "group": "其他形态",
+    "items": [
+     "Blank_1",
+     "Blank_2",
+     "EasterEgg_Enter",
+     "EasterEgg_Idle",
+     "Laugh_1",
+     "Laugh_2",
+     "Laugh_3",
+     "Track_1"
+    ]
+   }
+  ],
+  "animLabel": {},
+  "voiceForAnim": {},
+  "voiceForAnimSeries": {
+   "Happy_": "ViviDivine_Joy",
+   "Proud_": "ViviDivine_Pleasure",
+   "Angry_": "ViviDivine_Anger",
+   "Sad_": "ViviDivine_Sorrow",
+   "Surprise_": "ViviDivine_Surprise"
   }
  },
  {
@@ -53573,13 +53821,7 @@ const CHAR_GENERATED = [
      "Sulky_1",
      "Sulky_2",
      "Think_1",
-     "Think_2",
-     "Aside_1",
-     "Aside_2",
-     "Idle_3",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Think_2"
     ]
    }
   ],
@@ -53983,12 +54225,7 @@ const CHAR_GENERATED = [
      "Shy_3",
      "Talk_1",
      "Talk_2",
-     "Talk_3",
-     "Aside_1",
-     "Aside_2",
-     "Spawn_1",
-     "Upgrade_1",
-     "Upgrade_2"
+     "Talk_3"
     ]
    }
   ],

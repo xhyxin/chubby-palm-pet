@@ -64,6 +64,7 @@ window.I18N = (function () {
       'upd.downloading': '正在下载更新包…请保持网络畅通',
       'upd.done': '舒胖送完啦！正在重新加载…',
       'upd.error': '更新失败：{msg}',
+      'upd.blocked': '线路被拦住了（403，GitHub 接口限流）。换个网络再点一次「更新」，或开代理后重试。',
       'upd.androidConfirm': '发现新版本 v{remote}（当前 v{local}）。\n安卓端需要安装新 APK，现在打开发布页下载吗？',
       'upd.androidNoUrl': '发现新版本 v{remote}，但发布页地址未配置',
       'upd.androidOpenFail': '打开发布页失败：{msg}',
@@ -115,6 +116,7 @@ window.I18N = (function () {
       'upd.downloading': 'Downloading update\u2026 keep the network on',
       'upd.done': 'Delivered! Reloading\u2026',
       'upd.error': 'Update failed: {msg}',
+      'upd.blocked': 'The update line is blocked (403, GitHub rate limit). Retry on another network, or use a proxy.',
       'upd.androidConfirm': 'New version v{remote} found (current v{local}).\nAndroid needs a new APK \u2014 open the release page to download?',
       'upd.androidNoUrl': 'New version v{remote} found, but the release page URL is not set up',
       'upd.androidOpenFail': 'Could not open the release page: {msg}',
@@ -166,6 +168,7 @@ window.I18N = (function () {
       'upd.downloading': 'アップデートをダウンロード中…ネットをつなげてね',
       'upd.done': 'おとどけ完了！さいよみこみ中…',
       'upd.error': 'アップデートしっぱい：{msg}',
+      'upd.blocked': 'アップデート回線が止められてるみたい（403）。ネットを変えてもう一度試してね。',
       'upd.androidConfirm': '新しいバージョン v{remote}（現在 v{local}）。\nアンドロイドは新しい APK がいるよ、ばんはいページをあける？',
       'upd.androidNoUrl': '新しいバージョン v{remote}、でもばんはいページが未設定',
       'upd.androidOpenFail': 'ばんはいページがひらけない：{msg}',
@@ -217,6 +220,7 @@ window.I18N = (function () {
       'upd.downloading': '업데이트 다운로드 중… 네트워크 유지해 줘',
       'upd.done': '배달 완료! 새로고침 중…',
       'upd.error': '업데이트 실패: {msg}',
+      'upd.blocked': '업데이트 회선이 막혔어 (403). 다른 네트워크에서 다시 시도해 줘.',
       'upd.androidConfirm': '새 버전 v{remote} 발견 (현재 v{local}).\n안드로이드는 새 APK가 필요해, 배포 페이지 열까?',
       'upd.androidNoUrl': '새 버전 v{remote} 발견, 그런데 배포 페이지 주소가 설정 안 됐어',
       'upd.androidOpenFail': '배포 페이지를 열 수 없어: {msg}',
@@ -285,6 +289,63 @@ window.I18N = (function () {
     '哭':     { en: 'Crying', ja: 'なく', ko: '우는' },
     '唱':     { en: 'Sing', ja: 'うた', ko: '노래' },
     '笑':     { en: 'Laugh', ja: 'えがお', ko: '웃음' },
+    /* ★ 第五十九轮：语音图鉴的动作名也要跟着界面语言走，补一批图鉴里高频的标签。
+       命中就翻译；**任何一个词不认识就整条回退中文**（保持"不中英混杂"的既定原则）。 */
+    '好感度':   { en: 'Bond', ja: 'なかよし度', ko: '호감도' },
+    '受击':     { en: 'Hit', ja: '被弾', ko: '피격' },
+    '喊叫':     { en: 'Shout', ja: 'さけび', ko: '외침' },
+    '呼唤教主': { en: 'Call leader', ja: '教主よび', ko: '교주 부르기' },
+    '呼唤使徒': { en: 'Call apostle', ja: '使徒よび', ko: '사도 부르기' },
+    '高兴':     { en: 'Happy', ja: 'うれしい', ko: '기쁨' },
+    '愉悦':     { en: 'Pleased', ja: 'ごきげん', ko: '즐거움' },
+    '伤心':     { en: 'Sad', ja: 'かなしい', ko: '슬픔' },
+    '高年级技能': { en: 'High skill', ja: '高学年スキル', ko: '고학년 스킬' },
+    '低年级技能': { en: 'Low skill', ja: '低学年スキル', ko: '저학년 스킬' },
+    '普通攻击': { en: 'Normal attack', ja: '通常攻撃', ko: '일반 공격' },
+    '强力攻击': { en: 'Power attack', ja: '強攻撃', ko: '강공격' },
+    '抽卡':     { en: 'Gacha', ja: 'ガチャ', ko: '가챠' },
+    '台词':     { en: 'Line', ja: 'セリフ', ko: '대사' },
+    '薅脸':     { en: 'Cheek pull', ja: 'ほっぺつね', ko: '볼 땡기기' },
+    '抚摸':     { en: 'Petting', ja: 'なでなで', ko: '쓰다듬기' },
+    '成长':     { en: 'Growth', ja: 'せいちょう', ko: '성장' },
+    '思考':     { en: 'Think', ja: 'しこう', ko: '사고' },
+    '否定':     { en: 'No', ja: 'ひてい', ko: '부정' },
+    '肯定':     { en: 'Yes', ja: 'こうてい', ko: '긍정' },
+    '被击倒':   { en: 'Down', ja: 'たおれ', ko: '쓰러짐' },
+    '入队':     { en: 'Join', ja: 'なかま入り', ko: '합류' },
+    '爆栗':     { en: 'Bonk', ja: 'デコピン', ko: '딱밤' },
+    '战败':     { en: 'Defeat', ja: '敗北', ko: '패배' },
+    '胜利':     { en: 'Victory', ja: '勝利', ko: '승리' },
+    '入场':     { en: 'Enter', ja: '入場', ko: '입장' },
+    '挠痒中':   { en: 'Tickling', ja: 'くすぐり中', ko: '간지럼 중' },
+    '挠痒开始': { en: 'Tickle start', ja: 'くすぐり開始', ko: '간지럼 시작' },
+    '生日':     { en: 'Birthday', ja: 'たんじょうび', ko: '생일' },
+    '进食':     { en: 'Eat', ja: 'もぐもぐ', ko: '먹기' },
+    '涂色板':   { en: 'Coloring', ja: 'ぬりえ', ko: '색칠판' },
+    '装备':     { en: 'Gear', ja: 'そうび', ko: '장비' },
+    '问候':     { en: 'Greeting', ja: 'あいさつ', ko: '인사' },
+    '升星':     { en: 'Star up', ja: '星上げ', ko: '성급 상승' },
+    '大厅':     { en: 'Lobby', ja: 'ロビー', ko: '로비' },
+    '打电话':   { en: 'Phone call', ja: 'でんわ', ko: '전화' },
+    '旅程开始': { en: 'Journey start', ja: 'たびのはじまり', ko: '여정 시작' },
+    '解锁坨格': { en: 'Unlock chibi', ja: 'チビ解禁', ko: '또그 해금' },
+    '坨格升级': { en: 'Chibi up', ja: 'チビ強化', ko: '또그 강화' },
+    '商店':     { en: 'Shop', ja: 'ショップ', ko: '상점' },
+    '特别场景': { en: 'Special scene', ja: '特別シーン', ko: '특별 장면' },
+    '主题剧场': { en: 'Theme theater', ja: 'テーマ劇場', ko: '테마극장' },
+    '接受救援': { en: 'Accept rescue', ja: '救助を受ける', ko: '구조 수락' },
+    '拒绝救援': { en: 'Refuse rescue', ja: '救助を断る', ko: '구조 거절' },
+    '彩蛋':     { en: 'Easter egg', ja: 'おまけ', ko: '이스터에그' },
+    '宴会':     { en: 'Party', ja: '宴会', ko: '연회' },
+    '特殊':     { en: 'Special', ja: '特殊', ko: '특수' },
+    '攻塔':     { en: 'Tower', ja: 'タワー攻め', ko: '탑 공략' },
+    '做作业':   { en: 'Homework', ja: '宿題', ko: '숙제' },
+    '共鸣':     { en: 'Resonance', ja: '共鳴', ko: '공명' },
+    '冷淡':     { en: 'Cool', ja: 'クール', ko: '냉정' },
+    '忧郁':     { en: 'Gloomy', ja: 'ゆううつ', ko: '우울' },
+    '快活':     { en: 'Jolly', ja: 'ようき', ko: '쾌활' },
+    '愤怒':     { en: 'Mad', ja: 'ふんぬ', ko: '분노' },
+    '天真':     { en: 'Naive', ja: 'むじゃき', ko: '순수' },
   };
 
   var lang = 'zh';
@@ -311,12 +372,17 @@ window.I18N = (function () {
     var segs = String(zhLabel).split('·');
     var out = [];
     for (var i = 0; i < segs.length; i++) {
-      var m = segs[i].match(/^([^\d]+?)(\s*\d+)?$/);
+      /* ★ 第五十九轮：尾巴不只认「空格+数字」，还要认 `-01` / `_1` 这种
+         （图鉴里大量 BasicAttack1-01 / 好感度1_1 / 高年级技能2-01）。 */
+      var m = segs[i].match(/^([^\d]+?)((?:[\s\-_]*\d+)*)$/);
       var head = m ? m[1].trim() : segs[i];
       var num = m && m[2] ? m[2] : '';
       var v = ANIM_VOCAB[head];
       if (!v) return zhLabel;                 /* 有不认识的词 → 整条回退中文，避免中英混杂 */
-      out.push((v[lang] || head) + num);
+      /* ★ 第五十九轮：英文是「词 + 空格 + 序号」，中文/日文/韩文直接贴（Cheek pull 1 / ほっぺつね1） */
+      var tail = num;
+      if (lang === 'en' && tail && !/^\s/.test(tail)) tail = ' ' + tail;
+      out.push((v[lang] || head) + tail);
     }
     return out.join('·');
   }
