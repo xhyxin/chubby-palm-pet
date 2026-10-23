@@ -15,7 +15,7 @@
 // 直连 GitHub 在部分网络环境不通，拉取失败会自动改走 MIRROR_PREFIX 镜像前缀
 // （同一文件换前缀重试一次，成功的线路会被记住，本次会话内继续用）。
 window.UPDATE_CONFIG = {
-  APP_VERSION: "1.8.2",      // 本地版本号（打包时随包更新；与 安卓 build.gradle 的 versionName、
+  APP_VERSION: "1.8.3",      // 本地版本号（打包时随包更新；与 安卓 build.gradle 的 versionName、
                            // 作者 GitHub 的 version.txt / 公告.txt 保持一致）
                            // ★ 第四十七轮：三端版本号统一为 1.2（以前的 2.9.3 是开发过程中的旧号，
                            //   正式对外公布从 1.2 起算；第五十一轮升到 1.3，
@@ -27,8 +27,11 @@ window.UPDATE_CONFIG = {
   UPDATE_ZIP_URL: "https://github.com/xhyxin/chubby-palm-pet/archive/refs/heads/main.zip",
   RELEASE_PAGE_URL: "https://github.com/xhyxin/chubby-palm-pet/releases/latest",
   /* ★ 第六十四轮（国内 403 修复）：镜像改成**有序列表**，逐个试，谁通用谁。
-     实测（2026-10-21）：gh-proxy.com / ghfast.top / ghproxy.net 都能代理 raw；
-     gh-proxy.top、hub.gitmirror.com 已失效，别再往列表里加。 */
+     ★ 第七十五轮（提速）：实测（2026-10-23，无代理）gh-proxy.com 波动极大
+       （3.2MB 清单 0.7s ~ 24.6s，131KB/s~4.6MB/s），而 jsDelivr 是真 CDN 且 gzip，
+       fastly 节点实测 872KB/s~1.1MB/s，ghfast.top ~700KB/s。
+       所以内置镜像列表升级为「jsDelivr(fastly/cdn/gcore) + ghfast + gh-proxy + ghproxy」，
+       并在运行时**并发竞速选最快的一条**、把赢家记住（localStorage，跨会话）。 */
   MIRROR_PREFIX: "https://gh-proxy.com/",            // 兼容旧代码，等价于 MIRROR_PREFIXES[0]
   MIRROR_PREFIXES: [
     "https://gh-proxy.com/",
@@ -52,52 +55,141 @@ window.UPDATE_CONFIG = {
 window.UPDATE_NET = (function () {
   'use strict';
   var cfg = window.UPDATE_CONFIG || {};
-  /* ★ 第六十四轮：单镜像改成**镜像列表 + 逐条试**。
-     directOk=直连是否已验证可用；goodPrefix=已验证可用的镜像前缀（''=直连）。
-     两者都是"提示"而不是硬绑定 —— 首选线路失败时仍会把其余候选全试一遍。
-     ⚠️ MIRROR_PREFIX 排第一：老代码/测试台只改这一个字段，仍要生效。 */
-  /* ⚠️ 每次现算，不缓存 —— 测试台是"加载完再改 UPDATE_CONFIG.MIRROR_PREFIX"的，
-     缓存到 IIFE 初始化时会拿不到覆盖值（第五十二轮那套用例就是这么写的）。 */
-  function prefixes() {
-    var list = [];
-    var push = function (p) { if (p && list.indexOf(p) < 0) list.push(p); };
-    push(cfg.MIRROR_PREFIX);
-    (cfg.MIRROR_PREFIXES || []).forEach(push);
-    return list;
-  }
-  var directOk = null;
-  var goodPrefix = '';
 
-  function prefixOf(url) {
-    var ps = prefixes();
-    for (var i = 0; i < ps.length; i++) {
-      if (url.indexOf(ps[i]) === 0) return ps[i];
-    }
-    return '';
+  /* ================================================================
+     ★ 第七十五轮重写：不翻墙时的更新提速
+     ----------------------------------------------------------------
+     实测（2026-10-23，无代理，3.2MB 的 sync-manifest.js）：
+       gh-proxy.com    0.7s ~ 24.6s（波动极大，慢档只有 131KB/s）
+       fastly.jsdelivr  2.8s（约 1.1MB/s，gzip）
+       ghfast.top       4.8s（约 700KB/s）
+       gcore.jsdelivr   4.1s / cdn.jsdelivr 7.2s / ghproxy.net 28s
+       直连 raw.githubusercontent.com   连不上
+     结论：
+       ① 镜像不止 gh-proxy 一家，jsDelivr 系（真 CDN + gzip）普遍更快；
+       ② 每家速度波动都大，谁快得**当场测**（并发竞速）；
+       ③ 赢家要**记到 localStorage**，下次会话直接用，不用再赌。
+
+     镜像形态（kind）：
+       raw      直连（原样）
+       prefix   url + 完整 raw 地址          （gh-proxy / ghfast / ghproxy 形态）
+       jsdelivr url + 去掉 raw 前缀的相对路径（jsDelivr 形态，真 CDN）
+     ================================================================ */
+  var RAW_HOST = 'https://raw.githubusercontent.com/';
+  var PKEY = 'pet-net-mirror';          // 记住的最快线路（存 name，跨会话）
+
+  /* raw 地址 → 去掉 "https://raw.githubusercontent.com/user/repo/branch/" 的相对路径；
+     不是 raw 地址（比如测试台的 mock 地址）就返回 null */
+  function rawRest(url) {
+    if (!url || url.indexOf(RAW_HOST) !== 0) return null;
+    return url.slice(RAW_HOST.length);
   }
-  function mirrorOf(url) {
-    var ps = prefixes();
-    var p = goodPrefix || ps[0] || '';
-    if (!p || url.indexOf(p) === 0) return '';
-    return p + url;
+  function rawBase() {
+    var rest = rawRest(cfg.VERSION_URL || '');
+    if (!rest) return '';
+    var seg = rest.split('/');
+    return RAW_HOST + seg[0] + '/' + seg[1] + '/' + seg[2] + '/';
   }
 
-  /* 候选线路：已知能用的排第一，其余全部跟在后面兜底 */
-  function candidateUrls(url) {
+  /* 内置镜像：按实测速度大致排序（jsDelivr 系在前） */
+  function builtinMirrors() {
     var out = [];
-    if (directOk === true) out.push(url);
-    else if (goodPrefix) out.push(goodPrefix + url);
-    var all = [url];
-    var ps = prefixes();
-    for (var i = 0; i < ps.length; i++) all.push(ps[i] + url);
-    for (var j = 0; j < all.length; j++) if (out.indexOf(all[j]) < 0) out.push(all[j]);
+    var base = rawBase();
+    if (base) {
+      /* slug 形如 user/repo@branch/（jsDelivr 的 gh 地址格式） */
+      var seg = base.slice(RAW_HOST.length).split('/');   // [user, repo, branch, '']
+      var slug = seg[0] + '/' + seg[1] + '@' + seg[2] + '/';
+      out.push({ kind: 'jsdelivr', url: 'https://fastly.jsdelivr.net/gh/' + slug, name: 'jsdelivr-fastly' });
+      out.push({ kind: 'prefix',   url: 'https://ghfast.top/', name: 'ghfast' });
+      out.push({ kind: 'jsdelivr', url: 'https://cdn.jsdelivr.net/gh/' + slug, name: 'jsdelivr-cdn' });
+      out.push({ kind: 'jsdelivr', url: 'https://gcore.jsdelivr.net/gh/' + slug, name: 'jsdelivr-gcore' });
+      out.push({ kind: 'prefix',   url: 'https://gh-proxy.com/', name: 'gh-proxy' });
+      out.push({ kind: 'prefix',   url: 'https://ghproxy.net/', name: 'ghproxy-net' });
+    }
     return out;
   }
+  /* 测试台兼容：只改 cfg.MIRROR_PREFIX / MIRROR_PREFIXES 的旧用例要继续生效 */
+  function legacyPrefixes() {
+    var out = [];
+    if (cfg.MIRROR_PREFIX) out.push({ kind: 'prefix', url: cfg.MIRROR_PREFIX, name: 'mirror-prefix', legacy: true });
+    (cfg.MIRROR_PREFIXES || []).forEach(function (p) {
+      out.push({ kind: 'prefix', url: p, name: 'mirror:' + p, legacy: true });
+    });
+    return out;
+  }
+  function savedMirror() {
+    try {
+      var n = localStorage.getItem(PKEY);
+      if (!n) return null;
+      var all = legacyPrefixes().concat(builtinMirrors());
+      for (var i = 0; i < all.length; i++) if (all[i].name === n) return all[i];
+    } catch (e) { /* 忽略 */ }
+    return null;
+  }
+  var winner = null;          // 本次会话已验证最快的线路（null = 直连）
 
-  function rawFetch(url, timeoutMs) {
+  /* 全部候选镜像（按优先级）：记住的 → 测试台兼容前缀 → 内置镜像 */
+  function mirrorList() {
+    var list = [];
+    var push = function (m) {
+      if (!m || !m.url) return;
+      for (var i = 0; i < list.length; i++) {
+        if (list[i].url === m.url && list[i].kind === m.kind) return;
+      }
+      list.push(m);
+    };
+    push(savedMirror());
+    builtinMirrors().forEach(push);
+    legacyPrefixes().forEach(push);         // 测试台兼容项排最后（mock 地址只有它表达得了）
+    return list;
+  }
+  /* 这条镜像能不能表达这个 raw 地址（mock 地址只有 prefix 形态能表达） */
+  function applicable(m, raw) {
+    if (m.kind === 'prefix') return !!m.legacy || rawRest(raw) !== null;
+    if (m.kind === 'jsdelivr') return rawRest(raw) !== null;
+    return false;
+  }
+  function urlVia(m, raw) {
+    if (m.kind === 'prefix') return m.url + raw;
+    if (m.kind === 'jsdelivr') {
+      var rest = rawRest(raw);
+      if (rest === null) return m.url + raw;
+      var seg = rest.split('/');            // [user, repo, branch, 路径...]
+      return seg.length > 3 ? m.url + seg.slice(3).join('/') : m.url + raw;
+    }
+    return raw;
+  }
+  /* 候选镜像 URL（最快优先，不含直连 —— 直连由调用方放最后） */
+  function mirrorUrlsFor(raw) {
+    var out = [];
+    mirrorList().forEach(function (m) {
+      if (!applicable(m, raw)) return;
+      var u = urlVia(m, raw);
+      if (out.indexOf(u) < 0) {
+        if (winner && m === winner) out.unshift(u);   // 记住的赢家排最前
+        else out.push(u);
+      }
+    });
+    return out;
+  }
+  function markWinner(u, directUrl) {
+    if (u === directUrl) { winner = null; return; }
+    var list = mirrorList();
+    for (var i = 0; i < list.length; i++) {
+      if (urlVia(list[i], directUrl) === u) {
+        winner = list[i];
+        try { localStorage.setItem(PKEY, winner.name); } catch (e) { /* 忽略 */ }
+        return;
+      }
+    }
+  }
+
+  /* ---- 带超时、可取消的 fetch ---- */
+  function rawFetch(url, timeoutMs, ctrlOut) {
     return new Promise(function (resolve, reject) {
       var ctrl = null;
       try { ctrl = new AbortController(); } catch (e) { ctrl = null; }
+      if (ctrl && ctrlOut) ctrlOut.push(ctrl);
       var timer = setTimeout(function () {
         if (ctrl) try { ctrl.abort(); } catch (e2) { /* 忽略 */ }
         reject(new Error('timeout'));
@@ -114,25 +206,56 @@ window.UPDATE_NET = (function () {
     });
   }
 
-  /* 直连优先 → 镜像逐个试；记住这次哪条线路通（zip 下载 / 逐文件下载也用它选路） */
+  /* 顺序回退：赢家优先 → 其余镜像 → 直连最后 */
+  var lastErr = null;
   function fetchText(url, timeoutMs) {
-    var urls = candidateUrls(url);
-    var lastErr = null;
-    function step(i) {
-      if (i >= urls.length) return Promise.reject(lastErr || new Error('network'));
-      return rawFetch(urls[i], timeoutMs).then(function (t) {
-        if (i === 0 && urls[0] === url) { directOk = true; goodPrefix = ''; }
-        else {
-          directOk = false;
-          goodPrefix = prefixOf(urls[i]);
-        }
+    var list = mirrorUrlsFor(url).concat([url]);      // 直连垫底
+    var i = 0;
+    function step() {
+      if (i >= list.length) return Promise.reject(lastErr || new Error('network'));
+      var u = list[i];
+      return rawFetch(u, timeoutMs).then(function (t) {
+        markWinner(u, url);
         return t;
-      }, function (e) {
-        lastErr = e;
-        return step(i + 1);
+      }, function (e) { lastErr = e; i++; return step(); });
+    }
+    return step();
+  }
+
+  /* ★ 并发竞速：所有线路一起发，谁先回来用谁（只用于小文件，比如公告.txt）。
+     大文件别用它 —— 会同时下好几份。
+     ★ 有"记住的赢家"时先单独试它（多数时候一发就中，不发竞速）；失败再竞速其余线路。
+     冷启动（没记住）时首响应可能要十几秒，所以 timeout 别给太短。 */
+  function probeAndFetch(url, timeoutMs) {
+    var all = mirrorUrlsFor(url);
+    if (winner) {
+      var best = urlVia(winner, url);
+      var rest = all.filter(function (u) { return u !== best; }).concat([url]);
+      return rawFetch(best, timeoutMs).then(function (t) {
+        return t;                                   // 赢家依旧最快，直接用
+      }, function () {
+        return probeAndFetchNoWinner(url, timeoutMs, rest);
       });
     }
-    return step(0);
+    return probeAndFetchNoWinner(url, timeoutMs, all.concat([url]));
+  }
+  function probeAndFetchNoWinner(url, timeoutMs, list) {
+    if (list.length <= 1) return rawFetch(list[0] || url, timeoutMs);
+    return new Promise(function (resolve, reject) {
+      var done = false, errs = [], ctrls = [], n = list.length;
+      list.forEach(function (u) {
+        rawFetch(u, timeoutMs, ctrls).then(function (t) {
+          if (done) return;
+          done = true;
+          ctrls.forEach(function (c) { try { c.abort(); } catch (e) { /* 忽略 */ } });
+          markWinner(u, url);
+          resolve(t);
+        }, function (e) {
+          errs.push(e);
+          if (!done && errs.length >= n) { done = true; reject(errs[0]); }
+        });
+      });
+    });
   }
 
   /* ---------------- 公告.txt 解析 ----------------
@@ -171,10 +294,9 @@ window.UPDATE_NET = (function () {
       var l1 = (lines[1] || '').trim();
       if (l0) {
         if (looksLikeVersion(l0)) {
-          // 第一行是版本号（如 2.9）；若它同时长得像 M.D 日期（10.2），按用户格式视为版本
           version = l0.replace(/^v/i, ''); consumed[0] = true;
         } else if (looksLikeDate(l0)) {
-          date = l0; consumed[0] = true; // 旧格式：第一行=日期
+          date = l0; consumed[0] = true;
         }
       }
       if (version && !date) {
@@ -194,11 +316,36 @@ window.UPDATE_NET = (function () {
 
   return {
     fetchText: fetchText,
+    probeAndFetch: probeAndFetch,
     parseNotice: parseNotice,
-    mirrorInUse: function () { return !!goodPrefix; },
-    /* 当前可用的镜像前缀（没走镜像时返回 ''）—— zip / 逐文件下载选路用 */
-    prefix: function () { return goodPrefix || ''; },
-    firstPrefix: function () { return prefixes()[0] || ''; },
-    prefixes: prefixes,
+    /* ---- 兼容旧接口（notice.js / 老代码在用） ---- */
+    mirrorInUse: function () { return !!(winner && winner.kind !== 'raw'); },
+    prefix: function () {
+      if (winner && winner.kind === 'prefix') return winner.url;
+      var l = legacyPrefixes();
+      return l[0] ? l[0].url : '';
+    },
+    firstPrefix: function () {
+      var l = legacyPrefixes();
+      return l[0] ? l[0].url : '';
+    },
+    prefixes: function () {
+      return legacyPrefixes().map(function (m) { return m.url; });
+    },
+    /* ---- ★ 新接口：给"逐文件下载 / 整包"用 ---- */
+    /* 最快镜像在前（不含直连，直连由调用方垫底） */
+    mirrorUrlsFor: mirrorUrlsFor,
+    bestMirrorName: function () { return winner ? winner.name : ''; },
+    /* 只用 prefix 形态镜像包某个 URL —— jsDelivr 不代理整包 zip 归档 */
+    prefixUrlsFor: function (raw) {
+      var out = [];
+      mirrorList().forEach(function (m) {
+        if (m.kind === 'prefix') {
+          var u = m.url + raw;
+          if (out.indexOf(u) < 0) out.push(u);
+        }
+      });
+      return out;
+    },
   };
 })();

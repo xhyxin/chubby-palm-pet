@@ -152,7 +152,9 @@
       if (!showed) toast(t('notice.fetching'), 2500);
     }
     var NET = window.UPDATE_NET || {};
-    var doFetch = NET.fetchText || function (u, ms) {
+    /* ★ 第七十五轮（提速）：公告/version.txt 都是小文件 —— 用**并发竞速**拉，
+       谁的线路快就用谁，并把这条线路记住（后面的清单/逐文件下载都跟着走它）。 */
+    var doFetch = NET.probeAndFetch || NET.fetchText || function (u, ms) {
       // 极旧包兜底：不该走到这里（update-config.js 同包发布）
       return Promise.reject(new Error('no UPDATE_NET'));
     };
@@ -166,10 +168,10 @@
       var m = String(e && e.message || e);
       return m.indexOf('HTTP') !== 0;   // 'HTTP 404' 是服务器应答；其余（timeout/Failed to fetch）当网络问题
     }
-    var verP = doFetch(cfg.VERSION_URL, 8000)
+    var verP = doFetch(cfg.VERSION_URL, 25000)
       .then(function (t) { return /^[0-9]+(\.[0-9]+)*$/.test(t.trim()) ? t.trim() : ''; })
       .catch(function () { return ''; });   // version.txt 是可选文件，404/无网都不算错
-    var noticeP = doFetch(url, 8000)
+    var noticeP = doFetch(url, 25000)
       .then(doParse)
       .catch(function (e) { netFailN = isNetErr(e); return null; });
     Promise.all([verP, noticeP]).then(function (rs) {
@@ -205,8 +207,10 @@
   }
 
   function toast(text, ms) {
-    // 复用 update.js 的提示条；元素还不存在就自己建一个（修复第四十一轮：
-    // 先点「公告」且从未触发过更新提示时，update-toast 不存在 → 提示被静默丢弃）
+    // ★ 第七十五轮：update.js 已经把提示条升级成"文字 + 进度条"结构，
+    //   优先交给它统一处理，避免两边各写一个 #update-toast（会造出重复元素、字写到看不见的那个里）。
+    if (typeof window.__petToast === 'function') { window.__petToast(text, ms); return; }
+    // 兜底：update.js 还没加载好时自己建一个
     var el2 = document.getElementById('update-toast');
     if (!el2) {
       el2 = document.createElement('div');

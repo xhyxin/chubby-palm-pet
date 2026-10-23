@@ -587,16 +587,30 @@ html, body {
 .panel.panel-snug .char-item { flex-direction: row; text-align: left; }
 .panel.panel-snug .char-avatar { width: 32px; height: 32px; flex: 0 0 32px; }
 
-/* ★ 检查更新提示条（第三十二轮，js/update.js 用） */
+/* ★ 检查更新提示条（第三十二轮，js/update.js 用）
+   ★ 第七十五轮（用户反馈）：① 提示文字**只占一行**（超长省略，不再折成两行）；
+     ② 更新期间加一条底部细进度条，且**常驻不消失**（.progress）。 */
 #update-toast {
   position: fixed; left: 50%; top: 18px; transform: translate(-50%, -16px);
-  z-index: 90; max-width: min(78vw, 520px);
-  padding: 10px 18px; font-size: 13px; line-height: 1.5; text-align: center;
+  z-index: 90; max-width: min(92vw, 560px);
+  padding: 10px 18px 11px; font-size: 13px; line-height: 1.5; text-align: center;
   color: #fff; background: rgba(90, 70, 66, .93); border-radius: 999px;
-  box-shadow: 0 6px 22px rgba(0, 0, 0, .18);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, .18); overflow: hidden;
   opacity: 0; pointer-events: none; transition: all .22s ease;
 }
 #update-toast.show { opacity: 1; transform: translate(-50%, 0); }
+/* 一行文字：不折行，太长就省略号 */
+#update-toast-text {
+  display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+/* 更新进度：底部细线按百分比增长 */
+#update-toast-fill {
+  position: absolute; left: 0; bottom: 0; height: 3px; width: 0;
+  background: linear-gradient(90deg, var(--amber), var(--pink));
+  border-radius: 0 2px 2px 0; transition: width .25s ease; opacity: 0;
+}
+#update-toast.progress #update-toast-fill { opacity: 1; }
+#update-toast.progress { padding-bottom: 13px; }
 .tool:disabled { opacity: .55; cursor: wait; }
 
 /* ★ 音量选择菜单（第四十六轮）：总音量 / 音乐 / 语音 / 音效 四条滑杆 */
