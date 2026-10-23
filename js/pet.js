@@ -57,6 +57,13 @@ const Pet = (() => {
   /* 调试计数（顶点钩子有没有被调用、传进来的坐标是什么） */
   const DBG = { calls: 0, numFloats: 0, stride: 0, sample: null, moved: 0 };
 
+  /* ★ 性能：fitCamera 每次调用都创建 Vector2 对象，改为复用模块级实例 */
+  let _fitOff = null;   // spine.Vector2, lazily created after spine is loaded
+  let _fitSize = null;
+
+  /* ★ 性能：全局调试开关，关闭时 vertexTransformer 跳过 DBG 统计 */
+  let DEBUG = false;
+
   /* ---------------------------------------------------------- 工具 */
   const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
 
@@ -89,13 +96,20 @@ const Pet = (() => {
   }
 
   /* ---------------------------------------------------------- 初始化 */
+  /* ★ 性能：rAF 节流，resize 事件每帧最多执行一次 */
+  let _resizeScheduled = false;
+
   function init(cv) {
     canvas = cv;
     const cfg = { alpha: true, premultipliedAlpha: true, antialias: true, preserveDrawingBuffer: true };
     ctx = new spine.ManagedWebGLRenderingContext(canvas, cfg);
     gl = ctx.gl;
     renderer = new spine.SceneRenderer(canvas, ctx, false);
-    window.addEventListener('resize', resize);
+    window.addEventListener('resize', () => {
+      if (_resizeScheduled) return;
+      _resizeScheduled = true;
+      requestAnimationFrame(() => { _resizeScheduled = false; resize(); });
+    });
     resize();
     return true;
   }
@@ -123,8 +137,9 @@ const Pet = (() => {
   const STD_BOX_H = 0.52;       // 包围盒高度占画布高度的比例（黄油 在手机上的实测值）
 
   function fitCamera() {
-    const off = new spine.Vector2();
-    const size = new spine.Vector2();
+    if (!_fitOff) { _fitOff = new spine.Vector2(); _fitSize = new spine.Vector2(); }
+    const off = _fitOff;
+    const size = _fitSize;
     skeleton.updateWorldTransform();
     skeleton.getBounds(off, size);
     if (size.x <= 0 || size.y <= 0) return;
@@ -653,13 +668,28 @@ const Pet = (() => {
      顶点缓冲布局：[x, y, r, g, b, a, u, v]，stride = 8，
      坐标是骨架世界坐标，和 zones() 同一套坐标系。
      每个区域做平滑衰减：中心处 100%，边缘 0%，用 smoothstep 过渡。 */
+
+  /** ★ 性能：检查是否有任何脸颊形变正在生效。
+      没有形变时 draw() 可以跳过 vertexTransformer，省掉每帧对全部顶点的遍历。 */
+  const DEFORM_EPS = 0.002;
+  function hasActiveDeform() {
+    for (const k of ['cheekL', 'cheekR']) {
+      const o = ov[k];
+      if (Math.abs(o.dx) > 0.05 || Math.abs(o.dy) > 0.05
+        || Math.abs(o.s - 1) > DEFORM_EPS || Math.abs(o.sPerp - 1) > DEFORM_EPS) return true;
+    }
+    return false;
+  }
+
   function vertexTransformer(vertices, numFloats, stride) {
     if (!ready) return;
-    DBG.calls++;
-    DBG.numFloats = numFloats;
-    DBG.stride = stride;
-    if (DBG.calls === 1 || DBG.calls % 300 === 0) {
-      DBG.sample = [vertices[0], vertices[1], vertices[2], vertices[3]];
+    if (DEBUG) {
+      DBG.calls++;
+      DBG.numFloats = numFloats;
+      DBG.stride = stride;
+      if (DBG.calls === 1 || DBG.calls % 300 === 0) {
+        DBG.sample = [vertices[0], vertices[1], vertices[2], vertices[3]];
+      }
     }
     const act = [];
     /* 形变中心沿拖动方向前移 pinchCenterLead（到脸颊外缘）：
@@ -713,7 +743,7 @@ const Pet = (() => {
         touched = true;
       }
 
-      if (touched) { vertices[i] = nx; vertices[i + 1] = ny; DBG.moved++; }
+      if (touched) { vertices[i] = nx; vertices[i + 1] = ny; if (DEBUG) DBG.moved++; }
     }
   }
 
@@ -816,7 +846,9 @@ const Pet = (() => {
     gl.clearColor(0, 0, 0, 0);
     gl.clear(gl.COLOR_BUFFER_BIT);
     renderer.begin();
-    renderer.drawSkeleton(skeleton, true, -1, -1, vertexTransformer);
+    /* ★ 性能：只在脸颊形变生效时才传顶点变换钩子，
+       空闲帧跳过整个顶点遍历（最大的单项优化） */
+    renderer.drawSkeleton(skeleton, true, -1, -1, hasActiveDeform() ? vertexTransformer : undefined);
     renderer.end();
   }
 

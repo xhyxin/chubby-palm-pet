@@ -29,6 +29,12 @@
 const CHARACTERS = [CHAR_BUTTER, CHAR_SKEA]
   .concat(typeof CHAR_GENERATED !== 'undefined' ? CHAR_GENERATED : []);
 
+/* 深拷贝辅助：优先使用 structuredClone（更快、无中间字符串），
+   旧 WebView 不支持时回退到 JSON 序列化 */
+const deepCopy = typeof structuredClone === 'function'
+  ? (v) => structuredClone(v)
+  : (v) => JSON.parse(JSON.stringify(v));
+
 const CONFIG = {
   /* ================= 角色注册表 ================= */
   characters: CHARACTERS,
@@ -141,7 +147,7 @@ const CONFIG = {
       'animPanel', 'animLabel', 'voiceForAnim', 'voiceForAnimSeries'];
     for (const k of keys) {
       // 深拷贝一份，避免运行时改到角色原始数据（例如切换外观时改 models 里的字段）
-      this[k] = c[k] === undefined ? (Array.isArray(this[k]) ? [] : {}) : JSON.parse(JSON.stringify(c[k]));
+      this[k] = c[k] === undefined ? (Array.isArray(this[k]) ? [] : {}) : deepCopy(c[k]);
     }
     /* ★ 动作中文名：官方动作名对所有角色是同一套命名（Pat_Idle 永远是被摸头），
        所以公共表兜底，角色自己写的优先。generated.js 里的角色 animLabel 为空，

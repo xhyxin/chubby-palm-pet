@@ -17,6 +17,8 @@ const Voice = (() => {
   let enabled = true;
   let current = null;
   const cache = new Map();
+  const MAX_CACHE = 500;           // LRU 上限：防止切角色累积过多缓存音频（最大角色 227 条，留足余量）
+  const namesCache = new Map();    // Object.keys(map[L]) 缓存，避免反复分配大数组
   /* 官方互动音效（SFX_Pat / SFX_Tickle / SFX_Common_PullCheek / SFX_DutchRub_*）
      独立通道，不和语音抢播放 */
   const sfxCache = new Map();
@@ -56,15 +58,25 @@ const Voice = (() => {
       也支持皮肤专属语音 Butter_Touch2 -> Butter_Touch2_Skin1） */
   function tryKeys(m, names, k) {
     if (m[k]) return k;
-    const withNum = names.find((n) => new RegExp('^' + esc(k) + '\\d+$').test(n));
+    // 用字符串操作代替 new RegExp，避免每次调用都创建正则对象
+    const withNum = names.find((n) => n.startsWith(k) && n.length > k.length && /^\d+$/.test(n.slice(k.length)));
     if (withNum) return withNum;
     return names.find((n) => n.startsWith(k)) || null;
+  }
+
+  /** 获取（或缓存） Object.keys(map[L])，避免对万级键表反复创建数组 */
+  function namesFor(L) {
+    if (namesCache.has(L)) return namesCache.get(L);
+    const m = map[L] || {};
+    const keys = Object.keys(m);
+    namesCache.set(L, keys);
+    return keys;
   }
 
   function resolveIn(L, keys, suffix) {
     const list = Array.isArray(keys) ? keys : [keys];
     const m = map[L] || {};
-    const names = Object.keys(m);
+    const names = namesFor(L);
     for (const k of list) {
       if (suffix) {
         const s = tryKeys(m, names, k + suffix);
@@ -78,15 +90,53 @@ const Voice = (() => {
 
   function resolve(keys, suffix) { return resolveIn(lang, keys, suffix); }
 
-  /** ★ 第五十四轮（播放级语言回退）：
-      用户选了日语就一直日语 —— 该键在日语下没有音频时，直接回退其它语言播放，
-      不再把用户偏好改掉。语言顺序：偏好语言优先，其余语言跟后。 */
+  /** ★ 第六十七轮（语言优先，用户明确要求）：
+      —— 选了韩语就必须播韩语，别因为"这套皮肤只有日语"就偷偷换语言。
+
+      规则（`skinFirst === false`，默认）：
+        ① 偏好语言里的「键+皮肤后缀」；
+        ② 偏好语言里的**基础键**（这套皮肤官方没录这条时的兜底）；
+        ③ 全都找不到才去其它语言（保持第五十四轮"角色完全没有该语言时回退"的口径）。
+      规则（`skinFirst === true`，可选开关）：
+        先在所有语言里找「键+后缀」（第六十六轮的行为，为了听新皮肤专属语音），
+        找不到再走上面的 ①③。默认**关**，因为用户反馈"选韩语动作还是日语"。
+
+      `skinFirst` 存在 localStorage.pet-voice-skinfirst，界面上在语音图鉴底部可切换。 */
+  let skinFirst = false;
+  try { skinFirst = localStorage.getItem('pet-voice-skinfirst') === '1'; } catch (e) { /* 忽略 */ }
+
   function langOrder() {
     return [lang].concat(Object.keys(map).filter((L) => L !== lang));
   }
 
+  /** 皮肤专属语音优先（跨语言补齐）—— 仅当用户打开开关时 */
+  function resolveSkinFirst(keys, suffix) {
+    if (!suffix) return null;
+    const list = Array.isArray(keys) ? keys : [keys];
+    const langs = skinFirst ? langOrder() : [lang];
+    for (const L of langs) {
+      const m = map[L] || {};
+      const names = namesFor(L);
+      for (const k of list) {
+        const s = tryKeys(m, names, k + suffix);
+        if (s) return { key: s, L };
+      }
+    }
+    return null;
+  }
+
   function resolveAny(keys, suffix) {
+    // ★ 打开"皮肤优先"时，先在所有语言里找这套皮肤的专属语音（第六十六轮行为）
+    if (suffix && skinFirst) {
+      const sk = resolveSkinFirst(keys, suffix);
+      if (sk) return sk;
+    }
+    // 偏好语言：先皮肤版、再基础版（严格按语言，选韩语就韩语）
+    const inLang = resolveIn(lang, keys, suffix);
+    if (inLang) return { key: inLang, L: lang };
+    // 角色在本语言里一条都没有时才去其它语言
     for (const L of langOrder()) {
+      if (L === lang) continue;
       const k = resolveIn(L, keys, suffix);
       if (k) return { key: k, L };
     }
@@ -95,15 +145,39 @@ const Voice = (() => {
 
   /** 随机池也按语言优先：先把偏好语言下所有可用变体凑齐，非空就只在该池里随机；
       偏好语言一个变体都没有时，才整池落到下一门语言 ——
-      保证"选了日语听日语"，不会一半日语一半韩语地混。 */
+      保证"选了日语听日语"，不会一半日语一半韩语地混。
+      ★ 第六十七轮：皮肤版只在本语言里找；找不到就用本语言的基础版（不跨语言偷换）。
+      只有打开了"皮肤优先"开关，才会去其它语言凑皮肤版随机池。 */
   function pickRandomAny(keys, suffix) {
     const list = Array.isArray(keys) ? keys : [keys];
-    for (const L of langOrder()) {
+    const poolIn = (L, allowSuffix) => {
+      const m = map[L] || {};
+      const names = namesFor(L);
       const out = [];
       for (const k of list) {
-        const r = resolveIn(L, [k], suffix);
+        const s = allowSuffix && suffix ? tryKeys(m, names, k + suffix) : null;
+        const r = s || tryKeys(m, names, k);
         if (r && !out.includes(r)) out.push(r);
       }
+      return out;
+    };
+    if (suffix && skinFirst) {
+      for (const L of langOrder()) {
+        const m = map[L] || {};
+        const names = namesFor(L);
+        const skinPool = [];
+        for (const k of list) {
+          const s = tryKeys(m, names, k + suffix);
+          if (s && !skinPool.includes(s)) skinPool.push(s);
+        }
+        if (skinPool.length) return { pool: skinPool, L };
+      }
+    }
+    const own = poolIn(lang, true);
+    if (own.length) return { pool: own, L: lang };
+    for (const L of langOrder()) {
+      if (L === lang) continue;
+      const out = poolIn(L, true);
       if (out.length) return { pool: out, L };
     }
     return { pool: [], L: lang };
@@ -113,12 +187,25 @@ const Voice = (() => {
 
   function audioFor(key, L) {
     const id = (L || lang) + '\u0000' + key;
-    if (cache.has(id)) return cache.get(id);
+    if (cache.has(id)) {
+      // LRU：访问过的条目移到末尾
+      const v = cache.get(id);
+      cache.delete(id);
+      cache.set(id, v);
+      return v;
+    }
     const url = urlFor(key, L);
     if (!url) return null;
     const a = new Audio(url);
     a.preload = 'auto';
     cache.set(id, a);
+    // LRU 淘汰：超出上限时删除最早的条目
+    if (cache.size > MAX_CACHE) {
+      const oldest = cache.keys().next().value;
+      const old = cache.get(oldest);
+      if (old) { old.pause(); old.src = ''; }
+      cache.delete(oldest);
+    }
     return a;
   }
 
@@ -168,6 +255,7 @@ const Voice = (() => {
       lang = (savedLang && map[savedLang]) ? savedLang
            : (Object.keys(map).includes('ko') ? 'ko' : (Object.keys(map)[0] || 'ja'));
       cache.clear();
+      namesCache.clear();
       return { langs: Object.keys(map), availLangs, lang, catalog: catalog.length };
     },
 
@@ -185,6 +273,7 @@ const Voice = (() => {
         lang = Object.keys(map).includes('ko') ? 'ko' : (Object.keys(map)[0] || 'ja');
       }
       cache.clear();
+      namesCache.clear();
       return lang;
     },
     /** 某个角色真的有音频的语言列表（给语言按钮用） */
@@ -193,11 +282,21 @@ const Voice = (() => {
     setLang(l) {
       lang = l;
       cache.clear();
+      namesCache.clear();
       /* ★ 记住用户最后选择的语音语言（日/韩），下次启动 / 切角色都优先用这个，
          而不是每次都退回角色自己的默认语言。 */
       try { localStorage.setItem('pet-voice-lang', l); } catch (e) { /* 忽略 */ }
     },
     getLang() { return lang; },
+
+    /** ★ 第六十七轮：皮肤专属语音是否跨语言补齐（默认关 = 严格按语言偏好） */
+    setSkinFirst(v) {
+      skinFirst = !!v;
+      cache.clear();
+      namesCache.clear();
+      try { localStorage.setItem('pet-voice-skinfirst', skinFirst ? '1' : '0'); } catch (e) { /* 忽略 */ }
+    },
+    isSkinFirst() { return skinFirst; },
     count(charId) {
       const dict = map[lang] || {};
       if (!charId) return Object.keys(dict).length;
@@ -366,7 +465,9 @@ const Voice = (() => {
         const el = a.cloneNode();
         /* ★ 第四十六轮：音效通道音量（含总音量） */
         el.volume = Math.max(0, Math.min(1, volume * sfxVol()));
-        el.play().catch(() => {});
+        // 播完后释放克隆节点，防止内存泄漏
+        el.onended = () => { el.onended = null; el.src = ''; };
+        el.play().catch(() => { el.src = ''; });
       } catch (e) { return null; }
       return n;
     },

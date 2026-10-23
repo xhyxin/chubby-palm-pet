@@ -12,6 +12,12 @@
   let autoOn = false;
   let skinIndex = 0;
 
+  /** 简易防抖：连续调用只在最后一次 ms 毫秒后执行 */
+  function debounce(fn, ms) {
+    let t;
+    return function() { clearTimeout(t); t = setTimeout(fn, ms); };
+  }
+
   /* ---------------------------------------------------------- 气泡 */
   function showBubble(text, holdMs) {
     if (!text) return;
@@ -194,6 +200,7 @@
     if (!box) return;
     const q = (($('food-search') && $('food-search').value) || '').trim().toLowerCase();
     box.innerHTML = '';
+    const frag = document.createDocumentFragment();
     let n = 0;
     FOOD_DATA.foods.forEach((f) => {
       if (q && !I18N.foodMatch(f, q)) return;
@@ -209,10 +216,11 @@
       el.appendChild(img);
       el.appendChild(name);
       attachFoodDrag(el, f);
-      box.appendChild(el);
+      frag.appendChild(el);
       n++;
     });
     if (!n) box.innerHTML = '<p class="muted">没有匹配的食物</p>';
+    else box.appendChild(frag);
   }
 
   /** 长按（220ms）后开始拖动：拖影跟随，松手在嘴边即喂食 */
@@ -276,16 +284,27 @@
     el.addEventListener('pointerleave', cancel);
   }
 
-  /* ★ 喂食面板的图片在后台预热一次，第一次拖动不会是空图 */
+  /* ★ 喂食面板的图片在后台预热一次，第一次拖动不会是空图
+     ★ 性能优化：分批加载（每批 10 张，间隔 200ms），避免一口气发 91 个请求 */
   function preloadFoodImages() {
     if (typeof FOOD_DATA === 'undefined') return;
-    FOOD_DATA.foods.forEach((f) => { const im = new Image(); im.src = f.img; });
+    const foods = FOOD_DATA.foods;
+    const BATCH = 10, DELAY = 200;
+    let i = 0;
+    function loadBatch() {
+      const end = Math.min(i + BATCH, foods.length);
+      for (; i < end; i++) { const im = new Image(); im.src = foods[i].img; }
+      if (i < foods.length) setTimeout(loadBatch, DELAY);
+    }
+    loadBatch();
   }
 
   function toggleFoodPanel(show) {
     const p = $('food-panel');
     if (!p) return;
     const willShow = show === undefined ? p.classList.contains('hidden') : show;
+    /* ★ 第七十四轮：喂食面板也参与互斥 —— 开它就把动作 / 角色面板收起来 */
+    if (willShow) closeAllPanels('food-panel');
     p.classList.toggle('hidden', !willShow);
     if (willShow) { buildFoodPanel(); placePanel(p); }
   }
@@ -305,6 +324,7 @@
       box.innerHTML = '<p class="muted">没有匹配的角色</p>';
       return;
     }
+    const frag = document.createDocumentFragment();
     hit.forEach(({ c, i }) => {
       const el = document.createElement('div');
       el.className = 'skin-item char-item' + (i === CONFIG.characterIndex ? ' on' : '');
@@ -337,9 +357,18 @@
         badge.title = c.pinch.reason || '这个角色的骨架不支持捏脸';
         el.appendChild(badge);
       }
+      /* ★ 第六十六轮：NPC 角色挂一个可见的「NPC」小标（用户要求"加个标签 npc"）。
+         数据侧：generated.js 的 tag === 'npc'（批量生成角色文件.js 写入）。 */
+      if (c.tag === 'npc') {
+        const badge = document.createElement('span');
+        badge.className = 'char-badge npc';
+        badge.textContent = I18N.t('char.npc');
+        el.appendChild(badge);
+      }
       el.addEventListener('click', () => switchCharacter(i));
-      box.appendChild(el);
+      frag.appendChild(el);
     });
+    box.appendChild(frag);
     /* ★ 第四十五轮：136 个角色里把"当前角色"滚进可视区 ——
        否则用户打开面板根本不知道自己现在用的是谁（要一路翻到底）。
        只在面板已经打开时滚，避免开机时就动列表。
@@ -445,16 +474,40 @@
     box.innerHTML = '';
     const title = $('skin-group-title');
     if (title) title.textContent = I18N.t('skin.outfitsOf', { name: dispName() });
+    const frag = document.createDocumentFragment();
     CONFIG.models.forEach((m, i) => {
       const el = document.createElement('div');
       el.className = 'skin-item' + (i === skinIndex ? ' on' : '');
       /* ★ 第四十五轮（用户要求）：皮肤项**只留皮肤名**。
          原来名字下面还挂一行 <small>（"基础外观（34 动作）"），
-         现在全部删除 —— 电脑端 / 网页端 / 安卓端三端一致。 */
-      el.textContent = m.name;
+         现在全部删除 —— 电脑端 / 网页端 / 安卓端三端一致。
+         ★ 第六十七轮：切到英文 / 日文 / 韩文界面时，皮肤名也换成对应语言
+           （`js/skins-i18n.js`，官方没翻的皮肤回退中文名，不显示 "Skin 3" 这种半成品）。 */
+      el.textContent = skinDisplay(m.voiceSkin, m.name);
       el.addEventListener('click', () => switchSkin(i));
-      box.appendChild(el);
+      frag.appendChild(el);
     });
+    box.appendChild(frag);
+  }
+
+  /** 皮肤名按界面语言显示：官方有译文就用译文，没有就保持中文名 */
+  function skinDisplay(voiceSkin, zhName) {
+    const lang = (window.I18N && I18N.lang) || 'zh';
+    if (lang === 'zh' || !voiceSkin) return zhName;
+    const table = window.SKINS_I18N || {};
+    const row = table[CONFIG.id] || table[String(CONFIG.id || '').toLowerCase()];
+    const n = String(voiceSkin).replace('_Skin', '');
+    const hit = row && row['Skin' + n] && row['Skin' + n][lang];
+    return hit || zhName;
+  }
+
+  /** 当前角色「中文皮肤名 → 该语言皮肤名」的反查表（图鉴条目名里的「（皮肤名）」用它翻译） */
+  function skinNameMap() {
+    const map = {};
+    (CONFIG.models || []).forEach((m) => {
+      if (m.voiceSkin && m.name) map[m.name] = skinDisplay(m.voiceSkin, m.name);
+    });
+    return map;
   }
 
   async function switchSkin(i) {
@@ -500,6 +553,9 @@
   function buildAnimPanel() {
     const box = $('tab-anim');
     box.innerHTML = '';
+    /* ★ 第七十五轮（用户要求"不要有旁白"）：原来顶部有一行
+       「当前外观：默认 · 40 个动作」的说明，已删除 —— 动作图鉴直接就是动作分组。
+       （动作是每套外观各自一套的，换皮肤后这里本来就会重建。） */
     CONFIG.animPanel.forEach((grp) => {
       const items = grp.items.filter((n) => Pet.animations.includes(n));
       if (!items.length) return;
@@ -562,6 +618,13 @@
     else Pet.setOverride('headDown', 0, true);
   }
 
+  /* ★ 第七十五轮（用户要求）语音图鉴重排：
+     ① **按皮肤排班**：默认（公用语音都放这里）→ 该角色每套外观（按外观列表顺序），
+        每段下面就是这套外观自己的语音；没有专属语音的外观不占空段。
+     ② **不要旁白**：顶部的完整度说明、皮肤段的"官方暂无语音"提示、
+        「仅日语 / 仅韩语 / 共用录音」小标签、鼠标悬停的序号解释，全部去掉 ——
+        图鉴只剩「皮肤名 → 分组 → 条目（名字 + 台词）」。
+     ③ 条目名里的「（皮肤名）」后缀也去掉（段头已经说明是哪套外观）。 */
   function buildVoicePanel() {
     const box = $('tab-voice');
     box.innerHTML = '';
@@ -571,66 +634,178 @@
       box.innerHTML = '<p class="muted">没有读取到语音清单。</p>';
       return;
     }
-    /* ★ 第五十四轮：皮肤语音的条目名原来是"爆栗（皮肤1）"这种占位标注，
-       用户根本不知道皮肤1是哪套。这里换成该角色 models 里的真实皮肤名
-       （如"爆栗（安全卫士）"）。全角色统一处理；
-       皮肤名本身还是占位（"皮肤 1"，官方数据缺失）的角色保持原样。 */
-    const skinNames = {};
-    (CONFIG.models || []).forEach((m) => {
-      if (m.voiceSkin && m.voiceSkin.indexOf('_Skin') === 0) {
-        const sn = (m.name || '').trim();
-        if (sn && !/^皮肤\s*\d+$/.test(sn)) skinNames[m.voiceSkin] = sn;
-      }
-    });
-    const relabel = (name) => {
-      if (typeof name !== 'string') return name;
-      const s = name.replace(/（皮肤\s*(\d+)）/, (all, n) => {
-        const sn = skinNames['_Skin' + n];
-        return sn ? `（${sn}）` : all;
-      });
-      /* ★ 第五十九轮：动作名跟着界面语言走（中文界面原样返回；遇到不认识的词整条回退中文，
-         不会中英混杂）。皮肤名是官方专名、只有中文，所以把「（…）」后缀先摘掉再翻、翻完拼回。 */
-      const m = /^(.*?)（([^）]*)）$/.exec(s);
-      if (!m) return I18N.animLabel(s);
-      return I18N.animLabel(m[1]) + '（' + m[2] + '）';
+
+    /* 段头皮肤名：模型里的官方皮肤名 > 图鉴数据里的 skinName > 「第N套外观」 */
+    const skinZh = (vs) => {
+      const m = (CONFIG.models || []).find((x) => (x.voiceSkin || '') === vs);
+      if (m && m.name) return m.name;
+      const c = cat.find((x) => x.skin === vs);
+      if (c && c.skinName) return c.skinName;
+      return I18N.t('voice.outfitN', { n: String(vs).replace(/^_Skin/, '') });
     };
-    const groups = {};
-    cat.forEach((c) => { (groups[c.group] = groups[c.group] || []).push(c); });
-    Object.keys(groups).forEach((g) => {
-      const h = document.createElement('div');
-      h.className = 'group-title';
-      h.textContent = `${g}（${groups[g].length}）`;
-      box.appendChild(h);
-      const list = document.createElement('div');
-      list.className = 'voice-list';
-      groups[g].forEach((c) => {
-        const row = document.createElement('button');
-        row.className = 'voice-row';
-        /* ★ 第二十九轮：
-           · 没有官方中文台词的（站点任何语言包都没有那句话），标"官方未收录台词"，
-             不再显示成空的"（无台词）"；
-           · 有韩语原文（textKo）就列在下面 —— 游戏原文是韩语，
-             用户可以对照原文核听，发现汉化不对的能直接指认。 */
-        const main = c.text || '（官方未收录台词）';
-        const ko = c.textKo ? `<span class="v-ko">${c.textKo}</span>` : '';
-        row.innerHTML = `<span class="v-name">${relabel(c.name)}</span><span class="v-text">${main}${ko}</span>`;
-        row.addEventListener('click', () => {
-          const r = Voice.playKey(c.key);
-          /* ★ 第三十一轮：长语音（打电话独白等）的对话框要陪到播完 */
-          sayUntilDone((r && r.text) || c.text || relabel(c.name), r && r.key, r && r.lang);
-        });
-        list.appendChild(row);
+    /* 该角色所有皮肤名（中/译文都算），用来判断名字尾巴上的括号是不是皮肤后缀 */
+    const skinNameSet = new Set();
+    (CONFIG.models || []).forEach((m) => { if (m.name) skinNameSet.add(m.name); });
+    cat.forEach((c) => { if (c.skinName) skinNameSet.add(c.skinName); });
+    const skinLang = skinNameMap();
+    Object.keys(skinLang).forEach((k) => skinNameSet.add(k));
+
+    /* 条目名：剥掉皮肤后缀 + 动作名跟着界面语言走 + 中文与数字之间补空格 */
+    const spaced = (t) => t.replace(/([\u4e00-\u9fa5])(\d)/g, '$1 $2');
+    const label = (name) => {
+      if (typeof name !== 'string') return name;
+      const m = /^(.*?)（([^）]*)）\s*$/.exec(name);
+      if (!m) return spaced(I18N.animLabel(name));
+      const inner = m[2];
+      const isSkin = skinNameSet.has(inner) || skinLang[inner]
+        || /^第\d*套外观$/.test(inner) || /^皮肤\s*\d+$/.test(inner);
+      if (!isSkin) return spaced(I18N.animLabel(name));   // 不是皮肤后缀 → 原样保留
+      return spaced(I18N.animLabel(m[1]));
+    };
+
+    /* ★ 第七十五轮（用户反馈"语音图鉴上下排版 2、3、1 这种顺序不对"）：
+       数据是按**键名**排的 —— `X_Touch1_1_Skin1`（薅脸2）、`X_Touch1_2_Skin1`（薅脸3）
+       会排在 `X_Touch1_Skin1`（薅脸1）**前面**，因为 '1' < '2' < 'S'。
+       所以显示前按**名字的自然顺序**重排：
+         · 同一个系列（把数字/下划线/连字符去掉后同名）内部按数字升序（1 < 2 < 10）；
+         · 系列之间保持数据里第一次出现的先后（不把整段打乱）。 */
+    const namePrefix = (n) => String(n == null ? '' : n).replace(/[\d_\-]+/g, '');
+    const nameNums = (n) => (String(n == null ? '' : n).match(/\d+/g) || []).map(Number);
+    const naturalSort = (arr) => {
+      const first = new Map();
+      arr.forEach((c, i) => {
+        const p = namePrefix(c.name);
+        if (!first.has(p)) first.set(p, i);
       });
-      box.appendChild(list);
+      return arr.slice().sort((a, b) => {
+        const pa = namePrefix(a.name);
+        const pb = namePrefix(b.name);
+        if (pa !== pb) return first.get(pa) - first.get(pb);
+        const na = nameNums(a.name);
+        const nb = nameNums(b.name);
+        for (let k = 0; k < Math.max(na.length, nb.length); k++) {
+          const x = na[k] === undefined ? -1 : na[k];   // 没数字的排在本系列最前
+          const y = nb[k] === undefined ? -1 : nb[k];
+          if (x !== y) return x - y;
+        }
+        return 0;
+      });
+    };
+
+    /* 段序：默认在最前，其余按外观列表顺序；数据里多出来的皮肤排在后面 */
+    const skinOrder = [''];
+    (CONFIG.models || []).forEach((m) => {
+      const vs = m.voiceSkin || '';
+      if (vs && skinOrder.indexOf(vs) < 0) skinOrder.push(vs);
     });
+    cat.forEach((c) => { if (c.skin && skinOrder.indexOf(c.skin) < 0) skinOrder.push(c.skin); });
+
+    skinOrder.forEach((vs) => {
+      const items = cat.filter((c) => (c.skin || '') === vs);
+      if (!items.length) return;                 // 这套外观没有专属语音 → 不列空段
+      const sec = document.createElement('div');
+      sec.className = 'vs-section' + (vs ? '' : ' vs-base');
+      const sh = document.createElement('div');
+      sh.className = 'vs-skin';
+      sh.textContent = vs ? skinDisplay(vs, skinZh(vs)) : I18N.t('voice.defaultSkin');
+      sec.appendChild(sh);
+      /* 分组顺序 = 数据里第一次出现的顺序（互动 / 情绪 / 剧情 / 战斗 / 养成 …） */
+      const groups = {};
+      items.forEach((c) => { (groups[c.group] = groups[c.group] || []).push(c); });
+      Object.keys(groups).forEach((g) => {
+        const h = document.createElement('div');
+        h.className = 'group-title';
+        h.textContent = I18N.groupName(g);
+        sec.appendChild(h);
+        const list = document.createElement('div');
+        list.className = 'voice-list';
+        naturalSort(groups[g]).forEach((c) => {
+          const row = document.createElement('button');
+          row.className = 'voice-row';
+          row.dataset.key = c.key;      // 给回归脚本核对"有没有漏/重"用
+          /* 台词：没有官方中文台词的写「官方未收录台词」；有韩语原文就小字列在下面 */
+          const main = c.text || I18N.t('voice.noText');
+          const ko = c.textKo ? `<span class="v-ko">${c.textKo}</span>` : '';
+          row.innerHTML = `<span class="v-name">${label(c.name)}</span><span class="v-text">${main}${ko}</span>`;
+          row.addEventListener('click', () => {
+            const r = Voice.playKey(c.key);
+            /* ★ 第三十一轮：长语音（打电话独白等）的对话框要陪到播完 */
+            sayUntilDone((r && r.text) || c.text || label(c.name), r && r.key, r && r.lang);
+          });
+          list.appendChild(row);
+        });
+        sec.appendChild(list);
+      });
+      box.appendChild(sec);
+    });
+
+    /* ★ 第六十七轮：皮肤语音策略开关（默认"跟随语言"= 选韩语就韩语）。
+       用户想听只有日语的新皮肤专属语音时可以切到"优先皮肤"。
+       ★ 第七十五轮：开关下面那行说明文字（旁白）已删除，只留开关本身。 */
+    const foot = document.createElement('div');
+    foot.className = 'vs-foot';
+    const btn = document.createElement('button');
+    btn.className = 'vs-toggle' + (Voice.isSkinFirst() ? ' on' : '');
+    btn.textContent = I18N.t(Voice.isSkinFirst() ? 'voice.skinFirstOn' : 'voice.skinFirstOff');
+    btn.addEventListener('click', () => {
+      Voice.setSkinFirst(!Voice.isSkinFirst());
+      voiceTabBuilt = false;
+      buildVoicePanel();
+    });
+    foot.appendChild(btn);
+    box.appendChild(foot);
     voiceTabBuilt = true;
   }
 
-  function openPanel() {
-    if (!animTabBuilt) buildAnimPanel();
-    if (!voiceTabBuilt) buildVoicePanel();
-    $('action-panel').classList.remove('hidden');
-    placePanel($('action-panel'));
+  /* ★ 第七十四轮（用户反馈）：面板**互斥 + 点外面就关**。
+     以前动作面板和角色面板能同时开着，切到别的按钮也不收起，屏幕上叠一大堆；
+     现在任何时刻最多只有一个面板，点工具栏 / 底部按钮 / 角色空白处 / 按 Esc 全部收起。 */
+  const PANEL_IDS = ['food-panel', 'action-panel', 'skin-panel'];
+  function closeAllPanels(except) {
+    PANEL_IDS.forEach((id) => {
+      if (id === except) return;
+      const el = $(id);
+      if (el && !el.classList.contains('hidden')) el.classList.add('hidden');
+    });
+  }
+  function isPanelOpen(id) {
+    const el = $(id);
+    return !!(el && !el.classList.contains('hidden'));
+  }
+
+  /** 切到「动作」或「语音」页（面板内页签、顶栏按钮共用这一套，保证状态永远一致） */
+  function showTab(isAnim) {
+    const p = $('action-panel');
+    document.querySelectorAll('#action-tabs .tab').forEach((x) => {
+      x.classList.toggle('on', (x.dataset.tab === 'anim') === isAnim);
+    });
+    $('tab-anim').classList.toggle('hidden', !isAnim);
+    $('tab-voice').classList.toggle('hidden', isAnim);
+    /* ★ 第六十七轮：语音图鉴是"长文本"，窄面板里一行只能放几个字。
+       切到语音页时给面板挂 voice-mode（放宽到 92vw），切回动作页再摘掉。 */
+    p.classList.toggle('voice-mode', !isAnim);
+    if (isAnim) { if (!animTabBuilt) buildAnimPanel(); }
+    else if (!voiceTabBuilt) buildVoicePanel();
+  }
+
+  /** 打开动作面板。which = 'anim' | 'voice'
+      ★ 第七十五轮（用户要求"我选了语音，想换成动作应该点一下动作就切过去"）：
+      面板已经开着、但停在另一页时，点「动作」= **一次点击直接切页**，
+      不再"先关掉、再点一次才重新打开"。同一页再点才收起。 */
+  function openPanel(which) {
+    const wantAnim = which !== 'voice';
+    const p = $('action-panel');
+    if (isPanelOpen('action-panel')) {
+      const curAnim = !$('tab-anim').classList.contains('hidden');
+      if (curAnim === wantAnim) { p.classList.add('hidden'); return; }   // 同页再点 = 收起
+      showTab(wantAnim);
+      placePanel(p);
+      return;
+    }
+    closeAllPanels('action-panel');
+    showTab(wantAnim);
+    p.classList.remove('hidden');
+    placePanel(p);
   }
 
   /* ---------------------------------------------------------- 热区调试层 */
@@ -979,6 +1154,8 @@
   /* ---------------------------------------------------------- UI 事件 */
   $('btn-skin').addEventListener('click', () => {
     const p = $('skin-panel');
+    /* ★ 第七十四轮：先判"是不是要打开" —— 打开就关掉别的面板；再点一次才是收起 */
+    if (p.classList.contains('hidden')) closeAllPanels('skin-panel');
     p.classList.toggle('hidden');
     if (!p.classList.contains('hidden')) {
       /* 打开面板时把角色数显示在搜索框占位符里，顺便刷新一次列表 */
@@ -988,21 +1165,19 @@
       placePanel(p);
     }
   });
-  /* ★ 角色搜索：输入即时过滤 */
-  $('char-search').addEventListener('input', buildCharList);
+  /* ★ 角色搜索：输入即时过滤（防抖 150ms，避免每次按键重建整个列表） */
+  $('char-search').addEventListener('input', debounce(buildCharList, 150));
   $('food-close').addEventListener('click', () => toggleFoodPanel(false));
-  $('food-search').addEventListener('input', buildFoodPanel);
-  $('btn-actions').addEventListener('click', openPanel);
+  $('food-search').addEventListener('input', debounce(buildFoodPanel, 150));
+  $('btn-actions').addEventListener('click', () => openPanel('anim'));
   $('action-close').addEventListener('click', () => $('action-panel').classList.add('hidden'));
 
   $('action-tabs').addEventListener('click', (e) => {
     const t = e.target.closest('.tab');
     if (!t) return;
-    document.querySelectorAll('#action-tabs .tab').forEach((x) => x.classList.toggle('on', x === t));
-    const isAnim = t.dataset.tab === 'anim';
-    $('tab-anim').classList.toggle('hidden', !isAnim);
-    $('tab-voice').classList.toggle('hidden', isAnim);
-    if (!isAnim && !voiceTabBuilt) buildVoicePanel();
+    /* ★ 第七十五轮：页签与顶栏按钮走同一个 showTab，点哪页就切哪页（一次点击）。 */
+    showTab(t.dataset.tab === 'anim');
+    placePanel($('action-panel'));
   });
 
   /* 语音语言切换（★ 第五十四轮重写）：菜单全列日语/韩语，选了就记住（localStorage），
@@ -1069,6 +1244,8 @@
   });
 
   $('btn-volume').addEventListener('click', () => showVolumeMenu($('btn-volume')));
+  /* ★ 第七十四轮：界面透明度（面板挡人物 → 调淡面板底色） */
+  $('btn-alpha').addEventListener('click', () => showAlphaMenu($('btn-alpha')));
 
   $('btn-auto').addEventListener('click', (e) => {
     autoOn = !autoOn;
@@ -1163,6 +1340,124 @@
     volMenu = box;
     setTimeout(() => window.addEventListener('pointerdown', onVolOutside, true), 0);
   }
+
+  /* ---------------------------------------------------------- ★ 界面透明度（第七十四轮）
+     用户反馈："选动作、语音时面板有点遮挡角色，想能调节 UI 透明度"。
+     做法：面板 / 工具栏 / 内部卡片的**底色**都用 :root 上的 --ui-alpha 算，
+     这里只负责把用户选的值写进去并记住（localStorage）；文字颜色不受影响。
+     菜单样式复用音量菜单的浮层（点外面关闭）。 */
+  const ALPHA_MIN = 0.25;
+  const ALPHA_KEY = 'pet-ui-alpha';
+
+  function currentAlpha() {
+    let v = NaN;
+    try { v = parseFloat(localStorage.getItem(ALPHA_KEY)); } catch (e) { /* 忽略 */ }
+    if (!isFinite(v)) v = 1;
+    return Math.min(1, Math.max(ALPHA_MIN, v));
+  }
+  function applyAlpha(v) {
+    v = Math.min(1, Math.max(ALPHA_MIN, v));
+    document.documentElement.style.setProperty('--ui-alpha', String(v));
+    try { localStorage.setItem(ALPHA_KEY, String(v)); } catch (e) { /* 忽略 */ }
+    return v;
+  }
+
+  let alphaMenu = null;
+  function closeAlphaMenu() {
+    if (alphaMenu) { alphaMenu.remove(); alphaMenu = null; }
+    window.removeEventListener('pointerdown', onAlphaOutside, true);
+  }
+  function onAlphaOutside(e) {
+    if (alphaMenu && !alphaMenu.contains(e.target)) closeAlphaMenu();
+  }
+
+  function showAlphaMenu(btn) {
+    closeLangMenu();
+    closeVolumeMenu();
+    closeAlphaMenu();
+    const box = document.createElement('div');
+    box.id = 'alpha-menu';
+
+    const row = document.createElement('div');
+    row.className = 'vol-row';
+    const lab = document.createElement('label');
+    lab.textContent = I18N.t('alpha.value');
+    const range = document.createElement('input');
+    range.type = 'range';
+    range.min = String(Math.round(ALPHA_MIN * 100));
+    range.max = '100';
+    range.step = '5';
+    range.value = String(Math.round(currentAlpha() * 100));
+    const val = document.createElement('b');
+    val.textContent = Math.round(currentAlpha() * 100) + '%';
+    range.addEventListener('input', () => {
+      const v = applyAlpha(Number(range.value) / 100);
+      val.textContent = Math.round(v * 100) + '%';
+      /* 面板开着时立刻按新宽度重排（透明了以后也尽量别压住角色脸） */
+      placeVisiblePanels();
+    });
+    row.appendChild(lab); row.appendChild(range); row.appendChild(val);
+    box.appendChild(row);
+
+    const reset = document.createElement('button');
+    reset.className = 'vol-reset';
+    reset.textContent = I18N.t('alpha.reset');
+    reset.addEventListener('click', () => {
+      applyAlpha(1);
+      range.value = '100';
+      val.textContent = '100%';
+      placeVisiblePanels();
+    });
+    box.appendChild(reset);
+
+    const hint = document.createElement('div');
+    hint.className = 'vol-hint';
+    hint.textContent = I18N.t('alpha.hint');
+    box.appendChild(hint);
+
+    document.body.appendChild(box);
+    const r0 = btn.getBoundingClientRect();
+    const mw = box.offsetWidth, mh = box.offsetHeight;
+    box.style.left = Math.max(8, Math.min(window.innerWidth - mw - 8, r0.right - mw)) + 'px';
+    box.style.top = Math.min(window.innerHeight - mh - 8, r0.bottom + 6) + 'px';
+    alphaMenu = box;
+    setTimeout(() => window.addEventListener('pointerdown', onAlphaOutside, true), 0);
+  }
+
+  /* 启动时恢复上次的透明度（老用户升级后第一次进来还是 100%，不会突然变透明） */
+  applyAlpha(currentAlpha());
+
+  /* ---------------------------------------------------------- ★ 点别处 / Esc 收起面板（第七十四轮）
+     用户反馈："有一些界面不能自动选择其他按钮时关闭"。
+     · 点工具栏任意按钮 → 先收起所有面板（动作 / 角色两个按钮自己有开关逻辑，跳过）
+     · 点底部互动按钮、点角色空白处 → 同样收起
+     · 点面板内部（含拖动、滚动、选皮肤、点语音试听）→ 不动
+     · Esc → 收起面板 + 关掉所有浮层菜单
+     用捕获阶段，保证在按钮自己的 click 之前就把别的面板收掉。 */
+  window.addEventListener('pointerdown', (e) => {
+    const t = e.target;
+    if (!(t instanceof Element)) return;
+    /* 面板内部 / 弹出菜单内部：不关 */
+    if (t.closest('.panel, .food-panel, #lang-menu, #volume-menu, #alpha-menu, #notice-overlay, #notice-card')) return;
+    /* 「动作」「角色」「喂食」按钮自己会 toggle，交给它们处理
+       （否则点了会被这里先关掉，变成"只能开不能关"） */
+    if (t.closest('#btn-actions, #btn-skin, .act[data-act="feed"]')) {
+      closeLangMenu(); closeVolumeMenu(); closeAlphaMenu();
+      return;
+    }
+    /* 工具栏其它按钮 / 底部互动条 / 角色画布 / 舞台空白：全部收起 */
+    if (t.closest('.tool, .act, .hud, .hud-actions, #pet-canvas, #stage, body, html')) {
+      closeAllPanels();
+    }
+  }, true);
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape' && e.key !== 'Esc') return;
+    closeAllPanels();
+    closeLangMenu(); closeVolumeMenu(); closeAlphaMenu();
+    const no = document.getElementById('notice-overlay');
+    if (no && no.classList.contains('show')) no.classList.remove('show');
+  });
 
   function afterUiLangChange() {
     syncUiLangButton();
@@ -1280,7 +1575,16 @@
     });
   });
 
-  window.addEventListener('resize', () => { Pet.resize(); placeVisiblePanels(); });
+  /* ★ 性能优化：resize 事件每秒可触发数十次，placeVisiblePanels 读布局开销不小，
+     用 rAF 节流保证每帧最多执行一次面板重排 */
+  let resizeRafPending = false;
+  window.addEventListener('resize', () => {
+    Pet.resize();
+    if (!resizeRafPending) {
+      resizeRafPending = true;
+      requestAnimationFrame(() => { resizeRafPending = false; placeVisiblePanels(); });
+    }
+  });
 
   /* 调试/自测入口：只读挂载，供验证工具（自测台、诊断台）驱动页面。
      不影响正常使用 —— 就是几个函数引用。 */

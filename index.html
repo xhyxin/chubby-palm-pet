@@ -103,6 +103,8 @@
         <button class="tool" id="btn-music" title="背景音乐 开 / 关">音乐:开</button>
         <button class="tool" id="btn-music-pick" title="换一首背景音乐" data-i18n="btn.musicPick">换音乐</button>
         <button class="tool" id="btn-volume" title="音量：总音量 / 音乐 / 语音 / 音效" data-i18n="btn.volume">音量</button>
+        <!-- ★ 第七十四轮（用户要求）：动作 / 语音面板会挡住角色 → 加界面透明度调节 -->
+        <button class="tool" id="btn-alpha" title="界面透明度：调低后面板变透明，能看见角色" data-i18n="btn.alpha">透明</button>
       </span>
     </div>
   </div>
@@ -182,6 +184,8 @@
 <script src="js/pet.js"></script>
 <script src="js/interact.js"></script>
 <script src="js/names-i18n.js"></script>
+<!-- ★ skins-i18n.js：皮肤名四语对照（由 03_工具\生成皮肤名多语言.py 生成），界面切语言时外观名跟着变 -->
+<script src="js/skins-i18n.js"></script>
 <script src="js/i18n.js"></script>
 <!-- ★ music.js：背景音乐播放器（开关 / 换曲 / 播完随机下一首） -->
 <script src="js/music.js"></script>

@@ -8,7 +8,19 @@
   --amber: #ffc46b;
   --mint: #8fd6bd;
   --line: rgba(74, 59, 52, .12);
-  --card: rgba(255, 255, 255, .82);
+  /* ★ 第七十四轮（用户要求）：界面透明度。1 = 不透明；js/main.js 的「透明」菜单
+     把用户选的值写到 :root 上（localStorage 记住），面板 / 工具栏 / 卡片跟着变淡，
+     后面的角色能透出来。只改**底色**，文字与图标保持原色，保证可读。 */
+  --ui-alpha: 1;
+  /* ★ 第七十五轮（用户反馈"只把外面大框改透明了，里面按钮和选中的没变"）：
+     内层表面必须**同比例**跟着变淡，否则面板透成一片、里面的按钮还是实心白。
+       --ui-a-card：面板内层的白底卡片（选项卡 / 动作按钮 / 语音行 / 输入框…）
+       --ui-a-on  ：选中 / 悬停的彩色块（粉底白字，留一点下限保证文字还看得清）
+     α=1 时 --ui-a-card=1（就是原来的颜色）、--ui-a-on=1（就是原来的粉），
+     所以默认观感零变化；α=0.25 时内层掉到 0.36、选中块 0.55，整块界面一起透。 */
+  --ui-a-card: calc(.15 + .85 * var(--ui-alpha));
+  --ui-a-on: calc(.4 + .6 * var(--ui-alpha));
+  --card: rgba(255, 255, 255, calc(.82 * var(--ui-alpha)));
   --shadow: 0 8px 24px rgba(160, 110, 90, .16);
   --radius: 16px;
 }
@@ -213,7 +225,12 @@ html, body {
   margin-top: 8px; font-size: 10.5px; color: var(--ink-soft); line-height: 1.5;
 }
 .food-legend img { width: 16px; height: 16px; vertical-align: -3px; margin: 0 1px 0 5px; }
-
+/* ★ 第七十五轮（手机排版体检发现的）：屏幕很矮时（320×568 这类老机型 / 横屏），
+   喂食面板被顶栏和底部互动条夹得只剩 ~290px，底部那三行说明文字要占掉三分之一，
+   食物只剩 2 个可见。矮屏直接把说明让位给食物卡片（和横条模式 fp-h 的处理一致）。 */
+@media (max-height: 620px) {
+  .food-tip { display: none; }
+}
 /* ---------------------------------------------------- ★ 喂食面板「横排食物」模式（第四十五轮）
    面板被放到人物上方/下方那条**空白横带**里时启用：表头压成一行、食物排成一行、
    卡片尺寸随横带高度自动缩放 —— 只允许**左右滑**、绝不允许上下滑
@@ -251,7 +268,12 @@ html, body {
 /* ---------------------------------------------------------------- 面板 */
 .panel {
   position: absolute; z-index: 8; left: 50%; top: 50%; transform: translate(-50%, -50%);
-  padding: 18px 20px; background: #fff; border-radius: var(--radius);
+  padding: 18px 20px;
+  /* ★ 第七十四轮：面板底色跟随「界面透明度」—— 调低后能看见后面的角色。
+     这里**不用** backdrop-filter 磨砂：安卓 WebView / iOS 上大面积磨砂会掉帧，
+     而且无头截图里会渲染出偏暗的伪影，等于让"透明度"变成一个看不清的效果。 */
+  background: rgba(255, 255, 255, var(--ui-alpha));
+  border-radius: var(--radius);
   box-shadow: 0 16px 48px rgba(140, 95, 80, .28); width: 372px; max-width: 92vw;
 }
 .panel-title { font-size: 15px; font-weight: 700; margin-bottom: 12px; white-space: nowrap; }
@@ -334,6 +356,11 @@ html, body {
   position: absolute; right: 3px; top: 3px;
   padding: 1px 5px; border-radius: 6px; font-size: 9px; line-height: 1.5;
   color: #8a7a72; background: #eee4de; border: 1px solid #ddd0c8;
+}
+/* ★ 第六十六轮：NPC 角色标（tag === 'npc'）—— 放左上角，和"无捏脸"标不抢位置 */
+.char-badge.npc {
+  right: auto; left: 3px;
+  color: #6b5b4e; background: #fdf1e3; border-color: #e8d5bd;
 }
 
 /* ---------------------------------------------------------------- 加载层 */
@@ -470,6 +497,50 @@ html, body {
 .voice-row .v-text { color: var(--ink-soft); line-height: 1.45; }
 /* ★ 韩语原文（第二十九轮）：列在中文台词下面，小字浅色，供对照核听 */
 .voice-row .v-ko { display: block; font-size: 11px; color: #b3a49c; margin-top: 2px; }
+
+/* ---- ★ 第六十七轮：语音图鉴按皮肤分区 + 完整度 + 小标签 ----
+   用户反馈"这些语音区分不够明显，不知道 0102 是什么皮肤、看着不知道全不全"，
+   所以加：顶部完整度一行、每套皮肤一个段头（带条数）、条目上的语言/共用录音小标签、
+   底部一个"皮肤语音策略"开关。 */
+.vs-summary {
+  font-size: 12px; color: var(--ink-soft); background: #fdf6f0;
+  border: 1px solid var(--line); border-radius: 10px;
+  padding: 8px 12px; margin-bottom: 4px; line-height: 1.5;
+}
+.vs-section { margin-top: 10px; }
+.vs-skin {
+  font-size: 13px; font-weight: 800; color: var(--pink-deep);
+  margin: 12px 0 2px; padding-left: 8px; border-left: 3px solid var(--pink);
+  line-height: 1.6;
+}
+.vs-section:first-of-type .vs-skin { margin-top: 6px; }
+.vs-tip { font-size: 11.5px; color: #b3a49c; padding: 2px 0 0 11px; }
+.voice-row .v-tag {
+  font-style: normal; font-size: 10.5px; font-weight: 600; line-height: 1.5;
+  padding: 1px 6px; border-radius: 999px; margin-left: 6px; white-space: nowrap;
+  background: #efe7ff; color: #6f4bb0;
+}
+.voice-row .v-tag.alias { background: #eef2f6; color: #6c7a89; }
+.voice-row.is-alias { opacity: .82; }
+.vs-foot {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+  margin-top: 16px; padding-top: 12px; border-top: 1px dashed var(--line);
+}
+.vs-toggle {
+  font-family: inherit; font-size: 12px; cursor: pointer;
+  padding: 7px 13px; border-radius: 999px;
+  border: 1px solid var(--line); background: #fffdfa; color: var(--ink-soft);
+}
+.vs-toggle.on { background: var(--pink); border-color: var(--pink); color: #fff; }
+.vs-note { font-size: 11px; color: #b3a49c; flex: 1 1 220px; line-height: 1.5; }
+
+/* ★ 第六十七轮：语音页是长文本，面板要比动作页宽（否则一行只放得下几个字）。
+   窄屏（贴边压缩 panel-snug）时同样放宽，并且让"名字"和"台词"上下排。 */
+#action-panel.voice-mode { width: min(92vw, 560px); }
+.panel-wide.panel-snug.voice-mode { max-width: 92vw; width: 92vw; min-width: 0; }
+.panel-snug .voice-row { flex-wrap: wrap; row-gap: 2px; }
+.panel-snug .voice-row .v-name { flex: 1 1 100%; min-width: 0; }
+.panel-snug .voice-row .v-text { flex: 1 1 100%; }
 .panel-body .muted { font-size: 13px; color: var(--ink-soft); }
 
 @media (max-width: 720px) {
@@ -529,12 +600,20 @@ html, body {
 .tool:disabled { opacity: .55; cursor: wait; }
 
 /* ★ 音量选择菜单（第四十六轮）：总音量 / 音乐 / 语音 / 音效 四条滑杆 */
-#volume-menu {
+#volume-menu,
+#alpha-menu {
   position: fixed; z-index: 95; width: 244px; max-width: 88vw;
   padding: 10px 12px 9px; display: flex; flex-direction: column; gap: 7px;
   background: var(--card); backdrop-filter: blur(10px);
   border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow);
 }
+#alpha-menu { width: 262px; }
+.vol-reset {
+  align-self: flex-start; padding: 4px 10px; font-size: 11.5px; font-family: inherit;
+  color: var(--pink-deep); background: #fff0f4; border: 1px solid var(--line);
+  border-radius: 999px; cursor: pointer;
+}
+.vol-reset:hover { background: #ffe3ec; }
 .vol-row { display: flex; align-items: center; gap: 8px; }
 .vol-row label { flex: 0 0 54px; font-size: 12px; color: var(--ink); }
 .vol-row input[type="range"] {
@@ -636,3 +715,92 @@ html.ios button, html.ios .tool, html.ios .act, html.ios .tab,
 html.ios .skin-item, html.ios .food-card { touch-action: manipulation; }
 /* 从主屏图标全屏启动时，去掉可能残留的默认边距 */
 html.ios-standalone #stage { margin: 0; }
+
+/* ================================================================================
+   ★ 第七十四轮：界面透明度（用户反馈「选动作 / 语音时面板有点遮挡角色」）
+   ★ 第七十五轮重写（用户反馈「只把外面的框改了，里面按钮和选中的没变」）
+   --------------------------------------------------------------------------------
+   旧版只有 .panel / --card 用 var(--ui-alpha)，内层卡片走 `0.45 + 0.55α`
+   —— α=0.25 时内层还有 0.59，看起来几乎是实心的；而且 `.chip`（动作按钮）
+   根本没进名单，`.tab.on` / `.skin-item.on` 的粉底还被统一刷成了白底白字
+   （选中项直接"消失"）。现在改成：
+     · 每一层都用**同一个 α** 换算（--ui-a-card / --ui-a-on），不再有"半透明白墙"；
+     · 选中态保留自己的颜色，只是变淡（粉底仍是粉底）；
+     · α=1 时全部等价于原来的颜色，观感零变化。
+   ================================================================================ */
+/* ---- 第一层：面板 / 浮层本身 ---- */
+.panel { background-color: rgba(255, 255, 255, var(--ui-alpha)); }
+
+/* ---- 第二层：面板里的白底卡片（都跟着同一个 α 走） ---- */
+.panel .tab,
+.panel .chip,
+.panel .voice-row,
+.panel .skin-item,
+.panel .char-search,
+.panel .vs-toggle,
+.panel .char-item,
+.panel .panel-x,
+.food-panel .food-card,
+.food-panel .food-search,
+.food-panel .food-close,
+.act {
+  background-color: rgba(255, 253, 250, var(--ui-a-card));
+}
+.panel .tab { background-color: rgba(246, 239, 233, var(--ui-a-card)); }
+.panel .panel-x { background-color: rgba(244, 236, 231, var(--ui-a-card)); }
+.panel .char-item { background-color: rgba(255, 248, 242, var(--ui-a-card)); }
+.food-panel .food-search,
+.food-panel .food-close,
+.act { background-color: rgba(255, 255, 255, var(--ui-a-card)); }
+#notice-card .notice-body { background-color: rgba(255, 255, 255, calc(.6 * var(--ui-alpha))); }
+
+/* ---- 第三层：选中 / 悬停的彩色块（颜色不变，只变淡；留下限保文字可读） ---- */
+.panel .tab.on,
+.panel .skin-item.on,
+.panel .char-item.on,
+.panel .vs-toggle.on,
+.panel .chip:hover,
+.panel .voice-row:hover,
+.food-panel .food-card:hover,
+.act:hover,
+.tool.on,
+.tool:hover,
+#lang-menu .lang-item:hover,
+#lang-menu .lang-item.on {
+  background-color: rgba(255, 240, 244, var(--ui-a-on));
+}
+.panel .tab.on,
+.panel .vs-toggle.on,
+.act:hover,
+.tool.on {
+  background-color: rgba(255, 157, 181, var(--ui-a-on));
+}
+.tool:hover { background-color: rgba(255, 255, 255, calc(.96 * var(--ui-alpha))); }
+
+/* 面板里最外层的标题条 / 选项卡条本身没底色，透明时保持干净 */
+.panel .tabs,
+.panel .panel-head { background-color: transparent; }
+/* 输入框的占位符在低透明度下容易糊，给文字兜个底 */
+.panel input::placeholder,
+.food-panel input::placeholder { color: rgba(138, 117, 104, calc(.55 + .45 * var(--ui-alpha))); }
+
+/* ★ 第七十五轮：横屏 / 很矮的窗口（≤500 高）—— 默认食物卡片太大，一屏只露出一个半。
+   把面板放宽一点、卡片压小，一屏能看 6 个以上（竖排照样只上下滑）。
+   ⚠️ 必须放在 `.food-panel.panel-snug`（本文件后面）**之后**，否则同权重被它盖掉。 */
+@media (max-height: 500px) {
+  .food-panel { width: clamp(220px, 30vw, 340px); max-width: 46vw; }
+  .food-grid { grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); gap: 5px; }
+  .food-card { padding: 4px 2px; }
+  .food-card img { width: 36px; height: 36px; }
+  .food-card span { font-size: 10px; }
+  /* 贴边压缩（panel-snug，单列横排卡片）时再压小一点，375 高的横屏也能看见 3 个 */
+  .food-panel.panel-snug { width: 190px; }
+  .food-panel.panel-snug .food-card { padding: 3px 5px; gap: 5px; }
+  .food-panel.panel-snug .food-card img { width: 28px; height: 28px; }
+  /* 表头压成一行（标题 / 搜索 / 关闭并排）—— 375 高的横屏上这一下就省出 30px，
+     食物从"2 个"变成"3 个"；和横条模式 fp-h 的表头处理一致。 */
+  .food-panel .food-head { flex-wrap: nowrap; gap: 5px; margin-bottom: 5px; }
+  .food-panel .food-title { flex: 0 0 auto; font-size: 11.5px; white-space: nowrap; }
+  .food-panel .food-search { flex: 1 1 40px; padding: 4px 6px; font-size: 11.5px; }
+  .food-panel .food-close { width: 22px; height: 22px; font-size: 11px; }
+}
