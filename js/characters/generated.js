@@ -314,27 +314,23 @@ const CHAR_GENERATED = [
     "Alice_Surprise1",
     "Alice_Hmm1",
     "Alice_Yes1",
-    "Alice_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Alice_Anger1",
     "Alice_No1",
     "Alice_Anger2",
-    "Alice_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Alice_CallPlayer1",
     "Alice_Sorrow1",
     "Alice_Hmm2",
-    "Alice_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Alice_Greeting",
     "Alice_Lobby",
     "Alice_Spawn1",
     "Alice_Joy1",
-    "Alice_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -694,27 +690,23 @@ const CHAR_GENERATED = [
     "Allet_Surprise1",
     "Allet_Hmm1",
     "Allet_Yes1",
-    "Allet_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Allet_Anger1",
     "Allet_No1",
     "Allet_Anger2",
-    "Allet_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Allet_CallPlayer1",
     "Allet_Sorrow1",
     "Allet_Hmm2",
-    "Allet_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Allet_Greeting",
     "Allet_Lobby",
     "Allet_Spawn1",
     "Allet_Joy1",
-    "Allet_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -1104,27 +1096,23 @@ const CHAR_GENERATED = [
     "Amelia_Surprise1",
     "Amelia_Hmm1",
     "Amelia_Yes1",
-    "Amelia_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Amelia_Anger1",
     "Amelia_No1",
     "Amelia_Anger2",
-    "Amelia_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Amelia_CallPlayer1",
     "Amelia_Sorrow1",
     "Amelia_Hmm2",
-    "Amelia_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Amelia_Greeting",
     "Amelia_Lobby",
     "Amelia_Spawn1",
     "Amelia_Joy1",
-    "Amelia_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -1499,27 +1487,23 @@ const CHAR_GENERATED = [
     "AmeliaR41_Surprise1",
     "AmeliaR41_Hmm1",
     "AmeliaR41_Yes1",
-    "AmeliaR41_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "AmeliaR41_Anger1",
     "AmeliaR41_No1",
     "AmeliaR41_Anger2",
-    "AmeliaR41_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "AmeliaR41_CallPlayer1",
     "AmeliaR41_Sorrow1",
     "AmeliaR41_Hmm2",
-    "AmeliaR41_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "AmeliaR41_Greeting",
     "AmeliaR41_Lobby",
     "AmeliaR41_Spawn1",
     "AmeliaR41_Joy1",
-    "AmeliaR41_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -1919,27 +1903,23 @@ const CHAR_GENERATED = [
     "Aragnia_Surprise1",
     "Aragnia_Hmm1",
     "Aragnia_Yes1",
-    "Aragnia_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Aragnia_Anger1",
     "Aragnia_No1",
     "Aragnia_Anger2",
-    "Aragnia_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Aragnia_CallPlayer1",
     "Aragnia_Sorrow1",
     "Aragnia_Hmm2",
-    "Aragnia_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Aragnia_Greeting",
     "Aragnia_Lobby",
     "Aragnia_Spawn1",
     "Aragnia_Joy1",
-    "Aragnia_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -2331,27 +2311,23 @@ const CHAR_GENERATED = [
     "Arco_Surprise1",
     "Arco_Hmm1",
     "Arco_Yes1",
-    "Arco_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Arco_Anger1",
     "Arco_No1",
     "Arco_Anger2",
-    "Arco_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Arco_CallPlayer1",
     "Arco_Sorrow1",
     "Arco_Hmm2",
-    "Arco_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Arco_Greeting",
     "Arco_Lobby",
     "Arco_Spawn1",
     "Arco_Joy1",
-    "Arco_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -2751,27 +2727,23 @@ const CHAR_GENERATED = [
     "Arnet_Surprise1",
     "Arnet_Hmm1",
     "Arnet_Yes1",
-    "Arnet_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Arnet_Anger1",
     "Arnet_No1",
     "Arnet_Anger2",
-    "Arnet_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Arnet_CallPlayer1",
     "Arnet_Sorrow1",
     "Arnet_Hmm2",
-    "Arnet_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Arnet_Greeting",
     "Arnet_Lobby",
     "Arnet_Spawn1",
     "Arnet_Joy1",
-    "Arnet_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -3161,27 +3133,23 @@ const CHAR_GENERATED = [
     "Asana_Surprise1",
     "Asana_Hmm1",
     "Asana_Yes1",
-    "Asana_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Asana_Anger1",
     "Asana_No1",
     "Asana_Anger2",
-    "Asana_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Asana_CallPlayer1",
     "Asana_Sorrow1",
     "Asana_Hmm2",
-    "Asana_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Asana_Greeting",
     "Asana_Lobby",
     "Asana_Spawn1",
     "Asana_Joy1",
-    "Asana_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -3573,27 +3541,23 @@ const CHAR_GENERATED = [
     "Ashur_Surprise1",
     "Ashur_Hmm1",
     "Ashur_Yes1",
-    "Ashur_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Ashur_Anger1",
     "Ashur_No1",
     "Ashur_Anger2",
-    "Ashur_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Ashur_CallPlayer1",
     "Ashur_Sorrow1",
     "Ashur_Hmm2",
-    "Ashur_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Ashur_Greeting",
     "Ashur_Lobby",
     "Ashur_Spawn1",
     "Ashur_Joy1",
-    "Ashur_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -3970,27 +3934,23 @@ const CHAR_GENERATED = [
     "AshurMagi_Surprise1",
     "AshurMagi_Hmm1",
     "AshurMagi_Yes1",
-    "AshurMagi_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "AshurMagi_Anger1",
     "AshurMagi_No1",
     "AshurMagi_Anger2",
-    "AshurMagi_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "AshurMagi_CallPlayer1",
     "AshurMagi_Sorrow1",
     "AshurMagi_Hmm2",
-    "AshurMagi_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "AshurMagi_Greeting",
     "AshurMagi_Lobby",
     "AshurMagi_Spawn1",
     "AshurMagi_Joy1",
-    "AshurMagi_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -4379,27 +4339,23 @@ const CHAR_GENERATED = [
     "Aurora_Surprise1",
     "Aurora_Hmm1",
     "Aurora_Yes1",
-    "Aurora_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Aurora_Anger1",
     "Aurora_No1",
     "Aurora_Anger2",
-    "Aurora_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Aurora_CallPlayer1",
     "Aurora_Sorrow1",
     "Aurora_Hmm2",
-    "Aurora_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Aurora_Greeting",
     "Aurora_Lobby",
     "Aurora_Spawn1",
     "Aurora_Joy1",
-    "Aurora_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -4811,27 +4767,23 @@ const CHAR_GENERATED = [
     "Aya_Surprise1",
     "Aya_Hmm1",
     "Aya_Yes1",
-    "Aya_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Aya_Anger1",
     "Aya_No1",
     "Aya_Anger2",
-    "Aya_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Aya_CallPlayer1",
     "Aya_Sorrow1",
     "Aya_Hmm2",
-    "Aya_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Aya_Greeting",
     "Aya_Lobby",
     "Aya_Spawn1",
     "Aya_Joy1",
-    "Aya_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -5217,27 +5169,23 @@ const CHAR_GENERATED = [
     "Ayla_Surprise1",
     "Ayla_Hmm1",
     "Ayla_Yes1",
-    "Ayla_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Ayla_Anger1",
     "Ayla_No1",
     "Ayla_Anger2",
-    "Ayla_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Ayla_CallPlayer1",
     "Ayla_Sorrow1",
     "Ayla_Hmm2",
-    "Ayla_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Ayla_Greeting",
     "Ayla_Lobby",
     "Ayla_Spawn1",
     "Ayla_Joy1",
-    "Ayla_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -5614,27 +5562,23 @@ const CHAR_GENERATED = [
     "Bana_Surprise1",
     "Bana_Hmm1",
     "Bana_Yes1",
-    "Bana_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Bana_Anger1",
     "Bana_No1",
     "Bana_Anger2",
-    "Bana_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Bana_CallPlayer1",
     "Bana_Sorrow1",
     "Bana_Hmm2",
-    "Bana_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Bana_Greeting",
     "Bana_Lobby",
     "Bana_Spawn1",
     "Bana_Joy1",
-    "Bana_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -5995,27 +5939,23 @@ const CHAR_GENERATED = [
     "Barie_Surprise1",
     "Barie_Hmm1",
     "Barie_Yes1",
-    "Barie_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Barie_Anger1",
     "Barie_No1",
     "Barie_Anger2",
-    "Barie_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Barie_CallPlayer1",
     "Barie_Sorrow1",
     "Barie_Hmm2",
-    "Barie_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Barie_Greeting",
     "Barie_Lobby",
     "Barie_Spawn1",
     "Barie_Joy1",
-    "Barie_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -6404,27 +6344,23 @@ const CHAR_GENERATED = [
     "Barong_Surprise1",
     "Barong_Hmm1",
     "Barong_Yes1",
-    "Barong_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Barong_Anger1",
     "Barong_No1",
     "Barong_Anger2",
-    "Barong_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Barong_CallPlayer1",
     "Barong_Sorrow1",
     "Barong_Hmm2",
-    "Barong_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Barong_Greeting",
     "Barong_Lobby",
     "Barong_Spawn1",
     "Barong_Joy1",
-    "Barong_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -6791,27 +6727,23 @@ const CHAR_GENERATED = [
     "Belita_Surprise1",
     "Belita_Hmm1",
     "Belita_Yes1",
-    "Belita_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Belita_Anger1",
     "Belita_No1",
     "Belita_Anger2",
-    "Belita_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Belita_CallPlayer1",
     "Belita_Sorrow1",
     "Belita_Hmm2",
-    "Belita_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Belita_Greeting",
     "Belita_Lobby",
     "Belita_Spawn1",
     "Belita_Joy1",
-    "Belita_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -7176,27 +7108,23 @@ const CHAR_GENERATED = [
     "Beni_Surprise1",
     "Beni_Hmm1",
     "Beni_Yes1",
-    "Beni_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Beni_Anger1",
     "Beni_No1",
     "Beni_Anger2",
-    "Beni_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Beni_CallPlayer1",
     "Beni_Sorrow1",
     "Beni_Hmm2",
-    "Beni_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Beni_Greeting",
     "Beni_Lobby",
     "Beni_Spawn1",
     "Beni_Joy1",
-    "Beni_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -7569,27 +7497,23 @@ const CHAR_GENERATED = [
     "BeniBeni_Surprise1",
     "BeniBeni_Hmm1",
     "BeniBeni_Yes1",
-    "BeniBeni_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "BeniBeni_Anger1",
     "BeniBeni_No1",
     "BeniBeni_Anger2",
-    "BeniBeni_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "BeniBeni_CallPlayer1",
     "BeniBeni_Sorrow1",
     "BeniBeni_Hmm2",
-    "BeniBeni_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "BeniBeni_Greeting",
     "BeniBeni_Lobby",
     "BeniBeni_Spawn1",
     "BeniBeni_Joy1",
-    "BeniBeni_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -7963,27 +7887,23 @@ const CHAR_GENERATED = [
     "BigWood_Surprise1",
     "BigWood_Hmm1",
     "BigWood_Yes1",
-    "BigWood_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "BigWood_Anger1",
     "BigWood_No1",
     "BigWood_Anger2",
-    "BigWood_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "BigWood_CallPlayer1",
     "BigWood_Sorrow1",
     "BigWood_Hmm2",
-    "BigWood_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "BigWood_Greeting",
     "BigWood_Lobby",
     "BigWood_Spawn1",
     "BigWood_Joy1",
-    "BigWood_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -8353,27 +8273,23 @@ const CHAR_GENERATED = [
     "Blanchet_Surprise1",
     "Blanchet_Hmm1",
     "Blanchet_Yes1",
-    "Blanchet_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Blanchet_Anger1",
     "Blanchet_No1",
     "Blanchet_Anger2",
-    "Blanchet_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Blanchet_CallPlayer1",
     "Blanchet_Sorrow1",
     "Blanchet_Hmm2",
-    "Blanchet_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Blanchet_Greeting",
     "Blanchet_Lobby",
     "Blanchet_Spawn1",
     "Blanchet_Joy1",
-    "Blanchet_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -8736,25 +8652,21 @@ const CHAR_GENERATED = [
     "Callamori_Surprise1",
     "Callamori_Hmm1",
     "Callamori_Yes1",
-    "Callamori_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Callamori_Anger1",
     "Callamori_No1",
     "Callamori_Anger2",
-    "Callamori_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Callamori_CallPlayer1",
     "Callamori_Sorrow1",
     "Callamori_Hmm2",
-    "Callamori_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Callamori_Greeting",
     "Callamori_Joy1",
-    "Callamori_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -9153,27 +9065,23 @@ const CHAR_GENERATED = [
     "Canna_Surprise1",
     "Canna_Hmm1",
     "Canna_Yes1",
-    "Canna_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Canna_Anger1",
     "Canna_No1",
     "Canna_Anger2",
-    "Canna_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Canna_CallPlayer1",
     "Canna_Sorrow1",
     "Canna_Hmm2",
-    "Canna_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Canna_Greeting",
     "Canna_Lobby",
     "Canna_Spawn1",
     "Canna_Joy1",
-    "Canna_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -9527,27 +9435,23 @@ const CHAR_GENERATED = [
     "Canta_Surprise1",
     "Canta_Hmm1",
     "Canta_Yes1",
-    "Canta_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Canta_Anger1",
     "Canta_No1",
     "Canta_Anger2",
-    "Canta_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Canta_CallPlayer1",
     "Canta_Sorrow1",
     "Canta_Hmm2",
-    "Canta_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Canta_Greeting",
     "Canta_Lobby",
     "Canta_Spawn1",
     "Canta_Joy1",
-    "Canta_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -9904,27 +9808,23 @@ const CHAR_GENERATED = [
     "Carren_Surprise1",
     "Carren_Hmm1",
     "Carren_Yes1",
-    "Carren_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Carren_Anger1",
     "Carren_No1",
     "Carren_Anger2",
-    "Carren_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Carren_CallPlayer1",
     "Carren_Sorrow1",
     "Carren_Hmm2",
-    "Carren_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Carren_Greeting",
     "Carren_Lobby",
     "Carren_Spawn1",
     "Carren_Joy1",
-    "Carren_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -10318,27 +10218,23 @@ const CHAR_GENERATED = [
     "Chloe_Surprise1",
     "Chloe_Hmm1",
     "Chloe_Yes1",
-    "Chloe_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Chloe_Anger1",
     "Chloe_No1",
     "Chloe_Anger2",
-    "Chloe_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Chloe_CallPlayer1",
     "Chloe_Sorrow1",
     "Chloe_Hmm2",
-    "Chloe_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Chloe_Greeting",
     "Chloe_Lobby",
     "Chloe_Spawn1",
     "Chloe_Joy1",
-    "Chloe_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -10684,13 +10580,11 @@ const CHAR_GENERATED = [
     "ko"
    ],
    "pokeVoice": [
-    "Chloe_SebaOff_Touch1"
-   ],
+    ],
    "upsetVoice": [],
    "hungryVoice": [],
    "greetVoice": [
-    "Chloe_SebaOff_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -11049,27 +10943,23 @@ const CHAR_GENERATED = [
     "ChopI_Surprise1",
     "ChopI_Hmm1",
     "ChopI_Yes1",
-    "Chopi_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "ChopI_Anger1",
     "ChopI_No1",
     "ChopI_Anger2",
-    "Chopi_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "ChopI_CallPlayer1",
     "ChopI_Sorrow1",
     "ChopI_Hmm2",
-    "Chopi_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "ChopI_Greeting",
     "Chopi_Lobby",
     "Chopi_Spawn1",
     "ChopI_Joy1",
-    "Chopi_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -11432,23 +11322,19 @@ const CHAR_GENERATED = [
     "ko"
    ],
    "pokeVoice": [
-    "Crepe_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Crepe_Anger1",
     "Crepe_Anger2",
-    "Crepe_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Crepe_Sorrow1",
-    "Crepe_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Crepe_Greeting",
     "Crepe_Spawn1",
     "Crepe_Joy1",
-    "Crepe_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -11805,27 +11691,23 @@ const CHAR_GENERATED = [
     "Cuee_Surprise1",
     "Cuee_Hmm1",
     "Cuee_Yes1",
-    "Cuee_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Cuee_Anger1",
     "Cuee_No1",
     "Cuee_Anger2",
-    "Cuee_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Cuee_CallPlayer1",
     "Cuee_Sorrow1",
     "Cuee_Hmm2",
-    "Cuee_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Cuee_Greeting",
     "Cuee_Lobby",
     "Cuee_Spawn1",
     "Cuee_Joy1",
-    "Cuee_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -12205,27 +12087,23 @@ const CHAR_GENERATED = [
     "Daya_Surprise1",
     "Daya_Hmm1",
     "Daya_Yes1",
-    "Daya_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Daya_Anger1",
     "Daya_No1",
     "Daya_Anger2",
-    "Daya_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Daya_CallPlayer1",
     "Daya_Sorrow1",
     "Daya_Hmm2",
-    "Daya_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Daya_Greeting",
     "Daya_Lobby",
     "Daya_Spawn1",
     "Daya_Joy1",
-    "Daya_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -12597,27 +12475,23 @@ const CHAR_GENERATED = [
     "DayaPureShine_Surprise1",
     "DayaPureShine_Hmm1",
     "DayaPureShine_Yes1",
-    "DayaPureShine_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "DayaPureShine_Anger1",
     "DayaPureShine_No1",
     "DayaPureShine_Anger2",
-    "DayaPureShine_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "DayaPureShine_CallPlayer1",
     "DayaPureShine_Sorrow1",
     "DayaPureShine_Hmm2",
-    "DayaPureShine_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "DayaPureShine_Greeting",
     "DayaPureShine_Lobby",
     "DayaPureShine_Spawn1",
     "DayaPureShine_Joy1",
-    "DayaPureShine_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -12998,27 +12872,23 @@ const CHAR_GENERATED = [
     "Delia_Surprise1",
     "Delia_Hmm1",
     "Delia_Yes1",
-    "Delia_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Delia_Anger1",
     "Delia_No1",
     "Delia_Anger2",
-    "Delia_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Delia_CallPlayer1",
     "Delia_Sorrow1",
     "Delia_Hmm2",
-    "Delia_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Delia_Greeting",
     "Delia_Lobby",
     "Delia_Spawn1",
     "Delia_Joy1",
-    "Delia_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -13409,27 +13279,23 @@ const CHAR_GENERATED = [
     "Diana_Surprise1",
     "Diana_Hmm1",
     "Diana_Yes1",
-    "Diana_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Diana_Anger1",
     "Diana_No1",
     "Diana_Anger2",
-    "Diana_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Diana_CallPlayer1",
     "Diana_Sorrow1",
     "Diana_Hmm2",
-    "Diana_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Diana_Greeting",
     "Diana_Lobby",
     "Diana_Spawn1",
     "Diana_Joy1",
-    "Diana_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -13837,27 +13703,23 @@ const CHAR_GENERATED = [
     "DianaYester_Surprise1",
     "DianaYester_Hmm1",
     "DianaYester_Yes1",
-    "DianaYester_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "DianaYester_Anger1",
     "DianaYester_No1",
     "DianaYester_Anger2",
-    "DianaYester_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "DianaYester_CallPlayer1",
     "DianaYester_Sorrow1",
     "DianaYester_Hmm2",
-    "DianaYester_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "DianaYester_Greeting",
     "DianaYester_Lobby",
     "DianaYester_Spawn1",
     "DianaYester_Joy1",
-    "DianaYester_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -14265,27 +14127,23 @@ const CHAR_GENERATED = [
     "Ed_Surprise1",
     "Ed_Hmm1",
     "Ed_Yes1",
-    "Ed_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Ed_Anger1",
     "Ed_No1",
     "Ed_Anger2",
-    "Ed_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Ed_CallPlayer1",
     "Ed_Sorrow1",
     "Ed_Hmm2",
-    "Ed_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Ed_Greeting",
     "Ed_Lobby",
     "Ed_Spawn1",
     "Ed_Joy1",
-    "Ed_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -14659,27 +14517,23 @@ const CHAR_GENERATED = [
     "EdRehab_Surprise1",
     "EdRehab_Hmm1",
     "EdRehab_Yes1",
-    "EdRehab_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "EdRehab_Anger1",
     "EdRehab_No1",
     "EdRehab_Anger2",
-    "EdRehab_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "EdRehab_CallPlayer1",
     "EdRehab_Sorrow1",
     "EdRehab_Hmm2",
-    "EdRehab_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "EdRehab_Greeting",
     "EdRehab_Lobby",
     "EdRehab_Spawn1",
     "EdRehab_Joy1",
-    "EdRehab_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -15079,27 +14933,23 @@ const CHAR_GENERATED = [
     "Eisia_Surprise1",
     "Eisia_Hmm1",
     "Eisia_Yes1",
-    "Eisia_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Eisia_Anger1",
     "Eisia_No1",
     "Eisia_Anger2",
-    "Eisia_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Eisia_CallPlayer1",
     "Eisia_Sorrow1",
     "Eisia_Hmm2",
-    "Eisia_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Eisia_Greeting",
     "Eisia_Lobby",
     "Eisia_Spawn1",
     "Eisia_Joy1",
-    "Eisia_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -15497,27 +15347,23 @@ const CHAR_GENERATED = [
     "Elena_Surprise1",
     "Elena_Hmm1",
     "Elena_Yes1",
-    "Elena_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Elena_Anger1",
     "Elena_No1",
     "Elena_Anger2",
-    "Elena_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Elena_CallPlayer1",
     "Elena_Sorrow1",
     "Elena_Hmm2",
-    "Elena_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Elena_Greeting",
     "Elena_Lobby",
     "Elena_Spawn1",
     "Elena_Joy1",
-    "Elena_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -15906,27 +15752,23 @@ const CHAR_GENERATED = [
     "Epica_Surprise1",
     "Epica_Hmm1",
     "Epica_Yes1",
-    "Epica_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Epica_Anger1",
     "Epica_No1",
     "Epica_Anger2",
-    "Epica_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Epica_CallPlayer1",
     "Epica_Sorrow1",
     "Epica_Hmm2",
-    "Epica_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Epica_Greeting",
     "Epica_Lobby",
     "Epica_Spawn1",
     "Epica_Joy1",
-    "Epica_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -16336,27 +16178,23 @@ const CHAR_GENERATED = [
     "Erpin_Surprise1",
     "Erpin_Hmm1",
     "Erpin_Yes1",
-    "Erpin_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Erpin_Anger1",
     "Erpin_No1",
     "Erpin_Anger2",
-    "Erpin_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Erpin_CallPlayer1",
     "Erpin_Sorrow1",
     "Erpin_Hmm2",
-    "Erpin_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Erpin_Greeting",
     "Erpin_Lobby",
     "Erpin_Spawn1",
     "Erpin_Joy1",
-    "Erpin_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -16803,27 +16641,23 @@ const CHAR_GENERATED = [
     "ErpinRoyale_Surprise1",
     "ErpinRoyale_Hmm1",
     "ErpinRoyale_Yes1",
-    "ErpinRoyale_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "ErpinRoyale_Anger1",
     "ErpinRoyale_No1",
     "ErpinRoyale_Anger2",
-    "ErpinRoyale_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "ErpinRoyale_CallPlayer1",
     "ErpinRoyale_Sorrow1",
     "ErpinRoyale_Hmm2",
-    "ErpinRoyale_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "ErpinRoyale_Greeting",
     "ErpinRoyale_Lobby",
     "ErpinRoyale_Spawn1",
     "ErpinRoyale_Joy1",
-    "ErpinRoyale_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -17247,27 +17081,23 @@ const CHAR_GENERATED = [
     "Espi_Surprise1",
     "Espi_Hmm1",
     "Espi_Yes1",
-    "Espi_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Espi_Anger1",
     "Espi_No1",
     "Espi_Anger2",
-    "Espi_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Espi_CallPlayer1",
     "Espi_Sorrow1",
     "Espi_Hmm2",
-    "Espi_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Espi_Greeting",
     "Espi_Lobby",
     "Espi_Spawn1",
     "Espi_Joy1",
-    "Espi_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -17619,27 +17449,23 @@ const CHAR_GENERATED = [
     "Festa_Surprise1",
     "Festa_Hmm1",
     "Festa_Yes1",
-    "Festa_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Festa_Anger1",
     "Festa_No1",
     "Festa_Anger2",
-    "Festa_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Festa_CallPlayer1",
     "Festa_Sorrow1",
     "Festa_Hmm2",
-    "Festa_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Festa_Greeting",
     "Festa_Lobby",
     "Festa_Spawn1",
     "Festa_Joy1",
-    "Festa_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -18019,27 +17845,23 @@ const CHAR_GENERATED = [
     "Fricle_Surprise1",
     "Fricle_Hmm1",
     "Fricle_Yes1",
-    "Fricle_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Fricle_Anger1",
     "Fricle_No1",
     "Fricle_Anger2",
-    "Fricle_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Fricle_CallPlayer1",
     "Fricle_Sorrow1",
     "Fricle_Hmm2",
-    "Fricle_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Fricle_Greeting",
     "Fricle_Lobby",
     "Fricle_Spawn1",
     "Fricle_Joy1",
-    "Fricle_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -18419,27 +18241,23 @@ const CHAR_GENERATED = [
     "Gabia_Surprise1",
     "Gabia_Hmm1",
     "Gabia_Yes1",
-    "Gabia_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Gabia_Anger1",
     "Gabia_No1",
     "Gabia_Anger2",
-    "Gabia_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Gabia_CallPlayer1",
     "Gabia_Sorrow1",
     "Gabia_Hmm2",
-    "Gabia_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Gabia_Greeting",
     "Gabia_Lobby",
     "Gabia_Spawn1",
     "Gabia_Joy1",
-    "Gabia_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -18800,25 +18618,21 @@ const CHAR_GENERATED = [
     "Goldy_Surprise1",
     "Goldy_Hmm1",
     "Goldy_Yes1",
-    "Goldy_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Goldy_Anger1",
     "Goldy_No1",
     "Goldy_Anger2",
-    "Goldy_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Goldy_CallPlayer1",
     "Goldy_Sorrow1",
     "Goldy_Hmm2",
-    "Goldy_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Goldy_Greeting",
     "Goldy_Joy1",
-    "Goldy_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -19207,27 +19021,23 @@ const CHAR_GENERATED = [
     "Guin_Surprise1",
     "Guin_Hmm1",
     "Guin_Yes1",
-    "Guin_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Guin_Anger1",
     "Guin_No1",
     "Guin_Anger2",
-    "Guin_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Guin_CallPlayer1",
     "Guin_Sorrow1",
     "Guin_Hmm2",
-    "Guin_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Guin_Greeting",
     "Guin_Lobby",
     "Guin_Spawn1",
     "Guin_Joy1",
-    "Guin_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -19613,27 +19423,23 @@ const CHAR_GENERATED = [
     "Haley_Surprise1",
     "Haley_Hmm1",
     "Haley_Yes1",
-    "Haley_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Haley_Anger1",
     "Haley_No1",
     "Haley_Anger2",
-    "Haley_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Haley_CallPlayer1",
     "Haley_Sorrow1",
     "Haley_Hmm2",
-    "Haley_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Haley_Greeting",
     "Haley_Lobby",
     "Haley_Spawn1",
     "Haley_Joy1",
-    "Haley_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -20007,27 +19813,23 @@ const CHAR_GENERATED = [
     "HaleySane_Surprise1",
     "HaleySane_Hmm1",
     "HaleySane_Yes1",
-    "HaleySane_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "HaleySane_Anger1",
     "HaleySane_No1",
     "HaleySane_Anger2",
-    "HaleySane_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "HaleySane_CallPlayer1",
     "HaleySane_Sorrow1",
     "HaleySane_Hmm2",
-    "HaleySane_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "HaleySane_Greeting",
     "HaleySane_Lobby",
     "HaleySane_Spawn1",
     "HaleySane_Joy1",
-    "HaleySane_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -20410,27 +20212,23 @@ const CHAR_GENERATED = [
     "Heidi_Surprise1",
     "Heidi_Hmm1",
     "Heidi_Yes1",
-    "Heidi_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Heidi_Anger1",
     "Heidi_No1",
     "Heidi_Anger2",
-    "Heidi_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Heidi_CallPlayer1",
     "Heidi_Sorrow1",
     "Heidi_Hmm2",
-    "Heidi_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Heidi_Greeting",
     "Heidi_Lobby",
     "Heidi_Spawn1",
     "Heidi_Joy1",
-    "Heidi_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -20830,27 +20628,23 @@ const CHAR_GENERATED = [
     "Hilde_Surprise1",
     "Hilde_Hmm1",
     "Hilde_Yes1",
-    "Hilde_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Hilde_Anger1",
     "Hilde_No1",
     "Hilde_Anger2",
-    "Hilde_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Hilde_CallPlayer1",
     "Hilde_Sorrow1",
     "Hilde_Hmm2",
-    "Hilde_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Hilde_Greeting",
     "Hilde_Lobby",
     "Hilde_Spawn1",
     "Hilde_Joy1",
-    "Hilde_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -21206,27 +21000,23 @@ const CHAR_GENERATED = [
     "Ifrit_Surprise1",
     "Ifrit_Hmm1",
     "Ifrit_Yes1",
-    "Ifrit_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Ifrit_Anger1",
     "Ifrit_No1",
     "Ifrit_Anger2",
-    "Ifrit_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Ifrit_CallPlayer1",
     "Ifrit_Sorrow1",
     "Ifrit_Hmm2",
-    "Ifrit_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Ifrit_Greeting",
     "Ifrit_Lobby",
     "Ifrit_Spawn1",
     "Ifrit_Joy1",
-    "Ifrit_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -21588,27 +21378,23 @@ const CHAR_GENERATED = [
     "Inkle_Surprise1",
     "Inkle_Hmm1",
     "Inkle_Yes1",
-    "Inkle_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Inkle_Anger1",
     "Inkle_No1",
     "Inkle_Anger2",
-    "Inkle_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Inkle_CallPlayer1",
     "Inkle_Sorrow1",
     "Inkle_Hmm2",
-    "Inkle_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Inkle_Greeting",
     "Inkle_Lobby",
     "Inkle_Spawn1",
     "Inkle_Joy1",
-    "Inkle_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -21994,27 +21780,23 @@ const CHAR_GENERATED = [
     "Jade_Surprise1",
     "Jade_Hmm1",
     "Jade_Yes1",
-    "Jade_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Jade_Anger1",
     "Jade_No1",
     "Jade_Anger2",
-    "Jade_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Jade_CallPlayer1",
     "Jade_Sorrow1",
     "Jade_Hmm2",
-    "Jade_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Jade_Greeting",
     "Jade_Lobby",
     "Jade_Spawn1",
     "Jade_Joy1",
-    "Jade_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -22412,27 +22194,23 @@ const CHAR_GENERATED = [
     "Joanne_Surprise1",
     "Joanne_Hmm1",
     "Joanne_Yes1",
-    "Joanne_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Joanne_Anger1",
     "Joanne_No1",
     "Joanne_Anger2",
-    "Joanne_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Joanne_CallPlayer1",
     "Joanne_Sorrow1",
     "Joanne_Hmm2",
-    "Joanne_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Joanne_Greeting",
     "Joanne_Lobby",
     "Joanne_Spawn1",
     "Joanne_Joy1",
-    "Joanne_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -22824,17 +22602,13 @@ const CHAR_GENERATED = [
     "ko"
    ],
    "pokeVoice": [
-    "Joanne_White_Touch1"
-   ],
+    ],
    "upsetVoice": [
-    "Joanne_White_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
-    "Joanne_White_TickleStart1"
-   ],
+    ],
    "greetVoice": [
-    "Joanne_White_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -23212,27 +22986,23 @@ const CHAR_GENERATED = [
     "Jubee_Surprise1",
     "Jubee_Hmm1",
     "Jubee_Yes1",
-    "Jubee_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Jubee_Anger1",
     "Jubee_No1",
     "Jubee_Anger2",
-    "Jubee_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Jubee_CallPlayer1",
     "Jubee_Sorrow1",
     "Jubee_Hmm2",
-    "Jubee_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Jubee_Greeting",
     "Jubee_Lobby",
     "Jubee_Spawn1",
     "Jubee_Joy1",
-    "Jubee_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -23585,27 +23355,23 @@ const CHAR_GENERATED = [
     "Kathy_Surprise1",
     "Kathy_Hmm1",
     "Kathy_Yes1",
-    "Kathy_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Kathy_Anger1",
     "Kathy_No1",
     "Kathy_Anger2",
-    "Kathy_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Kathy_CallPlayer1",
     "Kathy_Sorrow1",
     "Kathy_Hmm2",
-    "Kathy_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Kathy_Greeting",
     "Kathy_Lobby",
     "Kathy_Spawn1",
     "Kathy_Joy1",
-    "Kathy_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -24008,27 +23774,23 @@ const CHAR_GENERATED = [
     "Kidian_Surprise1",
     "Kidian_Hmm1",
     "Kidian_Yes1",
-    "Kidian_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Kidian_Anger1",
     "Kidian_No1",
     "Kidian_Anger2",
-    "Kidian_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Kidian_CallPlayer1",
     "Kidian_Sorrow1",
     "Kidian_Hmm2",
-    "Kidian_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Kidian_Greeting",
     "Kidian_Lobby",
     "Kidian_Spawn1",
     "Kidian_Joy1",
-    "Kidian_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -24395,27 +24157,23 @@ const CHAR_GENERATED = [
     "Kishya_Surprise1",
     "Kishya_Hmm1",
     "Kishya_Yes1",
-    "Kishya_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Kishya_Anger1",
     "Kishya_No1",
     "Kishya_Anger2",
-    "Kishya_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Kishya_CallPlayer1",
     "Kishya_Sorrow1",
     "Kishya_Hmm2",
-    "Kishya_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Kishya_Greeting",
     "Kishya_Lobby",
     "Kishya_Spawn1",
     "Kishya_Joy1",
-    "Kishya_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -24815,27 +24573,23 @@ const CHAR_GENERATED = [
     "Kommy_Surprise1",
     "Kommy_Hmm1",
     "Kommy_Yes1",
-    "Kommy_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Kommy_Anger1",
     "Kommy_No1",
     "Kommy_Anger2",
-    "Kommy_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Kommy_CallPlayer1",
     "Kommy_Sorrow1",
     "Kommy_Hmm2",
-    "Kommy_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Kommy_Greeting",
     "Kommy_Lobby",
     "Kommy_Spawn1",
     "Kommy_Joy1",
-    "Kommy_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -25231,27 +24985,23 @@ const CHAR_GENERATED = [
     "KommySwim_Surprise1",
     "KommySwim_Hmm1",
     "KommySwim_Yes1",
-    "KommySwim_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "KommySwim_Anger1",
     "KommySwim_No1",
     "KommySwim_Anger2",
-    "KommySwim_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "KommySwim_CallPlayer1",
     "KommySwim_Sorrow1",
     "KommySwim_Hmm2",
-    "KommySwim_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "KommySwim_Greeting",
     "KommySwim_Lobby",
     "KommySwim_Spawn1",
     "KommySwim_Joy1",
-    "KommySwim_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -25641,27 +25391,23 @@ const CHAR_GENERATED = [
     "Kyarot_Surprise1",
     "Kyarot_Hmm1",
     "Kyarot_Yes1",
-    "Kyarot_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Kyarot_Anger1",
     "Kyarot_No1",
     "Kyarot_Anger2",
-    "Kyarot_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Kyarot_CallPlayer1",
     "Kyarot_Sorrow1",
     "Kyarot_Hmm2",
-    "Kyarot_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Kyarot_Greeting",
     "Kyarot_Lobby",
     "Kyarot_Spawn1",
     "Kyarot_Joy1",
-    "Kyarot_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -26041,27 +25787,23 @@ const CHAR_GENERATED = [
     "Laika_Surprise1",
     "Laika_Hmm1",
     "Laika_Yes1",
-    "Laika_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Laika_Anger1",
     "Laika_No1",
     "Laika_Anger2",
-    "Laika_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Laika_CallPlayer1",
     "Laika_Sorrow1",
     "Laika_Hmm2",
-    "Laika_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Laika_Greeting",
     "Laika_Lobby",
     "Laika_Spawn1",
     "Laika_Joy1",
-    "Laika_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -26418,27 +26160,23 @@ const CHAR_GENERATED = [
     "Lazy_Surprise1",
     "Lazy_Hmm1",
     "Lazy_Yes1",
-    "Lazy_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Lazy_Anger1",
     "Lazy_No1",
     "Lazy_Anger2",
-    "Lazy_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Lazy_CallPlayer1",
     "Lazy_Sorrow1",
     "Lazy_Hmm2",
-    "Lazy_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Lazy_Greeting",
     "Lazy_Lobby",
     "Lazy_Spawn1",
     "Lazy_Joy1",
-    "Lazy_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -26824,27 +26562,23 @@ const CHAR_GENERATED = [
     "Leets_Surprise1",
     "Leets_Hmm1",
     "Leets_Yes1",
-    "Leets_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Leets_Anger1",
     "Leets_No1",
     "Leets_Anger2",
-    "Leets_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Leets_CallPlayer1",
     "Leets_Sorrow1",
     "Leets_Hmm2",
-    "Leets_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Leets_Greeting",
     "Leets_Lobby",
     "Leets_Spawn1",
     "Leets_Joy1",
-    "Leets_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -27201,27 +26935,23 @@ const CHAR_GENERATED = [
     "Lethe_Surprise1",
     "Lethe_Hmm1",
     "Lethe_Yes1",
-    "Lethe_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Lethe_Anger1",
     "Lethe_No1",
     "Lethe_Anger2",
-    "Lethe_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Lethe_CallPlayer1",
     "Lethe_Sorrow1",
     "Lethe_Hmm2",
-    "Lethe_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Lethe_Greeting",
     "Lethe_Lobby",
     "Lethe_Spawn1",
     "Lethe_Joy1",
-    "Lethe_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -27590,27 +27320,23 @@ const CHAR_GENERATED = [
     "Levi_Surprise1",
     "Levi_Hmm1",
     "Levi_Yes1",
-    "Levi_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Levi_Anger1",
     "Levi_No1",
     "Levi_Anger2",
-    "Levi_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Levi_CallPlayer1",
     "Levi_Sorrow1",
     "Levi_Hmm2",
-    "Levi_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Levi_Greeting",
     "Levi_Lobby",
     "Levi_Spawn1",
     "Levi_Joy1",
-    "Levi_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -27970,27 +27696,23 @@ const CHAR_GENERATED = [
     "LeviGraduate_Surprise1",
     "LeviGraduate_Hmm1",
     "LeviGraduate_Yes1",
-    "LeviGraduate_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "LeviGraduate_Anger1",
     "LeviGraduate_No1",
     "LeviGraduate_Anger2",
-    "LeviGraduate_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "LeviGraduate_CallPlayer1",
     "LeviGraduate_Sorrow1",
     "LeviGraduate_Hmm2",
-    "LeviGraduate_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "LeviGraduate_Greeting",
     "LeviGraduate_Lobby",
     "LeviGraduate_Spawn1",
     "LeviGraduate_Joy1",
-    "LeviGraduate_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -28391,27 +28113,23 @@ const CHAR_GENERATED = [
     "Lion_Surprise1",
     "Lion_Hmm1",
     "Lion_Yes1",
-    "Lion_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Lion_Anger1",
     "Lion_No1",
     "Lion_Anger2",
-    "Lion_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Lion_CallPlayer1",
     "Lion_Sorrow1",
     "Lion_Hmm2",
-    "Lion_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Lion_Greeting",
     "Lion_Lobby",
     "Lion_Spawn1",
     "Lion_Joy1",
-    "Lion_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -28772,27 +28490,23 @@ const CHAR_GENERATED = [
     "MaestroMK2_Surprise1",
     "MaestroMK2_Hmm1",
     "MaestroMK2_Yes1",
-    "MaestroMK2_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "MaestroMK2_Anger1",
     "MaestroMK2_No1",
     "MaestroMK2_Anger2",
-    "MaestroMK2_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "MaestroMK2_CallPlayer1",
     "MaestroMK2_Sorrow1",
     "MaestroMK2_Hmm2",
-    "MaestroMK2_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "MaestroMK2_Greeting",
     "MaestroMK2_Lobby",
     "MaestroMK2_Spawn1",
     "MaestroMK2_Joy1",
-    "MaestroMK2_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -29147,27 +28861,23 @@ const CHAR_GENERATED = [
     "Mago_Surprise1",
     "Mago_Hmm1",
     "Mago_Yes1",
-    "Mago_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Mago_Anger1",
     "Mago_No1",
     "Mago_Anger2",
-    "Mago_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Mago_CallPlayer1",
     "Mago_Sorrow1",
     "Mago_Hmm2",
-    "Mago_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Mago_Greeting",
     "Mago_Lobby",
     "Mago_Spawn1",
     "Mago_Joy1",
-    "Mago_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -29520,27 +29230,23 @@ const CHAR_GENERATED = [
     "Maison_Surprise1",
     "Maison_Hmm1",
     "Maison_Yes1",
-    "Maison_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Maison_Anger1",
     "Maison_No1",
     "Maison_Anger2",
-    "Maison_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Maison_CallPlayer1",
     "Maison_Sorrow1",
     "Maison_Hmm2",
-    "Maison_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Maison_Greeting",
     "Maison_Lobby",
     "Maison_Spawn1",
     "Maison_Joy1",
-    "Maison_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -29905,27 +29611,23 @@ const CHAR_GENERATED = [
     "Makasha_Surprise1",
     "Makasha_Hmm1",
     "Makasha_Yes1",
-    "Makasha_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Makasha_Anger1",
     "Makasha_No1",
     "Makasha_Anger2",
-    "Makasha_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Makasha_CallPlayer1",
     "Makasha_Sorrow1",
     "Makasha_Hmm2",
-    "Makasha_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Makasha_Greeting",
     "Makasha_Lobby",
     "Makasha_Spawn1",
     "Makasha_Joy1",
-    "Makasha_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -30301,27 +30003,23 @@ const CHAR_GENERATED = [
     "Marie_Surprise1",
     "Marie_Hmm1",
     "Marie_Yes1",
-    "Marie_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Marie_Anger1",
     "Marie_No1",
     "Marie_Anger2",
-    "Marie_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Marie_CallPlayer1",
     "Marie_Sorrow1",
     "Marie_Hmm2",
-    "Marie_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Marie_Greeting",
     "Marie_Lobby",
     "Marie_Spawn1",
     "Marie_Joy1",
-    "Marie_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -30680,27 +30378,23 @@ const CHAR_GENERATED = [
     "Mayo_Surprise1",
     "Mayo_Hmm1",
     "Mayo_Yes1",
-    "Mayo_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Mayo_Anger1",
     "Mayo_No1",
     "Mayo_Anger2",
-    "Mayo_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Mayo_CallPlayer1",
     "Mayo_Sorrow1",
     "Mayo_Hmm2",
-    "Mayo_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Mayo_Greeting",
     "Mayo_Lobby",
     "Mayo_Spawn1",
     "Mayo_Joy1",
-    "Mayo_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -31079,27 +30773,23 @@ const CHAR_GENERATED = [
     "MayoCool_Surprise1",
     "MayoCool_Hmm1",
     "MayoCool_Yes1",
-    "MayoCool_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "MayoCool_Anger1",
     "MayoCool_No1",
     "MayoCool_Anger2",
-    "MayoCool_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "MayoCool_CallPlayer1",
     "MayoCool_Sorrow1",
     "MayoCool_Hmm2",
-    "MayoCool_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "MayoCool_Greeting",
     "MayoCool_Lobby",
     "MayoCool_Spawn1",
     "MayoCool_Joy1",
-    "MayoCool_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -31480,27 +31170,23 @@ const CHAR_GENERATED = [
     "Meluna_Surprise1",
     "Meluna_Hmm1",
     "Meluna_Yes1",
-    "Meluna_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Meluna_Anger1",
     "Meluna_No1",
     "Meluna_Anger2",
-    "Meluna_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Meluna_CallPlayer1",
     "Meluna_Sorrow1",
     "Meluna_Hmm2",
-    "Meluna_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Meluna_Greeting",
     "Meluna_Lobby",
     "Meluna_Spawn1",
     "Meluna_Joy1",
-    "Meluna_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -31864,27 +31550,23 @@ const CHAR_GENERATED = [
     "Miro_Surprise1",
     "Miro_Hmm1",
     "Miro_Yes1",
-    "Miro_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Miro_Anger1",
     "Miro_No1",
     "Miro_Anger2",
-    "Miro_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Miro_CallPlayer1",
     "Miro_Sorrow1",
     "Miro_Hmm2",
-    "Miro_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Miro_Greeting",
     "Miro_Lobby",
     "Miro_Spawn1",
     "Miro_Joy1",
-    "Miro_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -32230,17 +31912,13 @@ const CHAR_GENERATED = [
     "ko"
    ],
    "pokeVoice": [
-    "MISSING_Touch1"
-   ],
+    ],
    "upsetVoice": [
-    "MISSING_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
-    "MISSING_TickleStart1"
-   ],
+    ],
    "greetVoice": [
-    "MISSING_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -32649,27 +32327,23 @@ const CHAR_GENERATED = [
     "Momo_Surprise1",
     "Momo_Hmm1",
     "Momo_Yes1",
-    "Momo_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Momo_Anger1",
     "Momo_No1",
     "Momo_Anger2",
-    "Momo_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Momo_CallPlayer1",
     "Momo_Sorrow1",
     "Momo_Hmm2",
-    "Momo_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Momo_Greeting",
     "Momo_Lobby",
     "Momo_Spawn1",
     "Momo_Joy1",
-    "Momo_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -33061,27 +32735,23 @@ const CHAR_GENERATED = [
     "Mute_Surprise1",
     "Mute_Hmm1",
     "Mute_Yes1",
-    "Mute_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Mute_Anger1",
     "Mute_No1",
     "Mute_Anger2",
-    "Mute_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Mute_CallPlayer1",
     "Mute_Sorrow1",
     "Mute_Hmm2",
-    "Mute_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Mute_Greeting",
     "Mute_Lobby",
     "Mute_Spawn1",
     "Mute_Joy1",
-    "Mute_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -33464,27 +33134,23 @@ const CHAR_GENERATED = [
     "Mynx_Surprise1",
     "Mynx_Hmm1",
     "Mynx_Yes1",
-    "Mynx_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Mynx_Anger1",
     "Mynx_No1",
     "Mynx_Anger2",
-    "Mynx_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Mynx_CallPlayer1",
     "Mynx_Sorrow1",
     "Mynx_Hmm2",
-    "Mynx_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Mynx_Greeting",
     "Mynx_Lobby",
     "Mynx_Spawn1",
     "Mynx_Joy1",
-    "Mynx_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -33874,27 +33540,23 @@ const CHAR_GENERATED = [
     "Naia_Surprise1",
     "Naia_Hmm1",
     "Naia_Yes1",
-    "Naia_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Naia_Anger1",
     "Naia_No1",
     "Naia_Anger2",
-    "Naia_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Naia_CallPlayer1",
     "Naia_Sorrow1",
     "Naia_Hmm2",
-    "Naia_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Naia_Greeting",
     "Naia_Lobby",
     "Naia_Spawn1",
     "Naia_Joy1",
-    "Naia_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -34281,27 +33943,23 @@ const CHAR_GENERATED = [
     "Ner_Surprise1",
     "Ner_Hmm1",
     "Ner_Yes1",
-    "Ner_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Ner_Anger1",
     "Ner_No1",
     "Ner_Anger2",
-    "Ner_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Ner_CallPlayer1",
     "Ner_Sorrow1",
     "Ner_Hmm2",
-    "Ner_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Ner_Greeting",
     "Ner_Lobby",
     "Ner_Spawn1",
     "Ner_Joy1",
-    "Ner_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -34688,27 +34346,23 @@ const CHAR_GENERATED = [
     "NerRage_Surprise1",
     "NerRage_Hmm1",
     "NerRage_Yes1",
-    "NerRage_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "NerRage_Anger1",
     "NerRage_No1",
     "NerRage_Anger2",
-    "NerRage_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "NerRage_CallPlayer1",
     "NerRage_Sorrow1",
     "NerRage_Hmm2",
-    "NerRage_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "NerRage_Greeting",
     "NerRage_Lobby",
     "NerRage_Spawn1",
     "NerRage_Joy1",
-    "NerRage_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -35107,27 +34761,23 @@ const CHAR_GENERATED = [
     "Neti_Surprise1",
     "Neti_Hmm1",
     "Neti_Yes1",
-    "Neti_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Neti_Anger1",
     "Neti_No1",
     "Neti_Anger2",
-    "Neti_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Neti_CallPlayer1",
     "Neti_Sorrow1",
     "Neti_Hmm2",
-    "Neti_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Neti_Greeting",
     "Neti_Lobby",
     "Neti_Spawn1",
     "Neti_Joy1",
-    "Neti_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -35498,27 +35148,23 @@ const CHAR_GENERATED = [
     "Nicole_Surprise1",
     "Nicole_Hmm1",
     "Nicole_Yes1",
-    "Nicole_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Nicole_Anger1",
     "Nicole_No1",
     "Nicole_Anger2",
-    "Nicole_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Nicole_CallPlayer1",
     "Nicole_Sorrow1",
     "Nicole_Hmm2",
-    "Nicole_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Nicole_Greeting",
     "Nicole_Lobby",
     "Nicole_Spawn1",
     "Nicole_Joy1",
-    "Nicole_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -35883,25 +35529,21 @@ const CHAR_GENERATED = [
     "Noone_Surprise1",
     "Noone_Hmm1",
     "Noone_Yes1",
-    "Noone_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Noone_Anger1",
     "Noone_No1",
     "Noone_Anger2",
-    "Noone_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Noone_CallPlayer1",
     "Noone_Sorrow1",
     "Noone_Hmm2",
-    "Noone_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Noone_Greeting",
     "Noone_Joy1",
-    "Noone_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -36250,27 +35892,23 @@ const CHAR_GENERATED = [
     "Joanne_Surprise1",
     "Joanne_Hmm1",
     "Joanne_Yes1",
-    "Joanne_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Joanne_Anger1",
     "Joanne_No1",
     "Joanne_Anger2",
-    "Joanne_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Joanne_CallPlayer1",
     "Joanne_Sorrow1",
     "Joanne_Hmm2",
-    "Joanne_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Joanne_Greeting",
     "Joanne_Lobby",
     "Joanne_Spawn1",
     "Joanne_Joy1",
-    "Joanne_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -36677,27 +36315,23 @@ const CHAR_GENERATED = [
     "Opal_Surprise1",
     "Opal_Hmm1",
     "Opal_Yes1",
-    "Opal_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Opal_Anger1",
     "Opal_No1",
     "Opal_Anger2",
-    "Opal_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Opal_CallPlayer1",
     "Opal_Sorrow1",
     "Opal_Hmm2",
-    "Opal_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Opal_Greeting",
     "Opal_Lobby",
     "Opal_Spawn1",
     "Opal_Joy1",
-    "Opal_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -37078,27 +36712,23 @@ const CHAR_GENERATED = [
     "Orr_Surprise1",
     "Orr_Hmm1",
     "Orr_Yes1",
-    "Orr_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Orr_Anger1",
     "Orr_No1",
     "Orr_Anger2",
-    "Orr_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Orr_CallPlayer1",
     "Orr_Sorrow1",
     "Orr_Hmm2",
-    "Orr_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Orr_Greeting",
     "Orr_Lobby",
     "Orr_Spawn1",
     "Orr_Joy1",
-    "Orr_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -37461,27 +37091,23 @@ const CHAR_GENERATED = [
     "Patula_Surprise1",
     "Patula_Hmm1",
     "Patula_Yes1",
-    "Patula_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Patula_Anger1",
     "Patula_No1",
     "Patula_Anger2",
-    "Patula_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Patula_CallPlayer1",
     "Patula_Sorrow1",
     "Patula_Hmm2",
-    "Patula_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Patula_Greeting",
     "Patula_Lobby",
     "Patula_Spawn1",
     "Patula_Joy1",
-    "Patula_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -37860,27 +37486,23 @@ const CHAR_GENERATED = [
     "Picora_Surprise1",
     "Picora_Hmm1",
     "Picora_Yes1",
-    "Picora_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Picora_Anger1",
     "Picora_No1",
     "Picora_Anger2",
-    "Picora_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Picora_CallPlayer1",
     "Picora_Sorrow1",
     "Picora_Hmm2",
-    "Picora_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Picora_Greeting",
     "Picora_Lobby",
     "Picora_Spawn1",
     "Picora_Joy1",
-    "Picora_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -38270,27 +37892,23 @@ const CHAR_GENERATED = [
     "Pira_Surprise1",
     "Pira_Hmm1",
     "Pira_Yes1",
-    "Pira_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Pira_Anger1",
     "Pira_No1",
     "Pira_Anger2",
-    "Pira_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Pira_CallPlayer1",
     "Pira_Sorrow1",
     "Pira_Hmm2",
-    "Pira_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Pira_Greeting",
     "Pira_Lobby",
     "Pira_Spawn1",
     "Pira_Joy1",
-    "Pira_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -38672,27 +38290,23 @@ const CHAR_GENERATED = [
     "Polan_Surprise1",
     "Polan_Hmm1",
     "Polan_Yes1",
-    "Polan_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Polan_Anger1",
     "Polan_No1",
     "Polan_Anger2",
-    "Polan_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Polan_CallPlayer1",
     "Polan_Sorrow1",
     "Polan_Hmm2",
-    "Polan_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Polan_Greeting",
     "Polan_Lobby",
     "Polan_Spawn1",
     "Polan_Joy1",
-    "Polan_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -39091,27 +38705,23 @@ const CHAR_GENERATED = [
     "Posher_Surprise1",
     "Posher_Hmm1",
     "Posher_Yes1",
-    "Posher_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Posher_Anger1",
     "Posher_No1",
     "Posher_Anger2",
-    "Posher_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Posher_CallPlayer1",
     "Posher_Sorrow1",
     "Posher_Hmm2",
-    "Posher_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Posher_Greeting",
     "Posher_Lobby",
     "Posher_Spawn1",
     "Posher_Joy1",
-    "Posher_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -39488,27 +39098,23 @@ const CHAR_GENERATED = [
     "Ran_Surprise1",
     "Ran_Hmm1",
     "Ran_Yes1",
-    "Ran_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Ran_Anger1",
     "Ran_No1",
     "Ran_Anger2",
-    "Ran_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Ran_CallPlayer1",
     "Ran_Sorrow1",
     "Ran_Hmm2",
-    "Ran_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Ran_Greeting",
     "Ran_Lobby",
     "Ran_Spawn1",
     "Ran_Joy1",
-    "Ran_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -39886,17 +39492,13 @@ const CHAR_GENERATED = [
     "ko"
    ],
    "pokeVoice": [
-    "Renewa_Touch1"
-   ],
+    ],
    "upsetVoice": [
-    "Renewa_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
-    "Renewa_TickleStart1"
-   ],
+    ],
    "greetVoice": [
-    "Renewa_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -40285,27 +39887,23 @@ const CHAR_GENERATED = [
     "RenewaAwaken_Surprise1",
     "RenewaAwaken_Hmm1",
     "RenewaAwaken_Yes1",
-    "RenewaAwaken_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "RenewaAwaken_Anger1",
     "RenewaAwaken_No1",
     "RenewaAwaken_Anger2",
-    "RenewaAwaken_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "RenewaAwaken_CallPlayer1",
     "RenewaAwaken_Sorrow1",
     "RenewaAwaken_Hmm2",
-    "RenewaAwaken_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "RenewaAwaken_Greeting",
     "RenewaAwaken_Lobby",
     "RenewaAwaken_Spawn1",
     "RenewaAwaken_Joy1",
-    "RenewaAwaken_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -40683,27 +40281,23 @@ const CHAR_GENERATED = [
     "Ricota_Surprise1",
     "Ricota_Hmm1",
     "Ricota_Yes1",
-    "Ricota_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Ricota_Anger1",
     "Ricota_No1",
     "Ricota_Anger2",
-    "Ricota_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Ricota_CallPlayer1",
     "Ricota_Sorrow1",
     "Ricota_Hmm2",
-    "Ricota_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Ricota_Greeting",
     "Ricota_Lobby",
     "Ricota_Spawn1",
     "Ricota_Joy1",
-    "Ricota_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -41085,27 +40679,23 @@ const CHAR_GENERATED = [
     "Rim_Surprise1",
     "Rim_Hmm1",
     "Rim_Yes1",
-    "Rim_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Rim_Anger1",
     "Rim_No1",
     "Rim_Anger2",
-    "Rim_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Rim_CallPlayer1",
     "Rim_Sorrow1",
     "Rim_Hmm2",
-    "Rim_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Rim_Greeting",
     "Rim_Lobby",
     "Rim_Spawn1",
     "Rim_Joy1",
-    "Rim_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -41490,27 +41080,23 @@ const CHAR_GENERATED = [
     "RimChaos_Surprise1",
     "RimChaos_Hmm1",
     "RimChaos_Yes1",
-    "RimChaos_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "RimChaos_Anger1",
     "RimChaos_No1",
     "RimChaos_Anger2",
-    "RimChaos_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "RimChaos_CallPlayer1",
     "RimChaos_Sorrow1",
     "RimChaos_Hmm2",
-    "RimChaos_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "RimChaos_Greeting",
     "RimChaos_Lobby",
     "RimChaos_Spawn1",
     "RimChaos_Joy1",
-    "RimChaos_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -41905,27 +41491,23 @@ const CHAR_GENERATED = [
     "Risty_Surprise1",
     "Risty_Hmm1",
     "Risty_Yes1",
-    "Risty_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Risty_Anger1",
     "Risty_No1",
     "Risty_Anger2",
-    "Risty_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Risty_CallPlayer1",
     "Risty_Sorrow1",
     "Risty_Hmm2",
-    "Risty_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Risty_Greeting",
     "Risty_Lobby",
     "Risty_Spawn1",
     "Risty_Joy1",
-    "Risty_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -42303,27 +41885,23 @@ const CHAR_GENERATED = [
     "Rohne_Surprise1",
     "Rohne_Hmm1",
     "Rohne_Yes1",
-    "Rohne_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Rohne_Anger1",
     "Rohne_No1",
     "Rohne_Anger2",
-    "Rohne_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Rohne_CallPlayer1",
     "Rohne_Sorrow1",
     "Rohne_Hmm2",
-    "Rohne_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Rohne_Greeting",
     "Rohne_Lobby",
     "Rohne_Spawn1",
     "Rohne_Joy1",
-    "Rohne_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -42704,27 +42282,23 @@ const CHAR_GENERATED = [
     "RohneMayor_Surprise1",
     "RohneMayor_Hmm1",
     "RohneMayor_Yes1",
-    "RohneMayor_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "RohneMayor_Anger1",
     "RohneMayor_No1",
     "RohneMayor_Anger2",
-    "RohneMayor_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "RohneMayor_CallPlayer1",
     "RohneMayor_Sorrow1",
     "RohneMayor_Hmm2",
-    "RohneMayor_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "RohneMayor_Greeting",
     "RohneMayor_Lobby",
     "RohneMayor_Spawn1",
     "RohneMayor_Joy1",
-    "RohneMayor_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -43127,27 +42701,23 @@ const CHAR_GENERATED = [
     "Rollett_Surprise1",
     "Rollett_Hmm1",
     "Rollett_Yes1",
-    "Rollett_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Rollett_Anger1",
     "Rollett_No1",
     "Rollett_Anger2",
-    "Rollett_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Rollett_CallPlayer1",
     "Rollett_Sorrow1",
     "Rollett_Hmm2",
-    "Rollett_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Rollett_Greeting",
     "Rollett_Lobby",
     "Rollett_Spawn1",
     "Rollett_Joy1",
-    "Rollett_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -43519,27 +43089,23 @@ const CHAR_GENERATED = [
     "Ronnie_Surprise1",
     "Ronnie_Hmm1",
     "Ronnie_Yes1",
-    "Ronnie_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Ronnie_Anger1",
     "Ronnie_No1",
     "Ronnie_Anger2",
-    "Ronnie_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Ronnie_CallPlayer1",
     "Ronnie_Sorrow1",
     "Ronnie_Hmm2",
-    "Ronnie_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Ronnie_Greeting",
     "Ronnie_Lobby",
     "Ronnie_Spawn1",
     "Ronnie_Joy1",
-    "Ronnie_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -43931,27 +43497,23 @@ const CHAR_GENERATED = [
     "Rude_Surprise1",
     "Rude_Hmm1",
     "Rude_Yes1",
-    "Rude_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Rude_Anger1",
     "Rude_No1",
     "Rude_Anger2",
-    "Rude_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Rude_CallPlayer1",
     "Rude_Sorrow1",
     "Rude_Hmm2",
-    "Rude_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Rude_Greeting",
     "Rude_Lobby",
     "Rude_Spawn1",
     "Rude_Joy1",
-    "Rude_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -44321,27 +43883,23 @@ const CHAR_GENERATED = [
     "Rufo_Surprise1",
     "Rufo_Hmm1",
     "Rufo_Yes1",
-    "Rufo_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Rufo_Anger1",
     "Rufo_No1",
     "Rufo_Anger2",
-    "Rufo_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Rufo_CallPlayer1",
     "Rufo_Sorrow1",
     "Rufo_Hmm2",
-    "Rufo_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Rufo_Greeting",
     "Rufo_Lobby",
     "Rufo_Spawn1",
     "Rufo_Joy1",
-    "Rufo_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -44684,27 +44242,23 @@ const CHAR_GENERATED = [
     "Sari_Surprise1",
     "Sari_Hmm1",
     "Sari_Yes1",
-    "Sari_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Sari_Anger1",
     "Sari_No1",
     "Sari_Anger2",
-    "Sari_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Sari_CallPlayer1",
     "Sari_Sorrow1",
     "Sari_Hmm2",
-    "Sari_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Sari_Greeting",
     "Sari_Lobby",
     "Sari_Spawn1",
     "Sari_Joy1",
-    "Sari_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -45075,27 +44629,23 @@ const CHAR_GENERATED = [
     "Scizor_Surprise1",
     "Scizor_Hmm1",
     "Scizor_Yes1",
-    "Scizor_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Scizor_Anger1",
     "Scizor_No1",
     "Scizor_Anger2",
-    "Scizor_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Scizor_CallPlayer1",
     "Scizor_Sorrow1",
     "Scizor_Hmm2",
-    "Scizor_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Scizor_Greeting",
     "Scizor_Lobby",
     "Scizor_Spawn1",
     "Scizor_Joy1",
-    "Scizor_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -45486,27 +45036,23 @@ const CHAR_GENERATED = [
     "Selline_Surprise1",
     "Selline_Hmm1",
     "Selline_Yes1",
-    "Selline_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Selline_Anger1",
     "Selline_No1",
     "Selline_Anger2",
-    "Selline_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Selline_CallPlayer1",
     "Selline_Sorrow1",
     "Selline_Hmm2",
-    "Selline_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Selline_Greeting",
     "Selline_Lobby",
     "Selline_Spawn1",
     "Selline_Joy1",
-    "Selline_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -45889,27 +45435,23 @@ const CHAR_GENERATED = [
     "Shady_Surprise1",
     "Shady_Hmm1",
     "Shady_Yes1",
-    "Shady_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Shady_Anger1",
     "Shady_No1",
     "Shady_Anger2",
-    "Shady_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Shady_CallPlayer1",
     "Shady_Sorrow1",
     "Shady_Hmm2",
-    "Shady_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Shady_Greeting",
     "Shady_Lobby",
     "Shady_Spawn1",
     "Shady_Joy1",
-    "Shady_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -46282,27 +45824,23 @@ const CHAR_GENERATED = [
     "ShadyTwisted_Surprise1",
     "ShadyTwisted_Hmm1",
     "ShadyTwisted_Yes1",
-    "ShadyTwisted_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "ShadyTwisted_Anger1",
     "ShadyTwisted_No1",
     "ShadyTwisted_Anger2",
-    "ShadyTwisted_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "ShadyTwisted_CallPlayer1",
     "ShadyTwisted_Sorrow1",
     "ShadyTwisted_Hmm2",
-    "ShadyTwisted_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "ShadyTwisted_Greeting",
     "ShadyTwisted_Lobby",
     "ShadyTwisted_Spawn1",
     "ShadyTwisted_Joy1",
-    "ShadyTwisted_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -46715,27 +46253,23 @@ const CHAR_GENERATED = [
     "Shasha_Surprise1",
     "Shasha_Hmm1",
     "Shasha_Yes1",
-    "Shasha_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Shasha_Anger1",
     "Shasha_No1",
     "Shasha_Anger2",
-    "Shasha_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Shasha_CallPlayer1",
     "Shasha_Sorrow1",
     "Shasha_Hmm2",
-    "Shasha_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Shasha_Greeting",
     "Shasha_Lobby",
     "Shasha_Spawn1",
     "Shasha_Joy1",
-    "Shasha_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -47140,27 +46674,23 @@ const CHAR_GENERATED = [
     "Sherum_Surprise1",
     "Sherum_Hmm1",
     "Sherum_Yes1",
-    "Sherum_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Sherum_Anger1",
     "Sherum_No1",
     "Sherum_Anger2",
-    "Sherum_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Sherum_CallPlayer1",
     "Sherum_Sorrow1",
     "Sherum_Hmm2",
-    "Sherum_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Sherum_Greeting",
     "Sherum_Lobby",
     "Sherum_Spawn1",
     "Sherum_Joy1",
-    "Sherum_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -47561,27 +47091,23 @@ const CHAR_GENERATED = [
     "Shoupan_Surprise1",
     "Shoupan_Hmm1",
     "Shoupan_Yes1",
-    "Shoupan_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Shoupan_Anger1",
     "Shoupan_No1",
     "Shoupan_Anger2",
-    "Shoupan_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Shoupan_CallPlayer1",
     "Shoupan_Sorrow1",
     "Shoupan_Hmm2",
-    "Shoupan_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Shoupan_Greeting",
     "Shoupan_Lobby",
     "Shoupan_Spawn1",
     "Shoupan_Joy1",
-    "Shoupan_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -47972,27 +47498,23 @@ const CHAR_GENERATED = [
     "Silphir_Surprise1",
     "Silphir_Hmm1",
     "Silphir_Yes1",
-    "Silphir_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Silphir_Anger1",
     "Silphir_No1",
     "Silphir_Anger2",
-    "Silphir_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Silphir_CallPlayer1",
     "Silphir_Sorrow1",
     "Silphir_Hmm2",
-    "Silphir_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Silphir_Greeting",
     "Silphir_Lobby",
     "Silphir_Spawn1",
     "Silphir_Joy1",
-    "Silphir_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -48365,27 +47887,23 @@ const CHAR_GENERATED = [
     "Silvia_Surprise1",
     "Silvia_Hmm1",
     "Silvia_Yes1",
-    "Silvia_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Silvia_Anger1",
     "Silvia_No1",
     "Silvia_Anger2",
-    "Silvia_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Silvia_CallPlayer1",
     "Silvia_Sorrow1",
     "Silvia_Hmm2",
-    "Silvia_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Silvia_Greeting",
     "Silvia_Lobby",
     "Silvia_Spawn1",
     "Silvia_Joy1",
-    "Silvia_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -48780,27 +48298,23 @@ const CHAR_GENERATED = [
     "Sist_Surprise1",
     "Sist_Hmm1",
     "Sist_Yes1",
-    "Sist_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Sist_Anger1",
     "Sist_No1",
     "Sist_Anger2",
-    "Sist_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Sist_CallPlayer1",
     "Sist_Sorrow1",
     "Sist_Hmm2",
-    "Sist_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Sist_Greeting",
     "Sist_Lobby",
     "Sist_Spawn1",
     "Sist_Joy1",
-    "Sist_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -49189,27 +48703,23 @@ const CHAR_GENERATED = [
     "Snorky_Surprise1",
     "Snorky_Hmm1",
     "Snorky_Yes1",
-    "Snorky_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Snorky_Anger1",
     "Snorky_No1",
     "Snorky_Anger2",
-    "Snorky_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Snorky_CallPlayer1",
     "Snorky_Sorrow1",
     "Snorky_Hmm2",
-    "Snorky_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Snorky_Greeting",
     "Snorky_Lobby",
     "Snorky_Spawn1",
     "Snorky_Joy1",
-    "Snorky_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -49588,27 +49098,23 @@ const CHAR_GENERATED = [
     "Sparrot_Surprise1",
     "Sparrot_Hmm1",
     "Sparrot_Yes1",
-    "Sparrot_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Sparrot_Anger1",
     "Sparrot_No1",
     "Sparrot_Anger2",
-    "Sparrot_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Sparrot_CallPlayer1",
     "Sparrot_Sorrow1",
     "Sparrot_Hmm2",
-    "Sparrot_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Sparrot_Greeting",
     "Sparrot_Lobby",
     "Sparrot_Spawn1",
     "Sparrot_Joy1",
-    "Sparrot_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -49986,26 +49492,22 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Speaki_Surprise1",
     "Speaki_Yes1",
-    "Speaki_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Speaki_Anger1",
     "Speaki_No1",
     "Speaki_Anger2",
-    "Speaki_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Speaki_CallPlayer1",
     "Speaki_Sorrow1",
-    "Speaki_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Speaki_Greeting",
     "Speaki_Lobby",
     "Speaki_Spawn1",
     "Speaki_Joy1",
-    "Speaki_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -50397,27 +49899,23 @@ const CHAR_GENERATED = [
     "SpeakiMaid_Surprise1",
     "SpeakiMaid_Hmm1",
     "SpeakiMaid_Yes1",
-    "SpeakiMaid_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "SpeakiMaid_Anger1",
     "SpeakiMaid_No1",
     "SpeakiMaid_Anger2",
-    "SpeakiMaid_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "SpeakiMaid_CallPlayer1",
     "SpeakiMaid_Sorrow1",
     "SpeakiMaid_Hmm2",
-    "SpeakiMaid_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "SpeakiMaid_Greeting",
     "SpeakiMaid_Lobby",
     "SpeakiMaid_Spawn1",
     "SpeakiMaid_Joy1",
-    "SpeakiMaid_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -50807,27 +50305,23 @@ const CHAR_GENERATED = [
     "Suro_Surprise1",
     "Suro_Hmm1",
     "Suro_Yes1",
-    "Suro_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Suro_Anger1",
     "Suro_No1",
     "Suro_Anger2",
-    "Suro_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Suro_CallPlayer1",
     "Suro_Sorrow1",
     "Suro_Hmm2",
-    "Suro_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Suro_Greeting",
     "Suro_Lobby",
     "Suro_Spawn1",
     "Suro_Joy1",
-    "Suro_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -51221,27 +50715,23 @@ const CHAR_GENERATED = [
     "Sylla_Surprise1",
     "Sylla_Hmm1",
     "Sylla_Yes1",
-    "Sylla_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Sylla_Anger1",
     "Sylla_No1",
     "Sylla_Anger2",
-    "Sylla_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Sylla_CallPlayer1",
     "Sylla_Sorrow1",
     "Sylla_Hmm2",
-    "Sylla_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Sylla_Greeting",
     "Sylla_Lobby",
     "Sylla_Spawn1",
     "Sylla_Joy1",
-    "Sylla_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -51599,27 +51089,23 @@ const CHAR_GENERATED = [
     "Taida_Surprise1",
     "Taida_Hmm1",
     "Taida_Yes1",
-    "Taida_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Taida_Anger1",
     "Taida_No1",
     "Taida_Anger2",
-    "Taida_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Taida_CallPlayer1",
     "Taida_Sorrow1",
     "Taida_Hmm2",
-    "Taida_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Taida_Greeting",
     "Taida_Lobby",
     "Taida_Spawn1",
     "Taida_Joy1",
-    "Taida_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -52016,27 +51502,23 @@ const CHAR_GENERATED = [
     "Tig_Surprise1",
     "Tig_Hmm1",
     "Tig_Yes1",
-    "Tig_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Tig_Anger1",
     "Tig_No1",
     "Tig_Anger2",
-    "Tig_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Tig_CallPlayer1",
     "Tig_Sorrow1",
     "Tig_Hmm2",
-    "Tig_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Tig_Greeting",
     "Tig_Lobby",
     "Tig_Spawn1",
     "Tig_Joy1",
-    "Tig_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -52432,27 +51914,23 @@ const CHAR_GENERATED = [
     "TigHero_Surprise1",
     "TigHero_Hmm1",
     "TigHero_Yes1",
-    "TigHero_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "TigHero_Anger1",
     "TigHero_No1",
     "TigHero_Anger2",
-    "TigHero_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "TigHero_CallPlayer1",
     "TigHero_Sorrow1",
     "TigHero_Hmm2",
-    "TigHero_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "TigHero_Greeting",
     "TigHero_Lobby",
     "TigHero_Spawn1",
     "TigHero_Joy1",
-    "TigHero_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -52877,27 +52355,23 @@ const CHAR_GENERATED = [
     "Ui_Surprise1",
     "Ui_Hmm1",
     "Ui_Yes1",
-    "Ui_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Ui_Anger1",
     "Ui_No1",
     "Ui_Anger2",
-    "Ui_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Ui_CallPlayer1",
     "Ui_Sorrow1",
     "Ui_Hmm2",
-    "Ui_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Ui_Greeting",
     "Ui_Lobby",
     "Ui_Spawn1",
     "Ui_Joy1",
-    "Ui_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -53270,27 +52744,23 @@ const CHAR_GENERATED = [
     "UiMemory_Surprise1",
     "UiMemory_Hmm1",
     "UiMemory_Yes1",
-    "UiMemory_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "UiMemory_Anger1",
     "UiMemory_No1",
     "UiMemory_Anger2",
-    "UiMemory_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "UiMemory_CallPlayer1",
     "UiMemory_Sorrow1",
     "UiMemory_Hmm2",
-    "UiMemory_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "UiMemory_Greeting",
     "UiMemory_Lobby",
     "UiMemory_Spawn1",
     "UiMemory_Joy1",
-    "UiMemory_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -53698,27 +53168,23 @@ const CHAR_GENERATED = [
     "Uros_Surprise1",
     "Uros_Hmm1",
     "Uros_Yes1",
-    "Uros_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Uros_Anger1",
     "Uros_No1",
     "Uros_Anger2",
-    "Uros_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Uros_CallPlayer1",
     "Uros_Sorrow1",
     "Uros_Hmm2",
-    "Uros_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Uros_Greeting",
     "Uros_Lobby",
     "Uros_Spawn1",
     "Uros_Joy1",
-    "Uros_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -54125,27 +53591,23 @@ const CHAR_GENERATED = [
     "Vela_Surprise1",
     "Vela_Hmm1",
     "Vela_Yes1",
-    "Vela_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Vela_Anger1",
     "Vela_No1",
     "Vela_Anger2",
-    "Vela_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Vela_CallPlayer1",
     "Vela_Sorrow1",
     "Vela_Hmm2",
-    "Vela_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Vela_Greeting",
     "Vela_Lobby",
     "Vela_Spawn1",
     "Vela_Joy1",
-    "Vela_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -54523,27 +53985,23 @@ const CHAR_GENERATED = [
     "Velvet_Surprise1",
     "Velvet_Hmm1",
     "Velvet_Yes1",
-    "Velvet_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Velvet_Anger1",
     "Velvet_No1",
     "Velvet_Anger2",
-    "Velvet_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Velvet_CallPlayer1",
     "Velvet_Sorrow1",
     "Velvet_Hmm2",
-    "Velvet_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Velvet_Greeting",
     "Velvet_Lobby",
     "Velvet_Spawn1",
     "Velvet_Joy1",
-    "Velvet_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -54903,27 +54361,23 @@ const CHAR_GENERATED = [
     "Veroo_Surprise1",
     "Veroo_Hmm1",
     "Veroo_Yes1",
-    "Veroo_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Veroo_Anger1",
     "Veroo_No1",
     "Veroo_Anger2",
-    "Veroo_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Veroo_CallPlayer1",
     "Veroo_Sorrow1",
     "Veroo_Hmm2",
-    "Veroo_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Veroo_Greeting",
     "Veroo_Lobby",
     "Veroo_Spawn1",
     "Veroo_Joy1",
-    "Veroo_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -55332,27 +54786,23 @@ const CHAR_GENERATED = [
     "Vivi_Surprise1",
     "Vivi_Hmm1",
     "Vivi_Yes1",
-    "Vivi_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Vivi_Anger1",
     "Vivi_No1",
     "Vivi_Anger2",
-    "Vivi_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Vivi_CallPlayer1",
     "Vivi_Sorrow1",
     "Vivi_Hmm2",
-    "Vivi_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Vivi_Greeting",
     "Vivi_Lobby",
     "Vivi_Spawn1",
     "Vivi_Joy1",
-    "Vivi_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -55744,27 +55194,23 @@ const CHAR_GENERATED = [
     "ViviDivine_Surprise1",
     "ViviDivine_Hmm1",
     "ViviDivine_Yes1",
-    "ViviDivine_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "ViviDivine_Anger1",
     "ViviDivine_No1",
     "ViviDivine_Anger2",
-    "ViviDivine_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "ViviDivine_CallPlayer1",
     "ViviDivine_Sorrow1",
     "ViviDivine_Hmm2",
-    "ViviDivine_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "ViviDivine_Greeting",
     "ViviDivine_Lobby",
     "ViviDivine_Spawn1",
     "ViviDivine_Joy1",
-    "ViviDivine_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -56164,27 +55610,23 @@ const CHAR_GENERATED = [
     "xXionx_Surprise1",
     "xXionx_Hmm1",
     "xXionx_Yes1",
-    "xXionx_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "xXionx_Anger1",
     "xXionx_No1",
     "xXionx_Anger2",
-    "xXionx_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "xXionx_CallPlayer1",
     "xXionx_Sorrow1",
     "xXionx_Hmm2",
-    "xXionx_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "xXionx_Greeting",
     "xXionx_Lobby",
     "xXionx_Spawn1",
     "xXionx_Joy1",
-    "xXionx_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -56575,27 +56017,23 @@ const CHAR_GENERATED = [
     "Yomi_Surprise1",
     "Yomi_Hmm1",
     "Yomi_Yes1",
-    "Yomi_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Yomi_Anger1",
     "Yomi_No1",
     "Yomi_Anger2",
-    "Yomi_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Yomi_CallPlayer1",
     "Yomi_Sorrow1",
     "Yomi_Hmm2",
-    "Yomi_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Yomi_Greeting",
     "Yomi_Lobby",
     "Yomi_Spawn1",
     "Yomi_Joy1",
-    "Yomi_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -56997,25 +56435,21 @@ const CHAR_GENERATED = [
     "Youngchun_Surprise1",
     "Youngchun_Hmm1",
     "Youngchun_Yes1",
-    "Youngchun_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Youngchun_Anger1",
     "Youngchun_No1",
     "Youngchun_Anger2",
-    "Youngchun_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Youngchun_CallPlayer1",
     "Youngchun_Sorrow1",
     "Youngchun_Hmm2",
-    "Youngchun_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Youngchun_Greeting",
     "Youngchun_Joy1",
-    "Youngchun_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",
@@ -57448,27 +56882,23 @@ const CHAR_GENERATED = [
     "Yumimi_Surprise1",
     "Yumimi_Hmm1",
     "Yumimi_Yes1",
-    "Yumimi_Touch1"
-   ],
+    ],
    "upsetVoice": [
     "Yumimi_Anger1",
     "Yumimi_No1",
     "Yumimi_Anger2",
-    "Yumimi_DutchRubEnd1"
-   ],
+    ],
    "hungryVoice": [
     "Yumimi_CallPlayer1",
     "Yumimi_Sorrow1",
     "Yumimi_Hmm2",
-    "Yumimi_TickleStart1"
-   ],
+    ],
    "greetVoice": [
     "Yumimi_Greeting",
     "Yumimi_Lobby",
     "Yumimi_Spawn1",
     "Yumimi_Joy1",
-    "Yumimi_Touch2"
-   ],
+    ],
    "moodActs": [
     "happy",
     "proud",

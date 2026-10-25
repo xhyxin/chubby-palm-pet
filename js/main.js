@@ -69,14 +69,22 @@
 
   /** ★ 语音图鉴点播：对话框**陪到语音真的播完**才消失。
       不再依赖 ogg 元数据时长（Chrome 对部分长 ogg 报 Infinity，上一版因此提前消失）——
-      直接监听该条音频的 ended 事件；时长只作为一道保险；完全拿不到音频才退回 3 秒。 */
+      直接监听该条音频的 ended 事件；时长只作为一道保险；完全拿不到音频才退回 3 秒。
+      ★ 第七十八轮：加"代际令牌"并把互动台词也接到这条路上 ——
+        连续语音（敲头哎呀→好痛、摸肚子三连播）会把前一条气泡顶掉，
+        旧一条的 durationOf 计时器若不失效，会把**新一条**的气泡提前收走
+        （用户观感就是"台词没等说完就不见了"）。每次调用自增 token，
+        只有最新一代的收起回调才生效。 */
+  let sayToken = 0;
   function sayUntilDone(text, key, L) {
     if (!key) { showBubble(text); return; }
-    const hooked = Voice.onEnded(key, closeBubbleSoon, L);
+    const tok = ++sayToken;
+    const close = () => { if (tok === sayToken) closeBubbleSoon(); };
+    const hooked = Voice.onEnded(key, close, L);
     if (hooked) {
       showBubble(text, 180000);            // 上限兜底：ended 万一不触发
       Voice.durationOf(key, L).then((d) => {
-        if (d) setTimeout(closeBubbleSoon, (d + 0.8) * 1000);
+        if (d && tok === sayToken) setTimeout(close, (d + 0.8) * 1000);
       });
     } else {
       showBubble(text);                    // 拿不到音频：默认 3 秒
@@ -95,16 +103,30 @@
   function preloadInteractionVoices() {
     const A = CONFIG.actions || {};
     const preV = [
+      A.bonk && A.bonk.voice, A.bonk && A.bonk.voiceEnd,
       A.pat && A.pat.voice,
       A.pinch && A.pinch.voice,
       A.belly && A.belly.voice, A.belly && A.belly.voiceMid, A.belly && A.belly.voiceEnd,
-      A.bonk && A.bonk.voice, A.bonk && A.bonk.voiceEnd,
       A.feed && A.feed.voice,
       CONFIG.pokeVoice, CONFIG.upsetVoice, CONFIG.hungryVoice, CONFIG.greetVoice,
       CONFIG.moodActs,
-    ];
-    preV.forEach((k) => { if (k && (!Array.isArray(k) || k.length)) Voice.preload(k); });
+    ].filter((k) => k && (!Array.isArray(k) || k.length));
+    /* ★ 第七十八轮：预热改分批（每批 4 条、间隔 250ms）——
+       一口气 new 二十多个 Audio 并发下载，弱网低端机会把首屏带宽/内存全占了。
+       分批只是把预热摊开几百毫秒到两秒，"第一次敲头就有好痛"的体验保得住
+       （最常用的敲头/摸头/捏脸排在最前面，第一批就预热到）。
+       批次带令牌：快速连续切角色时，旧角色的预热批次自动作废。 */
+    const tok = ++preloadToken;
+    let i = 0;
+    const step = () => {
+      if (tok !== preloadToken) return;          // 已经切到别的角色了
+      const end = Math.min(i + 4, preV.length);
+      for (; i < end; i++) Voice.preload(preV[i]);
+      if (i < preV.length) setTimeout(step, 250);
+    };
+    step();
   }
+  let preloadToken = 0;
 
   /** ★ 喂食结束（第三十一轮）：按角色对该食物的喜好弹图标 + 出表情。
       love/like → 随机一个开心表情；hate → 随机一个伤心表情；plain → 只弹图标。 */
@@ -857,21 +879,48 @@
   let running = false;
   let booted = false;      // 首次启动完成前不许提前起循环（模型还没加载好）
 
+  /* ★ 第七十八轮引入 / 第八十轮改成自适应：空闲降帧（低端手机流畅度）。
+     旧版对所有设备一律"待机隔帧 30fps"，快设备被用户感知为"帧数好低"（本轮反馈）。
+     现在按**每帧实际 CPU 开销**的指数滑动平均判断这台设备带不带得动：
+     · 帧开销 > 12ms（60fps 预算 16.7ms 会被吃掉大半）→ 待机降到 ~30fps；
+     · 帧开销 < 7ms → 恢复满帧（60/120Hz 跟显示器走）；
+     · 7~12ms 之间保持现状（滞后带，防止来回抖）。
+     互动/表情/非待机动作仍然永远满帧。跳帧时不动 lastTs，
+     下一渲染帧的 dt 自然变成 ~33ms，动画时间连续不跳变。 */
+  const IDLE_FRAME_MS = 1000 / 30;
+  const WORK_SLOW_MS = 12, WORK_FAST_MS = 7;
+  let workEma = 0;          // 每帧 CPU 开销的指数滑动平均（ms）
+  let deviceSlow = false;   // 实测带不动 → 空闲才降帧
+  function idleThrottle() {
+    return deviceSlow
+      && Pet.ready
+      && !Interact.mode
+      && Pet.currentAnim === Pet.animName('idle');
+  }
+
   function loop(ts) {
     if (!running) { rafId = 0; return; }
+    rafId = requestAnimationFrame(loop);
+    if (lastTs && idleThrottle() && ts - lastTs < IDLE_FRAME_MS) return;   // 空闲：隔帧渲染
     const dt = lastTs ? Math.min(0.05, (ts - lastTs) / 1000) : 0;
     lastTs = ts;
 
     PetState.tick(dt);
     Interact.tick();          // 看门狗：指针抬起但动作没收尾就强制结束，防形变残留
+    const t0 = performance.now();
     Pet.update(dt);
     Pet.draw();
     drawDebug();
+    /* 帧开销只统计 update+draw（渲染本体），EMA 平滑掉单帧毛刺（存档/编译抖动） */
+    const work = performance.now() - t0;
+    workEma = workEma ? workEma * 0.9 + work * 0.1 : work;
+    if (workEma > WORK_SLOW_MS) deviceSlow = true;
+    else if (workEma < WORK_FAST_MS) deviceSlow = false;
 
+    /* ★ 第七十八轮：周期存档 5 秒 → 30 秒（localStorage 是同步 IO，低端机"每几秒
+       规律性顿一下"多半是它；真正改数据的互动结算在 PetState.reward() 里即时存，不丢进度）。 */
     saveAcc += dt;
-    if (saveAcc > 5) { saveAcc = 0; PetState.save(); refreshStats(); }
-
-    rafId = requestAnimationFrame(loop);
+    if (saveAcc > 30) { saveAcc = 0; PetState.save(); refreshStats(); }
   }
 
   /* ★ 第五十轮：切后台真的停下来，切回前台只重启**一次**。
@@ -898,6 +947,8 @@
     if (window.Music) Music.suspend();
     Voice.stop();
     Interact.abort();
+    /* ★ 第七十八轮：周期存档拉长到 30 秒后，切后台前补一次，进度不丢 */
+    try { PetState.save(); } catch (e) { /* 忽略 */ }
   }
   function onAppVisible() {
     if (booted) startLoop();          // 还没启动完就先别起循环（Pet 还没 ready）
@@ -974,7 +1025,11 @@
     fill.style.width = '100%';
 
     Interact.attach(canvas, {
-      onSay: showBubble,
+      /* ★ 第七十八轮（用户要求"互动结束会出现台词再结束"）：
+         互动台词从固定 3 秒改成**陪到语音播完**——语音多长，台词就陪多长；
+         语音被下一条顶掉时气泡跟着换（token 保证旧计时器不误收新气泡）。
+         拿不到音频（解析失败）时 sayUntilDone 内部回退 3 秒，行为与旧版一致。 */
+      onSay: (text, key, L) => sayUntilDone(text, key, L),
       onState: refreshStats,
       onWantFood: () => toggleFoodPanel(true),
       onFeed: () => refreshStats(),
@@ -989,8 +1044,9 @@
 
     setTimeout(() => {
       $('loader').classList.add('hide');
+      /* ★ 第七十八轮：启动问候同样陪到语音播完（与互动台词口径一致） */
       const r = Voice.play(CONFIG.greetVoice);
-      showBubble((r && r.text) || I18N.t('bubble.back'));
+      sayUntilDone((r && r.text) || I18N.t('bubble.back'), r && r.key, r && r.lang);
     }, 350);
 
     booted = true;
@@ -1591,6 +1647,8 @@
   window.__pet = {
     switchCharacter, switchSkin, CONFIG, Pet, Voice, Interact, PetState, Fx,
     get skinIndex() { return skinIndex; },
+    /* 第八十轮：空闲降帧实况（验证探针按"设备实测快慢"分支断言用） */
+    get perf() { return { workEma, deviceSlow }; },
   };
 
   boot();

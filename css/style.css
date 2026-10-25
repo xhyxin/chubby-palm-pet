@@ -40,13 +40,22 @@ html, body {
     radial-gradient(1200px 700px at 50% 8%, #fffdfa 0%, var(--cream) 45%, var(--cream-2) 100%);
 }
 
-/* 背景装饰：柔和圆斑 */
+/* 背景装饰：柔和圆斑
+   ★ 第七十八轮：去掉 filter: blur(60px)，改用径向渐变直接画出"糊开的光斑"——
+   大半径 blur 在低端安卓 GPU 上每帧合成都非常贵（正是"手机有点卡"的帮凶之一），
+   渐变版视觉几乎一样、合成开销接近零。 */
 #stage::before, #stage::after {
-  content: ""; position: absolute; border-radius: 50%; filter: blur(60px); opacity: .5;
+  content: ""; position: absolute; border-radius: 50%;
   pointer-events: none;
 }
-#stage::before { width: 46vw; height: 46vw; left: -12vw; top: -14vw; background: #ffe0e9; }
-#stage::after  { width: 40vw; height: 40vw; right: -10vw; bottom: -12vw; background: #ffeacd; }
+#stage::before {
+  width: 46vw; height: 46vw; left: -12vw; top: -14vw;
+  background: radial-gradient(circle, #ffe0e9 0%, rgba(255, 224, 233, .6) 38%, rgba(255, 224, 233, 0) 70%);
+}
+#stage::after {
+  width: 40vw; height: 40vw; right: -10vw; bottom: -12vw;
+  background: radial-gradient(circle, #ffeacd 0%, rgba(255, 234, 205, .6) 38%, rgba(255, 234, 205, 0) 70%);
+}
 
 #pet-canvas {
   position: absolute; inset: 0; width: 100%; height: 100%;
@@ -110,7 +119,10 @@ html, body {
 
 .hud-stats {
   padding: 12px 16px;
-  background: var(--card); backdrop-filter: blur(10px);
+  /* ★ 第七十八轮：去掉 backdrop-filter —— 它是常驻元素，底下就是每帧变化的
+     WebGL 画布，等于每帧都对它做一次背景采样模糊，低端机持续掉帧；
+     --card 本身有 82% 不透明度，纯色背景上磨砂本来就几乎看不出来。 */
+  background: var(--card);
   border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
 }
 /* ★ 第二十八轮：状态条（心情/饱食/亲密/开不开心）已移除，只剩角色名。
@@ -134,7 +146,8 @@ html, body {
 .tool {
   padding: 8px 13px; font-size: 13px; font-family: inherit; cursor: pointer;
   background: var(--card); border: 1px solid var(--line); border-radius: 999px;
-  color: var(--ink); box-shadow: var(--shadow); backdrop-filter: blur(10px);
+  /* ★ 第七十八轮：去掉 backdrop-filter（常驻按钮 × 10 个，每帧都在磨 WebGL 画布） */
+  color: var(--ink); box-shadow: var(--shadow);
   transition: transform .12s, background .15s;
 }
 .tool:hover { background: #fff; transform: translateY(-1px); }
@@ -150,8 +163,9 @@ html, body {
 .hud-actions {
   left: 50%; bottom: 24px; transform: translateX(-50%);
   display: flex; gap: 10px; padding: 10px 12px;
+  /* ★ 第七十八轮：去掉 backdrop-filter（常驻底条，同上） */
   background: var(--card); border: 1px solid var(--line);
-  border-radius: 999px; box-shadow: var(--shadow); backdrop-filter: blur(10px);
+  border-radius: 999px; box-shadow: var(--shadow);
 }
 .act {
   padding: 10px 18px; font-size: 14px; font-family: inherit; font-weight: 600;
@@ -171,7 +185,9 @@ html, body {
   width: clamp(180px, 24vw, 292px); max-width: 46vw;   /* ★ 随窗口按比例伸缩 */
   overflow: hidden;                                     /* ★ 面板自身绝不横向溢出 */
   display: flex; flex-direction: column;
-  padding: 12px 12px 8px; background: var(--card); backdrop-filter: blur(10px);
+  /* ★ 第七十八轮：去掉 backdrop-filter —— 喂食拖动时它在屏幕上常驻，
+     每帧磨一次底下的 WebGL 画布，低端机拖食物会顿。 */
+  padding: 12px 12px 8px; background: var(--card);
   border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
 }
 .food-panel.hidden { display: none !important; }

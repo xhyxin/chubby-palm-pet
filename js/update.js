@@ -131,7 +131,10 @@
       return m.indexOf('HTTP') !== 0;   // 'HTTP 404' 是服务器应答；其余当网络问题
     }
     var netFail = false;
-    var race = NET.probeAndFetch || doFetch;   // ★ 竞速：全部线路一起发，谁快用谁（还顺便选出全程要用的线路）
+    /* ★ 第七十六轮：竞速只用 prefix 镜像 + 直连（新鲜，缓存 ≤5 分钟）；
+       jsDelivr @main 有 12 小时共享缓存，老写法会拿它判"已是最新/触发同步"，
+       版本和日期全是旧的（作者推了新版客户端却一动不动）。 */
+    var race = NET.probeAndFetchFresh || NET.probeAndFetch || doFetch;   // ★ 竞速：全部线路一起发，谁快用谁（还顺便选出全程要用的线路）
     /* 25s：冷启动时最快的线路首响应也可能要十几秒，给太短会把好线路掐死 */
     return race(noticeUrl, 25000)
       .then(doParse)
@@ -150,10 +153,15 @@
     var base = i < 0 ? '' : cfg.VERSION_URL.slice(0, i + 1);
     var direct = base + path.split('/').map(encodeURIComponent).join('/');
     var NET = window.UPDATE_NET || {};
-    /* ★ 第七十五轮（提速）：NET.mirrorUrlsFor 返回"测出来最快的镜像在前"的列表。
-       给壳前 3 条镜像 + 直连垫底（直连国内基本不通，放最后免得白等超时）。 */
+    /* ★ 第七十六轮：逐文件下载只用 prefix 形态镜像 —— jsDelivr @main 有 12 小时
+       共享缓存，作者刚推新版那阵子会下到**旧文件内容**，壳还把新 sha 记进
+       chubbyExtra → 这个文件就被"记成已更新"永久卡旧。prefix 镜像 ≤5 分钟新鲜，
+       速度足够（ghfast 实测 ~700KB/s）。 */
     var ms = [];
-    try { ms = (NET.mirrorUrlsFor && NET.mirrorUrlsFor(direct)) || []; } catch (e) { ms = []; }
+    try { ms = (NET.prefixUrlsFor && NET.prefixUrlsFor(direct)) || []; } catch (e) { ms = []; }
+    if (!ms.length) {
+      try { ms = (NET.mirrorUrlsFor && NET.mirrorUrlsFor(direct)) || []; } catch (e) { ms = []; }
+    }
     var out = ms.slice(0, 3);
     out.push(direct);
     return out;
@@ -167,7 +175,11 @@
   function treeFromManifest() {
     var NET = window.UPDATE_NET || {};
     if (!cfg.REMOTE_MANIFEST_URL) return Promise.reject(new Error('REMOTE_MANIFEST_URL 未配置'));
-    return NET.fetchText(cfg.REMOTE_MANIFEST_URL, 60000).then(function (t) {
+    /* ★ 第七十六轮：清单改用 freshText（prefix 镜像优先，jsDelivr 只兜底）——
+       清单过期 = sha 表是旧的 = 判"没有变化"→ 记录被写成新版本号但文件一个没换，
+       用户就永远卡在旧文件上（"点了更新还是老版本"的另一半原因）。 */
+    var doFetch = NET.freshText || NET.fetchText;
+    return doFetch(cfg.REMOTE_MANIFEST_URL, 60000).then(function (t) {
       var m = /SYNC_MANIFEST\s*=\s*(\{[\s\S]*\})\s*;?\s*$/.exec(String(t));
       if (!m) throw new Error('远端清单格式不对');
       var files = (JSON.parse(m[1]).files) || {};

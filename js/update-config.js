@@ -15,7 +15,7 @@
 // 直连 GitHub 在部分网络环境不通，拉取失败会自动改走 MIRROR_PREFIX 镜像前缀
 // （同一文件换前缀重试一次，成功的线路会被记住，本次会话内继续用）。
 window.UPDATE_CONFIG = {
-  APP_VERSION: "1.8.3",      // 本地版本号（打包时随包更新；与 安卓 build.gradle 的 versionName、
+  APP_VERSION: "1.8.5",      // 本地版本号（打包时随包更新；与 安卓 build.gradle 的 versionName、
                            // 作者 GitHub 的 version.txt / 公告.txt 保持一致）
                            // ★ 第四十七轮：三端版本号统一为 1.2（以前的 2.9.3 是开发过程中的旧号，
                            //   正式对外公布从 1.2 起算；第五十一轮升到 1.3，
@@ -172,6 +172,17 @@ window.UPDATE_NET = (function () {
     });
     return out;
   }
+  /* 只用 prefix 形态镜像包某个 URL（记住的排前）—— jsDelivr 不代理整包 zip 归档，
+     ★ 第七十六轮起它也是"新鲜线路"的主力（prefix 镜像缓存 ≤5 分钟） */
+  function prefixUrlsFor(raw) {
+    var out = [];
+    mirrorList().forEach(function (m) {
+      if (m.kind !== 'prefix') return;
+      var u = m.url + raw;
+      if (out.indexOf(u) < 0) out.push(u);
+    });
+    return out;
+  }
   function markWinner(u, directUrl) {
     if (u === directUrl) { winner = null; return; }
     var list = mirrorList();
@@ -182,6 +193,83 @@ window.UPDATE_NET = (function () {
         return;
       }
     }
+  }
+
+  /* ================================================================
+     ★ 第七十六轮（修"更新后还弹旧版公告"）：新鲜度优先的拉取路径
+     ----------------------------------------------------------------
+     实测（2026-10-24，响应头）各线路对 @main 分支文件的服务端缓存：
+       jsDelivr(fastly)  s-maxage=43200 → **共享缓存 12 小时**，且忽略 ?t=
+                          穿透参数 → 作者推新版后最长 12 小时内还在发旧文件；
+       ghfast.top        max-age=300（5 分钟）
+       gh-proxy.com      max-age=60（60 秒）
+     第七十五轮的"并发竞速谁先响应用谁"会让缓存命中的 jsDelivr 稳定赢下
+     竞速（缓存命中恰恰最快）→ 公告检测拿到 12 小时前的旧公告弹出
+     （用户报的"GitHub 已 1.8.3、更新后还弹 1.8.2 老公告"就是它；
+     清单走同样线路还会"点了更新却判已是最新、文件根本没换"）。
+
+     修法：**新鲜度敏感**的拉取（公告.txt / version.txt / sync-manifest.js /
+     逐文件下载）一律以 prefix 形态镜像 + 直连为准（缓存 ≤5 分钟，且
+     rawFetch 带 ?t= 时间戳，对 Fastly/Cloudflare 形态的镜像等效不缓存）；
+     jsDelivr 只当"其它线路全挂"的最后兜底（宁可 12 小时旧，好过没有），
+     且不把它记成赢家（别让下一轮又优先它）。
+     ================================================================ */
+  function jsdelivrUrlsFor(raw) {
+    var out = [];
+    mirrorList().forEach(function (m) {
+      if (m.kind !== 'jsdelivr' || !applicable(m, raw)) return;
+      var u = urlVia(m, raw);
+      if (out.indexOf(u) < 0) out.push(u);
+    });
+    return out;
+  }
+  /* 新鲜线路（prefix 镜像，记住的排最前）+ 直连 */
+  function freshPrimaryUrls(raw) {
+    var out = [];
+    try { out = prefixUrlsFor(raw).slice(0); } catch (e) { out = []; }
+    if (out.indexOf(raw) < 0) out.push(raw);
+    return out;
+  }
+  /* jsDelivr 兜底（并发竞速——只用于小文件；noMark：命中也不记线路，12h 旧缓存别让下次优先它） */
+  function jsDelivrLast(url, timeoutMs) {
+    var js = jsdelivrUrlsFor(url);
+    if (!js.length) return Promise.reject(new Error('network'));
+    return probeAndFetchNoWinner(url, timeoutMs, js, true);
+  }
+  /* ★ 小文件用（公告.txt / version.txt）：新鲜线路并发竞速 → 全挂才问 jsDelivr */
+  function probeAndFetchFresh(url, timeoutMs) {
+    var primary = freshPrimaryUrls(url);
+    if (winner && winner.kind === 'prefix') {
+      var best = urlVia(winner, url);
+      var rest = primary.filter(function (u) { return u !== best; });
+      return rawFetch(best, timeoutMs).catch(function () {
+        return probeAndFetchNoWinner(url, timeoutMs, rest);
+      }).catch(function () {
+        return jsDelivrLast(url, timeoutMs);
+      });
+    }
+    return probeAndFetchNoWinner(url, timeoutMs, primary)
+      .catch(function () { return jsDelivrLast(url, timeoutMs); });
+  }
+  /* ★ 大文件用（sync-manifest.js，3MB+ 不能竞速——会同时下好几份）：
+     顺序尝试：prefix 镜像 → jsDelivr 兜底 → 直连垫底 */
+  function freshText(url, timeoutMs) {
+    var list = freshPrimaryUrls(url);
+    var js = jsdelivrUrlsFor(url);
+    var direct = list.pop();                       // 直连抽出，垫到最后
+    list = list.concat(js).concat([direct]);
+    var i = 0;
+    function step() {
+      if (i >= list.length) return Promise.reject(lastErr || new Error('network'));
+      var u = list[i];
+      return rawFetch(u, timeoutMs).then(function (t) {
+        /* jsDelivr 是过期兜底：赢了也不记线路，免得下次公告检测又优先它 */
+        var isJs = js.indexOf(u) >= 0;
+        if (!isJs) markWinner(u, url);
+        return t;
+      }, function (e) { lastErr = e; i++; return step(); });
+    }
+    return step();
   }
 
   /* ---- 带超时、可取消的 fetch ---- */
@@ -239,8 +327,13 @@ window.UPDATE_NET = (function () {
     }
     return probeAndFetchNoWinner(url, timeoutMs, all.concat([url]));
   }
-  function probeAndFetchNoWinner(url, timeoutMs, list) {
-    if (list.length <= 1) return rawFetch(list[0] || url, timeoutMs);
+  function probeAndFetchNoWinner(url, timeoutMs, list, noMark) {
+    if (list.length <= 1) {
+      return rawFetch(list[0] || url, timeoutMs).then(function (t) {
+        if (!noMark) markWinner(list[0] || url, url);
+        return t;
+      });
+    }
     return new Promise(function (resolve, reject) {
       var done = false, errs = [], ctrls = [], n = list.length;
       list.forEach(function (u) {
@@ -248,7 +341,7 @@ window.UPDATE_NET = (function () {
           if (done) return;
           done = true;
           ctrls.forEach(function (c) { try { c.abort(); } catch (e) { /* 忽略 */ } });
-          markWinner(u, url);
+          if (!noMark) markWinner(u, url);
           resolve(t);
         }, function (e) {
           errs.push(e);
@@ -317,6 +410,11 @@ window.UPDATE_NET = (function () {
   return {
     fetchText: fetchText,
     probeAndFetch: probeAndFetch,
+    /* ★ 第七十六轮：新鲜度优先版（公告.txt / version.txt 用，别再用会拿到
+       12 小时旧缓存的 probeAndFetch —— 见上面"新鲜度优先"注释块） */
+    probeAndFetchFresh: probeAndFetchFresh,
+    /* ★ 第七十六轮：新鲜度优先版（sync-manifest.js 等大文件用） */
+    freshText: freshText,
     parseNotice: parseNotice,
     /* ---- 兼容旧接口（notice.js / 老代码在用） ---- */
     mirrorInUse: function () { return !!(winner && winner.kind !== 'raw'); },
@@ -337,15 +435,6 @@ window.UPDATE_NET = (function () {
     mirrorUrlsFor: mirrorUrlsFor,
     bestMirrorName: function () { return winner ? winner.name : ''; },
     /* 只用 prefix 形态镜像包某个 URL —— jsDelivr 不代理整包 zip 归档 */
-    prefixUrlsFor: function (raw) {
-      var out = [];
-      mirrorList().forEach(function (m) {
-        if (m.kind === 'prefix') {
-          var u = m.url + raw;
-          if (out.indexOf(u) < 0) out.push(u);
-        }
-      });
-      return out;
-    },
+    prefixUrlsFor: prefixUrlsFor,
   };
 })();

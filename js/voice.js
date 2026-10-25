@@ -209,6 +209,32 @@ const Voice = (() => {
     return a;
   }
 
+  /* ★ 第七十八轮：清空音频缓存时把 Audio 元素也释放掉（pause + src=''）——
+     只丢 Map 引用的话，还在下载/解码的音频要等 GC 才停，切角色那一下
+     弱网机仍被旧角色的下载占着带宽。 */
+  function releaseAudioCache() {
+    cache.forEach((a) => { try { a.pause(); a.src = ''; } catch (e) { /* 忽略 */ } });
+    cache.clear();
+  }
+
+  /* ★ 第七十八轮：台词表大小写别名（ChopI_* → Chopi_* 这类官方键名大小写不一致）。
+     懒构建：第一次 miss 才扫一遍表（~2.5 万键，几毫秒），之后查 Map。
+     每张表独立缓存；texts 被 load() 整体换掉时置 null 失效。 */
+  const ciAliasCache = new Map();   // textsMap → (小写键 → 首个精确键)
+  function ciAlias(t, key) {
+    if (!key) return null;
+    let m = ciAliasCache.get(t);
+    if (m === undefined) {
+      m = new Map();
+      for (const k of Object.keys(t)) {
+        const n = k.toLowerCase();
+        if (!m.has(n)) m.set(n, k);   // 保留首个（官方主键通常在前）
+      }
+      ciAliasCache.set(t, m);
+    }
+    return m.get(key.toLowerCase()) || null;
+  }
+
   return {
     async load() {
       try {
@@ -254,8 +280,9 @@ const Voice = (() => {
       try { savedLang = localStorage.getItem('pet-voice-lang'); } catch (e) { /* 忽略 */ }
       lang = (savedLang && map[savedLang]) ? savedLang
            : (Object.keys(map).includes('ko') ? 'ko' : (Object.keys(map)[0] || 'ja'));
-      cache.clear();
+      releaseAudioCache();
       namesCache.clear();
+      ciAliasCache.clear();     // texts 可能被换成新拉到的表，别名重建
       return { langs: Object.keys(map), availLangs, lang, catalog: catalog.length };
     },
 
@@ -272,7 +299,7 @@ const Voice = (() => {
       } else {
         lang = Object.keys(map).includes('ko') ? 'ko' : (Object.keys(map)[0] || 'ja');
       }
-      cache.clear();
+      releaseAudioCache();     // ★ 第七十八轮：切角色释放旧角色的音频（下载/解码一并停掉）
       namesCache.clear();
       return lang;
     },
@@ -281,7 +308,7 @@ const Voice = (() => {
 
     setLang(l) {
       lang = l;
-      cache.clear();
+      releaseAudioCache();
       namesCache.clear();
       /* ★ 记住用户最后选择的语音语言（日/韩），下次启动 / 切角色都优先用这个，
          而不是每次都退回角色自己的默认语言。 */
@@ -292,7 +319,7 @@ const Voice = (() => {
     /** ★ 第六十七轮：皮肤专属语音是否跨语言补齐（默认关 = 严格按语言偏好） */
     setSkinFirst(v) {
       skinFirst = !!v;
-      cache.clear();
+      releaseAudioCache();
       namesCache.clear();
       try { localStorage.setItem('pet-voice-skinfirst', skinFirst ? '1' : '0'); } catch (e) { /* 忽略 */ }
     },
@@ -305,12 +332,22 @@ const Voice = (() => {
     setEnabled(v) { enabled = v; },
     isEnabled() { return enabled; },
 
-    /** 取某个键的官方中文台词 */
+    /** 取某个键的官方中文台词。
+        ★ 第七十八轮：加大小写不敏感兜底 —— 官方韩语索引有一批键的大小写与
+          文本表不一致（Chopi 的录音键是 ChopI_*，台词表却是 Chopi_*），
+          之前这类键"有声音、头上没台词"。别名表懒构建（只在第一次 miss 时
+          扫一遍台词表并缓存），load() 换表后失效重建。 */
     textOf(key) {
-      return (texts.zh && texts.zh[key]) || '';
+      const t = texts.zh || {};
+      if (key in t) return t[key];
+      const hit = ciAlias(t, key);
+      return hit ? t[hit] : '';
     },
     textJaOf(key) {
-      return (texts.ja && texts.ja[key]) || '';
+      const t = texts.ja || {};
+      if (key in t) return t[key];
+      const hit = ciAlias(t, key);
+      return hit ? t[hit] : '';
     },
     /** 语音图鉴数据 */
     /** 语音图鉴数据。

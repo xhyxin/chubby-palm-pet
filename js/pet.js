@@ -1002,6 +1002,35 @@ const Pet = (() => {
         && wy >= bounds.y - m && wy <= bounds.y + bounds.h + m;
   }
 
+  /* ★ 第八十轮：像素级"真点在角色身上"判定（修"点角色旁边的背景也播语音"）。
+     背景：热区没中时 interact.js 以前用 insideBounds 兜底，但包围盒是含头发/道具
+     的大矩形（还有 6% 边距），点角色旁边的背景也在盒内 → 照样播"戳一下"语音。
+     画布里**只画角色本体**（清屏色全透明，特效/调试都在别的层），
+     所以直接 readPixels 读落点一小窗的 alpha：有非透明像素 = 点在角色上。
+     preserveDrawingBuffer:true（自测台剪影也靠它）保证两帧之间读数仍有效；
+     读不到（上下文丢失等）返回 null，调用方回退 insideBounds 旧口径。 */
+  let _hitBuf = null;
+  function hitBody(sx, sy) {
+    if (!ready || !gl || !canvas.width || !canvas.height) return null;
+    const cw = canvas.clientWidth || 1, ch = canvas.clientHeight || 1;
+    const bx = Math.round(sx * (canvas.width / cw));
+    const by = Math.round((ch - sy) * (canvas.height / ch));   // GL 原点在左下角
+    if (bx < 0 || by < 0 || bx >= canvas.width || by >= canvas.height) return false;
+    /* 3×3 小窗：发丝/胡须这类 1px 细线条单点采样容易漏 */
+    const x0 = Math.max(0, bx - 1), y0 = Math.max(0, by - 1);
+    const w = Math.min(canvas.width, bx + 2) - x0;
+    const h = Math.min(canvas.height, by + 2) - y0;
+    if (w <= 0 || h <= 0) return false;
+    const need = w * h * 4;
+    if (!_hitBuf || _hitBuf.length < need) _hitBuf = new Uint8Array(need);
+    try {
+      gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+      gl.readPixels(x0, y0, w, h, gl.RGBA, gl.UNSIGNED_BYTE, _hitBuf);
+    } catch (e) { return null; }
+    for (let i = 3; i < need; i += 4) if (_hitBuf[i] > 8) return true;
+    return false;
+  }
+
   function boneWorld(key) {
     const b = boneMap[key];
     return b ? { x: b.worldX, y: b.worldY } : null;
@@ -1016,7 +1045,7 @@ const Pet = (() => {
     update, draw,
     playBase, playOnce, playLoop, playEnd, playFade, playRaw, playTimed, playRandomMood, playChain, animName,
     setOverride, getOverride, setDeform, setBallDrag, resetOverrides, clearCheekDeform, boneWorld, resolvedBones, debugInfo,
-    worldToScreen, screenToWorld, zones, hitTest, zoneScreen, topScreenY, zoneRadii, insideBounds,
+    worldToScreen, screenToWorld, zones, hitTest, zoneScreen, topScreenY, zoneRadii, insideBounds, hitBody,
     get setupWorld() { return setupWorld; },
     debugSkeleton, pinchAvailable, ballPullGeom, pinchOutwardScreen,
     get ready() { return ready; },

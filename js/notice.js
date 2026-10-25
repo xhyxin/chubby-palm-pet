@@ -153,8 +153,12 @@
     }
     var NET = window.UPDATE_NET || {};
     /* ★ 第七十五轮（提速）：公告/version.txt 都是小文件 —— 用**并发竞速**拉，
-       谁的线路快就用谁，并把这条线路记住（后面的清单/逐文件下载都跟着走它）。 */
-    var doFetch = NET.probeAndFetch || NET.fetchText || function (u, ms) {
+       谁的线路快就用谁，并把这条线路记住（后面的清单/逐文件下载都跟着走它）。
+       ★ 第七十六轮修正：竞速只用 prefix 形态镜像（缓存 ≤5 分钟）+ 直连；
+       jsDelivr 对 @main 分支文件有 **12 小时**共享缓存且缓存命中恰恰最快 ——
+       老写法会让它赢下竞速，结果弹出 12 小时前的旧公告（"GitHub 已 1.8.3
+       还弹 1.8.2"）。probeAndFetchFresh 里 jsDelivr 只当全挂时的最后兜底。 */
+    var doFetch = NET.probeAndFetchFresh || NET.probeAndFetch || NET.fetchText || function (u, ms) {
       // 极旧包兜底：不该走到这里（update-config.js 同包发布）
       return Promise.reject(new Error('no UPDATE_NET'));
     };

@@ -74,7 +74,8 @@ const Interact = (() => {
 
   function speak(keys) {
     const r = Voice.play(keys, skinSuffix());
-    if (r && r.text && hooks.onSay) hooks.onSay(r.text);
+    /* ★ 第七十八轮：key/lang 一起传给气泡 —— 台词要**陪到语音播完**再收（见 main.js sayUntilDone） */
+    if (r && hooks.onSay) hooks.onSay(r.text, r.key, r.lang);
     return r;
   }
 
@@ -84,7 +85,7 @@ const Interact = (() => {
      （第二十九轮定位的"好痛不稳定"主根因，133 个生成角色的 voiceEnd 都带 End1 兜底）。 */
   function speakFirst(keys) {
     const r = Voice.playFirst(keys, skinSuffix());
-    if (r && r.text && hooks.onSay) hooks.onSay(r.text);
+    if (r && hooks.onSay) hooks.onSay(r.text, r.key, r.lang);
     return r;
   }
 
@@ -593,8 +594,17 @@ const Interact = (() => {
     const zone = pending;
     pointerId = null;
     pending = null;
-    // 点完全空白的区域（不在任何热区、也不在模型身上）：直接忽略，不做任何反应
-    if (!zone && start.world && !Pet.insideBounds(start.world.x, start.world.y)) return;
+    /* ★ 第八十轮（用户报"没点角色本身，点角色外面背景的地方也会触发语音"）：
+       热区没中时，要求**真点在角色的可见像素上**才算"戳一下"。
+       以前这里用 insideBounds（模型包围盒矩形 + 6% 边距）兜底，
+       但 Spine 包围盒是含头发/道具的大矩形，点角色旁边的背景也在盒内 → 照样播语音。
+       现在用 Pet.hitBody（readPixels 读落点 alpha）判像素；
+       读不到（极端环境）才回退 insideBounds 旧口径。 */
+    if (!zone) {
+      if (!start.world) return;
+      const hit = Pet.hitBody(start.x, start.y);
+      if (hit === null ? !Pet.insideBounds(start.world.x, start.world.y) : !hit) return;
+    }
     tapAction(zone);
   }
 
