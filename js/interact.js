@@ -150,7 +150,10 @@ const Interact = (() => {
   function clearAuto() { if (pinchTimer) { clearTimeout(pinchTimer); pinchTimer = null; } }
   function autoPinch() {
     /* 先确认官方捏脸管线可用（能算出 outward 方向）；不可用就直接不响应，
-       免得出现"播了拉脸语音、脸却纹丝不动"。 */
+       免得出现"播了拉脸语音、脸却纹丝不动"。
+       ★ 第八十二轮：再加一道 pinchAvailable() —— 球骨被骨架约束锁住的角色
+       （BigWood / MaestroMK2 这类）也属于"推不动"，同样不该播捏脸语音。 */
+    if (!Pet.pinchAvailable()) return;
     const o = Pet.pinchOutwardScreen();
     if (!o || !(o.max > 1e-3)) return;
     beginPinch();

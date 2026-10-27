@@ -54,6 +54,12 @@ const Pet = (() => {
      角色数据里的 CONFIG.pinch.ok=false 是静态判定，这里是动态补充。 */
   let pinchReason = '';
 
+  /* ★ 第八十二轮：捏脸几何的"锁定值"。
+     Fr() 本来是每帧现算，但捏脸时那根骨骼正被我们推着走 → 限幅值跟着自己的位移抖，
+     形成"推出去→限幅变小→弹回→限幅变大"的死循环（详见 applyOverrides 里的注释）。
+     现在：只在**没有拖拽**的帧刷新（骨骼是动画的干净姿态），拖拽 + 回弹全程沿用同一份。 */
+  let pinchGeom = null;
+
   /* 调试计数（顶点钩子有没有被调用、传进来的坐标是什么） */
   const DBG = { calls: 0, numFloats: 0, stride: 0, sample: null, moved: 0 };
 
@@ -93,6 +99,55 @@ const Pet = (() => {
        不这么做 Chopi / Allet / Renewa 这类角色会算错脸颊半径，热区就跑偏。 */
     const bm = boneMap.ballMove;
     if (bm && bm.parent) boneMap.ballMoveP = bm.parent;
+    boneMap.ballDriver = null;          // 由 resolveBallDriver() 决定（见下）
+  }
+
+  /* ---------------------------------------------------------------
+   * ★ 第八十二轮：捏脸到底该推哪根骨骼（"拉不动"的第三类根因）
+   *
+   * 官方捏脸是"拖 Character_Ball_Move 这根骨骼"。但有些骨架把它做成了
+   * **受 Transform 约束的从动骨**：
+   *     Character_Ball_Move_T：受约束骨 = [Character_Ball_Move]，目标 = S1_Head_IK / S3_Face
+   *     mixX = mixY = 1     ← 位置 100% 跟着目标走
+   * 约束是在 `updateWorldTransform()` 里执行的，而我们是在它**之前**写骨位置 ——
+   * 于是手写的 x/y 被约束原样覆盖，骨骼世界坐标一动不动（实测 BigWood / MaestroMK2
+   * 手动 +120 单位，世界位移 0.0），捏脸就"怎么拽都不动、松手还播捏脸语音"。
+   * 这类 rig 的**手柄是约束的目标骨**（官方 studio 拖的就是它），所以：
+   *   ① 先试球骨本身能不能推动（改一点看世界坐标有没有跟着动）；
+   *   ② 推不动 → 找"把球骨锁在身上的那条约束"，改推它的目标骨；
+   *   ③ 目标骨也推不动（目标骨自己又被别的约束锁住，如 MaestroMK2）→
+   *      判定捏脸不可用，**不生成脸颊热区**：宁可没有捏脸，也不要"拽不动还播语音"。
+   *
+   * 探测只在一个模型加载时做一次（3 次 updateWorldTransform，可忽略），
+   * 探测完骨骼位置原样还原，不影响画面。
+   * --------------------------------------------------------------- */
+  function boneWritable(bone, probe) {
+    if (!bone) return false;
+    const x0 = bone.x, y0 = bone.y, r0 = bone.rotation;
+    skeleton.updateWorldTransform();
+    const wx0 = bone.worldX, wy0 = bone.worldY;
+    bone.x = x0 + probe;
+    skeleton.updateWorldTransform();
+    const moved = Math.hypot(bone.worldX - wx0, bone.worldY - wy0);
+    bone.x = x0; bone.y = y0; bone.rotation = r0;
+    skeleton.updateWorldTransform();
+    return moved > Math.max(0.3, Math.abs(probe) * 0.002);
+  }
+
+  function resolveBallDriver() {
+    boneMap.ballDriver = null;
+    const bm = boneMap.ballMove;
+    if (!bm) return;
+    if (boneWritable(bm, 30)) { boneMap.ballDriver = bm; return; }
+    const tcs = (skeletonData && skeletonData.transformConstraints) || [];
+    for (const c of tcs) {
+      if (!c || !c.bones || c.bones.indexOf(bm.data) < 0) continue;
+      if ((c.mixX || 0) < 0.9 || (c.mixY || 0) < 0.9) continue;   // 只认"位置完全跟随"
+      const t = c.target ? skeleton.findBone(c.target.name) : null;
+      if (!t || t === bm) continue;
+      if (boneWritable(t, 30)) { boneMap.ballDriver = t; return; }
+    }
+    /* 都推不动：ballDriver 留空 → diagnosePinch 里判"捏脸不可用" */
   }
 
   /* ---------------------------------------------------------- 初始化 */
@@ -310,6 +365,7 @@ const Pet = (() => {
     idleName = pick(CONFIG.anim.idle) || (skeletonData.animations[0] && skeletonData.animations[0].name) || null;
 
     resolveBones();
+    resolveBallDriver();                // ★ 第八十二轮：球骨被约束锁住时改推约束手柄
     resetOverrides();
     fitCamera();
     setupWorld = { x: bounds.x, top: bounds.y + bounds.h, bottom: bounds.y };   // 待机几何快照
@@ -326,6 +382,10 @@ const Pet = (() => {
     if (!boneMap.ballMove) pinchReason = '缺 Character_Ball_Move 骨骼';
     else if (!boneMap.ballMoveP) pinchReason = '缺 ballMove 父骨骼';
     else if (!boneMap.cheekR && !boneMap.ballMove) pinchReason = '缺腮红骨骼';
+    /* ★ 第八十二轮：球骨和"约束手柄"都推不动 → 这具骨架不支持拖拽捏脸。
+       判成不可用就不会生成脸颊热区，用户只会得到正常的"戳一下"，
+       不会出现"拽半天不动、松手却播捏脸语音"（BigWood / MaestroMK2 是这种骨架）。 */
+    else if (!boneMap.ballDriver) pinchReason = '球骨被骨架约束锁住（推不动）';
     else if (!ballPullGeom()) pinchReason = 'pat/tickle 骨骼算不出捏脸方向';
   }
 
@@ -476,6 +536,7 @@ const Pet = (() => {
 
   /* ---------------------------------------------------------- 形变 */
   function resetOverrides() {
+    pinchGeom = null;                  // 换角色/中断互动：锁定的捏脸几何作废
     for (const k of ['cheekL', 'cheekR']) {
       ovT[k].dx = 0; ovT[k].dy = 0; ovT[k].s = 1; ovT[k].sPerp = 1;
       ov[k].dx = 0; ov[k].dy = 0; ov[k].s = 1; ov[k].sPerp = 1;
@@ -524,6 +585,18 @@ const Pet = (() => {
    *   maxStretch / inwardStretch / sideStretch = 三级限幅
    * 全部照抄官方常量：as=4.1 gf=0.55 qa=0.3 Af=0.02 xf=0.18
    *                     yf={40,120} Mf={4,10} kf={14,50} Ef={1.5,4.5}
+   *
+   * ★ 第八十二轮（斯帕洛特"拉不动/弹两下"根因之一）：
+   *   `cheekRadius = |球骨 − 它的父骨|` 这个官方量，前提是导出时把 Character_Ball_Move
+   *   摆在**离父骨骼有一段距离的脸颊上**（黄油 24 / 斯基娅 46 / 爱丽丝 26 / 乔皮 31）。
+   *   斯帕洛特的骨架把 Character_Ball_Move 摆在父骨骼 Character_Ball_Root 的**原点**上
+   *   （local (0,1)），于是 cheekRadius = 1 → maxStretch 被压到下限 40（别人 98~120）、
+   *   inwardStretch 压到 4 → 拖 100px 脸只动 20px，用户就是"拉不动"。
+   *   这不是"官方就这么弱"，而是**层级多了一层**把偏移吃掉了（Ball_R_Root → ◯31.8→
+   *   Character_Ball_Root → ◯1→ Character_Ball_Move）。
+   *   兜底：退化时改用「球骨到身体轴的垂距 p」当脸颊半径 —— 这正是"脸颊离身体中线多远"，
+   *   斯帕洛特算出 84.9（与 Ball_R_Root 到 Face 的 88.5 一致），maxStretch → 108，
+   *   和其他角色同一量级。只在退化（< bodySpan×2%）时启用，不碰其余 144 个角色。
    * --------------------------------------------------------------- */
   function ballPullGeom() {
     const bm = boneMap.ballMove, bp = boneMap.ballMoveP;
@@ -532,18 +605,21 @@ const Pet = (() => {
     const ax = pat.worldX - tk.worldX, ay = pat.worldY - tk.worldY;
     const bodySpan = Math.hypot(ax, ay);
     if (!(bodySpan >= 1)) return null;
-    const cheekRadius = Math.hypot(bm.worldX - bp.worldX, bm.worldY - bp.worldY);
+    const cheekRadiusRaw = Math.hypot(bm.worldX - bp.worldX, bm.worldY - bp.worldY);
     const c = ax / bodySpan, u = ay / bodySpan;              // 身体轴单位向量
     const fx = bm.worldX - pat.worldX, fy = bm.worldY - pat.worldY;
     const w = fx * c + fy * u;                               // 沿身体轴
     const gx = fx - c * w, gy = fy - u * w;                  // 垂直身体轴
     const p = Math.hypot(gx, gy);
     if (!(p >= 1)) return null;
+    /* 退化判定与官方 skipLocalEnvelope 同一个门槛（骨骼贴在父骨骼原点上） */
+    const degenerate = cheekRadiusRaw < bodySpan * 0.02;
+    const cheekRadius = degenerate ? Math.max(cheekRadiusRaw, p) : cheekRadiusRaw;
     const maxStretch = clamp(Math.min(cheekRadius * 4.1, bodySpan * 0.55), 40, 120);
     return {
       outwardX: gx / p, outwardY: gy / p,
-      bodySpan, cheekRadius,
-      skipLocalEnvelope: cheekRadius < bodySpan * 0.02,
+      bodySpan, cheekRadius, cheekRadiusRaw, degenerate,
+      skipLocalEnvelope: cheekRadiusRaw < bodySpan * 0.02,
       maxStretch,
       inwardStretch: clamp(cheekRadius * 0.3, 4, 10),
       sideStretch: clamp(maxStretch * (40 / 108), 14, 50),    // 官方 Tf = Si/Vn
@@ -618,21 +694,43 @@ const Pet = (() => {
          ③ 世界目标位移 → 骨骼本地位移（worldToLocal 前后取差）
          ④ cs() 48° 锥包络，再写回骨骼
        ★ 少了第②步就是"脸被拽飞"：没有方向性限幅时位移无上限，
-         欧若拉那种脸皮绑在整颗头上的模型会直接被拉成尖嘴。 */
+         欧若拉那种脸皮绑在整颗头上的模型会直接被拉成尖嘴。
+
+       ★ 第八十二轮（斯帕洛特"拉不动 / 迅速弹两下"的**另一个根因**）：
+         Fr() 读的是骨骼**当前**世界坐标，而我们每帧又在推同一根骨骼 ——
+         于是"cheekRadius"里含了上一帧推出去的那段距离，限幅值跟着自己的位移变：
+             推出 40 → cheekRadius 变小 → skipLocalEnvelope 翻成"不跳过"
+             → 48° 包络把位移掐到 2（脸缩回来）→ cheekRadius 变大 → maxStretch 变 112
+             → 猛推 107 → 又变小 …… **三帧一循环**，实测世界坐标 -77/-75/-116 反复横跳，
+         肉眼看就是"抖两下 / 弹两下"，运气不好采样到"缩回"那一帧就是"拉不动"。
+         修法：**几何只在没有拖拽的帧刷新**（那时骨骼是动画的干净姿态），
+         一次拖拽（含松手回弹）全程沿用同一份，位移不再反馈给限幅。
+         顺带把 Fr() 从每帧 4 次世界坐标读 + 开方，降到每段拖拽一次。 */
     const bm = boneMap.ballMove;
-    if (bm && (Math.abs(ov.ballDrag.x) > 0.01 || Math.abs(ov.ballDrag.y) > 0.01)) {
-      const g = ballPullGeom();
+    const ballActive = Math.abs(ov.ballDrag.x) > 0.01 || Math.abs(ov.ballDrag.y) > 0.01;
+    if (!ballActive) pinchGeom = ballPullGeom();      // 干净姿态：刷新锁定值
+    if (bm && ballActive) {
+      const g = pinchGeom || ballPullGeom();
       if (g) {
         const k = worldPerPixel();
         let dx = ov.ballDrag.x * k;
         let dy = -ov.ballDrag.y * k;             // 屏幕 y 向下、世界 y 向上
         const lim = ballPullLimit(dx, dy, g);
         dx = lim.x; dy = lim.y;
+        /* ★ 第八十二轮：真正被推动的可能是"约束手柄"（见 resolveBallDriver），
+           这种情况下不用 48° 包络 —— 包络的基向量是球骨自己的局部坐标，
+           对一根 IK 手柄毫无意义（而且手柄本来就不在脸上）。 */
+        const drv = boneMap.ballDriver || bm;
         // 世界位移 → 骨骼本地位移（注意 spine 的 worldToLocal 接收 {x,y} 对象）
-        const p1 = bm.worldToLocal({ x: bm.worldX + dx, y: bm.worldY + dy });
-        const p0 = bm.worldToLocal({ x: bm.worldX, y: bm.worldY });
-        const loc = ballPullEnvelope(bm.x, bm.y, p1.x - p0.x, p1.y - p0.y, g.skipLocalEnvelope);
-        bm.x = loc.x; bm.y = loc.y;
+        const p1 = drv.worldToLocal({ x: drv.worldX + dx, y: drv.worldY + dy });
+        const p0 = drv.worldToLocal({ x: drv.worldX, y: drv.worldY });
+        if (drv === bm) {
+          const loc = ballPullEnvelope(bm.x, bm.y, p1.x - p0.x, p1.y - p0.y, g.skipLocalEnvelope);
+          bm.x = loc.x; bm.y = loc.y;
+        } else {
+          drv.x += p1.x - p0.x;
+          drv.y += p1.y - p0.y;
+        }
       }
     }
 
@@ -921,7 +1019,10 @@ const Pet = (() => {
      ② 运行时缺 ballMove / ballMoveP 骨骼
      两种情况都不生成脸颊热区 —— 宁可没有热区，也不要"点了有语音没动作"。 */
   /** 捏脸可用的"朝脸颊外侧"方向（屏幕像素单位，已归一化）。
-      点脸颊的轻捏、拖拽起始方向都用它 —— 官方只让往外拉。 */
+      点脸颊的轻捏、拖拽起始方向都用它 —— 官方只让往外拉。
+      ★ 第八十二轮顺手修单位：worldPerPixel 是「1 屏幕像素 = k 世界单位」，
+        所以世界长度换屏幕像素要 **除以 k**。原来写的是 `maxStretch * k`（差 k² 倍），
+        于是"点一下捏脸"按钮在手机上（k≈2.3）会比大屏电脑上猛 5 倍、且必然顶到限幅。 */
   function pinchOutwardScreen() {
     const g = ballPullGeom();
     if (!g) return null;
@@ -929,7 +1030,7 @@ const Pet = (() => {
     const sx = g.outwardX / k, sy = -g.outwardY / k;      // 世界 y 向上 → 屏幕 y 向下
     const l = Math.hypot(sx, sy);
     if (!(l > 1e-6)) return null;
-    return { x: sx / l, y: sy / l, max: g.maxStretch * k };
+    return { x: sx / l, y: sy / l, max: g.maxStretch / k };
   }
 
   function pinchAvailable() {
