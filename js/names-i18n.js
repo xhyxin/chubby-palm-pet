@@ -118,6 +118,11 @@ window.NAMES_I18N = {
    "ja": "ブランセ",
    "ko": "블랑셰"
   },
+  "Callamori": {
+   "en": "Callamori",
+   "ja": null,
+   "ko": null
+  },
   "Canna": {
    "en": "Canna",
    "ja": "カンナ",
@@ -147,6 +152,16 @@ window.NAMES_I18N = {
    "en": "Chopi",
    "ja": "チョッピー",
    "ko": "쵸피"
+  },
+  "Coffe": {
+   "en": "Coffe",
+   "ja": null,
+   "ko": null
+  },
+  "Crepe": {
+   "en": "Crepe",
+   "ja": null,
+   "ko": null
   },
   "Cuee": {
    "en": "Cuee",
@@ -232,6 +247,11 @@ window.NAMES_I18N = {
    "en": "Gabia",
    "ja": "ガヴィア",
    "ko": "가비아"
+  },
+  "Goldy": {
+   "en": "Goldy",
+   "ja": null,
+   "ko": null
   },
   "Guin": {
    "en": "Guin",
@@ -398,6 +418,11 @@ window.NAMES_I18N = {
    "ja": "ミロ",
    "ko": "미로"
   },
+  "MISSING": {
+   "en": "MISSING",
+   "ja": null,
+   "ko": null
+  },
   "Momo": {
    "en": "Momo",
    "ja": "モモ",
@@ -437,6 +462,16 @@ window.NAMES_I18N = {
    "en": "Nicole",
    "ja": "ニコル",
    "ko": "니콜"
+  },
+  "Noone": {
+   "en": "Noone",
+   "ja": null,
+   "ko": null
+  },
+  "NPJoanne": {
+   "en": "NPJoanne",
+   "ja": null,
+   "ko": null
   },
   "Opal": {
    "en": "Opal",
@@ -643,6 +678,11 @@ window.NAMES_I18N = {
    "ja": "ウイ",
    "ko": "우이"
   },
+  "UiMemory": {
+   "en": "Ui(Memory)",
+   "ja": "ウイ",
+   "ko": "우이(기억)"
+  },
   "Uros": {
    "en": "Uros",
    "ja": "ウロス",
@@ -668,6 +708,11 @@ window.NAMES_I18N = {
    "ja": "ヴィヴィ",
    "ko": "비비"
   },
+  "ViviDivine": {
+   "en": "Vivi(Duvune)",
+   "ja": "ヴィヴィ",
+   "ko": "비비(신성)"
+  },
   "xXionx": {
    "en": "xXionx",
    "ja": "シオン",
@@ -677,6 +722,11 @@ window.NAMES_I18N = {
    "en": "yomi",
    "ja": "ヨミ",
    "ko": "요미"
+  },
+  "Youngchun": {
+   "en": "Youngchun",
+   "ja": null,
+   "ko": null
   },
   "Yumimi": {
    "en": "Yumimi",

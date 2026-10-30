@@ -1,4 +1,4 @@
-ChloeSkin4.png
+ChloeSkin4.webp
 size:2048,1828
 filter:Linear,Linear
 pma:true

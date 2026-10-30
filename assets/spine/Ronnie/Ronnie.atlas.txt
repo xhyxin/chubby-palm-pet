@@ -1,4 +1,4 @@
-Ronnie.png
+Ronnie.webp
 size:2048,672
 filter:Linear,Linear
 pma:true

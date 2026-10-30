@@ -1,4 +1,4 @@
-HeidiSkin1.png
+HeidiSkin1.webp
 	size: 2048, 2048
 	filter: Linear, Linear
 	pma: true

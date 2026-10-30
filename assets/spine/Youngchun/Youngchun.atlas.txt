@@ -1,4 +1,4 @@
-Youngchun.png
+Youngchun.webp
 size:1024,312
 filter:Linear,Linear
 pma:true

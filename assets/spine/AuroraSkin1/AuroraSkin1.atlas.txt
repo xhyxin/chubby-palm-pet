@@ -1,4 +1,4 @@
-AuroraSkin1.png
+AuroraSkin1.webp
 size:2048,1152
 filter:Linear,Linear
 pma:true

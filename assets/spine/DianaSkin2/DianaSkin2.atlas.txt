@@ -1,4 +1,4 @@
-DianaSkin2.png
+DianaSkin2.webp
 size:1024,1024
 filter:Linear,Linear
 pma:true

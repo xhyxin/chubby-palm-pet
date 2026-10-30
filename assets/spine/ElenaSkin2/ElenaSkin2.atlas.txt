@@ -1,4 +1,4 @@
-ElenaSkin2.png
+ElenaSkin2.webp
 size:2048,1024
 filter:Linear,Linear
 pma:true

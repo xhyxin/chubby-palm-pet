@@ -1,4 +1,4 @@
-Chloe.png
+Chloe.webp
 size:2048,1140
 filter:Linear,Linear
 pma:true

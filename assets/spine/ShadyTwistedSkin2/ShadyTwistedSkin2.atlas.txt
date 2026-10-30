@@ -1,4 +1,4 @@
-ShadyTwistedSkin2.png
+ShadyTwistedSkin2.webp
 size:2048,1024
 filter:Linear,Linear
 pma:true

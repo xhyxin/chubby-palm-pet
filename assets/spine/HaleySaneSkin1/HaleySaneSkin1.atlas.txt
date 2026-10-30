@@ -1,4 +1,4 @@
-HaleySaneSkin1.png
+HaleySaneSkin1.webp
 size:1024,2048
 filter:Linear,Linear
 pma:true

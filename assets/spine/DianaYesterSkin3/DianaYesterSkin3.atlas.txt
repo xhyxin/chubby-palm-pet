@@ -1,4 +1,4 @@
-DianaYesterSkin3.png
+DianaYesterSkin3.webp
 size:2048,1848
 filter:Linear,Linear
 pma:true

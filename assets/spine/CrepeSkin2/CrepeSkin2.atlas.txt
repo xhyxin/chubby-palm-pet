@@ -1,4 +1,4 @@
-CrepeSkin2.png
+CrepeSkin2.webp
 size:1024,728
 filter:Linear,Linear
 pma:true

@@ -1,4 +1,4 @@
-MaestroMK2.png
+MaestroMK2.webp
 size:2048,2048
 filter:Linear,Linear
 pma:true

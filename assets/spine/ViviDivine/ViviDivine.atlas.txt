@@ -1,4 +1,4 @@
-ViviDivine.png
+ViviDivine.webp
 size:4096,680
 filter:Linear,Linear
 pma:true

@@ -1,4 +1,4 @@
-Lethe.png
+Lethe.webp
 size:2017,520
 filter:Linear,Linear
 pma:true

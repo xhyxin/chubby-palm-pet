@@ -1,4 +1,4 @@
-MayoCoolSkin3.png
+MayoCoolSkin3.webp
 size:2048,772
 filter:Linear,Linear
 pma:true

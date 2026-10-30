@@ -1,4 +1,4 @@
-SpeakiMaidSkin3.png
+SpeakiMaidSkin3.webp
 size:2048,772
 filter:Linear,Linear
 pma:true

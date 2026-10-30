@@ -1,4 +1,4 @@
-ScizorSkin2.png
+ScizorSkin2.webp
 size:2048,908
 filter:Linear,Linear
 pma:true

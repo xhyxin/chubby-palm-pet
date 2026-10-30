@@ -1,4 +1,4 @@
-RohneMayorSkin2.png
+RohneMayorSkin2.webp
 size:1444,1540
 filter:Linear,Linear
 pma:true

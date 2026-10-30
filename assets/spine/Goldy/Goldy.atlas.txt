@@ -1,4 +1,4 @@
-Goldy.png
+Goldy.webp
 size:960,1024
 filter:Linear,Linear
 pma:true

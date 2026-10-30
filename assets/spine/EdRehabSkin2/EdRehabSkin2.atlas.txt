@@ -1,4 +1,4 @@
-EdRehabSkin2.png
+EdRehabSkin2.webp
 size:2048,776
 filter:Linear,Linear
 pma:true

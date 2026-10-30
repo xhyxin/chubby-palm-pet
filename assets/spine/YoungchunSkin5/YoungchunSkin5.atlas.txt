@@ -1,4 +1,4 @@
-YoungchunSkin5.png
+YoungchunSkin5.webp
 size:1024,456
 filter:Linear,Linear
 pma:true

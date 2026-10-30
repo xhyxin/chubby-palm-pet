@@ -1,4 +1,4 @@
-AmeliaR41Skin2.png
+AmeliaR41Skin2.webp
 size:2048,1668
 filter:Linear,Linear
 pma:true

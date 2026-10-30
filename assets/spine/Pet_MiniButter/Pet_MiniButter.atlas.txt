@@ -1,4 +1,4 @@
-Pet_MiniButter.png
+Pet_MiniButter.webp
 size:1024,512
 filter:Linear,Linear
 pma:true

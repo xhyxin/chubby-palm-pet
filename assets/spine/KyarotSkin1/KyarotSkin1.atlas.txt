@@ -1,4 +1,4 @@
-KyarotSkin1.png
+KyarotSkin1.webp
 size:1024,1024
 filter:Linear,Linear
 pma:true

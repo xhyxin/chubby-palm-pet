@@ -1,4 +1,4 @@
-Aurora.png
+Aurora.webp
 size:2048,2596
 filter:Linear,Linear
 pma:true

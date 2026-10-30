@@ -1,4 +1,4 @@
-BigWood.png
+BigWood.webp
 size:2048,2048
 filter:Linear,Linear
 pma:true

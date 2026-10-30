@@ -1,4 +1,4 @@
-JoanneSkin3.png
+JoanneSkin3.webp
 size:2048,604
 filter:Linear,Linear
 pma:true

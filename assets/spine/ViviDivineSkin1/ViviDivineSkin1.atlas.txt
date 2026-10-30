@@ -1,4 +1,4 @@
-ViviDivineSkin1.png
+ViviDivineSkin1.webp
 size:2048,1488
 filter:Linear,Linear
 pma:true

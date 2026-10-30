@@ -1,4 +1,4 @@
-AragniaSkin2.png
+AragniaSkin2.webp
 size:2048,920
 filter:Linear,Linear
 pma:true

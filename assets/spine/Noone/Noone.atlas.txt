@@ -1,4 +1,4 @@
-Noone.png
+Noone.webp
 size:2048,1024
 filter:Linear,Linear
 pma:true

@@ -13,7 +13,7 @@ const CHAR_BUTTER = {
   id: 'Butter',
   name: '黄油',
   en: 'Butter',
-  desc: '犬系兽人 · 4 套外观',
+  desc: '犬系兽人 · 5 套外观',
   tag: '🦴',
 
   /* 立绘（多角色下必须按角色分目录，因为文件名全角色同名） */
@@ -34,6 +34,10 @@ const CHAR_BUTTER = {
     { id: 'ButterSkin1', dir: 'assets/spine/ButterSkin1', name: '安全卫士',     desc: '官方原名：セーフティーガード', voiceSkin: '_Skin1' },
     { id: 'ButterSkin2', dir: 'assets/spine/ButterSkin2', name: '童诗大赛黑马', desc: '官方原名：童詩大会のダークホース', voiceSkin: '_Skin2' },
     { id: 'ButterSkin3', dir: 'assets/spine/ButterSkin3', name: '围裙马格南',   desc: '官方原名：エプロン・マグナム', voiceSkin: '_Skin3' },
+    /* 第八十四轮：游戏 10-29 更新的第 4 套皮肤（雪景球冬装，模型/语音从 MuMu 游戏本体提取）。
+       官方名「星夜散步队长」（별밤 산책 대장 / 星夜のお散歩隊長 / Starry-Night Walk Captain）
+       —— 第八十五轮站点 character-skin-names 已同步四语，重跑 生成皮肤名多语言.py 后生效。 */
+    { id: 'ButterSkin4', dir: 'assets/spine/ButterSkin4', name: '星夜散步队长', desc: '官方原名：星夜のお散歩隊長', voiceSkin: '_Skin4' },
   ],
 
   /* 关键骨骼名（含官方互动骨骼） */

@@ -1,4 +1,4 @@
-VelaSkin2.png
+VelaSkin2.webp
 size:2048,2048
 filter:Linear,Linear
 pma:true

@@ -1,4 +1,4 @@
-LaikaSkin3.png
+LaikaSkin3.webp
 size:2048,1176
 filter:Linear,Linear
 pma:true

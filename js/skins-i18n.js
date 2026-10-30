@@ -31,6 +31,11 @@ window.SKINS_I18N = {
    "en": "Elf of the Blue Forest",
    "ja": "青い森のエルフ",
    "ko": "푸른 숲속 엘프"
+  },
+  "Skin2": {
+   "en": "An Elf with an Obvious Identity",
+   "ja": "正体丸わかりのエルフ",
+   "ko": "정체 분명 엘프"
   }
  },
  "Amelia": {
@@ -60,6 +65,11 @@ window.SKINS_I18N = {
    "en": "Transfer Student from the Blue Sea",
    "ja": "青い海の転校生",
    "ko": "푸른 바다의 전학생"
+  },
+  "Skin2": {
+   "en": "A Sea Bunny in the Deep",
+   "ja": "深海のウミウサギ",
+   "ko": "심해 속 바다토끼"
   }
  },
  "Arco": {
@@ -79,6 +89,11 @@ window.SKINS_I18N = {
    "en": "The End of the Day",
    "ja": "一日の締めくくり",
    "ko": "하루의 마무리"
+  },
+  "Skin2": {
+   "en": "Fiery Bunny Magic",
+   "ja": "熱いバニーのマジック",
+   "ko": "화끈한 바니의 매직"
   }
  },
  "Asana": {
@@ -245,6 +260,11 @@ window.SKINS_I18N = {
    "en": "Apron Magnum",
    "ja": "エプロン・マグナム",
    "ko": "에이프런 매그넘"
+  },
+  "Skin4": {
+   "en": "Starry-Night Walk Captain",
+   "ja": "星夜のお散歩隊長",
+   "ko": "별밤 산책 대장"
   }
  },
  "Canna": {
@@ -257,6 +277,11 @@ window.SKINS_I18N = {
    "en": "Midsummer Surfer",
    "ja": "真夏のサーファー",
    "ko": "한여름의 서퍼"
+  },
+  "Skin3": {
+   "en": "Neighborhood Band Leader",
+   "ja": "ご近所バンドリーダー",
+   "ko": "이웃집 밴드 리더"
   },
   "Skin4": {
    "en": "Elf of the Stone Coffin",
@@ -289,6 +314,13 @@ window.SKINS_I18N = {
    "en": "Apricot Blossoms and Roary",
    "ja": "杏の花とオフンイ",
    "ko": "살구꽃과 어흥이"
+  }
+ },
+ "Coffe": {
+  "Skin1": {
+   "en": "Passionate Manager",
+   "ja": "情熱いっぱいのマネージャー",
+   "ko": "열정 가득 매니저"
   }
  },
  "DayaPureShine": {
@@ -381,6 +413,11 @@ window.SKINS_I18N = {
    "en": "High School Morning",
    "ja": "ハイスクール・モーニング",
    "ko": "하이스쿨 모닝"
+  },
+  "Skin2": {
+   "en": "A Part-Timer in Training",
+   "ja": "成長するアルバイト",
+   "ko": "성장하는 알바생"
   }
  },
  "Elena": {
@@ -515,6 +552,11 @@ window.SKINS_I18N = {
    "ja": "雪国の露天風呂",
    "ko": "설국의 노천탕"
   },
+  "Skin3": {
+   "en": "Snowfield Rider",
+   "ja": "雪原のライダー",
+   "ko": "설원의 라이더"
+  },
   "Skin4": {
    "en": "Adventure Across the Sea",
    "ja": "海へ旅立つ冒険",
@@ -555,6 +597,11 @@ window.SKINS_I18N = {
    "en": "The Will to Pursue Peace",
    "ja": "平和へ向かう意志",
    "ko": "평화를 향한 의지"
+  },
+  "Skin4": {
+   "en": "Courage of the White Rabbit",
+   "ja": "白ウサギの勇気",
+   "ko": "하얀 토끼의 용기"
   }
  },
  "Ifrit": {
@@ -603,6 +650,11 @@ window.SKINS_I18N = {
    "en": "Dance Crew Darling",
    "ja": "ダンスクルー・ダーリン",
    "ko": "댄스 크루 달링"
+  },
+  "Skin5": {
+   "en": "Like a Flower in Bloom",
+   "ja": "咲き誇る花のように",
+   "ko": "피어나는 꽃처럼"
   }
  },
  "Jubee": {
@@ -635,6 +687,11 @@ window.SKINS_I18N = {
    "ja": "心の中の銀河",
    "ko": "마음 속의 은하수"
   },
+  "Skin3": {
+   "en": "Ready to Go, Starlight Exploration Team",
+   "ja": "準備完了、星明かり探検隊",
+   "ko": "준비 완료, 별빛 탐험대"
+  },
   "Skin4": {
    "en": "Obsidian Maiden",
    "ja": "オブシディアン・メイデン",
@@ -658,6 +715,11 @@ window.SKINS_I18N = {
    "en": "Blow-Cool Cat Sweet Potatoes",
    "ja": "ふーふー焼きいもニャン",
    "ko": "호호 불어 냥구마"
+  },
+  "Skin3": {
+   "en": "Laid-Back Cat Violinist",
+   "ja": "のんびり猫のバイオリニスト",
+   "ko": "나른한 고양이 바이올리니스트"
   }
  },
  "Kommy": {
@@ -711,6 +773,11 @@ window.SKINS_I18N = {
    "en": "Shut-in Steel",
    "ja": "引きこもりの鋼鉄",
    "ko": "방구석 강철"
+  },
+  "Skin2": {
+   "en": "The Hunter Beneath the Cloak",
+   "ja": "マントの中の狩人",
+   "ko": "망토 속 사냥꾼"
   }
  },
  "LeviGraduate": {
@@ -780,6 +847,11 @@ window.SKINS_I18N = {
    "en": "For the Collection to Continue",
    "ja": "末永くコレクションするために",
    "ko": "계속될 수집을 위해"
+  },
+  "Skin3": {
+   "en": "The Bunny's Mysterious Magic Show",
+   "ja": "バニーの不思議なマジックショー",
+   "ko": "바니의 신비한 마술쇼"
   }
  },
  "Mayo": {
@@ -809,12 +881,20 @@ window.SKINS_I18N = {
   },
   "Skin3": {
    "en": "Ultra-Hip Ninjutsu",
-   "ja": "ヒップホップ満載忍法"
+   "ja": "ヒップホップ満載忍法",
+   "ko": "힙합 가득한 인법"
   },
   "Skin4": {
    "en": "Sweet Ninja Snow",
    "ja": "スイート忍者スノー",
    "ko": "스위트 닌자 스노우"
+  }
+ },
+ "Mute": {
+  "Skin3": {
+   "en": "The Stealthiest Cat",
+   "ja": "最も密やかな猫",
+   "ko": "가장 은밀한 고양이"
   }
  },
  "Naia": {
@@ -1094,6 +1174,11 @@ window.SKINS_I18N = {
    "en": "Healthy Red",
    "ja": "ヘルシーレッド",
    "ko": "헬씨 레드"
+  },
+  "Skin3": {
+   "en": "The Cursed Crimson Count",
+   "ja": "呪われし紅の伯爵",
+   "ko": "저주받은 붉은 백작"
   }
  },
  "Rufo": {
@@ -1113,6 +1198,11 @@ window.SKINS_I18N = {
    "en": "Croco Goes Chomp! Chomp!",
    "ja": "ワニはアグ！アグ！",
    "ko": "악어는 아거! 아거!"
+  },
+  "Skin2": {
+   "en": "A Killer Villain!",
+   "ja": "最高にイカす悪役！",
+   "ko": "끝내주는 악당!"
   }
  },
  "Selline": {
@@ -1210,6 +1300,11 @@ window.SKINS_I18N = {
    "en": "The Graceful Maiden's Steps",
    "ja": "たおやかな少女の足取り",
    "ko": "단아한 소녀의 발걸음"
+  },
+  "Skin3": {
+   "en": "Awakening Silver",
+   "ja": "芽吹く銀光",
+   "ko": "태동하는 은빛"
   }
  },
  "Sist": {
@@ -1220,7 +1315,8 @@ window.SKINS_I18N = {
   },
   "Skin2": {
    "en": "Dragon Eats",
-   "ja": "配達の竜族"
+   "ja": "配達の竜族",
+   "ko": "배달의 용족"
   },
   "Skin3": {
    "en": "Cheering Service",
@@ -1264,6 +1360,11 @@ window.SKINS_I18N = {
    "en": "Cluck-Clothes Maid",
    "ja": "鶏服メイド",
    "ko": "꼬끼옷 메이드"
+  },
+  "Skin3": {
+   "en": "Carrot-Cleaning Bunny",
+   "ja": "キャロットお掃除バニー",
+   "ko": "캐럿 청소 바니"
   }
  },
  "Speaki": {
@@ -1334,6 +1435,18 @@ window.SKINS_I18N = {
    "en": "Charge! Commander of Conquest",
    "ja": "突撃！征服隊長",
    "ko": "돌격! 정복대장"
+  }
+ },
+ "UiMemory": {
+  "Skin1": {
+   "en": "Egg-Yellow Tracksuit Maid",
+   "ja": "たまご色ジャージメイド",
+   "ko": "계란빛 츄리닝 메이드"
+  },
+  "Skin2": {
+   "en": "Dewlit Droplet Doctor",
+   "ja": "露色しずくのお医者さん",
+   "ko": "이슬빛 방울 의사"
   }
  },
  "Ui": {
@@ -1424,6 +1537,18 @@ window.SKINS_I18N = {
    "en": "Swing and Cheer",
    "ja": "スイング＆チア",
    "ko": "스윙 앤 치어"
+  }
+ },
+ "ViviDivine": {
+  "Skin1": {
+   "en": "A Spoonful of Sky-Blue Feeling",
+   "ja": "空色の心をひとさじ",
+   "ko": "하늘빛 마음 한 스푼"
+  },
+  "Skin2": {
+   "en": "Terminal Phantom-Pain Patient",
+   "ja": "幻肢痛末期患者",
+   "ko": "환상통 말기 환자"
   }
  },
  "xXionx": {

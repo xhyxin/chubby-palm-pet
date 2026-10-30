@@ -1,4 +1,4 @@
-LeetsSkin2.png
+LeetsSkin2.webp
 size:2048,836
 filter:Linear,Linear
 pma:true

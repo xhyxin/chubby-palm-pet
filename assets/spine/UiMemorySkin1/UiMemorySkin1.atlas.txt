@@ -1,4 +1,4 @@
-UiMemorySkin1.png
+UiMemorySkin1.webp
 size:2048,816
 filter:Linear,Linear
 pma:true

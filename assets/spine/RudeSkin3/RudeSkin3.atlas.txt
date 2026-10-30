@@ -1,4 +1,4 @@
-RudeSkin3.png
+RudeSkin3.webp
 size:2952,520
 filter:Linear,Linear
 pma:true

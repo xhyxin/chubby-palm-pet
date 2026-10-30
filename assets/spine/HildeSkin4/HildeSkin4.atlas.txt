@@ -1,4 +1,4 @@
-HildeSkin4.png
+HildeSkin4.webp
 size:2048,628
 filter:Linear,Linear
 pma:true

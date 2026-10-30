@@ -1,4 +1,4 @@
-RohneMayor.png
+RohneMayor.webp
 size:1428,1032
 filter:Linear,Linear
 pma:true

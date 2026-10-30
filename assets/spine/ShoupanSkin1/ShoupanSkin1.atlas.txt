@@ -1,4 +1,4 @@
-ShoupanSkin1.png
+ShoupanSkin1.webp
 size:2048,1024
 filter:Linear,Linear
 pma:true

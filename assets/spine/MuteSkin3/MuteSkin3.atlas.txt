@@ -1,4 +1,4 @@
-MuteSkin3.png
+MuteSkin3.webp
 size:2048,960
 filter:Linear,Linear
 pma:true

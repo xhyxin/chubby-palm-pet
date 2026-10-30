@@ -1,4 +1,4 @@
-SilviaSkin1.png
+SilviaSkin1.webp
 size:2048,512
 filter:Linear,Linear
 pma:true

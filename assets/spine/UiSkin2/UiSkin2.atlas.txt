@@ -1,4 +1,4 @@
-UiSkin2.png
+UiSkin2.webp
 size:1024,1024
 filter:Linear,Linear
 pma:true

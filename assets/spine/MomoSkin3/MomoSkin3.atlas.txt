@@ -1,4 +1,4 @@
-MomoSkin3.png
+MomoSkin3.webp
 size:2048,1024
 filter:Linear,Linear
 pma:true

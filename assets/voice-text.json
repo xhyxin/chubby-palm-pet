@@ -107,6 +107,9 @@
    "ja",
    "ko"
   ],
+  "Coffe": [
+   "ko"
+  ],
   "Crepe": [
    "ja",
    "ko"
@@ -553,6 +556,7 @@
    "Butter_Board_Skin1": "这样走就行吗？",
    "Butter_Board_Skin2": "这次比赛在哪里？这里？那里？",
    "Butter_Board_Skin3": "女仆黄油，快速前进！",
+   "Butter_Board_Skin4": "走这边的话，能看清楚星星吗？",
    "Butter_CallHero1": "抱歉。",
    "Butter_CallHero2": "村长！",
    "Butter_CallHero3": "打扰一下！",
@@ -573,11 +577,13 @@
    "Butter_DutchRubEnd2_Skin1": "啊！我要挖坑！",
    "Butter_DutchRubEnd2_Skin2": "下一篇童诗的题目是“黄牌”！",
    "Butter_DutchRubEnd2_Skin3": "就算很努力训练，被弹脑门还是会痛的啦！！",
+   "Butter_DutchRubEnd2_Skin4": "都要掉下来啦！",
    "Butter_Eat1": "嗷呜嗷呜……",
    "Butter_Equipment": "可以扔更大的石头！",
    "Butter_Equipment_Skin1": "安全装备很重要。",
    "Butter_Equipment_Skin2": "哇！新文具！太棒了！",
    "Butter_Equipment_Skin3": "是在为我准备礼物吗？教主大人好温柔！",
+   "Butter_Equipment_Skin4": "你能和朋友们一起玩，真是太好了。",
    "Butter_Gacha1": "又来？",
    "Butter_Gacha2": "我们一起玩吧！玩什么呢？",
    "Butter_Gacha3": "什么什么？是朋友吗？",
@@ -588,18 +594,22 @@
    "Butter_Growth1_Skin1": "我要玩水玩得更开心！",
    "Butter_Growth1_Skin2": "我要把很棒的童诗读给朋友们听。",
    "Butter_Growth1_Skin3": "没有散步训练之类的吗？黄油很有自信！",
+   "Butter_Growth1_Skin4": "哇！就像缀满星光的夜空一样！",
    "Butter_Growth2": "现在我可以一个人跑腿了！",
    "Butter_Growth2_Skin1": "黄油也很会游泳！",
    "Butter_Growth2_Skin2": "好想快点发表！我想得到掌声！",
    "Butter_Growth2_Skin3": "斗志燃烧起来了！",
+   "Butter_Growth2_Skin4": "想带上好多和朋友们分享的零食，跑去玩一圈。",
    "Butter_HeroSkill": "跳得更高打得更猛！",
    "Butter_HeroSkill_Skin1": "黄油要游得更远！",
    "Butter_HeroSkill_Skin2": "现在黄油也是不输给柯米的优秀小朋友了！",
    "Butter_HeroSkill_Skin3": "我会一发一发集中精神射击的！",
+   "Butter_HeroSkill_Skin4": "叮铃叮铃。我的铃声传得更远啦。",
    "Butter_HeroUpgrade": "哇！尾巴动得更厉害了！",
    "Butter_HeroUpgrade_Skin1": "哇！太兴奋了！",
    "Butter_HeroUpgrade_Skin2": "黄油也能像村长一样成长吧？",
    "Butter_HeroUpgrade_Skin3": "为了教主大人，我会更加更加努力战斗的！",
+   "Butter_HeroUpgrade_Skin4": "感觉自己变成了闪闪发亮的星星。",
    "Butter_Hit1": "啊？",
    "Butter_Hit2": "呀！",
    "Butter_Hit3": "你好？",
@@ -617,6 +627,7 @@
    "Butter_LevelUp_Skin1": "我要成为狗刨大师！",
    "Butter_LevelUp_Skin2": "我要努力学习，写出很棒的童诗！",
    "Butter_LevelUp_Skin3": "我变成更会战斗的女仆了！请夸奖我吧！",
+   "Butter_LevelUp_Skin4": "现在连积雪的路也能走了。只要跟着黄油的脚印走哦。",
    "Butter_Line1": "尾巴！快停下来！",
    "Butter_Line2": "附近传来了好吃的味道……",
    "Butter_Line3": "我要尽情地到处跑！",
@@ -676,25 +687,31 @@
    "Butter_Touch1_1_Skin1": "轻拉不行吗？",
    "Butter_Touch1_1_Skin2": "啊呀！要告诉村长！",
    "Butter_Touch1_1_Skin3": "要是我哪里做错了，请教我，不要捏我啦！",
+   "Butter_Touch1_1_Skin4": "黄油不是铃铛哦，怎么拉也不会叮当响的。",
    "Butter_Touch1_2": "现在习惯了！一点都不疼！",
    "Butter_Touch1_2_Skin1": "黄油能忍…",
    "Butter_Touch1_2_Skin2": "柯米说，痛苦是创作的沃土。那我去写童诗啦。",
    "Butter_Touch1_2_Skin3": "呜……太过分了！我讨厌教主大人！",
+   "Butter_Touch1_2_Skin4": "咦？是怕我的脸冻着，才抓住我的吧？",
    "Butter_Touch1_Skin1": "冰淇淋掉了！",
    "Butter_Touch1_Skin2": "黄油写了很笨的童诗吗？是这样吗？",
    "Butter_Touch1_Skin3": "黄油可从来没有偷懒不训练啊！！",
+   "Butter_Touch1_Skin4": "别捏脸啦，牵我的手吧。",
    "Butter_Touch2": "呵呵！心情好起来！",
    "Butter_Touch2_1": "教主的手好温暖。",
    "Butter_Touch2_1_Skin1": "像在吃好吃的东西。",
    "Butter_Touch2_1_Skin2": "被教主表扬了！",
    "Butter_Touch2_1_Skin3": "要是再多摸摸我，我会表现得更好的！",
+   "Butter_Touch2_1_Skin4": "被夸了，尾巴都兴奋起来了。",
    "Butter_Touch2_2": "感觉很放松。",
    "Butter_Touch2_2_Skin1": "呵呵呵…好放松！",
    "Butter_Touch2_2_Skin2": "童诗在脑袋里一个劲儿冒出来！",
    "Butter_Touch2_2_Skin3": "一直被摸着好困啊……训练能不能晚点再做呢？",
+   "Butter_Touch2_2_Skin4": "数完星星就睡哦。一颗，两颗。",
    "Butter_Touch2_Skin1": "手好温暖！",
    "Butter_Touch2_Skin2": "我写的是很棒的童诗吗？",
    "Butter_Touch2_Skin3": "我做得好吗？谢谢您！",
+   "Butter_Touch2_Skin4": "连帽子上面都感觉暖暖的。",
    "Butter_Trickcal1": "Trickcal Revive。",
    "Butter_Trickcal2": "Trickcal。",
    "Butter_Ultimate1": "给你看看大的！",
@@ -5191,6 +5208,142 @@
    "Chopi_Yes1": "什么？",
    "Chopi_Yes2": "没错！",
    "Chopi_Yes3": "诶？",
+   "Coffe_Affinity1_1": "您好，教主。这次想喝什么咖啡呢？",
+   "Coffe_Affinity1_2": "问我最擅长做什么咖啡？呵呵！所有咖啡我都能做得完美无缺！",
+   "Coffe_Affinity1_3": "问我怎么看温热的冰美式？当然喜欢！所有咖啡我都喜欢！",
+   "Coffe_Affinity2": "我觉得，和努力同样重要的，是分清什么时候该用力，什么时候不该。",
+   "Coffe_Affinity3": "客人喝过我的咖啡，露出放松的表情时，我的心情也会不由自主地好起来。",
+   "Coffe_Affinity4": "感觉我和妖精王国居民的关系比以前好多了。一定是多亏了教主的帮助！",
+   "Coffe_Affinity5": "教主，要喝咖啡吗？这是我想着您给人的感觉，专门做出来的咖啡！",
+   "Coffe_Affinity6": "教主，如果打算举办冰沙派送活动，请随时告诉我！我也想帮忙！",
+   "Coffe_Affinity7": "我也希望有一天，能像教主一样，成为让人安心依靠的存在……！",
+   "Coffe_Anger1": "呃嘿嘿嘿！",
+   "Coffe_Anger2": "你在干什么？",
+   "Coffe_Anger3": "呱啊！",
+   "Coffe_Anger4": "竟敢亵渎我的咖啡！",
+   "Coffe_Anger5": "不可饶恕！",
+   "Coffe_AsideGet": "把这杯完美的咖啡端给客人的话，客人的疲惫就会慢慢地融化掉吧？",
+   "Coffe_AsideGet1": "把这杯完美的咖啡端给客人的话，客人的疲惫就会慢慢地融化掉吧？",
+   "Coffe_AsideGet2": "把这杯完美的咖啡端给客人的话，客人的疲惫就会慢慢地融化掉吧？",
+   "Coffe_AsideUpgrade": "我一定会查明这杯咖啡的配方，让客人幸福起来的。",
+   "Coffe_AsideUpgrade1": "我一定会查明这杯咖啡的配方，让客人幸福起来的。",
+   "Coffe_AsideUpgrade2": "我一定会查明这杯咖啡的配方，让客人幸福起来的。",
+   "Coffe_BasicAttack1": "接招吧，咖啡豆！",
+   "Coffe_BasicAttack2": "咔啊啊啊！",
+   "Coffe_Birthday": "教主，生日快乐！希望您今天能度过完美的一天！",
+   "Coffe_Board": "我去提供咖啡外送服务啦～",
+   "Coffe_Board_Skin1": "球好像掉在这附近了～？",
+   "Coffe_CallHero1": "祭司长？",
+   "Coffe_CallHero2": "客人？",
+   "Coffe_CallHero3": "客人？",
+   "Coffe_CallPlayer1": "教主！",
+   "Coffe_CallPlayer2": "教主？",
+   "Coffe_CallPlayer3": "教主，教主！",
+   "Coffe_CallPlayer4": "教主！",
+   "Coffe_CallPlayer5": "教主。",
+   "Coffe_DeckSetting1": "大家都喜欢什么样的咖啡呢～？",
+   "Coffe_DeckSetting2": "大家都看着呢，我得表现得更加完美……！",
+   "Coffe_Defeat1": "呜……看来我对这份工作还不够熟练……",
+   "Coffe_Defeat2": "呀啊啊！到、到底哪里出了问题？！",
+   "Coffe_Die1": "啊！我把咖啡豆落下了！",
+   "Coffe_Die2": "您点的咖啡还没做好呢！！",
+   "Coffe_DutchRubEnd1": "呀！",
+   "Coffe_DutchRubEnd2": "教主只是手滑了，对吧？我就这样相信了哦……！",
+   "Coffe_DutchRubEnd2_Skin1": "教主……您是无聊了才这样吧？我来让您不无聊。深蹲二十次，开始！！",
+   "Coffe_Eat1": "啊姆，嚼嚼嚼～",
+   "Coffe_Equipment": "穿上这个，会不会更像专业咖啡师呢？呵呵！",
+   "Coffe_Equipment_Skin1": "这衣服真舒服！也想给选手们准备一套！",
+   "Coffe_Gacha1": "可菲",
+   "Coffe_Gacha2": "想让心情放松下来，就请来我的咖啡馆吧。",
+   "Coffe_Gacha3": "您点的咖啡来啦～",
+   "Coffe_Gacha4": "我的名字是！",
+   "Coffe_Greeting": "您好。",
+   "Coffe_Growth": "我是可菲。",
+   "Coffe_Growth1": "我正在成为不断成长、又完美无缺的咖啡师！",
+   "Coffe_Growth1_Skin1": "经理也要成长，选手们才能跟着成长呀～",
+   "Coffe_Growth2": "忽然想为自己泡一杯咖啡呢。辛苦了，可菲！",
+   "Coffe_Growth2_Skin1": "经理要做的事可多了。当然，我什么都能完美完成哦？呵呵！",
+   "Coffe_HeroSkill": "要做出更完美的咖啡，当然得有娴熟的技艺！",
+   "Coffe_HeroSkill_Skin1": "现在我一次能搬更多东西了哦？呵呵！",
+   "Coffe_HeroUpgrade": "一步、再一步！我正逐渐接近完美！",
+   "Coffe_HeroUpgrade_Skin1": "我要成为更加完美的经理……为夺冠出一份力！",
+   "Coffe_Hit1": "咕呜呜……",
+   "Coffe_Hit2": "呀！",
+   "Coffe_Hit3": "呜哇！",
+   "Coffe_Hit4": "这不完美！",
+   "Coffe_Hit5": "咕诶诶！",
+   "Coffe_Hmm1": "嗯？",
+   "Coffe_Hmm2": "呼呜呜……",
+   "Coffe_Hmm3": "唔……",
+   "Coffe_Joy1": "哇啊！",
+   "Coffe_Joy2": "啊呵呵！",
+   "Coffe_Joy3": "诶嘿嘿！",
+   "Coffe_Joy4": "好开心。",
+   "Coffe_Joy5": "谢谢您。",
+   "Coffe_LevelUp": "感觉自己就像风味更醇厚的咖啡！",
+   "Coffe_LevelUp_Skin1": "身体轻快多了！这样就能更敏捷地送饮料了！",
+   "Coffe_Line1": "我会成为艾利亚斯最完美的咖啡师！",
+   "Coffe_Line2": "想歇一口气吗？喝了我的咖啡，心情就会放松下来。",
+   "Coffe_Line3": "咖啡很好喝？呵呵！当然啦，这可是我可菲做的！",
+   "Coffe_Lobby": "这温度，这湿度……我想到最适合这里的咖啡了！",
+   "Coffe_No1": "唔嗯……",
+   "Coffe_No2": "这个有点……",
+   "Coffe_No3": "不是的。",
+   "Coffe_Pleasure1": "哦呵呵！",
+   "Coffe_Pleasure2": "呵呵！",
+   "Coffe_Pleasure3": "请看。",
+   "Coffe_Pleasure4": "真完美。",
+   "Coffe_Pleasure5": "这是理所当然的。",
+   "Coffe_PowerAttack1": "这招怎么样？",
+   "Coffe_PowerAttack2": "咕诶诶！",
+   "Coffe_SPSkill1": "嗯，真是好香。",
+   "Coffe_SPSkill2": "哦呵呵！",
+   "Coffe_SPSkill3": "完美萃取！",
+   "Coffe_Shout1": "嘿咻！",
+   "Coffe_Shout2": "呀！",
+   "Coffe_Shout3": "哈啊！",
+   "Coffe_Shout4": "啾哇！",
+   "Coffe_Shout5": "咔啊啊！",
+   "Coffe_Sorrow1": "呜啊……",
+   "Coffe_Sorrow2": "咕……",
+   "Coffe_Sorrow3": "呜呼……",
+   "Coffe_Sorrow4": "呜嗯……呜嗯……",
+   "Coffe_Sorrow5": "呜呜呜……",
+   "Coffe_Sorry1": "对不起，真的很抱歉。",
+   "Coffe_Sorry2": "对不起。",
+   "Coffe_Spawn1": "哪位点了咖啡～？",
+   "Coffe_Spawn2": "就像闭着眼做咖啡一样，我会完美完成的！",
+   "Coffe_Stage": "朝着完美，全力奔跑！",
+   "Coffe_StartJourney1": "咖啡外送到啦～！",
+   "Coffe_StartJourney2": "今天也辛苦您了！",
+   "Coffe_StartJourney3": "您喜欢咖啡吗？我也喜欢！",
+   "Coffe_Surprise1": "嘎啊啊！",
+   "Coffe_Surprise2": "怎、怎么回事？",
+   "Coffe_TelephoneCall": "诶……电话能打通吗……啊！接通了！您好，教主？我是可菲哦！您问我打电话有什么事吗？啊，那个……虽然可能有点突然……教主，您是不是有什么烦恼呀？我总觉得您最近常常露出想起开心事般的表情呢。如果您有什么烦恼的话，请随时来我的咖啡店坐坐吧。如果您需要有人听您说说话，无论多少次我都可以当那个倾听的人。当然，我未必能给教主完美又明智的答案，可是端上一杯好喝的咖啡、安安静静地听您倾诉这样的事，我还是很擅长的。就像平时教主您让我的内心变得安宁一样，我也想这样为教主做点什么。所以心里憋闷的时候，就来找可菲我吧。",
+   "Coffe_TickleDuring1": "咯咯，啊哈哈哈！",
+   "Coffe_TickleStart1": "咯咯咯……",
+   "Coffe_Touch1": "我的脸颊不是呼叫铃……",
+   "Coffe_Touch1_1": "教主的手比想象中还厉害呢……",
+   "Coffe_Touch1_1_Skin1": "呜……训练日志也没有漏记，为什么还要拉我的脸颊……",
+   "Coffe_Touch1_2": "有什么投诉，请用说的……",
+   "Coffe_Touch1_2_Skin1": "再这样，我就要在日志里记下您是态度不好的选手了！",
+   "Coffe_Touch1_Skin1": "呀！没必要连我的脸颊也一起训练啊！",
+   "Coffe_Touch2": "诶、诶？！没、没想到会突然得到这样的夸奖……！",
+   "Coffe_Touch2_1": "这是在说我今天辛苦了吗？真的非常感谢！",
+   "Coffe_Touch2_1_Skin1": "我、我能给您的只有运动饮料……这个也可以吗？",
+   "Coffe_Touch2_2": "呜呜……教主，不管您想喝什么咖啡，我都会为您做的！！",
+   "Coffe_Touch2_2_Skin1": "今后我也会努力为教主加油的。真的非常感谢！",
+   "Coffe_Touch2_Skin1": "诶嘿嘿……我帮上教主的忙了吗？",
+   "Coffe_Trickcal1": "Trickcal Revive。",
+   "Coffe_Trickcal2": "Trickcal。",
+   "Coffe_Ultimate1": "最后的注水也要完美。",
+   "Coffe_Ultimate2": "呀啊啊啊！",
+   "Coffe_Ultimate3": "倾注心意的收尾。",
+   "Coffe_Victory1": "呵呵！只要交给我，不管什么事我都会完美完成！",
+   "Coffe_Victory2": "来一杯完美的咖啡庆祝胜利，怎么样？",
+   "Coffe_Yes1": "是！",
+   "Coffe_Yes2": "没错。",
+   "Coffe_Yes3": "完美的回答。",
    "Crepe_Anger1": "哎呀？",
    "Crepe_Anger2": "为什么这么乱糟糟的？",
    "Crepe_Anger3": "我也是个正经的女仆哦！",
@@ -24166,6 +24319,10 @@
    "Chloe_DutchRubEnd3_Skin5": "啊？我要叫嗷呜咬你了！",
    "Chopi_Affinity7_2": "想变强的理由？因为变强后还能变得更强！",
    "Chopi_Die": "实战好难…",
+   "Coffe_Affinity7_2": "我也希望有一天，能像教主一样，成为让人安心依靠的存在……！",
+   "Coffe_Die": "啊！我把咖啡豆落下了！",
+   "Coffe_DutchRubEnd1_Skin1": "教主……您是无聊了才这样吧？我来让您不无聊。深蹲二十次，开始！！",
+   "Coffe_DutchRubEnd3_Skin1": "教主……您是无聊了才这样吧？我来让您不无聊。深蹲二十次，开始！！",
    "Crepe_Die": "那么教主大人，路上请小心！有我在，房间的事请不用担心！",
    "Crepe_DutchRubEnd1_Skin1": "咯咯——！",
    "Crepe_DutchRubEnd1_Skin2": "呜哇！要、要把我变成青蛙吗？！",
@@ -29708,6 +29865,135 @@
    "Chopi_Yes1": "はい",
    "Chopi_Yes2": "そうですよ",
    "Chopi_Yes3": "ううっ",
+   "Coffe_Affinity1_1": "こんにちは、教主様。今回はどんなコーヒーが飲みたいですか？",
+   "Coffe_Affinity1_2": "私が一番得意なコーヒーですか？ふふっ！どんなコーヒーでも完璧に作れますよ！",
+   "Coffe_Affinity1_3": "温かいアイスアメリカーノをどう思うか、ですか？もちろん大好きです！私はどんなコーヒーも好きなんです！",
+   "Coffe_Affinity2": "頑張るのと同じくらい、力を入れる時と抜く時を見極めるのが大切なんだと思います。",
+   "Coffe_Affinity3": "私のコーヒーを飲んだお客様がほっとした顔をすると、私までうれしくなるんです。",
+   "Coffe_Affinity4": "妖精王国の皆さんと、前より仲良くなれた気がします。教主様が助けてくださったおかげですね！",
+   "Coffe_Affinity5": "教主様、コーヒーはいかがですか？教主様のイメージを思い浮かべながら作った一杯です！",
+   "Coffe_Affinity6": "教主様、フラッペの配布イベントを開く予定があれば、気軽に教えてください！お手伝いしたいんです！",
+   "Coffe_Affinity7": "私もいつか、教主様みたいに安心して頼れる存在になりたいです……！",
+   "Coffe_Anger1": "うへへへ！",
+   "Coffe_Anger2": "何してるの？",
+   "Coffe_Anger3": "ぐわあ！",
+   "Coffe_Anger4": "よくも私のコーヒーを侮辱したわね！",
+   "Coffe_Anger5": "許せない！",
+   "Coffe_BasicAttack1": "コーヒー豆でも受けなさい！",
+   "Coffe_BasicAttack2": "くあああ！",
+   "Coffe_Birthday": "教主様、お誕生日おめでとうございます！今日が完璧な一日になりますように！",
+   "Coffe_Board": "コーヒーのケータリングに行ってきます～。",
+   "Coffe_Board_Skin1": "この辺にボールが落ちた気がするんですけど～？",
+   "Coffe_CallHero1": "祭司長様？",
+   "Coffe_CallHero2": "お客様？",
+   "Coffe_CallHero3": "お客様？",
+   "Coffe_CallPlayer1": "教主様！",
+   "Coffe_CallPlayer2": "教主様？",
+   "Coffe_CallPlayer3": "教主様、教主様！",
+   "Coffe_CallPlayer4": "教主様！",
+   "Coffe_CallPlayer5": "教主様。",
+   "Coffe_DeckSetting1": "皆さん、どんなコーヒーがお好きでしょう～？",
+   "Coffe_DeckSetting2": "みんなが見ているから、もっと完璧に振る舞わなきゃ……！",
+   "Coffe_Defeat1": "ううっ……この仕事はまだ完璧に習熟できていないようです……。",
+   "Coffe_Defeat2": "きゃああっ！な、何がいけなかったの？！",
+   "Coffe_Die1": "うわっ！コーヒー豆を置いてきちゃった！",
+   "Coffe_Die2": "ご注文のコーヒー、まだできていません！！",
+   "Coffe_DutchRubEnd1": "きゃっ！",
+   "Coffe_DutchRubEnd2": "教主様、手が滑ったんですよね？そう信じます……！",
+   "Coffe_DutchRubEnd2_Skin1": "教主様……退屈だからですよね？退屈しないようにしてあげます。スクワット20回、開始！！",
+   "Coffe_Eat1": "あむ、もぐもぐ～。",
+   "Coffe_Equipment": "これを着たら、もっとプロのバリスタらしく見えるでしょうか？ふふっ！",
+   "Coffe_Equipment_Skin1": "本当に着心地がいいですね！選手の皆さんにも用意してあげたいです！",
+   "Coffe_Gacha1": "コペ",
+   "Coffe_Gacha2": "心を落ち着かせたい時は、私のカフェにいらしてください。",
+   "Coffe_Gacha3": "ご注文のコーヒーをお持ちしました～。",
+   "Coffe_Gacha4": "私の名前は！",
+   "Coffe_Greeting": "こんにちは。",
+   "Coffe_Growth": "コペです。",
+   "Coffe_Growth1": "成長し続ける、完成されたバリスタになりつつあります！",
+   "Coffe_Growth1_Skin1": "マネージャーも成長してこそ、選手たちも成長できるんですよ～。",
+   "Coffe_Growth2": "なんだか自分のためにコーヒーを淹れたくなりました。お疲れさま、コペ！",
+   "Coffe_Growth2_Skin1": "マネージャーにはやることがたくさんあります。もちろん、私は何でも完璧にこなしますよ？ふふっ！",
+   "Coffe_HeroSkill": "もっと完璧なコーヒーを作るには、熟練の技が必要なんです！",
+   "Coffe_HeroSkill_Skin1": "一度にもっとたくさん荷物を運べるようになったんですよ？ふふっ！",
+   "Coffe_HeroUpgrade": "一歩、また一歩！完璧に近づいています！",
+   "Coffe_HeroUpgrade_Skin1": "もっと完璧なマネージャーになって……優勝に貢献します！",
+   "Coffe_Hit1": "ぐうう…",
+   "Coffe_Hit2": "きゃっ！",
+   "Coffe_Hit3": "うわっ！",
+   "Coffe_Hit4": "完璧じゃない！",
+   "Coffe_Hit5": "ぐええっ！",
+   "Coffe_Hmm1": "ん？",
+   "Coffe_Hmm2": "ふうう…",
+   "Coffe_Hmm3": "ふむ…",
+   "Coffe_Joy1": "わあ！",
+   "Coffe_Joy2": "あふふ！",
+   "Coffe_Joy3": "えへへ！",
+   "Coffe_Joy4": "嬉しいです。",
+   "Coffe_Joy5": "ありがとうございます。",
+   "Coffe_LevelUp": "味わいがもっと深いコーヒーになった気分です！",
+   "Coffe_LevelUp_Skin1": "体がぐっと軽くなりました！もっと素早く飲み物を届けられますね！",
+   "Coffe_Line1": "エリアスで一番完璧なバリスタになります！",
+   "Coffe_Line2": "一息つきたいですか？私のコーヒーを飲めば、心が落ち着きますよ。",
+   "Coffe_Line3": "コーヒーがおいしいですか？ふふっ！だって、このコペが作ったんですから！",
+   "Coffe_Lobby": "この温度、この湿度……この場所にぴったりのコーヒーが思い浮かびました！",
+   "Coffe_No1": "ううん…",
+   "Coffe_No2": "それはちょっと…",
+   "Coffe_No3": "違います。",
+   "Coffe_Pleasure1": "おほほ！",
+   "Coffe_Pleasure2": "ふふっ！",
+   "Coffe_Pleasure3": "ご覧ください。",
+   "Coffe_Pleasure4": "完璧ですね。",
+   "Coffe_Pleasure5": "当然のことです。",
+   "Coffe_PowerAttack1": "これはいかがですか？",
+   "Coffe_PowerAttack2": "ぐえええ！",
+   "Coffe_SPSkill1": "うん、本当にいい香り。",
+   "Coffe_SPSkill2": "おほほ！",
+   "Coffe_SPSkill3": "完璧な抽出！",
+   "Coffe_Shout1": "よいしょ！",
+   "Coffe_Shout2": "やっ！",
+   "Coffe_Shout3": "はあっ！",
+   "Coffe_Shout4": "きゅわっ！",
+   "Coffe_Shout5": "くああ！",
+   "Coffe_Sorrow1": "うあっ…",
+   "Coffe_Sorrow2": "くっ…",
+   "Coffe_Sorrow3": "うふ…",
+   "Coffe_Sorrow4": "ううん…ううん…",
+   "Coffe_Sorrow5": "ううう…",
+   "Coffe_Sorry1": "申し訳ありません。ごめんなさい。",
+   "Coffe_Sorry2": "ごめんなさい。",
+   "Coffe_Spawn1": "コーヒーをご注文の方～？",
+   "Coffe_Spawn2": "目を閉じてコーヒーを淹れるように、完璧にこなします！",
+   "Coffe_Stage": "完璧を目指して、一生懸命走ります！",
+   "Coffe_StartJourney1": "コーヒーのお届けです～！",
+   "Coffe_StartJourney2": "今日もお疲れさまでした！",
+   "Coffe_StartJourney3": "コーヒーはお好きですか？私も大好きです！",
+   "Coffe_Surprise1": "がああ！",
+   "Coffe_Surprise2": "な、何があったんですか？",
+   "Coffe_TickleDuring1": "くくっ、あはははっ！",
+   "Coffe_TickleStart1": "くくくっ……。",
+   "Coffe_Touch1": "私のほっぺは呼び出しベルじゃありません……。",
+   "Coffe_Touch1_1": "教主様の手、思ったより痛いですね……。",
+   "Coffe_Touch1_1_Skin1": "ううっ……練習日誌に書き忘れたこともないのに、どうしてほっぺを引っ張るんですか……。",
+   "Coffe_Touch1_2": "苦情があるなら、言葉でお願いします……。",
+   "Coffe_Touch1_2_Skin1": "これ以上やったら、態度の悪い選手だって日誌に書きますよ！",
+   "Coffe_Touch1_Skin1": "きゃっ！私のほっぺまで鍛える必要はありませんよ！",
+   "Coffe_Touch2": "え、ええっ？！きゅ、急にこんなに褒めてもらえるなんて……！",
+   "Coffe_Touch2_1": "今日はお疲れさま、ということですか？本当にありがとうございます！",
+   "Coffe_Touch2_1_Skin1": "わ、私がお渡しできるのはスポーツドリンクくらいですが……これでも飲みますか？",
+   "Coffe_Touch2_2": "ううう……教主様、飲みたいコーヒーがあれば何でも作ります！！",
+   "Coffe_Touch2_2_Skin1": "これからも教主様を精いっぱい応援します。本当にありがとうございます！",
+   "Coffe_Touch2_Skin1": "えへへ……教主様のお役に立てましたか？",
+   "Coffe_Trickcal1": "トリッカル・リバイブ。",
+   "Coffe_Trickcal2": "トリッカル。",
+   "Coffe_Ultimate1": "仕上げのポアリングまで完璧に。",
+   "Coffe_Ultimate2": "きゃあああっ！",
+   "Coffe_Ultimate3": "心を込めた仕上げ。",
+   "Coffe_Victory1": "ふふっ！任せていただければ、何でも完璧にこなします！",
+   "Coffe_Victory2": "勝利を祝う完璧なコーヒーを一杯、いかがですか？",
+   "Coffe_Yes1": "はい！",
+   "Coffe_Yes2": "そうです。",
+   "Coffe_Yes3": "完璧な答えです。",
    "Crepe_Anger1": "あら？",
    "Crepe_Anger2": "なぜこんなに、ごちゃごちゃしているの？",
    "Crepe_Anger3": "私もちゃんとしたメイドなんですよ！",
@@ -48221,6 +48507,10 @@
    "Chloe_DutchRubEnd3_Skin5": "あ？オフンイに噛ませちゃうよ！",
    "Chopi_Affinity7_2": "強くなりたい理由？ 強くなったら、もっと強くなれるじゃないですか！",
    "Chopi_Die": "実戦は難しいです",
+   "Coffe_Affinity7_2": "私もいつか、教主様みたいに安心して頼れる存在になりたいです……！",
+   "Coffe_Die": "うわっ！コーヒー豆を置いてきちゃった！",
+   "Coffe_DutchRubEnd1_Skin1": "教主様……退屈だからですよね？退屈しないようにしてあげます。スクワット20回、開始！！",
+   "Coffe_DutchRubEnd3_Skin1": "教主様……退屈だからですよね？退屈しないようにしてあげます。スクワット20回、開始！！",
    "Crepe_Die": "では教主様、お気をつけていってらっしゃいませ！ 私がいますので、部屋のことはご心配なく！",
    "Crepe_DutchRubEnd1_Skin1": "クケー！",
    "Crepe_DutchRubEnd1_Skin2": "ふえーん！ か、カエルにされちゃうんですか！？",
@@ -49739,6 +50029,21 @@
    "alias": ""
   },
   {
+   "key": "Butter_Board_Skin4",
+   "char": "Butter",
+   "name": "涂色板（星夜散步队长）",
+   "text": "走这边的话，能看清楚星星吗？",
+   "textJa": "",
+   "textKo": "이쪽으로 가면 별님이 잘 보일까요?",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "星夜散步队长",
+   "alias": ""
+  },
+  {
    "key": "Butter_CallHero1",
    "char": "Butter",
    "name": "呼唤使徒1",
@@ -50105,6 +50410,21 @@
    "alias": ""
   },
   {
+   "key": "Butter_DutchRubEnd2_Skin4",
+   "char": "Butter",
+   "name": "爆栗（星夜散步队长）",
+   "text": "都要掉下来啦！",
+   "textJa": "",
+   "textKo": "분단식이 떨어지겠어요!",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "星夜散步队长",
+   "alias": ""
+  },
+  {
    "key": "Butter_DutchRubEnd3_Skin1",
    "char": "Butter",
    "name": "爆栗3（安全卫士）",
@@ -50228,6 +50548,21 @@
    "group": "养成",
    "skin": "_Skin3",
    "skinName": "围裙马格南",
+   "alias": ""
+  },
+  {
+   "key": "Butter_Equipment_Skin4",
+   "char": "Butter",
+   "name": "装备（星夜散步队长）",
+   "text": "你能和朋友们一起玩，真是太好了。",
+   "textJa": "",
+   "textKo": "넌 친구들과 같이 놀 수 있어서 너무 좋아요.",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "星夜散步队长",
    "alias": ""
   },
   {
@@ -50390,6 +50725,21 @@
    "alias": ""
   },
   {
+   "key": "Butter_Growth1_Skin4",
+   "char": "Butter",
+   "name": "成长（星夜散步队长）",
+   "text": "哇！就像缀满星光的夜空一样！",
+   "textJa": "",
+   "textKo": "와! 마치 별림이 가득한 밤하늘 같아요!",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "星夜散步队长",
+   "alias": ""
+  },
+  {
    "key": "Butter_Growth2",
    "char": "Butter",
    "name": "成长2",
@@ -50450,6 +50800,21 @@
    "group": "养成",
    "skin": "_Skin3",
    "skinName": "围裙马格南",
+   "alias": ""
+  },
+  {
+   "key": "Butter_Growth2_Skin4",
+   "char": "Butter",
+   "name": "成长2（星夜散步队长）",
+   "text": "想带上好多和朋友们分享的零食，跑去玩一圈。",
+   "textJa": "",
+   "textKo": "친구들과 나눠먹을 간식 잔뜩 들고 달림 보러 갈래요.",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "星夜散步队长",
    "alias": ""
   },
   {
@@ -50516,6 +50881,21 @@
    "alias": ""
   },
   {
+   "key": "Butter_HeroSkill_Skin4",
+   "char": "Butter",
+   "name": "高年级技能（星夜散步队长）",
+   "text": "叮铃叮铃。我的铃声传得更远啦。",
+   "textJa": "",
+   "textKo": "딸랑딸랑. 제 종소리가 더 멀리 퍼져요.",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "_Skin4",
+   "skinName": "星夜散步队长",
+   "alias": ""
+  },
+  {
    "key": "Butter_HeroUpgrade",
    "char": "Butter",
    "name": "升星",
@@ -50576,6 +50956,21 @@
    "group": "养成",
    "skin": "_Skin3",
    "skinName": "围裙马格南",
+   "alias": ""
+  },
+  {
+   "key": "Butter_HeroUpgrade_Skin4",
+   "char": "Butter",
+   "name": "升星（星夜散步队长）",
+   "text": "感觉自己变成了闪闪发亮的星星。",
+   "textJa": "",
+   "textKo": "반짝반짝 멋진 별림이 된 것만 같아요.",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "星夜散步队长",
    "alias": ""
   },
   {
@@ -50847,6 +51242,21 @@
    "group": "养成",
    "skin": "_Skin3",
    "skinName": "围裙马格南",
+   "alias": ""
+  },
+  {
+   "key": "Butter_LevelUp_Skin4",
+   "char": "Butter",
+   "name": "升级（星夜散步队长）",
+   "text": "现在连积雪的路也能走了。只要跟着黄油的脚印走哦。",
+   "textJa": "",
+   "textKo": "이제 눈이 쌓인 길도 걷든데요. 버터 발자국만 따라오세요.",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "星夜散步队长",
    "alias": ""
   },
   {
@@ -51773,6 +52183,21 @@
    "alias": ""
   },
   {
+   "key": "Butter_Touch1_1_Skin4",
+   "char": "Butter",
+   "name": "薅脸2（星夜散步队长）",
+   "text": "黄油不是铃铛哦，怎么拉也不会叮当响的。",
+   "textJa": "",
+   "textKo": "버터는 종이 아니에요. 당겨도 딸랑 소리 안 나요.",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "星夜散步队长",
+   "alias": ""
+  },
+  {
    "key": "Butter_Touch1_2",
    "char": "Butter",
    "name": "薅脸3",
@@ -51836,6 +52261,21 @@
    "alias": ""
   },
   {
+   "key": "Butter_Touch1_2_Skin4",
+   "char": "Butter",
+   "name": "薅脸3（星夜散步队长）",
+   "text": "咦？是怕我的脸冻着，才抓住我的吧？",
+   "textJa": "",
+   "textKo": "응? 볼이 시릴까 봐 잡아주신 거죠?",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "星夜散步队长",
+   "alias": ""
+  },
+  {
    "key": "Butter_Touch1_Skin1",
    "char": "Butter",
    "name": "薅脸1（安全卫士）",
@@ -51880,6 +52320,21 @@
    "group": "互动",
    "skin": "_Skin3",
    "skinName": "围裙马格南",
+   "alias": ""
+  },
+  {
+   "key": "Butter_Touch1_Skin4",
+   "char": "Butter",
+   "name": "薅脸1（星夜散步队长）",
+   "text": "别捏脸啦，牵我的手吧。",
+   "textJa": "",
+   "textKo": "볼 말고 손을 잡아 주세요.",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "星夜散步队长",
    "alias": ""
   },
   {
@@ -51962,6 +52417,21 @@
    "alias": ""
   },
   {
+   "key": "Butter_Touch2_1_Skin4",
+   "char": "Butter",
+   "name": "抚摸2（星夜散步队长）",
+   "text": "被夸了，尾巴都兴奋起来了。",
+   "textJa": "",
+   "textKo": "칭찬받아서 꼬리가 신났어요. 범인들 안 졸린가 봐요.",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "星夜散步队长",
+   "alias": ""
+  },
+  {
    "key": "Butter_Touch2_2",
    "char": "Butter",
    "name": "抚摸3",
@@ -52025,6 +52495,21 @@
    "alias": ""
   },
   {
+   "key": "Butter_Touch2_2_Skin4",
+   "char": "Butter",
+   "name": "抚摸3（星夜散步队长）",
+   "text": "数完星星就睡哦。一颗，两颗。",
+   "textJa": "",
+   "textKo": "별님을 다 세고 잘 거예요. 하나. 둘.",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "星夜散步队长",
+   "alias": ""
+  },
+  {
    "key": "Butter_Touch2_Skin1",
    "char": "Butter",
    "name": "抚摸（安全卫士）",
@@ -52069,6 +52554,21 @@
    "group": "互动",
    "skin": "_Skin3",
    "skinName": "围裙马格南",
+   "alias": ""
+  },
+  {
+   "key": "Butter_Touch2_Skin4",
+   "char": "Butter",
+   "name": "抚摸（星夜散步队长）",
+   "text": "连帽子上面都感觉暖暖的。",
+   "textJa": "",
+   "textKo": "모자 위로도 따뜻한 게 느껴져요.",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "星夜散步队长",
    "alias": ""
   },
   {
@@ -55210,6 +55710,7 @@
    "textJa": "こんなにかわいいウサギを叩くなんて？！",
    "textKo": "이렇게 사랑스러운 토끼를 때려?!",
    "langs": [
+    "ja",
     "ko"
    ],
    "group": "互动",
@@ -55351,6 +55852,7 @@
    "textJa": "こんなにかわいいウサギを叩くなんて？！",
    "textKo": "이렇게 사랑스러운 토끼를 때려?!",
    "langs": [
+    "ja",
     "ko"
    ],
    "group": "互动",
@@ -61265,6 +61767,7 @@
    "textJa": "今、私を叩きましたか？私の手にある酒瓶が見えませんか？",
    "textKo": "지금 절 치신겁니까? 제 손에 술병 안보이십니까?",
    "langs": [
+    "ja",
     "ko"
    ],
    "group": "互动",
@@ -61406,6 +61909,7 @@
    "textJa": "今、私を叩きましたか？私の手にある酒瓶が見えませんか？",
    "textKo": "지금 절 치신겁니까? 제 손에 술병 안보이십니까?",
    "langs": [
+    "ja",
     "ko"
    ],
    "group": "互动",
@@ -107369,6 +107873,7 @@
    "textJa": "私、何か間違えましたか？",
    "textKo": "제가 뭘 잘못했나요?",
    "langs": [
+    "ja",
     "ko"
    ],
    "group": "互动",
@@ -107478,6 +107983,7 @@
    "textJa": "私、何か間違えましたか？",
    "textKo": "제가 뭘 잘못했나요?",
    "langs": [
+    "ja",
     "ko"
    ],
    "group": "互动",
@@ -125043,6 +125549,2106 @@
    "textKo": "엥?",
    "langs": [
     "ja",
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Affinity1_1",
+   "char": "Coffe",
+   "name": "好感度1_1",
+   "text": "您好，教主。这次想喝什么咖啡呢？",
+   "textJa": "こんにちは、教主様。今回はどんなコーヒーが飲みたいですか？",
+   "textKo": "안녕하세요, 교주님. 이번에는 어떤 커피를 드시고 싶으신가요?",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Affinity1_2",
+   "char": "Coffe",
+   "name": "好感度1_2",
+   "text": "问我最擅长做什么咖啡？呵呵！所有咖啡我都能做得完美无缺！",
+   "textJa": "私が一番得意なコーヒーですか？ふふっ！どんなコーヒーでも完璧に作れますよ！",
+   "textKo": "제가 가장 잘 만드는 커피요? 후훗! 전 모든 커피를 완벽하게 만들 수 있답니다!",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Affinity1_3",
+   "char": "Coffe",
+   "name": "好感度1_3",
+   "text": "问我怎么看温热的冰美式？当然喜欢！所有咖啡我都喜欢！",
+   "textJa": "温かいアイスアメリカーノをどう思うか、ですか？もちろん大好きです！私はどんなコーヒーも好きなんです！",
+   "textKo": "따뜻한 아이스 아메리카노를 어떻게 생각하냐구요? 물론 좋아하죠! 저는 모든 커피를 좋아한답니다!",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Affinity2",
+   "char": "Coffe",
+   "name": "好感度2",
+   "text": "我觉得，和努力同样重要的，是分清什么时候该用力，什么时候不该。",
+   "textJa": "頑張るのと同じくらい、力を入れる時と抜く時を見極めるのが大切なんだと思います。",
+   "textKo": "열심히 하는 것 못지 않게 중요한 건 힘을 줄 때와 아닐 때를 구분하는 것 같아요.",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Affinity3",
+   "char": "Coffe",
+   "name": "好感度3",
+   "text": "客人喝过我的咖啡，露出放松的表情时，我的心情也会不由自主地好起来。",
+   "textJa": "私のコーヒーを飲んだお客様がほっとした顔をすると、私までうれしくなるんです。",
+   "textKo": "제 커피를 마시고 손님께서 편안한 표정을 지어주시면 괜히 제 기분이 다 좋아지는 것 같아요.",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Affinity4",
+   "char": "Coffe",
+   "name": "好感度4",
+   "text": "感觉我和妖精王国居民的关系比以前好多了。一定是多亏了教主的帮助！",
+   "textJa": "妖精王国の皆さんと、前より仲良くなれた気がします。教主様が助けてくださったおかげですね！",
+   "textKo": "왠지 전보다 요정 왕국 주민들이랑 사이가 좋아진 것 같아요. 교주님께서 도와주신 덕분인 것 같아요!",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Affinity5",
+   "char": "Coffe",
+   "name": "好感度5",
+   "text": "教主，要喝咖啡吗？这是我想着您给人的感觉，专门做出来的咖啡！",
+   "textJa": "教主様、コーヒーはいかがですか？教主様のイメージを思い浮かべながら作った一杯です！",
+   "textKo": "교주님, 커피 드실래요? 교주님 하면 떠오르는 이미지를 생각하면서 만든 커피예요!",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Affinity6",
+   "char": "Coffe",
+   "name": "好感度6",
+   "text": "教主，如果打算举办冰沙派送活动，请随时告诉我！我也想帮忙！",
+   "textJa": "教主様、フラッペの配布イベントを開く予定があれば、気軽に教えてください！お手伝いしたいんです！",
+   "textKo": "교주님, 프라페 나눔 행사를 열 계획이 있으시다면 저에게 편하게 말해주세요! 도움이 되고 싶어요!",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Affinity7",
+   "char": "Coffe",
+   "name": "好感度7",
+   "text": "我也希望有一天，能像教主一样，成为让人安心依靠的存在……！",
+   "textJa": "私もいつか、教主様みたいに安心して頼れる存在になりたいです……！",
+   "textKo": "저, 언젠가 교주님처럼 마음 편하게 기댈 수 있는 존재가 되고 싶어요…!",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Affinity7_2",
+   "char": "Coffe",
+   "name": "好感度7_2",
+   "text": "我也希望有一天，能像教主一样，成为让人安心依靠的存在……！",
+   "textJa": "私もいつか、教主様みたいに安心して頼れる存在になりたいです……！",
+   "textKo": "저, 언젠가 교주님처럼 마음 편하게 기댈 수 있는 존재가 되고 싶어요…!",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": "Coffe_Affinity7"
+  },
+  {
+   "key": "Coffe_Anger1",
+   "char": "Coffe",
+   "name": "生气1",
+   "text": "呃嘿嘿嘿！",
+   "textJa": "うへへへ！",
+   "textKo": "으헤헤헤!",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Anger2",
+   "char": "Coffe",
+   "name": "生气2",
+   "text": "你在干什么？",
+   "textJa": "何してるの？",
+   "textKo": "너 뭐하냐?",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Anger3",
+   "char": "Coffe",
+   "name": "生气3",
+   "text": "呱啊！",
+   "textJa": "ぐわあ！",
+   "textKo": "콰아!",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Anger4",
+   "char": "Coffe",
+   "name": "生气4",
+   "text": "竟敢亵渎我的咖啡！",
+   "textJa": "よくも私のコーヒーを侮辱したわね！",
+   "textKo": "감히 내 커피를 모독했겠다!",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Anger5",
+   "char": "Coffe",
+   "name": "生气5",
+   "text": "不可饶恕！",
+   "textJa": "許せない！",
+   "textKo": "용서 못해!",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_AsideGet",
+   "char": "Coffe",
+   "name": "解锁坨格",
+   "text": "把这杯完美的咖啡端给客人的话，客人的疲惫就会慢慢地融化掉吧？",
+   "textJa": "",
+   "textKo": "이 완벽한 커피를 손님께 떼어드린다면 손님의 피로가 사르르 풀리겠지?",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_AsideGet1",
+   "char": "Coffe",
+   "name": "解锁坨格1",
+   "text": "把这杯完美的咖啡端给客人的话，客人的疲惫就会慢慢地融化掉吧？",
+   "textJa": "",
+   "textKo": "이 완벽한 커피를 손님께 떼어드린다면 손님의 피로가 사르르 풀리겠지?",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": "Coffe_AsideGet"
+  },
+  {
+   "key": "Coffe_AsideGet2",
+   "char": "Coffe",
+   "name": "解锁坨格2",
+   "text": "把这杯完美的咖啡端给客人的话，客人的疲惫就会慢慢地融化掉吧？",
+   "textJa": "",
+   "textKo": "이 완벽한 커피를 손님께 떼어드린다면 손님의 피로가 사르르 풀리겠지?",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": "Coffe_AsideGet"
+  },
+  {
+   "key": "Coffe_AsideUpgrade",
+   "char": "Coffe",
+   "name": "坨格升级",
+   "text": "我一定会查明这杯咖啡的配方，让客人幸福起来的。",
+   "textJa": "",
+   "textKo": "반드시 이 커피의 레시피를 알아내서 손님을 행복하게 만들어 드릴 거야",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_AsideUpgrade1",
+   "char": "Coffe",
+   "name": "坨格升级1",
+   "text": "我一定会查明这杯咖啡的配方，让客人幸福起来的。",
+   "textJa": "",
+   "textKo": "반드시 이 커피의 레시피를 알아내서 손님을 행복하게 만들어 드릴 거야",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": "Coffe_AsideUpgrade"
+  },
+  {
+   "key": "Coffe_AsideUpgrade2",
+   "char": "Coffe",
+   "name": "坨格升级2",
+   "text": "我一定会查明这杯咖啡的配方，让客人幸福起来的。",
+   "textJa": "",
+   "textKo": "반드시 이 커피의 레시피를 알아내서 손님을 행복하게 만들어 드릴 거야",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": "Coffe_AsideUpgrade"
+  },
+  {
+   "key": "Coffe_BasicAttack1",
+   "char": "Coffe",
+   "name": "普通攻击1",
+   "text": "接招吧，咖啡豆！",
+   "textJa": "コーヒー豆でも受けなさい！",
+   "textKo": "원두나 받으세요!",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_BasicAttack2",
+   "char": "Coffe",
+   "name": "普通攻击2",
+   "text": "咔啊啊啊！",
+   "textJa": "くあああ！",
+   "textKo": "크아아아!",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Birthday",
+   "char": "Coffe",
+   "name": "生日",
+   "text": "教主，生日快乐！希望您今天能度过完美的一天！",
+   "textJa": "教主様、お誕生日おめでとうございます！今日が完璧な一日になりますように！",
+   "textKo": "교주님, 생일 축하드려요! 오늘 하루가 완벽한 하루가 되기를 바랄게요!",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Board",
+   "char": "Coffe",
+   "name": "涂色板",
+   "text": "我去提供咖啡外送服务啦～",
+   "textJa": "コーヒーのケータリングに行ってきます～。",
+   "textKo": "커피 케이터링하러 가겠습니다~",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Board_Skin1",
+   "char": "Coffe",
+   "name": "涂色板（热情满满的经理）",
+   "text": "球好像掉在这附近了～？",
+   "textJa": "この辺にボールが落ちた気がするんですけど～？",
+   "textKo": "공이 여기 어딘가에 떨어진 거 같은데~?",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin1",
+   "skinName": "热情满满的经理",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_CallHero1",
+   "char": "Coffe",
+   "name": "呼唤使徒1",
+   "text": "祭司长？",
+   "textJa": "祭司長様？",
+   "textKo": "사제장님?",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_CallHero2",
+   "char": "Coffe",
+   "name": "呼唤使徒2",
+   "text": "客人？",
+   "textJa": "お客様？",
+   "textKo": "손님?",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_CallHero3",
+   "char": "Coffe",
+   "name": "呼唤使徒3",
+   "text": "客人？",
+   "textJa": "お客様？",
+   "textKo": "손님?",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_CallPlayer1",
+   "char": "Coffe",
+   "name": "呼唤教主1",
+   "text": "教主！",
+   "textJa": "教主様！",
+   "textKo": "교주님!",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_CallPlayer2",
+   "char": "Coffe",
+   "name": "呼唤教主2",
+   "text": "教主？",
+   "textJa": "教主様？",
+   "textKo": "교주님?",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_CallPlayer3",
+   "char": "Coffe",
+   "name": "呼唤教主3",
+   "text": "教主，教主！",
+   "textJa": "教主様、教主様！",
+   "textKo": "교주님, 교주님!",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_CallPlayer4",
+   "char": "Coffe",
+   "name": "呼唤教主4",
+   "text": "教主！",
+   "textJa": "教主様！",
+   "textKo": "교주님!",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_CallPlayer5",
+   "char": "Coffe",
+   "name": "呼唤教主5",
+   "text": "教主。",
+   "textJa": "教主様。",
+   "textKo": "교주님.",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_DeckSetting1",
+   "char": "Coffe",
+   "name": "入队1",
+   "text": "大家都喜欢什么样的咖啡呢～？",
+   "textJa": "皆さん、どんなコーヒーがお好きでしょう～？",
+   "textKo": "다들 어떤 커피를 좋아하시려나~?",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_DeckSetting2",
+   "char": "Coffe",
+   "name": "入队2",
+   "text": "大家都看着呢，我得表现得更加完美……！",
+   "textJa": "みんなが見ているから、もっと完璧に振る舞わなきゃ……！",
+   "textKo": "모두가 보고 있으니까 더 완벽하게 행동해야 해…!",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Defeat1",
+   "char": "Coffe",
+   "name": "战败1",
+   "text": "呜……看来我对这份工作还不够熟练……",
+   "textJa": "ううっ……この仕事はまだ完璧に習熟できていないようです……。",
+   "textKo": "으윽… 아직 이 일에는 완벽하게 숙련되지 않은 것 같습니다….",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Defeat2",
+   "char": "Coffe",
+   "name": "战败2",
+   "text": "呀啊啊！到、到底哪里出了问题？！",
+   "textJa": "きゃああっ！な、何がいけなかったの？！",
+   "textKo": "캬아아앗! 뭐, 뭐가 문제였던 거지?!",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Die",
+   "char": "Coffe",
+   "name": "被击倒",
+   "text": "啊！我把咖啡豆落下了！",
+   "textJa": "うわっ！コーヒー豆を置いてきちゃった！",
+   "textKo": "으악! 원두를 두고 나왔다!",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": "Coffe_Die1"
+  },
+  {
+   "key": "Coffe_Die1",
+   "char": "Coffe",
+   "name": "被击倒1",
+   "text": "啊！我把咖啡豆落下了！",
+   "textJa": "うわっ！コーヒー豆を置いてきちゃった！",
+   "textKo": "으악! 원두를 두고 나왔다!",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Die2",
+   "char": "Coffe",
+   "name": "被击倒2",
+   "text": "您点的咖啡还没做好呢！！",
+   "textJa": "ご注文のコーヒー、まだできていません！！",
+   "textKo": "주문하신 커피 아직 안 나왔습니다!!",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_DutchRubEnd1",
+   "char": "Coffe",
+   "name": "爆栗1",
+   "text": "呀！",
+   "textJa": "きゃっ！",
+   "textKo": "캬앗!",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_DutchRubEnd1_Skin1",
+   "char": "Coffe",
+   "name": "爆栗1（热情满满的经理）",
+   "text": "教主……您是无聊了才这样吧？我来让您不无聊。深蹲二十次，开始！！",
+   "textJa": "教主様……退屈だからですよね？退屈しないようにしてあげます。スクワット20回、開始！！",
+   "textKo": "교주님… 심심하셔서 그런 거죠? 안 심심하게 해드릴게요. 스쿼트 20회 실시!!",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin1",
+   "skinName": "热情满满的经理",
+   "alias": "Coffe_DutchRubEnd2_Skin1"
+  },
+  {
+   "key": "Coffe_DutchRubEnd2",
+   "char": "Coffe",
+   "name": "爆栗",
+   "text": "教主只是手滑了，对吧？我就这样相信了哦……！",
+   "textJa": "教主様、手が滑ったんですよね？そう信じます……！",
+   "textKo": "교주님 손이 미끄러지신 거죠? 그렇게 믿을게요…!",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_DutchRubEnd2_Skin1",
+   "char": "Coffe",
+   "name": "爆栗（热情满满的经理）",
+   "text": "教主……您是无聊了才这样吧？我来让您不无聊。深蹲二十次，开始！！",
+   "textJa": "教主様……退屈だからですよね？退屈しないようにしてあげます。スクワット20回、開始！！",
+   "textKo": "교주님… 심심하셔서 그런 거죠? 안 심심하게 해드릴게요. 스쿼트 20회 실시!!",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin1",
+   "skinName": "热情满满的经理",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_DutchRubEnd3_Skin1",
+   "char": "Coffe",
+   "name": "爆栗3（热情满满的经理）",
+   "text": "教主……您是无聊了才这样吧？我来让您不无聊。深蹲二十次，开始！！",
+   "textJa": "教主様……退屈だからですよね？退屈しないようにしてあげます。スクワット20回、開始！！",
+   "textKo": "교주님… 심심하셔서 그런 거죠? 안 심심하게 해드릴게요. 스쿼트 20회 실시!!",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin1",
+   "skinName": "热情满满的经理",
+   "alias": "Coffe_DutchRubEnd2_Skin1"
+  },
+  {
+   "key": "Coffe_Eat1",
+   "char": "Coffe",
+   "name": "进食1",
+   "text": "啊姆，嚼嚼嚼～",
+   "textJa": "あむ、もぐもぐ～。",
+   "textKo": "암냠냠냠~",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Equipment",
+   "char": "Coffe",
+   "name": "装备",
+   "text": "穿上这个，会不会更像专业咖啡师呢？呵呵！",
+   "textJa": "これを着たら、もっとプロのバリスタらしく見えるでしょうか？ふふっ！",
+   "textKo": "이걸 입으면 더 프로페셔널한 바리스텐더로 보일까요? 후훗!",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Equipment_Skin1",
+   "char": "Coffe",
+   "name": "装备（热情满满的经理）",
+   "text": "这衣服真舒服！也想给选手们准备一套！",
+   "textJa": "本当に着心地がいいですね！選手の皆さんにも用意してあげたいです！",
+   "textKo": "정말 편한 옷인데요? 선수들에게도 챙겨주고 싶어요!",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin1",
+   "skinName": "热情满满的经理",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Gacha1",
+   "char": "Coffe",
+   "name": "抽卡1",
+   "text": "可菲",
+   "textJa": "コペ",
+   "textKo": "코페",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Gacha2",
+   "char": "Coffe",
+   "name": "抽卡2",
+   "text": "想让心情放松下来，就请来我的咖啡馆吧。",
+   "textJa": "心を落ち着かせたい時は、私のカフェにいらしてください。",
+   "textKo": "마음이 편안해지고 싶으시다면 제 카페를 찾아와 주세요.",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Gacha3",
+   "char": "Coffe",
+   "name": "抽卡3",
+   "text": "您点的咖啡来啦～",
+   "textJa": "ご注文のコーヒーをお持ちしました～。",
+   "textKo": "주문하신 커피 나왔습니다~",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Gacha4",
+   "char": "Coffe",
+   "name": "抽卡4",
+   "text": "我的名字是！",
+   "textJa": "私の名前は！",
+   "textKo": "저의 이름은!",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Greeting",
+   "char": "Coffe",
+   "name": "问候",
+   "text": "您好。",
+   "textJa": "こんにちは。",
+   "textKo": "안녕하세요.",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Growth",
+   "char": "Coffe",
+   "name": "成长",
+   "text": "我是可菲。",
+   "textJa": "コペです。",
+   "textKo": "코페입니다.",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Growth1",
+   "char": "Coffe",
+   "name": "成长",
+   "text": "我正在成为不断成长、又完美无缺的咖啡师！",
+   "textJa": "成長し続ける、完成されたバリスタになりつつあります！",
+   "textKo": "성장형이자 완성형 바리스텐더가 되고 있어요!",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Growth1_Skin1",
+   "char": "Coffe",
+   "name": "成长（热情满满的经理）",
+   "text": "经理也要成长，选手们才能跟着成长呀～",
+   "textJa": "マネージャーも成長してこそ、選手たちも成長できるんですよ～。",
+   "textKo": "매니저도 성장해야 선수들도 성장할 수 있다구요~",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin1",
+   "skinName": "热情满满的经理",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Growth2",
+   "char": "Coffe",
+   "name": "成长2",
+   "text": "忽然想为自己泡一杯咖啡呢。辛苦了，可菲！",
+   "textJa": "なんだか自分のためにコーヒーを淹れたくなりました。お疲れさま、コペ！",
+   "textKo": "왠지 저 자신을 위한 커피를 내주고 싶네요. 수고했어, 코페!",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Growth2_Skin1",
+   "char": "Coffe",
+   "name": "成长2（热情满满的经理）",
+   "text": "经理要做的事可多了。当然，我什么都能完美完成哦？呵呵！",
+   "textJa": "マネージャーにはやることがたくさんあります。もちろん、私は何でも完璧にこなしますよ？ふふっ！",
+   "textKo": "매니저는 많은 걸 해야 하죠. 물론 전 뭐든지 완벽하게 해낸답니다? 후훗!",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin1",
+   "skinName": "热情满满的经理",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_HeroSkill",
+   "char": "Coffe",
+   "name": "高年级技能",
+   "text": "要做出更完美的咖啡，当然得有娴熟的技艺！",
+   "textJa": "もっと完璧なコーヒーを作るには、熟練の技が必要なんです！",
+   "textKo": "더 완벽한 커피를 만들기 위해선 숙련된 기술이 필요한 법이죠!",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_HeroSkill_Skin1",
+   "char": "Coffe",
+   "name": "高年级技能（热情满满的经理）",
+   "text": "现在我一次能搬更多东西了哦？呵呵！",
+   "textJa": "一度にもっとたくさん荷物を運べるようになったんですよ？ふふっ！",
+   "textKo": "이제 한번에 짐을 더 많이 가져올 수 있답니다? 후훗?",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "_Skin1",
+   "skinName": "热情满满的经理",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_HeroUpgrade",
+   "char": "Coffe",
+   "name": "升星",
+   "text": "一步、再一步！我正逐渐接近完美！",
+   "textJa": "一歩、また一歩！完璧に近づいています！",
+   "textKo": "한 걸음, 한 걸음! 완벽에 가까워지고 있어요!",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_HeroUpgrade_Skin1",
+   "char": "Coffe",
+   "name": "升星（热情满满的经理）",
+   "text": "我要成为更加完美的经理……为夺冠出一份力！",
+   "textJa": "もっと完璧なマネージャーになって……優勝に貢献します！",
+   "textKo": "더 완벽한 매니저가 되어서… 우승에 일조하겠어요!",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin1",
+   "skinName": "热情满满的经理",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Hit1",
+   "char": "Coffe",
+   "name": "受击1",
+   "text": "咕呜呜……",
+   "textJa": "ぐうう…",
+   "textKo": "그으으…",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Hit2",
+   "char": "Coffe",
+   "name": "受击2",
+   "text": "呀！",
+   "textJa": "きゃっ！",
+   "textKo": "꺄!",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Hit3",
+   "char": "Coffe",
+   "name": "受击3",
+   "text": "呜哇！",
+   "textJa": "うわっ！",
+   "textKo": "으악!",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Hit4",
+   "char": "Coffe",
+   "name": "受击4",
+   "text": "这不完美！",
+   "textJa": "完璧じゃない！",
+   "textKo": "완벽하지 않아!",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Hit5",
+   "char": "Coffe",
+   "name": "受击5",
+   "text": "咕诶诶！",
+   "textJa": "ぐええっ！",
+   "textKo": "거에에엑!",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Hmm1",
+   "char": "Coffe",
+   "name": "思考1",
+   "text": "嗯？",
+   "textJa": "ん？",
+   "textKo": "응?",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Hmm2",
+   "char": "Coffe",
+   "name": "思考2",
+   "text": "呼呜呜……",
+   "textJa": "ふうう…",
+   "textKo": "후우우…",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Hmm3",
+   "char": "Coffe",
+   "name": "思考3",
+   "text": "唔……",
+   "textJa": "ふむ…",
+   "textKo": "흠…",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Joy1",
+   "char": "Coffe",
+   "name": "高兴1",
+   "text": "哇啊！",
+   "textJa": "わあ！",
+   "textKo": "와아!",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Joy2",
+   "char": "Coffe",
+   "name": "高兴2",
+   "text": "啊呵呵！",
+   "textJa": "あふふ！",
+   "textKo": "아흐흐!",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Joy3",
+   "char": "Coffe",
+   "name": "高兴3",
+   "text": "诶嘿嘿！",
+   "textJa": "えへへ！",
+   "textKo": "에헤헤!",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Joy4",
+   "char": "Coffe",
+   "name": "高兴4",
+   "text": "好开心。",
+   "textJa": "嬉しいです。",
+   "textKo": "기뻐요.",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Joy5",
+   "char": "Coffe",
+   "name": "高兴5",
+   "text": "谢谢您。",
+   "textJa": "ありがとうございます。",
+   "textKo": "감사해요.",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_LevelUp",
+   "char": "Coffe",
+   "name": "升级",
+   "text": "感觉自己就像风味更醇厚的咖啡！",
+   "textJa": "味わいがもっと深いコーヒーになった気分です！",
+   "textKo": "더 깊은 맛을 내는 커피가 된 것만 같아요!",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_LevelUp_Skin1",
+   "char": "Coffe",
+   "name": "升级（热情满满的经理）",
+   "text": "身体轻快多了！这样就能更敏捷地送饮料了！",
+   "textJa": "体がぐっと軽くなりました！もっと素早く飲み物を届けられますね！",
+   "textKo": "몸이 한결 가벼워졌어요! 더 민첩하게 음료를 가져다줄 수 있겠네요!",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin1",
+   "skinName": "热情满满的经理",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Line1",
+   "char": "Coffe",
+   "name": "台词1",
+   "text": "我会成为艾利亚斯最完美的咖啡师！",
+   "textJa": "エリアスで一番完璧なバリスタになります！",
+   "textKo": "엘리아스에서 가장 완벽한 바리스텐더가 될 것입니다!",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Line2",
+   "char": "Coffe",
+   "name": "台词2",
+   "text": "想歇一口气吗？喝了我的咖啡，心情就会放松下来。",
+   "textJa": "一息つきたいですか？私のコーヒーを飲めば、心が落ち着きますよ。",
+   "textKo": "한숨 돌리고 싶으시나요? 제 커피를 마시면 마음이 편안해질 거예요.",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Line3",
+   "char": "Coffe",
+   "name": "台词3",
+   "text": "咖啡很好喝？呵呵！当然啦，这可是我可菲做的！",
+   "textJa": "コーヒーがおいしいですか？ふふっ！だって、このコペが作ったんですから！",
+   "textKo": "커피가 맛있다구요? 후훗! 그거야 저 코페가 만든 커피니까요!",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Lobby",
+   "char": "Coffe",
+   "name": "大厅",
+   "text": "这温度，这湿度……我想到最适合这里的咖啡了！",
+   "textJa": "この温度、この湿度……この場所にぴったりのコーヒーが思い浮かびました！",
+   "textKo": "이 온도, 이 습도… 이 장소에 딱 맞는 커피가 생각난다!",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_No1",
+   "char": "Coffe",
+   "name": "否定1",
+   "text": "唔嗯……",
+   "textJa": "ううん…",
+   "textKo": "으음…",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_No2",
+   "char": "Coffe",
+   "name": "否定2",
+   "text": "这个有点……",
+   "textJa": "それはちょっと…",
+   "textKo": "그건 좀…",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_No3",
+   "char": "Coffe",
+   "name": "否定3",
+   "text": "不是的。",
+   "textJa": "違います。",
+   "textKo": "아니에요.",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Pleasure1",
+   "char": "Coffe",
+   "name": "愉悦1",
+   "text": "哦呵呵！",
+   "textJa": "おほほ！",
+   "textKo": "어허허!",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Pleasure2",
+   "char": "Coffe",
+   "name": "愉悦2",
+   "text": "呵呵！",
+   "textJa": "ふふっ！",
+   "textKo": "흐흑!",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Pleasure3",
+   "char": "Coffe",
+   "name": "愉悦3",
+   "text": "请看。",
+   "textJa": "ご覧ください。",
+   "textKo": "보시죠.",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Pleasure4",
+   "char": "Coffe",
+   "name": "愉悦4",
+   "text": "真完美。",
+   "textJa": "完璧ですね。",
+   "textKo": "완벽하군요.",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Pleasure5",
+   "char": "Coffe",
+   "name": "愉悦5",
+   "text": "这是理所当然的。",
+   "textJa": "当然のことです。",
+   "textKo": "당연한 일입니다.",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_PowerAttack1",
+   "char": "Coffe",
+   "name": "强力攻击1",
+   "text": "这招怎么样？",
+   "textJa": "これはいかがですか？",
+   "textKo": "이건 어떠세요?",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_PowerAttack2",
+   "char": "Coffe",
+   "name": "强力攻击2",
+   "text": "咕诶诶！",
+   "textJa": "ぐえええ！",
+   "textKo": "그에에에!",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_SPSkill1",
+   "char": "Coffe",
+   "name": "低年级技能1",
+   "text": "嗯，真是好香。",
+   "textJa": "うん、本当にいい香り。",
+   "textKo": "음, 정말 좋은 향기야.",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_SPSkill2",
+   "char": "Coffe",
+   "name": "低年级技能2",
+   "text": "哦呵呵！",
+   "textJa": "おほほ！",
+   "textKo": "어허허!",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_SPSkill3",
+   "char": "Coffe",
+   "name": "低年级技能3",
+   "text": "完美萃取！",
+   "textJa": "完璧な抽出！",
+   "textKo": "완벽한 추출!",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Shout1",
+   "char": "Coffe",
+   "name": "喊叫1",
+   "text": "嘿咻！",
+   "textJa": "よいしょ！",
+   "textKo": "영차!",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Shout2",
+   "char": "Coffe",
+   "name": "喊叫2",
+   "text": "呀！",
+   "textJa": "やっ！",
+   "textKo": "얍!",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Shout3",
+   "char": "Coffe",
+   "name": "喊叫3",
+   "text": "哈啊！",
+   "textJa": "はあっ！",
+   "textKo": "하앗!",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Shout4",
+   "char": "Coffe",
+   "name": "喊叫4",
+   "text": "啾哇！",
+   "textJa": "きゅわっ！",
+   "textKo": "뀨압!",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Shout5",
+   "char": "Coffe",
+   "name": "喊叫5",
+   "text": "咔啊啊！",
+   "textJa": "くああ！",
+   "textKo": "크아아!",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Sorrow1",
+   "char": "Coffe",
+   "name": "伤心1",
+   "text": "呜啊……",
+   "textJa": "うあっ…",
+   "textKo": "으앗…",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Sorrow2",
+   "char": "Coffe",
+   "name": "伤心2",
+   "text": "咕……",
+   "textJa": "くっ…",
+   "textKo": "크…",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Sorrow3",
+   "char": "Coffe",
+   "name": "伤心3",
+   "text": "呜呼……",
+   "textJa": "うふ…",
+   "textKo": "우후…",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Sorrow4",
+   "char": "Coffe",
+   "name": "伤心4",
+   "text": "呜嗯……呜嗯……",
+   "textJa": "ううん…ううん…",
+   "textKo": "으흠… 으흠…",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Sorrow5",
+   "char": "Coffe",
+   "name": "伤心5",
+   "text": "呜呜呜……",
+   "textJa": "ううう…",
+   "textKo": "으으으…",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Sorry1",
+   "char": "Coffe",
+   "name": "道歉1",
+   "text": "对不起，真的很抱歉。",
+   "textJa": "申し訳ありません。ごめんなさい。",
+   "textKo": "죄송합니다. 죄송해요.",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Sorry2",
+   "char": "Coffe",
+   "name": "道歉2",
+   "text": "对不起。",
+   "textJa": "ごめんなさい。",
+   "textKo": "미안해요.",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Spawn1",
+   "char": "Coffe",
+   "name": "登场1",
+   "text": "哪位点了咖啡～？",
+   "textJa": "コーヒーをご注文の方～？",
+   "textKo": "커피 주문하신 분~?",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Spawn2",
+   "char": "Coffe",
+   "name": "登场2",
+   "text": "就像闭着眼做咖啡一样，我会完美完成的！",
+   "textJa": "目を閉じてコーヒーを淹れるように、完璧にこなします！",
+   "textKo": "눈 감고 커피를 만드는 것처럼 완벽하게 해내겠어요!",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Stage",
+   "char": "Coffe",
+   "name": "入场",
+   "text": "朝着完美，全力奔跑！",
+   "textJa": "完璧を目指して、一生懸命走ります！",
+   "textKo": "완벽을 향해서 열심히 달리겠어요!",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_StartJourney1",
+   "char": "Coffe",
+   "name": "旅程开始1",
+   "text": "咖啡外送到啦～！",
+   "textJa": "コーヒーのお届けです～！",
+   "textKo": "커피 배달하러 왔습니다~!",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_StartJourney2",
+   "char": "Coffe",
+   "name": "旅程开始2",
+   "text": "今天也辛苦您了！",
+   "textJa": "今日もお疲れさまでした！",
+   "textKo": "오늘도 수고 많으셨어요!",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_StartJourney3",
+   "char": "Coffe",
+   "name": "旅程开始3",
+   "text": "您喜欢咖啡吗？我也喜欢！",
+   "textJa": "コーヒーはお好きですか？私も大好きです！",
+   "textKo": "커피 좋아하시나요? 저도 좋아해요!",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Surprise1",
+   "char": "Coffe",
+   "name": "惊讶1",
+   "text": "嘎啊啊！",
+   "textJa": "がああ！",
+   "textKo": "가아아!",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Surprise2",
+   "char": "Coffe",
+   "name": "惊讶2",
+   "text": "怎、怎么回事？",
+   "textJa": "な、何があったんですか？",
+   "textKo": "뭐, 무슨 일인가요?",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_TelephoneCall",
+   "char": "Coffe",
+   "name": "打电话",
+   "text": "诶……电话能打通吗……啊！接通了！您好，教主？我是可菲哦！您问我打电话有什么事吗？啊，那个……虽然可能有点突然……教主，您是不是有什么烦恼呀？我总觉得您最近常常露出想起开心事般的表情呢。如果您有什么烦恼的话，请随时来我的咖啡店坐坐吧。如果您需要有人听您说说话，无论多少次我都可以当那个倾听的人。当然，我未必能给教主完美又明智的答案，可是端上一杯好喝的咖啡、安安静静地听您倾诉这样的事，我还是很擅长的。就像平时教主您让我的内心变得安宁一样，我也想这样为教主做点什么。所以心里憋闷的时候，就来找可菲我吧。",
+   "textJa": "",
+   "textKo": "어... 전화가 되려나... 어! 받으셨다! 안녕하세요 교주님? 저 코페이입니다! 어떤 목적으로 통화했냐구요? 아, 그게... 갑작스러울 수도 있긴 한데... 교주님, 혹시 고민 같은 게 있으신가요? 요즘 들어서 생각이 기쁘신 표정을 자주 짓고 계시는 것 같더라구요. 만약에 고민 같은 게 있으시다면, 언제든지 제 카페에 찾아와 주세요. 교주님의 이야기를 들어줄 상대가 필요하다면, 제가 얼마든지 그 상대가 되어드릴게요. 물론 교주님의 고민에 완벽하고 현명한 답을 드리진 못할 수도 있어요. 하지만 맛있는 커피를 내어드리고 가만히 이야기를 들어드리는 것만큼은 잘할 수 있어요. 평소에 교주님께서 제 마음을 편안하게 만들어주시는 것처럼 저도 교주님께 그렇게 해드리고 싶거든요. 그러니까 마음이 답답할 때는 저 코페를 찾아와주세요.",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_TickleDuring1",
+   "char": "Coffe",
+   "name": "挠痒中1",
+   "text": "咯咯，啊哈哈哈！",
+   "textJa": "くくっ、あはははっ！",
+   "textKo": "크큭, 크하하핫!",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_TickleStart1",
+   "char": "Coffe",
+   "name": "挠痒开始1",
+   "text": "咯咯咯……",
+   "textJa": "くくくっ……。",
+   "textKo": "크크큭….",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Touch1",
+   "char": "Coffe",
+   "name": "薅脸1",
+   "text": "我的脸颊不是呼叫铃……",
+   "textJa": "私のほっぺは呼び出しベルじゃありません……。",
+   "textKo": "제 볼은 호출벨이 아니에요….",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Touch1_1",
+   "char": "Coffe",
+   "name": "薅脸2",
+   "text": "教主的手比想象中还厉害呢……",
+   "textJa": "教主様の手、思ったより痛いですね……。",
+   "textKo": "교주님의 손은 생각보다 맵네요….",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Touch1_1_Skin1",
+   "char": "Coffe",
+   "name": "薅脸2（热情满满的经理）",
+   "text": "呜……训练日志也没有漏记，为什么还要拉我的脸颊……",
+   "textJa": "ううっ……練習日誌に書き忘れたこともないのに、どうしてほっぺを引っ張るんですか……。",
+   "textKo": "으흑… 훈련 일지에 빠트린 것도 없는데 왜 볼을 잡아당기시나요….",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin1",
+   "skinName": "热情满满的经理",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Touch1_2",
+   "char": "Coffe",
+   "name": "薅脸3",
+   "text": "有什么投诉，请用说的……",
+   "textJa": "苦情があるなら、言葉でお願いします……。",
+   "textKo": "컴플레인이 있으시다면 말로 해주세요….",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Touch1_2_Skin1",
+   "char": "Coffe",
+   "name": "薅脸3（热情满满的经理）",
+   "text": "再这样，我就要在日志里记下您是态度不好的选手了！",
+   "textJa": "これ以上やったら、態度の悪い選手だって日誌に書きますよ！",
+   "textKo": "자꾸 이러면 태도가 안 좋은 선수라고 일지에 적을 거예요!",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin1",
+   "skinName": "热情满满的经理",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Touch1_Skin1",
+   "char": "Coffe",
+   "name": "薅脸1（热情满满的经理）",
+   "text": "呀！没必要连我的脸颊也一起训练啊！",
+   "textJa": "きゃっ！私のほっぺまで鍛える必要はありませんよ！",
+   "textKo": "캬앗! 제 볼따구까지 훈련시킬 필요는 없다구요!",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin1",
+   "skinName": "热情满满的经理",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Touch2",
+   "char": "Coffe",
+   "name": "抚摸",
+   "text": "诶、诶？！没、没想到会突然得到这样的夸奖……！",
+   "textJa": "え、ええっ？！きゅ、急にこんなに褒めてもらえるなんて……！",
+   "textKo": "어, 어엇?! 가, 갑자기 이런 칭찬을 받을 줄은 몰랐어요…!",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Touch2_1",
+   "char": "Coffe",
+   "name": "抚摸2",
+   "text": "这是在说我今天辛苦了吗？真的非常感谢！",
+   "textJa": "今日はお疲れさま、ということですか？本当にありがとうございます！",
+   "textKo": "오늘 하루 수고 많았다는 뜻인가요? 정말 감사해요!",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Touch2_1_Skin1",
+   "char": "Coffe",
+   "name": "抚摸2（热情满满的经理）",
+   "text": "我、我能给您的只有运动饮料……这个也可以吗？",
+   "textJa": "わ、私がお渡しできるのはスポーツドリンクくらいですが……これでも飲みますか？",
+   "textKo": "제, 제가 드릴 수 있는 게 이온 음료밖에 없는데… 이거라도 드실래요?",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin1",
+   "skinName": "热情满满的经理",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Touch2_2",
+   "char": "Coffe",
+   "name": "抚摸3",
+   "text": "呜呜……教主，不管您想喝什么咖啡，我都会为您做的！！",
+   "textJa": "ううう……教主様、飲みたいコーヒーがあれば何でも作ります！！",
+   "textKo": "우으으… 교주님, 드시고 싶으신 커피 있으시면 다 만들어 드릴게요!!",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Touch2_2_Skin1",
+   "char": "Coffe",
+   "name": "抚摸3（热情满满的经理）",
+   "text": "今后我也会努力为教主加油的。真的非常感谢！",
+   "textJa": "これからも教主様を精いっぱい応援します。本当にありがとうございます！",
+   "textKo": "앞으로도 교주님을 열심히 응원할게요. 정말 감사해요!",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin1",
+   "skinName": "热情满满的经理",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Touch2_Skin1",
+   "char": "Coffe",
+   "name": "抚摸（热情满满的经理）",
+   "text": "诶嘿嘿……我帮上教主的忙了吗？",
+   "textJa": "えへへ……教主様のお役に立てましたか？",
+   "textKo": "에헤헤… 제가 교주님께 도움이 되었나요?",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin1",
+   "skinName": "热情满满的经理",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Trickcal1",
+   "char": "Coffe",
+   "name": "游戏名1",
+   "text": "Trickcal Revive。",
+   "textJa": "トリッカル・リバイブ。",
+   "textKo": "트릭컬 리바이브.",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Trickcal2",
+   "char": "Coffe",
+   "name": "游戏名2",
+   "text": "Trickcal。",
+   "textJa": "トリッカル。",
+   "textKo": "트릭컬.",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Ultimate1",
+   "char": "Coffe",
+   "name": "高年级技能1",
+   "text": "最后的注水也要完美。",
+   "textJa": "仕上げのポアリングまで完璧に。",
+   "textKo": "마무리 푸어링까지 완벽하게.",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Ultimate2",
+   "char": "Coffe",
+   "name": "高年级技能2",
+   "text": "呀啊啊啊！",
+   "textJa": "きゃあああっ！",
+   "textKo": "꺄아아악!",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Ultimate3",
+   "char": "Coffe",
+   "name": "高年级技能3",
+   "text": "倾注心意的收尾。",
+   "textJa": "心を込めた仕上げ。",
+   "textKo": "정성 가득 마무리.",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Victory1",
+   "char": "Coffe",
+   "name": "胜利1",
+   "text": "呵呵！只要交给我，不管什么事我都会完美完成！",
+   "textJa": "ふふっ！任せていただければ、何でも完璧にこなします！",
+   "textKo": "후훗! 뭐든지 맡겨만 주신다면 완벽하게 해내겠습니다!",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Victory2",
+   "char": "Coffe",
+   "name": "胜利2",
+   "text": "来一杯完美的咖啡庆祝胜利，怎么样？",
+   "textJa": "勝利を祝う完璧なコーヒーを一杯、いかがですか？",
+   "textKo": "승리를 기념하는 완벽한 커피 한 잔 어떠신가요?",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Yes1",
+   "char": "Coffe",
+   "name": "肯定1",
+   "text": "是！",
+   "textJa": "はい！",
+   "textKo": "네!",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Yes2",
+   "char": "Coffe",
+   "name": "肯定2",
+   "text": "没错。",
+   "textJa": "そうです。",
+   "textKo": "맞아요.",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Coffe_Yes3",
+   "char": "Coffe",
+   "name": "肯定3",
+   "text": "完美的回答。",
+   "textJa": "完璧な答えです。",
+   "textKo": "완벽한 답입니다.",
+   "langs": [
     "ko"
    ],
    "group": "情绪",
@@ -176198,6 +178804,7 @@
    "textJa": "いつか全世界を旅して地図を作るんだ！",
    "textKo": "언젠가는 모든 세상을 여행하고, 지도를 만들 거야!",
    "langs": [
+    "ja",
     "ko"
    ],
    "group": "互动",
@@ -176309,6 +178916,7 @@
    "textJa": "さあ、心のコンパスが示すままに進んでみようか？",
    "textKo": "이제 내 마음의 나침반이 가리키는 대로 가볼까?",
    "langs": [
+    "ja",
     "ko"
    ],
    "group": "剧情",
@@ -176324,6 +178932,7 @@
    "textJa": "さあ、心のコンパスが示すままに進んでみようか？",
    "textKo": "이제 내 마음의 나침반이 가리키는 대로 가볼까?",
    "langs": [
+    "ja",
     "ko"
    ],
    "group": "剧情",
@@ -176355,6 +178964,7 @@
    "textJa": "これで完璧な探検にもっと近づいた気がする！",
    "textKo": "이걸로 완벽한 탐험에 더 가까워진 기분이야!",
    "langs": [
+    "ja",
     "ko"
    ],
    "group": "剧情",
@@ -176370,6 +178980,7 @@
    "textJa": "これで完璧な探検にもっと近づいた気がする！",
    "textKo": "이걸로 완벽한 탐험에 더 가까워진 기분이야!",
    "langs": [
+    "ja",
     "ko"
    ],
    "group": "剧情",
@@ -176732,6 +179343,7 @@
    "textJa": "まだ……旗も立ててないのに……。",
    "textKo": "아직… 깃발 못 꽂았는데….",
    "langs": [
+    "ja",
     "ko"
    ],
    "group": "战斗",
@@ -176795,6 +179407,7 @@
    "textJa": "お弁当、私一人で食べちゃうよ？",
    "textKo": "도시락 나 혼자 먹는다?",
    "langs": [
+    "ja",
     "ko"
    ],
    "group": "互动",
@@ -176810,6 +179423,7 @@
    "textJa": "うう！頭が熱い！",
    "textKo": "으으! 머리가 뜨거워!",
    "langs": [
+    "ja",
     "ko"
    ],
    "group": "互动",
@@ -176903,6 +179517,7 @@
    "textJa": "お弁当、私一人で食べちゃうよ？",
    "textKo": "도시락 나 혼자 먹는다?",
    "langs": [
+    "ja",
     "ko"
    ],
    "group": "互动",
@@ -176918,6 +179533,7 @@
    "textJa": "うう！頭が熱い！",
    "textKo": "으으! 머리가 뜨거워!",
    "langs": [
+    "ja",
     "ko"
    ],
    "group": "互动",
@@ -346671,6 +349287,7 @@
    "textJa": "何が不満なのよ！",
    "textKo": "뭐가 불만인건데!",
    "langs": [
+    "ja",
     "ko"
    ],
    "group": "互动",
@@ -346686,6 +349303,7 @@
    "textJa": "私たちの雰囲気、いい感じじゃない！",
    "textKo": "우리 분위기 좋았잖아!",
    "langs": [
+    "ja",
     "ko"
    ],
    "group": "互动",
@@ -346813,6 +349431,7 @@
    "textJa": "何が不満なのよ！",
    "textKo": "뭐가 불만인건데!",
    "langs": [
+    "ja",
     "ko"
    ],
    "group": "互动",
@@ -346828,6 +349447,7 @@
    "textJa": "私たちの雰囲気、いい感じじゃない！",
    "textKo": "우리 분위기 좋았잖아!",
    "langs": [
+    "ja",
     "ko"
    ],
    "group": "互动",
@@ -367035,7 +369655,7 @@
   {
    "key": "Silvia_Board_Skin3",
    "char": "Silvia",
-   "name": "涂色板（西尔维娅 Skin3）",
+   "name": "涂色板（初醒的银辉）",
    "text": "每走一步，都会更优雅地闪耀……",
    "textJa": "",
    "textKo": "한 걸음 나아갈때마다 한층 더 우아하게 빛날것이...",
@@ -367044,7 +369664,7 @@
    ],
    "group": "养成",
    "skin": "_Skin3",
-   "skinName": "西尔维娅 Skin3",
+   "skinName": "初醒的银辉",
    "alias": ""
   },
   {
@@ -367320,7 +369940,7 @@
   {
    "key": "Silvia_DutchRubEnd1_Skin3",
    "char": "Silvia",
-   "name": "爆栗1（西尔维娅 Skin3）",
+   "name": "爆栗1（初醒的银辉）",
    "text": "竟敢这样对待少女！",
    "textJa": "よくも、少女をこのように扱いましたわね！",
    "textKo": "감히, 소녀를 이런 식으로 다루다니!",
@@ -367329,7 +369949,7 @@
    ],
    "group": "互动",
    "skin": "_Skin3",
-   "skinName": "西尔维娅 Skin3",
+   "skinName": "初醒的银辉",
    "alias": "Silvia_DutchRubEnd2_Skin3"
   },
   {
@@ -367380,7 +370000,7 @@
   {
    "key": "Silvia_DutchRubEnd2_Skin3",
    "char": "Silvia",
-   "name": "爆栗（西尔维娅 Skin3）",
+   "name": "爆栗（初醒的银辉）",
    "text": "竟敢这样对待少女！",
    "textJa": "よくも、少女をこのように扱いましたわね！",
    "textKo": "감히, 소녀를 이런 식으로 다루다니!",
@@ -367389,7 +370009,7 @@
    ],
    "group": "互动",
    "skin": "_Skin3",
-   "skinName": "西尔维娅 Skin3",
+   "skinName": "初醒的银辉",
    "alias": ""
   },
   {
@@ -367425,7 +370045,7 @@
   {
    "key": "Silvia_DutchRubEnd3_Skin3",
    "char": "Silvia",
-   "name": "爆栗3（西尔维娅 Skin3）",
+   "name": "爆栗3（初醒的银辉）",
    "text": "竟敢这样对待少女！",
    "textJa": "よくも、少女をこのように扱いましたわね！",
    "textKo": "감히, 소녀를 이런 식으로 다루다니!",
@@ -367434,7 +370054,7 @@
    ],
    "group": "互动",
    "skin": "_Skin3",
-   "skinName": "西尔维娅 Skin3",
+   "skinName": "初醒的银辉",
    "alias": "Silvia_DutchRubEnd2_Skin3"
   },
   {
@@ -367560,7 +370180,7 @@
   {
    "key": "Silvia_Equipment_Skin3",
    "char": "Silvia",
-   "name": "装备（西尔维娅 Skin3）",
+   "name": "装备（初醒的银辉）",
    "text": "这是与我名字相称的美丽之物。",
    "textJa": "",
    "textKo": "지는 내 이름에 걸맞은 아름다운 물건이옵니다.",
@@ -367569,7 +370189,7 @@
    ],
    "group": "养成",
    "skin": "_Skin3",
-   "skinName": "西尔维娅 Skin3",
+   "skinName": "初醒的银辉",
    "alias": ""
   },
   {
@@ -367710,7 +370330,7 @@
   {
    "key": "Silvia_Growth1_Skin3",
    "char": "Silvia",
-   "name": "成长（西尔维娅 Skin3）",
+   "name": "成长（初醒的银辉）",
    "text": "愿温暖随着少女之光静静扩散！",
    "textJa": "",
    "textKo": "소녀의 빛과 함께, 따스한 온기가 담담히 퍼져나가길 해!",
@@ -367719,7 +370339,7 @@
    ],
    "group": "养成",
    "skin": "_Skin3",
-   "skinName": "西尔维娅 Skin3",
+   "skinName": "初醒的银辉",
    "alias": ""
   },
   {
@@ -367770,7 +370390,7 @@
   {
    "key": "Silvia_Growth2_Skin3",
    "char": "Silvia",
-   "name": "成长2（西尔维娅 Skin3）",
+   "name": "成长2（初醒的银辉）",
    "text": "要让你见识一下真正的眼神吗？",
    "textJa": "",
    "textKo": "진정한 눈빛이 무엇인지 보여드리겠나이다?",
@@ -367779,7 +370399,7 @@
    ],
    "group": "养成",
    "skin": "_Skin3",
-   "skinName": "西尔维娅 Skin3",
+   "skinName": "初醒的银辉",
    "alias": ""
   },
   {
@@ -367830,7 +370450,7 @@
   {
    "key": "Silvia_HeroSkill_Skin3",
    "char": "Silvia",
-   "name": "高年级技能（西尔维娅 Skin3）",
+   "name": "高年级技能（初醒的银辉）",
    "text": "更精致、更灿烂。",
    "textJa": "",
    "textKo": "정세하게 더 찬란하게",
@@ -367839,7 +370459,7 @@
    ],
    "group": "战斗",
    "skin": "_Skin3",
-   "skinName": "西尔维娅 Skin3",
+   "skinName": "初醒的银辉",
    "alias": ""
   },
   {
@@ -367890,7 +370510,7 @@
   {
    "key": "Silvia_HeroUpgrade_Skin3",
    "char": "Silvia",
-   "name": "升星（西尔维娅 Skin3）",
+   "name": "升星（初醒的银辉）",
    "text": "我、我不会满足于此！",
    "textJa": "",
    "textKo": "저, 실, 이 정도로 만족하지 않을 것이옵니다!",
@@ -367899,7 +370519,7 @@
    ],
    "group": "养成",
    "skin": "_Skin3",
-   "skinName": "西尔维娅 Skin3",
+   "skinName": "初醒的银辉",
    "alias": ""
   },
   {
@@ -368145,7 +370765,7 @@
   {
    "key": "Silvia_LevelUp_Skin3",
    "char": "Silvia",
-   "name": "升级（西尔维娅 Skin3）",
+   "name": "升级（初醒的银辉）",
    "text": "我已经不会再咳嗽了。",
    "textJa": "",
    "textKo": "기침 같은 건 이제 하지 않는 것이옵니다",
@@ -368154,7 +370774,7 @@
    ],
    "group": "养成",
    "skin": "_Skin3",
-   "skinName": "西尔维娅 Skin3",
+   "skinName": "初醒的银辉",
    "alias": ""
   },
   {
@@ -368865,7 +371485,7 @@
   {
    "key": "Silvia_Touch1_1_Skin3",
    "char": "Silvia",
-   "name": "薅脸2（西尔维娅 Skin3）",
+   "name": "薅脸2（初醒的银辉）",
    "text": "呜，请不要把少女当成小孩子。",
    "textJa": "うぅ、少女を子供扱いなさらないでくださいませ。",
    "textKo": "으, 소녀를 어린아이 취급하지는 마시옵소서.",
@@ -368874,7 +371494,7 @@
    ],
    "group": "互动",
    "skin": "_Skin3",
-   "skinName": "西尔维娅 Skin3",
+   "skinName": "初醒的银辉",
    "alias": ""
   },
   {
@@ -368925,7 +371545,7 @@
   {
    "key": "Silvia_Touch1_2_Skin3",
    "char": "Silvia",
-   "name": "薅脸3（西尔维娅 Skin3）",
+   "name": "薅脸3（初醒的银辉）",
    "text": "您就那么想摸少女吗？",
    "textJa": "それほどまでに触れたかったのでございますか？",
    "textKo": "그리도 만지고 싶으셨사옵니까?",
@@ -368934,7 +371554,7 @@
    ],
    "group": "互动",
    "skin": "_Skin3",
-   "skinName": "西尔维娅 Skin3",
+   "skinName": "初醒的银辉",
    "alias": ""
   },
   {
@@ -368970,7 +371590,7 @@
   {
    "key": "Silvia_Touch1_Skin3",
    "char": "Silvia",
-   "name": "薅脸1（西尔维娅 Skin3）",
+   "name": "薅脸1（初醒的银辉）",
    "text": "放肆！还请保持仪态。",
    "textJa": "無礼でございます！品位をお守りくださいませ。",
    "textKo": "무엄하옵니다! 품위를 지켜주시옵소서.",
@@ -368979,7 +371599,7 @@
    ],
    "group": "互动",
    "skin": "_Skin3",
-   "skinName": "西尔维娅 Skin3",
+   "skinName": "初醒的银辉",
    "alias": ""
   },
   {
@@ -369045,7 +371665,7 @@
   {
    "key": "Silvia_Touch2_1_Skin3",
    "char": "Silvia",
-   "name": "抚摸2（西尔维娅 Skin3）",
+   "name": "抚摸2（初醒的银辉）",
    "text": "嗯……再摸一会儿也可以。",
    "textJa": "んん……もう少しだけなら、よろしゅうございます。",
    "textKo": "으응... 조금만 더 하셔도 괜찮사옵니다.",
@@ -369054,7 +371674,7 @@
    ],
    "group": "互动",
    "skin": "_Skin3",
-   "skinName": "西尔维娅 Skin3",
+   "skinName": "初醒的银辉",
    "alias": ""
   },
   {
@@ -369105,7 +371725,7 @@
   {
    "key": "Silvia_Touch2_2_Skin3",
    "char": "Silvia",
-   "name": "抚摸3（西尔维娅 Skin3）",
+   "name": "抚摸3（初醒的银辉）",
    "text": "您这么温柔，会让少女很为难……",
    "textJa": "このように優しくされては困ります……",
    "textKo": "이리도 다정하시면 곤란하옵니다...",
@@ -369114,7 +371734,7 @@
    ],
    "group": "互动",
    "skin": "_Skin3",
-   "skinName": "西尔维娅 Skin3",
+   "skinName": "初醒的银辉",
    "alias": ""
   },
   {
@@ -369150,7 +371770,7 @@
   {
    "key": "Silvia_Touch2_Skin3",
    "char": "Silvia",
-   "name": "抚摸（西尔维娅 Skin3）",
+   "name": "抚摸（初醒的银辉）",
    "text": "您的手法很温柔。",
    "textJa": "お手つきが優しゅうございます。",
    "textKo": "손길이 상냥하시옵니다.",
@@ -369159,7 +371779,7 @@
    ],
    "group": "互动",
    "skin": "_Skin3",
-   "skinName": "西尔维娅 Skin3",
+   "skinName": "初醒的银辉",
    "alias": ""
   },
   {

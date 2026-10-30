@@ -1,5 +1,5 @@
 /* ------------------------------------------------------------------
- * characters/generated.js —— 自动生成的新角色数据（143 个）
+ * characters/generated.js —— 自动生成的新角色数据（144 个）
  *
  * ★ 本文件由 03_工具\批量生成角色文件.js 生成，**不要手改**。
  *   数据全部来自官方资源：
@@ -313,24 +313,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Alice_Surprise1",
     "Alice_Hmm1",
-    "Alice_Yes1",
-    ],
+    "Alice_Yes1"
+   ],
    "upsetVoice": [
     "Alice_Anger1",
     "Alice_No1",
-    "Alice_Anger2",
-    ],
+    "Alice_Anger2"
+   ],
    "hungryVoice": [
     "Alice_CallPlayer1",
     "Alice_Sorrow1",
-    "Alice_Hmm2",
-    ],
+    "Alice_Hmm2"
+   ],
    "greetVoice": [
     "Alice_Greeting",
     "Alice_Lobby",
     "Alice_Spawn1",
-    "Alice_Joy1",
-    ],
+    "Alice_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -689,24 +689,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Allet_Surprise1",
     "Allet_Hmm1",
-    "Allet_Yes1",
-    ],
+    "Allet_Yes1"
+   ],
    "upsetVoice": [
     "Allet_Anger1",
     "Allet_No1",
-    "Allet_Anger2",
-    ],
+    "Allet_Anger2"
+   ],
    "hungryVoice": [
     "Allet_CallPlayer1",
     "Allet_Sorrow1",
-    "Allet_Hmm2",
-    ],
+    "Allet_Hmm2"
+   ],
    "greetVoice": [
     "Allet_Greeting",
     "Allet_Lobby",
     "Allet_Spawn1",
-    "Allet_Joy1",
-    ],
+    "Allet_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -1095,24 +1095,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Amelia_Surprise1",
     "Amelia_Hmm1",
-    "Amelia_Yes1",
-    ],
+    "Amelia_Yes1"
+   ],
    "upsetVoice": [
     "Amelia_Anger1",
     "Amelia_No1",
-    "Amelia_Anger2",
-    ],
+    "Amelia_Anger2"
+   ],
    "hungryVoice": [
     "Amelia_CallPlayer1",
     "Amelia_Sorrow1",
-    "Amelia_Hmm2",
-    ],
+    "Amelia_Hmm2"
+   ],
    "greetVoice": [
     "Amelia_Greeting",
     "Amelia_Lobby",
     "Amelia_Spawn1",
-    "Amelia_Joy1",
-    ],
+    "Amelia_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -1486,24 +1486,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "AmeliaR41_Surprise1",
     "AmeliaR41_Hmm1",
-    "AmeliaR41_Yes1",
-    ],
+    "AmeliaR41_Yes1"
+   ],
    "upsetVoice": [
     "AmeliaR41_Anger1",
     "AmeliaR41_No1",
-    "AmeliaR41_Anger2",
-    ],
+    "AmeliaR41_Anger2"
+   ],
    "hungryVoice": [
     "AmeliaR41_CallPlayer1",
     "AmeliaR41_Sorrow1",
-    "AmeliaR41_Hmm2",
-    ],
+    "AmeliaR41_Hmm2"
+   ],
    "greetVoice": [
     "AmeliaR41_Greeting",
     "AmeliaR41_Lobby",
     "AmeliaR41_Spawn1",
-    "AmeliaR41_Joy1",
-    ],
+    "AmeliaR41_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -1902,24 +1902,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Aragnia_Surprise1",
     "Aragnia_Hmm1",
-    "Aragnia_Yes1",
-    ],
+    "Aragnia_Yes1"
+   ],
    "upsetVoice": [
     "Aragnia_Anger1",
     "Aragnia_No1",
-    "Aragnia_Anger2",
-    ],
+    "Aragnia_Anger2"
+   ],
    "hungryVoice": [
     "Aragnia_CallPlayer1",
     "Aragnia_Sorrow1",
-    "Aragnia_Hmm2",
-    ],
+    "Aragnia_Hmm2"
+   ],
    "greetVoice": [
     "Aragnia_Greeting",
     "Aragnia_Lobby",
     "Aragnia_Spawn1",
-    "Aragnia_Joy1",
-    ],
+    "Aragnia_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -2310,24 +2310,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Arco_Surprise1",
     "Arco_Hmm1",
-    "Arco_Yes1",
-    ],
+    "Arco_Yes1"
+   ],
    "upsetVoice": [
     "Arco_Anger1",
     "Arco_No1",
-    "Arco_Anger2",
-    ],
+    "Arco_Anger2"
+   ],
    "hungryVoice": [
     "Arco_CallPlayer1",
     "Arco_Sorrow1",
-    "Arco_Hmm2",
-    ],
+    "Arco_Hmm2"
+   ],
    "greetVoice": [
     "Arco_Greeting",
     "Arco_Lobby",
     "Arco_Spawn1",
-    "Arco_Joy1",
-    ],
+    "Arco_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -2726,24 +2726,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Arnet_Surprise1",
     "Arnet_Hmm1",
-    "Arnet_Yes1",
-    ],
+    "Arnet_Yes1"
+   ],
    "upsetVoice": [
     "Arnet_Anger1",
     "Arnet_No1",
-    "Arnet_Anger2",
-    ],
+    "Arnet_Anger2"
+   ],
    "hungryVoice": [
     "Arnet_CallPlayer1",
     "Arnet_Sorrow1",
-    "Arnet_Hmm2",
-    ],
+    "Arnet_Hmm2"
+   ],
    "greetVoice": [
     "Arnet_Greeting",
     "Arnet_Lobby",
     "Arnet_Spawn1",
-    "Arnet_Joy1",
-    ],
+    "Arnet_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -3132,24 +3132,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Asana_Surprise1",
     "Asana_Hmm1",
-    "Asana_Yes1",
-    ],
+    "Asana_Yes1"
+   ],
    "upsetVoice": [
     "Asana_Anger1",
     "Asana_No1",
-    "Asana_Anger2",
-    ],
+    "Asana_Anger2"
+   ],
    "hungryVoice": [
     "Asana_CallPlayer1",
     "Asana_Sorrow1",
-    "Asana_Hmm2",
-    ],
+    "Asana_Hmm2"
+   ],
    "greetVoice": [
     "Asana_Greeting",
     "Asana_Lobby",
     "Asana_Spawn1",
-    "Asana_Joy1",
-    ],
+    "Asana_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -3540,24 +3540,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Ashur_Surprise1",
     "Ashur_Hmm1",
-    "Ashur_Yes1",
-    ],
+    "Ashur_Yes1"
+   ],
    "upsetVoice": [
     "Ashur_Anger1",
     "Ashur_No1",
-    "Ashur_Anger2",
-    ],
+    "Ashur_Anger2"
+   ],
    "hungryVoice": [
     "Ashur_CallPlayer1",
     "Ashur_Sorrow1",
-    "Ashur_Hmm2",
-    ],
+    "Ashur_Hmm2"
+   ],
    "greetVoice": [
     "Ashur_Greeting",
     "Ashur_Lobby",
     "Ashur_Spawn1",
-    "Ashur_Joy1",
-    ],
+    "Ashur_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -3933,24 +3933,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "AshurMagi_Surprise1",
     "AshurMagi_Hmm1",
-    "AshurMagi_Yes1",
-    ],
+    "AshurMagi_Yes1"
+   ],
    "upsetVoice": [
     "AshurMagi_Anger1",
     "AshurMagi_No1",
-    "AshurMagi_Anger2",
-    ],
+    "AshurMagi_Anger2"
+   ],
    "hungryVoice": [
     "AshurMagi_CallPlayer1",
     "AshurMagi_Sorrow1",
-    "AshurMagi_Hmm2",
-    ],
+    "AshurMagi_Hmm2"
+   ],
    "greetVoice": [
     "AshurMagi_Greeting",
     "AshurMagi_Lobby",
     "AshurMagi_Spawn1",
-    "AshurMagi_Joy1",
-    ],
+    "AshurMagi_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -4338,24 +4338,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Aurora_Surprise1",
     "Aurora_Hmm1",
-    "Aurora_Yes1",
-    ],
+    "Aurora_Yes1"
+   ],
    "upsetVoice": [
     "Aurora_Anger1",
     "Aurora_No1",
-    "Aurora_Anger2",
-    ],
+    "Aurora_Anger2"
+   ],
    "hungryVoice": [
     "Aurora_CallPlayer1",
     "Aurora_Sorrow1",
-    "Aurora_Hmm2",
-    ],
+    "Aurora_Hmm2"
+   ],
    "greetVoice": [
     "Aurora_Greeting",
     "Aurora_Lobby",
     "Aurora_Spawn1",
-    "Aurora_Joy1",
-    ],
+    "Aurora_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -4766,24 +4766,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Aya_Surprise1",
     "Aya_Hmm1",
-    "Aya_Yes1",
-    ],
+    "Aya_Yes1"
+   ],
    "upsetVoice": [
     "Aya_Anger1",
     "Aya_No1",
-    "Aya_Anger2",
-    ],
+    "Aya_Anger2"
+   ],
    "hungryVoice": [
     "Aya_CallPlayer1",
     "Aya_Sorrow1",
-    "Aya_Hmm2",
-    ],
+    "Aya_Hmm2"
+   ],
    "greetVoice": [
     "Aya_Greeting",
     "Aya_Lobby",
     "Aya_Spawn1",
-    "Aya_Joy1",
-    ],
+    "Aya_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -5168,24 +5168,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Ayla_Surprise1",
     "Ayla_Hmm1",
-    "Ayla_Yes1",
-    ],
+    "Ayla_Yes1"
+   ],
    "upsetVoice": [
     "Ayla_Anger1",
     "Ayla_No1",
-    "Ayla_Anger2",
-    ],
+    "Ayla_Anger2"
+   ],
    "hungryVoice": [
     "Ayla_CallPlayer1",
     "Ayla_Sorrow1",
-    "Ayla_Hmm2",
-    ],
+    "Ayla_Hmm2"
+   ],
    "greetVoice": [
     "Ayla_Greeting",
     "Ayla_Lobby",
     "Ayla_Spawn1",
-    "Ayla_Joy1",
-    ],
+    "Ayla_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -5561,24 +5561,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Bana_Surprise1",
     "Bana_Hmm1",
-    "Bana_Yes1",
-    ],
+    "Bana_Yes1"
+   ],
    "upsetVoice": [
     "Bana_Anger1",
     "Bana_No1",
-    "Bana_Anger2",
-    ],
+    "Bana_Anger2"
+   ],
    "hungryVoice": [
     "Bana_CallPlayer1",
     "Bana_Sorrow1",
-    "Bana_Hmm2",
-    ],
+    "Bana_Hmm2"
+   ],
    "greetVoice": [
     "Bana_Greeting",
     "Bana_Lobby",
     "Bana_Spawn1",
-    "Bana_Joy1",
-    ],
+    "Bana_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -5938,24 +5938,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Barie_Surprise1",
     "Barie_Hmm1",
-    "Barie_Yes1",
-    ],
+    "Barie_Yes1"
+   ],
    "upsetVoice": [
     "Barie_Anger1",
     "Barie_No1",
-    "Barie_Anger2",
-    ],
+    "Barie_Anger2"
+   ],
    "hungryVoice": [
     "Barie_CallPlayer1",
     "Barie_Sorrow1",
-    "Barie_Hmm2",
-    ],
+    "Barie_Hmm2"
+   ],
    "greetVoice": [
     "Barie_Greeting",
     "Barie_Lobby",
     "Barie_Spawn1",
-    "Barie_Joy1",
-    ],
+    "Barie_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -6343,24 +6343,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Barong_Surprise1",
     "Barong_Hmm1",
-    "Barong_Yes1",
-    ],
+    "Barong_Yes1"
+   ],
    "upsetVoice": [
     "Barong_Anger1",
     "Barong_No1",
-    "Barong_Anger2",
-    ],
+    "Barong_Anger2"
+   ],
    "hungryVoice": [
     "Barong_CallPlayer1",
     "Barong_Sorrow1",
-    "Barong_Hmm2",
-    ],
+    "Barong_Hmm2"
+   ],
    "greetVoice": [
     "Barong_Greeting",
     "Barong_Lobby",
     "Barong_Spawn1",
-    "Barong_Joy1",
-    ],
+    "Barong_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -6726,24 +6726,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Belita_Surprise1",
     "Belita_Hmm1",
-    "Belita_Yes1",
-    ],
+    "Belita_Yes1"
+   ],
    "upsetVoice": [
     "Belita_Anger1",
     "Belita_No1",
-    "Belita_Anger2",
-    ],
+    "Belita_Anger2"
+   ],
    "hungryVoice": [
     "Belita_CallPlayer1",
     "Belita_Sorrow1",
-    "Belita_Hmm2",
-    ],
+    "Belita_Hmm2"
+   ],
    "greetVoice": [
     "Belita_Greeting",
     "Belita_Lobby",
     "Belita_Spawn1",
-    "Belita_Joy1",
-    ],
+    "Belita_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -7107,24 +7107,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Beni_Surprise1",
     "Beni_Hmm1",
-    "Beni_Yes1",
-    ],
+    "Beni_Yes1"
+   ],
    "upsetVoice": [
     "Beni_Anger1",
     "Beni_No1",
-    "Beni_Anger2",
-    ],
+    "Beni_Anger2"
+   ],
    "hungryVoice": [
     "Beni_CallPlayer1",
     "Beni_Sorrow1",
-    "Beni_Hmm2",
-    ],
+    "Beni_Hmm2"
+   ],
    "greetVoice": [
     "Beni_Greeting",
     "Beni_Lobby",
     "Beni_Spawn1",
-    "Beni_Joy1",
-    ],
+    "Beni_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -7496,24 +7496,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "BeniBeni_Surprise1",
     "BeniBeni_Hmm1",
-    "BeniBeni_Yes1",
-    ],
+    "BeniBeni_Yes1"
+   ],
    "upsetVoice": [
     "BeniBeni_Anger1",
     "BeniBeni_No1",
-    "BeniBeni_Anger2",
-    ],
+    "BeniBeni_Anger2"
+   ],
    "hungryVoice": [
     "BeniBeni_CallPlayer1",
     "BeniBeni_Sorrow1",
-    "BeniBeni_Hmm2",
-    ],
+    "BeniBeni_Hmm2"
+   ],
    "greetVoice": [
     "BeniBeni_Greeting",
     "BeniBeni_Lobby",
     "BeniBeni_Spawn1",
-    "BeniBeni_Joy1",
-    ],
+    "BeniBeni_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -7886,24 +7886,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "BigWood_Surprise1",
     "BigWood_Hmm1",
-    "BigWood_Yes1",
-    ],
+    "BigWood_Yes1"
+   ],
    "upsetVoice": [
     "BigWood_Anger1",
     "BigWood_No1",
-    "BigWood_Anger2",
-    ],
+    "BigWood_Anger2"
+   ],
    "hungryVoice": [
     "BigWood_CallPlayer1",
     "BigWood_Sorrow1",
-    "BigWood_Hmm2",
-    ],
+    "BigWood_Hmm2"
+   ],
    "greetVoice": [
     "BigWood_Greeting",
     "BigWood_Lobby",
     "BigWood_Spawn1",
-    "BigWood_Joy1",
-    ],
+    "BigWood_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -8272,24 +8272,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Blanchet_Surprise1",
     "Blanchet_Hmm1",
-    "Blanchet_Yes1",
-    ],
+    "Blanchet_Yes1"
+   ],
    "upsetVoice": [
     "Blanchet_Anger1",
     "Blanchet_No1",
-    "Blanchet_Anger2",
-    ],
+    "Blanchet_Anger2"
+   ],
    "hungryVoice": [
     "Blanchet_CallPlayer1",
     "Blanchet_Sorrow1",
-    "Blanchet_Hmm2",
-    ],
+    "Blanchet_Hmm2"
+   ],
    "greetVoice": [
     "Blanchet_Greeting",
     "Blanchet_Lobby",
     "Blanchet_Spawn1",
-    "Blanchet_Joy1",
-    ],
+    "Blanchet_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -8378,7 +8378,7 @@ const CHAR_GENERATED = [
    "id": "Callamori",
    "name": "卡拉莫里",
    "en": "Callamori",
-   "desc": "NPC · 1 套外观",
+   "desc": "NPC · 2 套外观",
    "tag": "npc",
    "art": {
     "avatar": "assets/art/Callamori/phone-avatar.png",
@@ -8395,6 +8395,13 @@ const CHAR_GENERATED = [
      "dir": "assets/spine/Callamori",
      "name": "默认",
      "desc": "基础外观（56 动作）",
+     "voiceSkin": ""
+    },
+    {
+     "id": "Pet_MiniCallamori",
+     "dir": "assets/spine/Pet_MiniCallamori",
+     "name": "迷你形态",
+     "desc": "宠物形态（动作较少）",
      "voiceSkin": ""
     }
    ],
@@ -8651,22 +8658,22 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Callamori_Surprise1",
     "Callamori_Hmm1",
-    "Callamori_Yes1",
-    ],
+    "Callamori_Yes1"
+   ],
    "upsetVoice": [
     "Callamori_Anger1",
     "Callamori_No1",
-    "Callamori_Anger2",
-    ],
+    "Callamori_Anger2"
+   ],
    "hungryVoice": [
     "Callamori_CallPlayer1",
     "Callamori_Sorrow1",
-    "Callamori_Hmm2",
-    ],
+    "Callamori_Hmm2"
+   ],
    "greetVoice": [
     "Callamori_Greeting",
-    "Callamori_Joy1",
-    ],
+    "Callamori_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -9064,24 +9071,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Canna_Surprise1",
     "Canna_Hmm1",
-    "Canna_Yes1",
-    ],
+    "Canna_Yes1"
+   ],
    "upsetVoice": [
     "Canna_Anger1",
     "Canna_No1",
-    "Canna_Anger2",
-    ],
+    "Canna_Anger2"
+   ],
    "hungryVoice": [
     "Canna_CallPlayer1",
     "Canna_Sorrow1",
-    "Canna_Hmm2",
-    ],
+    "Canna_Hmm2"
+   ],
    "greetVoice": [
     "Canna_Greeting",
     "Canna_Lobby",
     "Canna_Spawn1",
-    "Canna_Joy1",
-    ],
+    "Canna_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -9434,24 +9441,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Canta_Surprise1",
     "Canta_Hmm1",
-    "Canta_Yes1",
-    ],
+    "Canta_Yes1"
+   ],
    "upsetVoice": [
     "Canta_Anger1",
     "Canta_No1",
-    "Canta_Anger2",
-    ],
+    "Canta_Anger2"
+   ],
    "hungryVoice": [
     "Canta_CallPlayer1",
     "Canta_Sorrow1",
-    "Canta_Hmm2",
-    ],
+    "Canta_Hmm2"
+   ],
    "greetVoice": [
     "Canta_Greeting",
     "Canta_Lobby",
     "Canta_Spawn1",
-    "Canta_Joy1",
-    ],
+    "Canta_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -9807,24 +9814,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Carren_Surprise1",
     "Carren_Hmm1",
-    "Carren_Yes1",
-    ],
+    "Carren_Yes1"
+   ],
    "upsetVoice": [
     "Carren_Anger1",
     "Carren_No1",
-    "Carren_Anger2",
-    ],
+    "Carren_Anger2"
+   ],
    "hungryVoice": [
     "Carren_CallPlayer1",
     "Carren_Sorrow1",
-    "Carren_Hmm2",
-    ],
+    "Carren_Hmm2"
+   ],
    "greetVoice": [
     "Carren_Greeting",
     "Carren_Lobby",
     "Carren_Spawn1",
-    "Carren_Joy1",
-    ],
+    "Carren_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -10217,24 +10224,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Chloe_Surprise1",
     "Chloe_Hmm1",
-    "Chloe_Yes1",
-    ],
+    "Chloe_Yes1"
+   ],
    "upsetVoice": [
     "Chloe_Anger1",
     "Chloe_No1",
-    "Chloe_Anger2",
-    ],
+    "Chloe_Anger2"
+   ],
    "hungryVoice": [
     "Chloe_CallPlayer1",
     "Chloe_Sorrow1",
-    "Chloe_Hmm2",
-    ],
+    "Chloe_Hmm2"
+   ],
    "greetVoice": [
     "Chloe_Greeting",
     "Chloe_Lobby",
     "Chloe_Spawn1",
-    "Chloe_Joy1",
-    ],
+    "Chloe_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -10579,12 +10586,10 @@ const CHAR_GENERATED = [
    "voiceLangs": [
     "ko"
    ],
-   "pokeVoice": [
-    ],
+   "pokeVoice": [],
    "upsetVoice": [],
    "hungryVoice": [],
-   "greetVoice": [
-    ],
+   "greetVoice": [],
    "moodActs": [
     "happy",
     "proud",
@@ -10942,24 +10947,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "ChopI_Surprise1",
     "ChopI_Hmm1",
-    "ChopI_Yes1",
-    ],
+    "ChopI_Yes1"
+   ],
    "upsetVoice": [
     "ChopI_Anger1",
     "ChopI_No1",
-    "ChopI_Anger2",
-    ],
+    "ChopI_Anger2"
+   ],
    "hungryVoice": [
     "ChopI_CallPlayer1",
     "ChopI_Sorrow1",
-    "ChopI_Hmm2",
-    ],
+    "ChopI_Hmm2"
+   ],
    "greetVoice": [
     "ChopI_Greeting",
     "Chopi_Lobby",
     "Chopi_Spawn1",
-    "ChopI_Joy1",
-    ],
+    "ChopI_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -11034,6 +11039,400 @@ const CHAR_GENERATED = [
     "Angry_": "ChopI_Anger",
     "Sad_": "ChopI_Sorrow",
     "Surprise_": "ChopI_Surprise"
+   }
+  },
+  {
+   "id": "Coffe",
+   "name": "可菲",
+   "en": "Coffe",
+   "desc": "灵体 · 2 套外观",
+   "tag": "🔮",
+   "art": {
+    "avatar": "assets/art/Coffe/phone-avatar.png",
+    "present": "assets/art/Coffe/present.png",
+    "album": "assets/art/Coffe/album-strict.webp"
+   },
+   "skinCandidates": [
+    "Normal",
+    "default"
+   ],
+   "models": [
+    {
+     "id": "Coffe",
+     "dir": "assets/spine/Coffe",
+     "name": "默认",
+     "desc": "基础外观（48 动作）",
+     "voiceSkin": ""
+    },
+    {
+     "id": "CoffeSkin1",
+     "dir": "assets/spine/CoffeSkin1",
+     "name": "热情满满的经理",
+     "desc": "为了鼓励疲惫的选手，可菲当上了经理。据说…（48 动作）",
+     "voiceSkin": "_Skin1"
+    }
+   ],
+   "bones": {
+    "head": [
+     "Head",
+     "Head_RCT"
+    ],
+    "headTop": [
+     "Hair_F_Root",
+     "Head"
+    ],
+    "face": [
+     "Face",
+     "Cat_Face"
+    ],
+    "mouth": [
+     "Mouth_Root",
+     "Mouth"
+    ],
+    "cheekL": [
+     "Ball_L_Root"
+    ],
+    "cheekR": [
+     "Ball_Root"
+    ],
+    "belly": [
+     "Body_1",
+     "Pelvis"
+    ],
+    "neck": [],
+    "tail": [],
+    "earL": [
+     "Ear"
+    ],
+    "earR": [],
+    "ballMove": [
+     "Character_Ball_Move",
+     "Ball_Root"
+    ],
+    "ballMoveP": [
+     "Ball_R_Root",
+     "Ball_Root"
+    ],
+    "pat": [
+     "Character_Pat",
+     "Head",
+     "Head_RCT"
+    ],
+    "tickle": [
+     "Character_Tickle",
+     "Body_1",
+     "Pelvis"
+    ]
+   },
+   "pinch": {
+    "ok": true,
+    "reason": ""
+   },
+   "anim": {
+    "idle": [
+     "Idle_1"
+    ],
+    "patIdle": [
+     "Pat_Idle"
+    ],
+    "patEnd": [
+     "Pat_End",
+     "Idle_1"
+    ],
+    "tickleIdle": [
+     "Tickle_Idle_1"
+    ],
+    "tickleIdle2": [
+     "Tickle_Idle_2"
+    ],
+    "tickleEnd": [
+     "Tickle_End",
+     "Idle_1"
+    ],
+    "touchIdle": [
+     "Touch_Idle"
+    ],
+    "touchEnd": [
+     "Touch_End",
+     "Idle_1"
+    ],
+    "smash": [
+     "Smash_End_1"
+    ],
+    "smash2": [
+     "Smash_End_2"
+    ],
+    "eat": [
+     "Eat_1",
+     "Eat_2"
+    ],
+    "happy": [
+     "Happy_1",
+     "Happy_2",
+     "Happy_3",
+     "Happy_4",
+     "Happy_5"
+    ],
+    "proud": [
+     "Happy_1"
+    ],
+    "angry": [
+     "Angry_1",
+     "Angry_2",
+     "Angry_3"
+    ],
+    "sad": [
+     "Sad_1",
+     "Sad_2",
+     "Sad_3",
+     "Sad_4"
+    ],
+    "surprise": [
+     "Happy_1"
+    ],
+    "dizzy": [
+     "Happy_1"
+    ],
+    "panic": [
+     "Panic_1",
+     "Panic_2"
+    ],
+    "taunt": [
+     "Happy_1"
+    ],
+    "smell": [
+     "Happy_1"
+    ],
+    "serious": [
+     "Happy_1"
+    ],
+    "close": [
+     "Close_1"
+    ]
+   },
+   "actions": {
+    "pinch": {
+     "label": "捏脸",
+     "icon": "🤏",
+     "zone": "cheek",
+     "gesture": "drag",
+     "deform": "cheek",
+     "loop": "touchIdle",
+     "end": "touchEnd",
+     "sfxStart": {
+      "name": "SFX_Common_PullCheek",
+      "volume": 0.65
+     },
+     "sfxEnd": {
+      "name": "SFX_Common_PullCheekEnd",
+      "volume": 0.65
+     },
+     "voice": [
+      "Coffe_Touch1",
+      "Coffe_Touch1_1",
+      "Coffe_Touch1_2"
+     ]
+    },
+    "pat": {
+     "label": "摸头",
+     "icon": "🖐",
+     "zone": "head",
+     "gesture": "drag",
+     "loop": "patIdle",
+     "end": "patEnd",
+     "sfx": {
+      "name": "SFX_Pat",
+      "volume": 0.28
+     },
+     "sfxIntervalMs": 520,
+     "fx": {
+      "kind": "heart",
+      "duration": 1600
+     },
+     "fxIntervalMs": 900,
+     "voice": [
+      "Coffe_Touch2",
+      "Coffe_Touch2_1",
+      "Coffe_Touch2_2"
+     ]
+    },
+    "bonk": {
+     "label": "敲头",
+     "icon": "🔨",
+     "zone": "head",
+     "gesture": "tap",
+     "once": "smash",
+     "second": "smash2",
+     "sfx": [
+      {
+       "name": "SFX_DutchRub_Default",
+       "volume": 0.62
+      },
+      {
+       "name": "SFX_DutchRub_Max",
+       "volume": 0.68
+      }
+     ],
+     "fx": {
+      "kind": "dutchRub",
+      "duration": 1180
+     },
+     "voice": [
+      "Coffe_DutchRubEnd1"
+     ],
+     "voiceEnd": [
+      "Coffe_DutchRubEnd2"
+     ]
+    },
+    "belly": {
+     "label": "摸肚子",
+     "icon": "🫳",
+     "zone": "belly",
+     "gesture": "drag",
+     "loop": "tickleIdle",
+     "loop2": "tickleIdle2",
+     "end": "tickleEnd",
+     "sfx": {
+      "name": "SFX_Tickle",
+      "volume": 0.38
+     },
+     "voice": [
+      "Coffe_TickleStart1"
+     ],
+     "voiceMid": [
+      "Coffe_TickleDuring1"
+     ],
+     "voiceEnd": []
+    },
+    "feed": {
+     "label": "喂食",
+     "icon": "🍖",
+     "zone": "mouth",
+     "gesture": "drop",
+     "once": "eat",
+     "voice": [
+      "Coffe_Eat1"
+     ]
+    }
+   },
+   "voiceDurations": {},
+   "voiceLang": "ko",
+   "voiceLangs": [
+    "ko"
+   ],
+   "pokeVoice": [
+    "Coffe_Surprise1",
+    "Coffe_Hmm1",
+    "Coffe_Yes1"
+   ],
+   "upsetVoice": [
+    "Coffe_Anger1",
+    "Coffe_No1",
+    "Coffe_Anger2"
+   ],
+   "hungryVoice": [
+    "Coffe_CallPlayer1",
+    "Coffe_Sorrow1",
+    "Coffe_Hmm2"
+   ],
+   "greetVoice": [
+    "Coffe_Greeting",
+    "Coffe_Lobby",
+    "Coffe_Spawn1",
+    "Coffe_Joy1"
+   ],
+   "moodActs": [
+    "happy",
+    "proud",
+    "taunt",
+    "smell",
+    "serious",
+    "dizzy"
+   ],
+   "animPanel": [
+    {
+     "group": "互动",
+     "items": [
+      "Eat_1",
+      "Eat_2",
+      "Pat_End",
+      "Pat_Idle",
+      "Smash_End_1",
+      "Smash_End_2",
+      "Tickle_End",
+      "Tickle_Idle_1",
+      "Tickle_Idle_2",
+      "Touch_End",
+      "Touch_Idle"
+     ]
+    },
+    {
+     "group": "情绪",
+     "items": [
+      "Angry_1",
+      "Angry_2",
+      "Angry_3",
+      "Angry_4",
+      "Angry_5",
+      "Close_1",
+      "Happy_1",
+      "Happy_2",
+      "Happy_3",
+      "Happy_4",
+      "Happy_5",
+      "Panic_1",
+      "Panic_2",
+      "Sad_1",
+      "Sad_2",
+      "Sad_3",
+      "Sad_4",
+      "Sad_5"
+     ]
+    },
+    {
+     "group": "待机",
+     "items": [
+      "Idle_1",
+      "Idle_2"
+     ]
+    },
+    {
+     "group": "其他形态",
+     "items": [
+      "Blank_1",
+      "Blank_2",
+      "Coffee_1",
+      "Coffee_2",
+      "Coffee_3",
+      "Coffee_4",
+      "Coffee_5",
+      "Coffee_6",
+      "Coffee_7",
+      "Coffee_8",
+      "Dance_1",
+      "Mad_1",
+      "Mad_2",
+      "Mad_3",
+      "Mad_4",
+      "Shy_1",
+      "Shy_2",
+      "Aside_1",
+      "Aside_2",
+      "Idle_3",
+      "Spawn_1",
+      "Upgrade_1",
+      "Upgrade_2"
+     ]
+    }
+   ],
+   "animLabel": {},
+   "voiceForAnim": {},
+   "voiceForAnimSeries": {
+    "Happy_": "Coffe_Joy",
+    "Proud_": "Coffe_Pleasure",
+    "Angry_": "Coffe_Anger",
+    "Sad_": "Coffe_Sorrow",
+    "Surprise_": "Coffe_Surprise"
    }
   },
   {
@@ -11321,20 +11720,19 @@ const CHAR_GENERATED = [
     "ja",
     "ko"
    ],
-   "pokeVoice": [
-    ],
+   "pokeVoice": [],
    "upsetVoice": [
     "Crepe_Anger1",
-    "Crepe_Anger2",
-    ],
+    "Crepe_Anger2"
+   ],
    "hungryVoice": [
-    "Crepe_Sorrow1",
-    ],
+    "Crepe_Sorrow1"
+   ],
    "greetVoice": [
     "Crepe_Greeting",
     "Crepe_Spawn1",
-    "Crepe_Joy1",
-    ],
+    "Crepe_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -11690,24 +12088,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Cuee_Surprise1",
     "Cuee_Hmm1",
-    "Cuee_Yes1",
-    ],
+    "Cuee_Yes1"
+   ],
    "upsetVoice": [
     "Cuee_Anger1",
     "Cuee_No1",
-    "Cuee_Anger2",
-    ],
+    "Cuee_Anger2"
+   ],
    "hungryVoice": [
     "Cuee_CallPlayer1",
     "Cuee_Sorrow1",
-    "Cuee_Hmm2",
-    ],
+    "Cuee_Hmm2"
+   ],
    "greetVoice": [
     "Cuee_Greeting",
     "Cuee_Lobby",
     "Cuee_Spawn1",
-    "Cuee_Joy1",
-    ],
+    "Cuee_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -12086,24 +12484,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Daya_Surprise1",
     "Daya_Hmm1",
-    "Daya_Yes1",
-    ],
+    "Daya_Yes1"
+   ],
    "upsetVoice": [
     "Daya_Anger1",
     "Daya_No1",
-    "Daya_Anger2",
-    ],
+    "Daya_Anger2"
+   ],
    "hungryVoice": [
     "Daya_CallPlayer1",
     "Daya_Sorrow1",
-    "Daya_Hmm2",
-    ],
+    "Daya_Hmm2"
+   ],
    "greetVoice": [
     "Daya_Greeting",
     "Daya_Lobby",
     "Daya_Spawn1",
-    "Daya_Joy1",
-    ],
+    "Daya_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -12474,24 +12872,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "DayaPureShine_Surprise1",
     "DayaPureShine_Hmm1",
-    "DayaPureShine_Yes1",
-    ],
+    "DayaPureShine_Yes1"
+   ],
    "upsetVoice": [
     "DayaPureShine_Anger1",
     "DayaPureShine_No1",
-    "DayaPureShine_Anger2",
-    ],
+    "DayaPureShine_Anger2"
+   ],
    "hungryVoice": [
     "DayaPureShine_CallPlayer1",
     "DayaPureShine_Sorrow1",
-    "DayaPureShine_Hmm2",
-    ],
+    "DayaPureShine_Hmm2"
+   ],
    "greetVoice": [
     "DayaPureShine_Greeting",
     "DayaPureShine_Lobby",
     "DayaPureShine_Spawn1",
-    "DayaPureShine_Joy1",
-    ],
+    "DayaPureShine_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -12871,24 +13269,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Delia_Surprise1",
     "Delia_Hmm1",
-    "Delia_Yes1",
-    ],
+    "Delia_Yes1"
+   ],
    "upsetVoice": [
     "Delia_Anger1",
     "Delia_No1",
-    "Delia_Anger2",
-    ],
+    "Delia_Anger2"
+   ],
    "hungryVoice": [
     "Delia_CallPlayer1",
     "Delia_Sorrow1",
-    "Delia_Hmm2",
-    ],
+    "Delia_Hmm2"
+   ],
    "greetVoice": [
     "Delia_Greeting",
     "Delia_Lobby",
     "Delia_Spawn1",
-    "Delia_Joy1",
-    ],
+    "Delia_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -12979,7 +13377,7 @@ const CHAR_GENERATED = [
    "id": "Diana",
    "name": "黛安娜",
    "en": "Diana",
-   "desc": "兽人 · 5 套外观",
+   "desc": "兽人 · 6 套外观",
    "tag": "🐾",
    "art": {
     "avatar": "assets/art/Diana/phone-avatar.png",
@@ -13025,6 +13423,13 @@ const CHAR_GENERATED = [
      "name": "野山温泉小憩",
      "desc": "黛安娜似乎喜欢温暖的温泉。感觉就是这样。…（61 动作）",
      "voiceSkin": "_Skin4"
+    },
+    {
+     "id": "Pet_MiniDianaYester",
+     "dir": "assets/spine/Pet_MiniDianaYester",
+     "name": "迷你形态",
+     "desc": "宠物形态（动作较少）",
+     "voiceSkin": ""
     }
    ],
    "bones": {
@@ -13278,24 +13683,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Diana_Surprise1",
     "Diana_Hmm1",
-    "Diana_Yes1",
-    ],
+    "Diana_Yes1"
+   ],
    "upsetVoice": [
     "Diana_Anger1",
     "Diana_No1",
-    "Diana_Anger2",
-    ],
+    "Diana_Anger2"
+   ],
    "hungryVoice": [
     "Diana_CallPlayer1",
     "Diana_Sorrow1",
-    "Diana_Hmm2",
-    ],
+    "Diana_Hmm2"
+   ],
    "greetVoice": [
     "Diana_Greeting",
     "Diana_Lobby",
     "Diana_Spawn1",
-    "Diana_Joy1",
-    ],
+    "Diana_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -13401,7 +13806,7 @@ const CHAR_GENERATED = [
    "id": "DianaYester",
    "name": "黛安娜(往昔)",
    "en": "DianaYester",
-   "desc": "兽人 · 4 套外观",
+   "desc": "兽人 · 5 套外观",
    "tag": "🐾",
    "art": {
     "avatar": "assets/art/DianaYester/phone-avatar.png",
@@ -13440,6 +13845,13 @@ const CHAR_GENERATED = [
      "name": "号令苍穹的咆哮",
      "desc": "经过漫长修炼，终于抵达武道极境的黛雅（往…（65 动作）",
      "voiceSkin": "_Skin3"
+    },
+    {
+     "id": "Pet_MiniDianaYester",
+     "dir": "assets/spine/Pet_MiniDianaYester",
+     "name": "迷你形态",
+     "desc": "宠物形态（动作较少）",
+     "voiceSkin": ""
     }
    ],
    "bones": {
@@ -13702,24 +14114,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "DianaYester_Surprise1",
     "DianaYester_Hmm1",
-    "DianaYester_Yes1",
-    ],
+    "DianaYester_Yes1"
+   ],
    "upsetVoice": [
     "DianaYester_Anger1",
     "DianaYester_No1",
-    "DianaYester_Anger2",
-    ],
+    "DianaYester_Anger2"
+   ],
    "hungryVoice": [
     "DianaYester_CallPlayer1",
     "DianaYester_Sorrow1",
-    "DianaYester_Hmm2",
-    ],
+    "DianaYester_Hmm2"
+   ],
    "greetVoice": [
     "DianaYester_Greeting",
     "DianaYester_Lobby",
     "DianaYester_Spawn1",
-    "DianaYester_Joy1",
-    ],
+    "DianaYester_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -14126,24 +14538,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Ed_Surprise1",
     "Ed_Hmm1",
-    "Ed_Yes1",
-    ],
+    "Ed_Yes1"
+   ],
    "upsetVoice": [
     "Ed_Anger1",
     "Ed_No1",
-    "Ed_Anger2",
-    ],
+    "Ed_Anger2"
+   ],
    "hungryVoice": [
     "Ed_CallPlayer1",
     "Ed_Sorrow1",
-    "Ed_Hmm2",
-    ],
+    "Ed_Hmm2"
+   ],
    "greetVoice": [
     "Ed_Greeting",
     "Ed_Lobby",
     "Ed_Spawn1",
-    "Ed_Joy1",
-    ],
+    "Ed_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -14516,24 +14928,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "EdRehab_Surprise1",
     "EdRehab_Hmm1",
-    "EdRehab_Yes1",
-    ],
+    "EdRehab_Yes1"
+   ],
    "upsetVoice": [
     "EdRehab_Anger1",
     "EdRehab_No1",
-    "EdRehab_Anger2",
-    ],
+    "EdRehab_Anger2"
+   ],
    "hungryVoice": [
     "EdRehab_CallPlayer1",
     "EdRehab_Sorrow1",
-    "EdRehab_Hmm2",
-    ],
+    "EdRehab_Hmm2"
+   ],
    "greetVoice": [
     "EdRehab_Greeting",
     "EdRehab_Lobby",
     "EdRehab_Spawn1",
-    "EdRehab_Joy1",
-    ],
+    "EdRehab_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -14932,24 +15344,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Eisia_Surprise1",
     "Eisia_Hmm1",
-    "Eisia_Yes1",
-    ],
+    "Eisia_Yes1"
+   ],
    "upsetVoice": [
     "Eisia_Anger1",
     "Eisia_No1",
-    "Eisia_Anger2",
-    ],
+    "Eisia_Anger2"
+   ],
    "hungryVoice": [
     "Eisia_CallPlayer1",
     "Eisia_Sorrow1",
-    "Eisia_Hmm2",
-    ],
+    "Eisia_Hmm2"
+   ],
    "greetVoice": [
     "Eisia_Greeting",
     "Eisia_Lobby",
     "Eisia_Spawn1",
-    "Eisia_Joy1",
-    ],
+    "Eisia_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -15346,24 +15758,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Elena_Surprise1",
     "Elena_Hmm1",
-    "Elena_Yes1",
-    ],
+    "Elena_Yes1"
+   ],
    "upsetVoice": [
     "Elena_Anger1",
     "Elena_No1",
-    "Elena_Anger2",
-    ],
+    "Elena_Anger2"
+   ],
    "hungryVoice": [
     "Elena_CallPlayer1",
     "Elena_Sorrow1",
-    "Elena_Hmm2",
-    ],
+    "Elena_Hmm2"
+   ],
    "greetVoice": [
     "Elena_Greeting",
     "Elena_Lobby",
     "Elena_Spawn1",
-    "Elena_Joy1",
-    ],
+    "Elena_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -15751,24 +16163,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Epica_Surprise1",
     "Epica_Hmm1",
-    "Epica_Yes1",
-    ],
+    "Epica_Yes1"
+   ],
    "upsetVoice": [
     "Epica_Anger1",
     "Epica_No1",
-    "Epica_Anger2",
-    ],
+    "Epica_Anger2"
+   ],
    "hungryVoice": [
     "Epica_CallPlayer1",
     "Epica_Sorrow1",
-    "Epica_Hmm2",
-    ],
+    "Epica_Hmm2"
+   ],
    "greetVoice": [
     "Epica_Greeting",
     "Epica_Lobby",
     "Epica_Spawn1",
-    "Epica_Joy1",
-    ],
+    "Epica_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -16177,24 +16589,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Erpin_Surprise1",
     "Erpin_Hmm1",
-    "Erpin_Yes1",
-    ],
+    "Erpin_Yes1"
+   ],
    "upsetVoice": [
     "Erpin_Anger1",
     "Erpin_No1",
-    "Erpin_Anger2",
-    ],
+    "Erpin_Anger2"
+   ],
    "hungryVoice": [
     "Erpin_CallPlayer1",
     "Erpin_Sorrow1",
-    "Erpin_Hmm2",
-    ],
+    "Erpin_Hmm2"
+   ],
    "greetVoice": [
     "Erpin_Greeting",
     "Erpin_Lobby",
     "Erpin_Spawn1",
-    "Erpin_Joy1",
-    ],
+    "Erpin_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -16640,24 +17052,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "ErpinRoyale_Surprise1",
     "ErpinRoyale_Hmm1",
-    "ErpinRoyale_Yes1",
-    ],
+    "ErpinRoyale_Yes1"
+   ],
    "upsetVoice": [
     "ErpinRoyale_Anger1",
     "ErpinRoyale_No1",
-    "ErpinRoyale_Anger2",
-    ],
+    "ErpinRoyale_Anger2"
+   ],
    "hungryVoice": [
     "ErpinRoyale_CallPlayer1",
     "ErpinRoyale_Sorrow1",
-    "ErpinRoyale_Hmm2",
-    ],
+    "ErpinRoyale_Hmm2"
+   ],
    "greetVoice": [
     "ErpinRoyale_Greeting",
     "ErpinRoyale_Lobby",
     "ErpinRoyale_Spawn1",
-    "ErpinRoyale_Joy1",
-    ],
+    "ErpinRoyale_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -17080,24 +17492,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Espi_Surprise1",
     "Espi_Hmm1",
-    "Espi_Yes1",
-    ],
+    "Espi_Yes1"
+   ],
    "upsetVoice": [
     "Espi_Anger1",
     "Espi_No1",
-    "Espi_Anger2",
-    ],
+    "Espi_Anger2"
+   ],
    "hungryVoice": [
     "Espi_CallPlayer1",
     "Espi_Sorrow1",
-    "Espi_Hmm2",
-    ],
+    "Espi_Hmm2"
+   ],
    "greetVoice": [
     "Espi_Greeting",
     "Espi_Lobby",
     "Espi_Spawn1",
-    "Espi_Joy1",
-    ],
+    "Espi_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -17448,24 +17860,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Festa_Surprise1",
     "Festa_Hmm1",
-    "Festa_Yes1",
-    ],
+    "Festa_Yes1"
+   ],
    "upsetVoice": [
     "Festa_Anger1",
     "Festa_No1",
-    "Festa_Anger2",
-    ],
+    "Festa_Anger2"
+   ],
    "hungryVoice": [
     "Festa_CallPlayer1",
     "Festa_Sorrow1",
-    "Festa_Hmm2",
-    ],
+    "Festa_Hmm2"
+   ],
    "greetVoice": [
     "Festa_Greeting",
     "Festa_Lobby",
     "Festa_Spawn1",
-    "Festa_Joy1",
-    ],
+    "Festa_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -17844,24 +18256,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Fricle_Surprise1",
     "Fricle_Hmm1",
-    "Fricle_Yes1",
-    ],
+    "Fricle_Yes1"
+   ],
    "upsetVoice": [
     "Fricle_Anger1",
     "Fricle_No1",
-    "Fricle_Anger2",
-    ],
+    "Fricle_Anger2"
+   ],
    "hungryVoice": [
     "Fricle_CallPlayer1",
     "Fricle_Sorrow1",
-    "Fricle_Hmm2",
-    ],
+    "Fricle_Hmm2"
+   ],
    "greetVoice": [
     "Fricle_Greeting",
     "Fricle_Lobby",
     "Fricle_Spawn1",
-    "Fricle_Joy1",
-    ],
+    "Fricle_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -18240,24 +18652,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Gabia_Surprise1",
     "Gabia_Hmm1",
-    "Gabia_Yes1",
-    ],
+    "Gabia_Yes1"
+   ],
    "upsetVoice": [
     "Gabia_Anger1",
     "Gabia_No1",
-    "Gabia_Anger2",
-    ],
+    "Gabia_Anger2"
+   ],
    "hungryVoice": [
     "Gabia_CallPlayer1",
     "Gabia_Sorrow1",
-    "Gabia_Hmm2",
-    ],
+    "Gabia_Hmm2"
+   ],
    "greetVoice": [
     "Gabia_Greeting",
     "Gabia_Lobby",
     "Gabia_Spawn1",
-    "Gabia_Joy1",
-    ],
+    "Gabia_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -18617,22 +19029,22 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Goldy_Surprise1",
     "Goldy_Hmm1",
-    "Goldy_Yes1",
-    ],
+    "Goldy_Yes1"
+   ],
    "upsetVoice": [
     "Goldy_Anger1",
     "Goldy_No1",
-    "Goldy_Anger2",
-    ],
+    "Goldy_Anger2"
+   ],
    "hungryVoice": [
     "Goldy_CallPlayer1",
     "Goldy_Sorrow1",
-    "Goldy_Hmm2",
-    ],
+    "Goldy_Hmm2"
+   ],
    "greetVoice": [
     "Goldy_Greeting",
-    "Goldy_Joy1",
-    ],
+    "Goldy_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -19015,29 +19427,30 @@ const CHAR_GENERATED = [
    "voiceDurations": {},
    "voiceLang": "ko",
    "voiceLangs": [
+    "ja",
     "ko"
    ],
    "pokeVoice": [
     "Guin_Surprise1",
     "Guin_Hmm1",
-    "Guin_Yes1",
-    ],
+    "Guin_Yes1"
+   ],
    "upsetVoice": [
     "Guin_Anger1",
     "Guin_No1",
-    "Guin_Anger2",
-    ],
+    "Guin_Anger2"
+   ],
    "hungryVoice": [
     "Guin_CallPlayer1",
     "Guin_Sorrow1",
-    "Guin_Hmm2",
-    ],
+    "Guin_Hmm2"
+   ],
    "greetVoice": [
     "Guin_Greeting",
     "Guin_Lobby",
     "Guin_Spawn1",
-    "Guin_Joy1",
-    ],
+    "Guin_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -19422,24 +19835,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Haley_Surprise1",
     "Haley_Hmm1",
-    "Haley_Yes1",
-    ],
+    "Haley_Yes1"
+   ],
    "upsetVoice": [
     "Haley_Anger1",
     "Haley_No1",
-    "Haley_Anger2",
-    ],
+    "Haley_Anger2"
+   ],
    "hungryVoice": [
     "Haley_CallPlayer1",
     "Haley_Sorrow1",
-    "Haley_Hmm2",
-    ],
+    "Haley_Hmm2"
+   ],
    "greetVoice": [
     "Haley_Greeting",
     "Haley_Lobby",
     "Haley_Spawn1",
-    "Haley_Joy1",
-    ],
+    "Haley_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -19812,24 +20225,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "HaleySane_Surprise1",
     "HaleySane_Hmm1",
-    "HaleySane_Yes1",
-    ],
+    "HaleySane_Yes1"
+   ],
    "upsetVoice": [
     "HaleySane_Anger1",
     "HaleySane_No1",
-    "HaleySane_Anger2",
-    ],
+    "HaleySane_Anger2"
+   ],
    "hungryVoice": [
     "HaleySane_CallPlayer1",
     "HaleySane_Sorrow1",
-    "HaleySane_Hmm2",
-    ],
+    "HaleySane_Hmm2"
+   ],
    "greetVoice": [
     "HaleySane_Greeting",
     "HaleySane_Lobby",
     "HaleySane_Spawn1",
-    "HaleySane_Joy1",
-    ],
+    "HaleySane_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -20211,24 +20624,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Heidi_Surprise1",
     "Heidi_Hmm1",
-    "Heidi_Yes1",
-    ],
+    "Heidi_Yes1"
+   ],
    "upsetVoice": [
     "Heidi_Anger1",
     "Heidi_No1",
-    "Heidi_Anger2",
-    ],
+    "Heidi_Anger2"
+   ],
    "hungryVoice": [
     "Heidi_CallPlayer1",
     "Heidi_Sorrow1",
-    "Heidi_Hmm2",
-    ],
+    "Heidi_Hmm2"
+   ],
    "greetVoice": [
     "Heidi_Greeting",
     "Heidi_Lobby",
     "Heidi_Spawn1",
-    "Heidi_Joy1",
-    ],
+    "Heidi_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -20627,24 +21040,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Hilde_Surprise1",
     "Hilde_Hmm1",
-    "Hilde_Yes1",
-    ],
+    "Hilde_Yes1"
+   ],
    "upsetVoice": [
     "Hilde_Anger1",
     "Hilde_No1",
-    "Hilde_Anger2",
-    ],
+    "Hilde_Anger2"
+   ],
    "hungryVoice": [
     "Hilde_CallPlayer1",
     "Hilde_Sorrow1",
-    "Hilde_Hmm2",
-    ],
+    "Hilde_Hmm2"
+   ],
    "greetVoice": [
     "Hilde_Greeting",
     "Hilde_Lobby",
     "Hilde_Spawn1",
-    "Hilde_Joy1",
-    ],
+    "Hilde_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -20999,24 +21412,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Ifrit_Surprise1",
     "Ifrit_Hmm1",
-    "Ifrit_Yes1",
-    ],
+    "Ifrit_Yes1"
+   ],
    "upsetVoice": [
     "Ifrit_Anger1",
     "Ifrit_No1",
-    "Ifrit_Anger2",
-    ],
+    "Ifrit_Anger2"
+   ],
    "hungryVoice": [
     "Ifrit_CallPlayer1",
     "Ifrit_Sorrow1",
-    "Ifrit_Hmm2",
-    ],
+    "Ifrit_Hmm2"
+   ],
    "greetVoice": [
     "Ifrit_Greeting",
     "Ifrit_Lobby",
     "Ifrit_Spawn1",
-    "Ifrit_Joy1",
-    ],
+    "Ifrit_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -21377,24 +21790,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Inkle_Surprise1",
     "Inkle_Hmm1",
-    "Inkle_Yes1",
-    ],
+    "Inkle_Yes1"
+   ],
    "upsetVoice": [
     "Inkle_Anger1",
     "Inkle_No1",
-    "Inkle_Anger2",
-    ],
+    "Inkle_Anger2"
+   ],
    "hungryVoice": [
     "Inkle_CallPlayer1",
     "Inkle_Sorrow1",
-    "Inkle_Hmm2",
-    ],
+    "Inkle_Hmm2"
+   ],
    "greetVoice": [
     "Inkle_Greeting",
     "Inkle_Lobby",
     "Inkle_Spawn1",
-    "Inkle_Joy1",
-    ],
+    "Inkle_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -21779,24 +22192,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Jade_Surprise1",
     "Jade_Hmm1",
-    "Jade_Yes1",
-    ],
+    "Jade_Yes1"
+   ],
    "upsetVoice": [
     "Jade_Anger1",
     "Jade_No1",
-    "Jade_Anger2",
-    ],
+    "Jade_Anger2"
+   ],
    "hungryVoice": [
     "Jade_CallPlayer1",
     "Jade_Sorrow1",
-    "Jade_Hmm2",
-    ],
+    "Jade_Hmm2"
+   ],
    "greetVoice": [
     "Jade_Greeting",
     "Jade_Lobby",
     "Jade_Spawn1",
-    "Jade_Joy1",
-    ],
+    "Jade_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -22193,24 +22606,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Joanne_Surprise1",
     "Joanne_Hmm1",
-    "Joanne_Yes1",
-    ],
+    "Joanne_Yes1"
+   ],
    "upsetVoice": [
     "Joanne_Anger1",
     "Joanne_No1",
-    "Joanne_Anger2",
-    ],
+    "Joanne_Anger2"
+   ],
    "hungryVoice": [
     "Joanne_CallPlayer1",
     "Joanne_Sorrow1",
-    "Joanne_Hmm2",
-    ],
+    "Joanne_Hmm2"
+   ],
    "greetVoice": [
     "Joanne_Greeting",
     "Joanne_Lobby",
     "Joanne_Spawn1",
-    "Joanne_Joy1",
-    ],
+    "Joanne_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -22601,14 +23014,10 @@ const CHAR_GENERATED = [
    "voiceLangs": [
     "ko"
    ],
-   "pokeVoice": [
-    ],
-   "upsetVoice": [
-    ],
-   "hungryVoice": [
-    ],
-   "greetVoice": [
-    ],
+   "pokeVoice": [],
+   "upsetVoice": [],
+   "hungryVoice": [],
+   "greetVoice": [],
    "moodActs": [
     "happy",
     "proud",
@@ -22985,24 +23394,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Jubee_Surprise1",
     "Jubee_Hmm1",
-    "Jubee_Yes1",
-    ],
+    "Jubee_Yes1"
+   ],
    "upsetVoice": [
     "Jubee_Anger1",
     "Jubee_No1",
-    "Jubee_Anger2",
-    ],
+    "Jubee_Anger2"
+   ],
    "hungryVoice": [
     "Jubee_CallPlayer1",
     "Jubee_Sorrow1",
-    "Jubee_Hmm2",
-    ],
+    "Jubee_Hmm2"
+   ],
    "greetVoice": [
     "Jubee_Greeting",
     "Jubee_Lobby",
     "Jubee_Spawn1",
-    "Jubee_Joy1",
-    ],
+    "Jubee_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -23354,24 +23763,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Kathy_Surprise1",
     "Kathy_Hmm1",
-    "Kathy_Yes1",
-    ],
+    "Kathy_Yes1"
+   ],
    "upsetVoice": [
     "Kathy_Anger1",
     "Kathy_No1",
-    "Kathy_Anger2",
-    ],
+    "Kathy_Anger2"
+   ],
    "hungryVoice": [
     "Kathy_CallPlayer1",
     "Kathy_Sorrow1",
-    "Kathy_Hmm2",
-    ],
+    "Kathy_Hmm2"
+   ],
    "greetVoice": [
     "Kathy_Greeting",
     "Kathy_Lobby",
     "Kathy_Spawn1",
-    "Kathy_Joy1",
-    ],
+    "Kathy_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -23773,24 +24182,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Kidian_Surprise1",
     "Kidian_Hmm1",
-    "Kidian_Yes1",
-    ],
+    "Kidian_Yes1"
+   ],
    "upsetVoice": [
     "Kidian_Anger1",
     "Kidian_No1",
-    "Kidian_Anger2",
-    ],
+    "Kidian_Anger2"
+   ],
    "hungryVoice": [
     "Kidian_CallPlayer1",
     "Kidian_Sorrow1",
-    "Kidian_Hmm2",
-    ],
+    "Kidian_Hmm2"
+   ],
    "greetVoice": [
     "Kidian_Greeting",
     "Kidian_Lobby",
     "Kidian_Spawn1",
-    "Kidian_Joy1",
-    ],
+    "Kidian_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -24156,24 +24565,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Kishya_Surprise1",
     "Kishya_Hmm1",
-    "Kishya_Yes1",
-    ],
+    "Kishya_Yes1"
+   ],
    "upsetVoice": [
     "Kishya_Anger1",
     "Kishya_No1",
-    "Kishya_Anger2",
-    ],
+    "Kishya_Anger2"
+   ],
    "hungryVoice": [
     "Kishya_CallPlayer1",
     "Kishya_Sorrow1",
-    "Kishya_Hmm2",
-    ],
+    "Kishya_Hmm2"
+   ],
    "greetVoice": [
     "Kishya_Greeting",
     "Kishya_Lobby",
     "Kishya_Spawn1",
-    "Kishya_Joy1",
-    ],
+    "Kishya_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -24572,24 +24981,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Kommy_Surprise1",
     "Kommy_Hmm1",
-    "Kommy_Yes1",
-    ],
+    "Kommy_Yes1"
+   ],
    "upsetVoice": [
     "Kommy_Anger1",
     "Kommy_No1",
-    "Kommy_Anger2",
-    ],
+    "Kommy_Anger2"
+   ],
    "hungryVoice": [
     "Kommy_CallPlayer1",
     "Kommy_Sorrow1",
-    "Kommy_Hmm2",
-    ],
+    "Kommy_Hmm2"
+   ],
    "greetVoice": [
     "Kommy_Greeting",
     "Kommy_Lobby",
     "Kommy_Spawn1",
-    "Kommy_Joy1",
-    ],
+    "Kommy_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -24984,24 +25393,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "KommySwim_Surprise1",
     "KommySwim_Hmm1",
-    "KommySwim_Yes1",
-    ],
+    "KommySwim_Yes1"
+   ],
    "upsetVoice": [
     "KommySwim_Anger1",
     "KommySwim_No1",
-    "KommySwim_Anger2",
-    ],
+    "KommySwim_Anger2"
+   ],
    "hungryVoice": [
     "KommySwim_CallPlayer1",
     "KommySwim_Sorrow1",
-    "KommySwim_Hmm2",
-    ],
+    "KommySwim_Hmm2"
+   ],
    "greetVoice": [
     "KommySwim_Greeting",
     "KommySwim_Lobby",
     "KommySwim_Spawn1",
-    "KommySwim_Joy1",
-    ],
+    "KommySwim_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -25390,24 +25799,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Kyarot_Surprise1",
     "Kyarot_Hmm1",
-    "Kyarot_Yes1",
-    ],
+    "Kyarot_Yes1"
+   ],
    "upsetVoice": [
     "Kyarot_Anger1",
     "Kyarot_No1",
-    "Kyarot_Anger2",
-    ],
+    "Kyarot_Anger2"
+   ],
    "hungryVoice": [
     "Kyarot_CallPlayer1",
     "Kyarot_Sorrow1",
-    "Kyarot_Hmm2",
-    ],
+    "Kyarot_Hmm2"
+   ],
    "greetVoice": [
     "Kyarot_Greeting",
     "Kyarot_Lobby",
     "Kyarot_Spawn1",
-    "Kyarot_Joy1",
-    ],
+    "Kyarot_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -25786,24 +26195,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Laika_Surprise1",
     "Laika_Hmm1",
-    "Laika_Yes1",
-    ],
+    "Laika_Yes1"
+   ],
    "upsetVoice": [
     "Laika_Anger1",
     "Laika_No1",
-    "Laika_Anger2",
-    ],
+    "Laika_Anger2"
+   ],
    "hungryVoice": [
     "Laika_CallPlayer1",
     "Laika_Sorrow1",
-    "Laika_Hmm2",
-    ],
+    "Laika_Hmm2"
+   ],
    "greetVoice": [
     "Laika_Greeting",
     "Laika_Lobby",
     "Laika_Spawn1",
-    "Laika_Joy1",
-    ],
+    "Laika_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -26159,24 +26568,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Lazy_Surprise1",
     "Lazy_Hmm1",
-    "Lazy_Yes1",
-    ],
+    "Lazy_Yes1"
+   ],
    "upsetVoice": [
     "Lazy_Anger1",
     "Lazy_No1",
-    "Lazy_Anger2",
-    ],
+    "Lazy_Anger2"
+   ],
    "hungryVoice": [
     "Lazy_CallPlayer1",
     "Lazy_Sorrow1",
-    "Lazy_Hmm2",
-    ],
+    "Lazy_Hmm2"
+   ],
    "greetVoice": [
     "Lazy_Greeting",
     "Lazy_Lobby",
     "Lazy_Spawn1",
-    "Lazy_Joy1",
-    ],
+    "Lazy_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -26561,24 +26970,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Leets_Surprise1",
     "Leets_Hmm1",
-    "Leets_Yes1",
-    ],
+    "Leets_Yes1"
+   ],
    "upsetVoice": [
     "Leets_Anger1",
     "Leets_No1",
-    "Leets_Anger2",
-    ],
+    "Leets_Anger2"
+   ],
    "hungryVoice": [
     "Leets_CallPlayer1",
     "Leets_Sorrow1",
-    "Leets_Hmm2",
-    ],
+    "Leets_Hmm2"
+   ],
    "greetVoice": [
     "Leets_Greeting",
     "Leets_Lobby",
     "Leets_Spawn1",
-    "Leets_Joy1",
-    ],
+    "Leets_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -26934,24 +27343,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Lethe_Surprise1",
     "Lethe_Hmm1",
-    "Lethe_Yes1",
-    ],
+    "Lethe_Yes1"
+   ],
    "upsetVoice": [
     "Lethe_Anger1",
     "Lethe_No1",
-    "Lethe_Anger2",
-    ],
+    "Lethe_Anger2"
+   ],
    "hungryVoice": [
     "Lethe_CallPlayer1",
     "Lethe_Sorrow1",
-    "Lethe_Hmm2",
-    ],
+    "Lethe_Hmm2"
+   ],
    "greetVoice": [
     "Lethe_Greeting",
     "Lethe_Lobby",
     "Lethe_Spawn1",
-    "Lethe_Joy1",
-    ],
+    "Lethe_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -27319,24 +27728,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Levi_Surprise1",
     "Levi_Hmm1",
-    "Levi_Yes1",
-    ],
+    "Levi_Yes1"
+   ],
    "upsetVoice": [
     "Levi_Anger1",
     "Levi_No1",
-    "Levi_Anger2",
-    ],
+    "Levi_Anger2"
+   ],
    "hungryVoice": [
     "Levi_CallPlayer1",
     "Levi_Sorrow1",
-    "Levi_Hmm2",
-    ],
+    "Levi_Hmm2"
+   ],
    "greetVoice": [
     "Levi_Greeting",
     "Levi_Lobby",
     "Levi_Spawn1",
-    "Levi_Joy1",
-    ],
+    "Levi_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -27695,24 +28104,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "LeviGraduate_Surprise1",
     "LeviGraduate_Hmm1",
-    "LeviGraduate_Yes1",
-    ],
+    "LeviGraduate_Yes1"
+   ],
    "upsetVoice": [
     "LeviGraduate_Anger1",
     "LeviGraduate_No1",
-    "LeviGraduate_Anger2",
-    ],
+    "LeviGraduate_Anger2"
+   ],
    "hungryVoice": [
     "LeviGraduate_CallPlayer1",
     "LeviGraduate_Sorrow1",
-    "LeviGraduate_Hmm2",
-    ],
+    "LeviGraduate_Hmm2"
+   ],
    "greetVoice": [
     "LeviGraduate_Greeting",
     "LeviGraduate_Lobby",
     "LeviGraduate_Spawn1",
-    "LeviGraduate_Joy1",
-    ],
+    "LeviGraduate_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -28112,24 +28521,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Lion_Surprise1",
     "Lion_Hmm1",
-    "Lion_Yes1",
-    ],
+    "Lion_Yes1"
+   ],
    "upsetVoice": [
     "Lion_Anger1",
     "Lion_No1",
-    "Lion_Anger2",
-    ],
+    "Lion_Anger2"
+   ],
    "hungryVoice": [
     "Lion_CallPlayer1",
     "Lion_Sorrow1",
-    "Lion_Hmm2",
-    ],
+    "Lion_Hmm2"
+   ],
    "greetVoice": [
     "Lion_Greeting",
     "Lion_Lobby",
     "Lion_Spawn1",
-    "Lion_Joy1",
-    ],
+    "Lion_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -28489,24 +28898,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "MaestroMK2_Surprise1",
     "MaestroMK2_Hmm1",
-    "MaestroMK2_Yes1",
-    ],
+    "MaestroMK2_Yes1"
+   ],
    "upsetVoice": [
     "MaestroMK2_Anger1",
     "MaestroMK2_No1",
-    "MaestroMK2_Anger2",
-    ],
+    "MaestroMK2_Anger2"
+   ],
    "hungryVoice": [
     "MaestroMK2_CallPlayer1",
     "MaestroMK2_Sorrow1",
-    "MaestroMK2_Hmm2",
-    ],
+    "MaestroMK2_Hmm2"
+   ],
    "greetVoice": [
     "MaestroMK2_Greeting",
     "MaestroMK2_Lobby",
     "MaestroMK2_Spawn1",
-    "MaestroMK2_Joy1",
-    ],
+    "MaestroMK2_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -28860,24 +29269,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Mago_Surprise1",
     "Mago_Hmm1",
-    "Mago_Yes1",
-    ],
+    "Mago_Yes1"
+   ],
    "upsetVoice": [
     "Mago_Anger1",
     "Mago_No1",
-    "Mago_Anger2",
-    ],
+    "Mago_Anger2"
+   ],
    "hungryVoice": [
     "Mago_CallPlayer1",
     "Mago_Sorrow1",
-    "Mago_Hmm2",
-    ],
+    "Mago_Hmm2"
+   ],
    "greetVoice": [
     "Mago_Greeting",
     "Mago_Lobby",
     "Mago_Spawn1",
-    "Mago_Joy1",
-    ],
+    "Mago_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -29229,24 +29638,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Maison_Surprise1",
     "Maison_Hmm1",
-    "Maison_Yes1",
-    ],
+    "Maison_Yes1"
+   ],
    "upsetVoice": [
     "Maison_Anger1",
     "Maison_No1",
-    "Maison_Anger2",
-    ],
+    "Maison_Anger2"
+   ],
    "hungryVoice": [
     "Maison_CallPlayer1",
     "Maison_Sorrow1",
-    "Maison_Hmm2",
-    ],
+    "Maison_Hmm2"
+   ],
    "greetVoice": [
     "Maison_Greeting",
     "Maison_Lobby",
     "Maison_Spawn1",
-    "Maison_Joy1",
-    ],
+    "Maison_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -29610,24 +30019,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Makasha_Surprise1",
     "Makasha_Hmm1",
-    "Makasha_Yes1",
-    ],
+    "Makasha_Yes1"
+   ],
    "upsetVoice": [
     "Makasha_Anger1",
     "Makasha_No1",
-    "Makasha_Anger2",
-    ],
+    "Makasha_Anger2"
+   ],
    "hungryVoice": [
     "Makasha_CallPlayer1",
     "Makasha_Sorrow1",
-    "Makasha_Hmm2",
-    ],
+    "Makasha_Hmm2"
+   ],
    "greetVoice": [
     "Makasha_Greeting",
     "Makasha_Lobby",
     "Makasha_Spawn1",
-    "Makasha_Joy1",
-    ],
+    "Makasha_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -30002,24 +30411,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Marie_Surprise1",
     "Marie_Hmm1",
-    "Marie_Yes1",
-    ],
+    "Marie_Yes1"
+   ],
    "upsetVoice": [
     "Marie_Anger1",
     "Marie_No1",
-    "Marie_Anger2",
-    ],
+    "Marie_Anger2"
+   ],
    "hungryVoice": [
     "Marie_CallPlayer1",
     "Marie_Sorrow1",
-    "Marie_Hmm2",
-    ],
+    "Marie_Hmm2"
+   ],
    "greetVoice": [
     "Marie_Greeting",
     "Marie_Lobby",
     "Marie_Spawn1",
-    "Marie_Joy1",
-    ],
+    "Marie_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -30377,24 +30786,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Mayo_Surprise1",
     "Mayo_Hmm1",
-    "Mayo_Yes1",
-    ],
+    "Mayo_Yes1"
+   ],
    "upsetVoice": [
     "Mayo_Anger1",
     "Mayo_No1",
-    "Mayo_Anger2",
-    ],
+    "Mayo_Anger2"
+   ],
    "hungryVoice": [
     "Mayo_CallPlayer1",
     "Mayo_Sorrow1",
-    "Mayo_Hmm2",
-    ],
+    "Mayo_Hmm2"
+   ],
    "greetVoice": [
     "Mayo_Greeting",
     "Mayo_Lobby",
     "Mayo_Spawn1",
-    "Mayo_Joy1",
-    ],
+    "Mayo_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -30772,24 +31181,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "MayoCool_Surprise1",
     "MayoCool_Hmm1",
-    "MayoCool_Yes1",
-    ],
+    "MayoCool_Yes1"
+   ],
    "upsetVoice": [
     "MayoCool_Anger1",
     "MayoCool_No1",
-    "MayoCool_Anger2",
-    ],
+    "MayoCool_Anger2"
+   ],
    "hungryVoice": [
     "MayoCool_CallPlayer1",
     "MayoCool_Sorrow1",
-    "MayoCool_Hmm2",
-    ],
+    "MayoCool_Hmm2"
+   ],
    "greetVoice": [
     "MayoCool_Greeting",
     "MayoCool_Lobby",
     "MayoCool_Spawn1",
-    "MayoCool_Joy1",
-    ],
+    "MayoCool_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -31169,24 +31578,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Meluna_Surprise1",
     "Meluna_Hmm1",
-    "Meluna_Yes1",
-    ],
+    "Meluna_Yes1"
+   ],
    "upsetVoice": [
     "Meluna_Anger1",
     "Meluna_No1",
-    "Meluna_Anger2",
-    ],
+    "Meluna_Anger2"
+   ],
    "hungryVoice": [
     "Meluna_CallPlayer1",
     "Meluna_Sorrow1",
-    "Meluna_Hmm2",
-    ],
+    "Meluna_Hmm2"
+   ],
    "greetVoice": [
     "Meluna_Greeting",
     "Meluna_Lobby",
     "Meluna_Spawn1",
-    "Meluna_Joy1",
-    ],
+    "Meluna_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -31549,24 +31958,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Miro_Surprise1",
     "Miro_Hmm1",
-    "Miro_Yes1",
-    ],
+    "Miro_Yes1"
+   ],
    "upsetVoice": [
     "Miro_Anger1",
     "Miro_No1",
-    "Miro_Anger2",
-    ],
+    "Miro_Anger2"
+   ],
    "hungryVoice": [
     "Miro_CallPlayer1",
     "Miro_Sorrow1",
-    "Miro_Hmm2",
-    ],
+    "Miro_Hmm2"
+   ],
    "greetVoice": [
     "Miro_Greeting",
     "Miro_Lobby",
     "Miro_Spawn1",
-    "Miro_Joy1",
-    ],
+    "Miro_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -31911,14 +32320,10 @@ const CHAR_GENERATED = [
    "voiceLangs": [
     "ko"
    ],
-   "pokeVoice": [
-    ],
-   "upsetVoice": [
-    ],
-   "hungryVoice": [
-    ],
-   "greetVoice": [
-    ],
+   "pokeVoice": [],
+   "upsetVoice": [],
+   "hungryVoice": [],
+   "greetVoice": [],
    "moodActs": [
     "happy",
     "proud",
@@ -32326,24 +32731,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Momo_Surprise1",
     "Momo_Hmm1",
-    "Momo_Yes1",
-    ],
+    "Momo_Yes1"
+   ],
    "upsetVoice": [
     "Momo_Anger1",
     "Momo_No1",
-    "Momo_Anger2",
-    ],
+    "Momo_Anger2"
+   ],
    "hungryVoice": [
     "Momo_CallPlayer1",
     "Momo_Sorrow1",
-    "Momo_Hmm2",
-    ],
+    "Momo_Hmm2"
+   ],
    "greetVoice": [
     "Momo_Greeting",
     "Momo_Lobby",
     "Momo_Spawn1",
-    "Momo_Joy1",
-    ],
+    "Momo_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -32734,24 +33139,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Mute_Surprise1",
     "Mute_Hmm1",
-    "Mute_Yes1",
-    ],
+    "Mute_Yes1"
+   ],
    "upsetVoice": [
     "Mute_Anger1",
     "Mute_No1",
-    "Mute_Anger2",
-    ],
+    "Mute_Anger2"
+   ],
    "hungryVoice": [
     "Mute_CallPlayer1",
     "Mute_Sorrow1",
-    "Mute_Hmm2",
-    ],
+    "Mute_Hmm2"
+   ],
    "greetVoice": [
     "Mute_Greeting",
     "Mute_Lobby",
     "Mute_Spawn1",
-    "Mute_Joy1",
-    ],
+    "Mute_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -33133,24 +33538,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Mynx_Surprise1",
     "Mynx_Hmm1",
-    "Mynx_Yes1",
-    ],
+    "Mynx_Yes1"
+   ],
    "upsetVoice": [
     "Mynx_Anger1",
     "Mynx_No1",
-    "Mynx_Anger2",
-    ],
+    "Mynx_Anger2"
+   ],
    "hungryVoice": [
     "Mynx_CallPlayer1",
     "Mynx_Sorrow1",
-    "Mynx_Hmm2",
-    ],
+    "Mynx_Hmm2"
+   ],
    "greetVoice": [
     "Mynx_Greeting",
     "Mynx_Lobby",
     "Mynx_Spawn1",
-    "Mynx_Joy1",
-    ],
+    "Mynx_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -33539,24 +33944,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Naia_Surprise1",
     "Naia_Hmm1",
-    "Naia_Yes1",
-    ],
+    "Naia_Yes1"
+   ],
    "upsetVoice": [
     "Naia_Anger1",
     "Naia_No1",
-    "Naia_Anger2",
-    ],
+    "Naia_Anger2"
+   ],
    "hungryVoice": [
     "Naia_CallPlayer1",
     "Naia_Sorrow1",
-    "Naia_Hmm2",
-    ],
+    "Naia_Hmm2"
+   ],
    "greetVoice": [
     "Naia_Greeting",
     "Naia_Lobby",
     "Naia_Spawn1",
-    "Naia_Joy1",
-    ],
+    "Naia_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -33649,7 +34054,7 @@ const CHAR_GENERATED = [
    "id": "Ner",
    "name": "尼尔",
    "en": "Ner",
-   "desc": "妖精 · 4 套外观",
+   "desc": "妖精 · 5 套外观",
    "tag": "🧚",
    "art": {
     "avatar": "assets/art/Ner/phone-avatar.png",
@@ -33688,6 +34093,13 @@ const CHAR_GENERATED = [
      "name": "教团的圣宴派对",
      "desc": "在特别的教团之日，盛装打扮的涅尔。虽然担…（60 动作）",
      "voiceSkin": "_Skin3"
+    },
+    {
+     "id": "Pet_MiniNer",
+     "dir": "assets/spine/Pet_MiniNer",
+     "name": "迷你形态",
+     "desc": "宠物形态（动作较少）",
+     "voiceSkin": ""
     }
    ],
    "bones": {
@@ -33942,24 +34354,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Ner_Surprise1",
     "Ner_Hmm1",
-    "Ner_Yes1",
-    ],
+    "Ner_Yes1"
+   ],
    "upsetVoice": [
     "Ner_Anger1",
     "Ner_No1",
-    "Ner_Anger2",
-    ],
+    "Ner_Anger2"
+   ],
    "hungryVoice": [
     "Ner_CallPlayer1",
     "Ner_Sorrow1",
-    "Ner_Hmm2",
-    ],
+    "Ner_Hmm2"
+   ],
    "greetVoice": [
     "Ner_Greeting",
     "Ner_Lobby",
     "Ner_Spawn1",
-    "Ner_Joy1",
-    ],
+    "Ner_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -34345,24 +34757,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "NerRage_Surprise1",
     "NerRage_Hmm1",
-    "NerRage_Yes1",
-    ],
+    "NerRage_Yes1"
+   ],
    "upsetVoice": [
     "NerRage_Anger1",
     "NerRage_No1",
-    "NerRage_Anger2",
-    ],
+    "NerRage_Anger2"
+   ],
    "hungryVoice": [
     "NerRage_CallPlayer1",
     "NerRage_Sorrow1",
-    "NerRage_Hmm2",
-    ],
+    "NerRage_Hmm2"
+   ],
    "greetVoice": [
     "NerRage_Greeting",
     "NerRage_Lobby",
     "NerRage_Spawn1",
-    "NerRage_Joy1",
-    ],
+    "NerRage_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -34760,24 +35172,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Neti_Surprise1",
     "Neti_Hmm1",
-    "Neti_Yes1",
-    ],
+    "Neti_Yes1"
+   ],
    "upsetVoice": [
     "Neti_Anger1",
     "Neti_No1",
-    "Neti_Anger2",
-    ],
+    "Neti_Anger2"
+   ],
    "hungryVoice": [
     "Neti_CallPlayer1",
     "Neti_Sorrow1",
-    "Neti_Hmm2",
-    ],
+    "Neti_Hmm2"
+   ],
    "greetVoice": [
     "Neti_Greeting",
     "Neti_Lobby",
     "Neti_Spawn1",
-    "Neti_Joy1",
-    ],
+    "Neti_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -35147,24 +35559,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Nicole_Surprise1",
     "Nicole_Hmm1",
-    "Nicole_Yes1",
-    ],
+    "Nicole_Yes1"
+   ],
    "upsetVoice": [
     "Nicole_Anger1",
     "Nicole_No1",
-    "Nicole_Anger2",
-    ],
+    "Nicole_Anger2"
+   ],
    "hungryVoice": [
     "Nicole_CallPlayer1",
     "Nicole_Sorrow1",
-    "Nicole_Hmm2",
-    ],
+    "Nicole_Hmm2"
+   ],
    "greetVoice": [
     "Nicole_Greeting",
     "Nicole_Lobby",
     "Nicole_Spawn1",
-    "Nicole_Joy1",
-    ],
+    "Nicole_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -35528,22 +35940,22 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Noone_Surprise1",
     "Noone_Hmm1",
-    "Noone_Yes1",
-    ],
+    "Noone_Yes1"
+   ],
    "upsetVoice": [
     "Noone_Anger1",
     "Noone_No1",
-    "Noone_Anger2",
-    ],
+    "Noone_Anger2"
+   ],
    "hungryVoice": [
     "Noone_CallPlayer1",
     "Noone_Sorrow1",
-    "Noone_Hmm2",
-    ],
+    "Noone_Hmm2"
+   ],
    "greetVoice": [
     "Noone_Greeting",
-    "Noone_Joy1",
-    ],
+    "Noone_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -35891,24 +36303,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Joanne_Surprise1",
     "Joanne_Hmm1",
-    "Joanne_Yes1",
-    ],
+    "Joanne_Yes1"
+   ],
    "upsetVoice": [
     "Joanne_Anger1",
     "Joanne_No1",
-    "Joanne_Anger2",
-    ],
+    "Joanne_Anger2"
+   ],
    "hungryVoice": [
     "Joanne_CallPlayer1",
     "Joanne_Sorrow1",
-    "Joanne_Hmm2",
-    ],
+    "Joanne_Hmm2"
+   ],
    "greetVoice": [
     "Joanne_Greeting",
     "Joanne_Lobby",
     "Joanne_Spawn1",
-    "Joanne_Joy1",
-    ],
+    "Joanne_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -36314,24 +36726,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Opal_Surprise1",
     "Opal_Hmm1",
-    "Opal_Yes1",
-    ],
+    "Opal_Yes1"
+   ],
    "upsetVoice": [
     "Opal_Anger1",
     "Opal_No1",
-    "Opal_Anger2",
-    ],
+    "Opal_Anger2"
+   ],
    "hungryVoice": [
     "Opal_CallPlayer1",
     "Opal_Sorrow1",
-    "Opal_Hmm2",
-    ],
+    "Opal_Hmm2"
+   ],
    "greetVoice": [
     "Opal_Greeting",
     "Opal_Lobby",
     "Opal_Spawn1",
-    "Opal_Joy1",
-    ],
+    "Opal_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -36711,24 +37123,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Orr_Surprise1",
     "Orr_Hmm1",
-    "Orr_Yes1",
-    ],
+    "Orr_Yes1"
+   ],
    "upsetVoice": [
     "Orr_Anger1",
     "Orr_No1",
-    "Orr_Anger2",
-    ],
+    "Orr_Anger2"
+   ],
    "hungryVoice": [
     "Orr_CallPlayer1",
     "Orr_Sorrow1",
-    "Orr_Hmm2",
-    ],
+    "Orr_Hmm2"
+   ],
    "greetVoice": [
     "Orr_Greeting",
     "Orr_Lobby",
     "Orr_Spawn1",
-    "Orr_Joy1",
-    ],
+    "Orr_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -37090,24 +37502,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Patula_Surprise1",
     "Patula_Hmm1",
-    "Patula_Yes1",
-    ],
+    "Patula_Yes1"
+   ],
    "upsetVoice": [
     "Patula_Anger1",
     "Patula_No1",
-    "Patula_Anger2",
-    ],
+    "Patula_Anger2"
+   ],
    "hungryVoice": [
     "Patula_CallPlayer1",
     "Patula_Sorrow1",
-    "Patula_Hmm2",
-    ],
+    "Patula_Hmm2"
+   ],
    "greetVoice": [
     "Patula_Greeting",
     "Patula_Lobby",
     "Patula_Spawn1",
-    "Patula_Joy1",
-    ],
+    "Patula_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -37485,24 +37897,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Picora_Surprise1",
     "Picora_Hmm1",
-    "Picora_Yes1",
-    ],
+    "Picora_Yes1"
+   ],
    "upsetVoice": [
     "Picora_Anger1",
     "Picora_No1",
-    "Picora_Anger2",
-    ],
+    "Picora_Anger2"
+   ],
    "hungryVoice": [
     "Picora_CallPlayer1",
     "Picora_Sorrow1",
-    "Picora_Hmm2",
-    ],
+    "Picora_Hmm2"
+   ],
    "greetVoice": [
     "Picora_Greeting",
     "Picora_Lobby",
     "Picora_Spawn1",
-    "Picora_Joy1",
-    ],
+    "Picora_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -37891,24 +38303,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Pira_Surprise1",
     "Pira_Hmm1",
-    "Pira_Yes1",
-    ],
+    "Pira_Yes1"
+   ],
    "upsetVoice": [
     "Pira_Anger1",
     "Pira_No1",
-    "Pira_Anger2",
-    ],
+    "Pira_Anger2"
+   ],
    "hungryVoice": [
     "Pira_CallPlayer1",
     "Pira_Sorrow1",
-    "Pira_Hmm2",
-    ],
+    "Pira_Hmm2"
+   ],
    "greetVoice": [
     "Pira_Greeting",
     "Pira_Lobby",
     "Pira_Spawn1",
-    "Pira_Joy1",
-    ],
+    "Pira_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -38289,24 +38701,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Polan_Surprise1",
     "Polan_Hmm1",
-    "Polan_Yes1",
-    ],
+    "Polan_Yes1"
+   ],
    "upsetVoice": [
     "Polan_Anger1",
     "Polan_No1",
-    "Polan_Anger2",
-    ],
+    "Polan_Anger2"
+   ],
    "hungryVoice": [
     "Polan_CallPlayer1",
     "Polan_Sorrow1",
-    "Polan_Hmm2",
-    ],
+    "Polan_Hmm2"
+   ],
    "greetVoice": [
     "Polan_Greeting",
     "Polan_Lobby",
     "Polan_Spawn1",
-    "Polan_Joy1",
-    ],
+    "Polan_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -38704,24 +39116,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Posher_Surprise1",
     "Posher_Hmm1",
-    "Posher_Yes1",
-    ],
+    "Posher_Yes1"
+   ],
    "upsetVoice": [
     "Posher_Anger1",
     "Posher_No1",
-    "Posher_Anger2",
-    ],
+    "Posher_Anger2"
+   ],
    "hungryVoice": [
     "Posher_CallPlayer1",
     "Posher_Sorrow1",
-    "Posher_Hmm2",
-    ],
+    "Posher_Hmm2"
+   ],
    "greetVoice": [
     "Posher_Greeting",
     "Posher_Lobby",
     "Posher_Spawn1",
-    "Posher_Joy1",
-    ],
+    "Posher_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -39097,24 +39509,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Ran_Surprise1",
     "Ran_Hmm1",
-    "Ran_Yes1",
-    ],
+    "Ran_Yes1"
+   ],
    "upsetVoice": [
     "Ran_Anger1",
     "Ran_No1",
-    "Ran_Anger2",
-    ],
+    "Ran_Anger2"
+   ],
    "hungryVoice": [
     "Ran_CallPlayer1",
     "Ran_Sorrow1",
-    "Ran_Hmm2",
-    ],
+    "Ran_Hmm2"
+   ],
    "greetVoice": [
     "Ran_Greeting",
     "Ran_Lobby",
     "Ran_Spawn1",
-    "Ran_Joy1",
-    ],
+    "Ran_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -39491,14 +39903,10 @@ const CHAR_GENERATED = [
     "ja",
     "ko"
    ],
-   "pokeVoice": [
-    ],
-   "upsetVoice": [
-    ],
-   "hungryVoice": [
-    ],
-   "greetVoice": [
-    ],
+   "pokeVoice": [],
+   "upsetVoice": [],
+   "hungryVoice": [],
+   "greetVoice": [],
    "moodActs": [
     "happy",
     "proud",
@@ -39886,24 +40294,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "RenewaAwaken_Surprise1",
     "RenewaAwaken_Hmm1",
-    "RenewaAwaken_Yes1",
-    ],
+    "RenewaAwaken_Yes1"
+   ],
    "upsetVoice": [
     "RenewaAwaken_Anger1",
     "RenewaAwaken_No1",
-    "RenewaAwaken_Anger2",
-    ],
+    "RenewaAwaken_Anger2"
+   ],
    "hungryVoice": [
     "RenewaAwaken_CallPlayer1",
     "RenewaAwaken_Sorrow1",
-    "RenewaAwaken_Hmm2",
-    ],
+    "RenewaAwaken_Hmm2"
+   ],
    "greetVoice": [
     "RenewaAwaken_Greeting",
     "RenewaAwaken_Lobby",
     "RenewaAwaken_Spawn1",
-    "RenewaAwaken_Joy1",
-    ],
+    "RenewaAwaken_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -40280,24 +40688,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Ricota_Surprise1",
     "Ricota_Hmm1",
-    "Ricota_Yes1",
-    ],
+    "Ricota_Yes1"
+   ],
    "upsetVoice": [
     "Ricota_Anger1",
     "Ricota_No1",
-    "Ricota_Anger2",
-    ],
+    "Ricota_Anger2"
+   ],
    "hungryVoice": [
     "Ricota_CallPlayer1",
     "Ricota_Sorrow1",
-    "Ricota_Hmm2",
-    ],
+    "Ricota_Hmm2"
+   ],
    "greetVoice": [
     "Ricota_Greeting",
     "Ricota_Lobby",
     "Ricota_Spawn1",
-    "Ricota_Joy1",
-    ],
+    "Ricota_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -40678,24 +41086,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Rim_Surprise1",
     "Rim_Hmm1",
-    "Rim_Yes1",
-    ],
+    "Rim_Yes1"
+   ],
    "upsetVoice": [
     "Rim_Anger1",
     "Rim_No1",
-    "Rim_Anger2",
-    ],
+    "Rim_Anger2"
+   ],
    "hungryVoice": [
     "Rim_CallPlayer1",
     "Rim_Sorrow1",
-    "Rim_Hmm2",
-    ],
+    "Rim_Hmm2"
+   ],
    "greetVoice": [
     "Rim_Greeting",
     "Rim_Lobby",
     "Rim_Spawn1",
-    "Rim_Joy1",
-    ],
+    "Rim_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -41079,24 +41487,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "RimChaos_Surprise1",
     "RimChaos_Hmm1",
-    "RimChaos_Yes1",
-    ],
+    "RimChaos_Yes1"
+   ],
    "upsetVoice": [
     "RimChaos_Anger1",
     "RimChaos_No1",
-    "RimChaos_Anger2",
-    ],
+    "RimChaos_Anger2"
+   ],
    "hungryVoice": [
     "RimChaos_CallPlayer1",
     "RimChaos_Sorrow1",
-    "RimChaos_Hmm2",
-    ],
+    "RimChaos_Hmm2"
+   ],
    "greetVoice": [
     "RimChaos_Greeting",
     "RimChaos_Lobby",
     "RimChaos_Spawn1",
-    "RimChaos_Joy1",
-    ],
+    "RimChaos_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -41490,24 +41898,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Risty_Surprise1",
     "Risty_Hmm1",
-    "Risty_Yes1",
-    ],
+    "Risty_Yes1"
+   ],
    "upsetVoice": [
     "Risty_Anger1",
     "Risty_No1",
-    "Risty_Anger2",
-    ],
+    "Risty_Anger2"
+   ],
    "hungryVoice": [
     "Risty_CallPlayer1",
     "Risty_Sorrow1",
-    "Risty_Hmm2",
-    ],
+    "Risty_Hmm2"
+   ],
    "greetVoice": [
     "Risty_Greeting",
     "Risty_Lobby",
     "Risty_Spawn1",
-    "Risty_Joy1",
-    ],
+    "Risty_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -41884,24 +42292,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Rohne_Surprise1",
     "Rohne_Hmm1",
-    "Rohne_Yes1",
-    ],
+    "Rohne_Yes1"
+   ],
    "upsetVoice": [
     "Rohne_Anger1",
     "Rohne_No1",
-    "Rohne_Anger2",
-    ],
+    "Rohne_Anger2"
+   ],
    "hungryVoice": [
     "Rohne_CallPlayer1",
     "Rohne_Sorrow1",
-    "Rohne_Hmm2",
-    ],
+    "Rohne_Hmm2"
+   ],
    "greetVoice": [
     "Rohne_Greeting",
     "Rohne_Lobby",
     "Rohne_Spawn1",
-    "Rohne_Joy1",
-    ],
+    "Rohne_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -42281,24 +42689,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "RohneMayor_Surprise1",
     "RohneMayor_Hmm1",
-    "RohneMayor_Yes1",
-    ],
+    "RohneMayor_Yes1"
+   ],
    "upsetVoice": [
     "RohneMayor_Anger1",
     "RohneMayor_No1",
-    "RohneMayor_Anger2",
-    ],
+    "RohneMayor_Anger2"
+   ],
    "hungryVoice": [
     "RohneMayor_CallPlayer1",
     "RohneMayor_Sorrow1",
-    "RohneMayor_Hmm2",
-    ],
+    "RohneMayor_Hmm2"
+   ],
    "greetVoice": [
     "RohneMayor_Greeting",
     "RohneMayor_Lobby",
     "RohneMayor_Spawn1",
-    "RohneMayor_Joy1",
-    ],
+    "RohneMayor_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -42700,24 +43108,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Rollett_Surprise1",
     "Rollett_Hmm1",
-    "Rollett_Yes1",
-    ],
+    "Rollett_Yes1"
+   ],
    "upsetVoice": [
     "Rollett_Anger1",
     "Rollett_No1",
-    "Rollett_Anger2",
-    ],
+    "Rollett_Anger2"
+   ],
    "hungryVoice": [
     "Rollett_CallPlayer1",
     "Rollett_Sorrow1",
-    "Rollett_Hmm2",
-    ],
+    "Rollett_Hmm2"
+   ],
    "greetVoice": [
     "Rollett_Greeting",
     "Rollett_Lobby",
     "Rollett_Spawn1",
-    "Rollett_Joy1",
-    ],
+    "Rollett_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -43088,24 +43496,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Ronnie_Surprise1",
     "Ronnie_Hmm1",
-    "Ronnie_Yes1",
-    ],
+    "Ronnie_Yes1"
+   ],
    "upsetVoice": [
     "Ronnie_Anger1",
     "Ronnie_No1",
-    "Ronnie_Anger2",
-    ],
+    "Ronnie_Anger2"
+   ],
    "hungryVoice": [
     "Ronnie_CallPlayer1",
     "Ronnie_Sorrow1",
-    "Ronnie_Hmm2",
-    ],
+    "Ronnie_Hmm2"
+   ],
    "greetVoice": [
     "Ronnie_Greeting",
     "Ronnie_Lobby",
     "Ronnie_Spawn1",
-    "Ronnie_Joy1",
-    ],
+    "Ronnie_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -43496,24 +43904,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Rude_Surprise1",
     "Rude_Hmm1",
-    "Rude_Yes1",
-    ],
+    "Rude_Yes1"
+   ],
    "upsetVoice": [
     "Rude_Anger1",
     "Rude_No1",
-    "Rude_Anger2",
-    ],
+    "Rude_Anger2"
+   ],
    "hungryVoice": [
     "Rude_CallPlayer1",
     "Rude_Sorrow1",
-    "Rude_Hmm2",
-    ],
+    "Rude_Hmm2"
+   ],
    "greetVoice": [
     "Rude_Greeting",
     "Rude_Lobby",
     "Rude_Spawn1",
-    "Rude_Joy1",
-    ],
+    "Rude_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -43882,24 +44290,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Rufo_Surprise1",
     "Rufo_Hmm1",
-    "Rufo_Yes1",
-    ],
+    "Rufo_Yes1"
+   ],
    "upsetVoice": [
     "Rufo_Anger1",
     "Rufo_No1",
-    "Rufo_Anger2",
-    ],
+    "Rufo_Anger2"
+   ],
    "hungryVoice": [
     "Rufo_CallPlayer1",
     "Rufo_Sorrow1",
-    "Rufo_Hmm2",
-    ],
+    "Rufo_Hmm2"
+   ],
    "greetVoice": [
     "Rufo_Greeting",
     "Rufo_Lobby",
     "Rufo_Spawn1",
-    "Rufo_Joy1",
-    ],
+    "Rufo_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -44241,24 +44649,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Sari_Surprise1",
     "Sari_Hmm1",
-    "Sari_Yes1",
-    ],
+    "Sari_Yes1"
+   ],
    "upsetVoice": [
     "Sari_Anger1",
     "Sari_No1",
-    "Sari_Anger2",
-    ],
+    "Sari_Anger2"
+   ],
    "hungryVoice": [
     "Sari_CallPlayer1",
     "Sari_Sorrow1",
-    "Sari_Hmm2",
-    ],
+    "Sari_Hmm2"
+   ],
    "greetVoice": [
     "Sari_Greeting",
     "Sari_Lobby",
     "Sari_Spawn1",
-    "Sari_Joy1",
-    ],
+    "Sari_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -44628,24 +45036,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Scizor_Surprise1",
     "Scizor_Hmm1",
-    "Scizor_Yes1",
-    ],
+    "Scizor_Yes1"
+   ],
    "upsetVoice": [
     "Scizor_Anger1",
     "Scizor_No1",
-    "Scizor_Anger2",
-    ],
+    "Scizor_Anger2"
+   ],
    "hungryVoice": [
     "Scizor_CallPlayer1",
     "Scizor_Sorrow1",
-    "Scizor_Hmm2",
-    ],
+    "Scizor_Hmm2"
+   ],
    "greetVoice": [
     "Scizor_Greeting",
     "Scizor_Lobby",
     "Scizor_Spawn1",
-    "Scizor_Joy1",
-    ],
+    "Scizor_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -45035,24 +45443,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Selline_Surprise1",
     "Selline_Hmm1",
-    "Selline_Yes1",
-    ],
+    "Selline_Yes1"
+   ],
    "upsetVoice": [
     "Selline_Anger1",
     "Selline_No1",
-    "Selline_Anger2",
-    ],
+    "Selline_Anger2"
+   ],
    "hungryVoice": [
     "Selline_CallPlayer1",
     "Selline_Sorrow1",
-    "Selline_Hmm2",
-    ],
+    "Selline_Hmm2"
+   ],
    "greetVoice": [
     "Selline_Greeting",
     "Selline_Lobby",
     "Selline_Spawn1",
-    "Selline_Joy1",
-    ],
+    "Selline_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -45434,24 +45842,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Shady_Surprise1",
     "Shady_Hmm1",
-    "Shady_Yes1",
-    ],
+    "Shady_Yes1"
+   ],
    "upsetVoice": [
     "Shady_Anger1",
     "Shady_No1",
-    "Shady_Anger2",
-    ],
+    "Shady_Anger2"
+   ],
    "hungryVoice": [
     "Shady_CallPlayer1",
     "Shady_Sorrow1",
-    "Shady_Hmm2",
-    ],
+    "Shady_Hmm2"
+   ],
    "greetVoice": [
     "Shady_Greeting",
     "Shady_Lobby",
     "Shady_Spawn1",
-    "Shady_Joy1",
-    ],
+    "Shady_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -45823,24 +46231,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "ShadyTwisted_Surprise1",
     "ShadyTwisted_Hmm1",
-    "ShadyTwisted_Yes1",
-    ],
+    "ShadyTwisted_Yes1"
+   ],
    "upsetVoice": [
     "ShadyTwisted_Anger1",
     "ShadyTwisted_No1",
-    "ShadyTwisted_Anger2",
-    ],
+    "ShadyTwisted_Anger2"
+   ],
    "hungryVoice": [
     "ShadyTwisted_CallPlayer1",
     "ShadyTwisted_Sorrow1",
-    "ShadyTwisted_Hmm2",
-    ],
+    "ShadyTwisted_Hmm2"
+   ],
    "greetVoice": [
     "ShadyTwisted_Greeting",
     "ShadyTwisted_Lobby",
     "ShadyTwisted_Spawn1",
-    "ShadyTwisted_Joy1",
-    ],
+    "ShadyTwisted_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -46252,24 +46660,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Shasha_Surprise1",
     "Shasha_Hmm1",
-    "Shasha_Yes1",
-    ],
+    "Shasha_Yes1"
+   ],
    "upsetVoice": [
     "Shasha_Anger1",
     "Shasha_No1",
-    "Shasha_Anger2",
-    ],
+    "Shasha_Anger2"
+   ],
    "hungryVoice": [
     "Shasha_CallPlayer1",
     "Shasha_Sorrow1",
-    "Shasha_Hmm2",
-    ],
+    "Shasha_Hmm2"
+   ],
    "greetVoice": [
     "Shasha_Greeting",
     "Shasha_Lobby",
     "Shasha_Spawn1",
-    "Shasha_Joy1",
-    ],
+    "Shasha_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -46673,24 +47081,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Sherum_Surprise1",
     "Sherum_Hmm1",
-    "Sherum_Yes1",
-    ],
+    "Sherum_Yes1"
+   ],
    "upsetVoice": [
     "Sherum_Anger1",
     "Sherum_No1",
-    "Sherum_Anger2",
-    ],
+    "Sherum_Anger2"
+   ],
    "hungryVoice": [
     "Sherum_CallPlayer1",
     "Sherum_Sorrow1",
-    "Sherum_Hmm2",
-    ],
+    "Sherum_Hmm2"
+   ],
    "greetVoice": [
     "Sherum_Greeting",
     "Sherum_Lobby",
     "Sherum_Spawn1",
-    "Sherum_Joy1",
-    ],
+    "Sherum_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -47090,24 +47498,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Shoupan_Surprise1",
     "Shoupan_Hmm1",
-    "Shoupan_Yes1",
-    ],
+    "Shoupan_Yes1"
+   ],
    "upsetVoice": [
     "Shoupan_Anger1",
     "Shoupan_No1",
-    "Shoupan_Anger2",
-    ],
+    "Shoupan_Anger2"
+   ],
    "hungryVoice": [
     "Shoupan_CallPlayer1",
     "Shoupan_Sorrow1",
-    "Shoupan_Hmm2",
-    ],
+    "Shoupan_Hmm2"
+   ],
    "greetVoice": [
     "Shoupan_Greeting",
     "Shoupan_Lobby",
     "Shoupan_Spawn1",
-    "Shoupan_Joy1",
-    ],
+    "Shoupan_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -47497,24 +47905,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Silphir_Surprise1",
     "Silphir_Hmm1",
-    "Silphir_Yes1",
-    ],
+    "Silphir_Yes1"
+   ],
    "upsetVoice": [
     "Silphir_Anger1",
     "Silphir_No1",
-    "Silphir_Anger2",
-    ],
+    "Silphir_Anger2"
+   ],
    "hungryVoice": [
     "Silphir_CallPlayer1",
     "Silphir_Sorrow1",
-    "Silphir_Hmm2",
-    ],
+    "Silphir_Hmm2"
+   ],
    "greetVoice": [
     "Silphir_Greeting",
     "Silphir_Lobby",
     "Silphir_Spawn1",
-    "Silphir_Joy1",
-    ],
+    "Silphir_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -47638,7 +48046,7 @@ const CHAR_GENERATED = [
     {
      "id": "SilviaSkin3",
      "dir": "assets/spine/SilviaSkin3",
-     "name": "西尔维娅 Skin3",
+     "name": "初醒的银辉",
      "desc": "西尔维娅的第三套外观。（67 动作）",
      "voiceSkin": "_Skin3"
     }
@@ -47886,24 +48294,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Silvia_Surprise1",
     "Silvia_Hmm1",
-    "Silvia_Yes1",
-    ],
+    "Silvia_Yes1"
+   ],
    "upsetVoice": [
     "Silvia_Anger1",
     "Silvia_No1",
-    "Silvia_Anger2",
-    ],
+    "Silvia_Anger2"
+   ],
    "hungryVoice": [
     "Silvia_CallPlayer1",
     "Silvia_Sorrow1",
-    "Silvia_Hmm2",
-    ],
+    "Silvia_Hmm2"
+   ],
    "greetVoice": [
     "Silvia_Greeting",
     "Silvia_Lobby",
     "Silvia_Spawn1",
-    "Silvia_Joy1",
-    ],
+    "Silvia_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -48297,24 +48705,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Sist_Surprise1",
     "Sist_Hmm1",
-    "Sist_Yes1",
-    ],
+    "Sist_Yes1"
+   ],
    "upsetVoice": [
     "Sist_Anger1",
     "Sist_No1",
-    "Sist_Anger2",
-    ],
+    "Sist_Anger2"
+   ],
    "hungryVoice": [
     "Sist_CallPlayer1",
     "Sist_Sorrow1",
-    "Sist_Hmm2",
-    ],
+    "Sist_Hmm2"
+   ],
    "greetVoice": [
     "Sist_Greeting",
     "Sist_Lobby",
     "Sist_Spawn1",
-    "Sist_Joy1",
-    ],
+    "Sist_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -48702,24 +49110,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Snorky_Surprise1",
     "Snorky_Hmm1",
-    "Snorky_Yes1",
-    ],
+    "Snorky_Yes1"
+   ],
    "upsetVoice": [
     "Snorky_Anger1",
     "Snorky_No1",
-    "Snorky_Anger2",
-    ],
+    "Snorky_Anger2"
+   ],
    "hungryVoice": [
     "Snorky_CallPlayer1",
     "Snorky_Sorrow1",
-    "Snorky_Hmm2",
-    ],
+    "Snorky_Hmm2"
+   ],
    "greetVoice": [
     "Snorky_Greeting",
     "Snorky_Lobby",
     "Snorky_Spawn1",
-    "Snorky_Joy1",
-    ],
+    "Snorky_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -49097,24 +49505,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Sparrot_Surprise1",
     "Sparrot_Hmm1",
-    "Sparrot_Yes1",
-    ],
+    "Sparrot_Yes1"
+   ],
    "upsetVoice": [
     "Sparrot_Anger1",
     "Sparrot_No1",
-    "Sparrot_Anger2",
-    ],
+    "Sparrot_Anger2"
+   ],
    "hungryVoice": [
     "Sparrot_CallPlayer1",
     "Sparrot_Sorrow1",
-    "Sparrot_Hmm2",
-    ],
+    "Sparrot_Hmm2"
+   ],
    "greetVoice": [
     "Sparrot_Greeting",
     "Sparrot_Lobby",
     "Sparrot_Spawn1",
-    "Sparrot_Joy1",
-    ],
+    "Sparrot_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -49491,23 +49899,23 @@ const CHAR_GENERATED = [
    ],
    "pokeVoice": [
     "Speaki_Surprise1",
-    "Speaki_Yes1",
-    ],
+    "Speaki_Yes1"
+   ],
    "upsetVoice": [
     "Speaki_Anger1",
     "Speaki_No1",
-    "Speaki_Anger2",
-    ],
+    "Speaki_Anger2"
+   ],
    "hungryVoice": [
     "Speaki_CallPlayer1",
-    "Speaki_Sorrow1",
-    ],
+    "Speaki_Sorrow1"
+   ],
    "greetVoice": [
     "Speaki_Greeting",
     "Speaki_Lobby",
     "Speaki_Spawn1",
-    "Speaki_Joy1",
-    ],
+    "Speaki_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -49898,24 +50306,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "SpeakiMaid_Surprise1",
     "SpeakiMaid_Hmm1",
-    "SpeakiMaid_Yes1",
-    ],
+    "SpeakiMaid_Yes1"
+   ],
    "upsetVoice": [
     "SpeakiMaid_Anger1",
     "SpeakiMaid_No1",
-    "SpeakiMaid_Anger2",
-    ],
+    "SpeakiMaid_Anger2"
+   ],
    "hungryVoice": [
     "SpeakiMaid_CallPlayer1",
     "SpeakiMaid_Sorrow1",
-    "SpeakiMaid_Hmm2",
-    ],
+    "SpeakiMaid_Hmm2"
+   ],
    "greetVoice": [
     "SpeakiMaid_Greeting",
     "SpeakiMaid_Lobby",
     "SpeakiMaid_Spawn1",
-    "SpeakiMaid_Joy1",
-    ],
+    "SpeakiMaid_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -50304,24 +50712,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Suro_Surprise1",
     "Suro_Hmm1",
-    "Suro_Yes1",
-    ],
+    "Suro_Yes1"
+   ],
    "upsetVoice": [
     "Suro_Anger1",
     "Suro_No1",
-    "Suro_Anger2",
-    ],
+    "Suro_Anger2"
+   ],
    "hungryVoice": [
     "Suro_CallPlayer1",
     "Suro_Sorrow1",
-    "Suro_Hmm2",
-    ],
+    "Suro_Hmm2"
+   ],
    "greetVoice": [
     "Suro_Greeting",
     "Suro_Lobby",
     "Suro_Spawn1",
-    "Suro_Joy1",
-    ],
+    "Suro_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -50714,24 +51122,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Sylla_Surprise1",
     "Sylla_Hmm1",
-    "Sylla_Yes1",
-    ],
+    "Sylla_Yes1"
+   ],
    "upsetVoice": [
     "Sylla_Anger1",
     "Sylla_No1",
-    "Sylla_Anger2",
-    ],
+    "Sylla_Anger2"
+   ],
    "hungryVoice": [
     "Sylla_CallPlayer1",
     "Sylla_Sorrow1",
-    "Sylla_Hmm2",
-    ],
+    "Sylla_Hmm2"
+   ],
    "greetVoice": [
     "Sylla_Greeting",
     "Sylla_Lobby",
     "Sylla_Spawn1",
-    "Sylla_Joy1",
-    ],
+    "Sylla_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -51088,24 +51496,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Taida_Surprise1",
     "Taida_Hmm1",
-    "Taida_Yes1",
-    ],
+    "Taida_Yes1"
+   ],
    "upsetVoice": [
     "Taida_Anger1",
     "Taida_No1",
-    "Taida_Anger2",
-    ],
+    "Taida_Anger2"
+   ],
    "hungryVoice": [
     "Taida_CallPlayer1",
     "Taida_Sorrow1",
-    "Taida_Hmm2",
-    ],
+    "Taida_Hmm2"
+   ],
    "greetVoice": [
     "Taida_Greeting",
     "Taida_Lobby",
     "Taida_Spawn1",
-    "Taida_Joy1",
-    ],
+    "Taida_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -51201,7 +51609,7 @@ const CHAR_GENERATED = [
    "id": "Tig",
    "name": "提格",
    "en": "Tig",
-   "desc": "兽人 · 4 套外观",
+   "desc": "兽人 · 5 套外观",
    "tag": "🐾",
    "art": {
     "avatar": "assets/art/Tig/phone-avatar.png",
@@ -51240,6 +51648,13 @@ const CHAR_GENERATED = [
      "name": "突击！征服队长",
      "desc": "据说设定是前来接管次元的可怕突击队的队长…（63 动作）",
      "voiceSkin": "_Skin3"
+    },
+    {
+     "id": "Pet_MiniTigHero",
+     "dir": "assets/spine/Pet_MiniTigHero",
+     "name": "迷你形态",
+     "desc": "宠物形态（动作较少）",
+     "voiceSkin": ""
     }
    ],
    "bones": {
@@ -51501,24 +51916,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Tig_Surprise1",
     "Tig_Hmm1",
-    "Tig_Yes1",
-    ],
+    "Tig_Yes1"
+   ],
    "upsetVoice": [
     "Tig_Anger1",
     "Tig_No1",
-    "Tig_Anger2",
-    ],
+    "Tig_Anger2"
+   ],
    "hungryVoice": [
     "Tig_CallPlayer1",
     "Tig_Sorrow1",
-    "Tig_Hmm2",
-    ],
+    "Tig_Hmm2"
+   ],
    "greetVoice": [
     "Tig_Greeting",
     "Tig_Lobby",
     "Tig_Spawn1",
-    "Tig_Joy1",
-    ],
+    "Tig_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -51626,7 +52041,7 @@ const CHAR_GENERATED = [
    "id": "TigHero",
    "name": "提格（英雄）",
    "en": "TigHero",
-   "desc": "兽人 · 3 套外观",
+   "desc": "兽人 · 4 套外观",
    "tag": "🐾",
    "art": {
     "avatar": "assets/art/TigHero/phone-avatar.png",
@@ -51658,6 +52073,13 @@ const CHAR_GENERATED = [
      "name": "苍穹的白翼",
      "desc": "从清晨白亮的天空到日落，守护艾利亚斯的守…（72 动作）",
      "voiceSkin": "_Skin2"
+    },
+    {
+     "id": "Pet_MiniTigHero",
+     "dir": "assets/spine/Pet_MiniTigHero",
+     "name": "迷你形态",
+     "desc": "宠物形态（动作较少）",
+     "voiceSkin": ""
     }
    ],
    "bones": {
@@ -51913,24 +52335,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "TigHero_Surprise1",
     "TigHero_Hmm1",
-    "TigHero_Yes1",
-    ],
+    "TigHero_Yes1"
+   ],
    "upsetVoice": [
     "TigHero_Anger1",
     "TigHero_No1",
-    "TigHero_Anger2",
-    ],
+    "TigHero_Anger2"
+   ],
    "hungryVoice": [
     "TigHero_CallPlayer1",
     "TigHero_Sorrow1",
-    "TigHero_Hmm2",
-    ],
+    "TigHero_Hmm2"
+   ],
    "greetVoice": [
     "TigHero_Greeting",
     "TigHero_Lobby",
     "TigHero_Spawn1",
-    "TigHero_Joy1",
-    ],
+    "TigHero_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -52354,24 +52776,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Ui_Surprise1",
     "Ui_Hmm1",
-    "Ui_Yes1",
-    ],
+    "Ui_Yes1"
+   ],
    "upsetVoice": [
     "Ui_Anger1",
     "Ui_No1",
-    "Ui_Anger2",
-    ],
+    "Ui_Anger2"
+   ],
    "hungryVoice": [
     "Ui_CallPlayer1",
     "Ui_Sorrow1",
-    "Ui_Hmm2",
-    ],
+    "Ui_Hmm2"
+   ],
    "greetVoice": [
     "Ui_Greeting",
     "Ui_Lobby",
     "Ui_Spawn1",
-    "Ui_Joy1",
-    ],
+    "Ui_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -52743,24 +53165,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "UiMemory_Surprise1",
     "UiMemory_Hmm1",
-    "UiMemory_Yes1",
-    ],
+    "UiMemory_Yes1"
+   ],
    "upsetVoice": [
     "UiMemory_Anger1",
     "UiMemory_No1",
-    "UiMemory_Anger2",
-    ],
+    "UiMemory_Anger2"
+   ],
    "hungryVoice": [
     "UiMemory_CallPlayer1",
     "UiMemory_Sorrow1",
-    "UiMemory_Hmm2",
-    ],
+    "UiMemory_Hmm2"
+   ],
    "greetVoice": [
     "UiMemory_Greeting",
     "UiMemory_Lobby",
     "UiMemory_Spawn1",
-    "UiMemory_Joy1",
-    ],
+    "UiMemory_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -53167,24 +53589,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Uros_Surprise1",
     "Uros_Hmm1",
-    "Uros_Yes1",
-    ],
+    "Uros_Yes1"
+   ],
    "upsetVoice": [
     "Uros_Anger1",
     "Uros_No1",
-    "Uros_Anger2",
-    ],
+    "Uros_Anger2"
+   ],
    "hungryVoice": [
     "Uros_CallPlayer1",
     "Uros_Sorrow1",
-    "Uros_Hmm2",
-    ],
+    "Uros_Hmm2"
+   ],
    "greetVoice": [
     "Uros_Greeting",
     "Uros_Lobby",
     "Uros_Spawn1",
-    "Uros_Joy1",
-    ],
+    "Uros_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -53590,24 +54012,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Vela_Surprise1",
     "Vela_Hmm1",
-    "Vela_Yes1",
-    ],
+    "Vela_Yes1"
+   ],
    "upsetVoice": [
     "Vela_Anger1",
     "Vela_No1",
-    "Vela_Anger2",
-    ],
+    "Vela_Anger2"
+   ],
    "hungryVoice": [
     "Vela_CallPlayer1",
     "Vela_Sorrow1",
-    "Vela_Hmm2",
-    ],
+    "Vela_Hmm2"
+   ],
    "greetVoice": [
     "Vela_Greeting",
     "Vela_Lobby",
     "Vela_Spawn1",
-    "Vela_Joy1",
-    ],
+    "Vela_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -53984,24 +54406,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Velvet_Surprise1",
     "Velvet_Hmm1",
-    "Velvet_Yes1",
-    ],
+    "Velvet_Yes1"
+   ],
    "upsetVoice": [
     "Velvet_Anger1",
     "Velvet_No1",
-    "Velvet_Anger2",
-    ],
+    "Velvet_Anger2"
+   ],
    "hungryVoice": [
     "Velvet_CallPlayer1",
     "Velvet_Sorrow1",
-    "Velvet_Hmm2",
-    ],
+    "Velvet_Hmm2"
+   ],
    "greetVoice": [
     "Velvet_Greeting",
     "Velvet_Lobby",
     "Velvet_Spawn1",
-    "Velvet_Joy1",
-    ],
+    "Velvet_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -54360,24 +54782,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Veroo_Surprise1",
     "Veroo_Hmm1",
-    "Veroo_Yes1",
-    ],
+    "Veroo_Yes1"
+   ],
    "upsetVoice": [
     "Veroo_Anger1",
     "Veroo_No1",
-    "Veroo_Anger2",
-    ],
+    "Veroo_Anger2"
+   ],
    "hungryVoice": [
     "Veroo_CallPlayer1",
     "Veroo_Sorrow1",
-    "Veroo_Hmm2",
-    ],
+    "Veroo_Hmm2"
+   ],
    "greetVoice": [
     "Veroo_Greeting",
     "Veroo_Lobby",
     "Veroo_Spawn1",
-    "Veroo_Joy1",
-    ],
+    "Veroo_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -54785,24 +55207,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Vivi_Surprise1",
     "Vivi_Hmm1",
-    "Vivi_Yes1",
-    ],
+    "Vivi_Yes1"
+   ],
    "upsetVoice": [
     "Vivi_Anger1",
     "Vivi_No1",
-    "Vivi_Anger2",
-    ],
+    "Vivi_Anger2"
+   ],
    "hungryVoice": [
     "Vivi_CallPlayer1",
     "Vivi_Sorrow1",
-    "Vivi_Hmm2",
-    ],
+    "Vivi_Hmm2"
+   ],
    "greetVoice": [
     "Vivi_Greeting",
     "Vivi_Lobby",
     "Vivi_Spawn1",
-    "Vivi_Joy1",
-    ],
+    "Vivi_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -55193,24 +55615,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "ViviDivine_Surprise1",
     "ViviDivine_Hmm1",
-    "ViviDivine_Yes1",
-    ],
+    "ViviDivine_Yes1"
+   ],
    "upsetVoice": [
     "ViviDivine_Anger1",
     "ViviDivine_No1",
-    "ViviDivine_Anger2",
-    ],
+    "ViviDivine_Anger2"
+   ],
    "hungryVoice": [
     "ViviDivine_CallPlayer1",
     "ViviDivine_Sorrow1",
-    "ViviDivine_Hmm2",
-    ],
+    "ViviDivine_Hmm2"
+   ],
    "greetVoice": [
     "ViviDivine_Greeting",
     "ViviDivine_Lobby",
     "ViviDivine_Spawn1",
-    "ViviDivine_Joy1",
-    ],
+    "ViviDivine_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -55304,7 +55726,7 @@ const CHAR_GENERATED = [
    "id": "xXionx",
    "name": "x锡安x",
    "en": "xXionx",
-   "desc": "幽灵 · 6 套外观",
+   "desc": "幽灵 · 7 套外观",
    "tag": "👻",
    "art": {
     "avatar": "assets/art/xXionx/phone-avatar.png",
@@ -55357,6 +55779,13 @@ const CHAR_GENERATED = [
      "name": "深渊行者霸主",
      "desc": "据说能穿行于深渊未知领域的传说级深渊行者…（63 动作）",
      "voiceSkin": "_Skin5"
+    },
+    {
+     "id": "Pet_MinixXionx",
+     "dir": "assets/spine/Pet_MinixXionx",
+     "name": "迷你形态",
+     "desc": "宠物形态（动作较少）",
+     "voiceSkin": ""
     }
    ],
    "bones": {
@@ -55609,24 +56038,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "xXionx_Surprise1",
     "xXionx_Hmm1",
-    "xXionx_Yes1",
-    ],
+    "xXionx_Yes1"
+   ],
    "upsetVoice": [
     "xXionx_Anger1",
     "xXionx_No1",
-    "xXionx_Anger2",
-    ],
+    "xXionx_Anger2"
+   ],
    "hungryVoice": [
     "xXionx_CallPlayer1",
     "xXionx_Sorrow1",
-    "xXionx_Hmm2",
-    ],
+    "xXionx_Hmm2"
+   ],
    "greetVoice": [
     "xXionx_Greeting",
     "xXionx_Lobby",
     "xXionx_Spawn1",
-    "xXionx_Joy1",
-    ],
+    "xXionx_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -56016,24 +56445,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Yomi_Surprise1",
     "Yomi_Hmm1",
-    "Yomi_Yes1",
-    ],
+    "Yomi_Yes1"
+   ],
    "upsetVoice": [
     "Yomi_Anger1",
     "Yomi_No1",
-    "Yomi_Anger2",
-    ],
+    "Yomi_Anger2"
+   ],
    "hungryVoice": [
     "Yomi_CallPlayer1",
     "Yomi_Sorrow1",
-    "Yomi_Hmm2",
-    ],
+    "Yomi_Hmm2"
+   ],
    "greetVoice": [
     "Yomi_Greeting",
     "Yomi_Lobby",
     "Yomi_Spawn1",
-    "Yomi_Joy1",
-    ],
+    "Yomi_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -56434,22 +56863,22 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Youngchun_Surprise1",
     "Youngchun_Hmm1",
-    "Youngchun_Yes1",
-    ],
+    "Youngchun_Yes1"
+   ],
    "upsetVoice": [
     "Youngchun_Anger1",
     "Youngchun_No1",
-    "Youngchun_Anger2",
-    ],
+    "Youngchun_Anger2"
+   ],
    "hungryVoice": [
     "Youngchun_CallPlayer1",
     "Youngchun_Sorrow1",
-    "Youngchun_Hmm2",
-    ],
+    "Youngchun_Hmm2"
+   ],
    "greetVoice": [
     "Youngchun_Greeting",
-    "Youngchun_Joy1",
-    ],
+    "Youngchun_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",
@@ -56881,24 +57310,24 @@ const CHAR_GENERATED = [
    "pokeVoice": [
     "Yumimi_Surprise1",
     "Yumimi_Hmm1",
-    "Yumimi_Yes1",
-    ],
+    "Yumimi_Yes1"
+   ],
    "upsetVoice": [
     "Yumimi_Anger1",
     "Yumimi_No1",
-    "Yumimi_Anger2",
-    ],
+    "Yumimi_Anger2"
+   ],
    "hungryVoice": [
     "Yumimi_CallPlayer1",
     "Yumimi_Sorrow1",
-    "Yumimi_Hmm2",
-    ],
+    "Yumimi_Hmm2"
+   ],
    "greetVoice": [
     "Yumimi_Greeting",
     "Yumimi_Lobby",
     "Yumimi_Spawn1",
-    "Yumimi_Joy1",
-    ],
+    "Yumimi_Joy1"
+   ],
    "moodActs": [
     "happy",
     "proud",

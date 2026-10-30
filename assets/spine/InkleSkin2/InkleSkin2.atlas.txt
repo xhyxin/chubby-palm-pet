@@ -1,4 +1,4 @@
-InkleSkin2.png
+InkleSkin2.webp
 size:2048,1188
 filter:Linear,Linear
 pma:true

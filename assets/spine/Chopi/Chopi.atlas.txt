@@ -1,4 +1,4 @@
-Chopi.png
+Chopi.webp
 size:913,898
 filter:Linear,Linear
 pma:true

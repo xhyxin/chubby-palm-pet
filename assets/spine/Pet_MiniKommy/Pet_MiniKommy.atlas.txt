@@ -1,4 +1,4 @@
-Pet_MiniKommy.png
+Pet_MiniKommy.webp
 size:1024,512
 filter:Linear,Linear
 pma:true

@@ -1248,6 +1248,11 @@ const FOOD_DATA = {
     "F75"
    ]
   },
+  "Callamori": {
+   "love": [],
+   "like": [],
+   "hate": []
+  },
   "Canna": {
    "love": [
     "F67"
@@ -1409,6 +1414,16 @@ const FOOD_DATA = {
     "F62",
     "F63"
    ]
+  },
+  "Coffe": {
+   "love": [],
+   "like": [],
+   "hate": []
+  },
+  "Crepe": {
+   "love": [],
+   "like": [],
+   "hate": []
   },
   "Cuee": {
    "love": [
@@ -1865,6 +1880,11 @@ const FOOD_DATA = {
     "F71",
     "F82"
    ]
+  },
+  "Goldy": {
+   "love": [],
+   "like": [],
+   "hate": []
   },
   "Guin": {
    "love": [
@@ -2516,6 +2536,11 @@ const FOOD_DATA = {
     "F69"
    ]
   },
+  "MISSING": {
+   "love": [],
+   "like": [],
+   "hate": []
+  },
   "MaestroMK2": {
    "love": [
     "F58",
@@ -2840,6 +2865,11 @@ const FOOD_DATA = {
     "F85"
    ]
   },
+  "NPJoanne": {
+   "love": [],
+   "like": [],
+   "hate": []
+  },
   "Naia": {
    "love": [
     "F56",
@@ -2975,6 +3005,11 @@ const FOOD_DATA = {
     "F69",
     "F87"
    ]
+  },
+  "Noone": {
+   "love": [],
+   "like": [],
+   "hate": []
   },
   "Opal": {
    "love": [
@@ -4105,6 +4140,33 @@ const FOOD_DATA = {
     "F9"
    ]
   },
+  "UiMemory": {
+   "love": [
+    "F56",
+    "F87"
+   ],
+   "like": [
+    "F16",
+    "F31",
+    "F32",
+    "F33",
+    "F34",
+    "F35",
+    "F36",
+    "F37",
+    "F66",
+    "F8",
+    "F90"
+   ],
+   "hate": [
+    "F17",
+    "F55",
+    "F57",
+    "F84",
+    "F88",
+    "F9"
+   ]
+  },
   "Uros": {
    "love": [
     "F66"
@@ -4240,6 +4302,34 @@ const FOOD_DATA = {
     "F77"
    ]
   },
+  "ViviDivine": {
+   "love": [
+    "F55",
+    "F84"
+   ],
+   "like": [
+    "F18",
+    "F31",
+    "F32",
+    "F33",
+    "F34",
+    "F35",
+    "F36",
+    "F37",
+    "F43",
+    "F74",
+    "F9",
+    "F90"
+   ],
+   "hate": [
+    "F20",
+    "F40",
+    "F5",
+    "F51",
+    "F76",
+    "F77"
+   ]
+  },
   "Yomi": {
    "love": [
     "F57",
@@ -4267,6 +4357,11 @@ const FOOD_DATA = {
     "F68",
     "F82"
    ]
+  },
+  "Youngchun": {
+   "love": [],
+   "like": [],
+   "hate": []
   },
   "Yumimi": {
    "love": [

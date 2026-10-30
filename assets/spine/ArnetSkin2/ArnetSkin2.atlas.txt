@@ -1,4 +1,4 @@
-ArnetSkin2.png
+ArnetSkin2.webp
 size:2048,832
 filter:Linear,Linear
 pma:true

@@ -1,4 +1,4 @@
-RimSkin1.png
+RimSkin1.webp
 size:1024,1024
 filter:Linear,Linear
 pma:true

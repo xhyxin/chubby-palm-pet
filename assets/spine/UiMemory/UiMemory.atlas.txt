@@ -1,4 +1,4 @@
-UiMemory.png
+UiMemory.webp
 size:2048,1424
 filter:Linear,Linear
 pma:true

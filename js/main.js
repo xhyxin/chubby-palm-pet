@@ -987,7 +987,21 @@
     /* ★ 第四十六轮：背景音乐尽早起（默认开；关过就保持关）。
        放在模型加载前，这样加载那几秒就有音乐，不会干等。 */
     if (window.Music) Music.init();
-    await Voice.load();
+    /* ★ 第八十三轮：互动监听必须**先于**下面的并行加载挂上 ——
+       并行后模型常常比 14MB 语音 JSON 先就绪（Pet.ready 提前为 true），
+       监听若仍等全部加载完才挂，ready 到挂监听之间的点击会**全部丢失**。
+       attach 只是绑事件，所有回调内部都有 Pet.ready / 各状态守卫，提前挂无 side effect。 */
+    Interact.attach(canvas, {
+      /* ★ 第七十八轮（用户要求"互动结束会出现台词再结束"）：
+         互动台词从固定 3 秒改成**陪到语音播完**——语音多长，台词就陪多长；
+         语音被下一条顶掉时气泡跟着换（token 保证旧计时器不误收新气泡）。
+         拿不到音频（解析失败）时 sayUntilDone 内部回退 3 秒，行为与旧版一致。 */
+      onSay: (text, key, L) => sayUntilDone(text, key, L),
+      onState: refreshStats,
+      onWantFood: () => toggleFoodPanel(true),
+      onFeed: () => refreshStats(),
+      onFed: onFed,
+    });
 
     /* ★ 记住上次玩的是谁（多角色）：启动时直接回到那个角色。
        尽早应用，这样加载层头像、标题、语言按钮一出来就是上次的，
@@ -997,6 +1011,17 @@
       const k = CONFIG.characters.findIndex((c) => c.id === saved);
       if (k > 0) CONFIG.applyCharacter(k);
     } catch (e) { /* 忽略 */ }
+
+    /* ★ 第八十三轮（启动提速）：语音数据（约 14MB 的两份 JSON）与模型文件
+       **并行加载**——原来是串行 await Voice.load() → await Pet.loadModel()，
+       启动要等两者相加；现在同时发起，启动时间 ≈ 两者较大值。
+       顺序约束没变：Voice.useCharacter / preloadInteractionVoices 依赖语音数据，
+       仍在 await voiceReady 之后；模型加载只依赖上面的 applyCharacter。 */
+    const voiceReady = Voice.load();
+    let modelErr = null;
+    const modelReady = Pet.loadModel(CONFIG.models[0]).catch((e) => { modelErr = e; });
+
+    await voiceReady;
     /* ★ 语音语言也记用户偏好：有上次选择且当前角色支持就优先用它。 */
     applySavedVoiceLang();
     Voice.useCharacter(CONFIG.id, CONFIG.voiceLang);
@@ -1015,26 +1040,13 @@
 
     tip.textContent = I18N.t('loader.tipModel');
     fill.style.width = '70%';
-    try {
-      await Pet.loadModel(CONFIG.models[0]);
-    } catch (e) {
-      console.error('模型加载失败', e);
-      tip.textContent = I18N.t('loader.modelFail', { msg: e.message });
+    await modelReady;
+    if (modelErr) {
+      console.error('模型加载失败', modelErr);
+      tip.textContent = I18N.t('loader.modelFail', { msg: modelErr.message });
       return;
     }
     fill.style.width = '100%';
-
-    Interact.attach(canvas, {
-      /* ★ 第七十八轮（用户要求"互动结束会出现台词再结束"）：
-         互动台词从固定 3 秒改成**陪到语音播完**——语音多长，台词就陪多长；
-         语音被下一条顶掉时气泡跟着换（token 保证旧计时器不误收新气泡）。
-         拿不到音频（解析失败）时 sayUntilDone 内部回退 3 秒，行为与旧版一致。 */
-      onSay: (text, key, L) => sayUntilDone(text, key, L),
-      onState: refreshStats,
-      onWantFood: () => toggleFoodPanel(true),
-      onFeed: () => refreshStats(),
-      onFed: onFed,
-    });
 
     /* ★ 启动时只构建皮肤列表；角色/食物面板打开时再构建，减少首屏 DOM，降低低端机卡顿。 */
     buildSkins();

@@ -1,4 +1,4 @@
-YomiSkin1.png
+YomiSkin1.webp
 size:1024,1024
 filter:Linear,Linear
 pma:true

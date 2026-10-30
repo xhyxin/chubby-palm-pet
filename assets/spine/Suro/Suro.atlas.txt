@@ -1,4 +1,4 @@
-Suro.png
+Suro.webp
 size:2048,656
 filter:Linear,Linear
 pma:true

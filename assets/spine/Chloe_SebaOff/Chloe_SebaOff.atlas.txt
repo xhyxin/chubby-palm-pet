@@ -1,4 +1,4 @@
-Chloe_SebaOff.png
+Chloe_SebaOff.webp
 size:2048,512
 filter:Linear,Linear
 pma:true

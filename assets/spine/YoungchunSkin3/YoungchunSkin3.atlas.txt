@@ -1,4 +1,4 @@
-YoungchunSkin3.png
+YoungchunSkin3.webp
 size:1024,380
 filter:Linear,Linear
 pma:true

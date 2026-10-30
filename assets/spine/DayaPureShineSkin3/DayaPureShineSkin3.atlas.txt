@@ -1,4 +1,4 @@
-DayaPureShineSkin3.png
+DayaPureShineSkin3.webp
 size:2048,1224
 filter:Linear,Linear
 pma:true

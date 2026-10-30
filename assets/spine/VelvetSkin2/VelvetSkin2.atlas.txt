@@ -1,4 +1,4 @@
-VelvetSkin2.png
+VelvetSkin2.webp
 size:2048,512
 filter:Linear,Linear
 pma:true

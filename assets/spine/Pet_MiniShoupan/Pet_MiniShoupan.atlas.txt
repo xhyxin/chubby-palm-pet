@@ -1,4 +1,4 @@
-Pet_MiniShoupan.png
+Pet_MiniShoupan.webp
 size:2048,256
 filter:Linear,Linear
 pma:true
