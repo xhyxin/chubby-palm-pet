@@ -428,16 +428,31 @@ const Pet = (() => {
     return n;
   }
 
-  function playEnd(endKey, backTo = 'idle') {
+  /** ★ 第九十四轮：互动结束动画按官方 Studio 的 De() 播放，补回缺失的过渡帧。
+      官方（StableSpinePlayerFixed 的 De / xn / Ln）在切到结束动作前会显式设置
+        setMix(循环动作 → 结束动作, Nf = 0.22s)
+        setMix(结束动作 → 待机,     Cf/Ca = 0.4s)
+      并且**不 clearTracks()**：clearTracks 会抹掉 previous，Spine 就无从混合，
+      结果就是松手瞬间硬切到 Touch_End（用户看到的「直接变成擦眼泪」，
+      本该先有脸回弹 / 抬手那段过渡）。
+      另外官方不 setSlotsToSetupPose()，这里也去掉，免得互动中的表情附件被抹掉。
+      @param {string} [fromName] 期望的当前循环动作名（如 Touch_Idle）；
+                                 回弹期间被其它互动换了动作就不抢戏，直接放弃这次收尾。 */
+  function playEnd(endKey, backTo = 'idle', fromName) {
     const n = animOf(endKey);
     const back = animOf(backTo);
-    state.clearTracks();
-    resetSlots();
+    if (fromName && currentBase !== fromName) return null;
     if (n && n !== back) {
-      state.setAnimation(0, n, false);
+      const prev = currentBase;
+      if (prev && prev !== n && animMap[prev]) stateData.setMix(prev, n, 0.22);
+      stateData.setMix(n, back, 0.4);
+      state.setAnimation(0, n, false);     // 保留 previous → 0.22s 混合生效
       if (back) state.addAnimation(0, back, true, 0);
-    } else if (back) {
-      state.setAnimation(0, back, true);
+    } else {
+      /* 骨架里没有这个结束动作（Aside / 迷你形态等）：照官方 De 的兜底直接回待机 */
+      state.clearTracks();
+      resetSlots();
+      if (back) state.setAnimation(0, back, true);
     }
     currentBase = back;
     return n;
@@ -1158,6 +1173,17 @@ const Pet = (() => {
     get playingAnim() {
       const e = state && state.getCurrent ? state.getCurrent(0) : null;
       return e && e.animation ? e.animation.name : null;
+    },
+    /* ★ 第九十四轮：轨道 0 的混合状态（只读，给过渡帧探针用）。
+       有 mixingFrom 就说明这次切换是**混合**而不是硬切；mixDuration 是官方给的 0.22s。 */
+    get trackMix() {
+      const e = state && state.getCurrent ? state.getCurrent(0) : null;
+      if (!e) return null;
+      return {
+        name: e.animation ? e.animation.name : null,
+        mixDuration: e.mixDuration,
+        from: e.mixingFrom && e.mixingFrom.animation ? e.mixingFrom.animation.name : null,
+      };
     },
     get modelName() { return modelDef ? modelDef.name : ''; },
     get modelDef() { return modelDef; },

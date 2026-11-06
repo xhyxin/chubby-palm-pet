@@ -1239,7 +1239,6 @@
   $('food-search').addEventListener('input', debounce(buildFoodPanel, 150));
   $('btn-actions').addEventListener('click', () => openPanel('anim'));
   $('action-close').addEventListener('click', () => $('action-panel').classList.add('hidden'));
-
   $('action-tabs').addEventListener('click', (e) => {
     const t = e.target.closest('.tab');
     if (!t) return;

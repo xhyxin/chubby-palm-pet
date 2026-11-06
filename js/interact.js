@@ -55,6 +55,22 @@ const Interact = (() => {
     if (smashEndTimer) { clearTimeout(smashEndTimer); smashEndTimer = null; }
   }
   let smashEndTimer = null;
+
+  /* ★ 第九十六轮更正：官方 ballPull 的 0.7s（Ka = Un*7）是**弹簧回弹的物理时长**，
+     不是结束动画的前置等待。官方 pointerup 里 la() / sg() / De() 是同一帧完成的：
+       松手 → setMix(Touch_Idle→Touch_End, 0.22) + 立刻播 Touch_End + 排队淡回 Idle；
+       同时启动 0.7s 的弹簧回弹（与动画并行）；语音在 Ka-mf = 0.2s 播。
+     vi() 里那句 `touchReboundElapsed>=Ka → De()` 只是 pointerup 没走到时的兜底，
+     而且有 `touchEndPlayed ||` 守卫，证明 De() 正常情况在松手瞬间就播过了。
+     第九十四轮误把它读成「先保持 Touch_Idle 0.7s 再切结束动作」，
+     结果整段收尾被推后 0.7s（用户报「捏完脸三四秒才抬手」）。
+     现在结束动画松手即播、回弹并行；语音仍按官方 0.2s。
+     新互动开始时清掉待播的语音尾巴，避免串场。 */
+  let pinchVoiceTimer = null;
+  function clearPinchEnd() {
+    if (pinchVoiceTimer) { clearTimeout(pinchVoiceTimer); pinchVoiceTimer = null; }
+  }
+
   /** 排一条"本轮敲头"的语音；若期间 seq 变了（被后续敲头取代）就自动作废 */
   function smashSpeak(keys, seq, delayMs) {
     if (!keys || !keys.length) return;
@@ -124,6 +140,7 @@ const Interact = (() => {
   /* ---------------------------------------------------------- 捏脸
      官方 ballPull。拖拽过程中只有音效，**语音等松手弹回之后再播**。 */
   function beginPinch() {
+    clearPinchEnd();                 // 新互动开始：顶掉捏脸回弹期待播的收尾
     Pet.clearCheekDeform();
     mode = 'pinch';
     const A = CONFIG.actions.pinch;
@@ -166,6 +183,7 @@ const Interact = (() => {
   /* ---------------------------------------------------------- 摸头
      官方 petting。**语音等松手后再播** —— 想摸多久都行，不会被语音打断。 */
   function beginPat() {
+    clearPinchEnd();                 // 新互动开始：顶掉捏脸回弹期待播的收尾
     Pet.clearCheekDeform();
     mode = 'pat';
     const A = CONFIG.actions.pat;
@@ -210,6 +228,7 @@ const Interact = (() => {
   const SMASH_VOICE_GAP_MS = 560;    // 第一条语音("哎呀")到第二条("好痛")的间隔
 
   function doSmash() {
+    clearPinchEnd();                 // 新互动开始：顶掉捏脸回弹期待播的收尾
     Pet.clearCheekDeform();
     const A = CONFIG.actions.bonk;
     const now = performance.now();
@@ -265,6 +284,7 @@ const Interact = (() => {
   /** 指针按到肚子上：进入"憋笑"，并排一个随机的大笑倒计时
       @param {boolean} [resume] 余韵期里续摸 —— 不重放音效/语音，只重新计时 */
   function beginBellyHold(resume) {
+    clearPinchEnd();                 // 新互动开始：顶掉捏脸回弹期待播的收尾
     Pet.clearCheekDeform();
     clearBellyTimers();
     mode = 'belly';
@@ -344,6 +364,7 @@ const Interact = (() => {
 
   /** 底部「🫳 摸肚子」按钮：点一下播完整段（憋笑 → 笑不停 → 大笑收尾） */
   function beginBelly() {
+    clearPinchEnd();                 // 新互动开始：顶掉捏脸回弹期待播的收尾
     Pet.clearCheekDeform();
     clearBellyTimers();
     mode = 'belly';
@@ -418,18 +439,27 @@ const Interact = (() => {
     clearBellyTimers();
     if (mode === 'pinch') {
       const A = CONFIG.actions.pinch;
-      // 立刻复位，脸弹回去；语音等弹回之后再播
-      Pet.setDeform('cheekL', { dx: 0, dy: 0, s: 1, sPerp: 1 }, true);
-      Pet.setDeform('cheekR', { dx: 0, dy: 0, s: 1, sPerp: 1 }, true);
+      /* ★ 第九十六轮：松手瞬间就按官方 De() 播 Touch_End（0.22s 混合淡入，
+         不是 clearTracks 硬切），脸的弹簧回弹同时并行、不阻塞动画；
+         语音仍按官方 Ka-mf = 0.2s。第九十四轮把动画延后 0.7s 是误读官方。 */
+      Pet.setDeform('cheekL', { dx: 0, dy: 0, s: 1, sPerp: 1 }, false);  // 缓动回弹，别硬弹
+      Pet.setDeform('cheekR', { dx: 0, dy: 0, s: 1, sPerp: 1 }, false);
       Pet.setBallDrag(0, 0, false);       // 官方骨骼拖拽：缓动回弹（弹簧感）
-      Pet.playEnd(A.end);
       sfx(A.sfxEnd);
-      setTimeout(() => speak(A.voice), 300);
+      clearPinchEnd();
+      // fromName 守卫：回弹期被别的互动换掉动作就不抢戏
+      Pet.playEnd(A.end, 'idle', Pet.animName(A.loop));
+      pinchVoiceTimer = setTimeout(() => {
+        pinchVoiceTimer = null;
+        speak(A.voice);                   // 官方 0.2s
+      }, 200);
       reward('pinch');
     } else if (mode === 'pat') {
       clearPatTimers();
-      Pet.setOverride('headDown', 0, true);
-      Pet.setOverride('headSway', 0, true);
+      /* ★ 第九十六轮：官方 petting 松手是 returnMode="lerp"（头部渐回），
+         以前这里 immediate=true 让头「啪」地弹回，和刚补的混合过渡自相矛盾。 */
+      Pet.setOverride('headDown', 0, false);
+      Pet.setOverride('headSway', 0, false);
       Pet.playEnd(CONFIG.actions.pat.end);
       speak(CONFIG.actions.pat.voice);      // 摸完松手才说话
       reward('pat');
@@ -478,6 +508,7 @@ const Interact = (() => {
 
   function onDown(e) {
     if (!Pet.ready) return;
+    clearPinchEnd();                 // 任何新指针互动都顶掉捏脸回弹期的收尾
     if (e.button !== undefined && e.button !== 0) return;
 
     const p = localPos(e);
@@ -710,6 +741,7 @@ const Interact = (() => {
       （onDown 开头 `if (mode === 'belly') return`），新角色点哪都没反应。 */
   function abort() {
     clearAuto();
+    clearPinchEnd();                 // 切角色 / 换外观 / 切后台：别把回弹收尾带过去
     clearBellyTimers();
     clearPatTimers();
     clearSmashVoice();
