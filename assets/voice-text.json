@@ -135,6 +135,9 @@
   "DianaYester": [
    "ko"
   ],
+  "Dudu": [
+   "ko"
+  ],
   "Ed": [
    "ja",
    "ko"
@@ -6432,6 +6435,136 @@
    "DianaYester_Yes1": "好。",
    "DianaYester_Yes2": "好。",
    "DianaYester_Yes3": "没错。",
+   "Dudu_Affinity1_1": "嘟嘟～？对嘟嘟感兴趣吗？因为可爱吗？嘿嘿嘿～",
+   "Dudu_Affinity1_2": "和嘟嘟牵着手去玩吧！一起！",
+   "Dudu_Affinity1_3": "尽管相信嘟嘟！嘟嘟会保护你的！毕竟嘟嘟是龙嘛～",
+   "Dudu_Affinity2": "这是秘密吗？嘟嘟喜欢！是夜光的！",
+   "Dudu_Affinity3": "哈啊～摸摸我～也给我唱首摇篮曲嘛～",
+   "Dudu_Affinity4": "去散步吗？去哪儿好？那边？这里？还是更远那边？嘿嘿！",
+   "Dudu_Affinity5": "当当～给你看～！特别展示！嘟嘟的夜光！唔嘿嘿嘿～",
+   "Dudu_Affinity6": "我跟你说哦……嘟嘟会更喜欢你的！从现在起，越来越喜欢～！！！",
+   "Dudu_Affinity7": "钻到被窝里来！嘟嘟给你看！夜光的！！",
+   "Dudu_Anger1": "啧！才不给你呢！",
+   "Dudu_Anger2": "拜托啦～求求你嘛～",
+   "Dudu_Anger3": "咻啦！",
+   "Dudu_Anger4": "呜呜呜呜呜……",
+   "Dudu_Anger5": "不要嘛～～",
+   "Dudu_AsideGet": "哇！恐龙！死掉了！恐龙死掉了！嘿嘿嘿～",
+   "Dudu_AsideUpgrade": "嘟嘟也会变成像死神一样的大龙！",
+   "Dudu_BasicAttack1": "砰～！",
+   "Dudu_BasicAttack2": "看我的！",
+   "Dudu_Birthday": "咦～？今天也是生日吗？生日快乐～啪啪啪~~~ 嘟嘟喂你吃蛋糕！嘿嘿嘿～",
+   "Dudu_Board": "咣～！嘟嘟带路！跟上我！",
+   "Dudu_Board_Skin1": "准备好了吗～？是～是～老师～！嘿嘿嘿～",
+   "Dudu_CallHero1": "死神——！",
+   "Dudu_CallHero2": "死神大人！",
+   "Dudu_CallHero3": "暗王！",
+   "Dudu_CallPlayer1": "嘿嘿嘿～嘟嘟也可爱吗～？教主喜欢嘟嘟吗～？",
+   "Dudu_CallPlayer2": "教～主～！",
+   "Dudu_CallPlayer3": "教主～！",
+   "Dudu_CallPlayer4": "教主呀！",
+   "Dudu_CallPlayer5": "教主……",
+   "Dudu_DeckSetting1": "嘿嘿！先去哪儿好？快告诉嘟嘟！快快！！",
+   "Dudu_DeckSetting2": "等一下再做也行嘛～吓到了吧！因为嘟嘟超帅的。嘿嘿。",
+   "Dudu_Defeat1": "哇啊～不要！嘟嘟才没有输！！",
+   "Dudu_Defeat2": "嘟～？！嘟嘟不喜欢这样！不喜欢！不喜欢！讨厌！最讨厌了！！",
+   "Dudu_Die1": "嘟嘟有点害怕……下次再来好不好？",
+   "Dudu_Die2": "咿！？我、我得逃跑了！",
+   "Dudu_DutchRubEnd1": "嘟！！嘟嘟要闹别扭了！不跟你玩了！",
+   "Dudu_DutchRubEnd1_Skin1": "嗷！为什么打我呀！！！嘟嘟还要再长大一点呢！",
+   "Dudu_DutchRubEnd2": "嘟！！嘟嘟要闹别扭了！不玩了！一起！",
+   "Dudu_DutchRubEnd2_Skin1": "嗷！为什么打我呀！！！嘟嘟还要再长大一点呢！",
+   "Dudu_Eat1": "啊呜啊呜……嚼嚼嚼～",
+   "Dudu_Equipment": "这个是给嘟嘟的吗？嘿嘿嘿～",
+   "Dudu_Equipment_Skin1": "哇啊～！是给嘟嘟的玩具吗？快给嘟嘟嘛！",
+   "Dudu_Gacha1": "有小偷！",
+   "Dudu_Gacha2": "又勇敢又超～强的恐龙也有哦！",
+   "Dudu_Gacha3": "咣～！",
+   "Dudu_Gacha4": "来，这样就！",
+   "Dudu_Greeting": "你好！",
+   "Dudu_Growth": "我是最～可爱的小恐龙嘟嘟呀！",
+   "Dudu_Growth1": "嘟嘟想变得更强！比现在更强！还要更强！！",
+   "Dudu_Growth1_Skin1": "要唱一首老师教嘟嘟的儿歌吗？",
+   "Dudu_Growth2": "现在就让你看看！嘟嘟的勇敢！",
+   "Dudu_Growth2_Skin1": "嘟嘟现在自己也会啦！刷～刷～！",
+   "Dudu_HeroSkill": "唔嘿嘿嘿嘿～也陪嘟嘟玩嘛！嘟嘟好无聊！一起玩吧！",
+   "Dudu_HeroSkill_Skin1": "要唱老师教的儿歌给你听吗？",
+   "Dudu_HeroUpgrade": "嘿嘿嘿～摸摸嘟嘟！",
+   "Dudu_HeroUpgrade_Skin1": "嘟嘟要拿满分！还要继续加油！",
+   "Dudu_Hit1": "哈！",
+   "Dudu_Hit2": "啊呀！",
+   "Dudu_Hit3": "咿呜！",
+   "Dudu_Hit4": "咳啊！",
+   "Dudu_Hit5": "哐哐！",
+   "Dudu_Hmm1": "咻呜？",
+   "Dudu_Hmm2": "叮～？",
+   "Dudu_Hmm3": "什么呀？",
+   "Dudu_Joy1": "呜哈哈哈哈～",
+   "Dudu_Joy2": "知道啦！",
+   "Dudu_Joy3": "嘀啰嘀啰～",
+   "Dudu_Joy4": "嘟嘟好可爱啾嘟～",
+   "Dudu_Joy5": "嘿嘿嘿嘿嘿嘿～",
+   "Dudu_LevelUp": "感觉超棒！嘟～嘟～",
+   "Dudu_LevelUp_Skin1": "嘟嘟在恐龙班！嘟嘟最喜欢恐龙班的小伙伴了！",
+   "Dudu_Line1": "你可以的！嘟嘟会保护你！",
+   "Dudu_Line2": "害怕的话就待在嘟嘟身边！和嘟嘟一起！",
+   "Dudu_Line3": "手牵手出发！",
+   "Dudu_Lobby": "嘟嘟才不是坏蛋！是恐龙啦！",
+   "Dudu_No1": "嘟？！不要不要！要继续和嘟嘟玩！！",
+   "Dudu_No2": "才不是那样啦～",
+   "Dudu_No3": "啊啊啊啊～",
+   "Dudu_Pleasure1": "嘿嘿～",
+   "Dudu_Pleasure2": "真的！真的！",
+   "Dudu_Pleasure3": "哦哦哦哦哦～",
+   "Dudu_Pleasure4": "心情最棒啦！",
+   "Dudu_Pleasure5": "嘀哩嘀～嘀哩嘀～",
+   "Dudu_PowerAttack1": "咣～！",
+   "Dudu_PowerAttack2": "咿————呀！",
+   "Dudu_SPSkill1": "嘟嘟！抱抱！抱抱嘟嘟！要抱紧哦！",
+   "Dudu_SPSkill2": "冲！冲！",
+   "Dudu_SPSkill3": "一个也不留！",
+   "Dudu_Shout1": "嘀哟！",
+   "Dudu_Shout2": "咣！",
+   "Dudu_Shout3": "哐昂！",
+   "Dudu_Shout4": "咕啊————！",
+   "Dudu_Shout5": "啾啾啾啾啾！",
+   "Dudu_Sorrow1": "呜……",
+   "Dudu_Sorrow2": "唉哟～",
+   "Dudu_Sorrow3": "是嘟嘟做错了……",
+   "Dudu_Sorrow4": "嘻嘻……呜呜呜……",
+   "Dudu_Sorrow5": "呜哇啊啊啊啊——！",
+   "Dudu_Sorry1": "对不起嘛……",
+   "Dudu_Sorry2": "真的很抱歉！",
+   "Dudu_Spawn1": "咣～！嘟嘟要撞过去！",
+   "Dudu_Spawn2": "你这个坏蛋！绝不原谅！！",
+   "Dudu_Stage": "一起去吗？嘟嘟好开心！",
+   "Dudu_Surprise1": "咻！？",
+   "Dudu_Surprise2": "噗呃？",
+   "Dudu_TelephoneCall": "嘀！这个真的好神奇！听得见吗？是嘟嘟的声音吗？呜哈哈哈！\n嘟嘟长大好多啦！现在连这种电话都会打了嘟！\n那个、那个呀！不想和嘟嘟一起出去玩吗？去玩嘛？你不无聊吗？嘟嘟好无聊！\n想和教主手牵手一起去玩嘛！\n嘀？你说一起去？哈哈哈！好呀！太好太好了嘟！\n那嘟嘟会准备好带过去哦——一首超棒的摇篮曲。\n嘟嘟会努力背下来的，全部背下来，然后轻轻拍拍教主。\n教主睡觉的时候，最喜欢嘟嘟轻轻拍拍了对吧。\n所以嘟嘟也要开开心心地轻轻拍拍教主。这是嘟嘟送的礼物哦！\n教主也要带礼物来哦！嘟嘟喜欢夜光贴纸，你知道的吧？\n嘟嘟好像最喜欢教主了！一想到教主就一直笑出来，好幸福！\n下次见面，一定要抱抱嘟嘟哦！",
+   "Dudu_TickleDuring1": "咯咯咯咯咯～好痒呀！！",
+   "Dudu_TickleStart1": "咿嘻！呀哈哈～",
+   "Dudu_Touch1": "嘟～？！为什么要拉嘟嘟？因为可爱？嘟嘟吗？",
+   "Dudu_Touch1_1": "呜哇啊～我要去告诉死神！全都告诉！！",
+   "Dudu_Touch1_1_Skin1": "唔……这样不对！不可以！",
+   "Dudu_Touch1_2": "为什么？！不要！嘟嘟不喜欢！别这样嘛！",
+   "Dudu_Touch1_2_Skin1": "呜呜呜……嘟嘟最讨厌了……",
+   "Dudu_Touch1_Skin1": "恐龙班的小朋友们也不会这样做的！",
+   "Dudu_Touch2": "呜嘿嘿嘿～嘟嘟喜欢这个。可以每天都做给我吗？",
+   "Dudu_Touch2_1": "嘟……嘟……眼睛要闭上了……唔……",
+   "Dudu_Touch2_1_Skin1": "嘟嘟给你画一只特别的夜光恐龙！",
+   "Dudu_Touch2_2": "今天也陪嘟嘟玩嘛！拜托嘛！",
+   "Dudu_Touch2_2_Skin1": "教主～！要不要来恐龙班看看？嘟嘟邀请你！",
+   "Dudu_Touch2_Skin1": "是自由活动时间吗，教主？一起玩吧！",
+   "Dudu_Trickcal1": "Trickcal Revive！",
+   "Dudu_Trickcal2": "Trickcal～！",
+   "Dudu_Ultimate1": "嘟嘟好无聊！陪嘟嘟一起玩嘛！",
+   "Dudu_Ultimate2": "嘿嘿嘿嘿嘿～！",
+   "Dudu_Ultimate3": "咚啦啾！",
+   "Dudu_Victory1": "嘿嘿嘿～看到了吗？嘟嘟的勇敢！",
+   "Dudu_Victory2": "嘟嘟做到了！嘟嘟最棒～也很可爱吧～？",
+   "Dudu_Yes1": "好呀好呀～",
+   "Dudu_Yes2": "哇呀哇呀！",
+   "Dudu_Yes3": "那当然啦！",
    "Ed_Affinity1_1": "生命维持装置娜塔，正在保护乘员伊德。",
    "Ed_Affinity1_2": "反正一切都是梦，对我来说毫无意义。",
    "Ed_Affinity1_3": "娜塔也是精灵王国的居民，不想与任何人为敌。",
@@ -145438,6 +145571,1956 @@
    "text": "没错。",
    "textJa": "そうだ。",
    "textKo": "맞아.",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Affinity1_1",
+   "char": "Dudu",
+   "name": "好感度1_1",
+   "text": "嘟嘟～？对嘟嘟感兴趣吗？因为可爱吗？嘿嘿嘿～",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Affinity1_2",
+   "char": "Dudu",
+   "name": "好感度1_2",
+   "text": "和嘟嘟牵着手去玩吧！一起！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Affinity1_3",
+   "char": "Dudu",
+   "name": "好感度1_3",
+   "text": "尽管相信嘟嘟！嘟嘟会保护你的！毕竟嘟嘟是龙嘛～",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Affinity2",
+   "char": "Dudu",
+   "name": "好感度2",
+   "text": "这是秘密吗？嘟嘟喜欢！是夜光的！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Affinity3",
+   "char": "Dudu",
+   "name": "好感度3",
+   "text": "哈啊～摸摸我～也给我唱首摇篮曲嘛～",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Affinity4",
+   "char": "Dudu",
+   "name": "好感度4",
+   "text": "去散步吗？去哪儿好？那边？这里？还是更远那边？嘿嘿！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Affinity5",
+   "char": "Dudu",
+   "name": "好感度5",
+   "text": "当当～给你看～！特别展示！嘟嘟的夜光！唔嘿嘿嘿～",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Affinity6",
+   "char": "Dudu",
+   "name": "好感度6",
+   "text": "我跟你说哦……嘟嘟会更喜欢你的！从现在起，越来越喜欢～！！！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Affinity7",
+   "char": "Dudu",
+   "name": "好感度7",
+   "text": "钻到被窝里来！嘟嘟给你看！夜光的！！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Anger1",
+   "char": "Dudu",
+   "name": "生气1",
+   "text": "啧！才不给你呢！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Anger2",
+   "char": "Dudu",
+   "name": "生气2",
+   "text": "拜托啦～求求你嘛～",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Anger3",
+   "char": "Dudu",
+   "name": "生气3",
+   "text": "咻啦！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Anger4",
+   "char": "Dudu",
+   "name": "生气4",
+   "text": "呜呜呜呜呜……",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Anger5",
+   "char": "Dudu",
+   "name": "生气5",
+   "text": "不要嘛～～",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_AsideGet",
+   "char": "Dudu",
+   "name": "解锁坨格",
+   "text": "哇！恐龙！死掉了！恐龙死掉了！嘿嘿嘿～",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_AsideUpgrade",
+   "char": "Dudu",
+   "name": "坨格升级",
+   "text": "嘟嘟也会变成像死神一样的大龙！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_BasicAttack1",
+   "char": "Dudu",
+   "name": "普通攻击1",
+   "text": "砰～！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_BasicAttack2",
+   "char": "Dudu",
+   "name": "普通攻击2",
+   "text": "看我的！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Birthday",
+   "char": "Dudu",
+   "name": "生日",
+   "text": "咦～？今天也是生日吗？生日快乐～啪啪啪~~~ 嘟嘟喂你吃蛋糕！嘿嘿嘿～",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Board",
+   "char": "Dudu",
+   "name": "涂色板",
+   "text": "咣～！嘟嘟带路！跟上我！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Board_Skin1",
+   "char": "Dudu",
+   "name": "涂色板（校园里的小恐龙）",
+   "text": "准备好了吗～？是～是～老师～！嘿嘿嘿～",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin1",
+   "skinName": "校园里的小恐龙",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_CallHero1",
+   "char": "Dudu",
+   "name": "呼唤使徒1",
+   "text": "死神——！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_CallHero2",
+   "char": "Dudu",
+   "name": "呼唤使徒2",
+   "text": "死神大人！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_CallHero3",
+   "char": "Dudu",
+   "name": "呼唤使徒3",
+   "text": "暗王！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_CallPlayer1",
+   "char": "Dudu",
+   "name": "呼唤教主1",
+   "text": "嘿嘿嘿～嘟嘟也可爱吗～？教主喜欢嘟嘟吗～？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_CallPlayer2",
+   "char": "Dudu",
+   "name": "呼唤教主2",
+   "text": "教～主～！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_CallPlayer3",
+   "char": "Dudu",
+   "name": "呼唤教主3",
+   "text": "教主～！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_CallPlayer4",
+   "char": "Dudu",
+   "name": "呼唤教主4",
+   "text": "教主呀！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_CallPlayer5",
+   "char": "Dudu",
+   "name": "呼唤教主5",
+   "text": "教主……",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_DeckSetting1",
+   "char": "Dudu",
+   "name": "入队1",
+   "text": "嘿嘿！先去哪儿好？快告诉嘟嘟！快快！！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_DeckSetting2",
+   "char": "Dudu",
+   "name": "入队2",
+   "text": "等一下再做也行嘛～吓到了吧！因为嘟嘟超帅的。嘿嘿。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Defeat1",
+   "char": "Dudu",
+   "name": "战败1",
+   "text": "哇啊～不要！嘟嘟才没有输！！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Defeat2",
+   "char": "Dudu",
+   "name": "战败2",
+   "text": "嘟～？！嘟嘟不喜欢这样！不喜欢！不喜欢！讨厌！最讨厌了！！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Die1",
+   "char": "Dudu",
+   "name": "被击倒1",
+   "text": "嘟嘟有点害怕……下次再来好不好？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Die2",
+   "char": "Dudu",
+   "name": "被击倒2",
+   "text": "咿！？我、我得逃跑了！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_DutchRubEnd1",
+   "char": "Dudu",
+   "name": "爆栗1",
+   "text": "嘟！！嘟嘟要闹别扭了！不跟你玩了！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_DutchRubEnd1_Skin1",
+   "char": "Dudu",
+   "name": "爆栗1（校园里的小恐龙）",
+   "text": "嗷！为什么打我呀！！！嘟嘟还要再长大一点呢！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin1",
+   "skinName": "校园里的小恐龙",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_DutchRubEnd2",
+   "char": "Dudu",
+   "name": "爆栗",
+   "text": "嘟！！嘟嘟要闹别扭了！不玩了！一起！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_DutchRubEnd2_Skin1",
+   "char": "Dudu",
+   "name": "爆栗（校园里的小恐龙）",
+   "text": "嗷！为什么打我呀！！！嘟嘟还要再长大一点呢！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin1",
+   "skinName": "校园里的小恐龙",
+   "alias": "Dudu_DutchRubEnd1_Skin1"
+  },
+  {
+   "key": "Dudu_Eat1",
+   "char": "Dudu",
+   "name": "进食1",
+   "text": "啊呜啊呜……嚼嚼嚼～",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Equipment",
+   "char": "Dudu",
+   "name": "装备",
+   "text": "这个是给嘟嘟的吗？嘿嘿嘿～",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Equipment_Skin1",
+   "char": "Dudu",
+   "name": "装备（校园里的小恐龙）",
+   "text": "哇啊～！是给嘟嘟的玩具吗？快给嘟嘟嘛！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin1",
+   "skinName": "校园里的小恐龙",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Gacha1",
+   "char": "Dudu",
+   "name": "抽卡1",
+   "text": "有小偷！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Gacha2",
+   "char": "Dudu",
+   "name": "抽卡2",
+   "text": "又勇敢又超～强的恐龙也有哦！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Gacha3",
+   "char": "Dudu",
+   "name": "抽卡3",
+   "text": "咣～！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Gacha4",
+   "char": "Dudu",
+   "name": "抽卡4",
+   "text": "来，这样就！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Greeting",
+   "char": "Dudu",
+   "name": "问候",
+   "text": "你好！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Growth",
+   "char": "Dudu",
+   "name": "成长",
+   "text": "我是最～可爱的小恐龙嘟嘟呀！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Growth1",
+   "char": "Dudu",
+   "name": "成长",
+   "text": "嘟嘟想变得更强！比现在更强！还要更强！！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Growth1_Skin1",
+   "char": "Dudu",
+   "name": "成长（校园里的小恐龙）",
+   "text": "要唱一首老师教嘟嘟的儿歌吗？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin1",
+   "skinName": "校园里的小恐龙",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Growth2",
+   "char": "Dudu",
+   "name": "成长2",
+   "text": "现在就让你看看！嘟嘟的勇敢！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Growth2_Skin1",
+   "char": "Dudu",
+   "name": "成长2（校园里的小恐龙）",
+   "text": "嘟嘟现在自己也会啦！刷～刷～！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin1",
+   "skinName": "校园里的小恐龙",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_HeroSkill",
+   "char": "Dudu",
+   "name": "高年级技能",
+   "text": "唔嘿嘿嘿嘿～也陪嘟嘟玩嘛！嘟嘟好无聊！一起玩吧！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_HeroSkill_Skin1",
+   "char": "Dudu",
+   "name": "高年级技能（校园里的小恐龙）",
+   "text": "要唱老师教的儿歌给你听吗？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "_Skin1",
+   "skinName": "校园里的小恐龙",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_HeroUpgrade",
+   "char": "Dudu",
+   "name": "升星",
+   "text": "嘿嘿嘿～摸摸嘟嘟！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_HeroUpgrade_Skin1",
+   "char": "Dudu",
+   "name": "升星（校园里的小恐龙）",
+   "text": "嘟嘟要拿满分！还要继续加油！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin1",
+   "skinName": "校园里的小恐龙",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Hit1",
+   "char": "Dudu",
+   "name": "受击1",
+   "text": "哈！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Hit2",
+   "char": "Dudu",
+   "name": "受击2",
+   "text": "啊呀！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Hit3",
+   "char": "Dudu",
+   "name": "受击3",
+   "text": "咿呜！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Hit4",
+   "char": "Dudu",
+   "name": "受击4",
+   "text": "咳啊！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Hit5",
+   "char": "Dudu",
+   "name": "受击5",
+   "text": "哐哐！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Hmm1",
+   "char": "Dudu",
+   "name": "思考1",
+   "text": "咻呜？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Hmm2",
+   "char": "Dudu",
+   "name": "思考2",
+   "text": "叮～？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Hmm3",
+   "char": "Dudu",
+   "name": "思考3",
+   "text": "什么呀？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Joy1",
+   "char": "Dudu",
+   "name": "高兴1",
+   "text": "呜哈哈哈哈～",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Joy2",
+   "char": "Dudu",
+   "name": "高兴2",
+   "text": "知道啦！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Joy3",
+   "char": "Dudu",
+   "name": "高兴3",
+   "text": "嘀啰嘀啰～",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Joy4",
+   "char": "Dudu",
+   "name": "高兴4",
+   "text": "嘟嘟好可爱啾嘟～",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Joy5",
+   "char": "Dudu",
+   "name": "高兴5",
+   "text": "嘿嘿嘿嘿嘿嘿～",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_LevelUp",
+   "char": "Dudu",
+   "name": "升级",
+   "text": "感觉超棒！嘟～嘟～",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_LevelUp_Skin1",
+   "char": "Dudu",
+   "name": "升级（校园里的小恐龙）",
+   "text": "嘟嘟在恐龙班！嘟嘟最喜欢恐龙班的小伙伴了！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin1",
+   "skinName": "校园里的小恐龙",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Line1",
+   "char": "Dudu",
+   "name": "台词1",
+   "text": "你可以的！嘟嘟会保护你！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Line2",
+   "char": "Dudu",
+   "name": "台词2",
+   "text": "害怕的话就待在嘟嘟身边！和嘟嘟一起！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Line3",
+   "char": "Dudu",
+   "name": "台词3",
+   "text": "手牵手出发！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Lobby",
+   "char": "Dudu",
+   "name": "大厅",
+   "text": "嘟嘟才不是坏蛋！是恐龙啦！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_No1",
+   "char": "Dudu",
+   "name": "否定1",
+   "text": "嘟？！不要不要！要继续和嘟嘟玩！！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_No2",
+   "char": "Dudu",
+   "name": "否定2",
+   "text": "才不是那样啦～",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_No3",
+   "char": "Dudu",
+   "name": "否定3",
+   "text": "啊啊啊啊～",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Pleasure1",
+   "char": "Dudu",
+   "name": "愉悦1",
+   "text": "嘿嘿～",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Pleasure2",
+   "char": "Dudu",
+   "name": "愉悦2",
+   "text": "真的！真的！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Pleasure3",
+   "char": "Dudu",
+   "name": "愉悦3",
+   "text": "哦哦哦哦哦～",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Pleasure4",
+   "char": "Dudu",
+   "name": "愉悦4",
+   "text": "心情最棒啦！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Pleasure5",
+   "char": "Dudu",
+   "name": "愉悦5",
+   "text": "嘀哩嘀～嘀哩嘀～",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_PowerAttack1",
+   "char": "Dudu",
+   "name": "强力攻击1",
+   "text": "咣～！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_PowerAttack2",
+   "char": "Dudu",
+   "name": "强力攻击2",
+   "text": "咿————呀！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_SPSkill1",
+   "char": "Dudu",
+   "name": "低年级技能1",
+   "text": "嘟嘟！抱抱！抱抱嘟嘟！要抱紧哦！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_SPSkill2",
+   "char": "Dudu",
+   "name": "低年级技能2",
+   "text": "冲！冲！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_SPSkill3",
+   "char": "Dudu",
+   "name": "低年级技能3",
+   "text": "一个也不留！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Shout1",
+   "char": "Dudu",
+   "name": "喊叫1",
+   "text": "嘀哟！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Shout2",
+   "char": "Dudu",
+   "name": "喊叫2",
+   "text": "咣！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Shout3",
+   "char": "Dudu",
+   "name": "喊叫3",
+   "text": "哐昂！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Shout4",
+   "char": "Dudu",
+   "name": "喊叫4",
+   "text": "咕啊————！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Shout5",
+   "char": "Dudu",
+   "name": "喊叫5",
+   "text": "啾啾啾啾啾！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Sorrow1",
+   "char": "Dudu",
+   "name": "伤心1",
+   "text": "呜……",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Sorrow2",
+   "char": "Dudu",
+   "name": "伤心2",
+   "text": "唉哟～",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Sorrow3",
+   "char": "Dudu",
+   "name": "伤心3",
+   "text": "是嘟嘟做错了……",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Sorrow4",
+   "char": "Dudu",
+   "name": "伤心4",
+   "text": "嘻嘻……呜呜呜……",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Sorrow5",
+   "char": "Dudu",
+   "name": "伤心5",
+   "text": "呜哇啊啊啊啊——！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Sorry1",
+   "char": "Dudu",
+   "name": "道歉1",
+   "text": "对不起嘛……",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Sorry2",
+   "char": "Dudu",
+   "name": "道歉2",
+   "text": "真的很抱歉！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Spawn1",
+   "char": "Dudu",
+   "name": "登场1",
+   "text": "咣～！嘟嘟要撞过去！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Spawn2",
+   "char": "Dudu",
+   "name": "登场2",
+   "text": "你这个坏蛋！绝不原谅！！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Stage",
+   "char": "Dudu",
+   "name": "入场",
+   "text": "一起去吗？嘟嘟好开心！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Surprise1",
+   "char": "Dudu",
+   "name": "惊讶1",
+   "text": "咻！？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Surprise2",
+   "char": "Dudu",
+   "name": "惊讶2",
+   "text": "噗呃？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_TelephoneCall",
+   "char": "Dudu",
+   "name": "打电话",
+   "text": "嘀！这个真的好神奇！听得见吗？是嘟嘟的声音吗？呜哈哈哈！\n嘟嘟长大好多啦！现在连这种电话都会打了嘟！\n那个、那个呀！不想和嘟嘟一起出去玩吗？去玩嘛？你不无聊吗？嘟嘟好无聊！\n想和教主手牵手一起去玩嘛！\n嘀？你说一起去？哈哈哈！好呀！太好太好了嘟！\n那嘟嘟会准备好带过去哦——一首超棒的摇篮曲。\n嘟嘟会努力背下来的，全部背下来，然后轻轻拍拍教主。\n教主睡觉的时候，最喜欢嘟嘟轻轻拍拍了对吧。\n所以嘟嘟也要开开心心地轻轻拍拍教主。这是嘟嘟送的礼物哦！\n教主也要带礼物来哦！嘟嘟喜欢夜光贴纸，你知道的吧？\n嘟嘟好像最喜欢教主了！一想到教主就一直笑出来，好幸福！\n下次见面，一定要抱抱嘟嘟哦！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "剧情",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_TickleDuring1",
+   "char": "Dudu",
+   "name": "挠痒中1",
+   "text": "咯咯咯咯咯～好痒呀！！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_TickleStart1",
+   "char": "Dudu",
+   "name": "挠痒开始1",
+   "text": "咿嘻！呀哈哈～",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Touch1",
+   "char": "Dudu",
+   "name": "薅脸1",
+   "text": "嘟～？！为什么要拉嘟嘟？因为可爱？嘟嘟吗？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Touch1_1",
+   "char": "Dudu",
+   "name": "薅脸2",
+   "text": "呜哇啊～我要去告诉死神！全都告诉！！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Touch1_1_Skin1",
+   "char": "Dudu",
+   "name": "薅脸2（校园里的小恐龙）",
+   "text": "唔……这样不对！不可以！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin1",
+   "skinName": "校园里的小恐龙",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Touch1_2",
+   "char": "Dudu",
+   "name": "薅脸3",
+   "text": "为什么？！不要！嘟嘟不喜欢！别这样嘛！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Touch1_2_Skin1",
+   "char": "Dudu",
+   "name": "薅脸3（校园里的小恐龙）",
+   "text": "呜呜呜……嘟嘟最讨厌了……",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin1",
+   "skinName": "校园里的小恐龙",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Touch1_Skin1",
+   "char": "Dudu",
+   "name": "薅脸1（校园里的小恐龙）",
+   "text": "恐龙班的小朋友们也不会这样做的！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin1",
+   "skinName": "校园里的小恐龙",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Touch2",
+   "char": "Dudu",
+   "name": "抚摸",
+   "text": "呜嘿嘿嘿～嘟嘟喜欢这个。可以每天都做给我吗？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Touch2_1",
+   "char": "Dudu",
+   "name": "抚摸2",
+   "text": "嘟……嘟……眼睛要闭上了……唔……",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Touch2_1_Skin1",
+   "char": "Dudu",
+   "name": "抚摸2（校园里的小恐龙）",
+   "text": "嘟嘟给你画一只特别的夜光恐龙！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin1",
+   "skinName": "校园里的小恐龙",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Touch2_2",
+   "char": "Dudu",
+   "name": "抚摸3",
+   "text": "今天也陪嘟嘟玩嘛！拜托嘛！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Touch2_2_Skin1",
+   "char": "Dudu",
+   "name": "抚摸3（校园里的小恐龙）",
+   "text": "教主～！要不要来恐龙班看看？嘟嘟邀请你！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin1",
+   "skinName": "校园里的小恐龙",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Touch2_Skin1",
+   "char": "Dudu",
+   "name": "抚摸（校园里的小恐龙）",
+   "text": "是自由活动时间吗，教主？一起玩吧！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin1",
+   "skinName": "校园里的小恐龙",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Trickcal1",
+   "char": "Dudu",
+   "name": "游戏名1",
+   "text": "Trickcal Revive！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Trickcal2",
+   "char": "Dudu",
+   "name": "游戏名2",
+   "text": "Trickcal～！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Ultimate1",
+   "char": "Dudu",
+   "name": "高年级技能1",
+   "text": "嘟嘟好无聊！陪嘟嘟一起玩嘛！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Ultimate2",
+   "char": "Dudu",
+   "name": "高年级技能2",
+   "text": "嘿嘿嘿嘿嘿～！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Ultimate3",
+   "char": "Dudu",
+   "name": "高年级技能3",
+   "text": "咚啦啾！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Victory1",
+   "char": "Dudu",
+   "name": "胜利1",
+   "text": "嘿嘿嘿～看到了吗？嘟嘟的勇敢！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Victory2",
+   "char": "Dudu",
+   "name": "胜利2",
+   "text": "嘟嘟做到了！嘟嘟最棒～也很可爱吧～？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Yes1",
+   "char": "Dudu",
+   "name": "肯定1",
+   "text": "好呀好呀～",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Yes2",
+   "char": "Dudu",
+   "name": "肯定2",
+   "text": "哇呀哇呀！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "情绪",
+   "skin": "",
+   "skinName": "",
+   "alias": ""
+  },
+  {
+   "key": "Dudu_Yes3",
+   "char": "Dudu",
+   "name": "肯定3",
+   "text": "那当然啦！",
+   "textJa": "",
+   "textKo": "",
    "langs": [
     "ko"
    ],

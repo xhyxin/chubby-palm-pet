@@ -1,5 +1,5 @@
 /* ------------------------------------------------------------------
- * characters/generated.js —— 自动生成的新角色数据（144 个）
+ * characters/generated.js —— 自动生成的新角色数据（145 个）
  *
  * ★ 本文件由 03_工具\批量生成角色文件.js 生成，**不要手改**。
  *   数据全部来自官方资源：
@@ -794,7 +794,7 @@ const CHAR_GENERATED = [
    "id": "Amelia",
    "name": "艾蜜莉雅",
    "en": "Amelia",
-   "desc": "精灵 · 6 套外观",
+   "desc": "精灵 · 5 套外观",
    "tag": "🧝",
    "art": {
     "avatar": "assets/art/Amelia/phone-avatar.png",
@@ -840,13 +840,6 @@ const CHAR_GENERATED = [
      "name": "偶像：N.Y.A.N.Y.A",
      "desc": "为了埃蕾娜市长的支持率，甘愿成为偶像的艾…（41 动作）",
      "voiceSkin": "_Skin4"
-    },
-    {
-     "id": "Pet_MiniAmelia",
-     "dir": "assets/spine/Pet_MiniAmelia",
-     "name": "迷你形态",
-     "desc": "宠物形态（动作较少）（11 动作）",
-     "voiceSkin": ""
     }
    ],
    "bones": {
@@ -1180,18 +1173,7 @@ const CHAR_GENERATED = [
       "Shy_7",
       "Sulky_1",
       "Sulky_2",
-      "Sulky_3",
-      "Act_1_1",
-      "Act_2_1",
-      "Act_3_1",
-      "Angry1_1",
-      "Eat1_1",
-      "Idle",
-      "Move",
-      "Play1_1",
-      "Sleep1_1",
-      "Spawn",
-      "Swim1_1"
+      "Sulky_3"
      ]
     }
    ],
@@ -8378,7 +8360,7 @@ const CHAR_GENERATED = [
    "id": "Callamori",
    "name": "卡拉莫里",
    "en": "Callamori",
-   "desc": "NPC · 2 套外观",
+   "desc": "NPC · 1 套外观",
    "tag": "npc",
    "art": {
     "avatar": "assets/art/Callamori/phone-avatar.png",
@@ -8395,13 +8377,6 @@ const CHAR_GENERATED = [
      "dir": "assets/spine/Callamori",
      "name": "默认",
      "desc": "基础外观（56 动作）",
-     "voiceSkin": ""
-    },
-    {
-     "id": "Pet_MiniCallamori",
-     "dir": "assets/spine/Pet_MiniCallamori",
-     "name": "迷你形态",
-     "desc": "宠物形态（动作较少）",
      "voiceSkin": ""
     }
    ],
@@ -13377,7 +13352,7 @@ const CHAR_GENERATED = [
    "id": "Diana",
    "name": "黛安娜",
    "en": "Diana",
-   "desc": "兽人 · 6 套外观",
+   "desc": "兽人 · 5 套外观",
    "tag": "🐾",
    "art": {
     "avatar": "assets/art/Diana/phone-avatar.png",
@@ -13423,13 +13398,6 @@ const CHAR_GENERATED = [
      "name": "野山温泉小憩",
      "desc": "黛安娜似乎喜欢温暖的温泉。感觉就是这样。…（61 动作）",
      "voiceSkin": "_Skin4"
-    },
-    {
-     "id": "Pet_MiniDianaYester",
-     "dir": "assets/spine/Pet_MiniDianaYester",
-     "name": "迷你形态",
-     "desc": "宠物形态（动作较少）",
-     "voiceSkin": ""
     }
    ],
    "bones": {
@@ -13806,7 +13774,7 @@ const CHAR_GENERATED = [
    "id": "DianaYester",
    "name": "黛安娜(往昔)",
    "en": "DianaYester",
-   "desc": "兽人 · 5 套外观",
+   "desc": "兽人 · 4 套外观",
    "tag": "🐾",
    "art": {
     "avatar": "assets/art/DianaYester/phone-avatar.png",
@@ -13845,13 +13813,6 @@ const CHAR_GENERATED = [
      "name": "号令苍穹的咆哮",
      "desc": "经过漫长修炼，终于抵达武道极境的黛雅（往…（65 动作）",
      "voiceSkin": "_Skin3"
-    },
-    {
-     "id": "Pet_MiniDianaYester",
-     "dir": "assets/spine/Pet_MiniDianaYester",
-     "name": "迷你形态",
-     "desc": "宠物形态（动作较少）",
-     "voiceSkin": ""
     }
    ],
    "bones": {
@@ -14223,7 +14184,12 @@ const CHAR_GENERATED = [
       "Shy_3",
       "Sulky_1",
       "Sulky_2",
-      "Sulky_3"
+      "Sulky_3",
+      "Aside_1",
+      "Aside_2",
+      "Spawn_1",
+      "Upgrade_1",
+      "Upgrade_2"
      ]
     }
    ],
@@ -14235,6 +14201,399 @@ const CHAR_GENERATED = [
     "Angry_": "DianaYester_Anger",
     "Sad_": "DianaYester_Sorrow",
     "Surprise_": "DianaYester_Surprise"
+   }
+  },
+  {
+   "id": "Dudu",
+   "name": "嘟嘟",
+   "en": "Dudu",
+   "desc": "使徒 · 2 套外观",
+   "tag": "⭐",
+   "art": {
+    "avatar": "assets/art/Dudu/phone-avatar.png",
+    "present": "assets/art/Dudu/present.png",
+    "album": "assets/art/Dudu/album-strict.webp"
+   },
+   "skinCandidates": [
+    "Normal",
+    "default"
+   ],
+   "models": [
+    {
+     "id": "Dudu",
+     "dir": "assets/spine/Dudu",
+     "name": "默认",
+     "desc": "基础外观（50 动作）",
+     "voiceSkin": ""
+    },
+    {
+     "id": "DuduSkin1",
+     "dir": "assets/spine/DuduSkin1",
+     "name": "校园里的小恐龙",
+     "desc": "第 1 套外观（50 动作）",
+     "voiceSkin": "_Skin1"
+    }
+   ],
+   "bones": {
+    "head": [
+     "Head"
+    ],
+    "headTop": [
+     "Hair_F_Root",
+     "Head"
+    ],
+    "face": [
+     "Face"
+    ],
+    "mouth": [
+     "Mouth_Root",
+     "Mouth"
+    ],
+    "cheekL": [
+     "Ball_L"
+    ],
+    "cheekR": [
+     "Ball_R"
+    ],
+    "belly": [
+     "Body_1",
+     "Pelvis"
+    ],
+    "neck": [],
+    "tail": [
+     "Tail_Root",
+     "Tail"
+    ],
+    "earL": [
+     "Hat_Ear_L_Root",
+     "Ear_Root"
+    ],
+    "earR": [
+     "Ear_Root"
+    ],
+    "ballMove": [
+     "Character_Ball_Move",
+     "Ball_R"
+    ],
+    "ballMoveP": [
+     "Ball_R"
+    ],
+    "pat": [
+     "Character_Pat",
+     "Head"
+    ],
+    "tickle": [
+     "Character_Tickle",
+     "Body_1",
+     "Pelvis"
+    ]
+   },
+   "pinch": {
+    "ok": true,
+    "reason": ""
+   },
+   "anim": {
+    "idle": [
+     "Idle_1"
+    ],
+    "patIdle": [
+     "Pat_Idle"
+    ],
+    "patEnd": [
+     "Pat_End",
+     "Idle_1"
+    ],
+    "tickleIdle": [
+     "Tickle_Idle_1"
+    ],
+    "tickleIdle2": [
+     "Tickle_Idle_2"
+    ],
+    "tickleEnd": [
+     "Tickle_End",
+     "Idle_1"
+    ],
+    "touchIdle": [
+     "Touch_Idle"
+    ],
+    "touchEnd": [
+     "Touch_End",
+     "Idle_1"
+    ],
+    "smash": [
+     "Smash_End_1"
+    ],
+    "smash2": [
+     "Smash_End_2"
+    ],
+    "eat": [
+     "Eat_1",
+     "Eat_2"
+    ],
+    "happy": [
+     "Happy_1",
+     "Happy_2",
+     "Happy_3",
+     "Happy_4",
+     "Happy_5"
+    ],
+    "proud": [
+     "Happy_1"
+    ],
+    "angry": [
+     "Angry_1",
+     "Angry_2",
+     "Angry_3"
+    ],
+    "sad": [
+     "Sad_1",
+     "Sad_2",
+     "Sad_3",
+     "Sad_4"
+    ],
+    "surprise": [
+     "Happy_1"
+    ],
+    "dizzy": [
+     "Happy_1"
+    ],
+    "panic": [
+     "Panic_1",
+     "Panic_2",
+     "Panic_3"
+    ],
+    "taunt": [
+     "Happy_1"
+    ],
+    "smell": [
+     "Happy_1"
+    ],
+    "serious": [
+     "Happy_1"
+    ],
+    "close": [
+     "Close_1"
+    ]
+   },
+   "actions": {
+    "pinch": {
+     "label": "捏脸",
+     "icon": "🤏",
+     "zone": "cheek",
+     "gesture": "drag",
+     "deform": "cheek",
+     "loop": "touchIdle",
+     "end": "touchEnd",
+     "sfxStart": {
+      "name": "SFX_Common_PullCheek",
+      "volume": 0.65
+     },
+     "sfxEnd": {
+      "name": "SFX_Common_PullCheekEnd",
+      "volume": 0.65
+     },
+     "voice": [
+      "Dudu_Touch1",
+      "Dudu_Touch1_1",
+      "Dudu_Touch1_2"
+     ]
+    },
+    "pat": {
+     "label": "摸头",
+     "icon": "🖐",
+     "zone": "head",
+     "gesture": "drag",
+     "loop": "patIdle",
+     "end": "patEnd",
+     "sfx": {
+      "name": "SFX_Pat",
+      "volume": 0.28
+     },
+     "sfxIntervalMs": 520,
+     "fx": {
+      "kind": "heart",
+      "duration": 1600
+     },
+     "fxIntervalMs": 900,
+     "voice": [
+      "Dudu_Touch2",
+      "Dudu_Touch2_1",
+      "Dudu_Touch2_2"
+     ]
+    },
+    "bonk": {
+     "label": "敲头",
+     "icon": "🔨",
+     "zone": "head",
+     "gesture": "tap",
+     "once": "smash",
+     "second": "smash2",
+     "sfx": [
+      {
+       "name": "SFX_DutchRub_Default",
+       "volume": 0.62
+      },
+      {
+       "name": "SFX_DutchRub_Max",
+       "volume": 0.68
+      }
+     ],
+     "fx": {
+      "kind": "dutchRub",
+      "duration": 1180
+     },
+     "voice": [
+      "Dudu_DutchRubEnd1"
+     ],
+     "voiceEnd": [
+      "Dudu_DutchRubEnd2"
+     ]
+    },
+    "belly": {
+     "label": "摸肚子",
+     "icon": "🫳",
+     "zone": "belly",
+     "gesture": "drag",
+     "loop": "tickleIdle",
+     "loop2": "tickleIdle2",
+     "end": "tickleEnd",
+     "sfx": {
+      "name": "SFX_Tickle",
+      "volume": 0.38
+     },
+     "voice": [
+      "Dudu_TickleStart1"
+     ],
+     "voiceMid": [
+      "Dudu_TickleDuring1"
+     ],
+     "voiceEnd": []
+    },
+    "feed": {
+     "label": "喂食",
+     "icon": "🍖",
+     "zone": "mouth",
+     "gesture": "drop",
+     "once": "eat",
+     "voice": [
+      "Dudu_Eat1"
+     ]
+    }
+   },
+   "voiceDurations": {},
+   "voiceLang": "ko",
+   "voiceLangs": [
+    "ko"
+   ],
+   "pokeVoice": [
+    "Dudu_Surprise1",
+    "Dudu_Hmm1",
+    "Dudu_Yes1"
+   ],
+   "upsetVoice": [
+    "Dudu_Anger1",
+    "Dudu_No1",
+    "Dudu_Anger2"
+   ],
+   "hungryVoice": [
+    "Dudu_CallPlayer1",
+    "Dudu_Sorrow1",
+    "Dudu_Hmm2"
+   ],
+   "greetVoice": [
+    "Dudu_Greeting",
+    "Dudu_Lobby",
+    "Dudu_Spawn1",
+    "Dudu_Joy1"
+   ],
+   "moodActs": [
+    "happy",
+    "proud",
+    "taunt",
+    "smell",
+    "serious",
+    "dizzy"
+   ],
+   "animPanel": [
+    {
+     "group": "互动",
+     "items": [
+      "Eat_1",
+      "Eat_2",
+      "Pat_End",
+      "Pat_Idle",
+      "Smash_End_1",
+      "Smash_End_2",
+      "Tickle_End",
+      "Tickle_Idle_1",
+      "Tickle_Idle_2",
+      "Touch_End",
+      "Touch_Idle"
+     ]
+    },
+    {
+     "group": "情绪",
+     "items": [
+      "Angry_1",
+      "Angry_2",
+      "Angry_3",
+      "Angry_4",
+      "Angry_5",
+      "Angry_6",
+      "Angry_7",
+      "Close_1",
+      "Happy_1",
+      "Happy_2",
+      "Happy_3",
+      "Happy_4",
+      "Happy_5",
+      "Happy_6",
+      "Happy_7",
+      "Happy_8",
+      "Panic_1",
+      "Panic_2",
+      "Panic_3",
+      "Sad_1",
+      "Sad_2",
+      "Sad_3",
+      "Sad_4",
+      "Sad_5",
+      "Sad_6"
+     ]
+    },
+    {
+     "group": "待机",
+     "items": [
+      "Idle_1",
+      "Idle_2"
+     ]
+    },
+    {
+     "group": "其他形态",
+     "items": [
+      "Attack_1",
+      "Attack_2",
+      "Blank_1",
+      "Blank_2",
+      "Blank_3",
+      "Cute_1",
+      "Cute_2",
+      "Cute_3",
+      "Shout_1",
+      "Shout_2",
+      "Shout_3",
+      "Sorry_1"
+     ]
+    }
+   ],
+   "animLabel": {},
+   "voiceForAnim": {},
+   "voiceForAnimSeries": {
+    "Happy_": "Dudu_Joy",
+    "Proud_": "Dudu_Pleasure",
+    "Angry_": "Dudu_Anger",
+    "Sad_": "Dudu_Sorrow",
+    "Surprise_": "Dudu_Surprise"
    }
   },
   {
@@ -16279,7 +16638,7 @@ const CHAR_GENERATED = [
    "id": "Erpin",
    "name": "埃尔芬",
    "en": "Erpin",
-   "desc": "妖精 · 7 套外观",
+   "desc": "妖精 · 6 套外观",
    "tag": "🧚",
    "art": {
     "avatar": "assets/art/Erpin/phone-avatar.png",
@@ -16332,13 +16691,6 @@ const CHAR_GENERATED = [
      "name": "全自动哥特",
      "desc": "跟着可丽饼一起跑去当女仆的埃尔芬。显然哪…（105 动作）",
      "voiceSkin": "_Skin5"
-    },
-    {
-     "id": "Pet_MiniErpinCheer",
-     "dir": "assets/spine/Pet_MiniErpinCheer",
-     "name": "迷你形态",
-     "desc": "宠物形态（动作较少）（11 动作）",
-     "voiceSkin": ""
     }
    ],
    "bones": {
@@ -16738,18 +17090,7 @@ const CHAR_GENERATED = [
       "Present_2",
       "Present_3",
       "Shy_1",
-      "Shy_2",
-      "Act1_1",
-      "Act2_1",
-      "Act3_1",
-      "Angry1_1",
-      "Eat1_1",
-      "Idle",
-      "Move",
-      "Play1_1",
-      "Sleep1_1",
-      "Spawn",
-      "Swim1_1"
+      "Shy_2"
      ]
     }
    ],
@@ -22294,7 +22635,7 @@ const CHAR_GENERATED = [
    "id": "Joanne",
    "name": "琼安",
    "en": "Joanne",
-   "desc": "妖精 · 7 套外观",
+   "desc": "妖精 · 6 套外观",
    "tag": "🧚",
    "art": {
     "avatar": "assets/art/Joanne/phone-avatar.png",
@@ -22347,13 +22688,6 @@ const CHAR_GENERATED = [
      "name": "宛如绽放的花朵",
      "desc": "第 5 套外观（71 动作）",
      "voiceSkin": "_Skin5"
-    },
-    {
-     "id": "Pet_MiniJoanne",
-     "dir": "assets/spine/Pet_MiniJoanne",
-     "name": "迷你形态",
-     "desc": "宠物形态（动作较少）（11 动作）",
-     "voiceSkin": ""
     }
    ],
    "bones": {
@@ -22721,18 +23055,7 @@ const CHAR_GENERATED = [
       "Tired_1",
       "Tired_2",
       "Tired_3",
-      "Track_1",
-      "Act_1_1",
-      "Act_2_1",
-      "Act_3_1",
-      "Angry1_1",
-      "Eat1_1",
-      "Idle",
-      "Move",
-      "Play1_1",
-      "Sleep1_1",
-      "Spawn",
-      "Swim1_1"
+      "Track_1"
      ]
     }
    ],
@@ -24688,7 +25011,7 @@ const CHAR_GENERATED = [
    "id": "Kommy",
    "name": "柯米",
    "en": "Kommy",
-   "desc": "兽人 · 4 套外观",
+   "desc": "兽人 · 3 套外观",
    "tag": "🐾",
    "art": {
     "avatar": "assets/art/Kommy/phone-avatar.png",
@@ -24720,13 +25043,6 @@ const CHAR_GENERATED = [
      "name": "新学期新学校",
      "desc": "为了营造出知性派的氛围，柯米特意穿上了校…（43 动作）",
      "voiceSkin": "_Skin2"
-    },
-    {
-     "id": "Pet_MiniKommy",
-     "dir": "assets/spine/Pet_MiniKommy",
-     "name": "迷你形态",
-     "desc": "宠物形态（动作较少）（11 动作）",
-     "voiceSkin": ""
     }
    ],
    "bones": {
@@ -25068,18 +25384,7 @@ const CHAR_GENERATED = [
       "Sleepy_1",
       "Tired_1",
       "Tired_2",
-      "Tired_3",
-      "Act1_1",
-      "Act2_1",
-      "Act3_1",
-      "Angry1_1",
-      "Eat1_1",
-      "Idle",
-      "Move",
-      "Play1_1",
-      "Sleep1_1",
-      "Spawn",
-      "Swim1_1"
+      "Tired_3"
      ]
     }
    ],
@@ -34054,7 +34359,7 @@ const CHAR_GENERATED = [
    "id": "Ner",
    "name": "尼尔",
    "en": "Ner",
-   "desc": "妖精 · 5 套外观",
+   "desc": "妖精 · 4 套外观",
    "tag": "🧚",
    "art": {
     "avatar": "assets/art/Ner/phone-avatar.png",
@@ -34093,13 +34398,6 @@ const CHAR_GENERATED = [
      "name": "教团的圣宴派对",
      "desc": "在特别的教团之日，盛装打扮的涅尔。虽然担…（60 动作）",
      "voiceSkin": "_Skin3"
-    },
-    {
-     "id": "Pet_MiniNer",
-     "dir": "assets/spine/Pet_MiniNer",
-     "name": "迷你形态",
-     "desc": "宠物形态（动作较少）",
-     "voiceSkin": ""
     }
    ],
    "bones": {
@@ -34458,7 +34756,14 @@ const CHAR_GENERATED = [
       "Tired_4",
       "Tired_5",
       "Worry_1",
-      "Worry_2"
+      "Worry_2",
+      "Aside_1",
+      "Aside_2",
+      "Idle_2",
+      "Idle_3",
+      "Spawn_1",
+      "Upgrade_1",
+      "Upgrade_2"
      ]
     }
    ],
@@ -39631,7 +39936,7 @@ const CHAR_GENERATED = [
    "id": "Renewa",
    "name": "莉纽阿",
    "en": "Renewa",
-   "desc": "精灵 · 2 套外观",
+   "desc": "精灵 · 1 套外观",
    "tag": "🧝",
    "art": {
     "avatar": "assets/art/RenewaAwaken/phone-avatar.png",
@@ -39648,13 +39953,6 @@ const CHAR_GENERATED = [
      "dir": "assets/spine/Renewa",
      "name": "默认",
      "desc": "基础外观（56 动作）",
-     "voiceSkin": ""
-    },
-    {
-     "id": "Pet_MiniRenewa",
-     "dir": "assets/spine/Pet_MiniRenewa",
-     "name": "迷你形态",
-     "desc": "宠物形态（动作较少）（11 动作）",
      "voiceSkin": ""
     }
    ],
@@ -39989,18 +40287,7 @@ const CHAR_GENERATED = [
       "Talk_4",
       "Tired_1",
       "Tired_2",
-      "Tired_3",
-      "Act1_1",
-      "Act2_1",
-      "Act3_1",
-      "Angry1_1",
-      "Eat1_1",
-      "Idle",
-      "Move",
-      "Play1_1",
-      "Sleep1_1",
-      "Spawn",
-      "Swim1_1"
+      "Tired_3"
      ]
     }
    ],
@@ -47197,7 +47484,7 @@ const CHAR_GENERATED = [
    "id": "Shoupan",
    "name": "舒胖",
    "en": "Shoupan",
-   "desc": "妖精 · 5 套外观",
+   "desc": "妖精 · 4 套外观",
    "tag": "🧚",
    "art": {
     "avatar": "assets/art/Shoupan/phone-avatar.png",
@@ -47236,13 +47523,6 @@ const CHAR_GENERATED = [
      "name": "天空物流",
      "desc": "成为负责面包舟服务的空乘舒胖。即使在天空…（57 动作）",
      "voiceSkin": "_Skin3"
-    },
-    {
-     "id": "Pet_MiniShoupan",
-     "dir": "assets/spine/Pet_MiniShoupan",
-     "name": "迷你形态",
-     "desc": "宠物形态（动作较少）（11 动作）",
-     "voiceSkin": ""
     }
    ],
    "bones": {
@@ -47599,18 +47879,7 @@ const CHAR_GENERATED = [
       "Shy_1",
       "Shy_2",
       "Sorry_1",
-      "Track_1",
-      "Act1_1",
-      "Act2_1",
-      "Act3_1",
-      "Angry1_1",
-      "Eat1_1",
-      "Idle",
-      "Move",
-      "Play1_1",
-      "Sleep1_1",
-      "Spawn",
-      "Swim1_1"
+      "Track_1"
      ]
     }
    ],
@@ -49625,7 +49894,7 @@ const CHAR_GENERATED = [
    "id": "Speaki",
    "name": "斯碧琪",
    "en": "Speaki",
-   "desc": "幽灵 · 3 套外观",
+   "desc": "幽灵 · 2 套外观",
    "tag": "👻",
    "art": {
     "avatar": "assets/art/Speaki/phone-avatar.png",
@@ -49650,13 +49919,6 @@ const CHAR_GENERATED = [
      "name": "纯南瓜",
      "desc": "问她这次又在模仿什么，她回答说是在“模仿…（43 动作）",
      "voiceSkin": "_Skin1"
-    },
-    {
-     "id": "Pet_MiniSpeaki",
-     "dir": "assets/spine/Pet_MiniSpeaki",
-     "name": "迷你形态",
-     "desc": "宠物形态（动作较少）（12 动作）",
-     "voiceSkin": ""
     }
    ],
    "bones": {
@@ -49985,19 +50247,7 @@ const CHAR_GENERATED = [
       "Shy_2",
       "Sulky_1",
       "Sulky_2",
-      "Sulky_3",
-      "Act_1_1",
-      "Act_2_1",
-      "Act_3_1",
-      "Angry1_1",
-      "Eat1_1",
-      "Idle",
-      "Move",
-      "Play1_1",
-      "Sleep1_1",
-      "Spawn",
-      "Swim1_1",
-      "Touch"
+      "Sulky_3"
      ]
     }
    ],
@@ -51609,7 +51859,7 @@ const CHAR_GENERATED = [
    "id": "Tig",
    "name": "提格",
    "en": "Tig",
-   "desc": "兽人 · 5 套外观",
+   "desc": "兽人 · 4 套外观",
    "tag": "🐾",
    "art": {
     "avatar": "assets/art/Tig/phone-avatar.png",
@@ -51648,13 +51898,6 @@ const CHAR_GENERATED = [
      "name": "突击！征服队长",
      "desc": "据说设定是前来接管次元的可怕突击队的队长…（63 动作）",
      "voiceSkin": "_Skin3"
-    },
-    {
-     "id": "Pet_MiniTigHero",
-     "dir": "assets/spine/Pet_MiniTigHero",
-     "name": "迷你形态",
-     "desc": "宠物形态（动作较少）",
-     "voiceSkin": ""
     }
    ],
    "bones": {
@@ -52023,7 +52266,12 @@ const CHAR_GENERATED = [
       "Sulky_1",
       "Sulky_2",
       "Sulky_3",
-      "Sulky_4"
+      "Sulky_4",
+      "Aside_1",
+      "Aside_2",
+      "Spawn_1",
+      "Upgrade_1",
+      "Upgrade_2"
      ]
     }
    ],
@@ -52041,7 +52289,7 @@ const CHAR_GENERATED = [
    "id": "TigHero",
    "name": "提格（英雄）",
    "en": "TigHero",
-   "desc": "兽人 · 4 套外观",
+   "desc": "兽人 · 3 套外观",
    "tag": "🐾",
    "art": {
     "avatar": "assets/art/TigHero/phone-avatar.png",
@@ -52073,13 +52321,6 @@ const CHAR_GENERATED = [
      "name": "苍穹的白翼",
      "desc": "从清晨白亮的天空到日落，守护艾利亚斯的守…（72 动作）",
      "voiceSkin": "_Skin2"
-    },
-    {
-     "id": "Pet_MiniTigHero",
-     "dir": "assets/spine/Pet_MiniTigHero",
-     "name": "迷你形态",
-     "desc": "宠物形态（动作较少）",
-     "voiceSkin": ""
     }
    ],
    "bones": {
@@ -52451,7 +52692,13 @@ const CHAR_GENERATED = [
       "Sword_7",
       "Sword_8",
       "Sword_9",
-      "Sword_10"
+      "Sword_10",
+      "Aside_1",
+      "Aside_2",
+      "Idle_3",
+      "Spawn_1",
+      "Upgrade_1",
+      "Upgrade_2"
      ]
     }
    ],
@@ -55726,7 +55973,7 @@ const CHAR_GENERATED = [
    "id": "xXionx",
    "name": "x锡安x",
    "en": "xXionx",
-   "desc": "幽灵 · 7 套外观",
+   "desc": "幽灵 · 6 套外观",
    "tag": "👻",
    "art": {
     "avatar": "assets/art/xXionx/phone-avatar.png",
@@ -55779,13 +56026,6 @@ const CHAR_GENERATED = [
      "name": "深渊行者霸主",
      "desc": "据说能穿行于深渊未知领域的传说级深渊行者…（63 动作）",
      "voiceSkin": "_Skin5"
-    },
-    {
-     "id": "Pet_MinixXionx",
-     "dir": "assets/spine/Pet_MinixXionx",
-     "name": "迷你形态",
-     "desc": "宠物形态（动作较少）",
-     "voiceSkin": ""
     }
    ],
    "bones": {
@@ -56145,7 +56385,13 @@ const CHAR_GENERATED = [
       "Sulky_1",
       "Sulky_2",
       "Think_1",
-      "Think_2"
+      "Think_2",
+      "Aside_1",
+      "Aside_2",
+      "Idle_3",
+      "Spawn_1",
+      "Upgrade_1",
+      "Upgrade_2"
      ]
     }
    ],

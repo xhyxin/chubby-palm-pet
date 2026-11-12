@@ -76,18 +76,35 @@
         （用户观感就是"台词没等说完就不见了"）。每次调用自增 token，
         只有最新一代的收起回调才生效。 */
   let sayToken = 0;
+  /* ★ 第一百零四轮（用户反馈「敲头后文本框太快消失」）：
+     敲头语音只有 1~2 秒，气泡原先跟着 ended 立刻收，台词来不及读完；
+     而且敲头第二段的键若没有台词，会把气泡逻辑走空。
+     改动：
+       · 每条有台词的语音气泡**最少停留 4 秒**（ended / 时长兜底都走同一个 close，
+         close 会补足剩余时间，长语音仍然陪到播完，不受影响）；
+       · 拿不到音频时也用 4 秒，不再是默认 3 秒；
+       · 台词为空时**不碰气泡**，保留上一条正在显示的台词；
+       · 加 12 秒硬兜底，避免 ended 不触发时气泡一直挂着。 */
+  const MIN_SAY_MS = 4000;
   function sayUntilDone(text, key, L) {
-    if (!key) { showBubble(text); return; }
+    if (!text) return;                     // 空台词不顶掉上一条气泡
     const tok = ++sayToken;
-    const close = () => { if (tok === sayToken) closeBubbleSoon(); };
+    const shownAt = Date.now();            // 每条各自记开始时间，连播时不串
+    const close = () => {
+      if (tok !== sayToken) return;
+      const wait = Math.max(0, MIN_SAY_MS - (Date.now() - shownAt));
+      setTimeout(() => { if (tok === sayToken) closeBubbleSoon(); }, wait);
+    };
+    if (!key) { showBubble(text, MIN_SAY_MS); return; }
     const hooked = Voice.onEnded(key, close, L);
     if (hooked) {
       showBubble(text, 180000);            // 上限兜底：ended 万一不触发
       Voice.durationOf(key, L).then((d) => {
         if (d && tok === sayToken) setTimeout(close, (d + 0.8) * 1000);
       });
+      setTimeout(close, 12000);            // 极端情况最多挂 12 秒，别把气泡卡死
     } else {
-      showBubble(text);                    // 拿不到音频：默认 3 秒
+      showBubble(text, MIN_SAY_MS);        // 拿不到音频：也留足 4 秒
     }
   }
 
