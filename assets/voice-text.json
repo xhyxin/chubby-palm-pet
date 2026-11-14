@@ -6298,6 +6298,7 @@
    "DianaYester_Board_Skin1": "那边是今天的作坊吗？",
    "DianaYester_Board_Skin2": "让开！要顺着节奏来！",
    "DianaYester_Board_Skin3": "如风般前进，亦如泰山般沉稳。",
+   "DianaYester_Board_Skin4": "咱们离至尊又近一步啦！",
    "DianaYester_CallHero1": "喂。",
    "DianaYester_CallHero2": "你。",
    "DianaYester_CallHero3": "你们。",
@@ -6317,11 +6318,13 @@
    "DianaYester_DutchRubEnd2_Skin1": "叫部下前先住手！",
    "DianaYester_DutchRubEnd2_Skin2": "想被板子打吗？",
    "DianaYester_DutchRubEnd2_Skin3": "你再这样可是会遭雷劈的？！",
+   "DianaYester_DutchRubEnd2_Skin4": "喂！还不快过来！我也照样还你一下！",
    "DianaYester_Eat1": "嗯嗯嗯嗯。",
    "DianaYester_Equipment": "比不上我的斧头…嗯，也不差。",
    "DianaYester_Equipment_Skin1": "这个…还算实用的工具。",
    "DianaYester_Equipment_Skin2": "嗯，比空手好些就行。",
    "DianaYester_Equipment_Skin3": "这次能撑得久一点吗？",
+   "DianaYester_Equipment_Skin4": "哼，总归有用得上的时候。",
    "DianaYester_Gacha1": "黛安娜。",
    "DianaYester_Gacha2": "重要的东西，要守护到最后。",
    "DianaYester_Gacha3": "我讨厌复杂的事，简单点来吧。",
@@ -6332,18 +6335,22 @@
    "DianaYester_Growth1_Skin1": "没人能挡住我的路。",
    "DianaYester_Growth1_Skin2": "看来能破浪前进了。",
    "DianaYester_Growth1_Skin3": "感觉自己还能变得更强。",
+   "DianaYester_Growth1_Skin4": "痛快！哈！要不要来比划两下？",
    "DianaYester_Growth2": "想悠闲生活，果然还是得变强。",
    "DianaYester_Growth2_Skin1": "让谁都尽管来。",
    "DianaYester_Growth2_Skin2": "没有更汹涌的浪了吗？",
    "DianaYester_Growth2_Skin3": "都说修炼永无止境，原来是真的。",
+   "DianaYester_Growth2_Skin4": "拳头好像变轻快了。",
    "DianaYester_HeroSkill": "修炼是没有尽头的。",
    "DianaYester_HeroSkill_Skin1": "学会了应该很有用。",
    "DianaYester_HeroSkill_Skin2": "掌握技巧后就不怕了。",
    "DianaYester_HeroSkill_Skin3": "感觉眼前的一切都能砸碎。",
+   "DianaYester_HeroSkill_Skin4": "看我这拳，连金钟罩都能打穿！",
    "DianaYester_HeroUpgrade": "必须有力量，才能守护重要的东西。",
    "DianaYester_HeroUpgrade_Skin1": "我要站在最顶点。",
    "DianaYester_HeroUpgrade_Skin2": "能升级执照吗？",
    "DianaYester_HeroUpgrade_Skin3": "呵呵，你承受得住吗？",
+   "DianaYester_HeroUpgrade_Skin4": "可别被我的强大吓着了。",
    "DianaYester_Hit1": "呜！",
    "DianaYester_Hit2": "嗯！",
    "DianaYester_Hit3": "呜呜呜……",
@@ -6361,6 +6368,7 @@
    "DianaYester_LevelUp_Skin1": "还有提升空间吗？",
    "DianaYester_LevelUp_Skin2": "无论什么我都能征服。",
    "DianaYester_LevelUp_Skin3": "还有更高的境界等着我吗？",
+   "DianaYester_LevelUp_Skin4": "招式又精进了一层。",
    "DianaYester_Line1": "要不要在这里休息一下？",
    "DianaYester_Line2": "附近应该没有奇怪的家伙吧。",
    "DianaYester_Line3": "要不要在这里打打猎？",
@@ -6406,25 +6414,31 @@
    "DianaYester_Touch1_1_Skin1": "会有损威严的，轻点。",
    "DianaYester_Touch1_1_Skin2": "像海风般锋利的触感啊。",
    "DianaYester_Touch1_1_Skin3": "唉，好吧。随你喜欢。",
+   "DianaYester_Touch1_1_Skin4": "怎么，这么想尝尝我的拳头？",
    "DianaYester_Touch1_2": "哼，我忍着。",
    "DianaYester_Touch1_2_Skin1": "敢碰眼镜试试。",
    "DianaYester_Touch1_2_Skin2": "捏到晒伤的地方可是很痛的，知道吧？",
    "DianaYester_Touch1_2_Skin3": "我可不会一直忍着哦？",
+   "DianaYester_Touch1_2_Skin4": "哼，让你的腮帮子也肿成这样！",
    "DianaYester_Touch1_Skin1": "现在是造反时间吗？",
    "DianaYester_Touch1_Skin2": "你不害怕吗？",
    "DianaYester_Touch1_Skin3": "你是无所畏惧，还是根本没过脑子？",
+   "DianaYester_Touch1_Skin4": "唉，你这是连胆儿都不要了。",
    "DianaYester_Touch2": "嗯哼哼！算了……这次就放过你。",
    "DianaYester_Touch2_1": "没错，我想要的就是这种感觉。",
    "DianaYester_Touch2_1_Skin1": "看来有了心安之处。",
    "DianaYester_Touch2_1_Skin2": "刚才看到了我勇猛的一面吧。",
    "DianaYester_Touch2_1_Skin3": "还是这么舒服，感觉整个人都放松下来了。",
+   "DianaYester_Touch2_1_Skin4": "好好好，是你喜欢，我才忍着的。",
    "DianaYester_Touch2_2": "舒服…这种感觉。",
    "DianaYester_Touch2_2_Skin1": "如果是你，我可以放心把身边交给你。",
    "DianaYester_Touch2_2_Skin2": "被夸奖有些别扭，但还挺好。",
    "DianaYester_Touch2_2_Skin3": "别、别在其他家伙面前这样！知道了吗？",
+   "DianaYester_Touch2_2_Skin4": "嗯……歇息没有比这更舒服的了。",
    "DianaYester_Touch2_Skin1": "连老板也需要休息吧。",
    "DianaYester_Touch2_Skin2": "今天冲浪不错，就饶你一回。",
    "DianaYester_Touch2_Skin3": "唔……以这副模样被摸，总觉得有点害羞……",
+   "DianaYester_Touch2_Skin4": "哼，你以为这样我就会放过你？嗯，就这一次。",
    "DianaYester_Trickcal1": "Trickcal Revive。",
    "DianaYester_Trickcal2": "Trickcal。",
    "DianaYester_Ultimate1": "把你砸个粉碎！",
@@ -9986,6 +10000,7 @@
    "Joanne_Board_Skin3": "这次要去玩的地方是这里吗？",
    "Joanne_Board_Skin4": "我会踩着舞步努力前进。",
    "Joanne_Board_Skin5": "我的香气能飘到那边吗？",
+   "Joanne_Board_Skin6": "那边倒是有些耐人寻味的东西。",
    "Joanne_CallHero1": "姐妹？",
    "Joanne_CallHero2": "库奇。",
    "Joanne_CallHero3": "涅尔。",
@@ -10008,6 +10023,7 @@
    "Joanne_DutchRubEnd2_Skin3": "出游原本就是这种感觉吗……？",
    "Joanne_DutchRubEnd2_Skin4": "刚才学的动作全都要忘光了！",
    "Joanne_DutchRubEnd2_Skin5": "您是想往拳头上凑熊吗？",
+   "Joanne_DutchRubEnd2_Skin6": "竟敢敲堂堂军师的脑袋！",
    "Joanne_DutchRubEnd3_Skin5": "您是想往拳头上凑熊吗？",
    "Joanne_Eat1": "呃、呃……",
    "Joanne_Equipment": "我承蒙恩惠。",
@@ -10016,6 +10032,7 @@
    "Joanne_Equipment_Skin3": "这是您买给我的吗？谢谢您！",
    "Joanne_Equipment_Skin4": "这套服装让跳舞轻松多了。很好。",
    "Joanne_Equipment_Skin5": "守护美好的东西，工具很重要。",
+   "Joanne_Equipment_Skin6": "于推演新阵法倒是大有用处。",
    "Joanne_Gacha1": "琼安。",
    "Joanne_Gacha2": "我将遵从您的召唤。",
    "Joanne_Gacha3": "您的仆从，已来到此处。",
@@ -10028,11 +10045,13 @@
    "Joanne_Growth1_Skin3": "心里终于有余裕了，可以去野餐了。",
    "Joanne_Growth1_Skin4": "我会成为不断成长的舞者。",
    "Joanne_Growth1_Skin5": "我会努力开出更香的花。",
+   "Joanne_Growth1_Skin6": "积累学问，本就没有尽头啊。",
    "Joanne_Growth2": "请赐予我更多教诲。",
    "Joanne_Growth2_Skin1": "我会守护传统。",
    "Joanne_Growth2_Skin2": "偶尔活得松弛一些也不错吧。",
    "Joanne_Growth2_Skin3": "已经有了能出门郊游的从容。",
    "Joanne_Growth2_Skin4": "亲眼看到练习的成果，真令人欣慰。",
+   "Joanne_Growth2_Skin6": "越是长进，越觉得不懂的更多。",
    "Joanne_Growth_Skin1": "您说我很美？真让我不知所措。",
    "Joanne_Growth_Skin2": "好想在暖和的被窝里睡觉。",
    "Joanne_Growth_Skin3": "教主，今天也请多关照。",
@@ -10042,12 +10061,14 @@
    "Joanne_HeroSkill_Skin3": "为了今天，我做了许多准备。",
    "Joanne_HeroSkill_Skin4": "动作加入细节后，舞蹈也变得更加丰富了。",
    "Joanne_HeroSkill_Skin5": "借着您赐予的枪，我会变得更强。",
+   "Joanne_HeroSkill_Skin6": "我这计策，早已留了后手啦。",
    "Joanne_HeroUpgrade": "我会更加虔诚地侍奉教主大人。",
    "Joanne_HeroUpgrade_Skin1": "如果能再靠近教主大人一点……",
    "Joanne_HeroUpgrade_Skin2": "前往无梦安眠的世界！",
    "Joanne_HeroUpgrade_Skin3": "也许我……其实挺享受这样的样子。",
    "Joanne_HeroUpgrade_Skin4": "现在我也可以使用“舞者”这个称呼了吗？",
    "Joanne_HeroUpgrade_Skin5": "多亏教主的恩宠，我才能发光。",
+   "Joanne_HeroUpgrade_Skin6": "更进一步，我的悟道又深了一层。",
    "Joanne_Hit1": "唔！",
    "Joanne_Hit2": "咿！",
    "Joanne_Hit3": "呜呜呜呜！",
@@ -10067,6 +10088,7 @@
    "Joanne_LevelUp_Skin3": "我的新样子也还可以吗？",
    "Joanne_LevelUp_Skin4": "总有一天，我也能站上舞台吗？",
    "Joanne_LevelUp_Skin5": "感觉花瓣变得更柔软了。",
+   "Joanne_LevelUp_Skin6": "嗯，又悟出一策，要不要试试？",
    "Joanne_Line1": "我会向您展现永不改变的虔诚信仰。",
    "Joanne_Line2": "请让我聆听高贵的启示。",
    "Joanne_Line3": "我只侍奉教主一人。",
@@ -10121,17 +10143,20 @@
    "Joanne_Touch1_1_Skin3": "请把转向灯打开……！",
    "Joanne_Touch1_1_Skin4": "我会更努力练习的，请您息怒。",
    "Joanne_Touch1_1_Skin5": "花瓣要掉了，请温柔一些。",
+   "Joanne_Touch1_1_Skin6": "别碰我的锦囊！",
    "Joanne_Touch1_2": "是我做错了什么吗？",
    "Joanne_Touch1_2_Skin1": "如果把蝴蝶发夹给您，您会停手吗？",
    "Joanne_Touch1_2_Skin2": "呜呜……睡前被骂的话，我会睡不着的……",
    "Joanne_Touch1_2_Skin3": "您这么做一定也是有理由的吧？",
    "Joanne_Touch1_2_Skin4": "如果这也是训练……我会坚强忍耐下去。",
    "Joanne_Touch1_2_Skin5": "唔，要忍到这种程度才能成为教主的花吗？",
+   "Joanne_Touch1_2_Skin6": "呃……忍耐也是修行之一。",
    "Joanne_Touch1_Skin1": "这样会弄乱我的假发……",
    "Joanne_Touch1_Skin2": "感觉稍微醒过来了。",
    "Joanne_Touch1_Skin3": "好痛！很疼啊，教主大人！",
    "Joanne_Touch1_Skin4": "刚才那个动作错了……您注意到了吗？",
    "Joanne_Touch1_Skin5": "花一被碰，就会枯萎。",
+   "Joanne_Touch1_Skin6": "这、这是何等无礼！",
    "Joanne_Touch2": "您也会用这种方式降下启示吗……？",
    "Joanne_Touch2_1": "饱含心意的触碰……？我、我也……",
    "Joanne_Touch2_1_Skin1": "您是在说我很漂亮吗？",
@@ -10139,17 +10164,20 @@
    "Joanne_Touch2_1_Skin3": "我们好像变得更亲近了。",
    "Joanne_Touch2_1_Skin4": "您是在夸我帅气吗？真、真不好意思。",
    "Joanne_Touch2_1_Skin5": "香气和手交织在一起，让人发懒呢。",
+   "Joanne_Touch2_1_Skin6": "唔……（舒服得说不出话）",
    "Joanne_Touch2_2": "您对祭司长也是这样做的吗？",
    "Joanne_Touch2_2_Skin1": "心中升起了平静……",
    "Joanne_Touch2_2_Skin2": "真是……有点为难。",
    "Joanne_Touch2_2_Skin3": "竟然这么靠近……！",
    "Joanne_Touch2_2_Skin4": "那个……教主大人也要和我一起跳一曲吗？",
    "Joanne_Touch2_2_Skin5": "可以暂时忘掉花瓣歇一会儿吗？",
+   "Joanne_Touch2_2_Skin6": "你的手，像庭院里拂过花香的风啊。",
    "Joanne_Touch2_Skin1": "您的手像绸缎一样柔软。",
    "Joanne_Touch2_Skin2": "感觉会睡得很好。",
    "Joanne_Touch2_Skin3": "这是……绿灯信号？",
    "Joanne_Touch2_Skin4": "每晚坚持练习总算有回报了。",
    "Joanne_Touch2_Skin5": "就像轻柔的风一样。",
+   "Joanne_Touch2_Skin6": "竟摸起本军师的头来了……只准这一次啊……",
    "Joanne_Trickcal1": "Trickcal Revive。",
    "Joanne_Trickcal2": "Trickcal。",
    "Joanne_Ultimate1": "赐予全知全能之力！",
@@ -14799,6 +14827,7 @@
    "NerRage_Board": "我相信这是正确的道路。",
    "NerRage_Board_Skin1": "这种程度的外出不算离家出走。",
    "NerRage_Board_Skin2": "请随时吩咐！我一直都会在这里。",
+   "NerRage_Board_Skin3": "从今往后，我携一柄刀走我的路。",
    "NerRage_CallHero1": "女王陛下。",
    "NerRage_CallHero2": "有什么事吗？",
    "NerRage_CallHero3": "缇格小姐？",
@@ -14817,11 +14846,13 @@
    "NerRage_DutchRubEnd2": "我现在可是很生气的……！",
    "NerRage_DutchRubEnd2_Skin1": "您该不会真的把我误认成女王陛下了吧？！",
    "NerRage_DutchRubEnd2_Skin2": "至少现在请您忍一忍！",
+   "NerRage_DutchRubEnd2_Skin3": "竟让我当众受此羞辱！",
    "NerRage_EasterEgg_ErpinRoyaleWith": "女王陛下，怎么能这么懂事。教主听到了吧？是不是非常感动？",
    "NerRage_Eat1": "嗷呜、嗷呜、嗷呜。",
    "NerRage_Equipment": "这件装备也相当实用呢。",
    "NerRage_Equipment_Skin1": "这就是王冠的重量啊。",
    "NerRage_Equipment_Skin2": "至少今天要穿得帅气又高傲吧？",
+   "NerRage_Equipment_Skin3": "刀锋正钝了，多谢。",
    "NerRage_Gacha1": "涅尔。",
    "NerRage_Gacha2": "向世间之敌降下应有的审判！",
    "NerRage_Gacha3": "这副姿态正是为了实现教主的意志！",
@@ -14831,15 +14862,19 @@
    "NerRage_Growth1": "这样应该能作为祭司长的模范了吧？",
    "NerRage_Growth1_Skin1": "今天我就是女王！艾利亚斯的守护者登场！",
    "NerRage_Growth1_Skin2": "妖精王国也会因此继续进步吧？",
+   "NerRage_Growth1_Skin3": "一刀一心，每一挥都要倾注心神。",
    "NerRage_Growth2": "我能做更多事了。",
    "NerRage_Growth2_Skin1": "您说我有女王的资质？请、请别这么说！",
    "NerRage_Growth2_Skin2": "我会以不让女王陛下和王国蒙羞的方式行事。",
+   "NerRage_Growth2_Skin3": "逞力时刀沉，顺势时刀轻。",
    "NerRage_HeroSkill": "威力好像变强了呢？",
    "NerRage_HeroSkill_Skin1": "吃了好多棉花糖，确实挺开心的。",
    "NerRage_HeroSkill_Skin2": "为了跟上更好的王国，我也必须变强！",
+   "NerRage_HeroSkill_Skin3": "原来如此！终于明白了！",
    "NerRage_HeroUpgrade": "我会成为教主大人更大的力量。",
    "NerRage_HeroUpgrade_Skin1": "女王稳固，国家才会稳固。",
    "NerRage_HeroUpgrade_Skin2": "为了终有一天会到来的光明未来……！",
+   "NerRage_HeroUpgrade_Skin3": "刚中藏柔，柔中蕴刚。",
    "NerRage_Hit1": "啊！",
    "NerRage_Hit2": "呜啊！",
    "NerRage_Hit3": "呜啊啊！",
@@ -14856,6 +14891,7 @@
    "NerRage_LevelUp": "这会对我的职责有所帮助。",
    "NerRage_LevelUp_Skin1": "现在可以去玩了吗？毕竟我是女王陛下。",
    "NerRage_LevelUp_Skin2": "竟然走到了这一步，感触很深。",
+   "NerRage_LevelUp_Skin3": "路开了，与刀同行。",
    "NerRage_Line1": "教主的意志，就是世界树教团的意志。",
    "NerRage_Line2": "胆敢碰女王陛下，无论是谁我都不会放过！",
    "NerRage_Line3": "身为司祭长的我和教团所有使徒都会追随教主。",
@@ -14897,20 +14933,26 @@
    "NerRage_Touch1_1": "就算是教主大人，我也会有点生气哦？",
    "NerRage_Touch1_1_Skin1": "就算给我面包，也还是会痛的！",
    "NerRage_Touch1_1_Skin2": "请稍微配合一下气氛！大家都在看呢！",
+   "NerRage_Touch1_1_Skin3": "非得把你的腮帮子捏爆不可！",
    "NerRage_Touch1_2": "既然是教主大人做的事，一定有什么意义吧。",
    "NerRage_Touch1_2_Skin1": "如果您是代替女王陛下对我这样，那我也只能忍了。",
    "NerRage_Touch1_2_Skin2": "您是因为我会忍着才这么做的吗？",
+   "NerRage_Touch1_2_Skin3": "哼哼哼，不过来？那我也来捏一把！",
    "NerRage_Touch1_Skin1": "居然拉女王的脸颊！无、无礼~！",
    "NerRage_Touch1_Skin2": "啊呀！教主大人！现在可是重要的仪式中！",
+   "NerRage_Touch1_Skin3": "别惹我发火！",
    "NerRage_Touch2": "虽然还是会害羞，但感觉很好。",
    "NerRage_Touch2_1": "这是……在夸奖我吗？",
    "NerRage_Touch2_1_Skin1": "我先把王冠摘下来，您能再摸一次吗？",
    "NerRage_Touch2_1_Skin2": "这样应该算是不丢脸地站在教主大人身边了吧。",
+   "NerRage_Touch2_1_Skin3": "只准你一个人这样，知道吧？",
    "NerRage_Touch2_2": "不知为什么，有种安心的感觉。",
    "NerRage_Touch2_2_Skin1": "至少这个瞬间……我想忘记职位和责任。",
    "NerRage_Touch2_2_Skin2": "谢谢您，教主大人。一直以来都是。嘿嘿。",
+   "NerRage_Touch2_2_Skin3": "嗯……再温柔些，多花点心思。",
    "NerRage_Touch2_Skin1": "您是在夸我和女王陛下一模一样吗？",
    "NerRage_Touch2_Skin2": "是很温馨的一刻吧？对吧？呵呵。",
+   "NerRage_Touch2_Skin3": "嗯？别以为这样我就不生气了。",
    "NerRage_Trickcal1": "Trickcal Revive。",
    "NerRage_Trickcal2": "Trickcal。",
    "NerRage_Ultimate1": "我再也忍不住了！",
@@ -16501,6 +16543,7 @@
    "Ran_Board_Skin1": "用拖把前进吧。",
    "Ran_Board_Skin2": "我先开路。",
    "Ran_Board_Skin3": "就这样一步一步。缓慢地，踏实地。",
+   "Ran_Board_Skin4": "嗯？那边飘来一阵熟稔的香气……",
    "Ran_CallHero1": "你。",
    "Ran_CallHero2": "你这家伙。",
    "Ran_CallHero3": "各位。",
@@ -16520,12 +16563,14 @@
    "Ran_DutchRubEnd2_Skin1": "是边唱歌边拖地吗？",
    "Ran_DutchRubEnd2_Skin2": "哼哼，总有一天会翻过来！",
    "Ran_DutchRubEnd2_Skin3": "请、请读一下气氛！",
+   "Ran_DutchRubEnd2_Skin4": "想尝尝我这利齿吗！",
    "Ran_EasterEgg_UrosDeck": "欢迎，乌洛斯。我一直在等你。",
    "Ran_Eat1": "啊……",
    "Ran_Equipment": "这装备很适合我。很喜欢。",
    "Ran_Equipment_Skin1": "新的清洁工具呢，谢谢。",
    "Ran_Equipment_Skin2": "带上工具吧。",
    "Ran_Equipment_Skin3": "做工精良的剑，也能当作扫帚来用。",
+   "Ran_Equipment_Skin4": "嗯，倒是不错，我会好好用。",
    "Ran_Gacha1": "兰。",
    "Ran_Gacha2": "愿你与我一同走上有意义的记忆之路。",
    "Ran_Gacha3": "我也会永远记住你。",
@@ -16536,18 +16581,22 @@
    "Ran_Growth1_Skin1": "我保证会提供更加完美的侍奉。",
    "Ran_Growth1_Skin2": "为了在残酷的世界中生存下去，我会变得更强。",
    "Ran_Growth1_Skin3": "你的表情有些阴沉呢。要我听听你的烦恼吗？",
+   "Ran_Growth1_Skin4": "想追上师父，还差得远呢。",
    "Ran_Growth2": "借助他人的帮助成长，原来是这种感觉。",
    "Ran_Growth2_Skin1": "我会为您提供更好的服务。",
    "Ran_Growth2_Skin2": "我会拥有与首领部下身份相称的强大。",
    "Ran_Growth2_Skin3": "如果想在这处清静之地倾诉烦恼，随时都可以来找我。",
+   "Ran_Growth2_Skin4": "终于摸到那一缕头绪了。",
    "Ran_HeroSkill": "剑术可以更熟练一些。",
    "Ran_HeroSkill_Skin1": "是为了高效清洁的知识呢。",
    "Ran_HeroSkill_Skin2": "剑术重要的是脚法灵活。",
    "Ran_HeroSkill_Skin3": "我是不是该练习一下拍手呢？",
+   "Ran_HeroSkill_Skin4": "还早，还早！必须变得更强！",
    "Ran_HeroUpgrade": "变强了，与过去的我无法相比…",
    "Ran_HeroUpgrade_Skin1": "直到成为最强女仆的那一天…",
    "Ran_HeroUpgrade_Skin2": "作为教团行动队长，会树立榜样。",
    "Ran_HeroUpgrade_Skin3": "为了不愧对过去，我会在当下祭奠他们。",
+   "Ran_HeroUpgrade_Skin4": "到新境界了。",
    "Ran_Hit1": "呜！",
    "Ran_Hit2": "呜！",
    "Ran_Hit3": "呜啊！",
@@ -16565,6 +16614,7 @@
    "Ran_LevelUp_Skin1": "作为女仆会继续学习。",
    "Ran_LevelUp_Skin2": "现在可以称作干部了吧。",
    "Ran_LevelUp_Skin3": "为了再次祭奠那些逝于过去的人们。",
+   "Ran_LevelUp_Skin4": "以此剑寄我心志，又进了一步。",
    "Ran_Line1": "把智齿不断削磨，就能拥有相当惊人的威力。",
    "Ran_Line2": "想忘也忘不掉的，那段岁月的记忆又浮现了。",
    "Ran_Line3": "不依靠任何人，独自流浪世界，我早已习惯了。",
@@ -16618,26 +16668,32 @@
    "Ran_Touch1_1_Skin1": "如果这是女仆的本分…",
    "Ran_Touch1_1_Skin2": "尽情施展吧。",
    "Ran_Touch1_1_Skin3": "我会像巫女一样坚强地忍耐。",
+   "Ran_Touch1_1_Skin4": "咳哼……这次便饶过你……",
    "Ran_Touch1_2": "这意味着您信任我吧？",
    "Ran_Touch1_2_Skin1": "荷叶边会被弄乱的。",
    "Ran_Touch1_2_Skin2": "等我的地位再高一些，您就会收手吗？",
    "Ran_Touch1_2_Skin3": "不，所以说……！我并不是邪教什么的。",
+   "Ran_Touch1_2_Skin4": "想挨我一剑吗！",
    "Ran_Touch1_Skin1": "不会帮您打扫房间。",
    "Ran_Touch1_Skin2": "是测试吗？我不会乱了阵脚。",
    "Ran_Touch1_Skin3": "请不要随便碰神社的巫女！",
+   "Ran_Touch1_Skin4": "我的脸颊，只有师父能碰！",
    "Ran_Touch2": "温暖的触感，不错。",
    "Ran_Touch2-01": "真是温暖的触碰。感觉不坏。",
    "Ran_Touch2_1": "总是不自觉依赖这触感。",
    "Ran_Touch2_1_Skin1": "灰尘堆积了吗？",
    "Ran_Touch2_1_Skin2": "按您的意愿吧。",
    "Ran_Touch2_1_Skin3": "有、有点让人害羞呢。",
+   "Ran_Touch2_1_Skin4": "哦……和师父很像的手法……倒也不坏……",
    "Ran_Touch2_2": "能在教团多待一会儿吗？",
    "Ran_Touch2_2_Skin1": "有些尴尬，但不错。",
    "Ran_Touch2_2_Skin2": "是给干部的奖励吗？",
    "Ran_Touch2_2_Skin3": "这份温暖的心意，我会与过去一同珍藏。",
+   "Ran_Touch2_2_Skin4": "哼，可知这是格外开恩，再轻些摸。",
    "Ran_Touch2_Skin1": "作为女仆，这种奖励很欢迎。",
    "Ran_Touch2_Skin2": "老板的触感既果断又温柔。",
    "Ran_Touch2_Skin3": "感谢你安静的声援。",
+   "Ran_Touch2_Skin4": "哈，你、你在做什么？",
    "Ran_Trickcal1": "Trickcal Revive。",
    "Ran_Trickcal2": "Trickcal。",
    "Ran_Ultimate1": "赐你永恒的伤痕。",
@@ -21953,6 +22009,7 @@
    "TigHero_Board": "这条路就是我该走的方向吗？",
    "TigHero_Board_Skin1": "哼，我只是因为想去才去而已！",
    "TigHero_Board_Skin2": "只要是你召唤的地方，我都会飞去！",
+   "TigHero_Board_Skin3": "嘿嘿，哪来的花香？是这边吗？",
    "TigHero_CallHero1": "不要。",
    "TigHero_CallHero2": "乌洛斯……",
    "TigHero_CallHero3": "老太婆！",
@@ -21971,6 +22028,7 @@
    "TigHero_DutchRubEnd2": "呃！这种程度我能应付！",
    "TigHero_DutchRubEnd2_Skin1": "这就是冷酷的北方逻辑…？！",
    "TigHero_DutchRubEnd2_Skin2": "想让我动不了而被钉在地上吗？！！",
+   "TigHero_DutchRubEnd2_Skin3": "诶嘿！要不要见识下烈火剑客的拳头？",
    "TigHero_EasterEgg_UrosDeck": "来，久违地配合一次吧？",
    "TigHero_EasterEgg_UrosLobby": "嗯，我就知道还会再见。",
    "TigHero_EasterEgg_UrosWin": "真是精彩的一战！",
@@ -21978,6 +22036,7 @@
    "TigHero_Equipment": "我的剑最合手…但这装备也不错啊？",
    "TigHero_Equipment_Skin1": "不错啊，好好利用吧。",
    "TigHero_Equipment_Skin2": "让我闪耀的装备…谢谢！",
+   "TigHero_Equipment_Skin3": "这是给我的？我会好好用！",
    "TigHero_Gacha1": "提格。",
    "TigHero_Gacha2": "我来了！为了守护重要之物！",
    "TigHero_Gacha3": "有一把剑就足够了。",
@@ -21987,15 +22046,19 @@
    "TigHero_Growth1": "真正的英雄绝不会懈怠修炼！",
    "TigHero_Growth1_Skin1": "现在应该没有谁敢打我们北方的主意了吧？",
    "TigHero_Growth1_Skin2": "我的翅膀正变得更加明亮。",
+   "TigHero_Growth1_Skin3": "一柄剑闯荡江湖，嘿嘿，多帅啊？",
    "TigHero_Growth2": "必须增强力量，才能站到大家面前。",
    "TigHero_Growth2_Skin1": "最好别指望我会手下留情。",
    "TigHero_Growth2_Skin2": "只要天空还在注视，我就绝不会退缩。",
+   "TigHero_Growth2_Skin3": "剑路又精准了些！",
    "TigHero_HeroSkill": "技巧必须不断磨练！",
    "TigHero_HeroSkill_Skin1": "怎么样！这就是北方的方式！",
    "TigHero_HeroSkill_Skin2": "从苍穹突击的剑技！",
+   "TigHero_HeroSkill_Skin3": "你能看清每一片飞花吗？我可看得清！",
    "TigHero_HeroUpgrade": "英雄之路没有尽头，只能一直前进！",
    "TigHero_HeroUpgrade_Skin1": "看好了！更无情的北方大公提格登场！",
    "TigHero_HeroUpgrade_Skin2": "为了降临在我身上的使命，我要飞得更高！",
+   "TigHero_HeroUpgrade_Skin3": "行侠仗义，这就是我的道！",
    "TigHero_Hit1": "呜！",
    "TigHero_Hit2": "呜！",
    "TigHero_Hit3": "呃！",
@@ -22012,6 +22075,7 @@
    "TigHero_LevelUp": "嗯，这样训练算足够了吗？",
    "TigHero_LevelUp_Skin1": "就像庞大的兵力一样，我自身的力量也很重要！",
    "TigHero_LevelUp_Skin2": "连天空都惊讶吧？没想到我会变得这么强！",
+   "TigHero_LevelUp_Skin3": "哈……这身汗没白流。",
    "TigHero_Line1": "因为有想守护的东西，我必须变强！",
    "TigHero_Line2": "我已经不是过去那个软弱的老虎了！",
    "TigHero_Line3": "老太婆以后可不能再受伤或吃苦了。",
@@ -22062,20 +22126,26 @@
    "TigHero_Touch1_1": "真搞不懂！",
    "TigHero_Touch1_1_Skin1": "哼哼，看好了！我会带军队来的！",
    "TigHero_Touch1_1_Skin2": "呃！这是最后一次！下次不让你得逞！",
+   "TigHero_Touch1_1_Skin3": "想尝尝「火」的滋味……啊不，是想试试挨揍的滋味吧？",
    "TigHero_Touch1_2": "你也太小气了吧？！",
    "TigHero_Touch1_2_Skin1": "你现在是在轻视我吗…？是这样吗？！",
    "TigHero_Touch1_2_Skin2": "你还是硬要拉…你真了不起…",
+   "TigHero_Touch1_2_Skin3": "过瘾吗？问你呢！过来，也让我捏一把！",
    "TigHero_Touch1_Skin1": "呃！竟敢碰我！",
    "TigHero_Touch1_Skin2": "你…只是想着拉我的脸颊吗！",
+   "TigHero_Touch1_Skin3": "住手！趁我还没发火快停下！",
    "TigHero_Touch2": "英雄也需要这种东西。",
    "TigHero_Touch2_1": "嗯，你理解我啊？",
    "TigHero_Touch2_1_Skin1": "感谢你的夸奖。",
    "TigHero_Touch2_1_Skin2": "你一直这样，我也不禁兴奋起来！",
+   "TigHero_Touch2_1_Skin3": "我帅吗？那当然！我可是帅气的剑客！",
    "TigHero_Touch2_2": "我做得好吗？呵呵。",
    "TigHero_Touch2_2_Skin1": "好！承认我的权威吧！",
    "TigHero_Touch2_2_Skin2": "总有一天…希望能和教主一起飞…！",
+   "TigHero_Touch2_2_Skin3": "唔……剑客的自尊心……不过挺舒服的……嘿嘿",
    "TigHero_Touch2_Skin1": "嗯~ 还不错的触碰呢。",
    "TigHero_Touch2_Skin2": "我是不是很帅呢？呵呵！",
+   "TigHero_Touch2_Skin3": "嗯？啊……耳朵后面也拜托啦！呵呵哼",
    "TigHero_Trickcal1": "Trickcal Revive。",
    "TigHero_Trickcal2": "Trickcal。",
    "TigHero_Ultimate1": "让你看看修炼的成果！",
@@ -22532,6 +22602,7 @@
    "Uros_Board_Skin1": "啊？那边有个违反校规的学生！",
    "Uros_Board_Skin2": "啊，那边有条大鱼！",
    "Uros_Board_Skin3": "感觉可以去任何地方。",
+   "Uros_Board_Skin4": "来，可愿与我一同散步？",
    "Uros_CallHero1": "提格。",
    "Uros_CallHero2": "村长！",
    "Uros_CallHero3": "你。",
@@ -22557,6 +22628,7 @@
    "Uros_DutchRubEnd2_Skin1": "请、请给我风纪部长应有的待遇！",
    "Uros_DutchRubEnd2_Skin2": "鱼、鱼都跑掉了，教主！",
    "Uros_DutchRubEnd2_Skin3": "啊！发夹快掉了！",
+   "Uros_DutchRubEnd2_Skin4": "我的剑比小娃儿的拳头还快，记牢了。",
    "Uros_EasterEgg_RanDeck": "兰，我来带领你。",
    "Uros_EasterEgg_TigDeck": "提格，给我勇气。",
    "Uros_EasterEgg_TigLobby": "我们的道路又重新合而为一了。",
@@ -22566,6 +22638,7 @@
    "Uros_Equipment_Skin1": "嗯？这个饰品好像违反校规…",
    "Uros_Equipment_Skin2": "我要钓到大鱼！",
    "Uros_Equipment_Skin3": "这个也适合我吗？",
+   "Uros_Equipment_Skin4": "高手本不挑兵器，不过这件倒是不错。",
    "Uros_Gacha1": "乌洛斯。",
    "Uros_Gacha2": "道路尽头等待我的，会是什么？",
    "Uros_Gacha3": "以坚定意志，走属于我自己的道路。",
@@ -22577,18 +22650,22 @@
    "Uros_Growth1_Skin1": "这样就能更好地背下校规了。",
    "Uros_Growth1_Skin2": "我要成为真正的钓鱼高手。",
    "Uros_Growth1_Skin3": "我要展开翅膀，堂堂正正。",
+   "Uros_Growth1_Skin4": "孩子呀，学无止境啊。",
    "Uros_Growth2": "我要成为真正的英雄。",
    "Uros_Growth2_Skin1": "以后要把腰挺得更直。",
    "Uros_Growth2_Skin2": "这样就能更清楚地看到鱼了。",
    "Uros_Growth2_Skin3": "即使无法飞翔，我也不会停止成长。",
+   "Uros_Growth2_Skin4": "奇缘……奇缘啊……修行也没有尽头。",
    "Uros_HeroSkill": "我要发挥能力。",
    "Uros_HeroSkill_Skin1": "用气场压制也是很重要的。",
    "Uros_HeroSkill_Skin2": "感觉比刚才更好了！",
    "Uros_HeroSkill_Skin3": "更加熟练了。",
+   "Uros_HeroSkill_Skin4": "哈……连天都似能看见了。",
    "Uros_HeroUpgrade": "心变得更强了。",
    "Uros_HeroUpgrade_Skin1": "感觉更整洁了呢？",
    "Uros_HeroUpgrade_Skin2": "钓鱼不仅仅是抓鱼而已。",
    "Uros_HeroUpgrade_Skin3": "变强后一定会回报你们。",
+   "Uros_HeroUpgrade_Skin4": "原来还有更高的地方。",
    "Uros_Hit1": "啵咿！",
    "Uros_Hit2": "呜。",
    "Uros_Hit3": "呃啊！",
@@ -22607,6 +22684,7 @@
    "Uros_LevelUp_Skin1": "我会成为更值得尊敬的前辈。",
    "Uros_LevelUp_Skin2": "手感变得更好了呢？",
    "Uros_LevelUp_Skin3": "感觉到某种神秘的力量。",
+   "Uros_LevelUp_Skin4": "哎哟哟……又变强了……这可如何是好……",
    "Uros_Line1": "望向前方，坚定地走下去吧。",
    "Uros_Line2": "英雄之路从来都不轻松。",
    "Uros_Line3": "我就是我。唯独这点绝不会忘记。",
@@ -22661,25 +22739,31 @@
    "Uros_Touch1_1_Skin1": "呼…请保持作为前辈的威严…",
    "Uros_Touch1_1_Skin2": "哼！抓到的话我会给你一个！",
    "Uros_Touch1_1_Skin3": "能稍微轻点吗？",
+   "Uros_Touch1_1_Skin4": "努力不入心魔，倒也不坏。",
    "Uros_Touch1_2": "呜~请不要当我是小孩子！",
    "Uros_Touch1_2_Skin1": "即使在这种状态下依然镇定，这才是真正的风纪委员！",
    "Uros_Touch1_2_Skin2": "是来钓鱼的，还是来被抓脸的……",
    "Uros_Touch1_2_Skin3": "教主总是那么一如既往呢…",
+   "Uros_Touch1_2_Skin4": "咳嗯……看来你得学学敬老之道了。",
    "Uros_Touch1_Skin1": "呃哇。其他朋友看到了！",
    "Uros_Touch1_Skin2": "呜啊，我正专心呢！",
    "Uros_Touch1_Skin3": "呃哇，装扮得很威严…！",
+   "Uros_Touch1_Skin4": "呵呵……这也是修行吧……",
    "Uros_Touch2": "呃，嗯。有点痒呢。",
    "Uros_Touch2_1": "总是如此关照我…多、谢谢！",
    "Uros_Touch2_1_Skin1": "嘿嘿…休息时间收到表扬最棒了。",
    "Uros_Touch2_1_Skin2": "呼啊。钓鱼时不能打瞌睡…",
    "Uros_Touch2_1_Skin3": "头饰不会不舒服吧？",
+   "Uros_Touch2_1_Skin4": "不能再轻柔些吗？",
    "Uros_Touch2_2": "教主总是对我很温柔。",
    "Uros_Touch2_2_Skin1": "直到今天放学…就这样…",
    "Uros_Touch2_2_Skin2": "嗯…这比钓鱼还要好…",
    "Uros_Touch2_2_Skin3": "感觉所有烦恼都消失了。",
+   "Uros_Touch2_2_Skin4": "想起年少时候了，真是怀念啊。",
    "Uros_Touch2_Skin1": "嗯。今天早上的风纪活动也顺利结束了吧？",
    "Uros_Touch2_Skin2": "呃，诶？突然？",
    "Uros_Touch2_Skin3": "嗯…我想念这触感。",
+   "Uros_Touch2_Skin4": "啊……啊……几十年没被人这样摸过了……",
    "Uros_Trickcal1": "Trickcal Revive。",
    "Uros_Trickcal2": "Trickcal。",
    "Uros_Ultimate1": "战胜它，我的意志！",
@@ -22713,6 +22797,7 @@
    "Vela_Board_Skin1": "来，跳得更远一点吧？",
    "Vela_Board_Skin2": "无论哪个方向都是新奇风景。",
    "Vela_Board_Skin3": "教主，在做什么？快跟上来。",
+   "Vela_Board_Skin4": "瞧，那边有毒草！好材料！",
    "Vela_CallHero1": "你。",
    "Vela_CallHero2": "朋友。",
    "Vela_CallHero3": "你们！",
@@ -22733,11 +22818,13 @@
    "Vela_DutchRubEnd2_Skin1": "呃，对这么可爱的存在做什么啊？",
    "Vela_DutchRubEnd2_Skin2": "哎呀。好不容易弄好的发型都要毁了。",
    "Vela_DutchRubEnd2_Skin3": "你这家伙……！我要把你的肝和骨髓全吃掉！",
+   "Vela_DutchRubEnd2_Skin4": "哎呀！怎么突然打我？我做错什么了？",
    "Vela_Eat1": "唔……",
    "Vela_Equipment": "哇，好多我没见过的东西，喜欢！",
    "Vela_Equipment_Skin1": "想喝点什么吗？",
    "Vela_Equipment_Skin2": "这个防水好吗？",
    "Vela_Equipment_Skin3": "只要穿在我身上，不管什么都会显得很漂亮。",
+   "Vela_Equipment_Skin4": "是新毒针吗？哦哦哦，合心意！",
    "Vela_Gacha1": "贝拉。",
    "Vela_Gacha2": "让我的存在燃烧得更加明亮吧。",
    "Vela_Gacha3": "感觉到一种神奇的存在感呢？",
@@ -22748,18 +22835,22 @@
    "Vela_Growth1_Skin1": "这副样子很显眼吧？",
    "Vela_Growth1_Skin2": "心情像在水中畅游一样怦怦直跳。",
    "Vela_Growth1_Skin3": "我要用我的存在迷倒所有人。",
+   "Vela_Growth1_Skin4": "嗯……好像又强了一点？",
    "Vela_Growth2": "存在感不断成长的感觉，果然总是令人兴奋。",
    "Vela_Growth2_Skin1": "像是成为了全新的存在，感觉真好。",
    "Vela_Growth2_Skin2": "我能成为更加耀眼的自己。",
    "Vela_Growth2_Skin3": "给我讲个有趣的故事，我就乖乖放你走。",
+   "Vela_Growth2_Skin4": "每次触到，都有种感觉涌上来……",
    "Vela_HeroSkill": "好。能更亮地燃烧。",
    "Vela_HeroSkill_Skin1": "变强的感觉。总是新鲜。",
    "Vela_HeroSkill_Skin2": "随着波浪在成长。",
    "Vela_HeroSkill_Skin3": "大家不会都因为我神魂颠倒了吧？",
+   "Vela_HeroSkill_Skin4": "呵呵，看我这华丽的招式！",
    "Vela_HeroUpgrade": "我的存在，获得了新的意义。",
    "Vela_HeroUpgrade_Skin1": "蹦蹦，存在感成长中！",
    "Vela_HeroUpgrade_Skin2": "一起劈波斩浪前进吧。",
    "Vela_HeroUpgrade_Skin3": "我要让所有人都渴望我的存在。",
+   "Vela_HeroUpgrade_Skin4": "再烈些的毒，我好像也受得住了？",
    "Vela_Hit1": "呜！",
    "Vela_Hit2": "呜！",
    "Vela_Hit3": "呜哇！",
@@ -22777,6 +22868,7 @@
    "Vela_LevelUp_Skin1": "这耳朵不会再长了吗？",
    "Vela_LevelUp_Skin2": "怎么样？比刚才更闪亮吧？",
    "Vela_LevelUp_Skin3": "感觉越来越熟练了呢？",
+   "Vela_LevelUp_Skin4": "哈……好像……好像有点信心了。",
    "Vela_Line1": "我的存在，加油！",
    "Vela_Line2": "存在感还不够……还要再多一点……",
    "Vela_Line3": "世上仍充满了神奇的存在。",
@@ -22819,25 +22911,31 @@
    "Vela_Touch1_1_Skin1": "哼。对存在一点礼貌都没有。",
    "Vela_Touch1_1_Skin2": "好不容易打扮得漂亮。轻点拉。",
    "Vela_Touch1_1_Skin3": "呜呜……九尾狐大人的威严都要没了！",
+   "Vela_Touch1_1_Skin4": "住手，把我的脸颊放下来！",
    "Vela_Touch1_2": "如果这样能刻印我的存在感…",
    "Vela_Touch1_2_Skin1": "再这样的话，要在饮料里捣乱了哦？",
    "Vela_Touch1_2_Skin2": "哼，看来一点都不滑嘛？",
    "Vela_Touch1_2_Skin3": "是因为我太漂亮，才不知道该怎么办了吧？",
+   "Vela_Touch1_2_Skin4": "玩够了？接下来该尝尝我的毒针了吧？",
    "Vela_Touch1_Skin1": "呃，对兔女郎也该温柔一点啊。",
    "Vela_Touch1_Skin2": "呃，你是想挨一身水吗？",
    "Vela_Touch1_Skin3": "哈……！走夜路时给我小心点。",
+   "Vela_Touch1_Skin4": "想吃颗毒丹吗？",
    "Vela_Touch2": "呵呵。比想象中舒服呢？",
    "Vela_Touch2_1": "哈哈。手不会烫吗？",
    "Vela_Touch2_1_Skin1": "要点单吗？马上为你上餐。",
    "Vela_Touch2_1_Skin2": "如平静水波般的抚摸呢。",
    "Vela_Touch2_1_Skin3": "不能连耳朵也一起摸摸吗？",
+   "Vela_Touch2_1_Skin4": "我这柔顺的头发如何？像绸缎吧？",
    "Vela_Touch2_2": "感觉我的存在……正变得越来越鲜明。",
    "Vela_Touch2_2_Skin1": "没错，就是那里。挺有天赋嘛？",
    "Vela_Touch2_2_Skin2": "感觉我的存在能变得更加……闪耀。",
    "Vela_Touch2_2_Skin3": "别停，就这样继续摸下去。",
+   "Vela_Touch2_2_Skin4": "像是苦修尽头得到的奖赏。",
    "Vela_Touch2_Skin1": "呵呵，小心头饰不要掉哦。",
    "Vela_Touch2_Skin2": "呵呵，怎么样？柔软吧？",
    "Vela_Touch2_Skin3": "像我的尾巴一样柔软的手法。很合我意。",
+   "Vela_Touch2_Skin4": "你该是戴着手套摸的吧？那多摸一会儿也无妨。",
    "Vela_Trickcal1": "Trickcal Revive。",
    "Vela_Trickcal2": "Trickcal。",
    "Vela_Ultimate1": "照亮你们的存在吧。",
@@ -143420,6 +143518,21 @@
    "alias": ""
   },
   {
+   "key": "DianaYester_Board_Skin4",
+   "char": "DianaYester",
+   "name": "涂色板（疾风莽牙 迪王兰）",
+   "text": "咱们离至尊又近一步啦！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "疾风莽牙 迪王兰",
+   "alias": ""
+  },
+  {
    "key": "DianaYester_CallHero1",
    "char": "DianaYester",
    "name": "呼唤使徒1",
@@ -143765,6 +143878,21 @@
    "alias": ""
   },
   {
+   "key": "DianaYester_DutchRubEnd2_Skin4",
+   "char": "DianaYester",
+   "name": "爆栗（疾风莽牙 迪王兰）",
+   "text": "喂！还不快过来！我也照样还你一下！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "疾风莽牙 迪王兰",
+   "alias": ""
+  },
+  {
    "key": "DianaYester_DutchRubEnd3_Skin1",
    "char": "DianaYester",
    "name": "爆栗3（教团军纪班长）",
@@ -143882,6 +144010,21 @@
    "group": "养成",
    "skin": "_Skin3",
    "skinName": "号令苍穹的咆哮",
+   "alias": ""
+  },
+  {
+   "key": "DianaYester_Equipment_Skin4",
+   "char": "DianaYester",
+   "name": "装备（疾风莽牙 迪王兰）",
+   "text": "哼，总归有用得上的时候。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "疾风莽牙 迪王兰",
    "alias": ""
   },
   {
@@ -144035,6 +144178,21 @@
    "alias": ""
   },
   {
+   "key": "DianaYester_Growth1_Skin4",
+   "char": "DianaYester",
+   "name": "成长（疾风莽牙 迪王兰）",
+   "text": "痛快！哈！要不要来比划两下？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "疾风莽牙 迪王兰",
+   "alias": ""
+  },
+  {
    "key": "DianaYester_Growth2",
    "char": "DianaYester",
    "name": "成长2",
@@ -144092,6 +144250,21 @@
    "group": "养成",
    "skin": "_Skin3",
    "skinName": "号令苍穹的咆哮",
+   "alias": ""
+  },
+  {
+   "key": "DianaYester_Growth2_Skin4",
+   "char": "DianaYester",
+   "name": "成长2（疾风莽牙 迪王兰）",
+   "text": "拳头好像变轻快了。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "疾风莽牙 迪王兰",
    "alias": ""
   },
   {
@@ -144155,6 +144328,21 @@
    "alias": ""
   },
   {
+   "key": "DianaYester_HeroSkill_Skin4",
+   "char": "DianaYester",
+   "name": "高年级技能（疾风莽牙 迪王兰）",
+   "text": "看我这拳，连金钟罩都能打穿！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "_Skin4",
+   "skinName": "疾风莽牙 迪王兰",
+   "alias": ""
+  },
+  {
    "key": "DianaYester_HeroUpgrade",
    "char": "DianaYester",
    "name": "升星",
@@ -144212,6 +144400,21 @@
    "group": "养成",
    "skin": "_Skin3",
    "skinName": "号令苍穹的咆哮",
+   "alias": ""
+  },
+  {
+   "key": "DianaYester_HeroUpgrade_Skin4",
+   "char": "DianaYester",
+   "name": "升星（疾风莽牙 迪王兰）",
+   "text": "可别被我的强大吓着了。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "疾风莽牙 迪王兰",
    "alias": ""
   },
   {
@@ -144467,6 +144670,21 @@
    "group": "养成",
    "skin": "_Skin3",
    "skinName": "号令苍穹的咆哮",
+   "alias": ""
+  },
+  {
+   "key": "DianaYester_LevelUp_Skin4",
+   "char": "DianaYester",
+   "name": "升级（疾风莽牙 迪王兰）",
+   "text": "招式又精进了一层。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "疾风莽牙 迪王兰",
    "alias": ""
   },
   {
@@ -145145,6 +145363,21 @@
    "alias": ""
   },
   {
+   "key": "DianaYester_Touch1_1_Skin4",
+   "char": "DianaYester",
+   "name": "薅脸2（疾风莽牙 迪王兰）",
+   "text": "怎么，这么想尝尝我的拳头？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "疾风莽牙 迪王兰",
+   "alias": ""
+  },
+  {
    "key": "DianaYester_Touch1_2",
    "char": "DianaYester",
    "name": "薅脸3",
@@ -145205,6 +145438,21 @@
    "alias": ""
   },
   {
+   "key": "DianaYester_Touch1_2_Skin4",
+   "char": "DianaYester",
+   "name": "薅脸3（疾风莽牙 迪王兰）",
+   "text": "哼，让你的腮帮子也肿成这样！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "疾风莽牙 迪王兰",
+   "alias": ""
+  },
+  {
    "key": "DianaYester_Touch1_Skin1",
    "char": "DianaYester",
    "name": "薅脸1（教团军纪班长）",
@@ -145247,6 +145495,21 @@
    "group": "互动",
    "skin": "_Skin3",
    "skinName": "号令苍穹的咆哮",
+   "alias": ""
+  },
+  {
+   "key": "DianaYester_Touch1_Skin4",
+   "char": "DianaYester",
+   "name": "薅脸1（疾风莽牙 迪王兰）",
+   "text": "唉，你这是连胆儿都不要了。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "疾风莽牙 迪王兰",
    "alias": ""
   },
   {
@@ -145325,6 +145588,21 @@
    "alias": ""
   },
   {
+   "key": "DianaYester_Touch2_1_Skin4",
+   "char": "DianaYester",
+   "name": "抚摸2（疾风莽牙 迪王兰）",
+   "text": "好好好，是你喜欢，我才忍着的。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "疾风莽牙 迪王兰",
+   "alias": ""
+  },
+  {
    "key": "DianaYester_Touch2_2",
    "char": "DianaYester",
    "name": "抚摸3",
@@ -145385,6 +145663,21 @@
    "alias": ""
   },
   {
+   "key": "DianaYester_Touch2_2_Skin4",
+   "char": "DianaYester",
+   "name": "抚摸3（疾风莽牙 迪王兰）",
+   "text": "嗯……歇息没有比这更舒服的了。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "疾风莽牙 迪王兰",
+   "alias": ""
+  },
+  {
    "key": "DianaYester_Touch2_Skin1",
    "char": "DianaYester",
    "name": "抚摸（教团军纪班长）",
@@ -145427,6 +145720,21 @@
    "group": "互动",
    "skin": "_Skin3",
    "skinName": "号令苍穹的咆哮",
+   "alias": ""
+  },
+  {
+   "key": "DianaYester_Touch2_Skin4",
+   "char": "DianaYester",
+   "name": "抚摸（疾风莽牙 迪王兰）",
+   "text": "哼，你以为这样我就会放过你？嗯，就这一次。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "疾风莽牙 迪王兰",
    "alias": ""
   },
   {
@@ -203715,6 +204023,21 @@
    "alias": ""
   },
   {
+   "key": "Joanne_Board_Skin6",
+   "char": "Joanne",
+   "name": "涂色板（夜食军师 赵葛燕）",
+   "text": "那边倒是有些耐人寻味的东西。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin6",
+   "skinName": "夜食军师 赵葛燕",
+   "alias": ""
+  },
+  {
    "key": "Joanne_CallHero1",
    "char": "Joanne",
    "name": "呼唤使徒1",
@@ -204143,6 +204466,21 @@
    "alias": "Joanne_DutchRubEnd1_Skin5"
   },
   {
+   "key": "Joanne_DutchRubEnd2_Skin6",
+   "char": "Joanne",
+   "name": "爆栗（夜食军师 赵葛燕）",
+   "text": "竟敢敲堂堂军师的脑袋！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin6",
+   "skinName": "夜食军师 赵葛燕",
+   "alias": ""
+  },
+  {
    "key": "Joanne_DutchRubEnd3_Skin1",
    "char": "Joanne",
    "name": "爆栗3（传统的使徒）",
@@ -204328,6 +204666,21 @@
    "group": "养成",
    "skin": "_Skin5",
    "skinName": "宛如绽放的花朵",
+   "alias": ""
+  },
+  {
+   "key": "Joanne_Equipment_Skin6",
+   "char": "Joanne",
+   "name": "装备（夜食军师 赵葛燕）",
+   "text": "于推演新阵法倒是大有用处。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin6",
+   "skinName": "夜食军师 赵葛燕",
    "alias": ""
   },
   {
@@ -204519,6 +204872,21 @@
    "alias": ""
   },
   {
+   "key": "Joanne_Growth1_Skin6",
+   "char": "Joanne",
+   "name": "成长（夜食军师 赵葛燕）",
+   "text": "积累学问，本就没有尽头啊。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin6",
+   "skinName": "夜食军师 赵葛燕",
+   "alias": ""
+  },
+  {
    "key": "Joanne_Growth2",
    "char": "Joanne",
    "name": "成长2",
@@ -204594,6 +204962,21 @@
    "group": "养成",
    "skin": "_Skin4",
    "skinName": "舞团达令",
+   "alias": ""
+  },
+  {
+   "key": "Joanne_Growth2_Skin6",
+   "char": "Joanne",
+   "name": "成长2（夜食军师 赵葛燕）",
+   "text": "越是长进，越觉得不懂的更多。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin6",
+   "skinName": "夜食军师 赵葛燕",
    "alias": ""
   },
   {
@@ -204736,6 +205119,21 @@
    "alias": ""
   },
   {
+   "key": "Joanne_HeroSkill_Skin6",
+   "char": "Joanne",
+   "name": "高年级技能（夜食军师 赵葛燕）",
+   "text": "我这计策，早已留了后手啦。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "_Skin6",
+   "skinName": "夜食军师 赵葛燕",
+   "alias": ""
+  },
+  {
    "key": "Joanne_HeroUpgrade",
    "char": "Joanne",
    "name": "升星",
@@ -204827,6 +205225,21 @@
    "group": "养成",
    "skin": "_Skin5",
    "skinName": "宛如绽放的花朵",
+   "alias": ""
+  },
+  {
+   "key": "Joanne_HeroUpgrade_Skin6",
+   "char": "Joanne",
+   "name": "升星（夜食军师 赵葛燕）",
+   "text": "更进一步，我的悟道又深了一层。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin6",
+   "skinName": "夜食军师 赵葛燕",
    "alias": ""
   },
   {
@@ -205129,6 +205542,21 @@
    "group": "养成",
    "skin": "_Skin5",
    "skinName": "宛如绽放的花朵",
+   "alias": ""
+  },
+  {
+   "key": "Joanne_LevelUp_Skin6",
+   "char": "Joanne",
+   "name": "升级（夜食军师 赵葛燕）",
+   "text": "嗯，又悟出一策，要不要试试？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin6",
+   "skinName": "夜食军师 赵葛燕",
    "alias": ""
   },
   {
@@ -205983,6 +206411,21 @@
    "alias": ""
   },
   {
+   "key": "Joanne_Touch1_1_Skin6",
+   "char": "Joanne",
+   "name": "薅脸2（夜食军师 赵葛燕）",
+   "text": "别碰我的锦囊！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin6",
+   "skinName": "夜食军师 赵葛燕",
+   "alias": ""
+  },
+  {
    "key": "Joanne_Touch1_2",
    "char": "Joanne",
    "name": "薅脸3",
@@ -206077,6 +206520,21 @@
    "alias": ""
   },
   {
+   "key": "Joanne_Touch1_2_Skin6",
+   "char": "Joanne",
+   "name": "薅脸3（夜食军师 赵葛燕）",
+   "text": "呃……忍耐也是修行之一。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin6",
+   "skinName": "夜食军师 赵葛燕",
+   "alias": ""
+  },
+  {
    "key": "Joanne_Touch1_Skin1",
    "char": "Joanne",
    "name": "薅脸1（传统的使徒）",
@@ -206152,6 +206610,21 @@
    "group": "互动",
    "skin": "_Skin5",
    "skinName": "宛如绽放的花朵",
+   "alias": ""
+  },
+  {
+   "key": "Joanne_Touch1_Skin6",
+   "char": "Joanne",
+   "name": "薅脸1（夜食军师 赵葛燕）",
+   "text": "这、这是何等无礼！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin6",
+   "skinName": "夜食军师 赵葛燕",
    "alias": ""
   },
   {
@@ -206265,6 +206738,21 @@
    "alias": ""
   },
   {
+   "key": "Joanne_Touch2_1_Skin6",
+   "char": "Joanne",
+   "name": "抚摸2（夜食军师 赵葛燕）",
+   "text": "唔……（舒服得说不出话）",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin6",
+   "skinName": "夜食军师 赵葛燕",
+   "alias": ""
+  },
+  {
    "key": "Joanne_Touch2_2",
    "char": "Joanne",
    "name": "抚摸3",
@@ -206359,6 +206847,21 @@
    "alias": ""
   },
   {
+   "key": "Joanne_Touch2_2_Skin6",
+   "char": "Joanne",
+   "name": "抚摸3（夜食军师 赵葛燕）",
+   "text": "你的手，像庭院里拂过花香的风啊。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin6",
+   "skinName": "夜食军师 赵葛燕",
+   "alias": ""
+  },
+  {
    "key": "Joanne_Touch2_Skin1",
    "char": "Joanne",
    "name": "抚摸（传统的使徒）",
@@ -206434,6 +206937,21 @@
    "group": "互动",
    "skin": "_Skin5",
    "skinName": "宛如绽放的花朵",
+   "alias": ""
+  },
+  {
+   "key": "Joanne_Touch2_Skin6",
+   "char": "Joanne",
+   "name": "抚摸（夜食军师 赵葛燕）",
+   "text": "竟摸起本军师的头来了……只准这一次啊……",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin6",
+   "skinName": "夜食军师 赵葛燕",
    "alias": ""
   },
   {
@@ -282039,6 +282557,21 @@
    "alias": ""
   },
   {
+   "key": "NerRage_Board_Skin3",
+   "char": "NerRage",
+   "name": "涂色板（一怒即发 尼博彻）",
+   "text": "从今往后，我携一柄刀走我的路。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin3",
+   "skinName": "一怒即发 尼博彻",
+   "alias": ""
+  },
+  {
    "key": "NerRage_CallHero1",
    "char": "NerRage",
    "name": "呼唤使徒1",
@@ -282354,6 +282887,21 @@
    "alias": ""
   },
   {
+   "key": "NerRage_DutchRubEnd2_Skin3",
+   "char": "NerRage",
+   "name": "爆栗（一怒即发 尼博彻）",
+   "text": "竟让我当众受此羞辱！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin3",
+   "skinName": "一怒即发 尼博彻",
+   "alias": ""
+  },
+  {
    "key": "NerRage_DutchRubEnd3_Skin1",
    "char": "NerRage",
    "name": "爆栗3（一日妖精女王）",
@@ -282456,6 +283004,21 @@
    "group": "养成",
    "skin": "_Skin2",
    "skinName": "王冠的授予者",
+   "alias": ""
+  },
+  {
+   "key": "NerRage_Equipment_Skin3",
+   "char": "NerRage",
+   "name": "装备（一怒即发 尼博彻）",
+   "text": "刀锋正钝了，多谢。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin3",
+   "skinName": "一怒即发 尼博彻",
    "alias": ""
   },
   {
@@ -282594,6 +283157,21 @@
    "alias": ""
   },
   {
+   "key": "NerRage_Growth1_Skin3",
+   "char": "NerRage",
+   "name": "成长（一怒即发 尼博彻）",
+   "text": "一刀一心，每一挥都要倾注心神。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin3",
+   "skinName": "一怒即发 尼博彻",
+   "alias": ""
+  },
+  {
    "key": "NerRage_Growth2",
    "char": "NerRage",
    "name": "成长2",
@@ -282636,6 +283214,21 @@
    "group": "养成",
    "skin": "_Skin2",
    "skinName": "王冠的授予者",
+   "alias": ""
+  },
+  {
+   "key": "NerRage_Growth2_Skin3",
+   "char": "NerRage",
+   "name": "成长2（一怒即发 尼博彻）",
+   "text": "逞力时刀沉，顺势时刀轻。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin3",
+   "skinName": "一怒即发 尼博彻",
    "alias": ""
   },
   {
@@ -282684,6 +283277,21 @@
    "alias": ""
   },
   {
+   "key": "NerRage_HeroSkill_Skin3",
+   "char": "NerRage",
+   "name": "高年级技能（一怒即发 尼博彻）",
+   "text": "原来如此！终于明白了！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "_Skin3",
+   "skinName": "一怒即发 尼博彻",
+   "alias": ""
+  },
+  {
    "key": "NerRage_HeroUpgrade",
    "char": "NerRage",
    "name": "升星",
@@ -282726,6 +283334,21 @@
    "group": "养成",
    "skin": "_Skin2",
    "skinName": "王冠的授予者",
+   "alias": ""
+  },
+  {
+   "key": "NerRage_HeroUpgrade_Skin3",
+   "char": "NerRage",
+   "name": "升星（一怒即发 尼博彻）",
+   "text": "刚中藏柔，柔中蕴刚。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin3",
+   "skinName": "一怒即发 尼博彻",
    "alias": ""
   },
   {
@@ -282966,6 +283589,21 @@
    "group": "养成",
    "skin": "_Skin2",
    "skinName": "王冠的授予者",
+   "alias": ""
+  },
+  {
+   "key": "NerRage_LevelUp_Skin3",
+   "char": "NerRage",
+   "name": "升级（一怒即发 尼博彻）",
+   "text": "路开了，与刀同行。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin3",
+   "skinName": "一怒即发 尼博彻",
    "alias": ""
   },
   {
@@ -283584,6 +284222,21 @@
    "alias": ""
   },
   {
+   "key": "NerRage_Touch1_1_Skin3",
+   "char": "NerRage",
+   "name": "薅脸2（一怒即发 尼博彻）",
+   "text": "非得把你的腮帮子捏爆不可！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin3",
+   "skinName": "一怒即发 尼博彻",
+   "alias": ""
+  },
+  {
    "key": "NerRage_Touch1_2",
    "char": "NerRage",
    "name": "薅脸3",
@@ -283629,6 +284282,21 @@
    "alias": ""
   },
   {
+   "key": "NerRage_Touch1_2_Skin3",
+   "char": "NerRage",
+   "name": "薅脸3（一怒即发 尼博彻）",
+   "text": "哼哼哼，不过来？那我也来捏一把！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin3",
+   "skinName": "一怒即发 尼博彻",
+   "alias": ""
+  },
+  {
    "key": "NerRage_Touch1_Skin1",
    "char": "NerRage",
    "name": "薅脸1（一日妖精女王）",
@@ -283656,6 +284324,21 @@
    "group": "互动",
    "skin": "_Skin2",
    "skinName": "王冠的授予者",
+   "alias": ""
+  },
+  {
+   "key": "NerRage_Touch1_Skin3",
+   "char": "NerRage",
+   "name": "薅脸1（一怒即发 尼博彻）",
+   "text": "别惹我发火！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin3",
+   "skinName": "一怒即发 尼博彻",
    "alias": ""
   },
   {
@@ -283719,6 +284402,21 @@
    "alias": ""
   },
   {
+   "key": "NerRage_Touch2_1_Skin3",
+   "char": "NerRage",
+   "name": "抚摸2（一怒即发 尼博彻）",
+   "text": "只准你一个人这样，知道吧？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin3",
+   "skinName": "一怒即发 尼博彻",
+   "alias": ""
+  },
+  {
    "key": "NerRage_Touch2_2",
    "char": "NerRage",
    "name": "抚摸3",
@@ -283764,6 +284462,21 @@
    "alias": ""
   },
   {
+   "key": "NerRage_Touch2_2_Skin3",
+   "char": "NerRage",
+   "name": "抚摸3（一怒即发 尼博彻）",
+   "text": "嗯……再温柔些，多花点心思。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin3",
+   "skinName": "一怒即发 尼博彻",
+   "alias": ""
+  },
+  {
    "key": "NerRage_Touch2_Skin1",
    "char": "NerRage",
    "name": "抚摸（一日妖精女王）",
@@ -283791,6 +284504,21 @@
    "group": "互动",
    "skin": "_Skin2",
    "skinName": "王冠的授予者",
+   "alias": ""
+  },
+  {
+   "key": "NerRage_Touch2_Skin3",
+   "char": "NerRage",
+   "name": "抚摸（一怒即发 尼博彻）",
+   "text": "嗯？别以为这样我就不生气了。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin3",
+   "skinName": "一怒即发 尼博彻",
    "alias": ""
   },
   {
@@ -311801,6 +312529,21 @@
    "alias": ""
   },
   {
+   "key": "Ran_Board_Skin4",
+   "char": "Ran",
+   "name": "涂色板（修沙之狼 兰木）",
+   "text": "嗯？那边飘来一阵熟稔的香气……",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "修沙之狼 兰木",
+   "alias": ""
+  },
+  {
    "key": "Ran_CallHero1",
    "char": "Ran",
    "name": "呼唤使徒1",
@@ -312146,6 +312889,21 @@
    "alias": ""
   },
   {
+   "key": "Ran_DutchRubEnd2_Skin4",
+   "char": "Ran",
+   "name": "爆栗（修沙之狼 兰木）",
+   "text": "想尝尝我这利齿吗！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "修沙之狼 兰木",
+   "alias": ""
+  },
+  {
    "key": "Ran_DutchRubEnd3_Skin1",
    "char": "Ran",
    "name": "爆栗3（女仆中的女仆）",
@@ -312278,6 +313036,21 @@
    "group": "养成",
    "skin": "_Skin3",
    "skinName": "白蛇堂的巫女",
+   "alias": ""
+  },
+  {
+   "key": "Ran_Equipment_Skin4",
+   "char": "Ran",
+   "name": "装备（修沙之狼 兰木）",
+   "text": "嗯，倒是不错，我会好好用。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "修沙之狼 兰木",
    "alias": ""
   },
   {
@@ -312431,6 +313204,21 @@
    "alias": ""
   },
   {
+   "key": "Ran_Growth1_Skin4",
+   "char": "Ran",
+   "name": "成长（修沙之狼 兰木）",
+   "text": "想追上师父，还差得远呢。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "修沙之狼 兰木",
+   "alias": ""
+  },
+  {
    "key": "Ran_Growth2",
    "char": "Ran",
    "name": "成长2",
@@ -312488,6 +313276,21 @@
    "group": "养成",
    "skin": "_Skin3",
    "skinName": "白蛇堂的巫女",
+   "alias": ""
+  },
+  {
+   "key": "Ran_Growth2_Skin4",
+   "char": "Ran",
+   "name": "成长2（修沙之狼 兰木）",
+   "text": "终于摸到那一缕头绪了。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "修沙之狼 兰木",
    "alias": ""
   },
   {
@@ -312551,6 +313354,21 @@
    "alias": ""
   },
   {
+   "key": "Ran_HeroSkill_Skin4",
+   "char": "Ran",
+   "name": "高年级技能（修沙之狼 兰木）",
+   "text": "还早，还早！必须变得更强！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "_Skin4",
+   "skinName": "修沙之狼 兰木",
+   "alias": ""
+  },
+  {
    "key": "Ran_HeroUpgrade",
    "char": "Ran",
    "name": "升星",
@@ -312608,6 +313426,21 @@
    "group": "养成",
    "skin": "_Skin3",
    "skinName": "白蛇堂的巫女",
+   "alias": ""
+  },
+  {
+   "key": "Ran_HeroUpgrade_Skin4",
+   "char": "Ran",
+   "name": "升星（修沙之狼 兰木）",
+   "text": "到新境界了。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "修沙之狼 兰木",
    "alias": ""
   },
   {
@@ -312863,6 +313696,21 @@
    "group": "养成",
    "skin": "_Skin3",
    "skinName": "白蛇堂的巫女",
+   "alias": ""
+  },
+  {
+   "key": "Ran_LevelUp_Skin4",
+   "char": "Ran",
+   "name": "升级（修沙之狼 兰木）",
+   "text": "以此剑寄我心志，又进了一步。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "修沙之狼 兰木",
    "alias": ""
   },
   {
@@ -313661,6 +314509,21 @@
    "alias": ""
   },
   {
+   "key": "Ran_Touch1_1_Skin4",
+   "char": "Ran",
+   "name": "薅脸2（修沙之狼 兰木）",
+   "text": "咳哼……这次便饶过你……",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "修沙之狼 兰木",
+   "alias": ""
+  },
+  {
    "key": "Ran_Touch1_2",
    "char": "Ran",
    "name": "薅脸3",
@@ -313721,6 +314584,21 @@
    "alias": ""
   },
   {
+   "key": "Ran_Touch1_2_Skin4",
+   "char": "Ran",
+   "name": "薅脸3（修沙之狼 兰木）",
+   "text": "想挨我一剑吗！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "修沙之狼 兰木",
+   "alias": ""
+  },
+  {
    "key": "Ran_Touch1_Skin1",
    "char": "Ran",
    "name": "薅脸1（女仆中的女仆）",
@@ -313763,6 +314641,21 @@
    "group": "互动",
    "skin": "_Skin3",
    "skinName": "白蛇堂的巫女",
+   "alias": ""
+  },
+  {
+   "key": "Ran_Touch1_Skin4",
+   "char": "Ran",
+   "name": "薅脸1（修沙之狼 兰木）",
+   "text": "我的脸颊，只有师父能碰！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "修沙之狼 兰木",
    "alias": ""
   },
   {
@@ -313856,6 +314749,21 @@
    "alias": ""
   },
   {
+   "key": "Ran_Touch2_1_Skin4",
+   "char": "Ran",
+   "name": "抚摸2（修沙之狼 兰木）",
+   "text": "哦……和师父很像的手法……倒也不坏……",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "修沙之狼 兰木",
+   "alias": ""
+  },
+  {
    "key": "Ran_Touch2_2",
    "char": "Ran",
    "name": "抚摸3",
@@ -313916,6 +314824,21 @@
    "alias": ""
   },
   {
+   "key": "Ran_Touch2_2_Skin4",
+   "char": "Ran",
+   "name": "抚摸3（修沙之狼 兰木）",
+   "text": "哼，可知这是格外开恩，再轻些摸。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "修沙之狼 兰木",
+   "alias": ""
+  },
+  {
    "key": "Ran_Touch2_Skin1",
    "char": "Ran",
    "name": "抚摸（女仆中的女仆）",
@@ -313958,6 +314881,21 @@
    "group": "互动",
    "skin": "_Skin3",
    "skinName": "白蛇堂的巫女",
+   "alias": ""
+  },
+  {
+   "key": "Ran_Touch2_Skin4",
+   "char": "Ran",
+   "name": "抚摸（修沙之狼 兰木）",
+   "text": "哈，你、你在做什么？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "修沙之狼 兰木",
    "alias": ""
   },
   {
@@ -400532,6 +401470,21 @@
    "alias": ""
   },
   {
+   "key": "TigHero_Board_Skin3",
+   "char": "TigHero",
+   "name": "涂色板（火之虎剑 提巴克）",
+   "text": "嘿嘿，哪来的花香？是这边吗？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin3",
+   "skinName": "火之虎剑 提巴克",
+   "alias": ""
+  },
+  {
    "key": "TigHero_CallHero1",
    "char": "TigHero",
    "name": "呼唤使徒1",
@@ -400847,6 +401800,21 @@
    "alias": ""
   },
   {
+   "key": "TigHero_DutchRubEnd2_Skin3",
+   "char": "TigHero",
+   "name": "爆栗（火之虎剑 提巴克）",
+   "text": "诶嘿！要不要见识下烈火剑客的拳头？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin3",
+   "skinName": "火之虎剑 提巴克",
+   "alias": ""
+  },
+  {
    "key": "TigHero_DutchRubEnd3_Skin1",
    "char": "TigHero",
    "name": "爆栗3（兽人村北方大公）",
@@ -400979,6 +401947,21 @@
    "group": "养成",
    "skin": "_Skin2",
    "skinName": "苍穹的白翼",
+   "alias": ""
+  },
+  {
+   "key": "TigHero_Equipment_Skin3",
+   "char": "TigHero",
+   "name": "装备（火之虎剑 提巴克）",
+   "text": "这是给我的？我会好好用！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin3",
+   "skinName": "火之虎剑 提巴克",
    "alias": ""
   },
   {
@@ -401117,6 +402100,21 @@
    "alias": ""
   },
   {
+   "key": "TigHero_Growth1_Skin3",
+   "char": "TigHero",
+   "name": "成长（火之虎剑 提巴克）",
+   "text": "一柄剑闯荡江湖，嘿嘿，多帅啊？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin3",
+   "skinName": "火之虎剑 提巴克",
+   "alias": ""
+  },
+  {
    "key": "TigHero_Growth2",
    "char": "TigHero",
    "name": "成长2",
@@ -401159,6 +402157,21 @@
    "group": "养成",
    "skin": "_Skin2",
    "skinName": "苍穹的白翼",
+   "alias": ""
+  },
+  {
+   "key": "TigHero_Growth2_Skin3",
+   "char": "TigHero",
+   "name": "成长2（火之虎剑 提巴克）",
+   "text": "剑路又精准了些！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin3",
+   "skinName": "火之虎剑 提巴克",
    "alias": ""
   },
   {
@@ -401207,6 +402220,21 @@
    "alias": ""
   },
   {
+   "key": "TigHero_HeroSkill_Skin3",
+   "char": "TigHero",
+   "name": "高年级技能（火之虎剑 提巴克）",
+   "text": "你能看清每一片飞花吗？我可看得清！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "_Skin3",
+   "skinName": "火之虎剑 提巴克",
+   "alias": ""
+  },
+  {
    "key": "TigHero_HeroUpgrade",
    "char": "TigHero",
    "name": "升星",
@@ -401249,6 +402277,21 @@
    "group": "养成",
    "skin": "_Skin2",
    "skinName": "苍穹的白翼",
+   "alias": ""
+  },
+  {
+   "key": "TigHero_HeroUpgrade_Skin3",
+   "char": "TigHero",
+   "name": "升星（火之虎剑 提巴克）",
+   "text": "行侠仗义，这就是我的道！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin3",
+   "skinName": "火之虎剑 提巴克",
    "alias": ""
   },
   {
@@ -401489,6 +402532,21 @@
    "group": "养成",
    "skin": "_Skin2",
    "skinName": "苍穹的白翼",
+   "alias": ""
+  },
+  {
+   "key": "TigHero_LevelUp_Skin3",
+   "char": "TigHero",
+   "name": "升级（火之虎剑 提巴克）",
+   "text": "哈……这身汗没白流。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin3",
+   "skinName": "火之虎剑 提巴克",
    "alias": ""
   },
   {
@@ -402242,6 +403300,21 @@
    "alias": ""
   },
   {
+   "key": "TigHero_Touch1_1_Skin3",
+   "char": "TigHero",
+   "name": "薅脸2（火之虎剑 提巴克）",
+   "text": "想尝尝「火」的滋味……啊不，是想试试挨揍的滋味吧？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin3",
+   "skinName": "火之虎剑 提巴克",
+   "alias": ""
+  },
+  {
    "key": "TigHero_Touch1_2",
    "char": "TigHero",
    "name": "薅脸3",
@@ -402287,6 +403360,21 @@
    "alias": ""
   },
   {
+   "key": "TigHero_Touch1_2_Skin3",
+   "char": "TigHero",
+   "name": "薅脸3（火之虎剑 提巴克）",
+   "text": "过瘾吗？问你呢！过来，也让我捏一把！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin3",
+   "skinName": "火之虎剑 提巴克",
+   "alias": ""
+  },
+  {
    "key": "TigHero_Touch1_Skin1",
    "char": "TigHero",
    "name": "薅脸1（兽人村北方大公）",
@@ -402314,6 +403402,21 @@
    "group": "互动",
    "skin": "_Skin2",
    "skinName": "苍穹的白翼",
+   "alias": ""
+  },
+  {
+   "key": "TigHero_Touch1_Skin3",
+   "char": "TigHero",
+   "name": "薅脸1（火之虎剑 提巴克）",
+   "text": "住手！趁我还没发火快停下！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin3",
+   "skinName": "火之虎剑 提巴克",
    "alias": ""
   },
   {
@@ -402377,6 +403480,21 @@
    "alias": ""
   },
   {
+   "key": "TigHero_Touch2_1_Skin3",
+   "char": "TigHero",
+   "name": "抚摸2（火之虎剑 提巴克）",
+   "text": "我帅吗？那当然！我可是帅气的剑客！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin3",
+   "skinName": "火之虎剑 提巴克",
+   "alias": ""
+  },
+  {
    "key": "TigHero_Touch2_2",
    "char": "TigHero",
    "name": "抚摸3",
@@ -402422,6 +403540,21 @@
    "alias": ""
   },
   {
+   "key": "TigHero_Touch2_2_Skin3",
+   "char": "TigHero",
+   "name": "抚摸3（火之虎剑 提巴克）",
+   "text": "唔……剑客的自尊心……不过挺舒服的……嘿嘿",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin3",
+   "skinName": "火之虎剑 提巴克",
+   "alias": ""
+  },
+  {
    "key": "TigHero_Touch2_Skin1",
    "char": "TigHero",
    "name": "抚摸（兽人村北方大公）",
@@ -402449,6 +403582,21 @@
    "group": "互动",
    "skin": "_Skin2",
    "skinName": "苍穹的白翼",
+   "alias": ""
+  },
+  {
+   "key": "TigHero_Touch2_Skin3",
+   "char": "TigHero",
+   "name": "抚摸（火之虎剑 提巴克）",
+   "text": "嗯？啊……耳朵后面也拜托啦！呵呵哼",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin3",
+   "skinName": "火之虎剑 提巴克",
    "alias": ""
   },
   {
@@ -409810,6 +410958,21 @@
    "alias": ""
   },
   {
+   "key": "Uros_Board_Skin4",
+   "char": "Uros",
+   "name": "涂色板（暗夜亚马逊 乌龙秀）",
+   "text": "来，可愿与我一同散步？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "暗夜亚马逊 乌龙秀",
+   "alias": ""
+  },
+  {
    "key": "Uros_CallHero1",
    "char": "Uros",
    "name": "呼唤使徒1",
@@ -410245,6 +411408,21 @@
    "alias": ""
   },
   {
+   "key": "Uros_DutchRubEnd2_Skin4",
+   "char": "Uros",
+   "name": "爆栗（暗夜亚马逊 乌龙秀）",
+   "text": "我的剑比小娃儿的拳头还快，记牢了。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "暗夜亚马逊 乌龙秀",
+   "alias": ""
+  },
+  {
    "key": "Uros_DutchRubEnd3_Skin1",
    "char": "Uros",
    "name": "爆栗3（学生会长前辈）",
@@ -410425,6 +411603,21 @@
    "alias": ""
   },
   {
+   "key": "Uros_Equipment_Skin4",
+   "char": "Uros",
+   "name": "装备（暗夜亚马逊 乌龙秀）",
+   "text": "高手本不挑兵器，不过这件倒是不错。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "暗夜亚马逊 乌龙秀",
+   "alias": ""
+  },
+  {
    "key": "Uros_Gacha1",
    "char": "Uros",
    "name": "抽卡1",
@@ -410590,6 +411783,21 @@
    "alias": ""
   },
   {
+   "key": "Uros_Growth1_Skin4",
+   "char": "Uros",
+   "name": "成长（暗夜亚马逊 乌龙秀）",
+   "text": "孩子呀，学无止境啊。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "暗夜亚马逊 乌龙秀",
+   "alias": ""
+  },
+  {
    "key": "Uros_Growth2",
    "char": "Uros",
    "name": "成长2",
@@ -410647,6 +411855,21 @@
    "group": "养成",
    "skin": "_Skin3",
    "skinName": "风暴中的黑翼",
+   "alias": ""
+  },
+  {
+   "key": "Uros_Growth2_Skin4",
+   "char": "Uros",
+   "name": "成长2（暗夜亚马逊 乌龙秀）",
+   "text": "奇缘……奇缘啊……修行也没有尽头。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "暗夜亚马逊 乌龙秀",
    "alias": ""
   },
   {
@@ -410710,6 +411933,21 @@
    "alias": ""
   },
   {
+   "key": "Uros_HeroSkill_Skin4",
+   "char": "Uros",
+   "name": "高年级技能（暗夜亚马逊 乌龙秀）",
+   "text": "哈……连天都似能看见了。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "_Skin4",
+   "skinName": "暗夜亚马逊 乌龙秀",
+   "alias": ""
+  },
+  {
    "key": "Uros_HeroUpgrade",
    "char": "Uros",
    "name": "升星",
@@ -410767,6 +412005,21 @@
    "group": "养成",
    "skin": "_Skin3",
    "skinName": "风暴中的黑翼",
+   "alias": ""
+  },
+  {
+   "key": "Uros_HeroUpgrade_Skin4",
+   "char": "Uros",
+   "name": "升星（暗夜亚马逊 乌龙秀）",
+   "text": "原来还有更高的地方。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "暗夜亚马逊 乌龙秀",
    "alias": ""
   },
   {
@@ -411037,6 +412290,21 @@
    "group": "养成",
    "skin": "_Skin3",
    "skinName": "风暴中的黑翼",
+   "alias": ""
+  },
+  {
+   "key": "Uros_LevelUp_Skin4",
+   "char": "Uros",
+   "name": "升级（暗夜亚马逊 乌龙秀）",
+   "text": "哎哟哟……又变强了……这可如何是好……",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "暗夜亚马逊 乌龙秀",
    "alias": ""
   },
   {
@@ -411850,6 +413118,21 @@
    "alias": ""
   },
   {
+   "key": "Uros_Touch1_1_Skin4",
+   "char": "Uros",
+   "name": "薅脸2（暗夜亚马逊 乌龙秀）",
+   "text": "努力不入心魔，倒也不坏。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "暗夜亚马逊 乌龙秀",
+   "alias": ""
+  },
+  {
    "key": "Uros_Touch1_2",
    "char": "Uros",
    "name": "薅脸3",
@@ -411910,6 +413193,21 @@
    "alias": ""
   },
   {
+   "key": "Uros_Touch1_2_Skin4",
+   "char": "Uros",
+   "name": "薅脸3（暗夜亚马逊 乌龙秀）",
+   "text": "咳嗯……看来你得学学敬老之道了。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "暗夜亚马逊 乌龙秀",
+   "alias": ""
+  },
+  {
    "key": "Uros_Touch1_Skin1",
    "char": "Uros",
    "name": "薅脸1（学生会长前辈）",
@@ -411952,6 +413250,21 @@
    "group": "互动",
    "skin": "_Skin3",
    "skinName": "风暴中的黑翼",
+   "alias": ""
+  },
+  {
+   "key": "Uros_Touch1_Skin4",
+   "char": "Uros",
+   "name": "薅脸1（暗夜亚马逊 乌龙秀）",
+   "text": "呵呵……这也是修行吧……",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "暗夜亚马逊 乌龙秀",
    "alias": ""
   },
   {
@@ -412030,6 +413343,21 @@
    "alias": ""
   },
   {
+   "key": "Uros_Touch2_1_Skin4",
+   "char": "Uros",
+   "name": "抚摸2（暗夜亚马逊 乌龙秀）",
+   "text": "不能再轻柔些吗？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "暗夜亚马逊 乌龙秀",
+   "alias": ""
+  },
+  {
    "key": "Uros_Touch2_2",
    "char": "Uros",
    "name": "抚摸3",
@@ -412090,6 +413418,21 @@
    "alias": ""
   },
   {
+   "key": "Uros_Touch2_2_Skin4",
+   "char": "Uros",
+   "name": "抚摸3（暗夜亚马逊 乌龙秀）",
+   "text": "想起年少时候了，真是怀念啊。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "暗夜亚马逊 乌龙秀",
+   "alias": ""
+  },
+  {
    "key": "Uros_Touch2_Skin1",
    "char": "Uros",
    "name": "抚摸（学生会长前辈）",
@@ -412132,6 +413475,21 @@
    "group": "互动",
    "skin": "_Skin3",
    "skinName": "风暴中的黑翼",
+   "alias": ""
+  },
+  {
+   "key": "Uros_Touch2_Skin4",
+   "char": "Uros",
+   "name": "抚摸（暗夜亚马逊 乌龙秀）",
+   "text": "啊……啊……几十年没被人这样摸过了……",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "暗夜亚马逊 乌龙秀",
    "alias": ""
   },
   {
@@ -412705,6 +414063,21 @@
    "alias": ""
   },
   {
+   "key": "Vela_Board_Skin4",
+   "char": "Vela",
+   "name": "涂色板（剑灵毒姬 贝尔莎）",
+   "text": "瞧，那边有毒草！好材料！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "剑灵毒姬 贝尔莎",
+   "alias": ""
+  },
+  {
    "key": "Vela_CallHero1",
    "char": "Vela",
    "name": "呼唤使徒1",
@@ -413050,6 +414423,21 @@
    "alias": ""
   },
   {
+   "key": "Vela_DutchRubEnd2_Skin4",
+   "char": "Vela",
+   "name": "爆栗（剑灵毒姬 贝尔莎）",
+   "text": "哎呀！怎么突然打我？我做错什么了？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "剑灵毒姬 贝尔莎",
+   "alias": ""
+  },
+  {
    "key": "Vela_DutchRubEnd3_Skin1",
    "char": "Vela",
    "name": "爆栗3（充满存在感的兔子装）",
@@ -413167,6 +414555,21 @@
    "group": "养成",
    "skin": "_Skin3",
    "skinName": "存在感十足的九尾狐",
+   "alias": ""
+  },
+  {
+   "key": "Vela_Equipment_Skin4",
+   "char": "Vela",
+   "name": "装备（剑灵毒姬 贝尔莎）",
+   "text": "是新毒针吗？哦哦哦，合心意！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "剑灵毒姬 贝尔莎",
    "alias": ""
   },
   {
@@ -413320,6 +414723,21 @@
    "alias": ""
   },
   {
+   "key": "Vela_Growth1_Skin4",
+   "char": "Vela",
+   "name": "成长（剑灵毒姬 贝尔莎）",
+   "text": "嗯……好像又强了一点？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "剑灵毒姬 贝尔莎",
+   "alias": ""
+  },
+  {
    "key": "Vela_Growth2",
    "char": "Vela",
    "name": "成长2",
@@ -413377,6 +414795,21 @@
    "group": "养成",
    "skin": "_Skin3",
    "skinName": "存在感十足的九尾狐",
+   "alias": ""
+  },
+  {
+   "key": "Vela_Growth2_Skin4",
+   "char": "Vela",
+   "name": "成长2（剑灵毒姬 贝尔莎）",
+   "text": "每次触到，都有种感觉涌上来……",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "剑灵毒姬 贝尔莎",
    "alias": ""
   },
   {
@@ -413440,6 +414873,21 @@
    "alias": ""
   },
   {
+   "key": "Vela_HeroSkill_Skin4",
+   "char": "Vela",
+   "name": "高年级技能（剑灵毒姬 贝尔莎）",
+   "text": "呵呵，看我这华丽的招式！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "战斗",
+   "skin": "_Skin4",
+   "skinName": "剑灵毒姬 贝尔莎",
+   "alias": ""
+  },
+  {
    "key": "Vela_HeroUpgrade",
    "char": "Vela",
    "name": "升星",
@@ -413497,6 +414945,21 @@
    "group": "养成",
    "skin": "_Skin3",
    "skinName": "存在感十足的九尾狐",
+   "alias": ""
+  },
+  {
+   "key": "Vela_HeroUpgrade_Skin4",
+   "char": "Vela",
+   "name": "升星（剑灵毒姬 贝尔莎）",
+   "text": "再烈些的毒，我好像也受得住了？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "剑灵毒姬 贝尔莎",
    "alias": ""
   },
   {
@@ -413752,6 +415215,21 @@
    "group": "养成",
    "skin": "_Skin3",
    "skinName": "存在感十足的九尾狐",
+   "alias": ""
+  },
+  {
+   "key": "Vela_LevelUp_Skin4",
+   "char": "Vela",
+   "name": "升级（剑灵毒姬 贝尔莎）",
+   "text": "哈……好像……好像有点信心了。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "养成",
+   "skin": "_Skin4",
+   "skinName": "剑灵毒姬 贝尔莎",
    "alias": ""
   },
   {
@@ -414385,6 +415863,21 @@
    "alias": ""
   },
   {
+   "key": "Vela_Touch1_1_Skin4",
+   "char": "Vela",
+   "name": "薅脸2（剑灵毒姬 贝尔莎）",
+   "text": "住手，把我的脸颊放下来！",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "剑灵毒姬 贝尔莎",
+   "alias": ""
+  },
+  {
    "key": "Vela_Touch1_2",
    "char": "Vela",
    "name": "薅脸3",
@@ -414445,6 +415938,21 @@
    "alias": ""
   },
   {
+   "key": "Vela_Touch1_2_Skin4",
+   "char": "Vela",
+   "name": "薅脸3（剑灵毒姬 贝尔莎）",
+   "text": "玩够了？接下来该尝尝我的毒针了吧？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "剑灵毒姬 贝尔莎",
+   "alias": ""
+  },
+  {
    "key": "Vela_Touch1_Skin1",
    "char": "Vela",
    "name": "薅脸1（充满存在感的兔子装）",
@@ -414487,6 +415995,21 @@
    "group": "互动",
    "skin": "_Skin3",
    "skinName": "存在感十足的九尾狐",
+   "alias": ""
+  },
+  {
+   "key": "Vela_Touch1_Skin4",
+   "char": "Vela",
+   "name": "薅脸1（剑灵毒姬 贝尔莎）",
+   "text": "想吃颗毒丹吗？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "剑灵毒姬 贝尔莎",
    "alias": ""
   },
   {
@@ -414565,6 +416088,21 @@
    "alias": ""
   },
   {
+   "key": "Vela_Touch2_1_Skin4",
+   "char": "Vela",
+   "name": "抚摸2（剑灵毒姬 贝尔莎）",
+   "text": "我这柔顺的头发如何？像绸缎吧？",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "剑灵毒姬 贝尔莎",
+   "alias": ""
+  },
+  {
    "key": "Vela_Touch2_2",
    "char": "Vela",
    "name": "抚摸3",
@@ -414625,6 +416163,21 @@
    "alias": ""
   },
   {
+   "key": "Vela_Touch2_2_Skin4",
+   "char": "Vela",
+   "name": "抚摸3（剑灵毒姬 贝尔莎）",
+   "text": "像是苦修尽头得到的奖赏。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "剑灵毒姬 贝尔莎",
+   "alias": ""
+  },
+  {
    "key": "Vela_Touch2_Skin1",
    "char": "Vela",
    "name": "抚摸（充满存在感的兔子装）",
@@ -414667,6 +416220,21 @@
    "group": "互动",
    "skin": "_Skin3",
    "skinName": "存在感十足的九尾狐",
+   "alias": ""
+  },
+  {
+   "key": "Vela_Touch2_Skin4",
+   "char": "Vela",
+   "name": "抚摸（剑灵毒姬 贝尔莎）",
+   "text": "你该是戴着手套摸的吧？那多摸一会儿也无妨。",
+   "textJa": "",
+   "textKo": "",
+   "langs": [
+    "ko"
+   ],
+   "group": "互动",
+   "skin": "_Skin4",
+   "skinName": "剑灵毒姬 贝尔莎",
    "alias": ""
   },
   {

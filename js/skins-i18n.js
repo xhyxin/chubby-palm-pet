@@ -406,6 +406,11 @@ window.SKINS_I18N = {
    "en": "Roar That Commands the Heavens",
    "ja": "天を統べる咆哮",
    "ko": "하늘을 호령하는 포효"
+  },
+  "Skin4": {
+   "en": "Whirlwind Fang Di Wanglan",
+   "ja": "疾風莽牙 ディワンラン",
+   "ko": "질풍 맹아 디왕란"
   }
  },
  "EdRehab": {
@@ -655,6 +660,11 @@ window.SKINS_I18N = {
    "en": "Like a Flower in Bloom",
    "ja": "咲き誇る花のように",
    "ko": "피어나는 꽃처럼"
+  },
+  "Skin6": {
+   "en": "Night-Feast Tactician Zhao Geyan",
+   "ja": "夜食の軍師 ジャオ・ガイェン",
+   "ko": "야식 군사 조갈연"
   }
  },
  "Jubee": {
@@ -928,6 +938,11 @@ window.SKINS_I18N = {
    "en": "Bestower of the Crown",
    "ja": "王冠の授与者",
    "ko": "왕관의 수여자"
+  },
+  "Skin3": {
+   "en": "Fury Unleashed Ni Boche",
+   "ja": "一触即発の怒り ニーボーチェ",
+   "ko": "일노즉발 니보철"
   }
  },
  "Ner": {
@@ -1083,6 +1098,11 @@ window.SKINS_I18N = {
    "en": "Shrine Maiden of White Snake Hall",
    "ja": "白蛇堂の巫女",
    "ko": "백사당의 무녀"
+  },
+  "Skin4": {
+   "en": "Wolf of the Sands Ran Mu",
+   "ja": "砂漠の狼 ランムー",
+   "ko": "모래의 늑대 란무"
   }
  },
  "RenewaAwaken": {
@@ -1418,6 +1438,11 @@ window.SKINS_I18N = {
    "en": "White Wings of the Open Sky",
    "ja": "蒼穹の白翼",
    "ko": "창공의 하얀 날개"
+  },
+  "Skin3": {
+   "en": "Tiger Sword of Flame Ti Baker",
+   "ja": "炎の虎剣 ティーバーク",
+   "ko": "불의 호검 티바크"
   }
  },
  "Tig": {
@@ -1491,6 +1516,11 @@ window.SKINS_I18N = {
    "en": "Black Wings in the Storm",
    "ja": "嵐の中の黒い翼",
    "ko": "폭풍 속 검은 날개"
+  },
+  "Skin4": {
+   "en": "Amazon of the Dark Night Wu Longxiu",
+   "ja": "闇夜のアマゾン ウーロンショウ",
+   "ko": "암야의 아마존 오룡수"
   }
  },
  "uroswicked": {
@@ -1525,6 +1555,11 @@ window.SKINS_I18N = {
    "en": "Nine-Tailed Fox Bursting with Presence",
    "ja": "存在感あふれる九尾狐",
    "ko": "존재감 넘치는 구미호"
+  },
+  "Skin4": {
+   "en": "Sword-Spirit Poison Lady Bei'ersha",
+   "ja": "剣霊毒姫 ベイアーシャ",
+   "ko": "검령 독희 벨사"
   }
  },
  "Velvet": {

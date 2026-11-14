@@ -13774,7 +13774,7 @@ const CHAR_GENERATED = [
    "id": "DianaYester",
    "name": "黛安娜(往昔)",
    "en": "DianaYester",
-   "desc": "兽人 · 4 套外观",
+   "desc": "兽人 · 5 套外观",
    "tag": "🐾",
    "art": {
     "avatar": "assets/art/DianaYester/phone-avatar.png",
@@ -13813,6 +13813,13 @@ const CHAR_GENERATED = [
      "name": "号令苍穹的咆哮",
      "desc": "经过漫长修炼，终于抵达武道极境的黛雅（往…（65 动作）",
      "voiceSkin": "_Skin3"
+    },
+    {
+     "id": "DianaYesterSkin4",
+     "dir": "assets/spine/DianaYesterSkin4",
+     "name": "疾风莽牙 迪王兰",
+     "desc": "第 4 套外观（65 动作）",
+     "voiceSkin": "_Skin4"
     }
    ],
    "bones": {
@@ -22635,7 +22642,7 @@ const CHAR_GENERATED = [
    "id": "Joanne",
    "name": "琼安",
    "en": "Joanne",
-   "desc": "妖精 · 6 套外观",
+   "desc": "妖精 · 7 套外观",
    "tag": "🧚",
    "art": {
     "avatar": "assets/art/Joanne/phone-avatar.png",
@@ -22688,6 +22695,13 @@ const CHAR_GENERATED = [
      "name": "宛如绽放的花朵",
      "desc": "第 5 套外观（71 动作）",
      "voiceSkin": "_Skin5"
+    },
+    {
+     "id": "JoanneSkin6",
+     "dir": "assets/spine/JoanneSkin6",
+     "name": "夜食军师 赵葛燕",
+     "desc": "第 6 套外观（70 动作）",
+     "voiceSkin": "_Skin6"
     }
    ],
    "bones": {
@@ -34781,7 +34795,7 @@ const CHAR_GENERATED = [
    "id": "NerRage",
    "name": "涅尔（义愤）",
    "en": "NerRage",
-   "desc": "妖精 · 3 套外观",
+   "desc": "妖精 · 4 套外观",
    "tag": "🧚",
    "art": {
     "avatar": "assets/art/NerRage/phone-avatar.png",
@@ -34813,6 +34827,13 @@ const CHAR_GENERATED = [
      "name": "王冠的授予者",
      "desc": "在涅尔遇到非常特别之事的那天，盛装打扮的…（64 动作）",
      "voiceSkin": "_Skin2"
+    },
+    {
+     "id": "NerRageSkin3",
+     "dir": "assets/spine/NerRageSkin3",
+     "name": "一怒即发 尼博彻",
+     "desc": "第 3 套外观（64 动作）",
+     "voiceSkin": "_Skin3"
     }
    ],
    "bones": {
@@ -39520,7 +39541,7 @@ const CHAR_GENERATED = [
    "id": "Ran",
    "name": "兰",
    "en": "Ran",
-   "desc": "兽人 · 4 套外观",
+   "desc": "兽人 · 5 套外观",
    "tag": "🐾",
    "art": {
     "avatar": "assets/art/Ran/phone-avatar.png",
@@ -39559,6 +39580,13 @@ const CHAR_GENERATED = [
      "name": "白蛇堂的巫女",
      "desc": "曾经扰乱世界的狼。如今她正反省自己的过错…（60 动作）",
      "voiceSkin": "_Skin3"
+    },
+    {
+     "id": "RanSkin4",
+     "dir": "assets/spine/RanSkin4",
+     "name": "修沙之狼 兰木",
+     "desc": "第 4 套外观（60 动作）",
+     "voiceSkin": "_Skin4"
     }
    ],
    "bones": {
@@ -52289,7 +52317,7 @@ const CHAR_GENERATED = [
    "id": "TigHero",
    "name": "提格（英雄）",
    "en": "TigHero",
-   "desc": "兽人 · 3 套外观",
+   "desc": "兽人 · 4 套外观",
    "tag": "🐾",
    "art": {
     "avatar": "assets/art/TigHero/phone-avatar.png",
@@ -52321,6 +52349,13 @@ const CHAR_GENERATED = [
      "name": "苍穹的白翼",
      "desc": "从清晨白亮的天空到日落，守护艾利亚斯的守…（72 动作）",
      "voiceSkin": "_Skin2"
+    },
+    {
+     "id": "TigHeroSkin3",
+     "dir": "assets/spine/TigHeroSkin3",
+     "name": "火之虎剑 提巴克",
+     "desc": "第 3 套外观（72 动作）",
+     "voiceSkin": "_Skin3"
     }
    ],
    "bones": {
@@ -53548,7 +53583,7 @@ const CHAR_GENERATED = [
    "id": "Uros",
    "name": "乌洛斯",
    "en": "Uros",
-   "desc": "兽人 · 4 套外观",
+   "desc": "兽人 · 5 套外观",
    "tag": "🐾",
    "art": {
     "avatar": "assets/art/Uros/phone-avatar.png",
@@ -53587,6 +53622,13 @@ const CHAR_GENERATED = [
      "name": "风暴中的黑翼",
      "desc": "从傍晚到黎明守护艾利亚斯的守护天使。似乎…（68 动作）",
      "voiceSkin": "_Skin3"
+    },
+    {
+     "id": "UrosSkin4",
+     "dir": "assets/spine/UrosSkin4",
+     "name": "暗夜亚马逊 乌龙秀",
+     "desc": "第 4 套外观（68 动作）",
+     "voiceSkin": "_Skin4"
     }
    ],
    "bones": {
@@ -53966,7 +54008,7 @@ const CHAR_GENERATED = [
    "id": "Vela",
    "name": "贝拉",
    "en": "Vela",
-   "desc": "幽灵 · 4 套外观",
+   "desc": "幽灵 · 5 套外观",
    "tag": "👻",
    "art": {
     "avatar": "assets/art/Vela/phone-avatar.png",
@@ -54005,6 +54047,13 @@ const CHAR_GENERATED = [
      "name": "存在感十足的九尾狐",
      "desc": "变身成迷人九尾狐模样的贝拉。在听到有趣的…（58 动作）",
      "voiceSkin": "_Skin3"
+    },
+    {
+     "id": "VelaSkin4",
+     "dir": "assets/spine/VelaSkin4",
+     "name": "剑灵毒姬 贝尔莎",
+     "desc": "第 4 套外观（58 动作）",
+     "voiceSkin": "_Skin4"
     }
    ],
    "bones": {

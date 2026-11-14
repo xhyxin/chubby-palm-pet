@@ -214,12 +214,38 @@ const Pet = (() => {
     let vw = vh * aspect;
     if (vw < size.x * padX) { vw = size.x * padX; vh = vw / aspect; }
 
+    /* ★ 第一百零七轮：模型显示大小人工微调（见 js/model-view-scale.js）。
+       fitCamera 上面把「包围盒」归一化成统一高度，但官方各模型包围盒里角色本体占比不同，
+       肉眼大小会不齐（Vela 原皮偏小、Youngchun 全系列偏大）。这里按模型 id 乘一个倍率：
+       倍率 >1 → 视口缩小 → 模型放大；倍率 <1 → 视口放大 → 模型缩小。
+       ★ 一定要放在宽度兜底分支之后统一乘，否则会被上面 `vw = size.x*padX` 抵消掉。
+       相机中心用世界坐标算，缩放视口不改变中心，模型仍然居中；热区半径随投影同步缩放，
+       位置依旧对准脸颊。 */
+    const viewScale = (typeof window.modelViewScale === 'function')
+      ? window.modelViewScale(modelDef && modelDef.id) : 1;
+    if (viewScale && viewScale !== 1) {
+      const k = 1 / viewScale;
+      vw *= k;
+      vh *= k;
+    }
+
     const cam = renderer.camera;
     cam.viewportWidth = vw;
     cam.viewportHeight = vh;
     const centerY = off.y + size.y * (0.5 + (padTop - padBottom) / (2 * Math.max(padTop, padBottom)));
     cam.position.x = off.x + size.x / 2;
     cam.position.y = centerY;
+
+    /* ★ 第一百零八轮：垂直位置人工微调（见 js/model-view-scale.js 的 OFFSET_Y）。
+       centerY 是按骨架包围盒算的，包围盒被特效撑高的模型（Vela 原皮）会把相机
+       抬得太高、角色本体往下沉、脚被底部按钮栏裁掉。这里按「视口高度 vh 的比例」
+       下移相机中心 —— 正值 = 相机下移 = 角色在画面里上移。
+       ★ 必须写在 cam.update() 之前：camView 和热区投影都从 cam.position 推导，
+         跟着一起平移，交互热区自然仍然对准角色，不需要额外改 interact.js。 */
+    const offsetY = (typeof window.modelViewOffsetY === 'function')
+      ? window.modelViewOffsetY(modelDef && modelDef.id) : 0;
+    if (offsetY) cam.position.y -= offsetY * vh;
+
     cam.update();
 
     camView = { x: cam.position.x - vw / 2, y: cam.position.y - vh / 2, w: vw, h: vh };
